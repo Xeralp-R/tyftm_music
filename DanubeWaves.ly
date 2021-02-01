@@ -86,8 +86,48 @@ AMinSecInv = \relative c' {
     <a a,>4 <e a c>4 q4
 }
 
-DMinSixIstInv = \relative c {
+AMinSevDimVSecInvOD = \relative c {
     <d d,>4 <f a b d>4 q4
+}
+
+% Score 2, Part 1, Left Hand
+
+CDomSevIstInvOEMV = \relative c {
+    <e e,>4 <e bes' c>4 q4
+}
+
+CDomSevIstInvRMV = \relative c {
+    <c c,>4 <e bes' c>4 q4
+}
+
+FIstInvR = \relative c {
+    <f f,>4 <a c f>4 q4
+}
+
+FIstInvOC = \relative c {
+    <c c,>4 <a' c f>4 q4
+}
+
+FRR = \relative c {
+    <f f,>4 <f a c>4 q4
+}
+
+ASecInvOE = \relative c {
+    <e e,>4 <e a c>4 q4
+}
+
+AMinFinishOctave = \relative c {
+    <a a'>4 <c c,>4 <e e,>4 | <a a,>4 r4 r4
+}
+
+% Score 2, Part 2, Left Hand
+
+CDomSevIstInvOG = \relative c' {
+    <g g,>4 <e g bes c>4 q4
+}
+
+GMinSecInvOBes = \relative c {
+    <bes bes,>4 <d g bes>4 q4
 }
 
 % ****************************** %
@@ -133,6 +173,26 @@ dexunetwo = \relative c''' {
     <d gis,>8-. r q-. r q-. r | \pageBreak
     q8-. r q-. r q-. r | <d f,>4( <c e,>4. <b d,>8 | 
     <a c,>2 a'4) | f4( d b) | \acciaccatura d8 c2( b4) |
+}
+
+% Score 2, Part 1, Right Hand
+
+dexdeuxone = \relative c'' {
+    d4^.  r c^. | c4^. r bes^. | bes2.^> | \acciaccatura c8 bes4( a bes) |
+    f'4^. r e^. | d4^. r c^. | a2.^> | \acciaccatura bes8 a4( fis a) |
+    d4^.  r c^. | \break c4^. r b!^. | e,2. | \acciaccatura f8 e4( dis e) |
+    \once \override DynamicTextSpanner.style = #'none 
+    f4_.\cresc  r e_. | \acciaccatura e8 e'4^. r4 b!^.\! |
+}
+
+% Score 2, Part 2, Right Hand
+
+dexdeuxtwo = \relative c'' {
+    f8(\f a, f'2~ | f4 e d) | e8( g, bes e d4^>) | e8(\p g, bes e d4^>) |
+    e8_[(\f e,] e'2~ | e4 d c) | d8(_[ f, a d] e4^>) | d8(\p_[ f, a d] e4^>) |
+    <f a>8(\f <c a> <f a>2~ | \break <f a>4 <e g> <d f>) |  
+    e8( g, bes e d4^>) | e8(\p g, bes e d4^>) |
+    c4^>\mf\< <d d,>^> <e e,>^> | <f f,>4^> <g g,>^> <a a,>^> |
 }
 
 % ****************************** %
@@ -200,7 +260,7 @@ dexune = \relative c' {
             >>
         }
         \relative c'' {
-            a2. | <b g>8^.\< <c a>^. <d b>^. <e c>^. <f d>^. <g e>^.\! \break
+            a2. | <b g>8^.\< <c a>^. <d b>^. <e c>^. <f d>^. <g e>^.\! \bar "||" \break
         }
     }
     \repeat volta 2 {
@@ -237,11 +297,72 @@ sinune = \relative c' {
         \GDomSevIIIrdInv | \GDomSevIIIrdInv |
         \CFirstInv | \CFirstInv | \EDomSevOGis | \EDomSev |
         \AMinSecInvDub | \AMinSecInvDub |
-        \DMinSixIstInv | \EDomSevMV
+        \AMinSevDimVSecInvOD | \EDomSevMV
     }
     \alternative {
         {\AMinFinish | r2.}
         {\AMinFinish | r2.}
+    }
+}
+
+dexdeux = {
+    \clef treble
+    \key f \major
+    \time 3/4
+
+    \repeat volta 2 {\dexdeuxone}
+    \alternative {
+        \relative c''{
+            a2.\f | a4(_\markup {\italic "rit"} gis\> a\!)
+        }
+        {
+            <<
+                \new Voice \relative c'' { \voiceOne a2.~ | a4 b!8_[(\< c d e])\!}
+                \new Voice \relative c' { \voiceTwo r4 <e c> <e c> | <e c> s2 \bar "||" \break}
+            >>
+        }
+    }
+    \repeat volta 2 {\dexdeuxtwo}
+    \alternative {
+        \relative c'''{
+            <bes e, c>8\f q8 q4 <bes, e, c>4 | <a f c> b!8_[(\< c d e])\!
+        }
+        \relative c'''{
+            <bes e, c>8\f q8 q4 <bes, c e>4 | <a c f>4 r r | \break \bar "||"
+        }
+    }
+}
+
+sindeux = {
+    \clef bass
+    \key f \major
+    \time 3/4
+
+    \repeat volta 2 {
+        \CDomSevIstInvOEMV \CDomSevIstInvRMV
+        \CDomSevIstInvOEMV \CDomSevIstInvRMV
+        \FIstInvR \FIstInvOC \FRR \FRR 
+        \ASecInvOE \ASecInvOE \ASecInvOE \ASecInvOE
+        \EDomSevMV \EDomSevMV
+    }
+    \alternative {
+        {\AMinFinish | r2.}
+        {\AMinFinishOctave}
+    }
+    \repeat volta 2 {
+        \FRR \FRR \CDomSevIstInvOG \CDomSevIstInvOG 
+        \CDomSevIstInvRMV \CDomSevIstInvRMV \FRR \FRR 
+        \FRR \FRR \GMinSecInvOBes \GMinSecInvOBes 
+        <c' c>4_> <b! b,!>_> <bes! bes,!>_> |
+        <a a,>4_> <g g,>_> <f f,>_> |
+    }
+    \alternative {
+        \relative c' {
+            <bes g c,>8 q8 q4 q4 | <a f>4 r r |
+        }
+        \relative c' {
+            <bes g c,>8 q8 q4 q4 | <a f>4 r r |
+        }
     }
 }
 
@@ -277,4 +398,30 @@ sinune = \relative c' {
             \new Staff = "sinisterune" \sinune
         >>
     }
+    \score{
+        \layout{}
+        \new PianoStaff \with {
+            instrumentName = \markup{
+                \bold \fontsize #5 "2"
+            }
+        } <<
+            \new Staff = "dexterdeux" \dexdeux
+            \new Staff = "sinisterdeux" \sindeux
+        >>
+    }
+}
+\book{
+    \score{
+        \new PianoStaff <<
+             \new Staff = "rightmuse" {
+                \articulate{\dexintro} \unfoldRepeats{\dexune \dexdeux}
+            }
+            \new Staff = "leftmues" {
+                \articulate{\sinintro} \unfoldRepeats{\sinune \sindeux}
+            }
+        >>
+        \midi{}
+        \layout{}
+    }
+    \paper{}
 }
