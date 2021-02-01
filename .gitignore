@@ -7,3 +7,5 @@
 *.mxl 
 # Temp files
 *~
+#To ignore --1.tmp
+*.tmp
