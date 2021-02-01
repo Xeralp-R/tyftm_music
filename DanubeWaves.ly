@@ -137,7 +137,7 @@ GMinSecInvOBes = \relative c {
 % Intro, Left Hand
 
 sinintune = \relative c' {
-    <c c,>8 r <b b,> r | <a a,>8 r <fis fis,> <a a,> |
+    <c c,>8 r <b b,> r | <a a,>8 r <gis gis,> <a a,> |
     <b b,>8 r <e, e,> r | <a a,>8 r <e' e,> r |
 }
 
@@ -171,25 +171,25 @@ dexunetwo = \relative c''' {
     <f d>8-. r q-. r q-. r | q8-. r q-. r q-. r |
     <f d>4( <e c>4. <dis b>8 | <e c>2.) |
     <d gis,>8-. r q-. r q-. r | \pageBreak
-    q8-. r q-. r q-. r | <d f,>4( <c e,>4. <b d,>8 | 
-    <a c,>2 a'4) | f4( d b) | \acciaccatura d8 c2( b4) |
+    q8-.\< r q-. r q-. r | <d f,>4( <c e,>4. <b d,>8 | 
+    <a c,>2\f a'4) | f4(\p d b) | \acciaccatura d8 c2( b4) |
 }
 
 % Score 2, Part 1, Right Hand
 
 dexdeuxone = \relative c'' {
-    d4^.  r c^. | c4^. r bes^. | bes2.^> | \acciaccatura c8 bes4( a bes) |
-    f'4^. r e^. | d4^. r c^. | a2.^> | \acciaccatura bes8 a4( fis a) |
+    d4^.\p  r c^. | c4^. r bes^. | bes2.^> | \acciaccatura c8 bes4( a bes) |
+    f'4^. r e^. | d4^. r c^. | a2.^> | \acciaccatura bes8 a4( gis a) |
     d4^.  r c^. | \break c4^. r b!^. | e,2. | \acciaccatura f8 e4( dis e) |
     \once \override DynamicTextSpanner.style = #'none 
-    f4_.\cresc  r e_. | \acciaccatura e8 e'4^. r4 b!^.\! |
+    f4_.\cresc  r e_. | \acciaccatura e8 c'4^. r4 b!^.\! |
 }
 
 % Score 2, Part 2, Right Hand
 
 dexdeuxtwo = \relative c'' {
     f8(\f a, f'2~ | f4 e d) | e8( g, bes e d4^>) | e8(\p g, bes e d4^>) |
-    e8_[(\f e,] e'2~ | e4 d c) | d8(_[ f, a d] e4^>) | d8(\p_[ f, a d] e4^>) |
+    e8_[(\f e,] e'2~ | e4 d c) | d8(_[ f, a d] c4^>) | d8(\p_[ f, a d] c4^>) |
     <f a>8(\f <c a> <f a>2~ | \break <f a>4 <e g> <d f>) |  
     e8( g, bes e d4^>) | e8(\p g, bes e d4^>) |
     c4^>\mf\< <d d,>^> <e e,>^> | <f f,>4^> <g g,>^> <a a,>^> |
@@ -203,7 +203,7 @@ dexintro = \relative c' {
     \clef treble
     \key a \minor
     \time 2/4
-    \tempo "Allegro Moderato" 4 = 120
+    \tempo "Allegro Moderato" 4 = 100
 
     \repeat tremolo 8 {e32\ff ( e'32)}
     \treme \treme \treme \treme \treme \treme \treme
@@ -245,7 +245,7 @@ dexune = \relative c' {
     \clef treble
     \key a \minor
     \time 3/4
-    \tempo "Waltz" 4 = 60
+    \tempo "Waltz" 4 = 95
 
     \partial 4 e4_\PDolceEx |
     \repeat volta 2 {
