@@ -1,4 +1,4 @@
-\version "2.20.0"
+\version "2.22.0"
 \include "articulate.ly"
 
 \paper{
@@ -14,10 +14,11 @@
 PDolce = \tweak DynamicText.self-alignment-X #LEFT
 #(make-dynamic-script
     (
-        markup #:dynamic "p"
-        #:italic "dolce"
+        markup #:dynamic "p" #:italic "dolce"
     )
 )
+
+PDolceEx = \markup {\whiteout \dynamic p \italic \whiteout \pad-markup #0.3 dolce}
 
 % ****************************** %
 % VARIABLES %
@@ -118,7 +119,7 @@ sinintois = \relative c' {
 dexuneone = \relative c' {
     e2.~( | e4 gis a) | b2.~( | b4 gis e) |
     c'2.~( | c4 b a) | e'2.~( | e4) r e |
-    f2.~( | f4 e d) | e2.~( | e4 d c) |
+    f2.~(\> | \break f4 e d)\! | e2.~(\> | e4 d c)\! |
     b2.~( | b4 \acciaccatura d8 c4 b) |
 }
 
@@ -139,6 +140,11 @@ dexunetwo = \relative c''' {
 % ****************************** %
 
 dexintro = \relative c' {
+    \clef treble
+    \key a \minor
+    \time 2/4
+    \tempo "Allegro Moderato" 4 = 120
+
     \repeat tremolo 8 {e32\ff ( e'32)}
     \treme \treme \treme \treme \treme \treme \treme
     \trema \break \trema \trema \trema \trema \trema \trema \trema
@@ -154,9 +160,15 @@ dexintro = \relative c' {
         e dis e dis e)] \acciaccatura g8 f8\fermata[ e\fermata]
     }
     \cadenzaOff
+
+    \bar "||" \time 3/4
 }
 
 sinintro = \relative c' {
+    \clef bass
+    \key c \major
+    \time 2/4
+
     \sinintune \sinintune
     \sininteux \sininteux
     \sinintois
@@ -165,15 +177,17 @@ sinintro = \relative c' {
     s1 s1 s2 s16
     r4\fermata
     \cadenzaOff
+
+    \bar "||" \time 3/4
 }
 
 dexune = \relative c' {
     \clef treble
     \key a \minor
     \time 3/4
-    \tempo "Waltz"
+    \tempo "Waltz" 4 = 60
 
-    \partial 4 e4_\PDolce |
+    \partial 4 e4_\PDolceEx |
     \repeat volta 2 {
         \dexuneone
     }
@@ -186,11 +200,19 @@ dexune = \relative c' {
             >>
         }
         \relative c'' {
-            a2. | <b g>8^.\< <c a>^. <d b>^. <e c>^. <f d>^. <g e>^.\!
+            a2. | <b g>8^.\< <c a>^. <d b>^. <e c>^. <f d>^. <g e>^.\! \break
         }
     }
     \repeat volta 2 {
         \dexunetwo
+    }
+    \alternative {
+        \relative c'' {
+            a2. | <b g>8^.\< <c a>^. <d b>^. <e c>^. <f d>^. <g e>^.\!
+        }
+        \relative c''{
+            a2. | a4(_\markup {\italic "rit"} gis a) \bar "||"
+        }
     }
 }
 
@@ -217,6 +239,10 @@ sinune = \relative c' {
         \AMinSecInvDub | \AMinSecInvDub |
         \DMinSixIstInv | \EDomSevMV
     }
+    \alternative {
+        {\AMinFinish | r2.}
+        {\AMinFinish | r2.}
+    }
 }
 
 % ****************************** %
@@ -236,23 +262,8 @@ sinune = \relative c' {
     \score{
         \layout{}
         \new PianoStaff <<
-            \new Staff = "dexterint" {
-                \clef treble
-                \key a \minor
-                \time 2/4
-                \tempo "Allegro Moderato" 4 = 120
-
-                \dexintro
-
-                \bar "||" \time 3/4
-            }
-            \new Staff = "sinisterint" {
-                \clef bass
-                \key c \major
-                \time 2/4
-
-                \sinintro
-            }
+            \new Staff = "dexterint" \dexintro
+            \new Staff = "sinisterint" \sinintro
         >>
     }
     \score{
