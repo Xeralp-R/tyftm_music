@@ -130,6 +130,12 @@ GMinSecInvOBes = \relative c {
     <bes bes,>4 <d g bes>4 q4
 }
 
+% Score 3, Part 1, Left Hand
+
+AMinSevDimVSecInvR = \relative c {
+    a4 <f' a b d>4 q4
+}
+
 % ****************************** %
 % VOICES %
 % ****************************** %
@@ -366,6 +372,23 @@ sindeux = {
     }
 }
 
+dextrois = {
+    \clef treble
+    \key a \minor
+    \time 3/4
+
+    e''8(\ff f'' e'' f'' e''4) | e''8( f'' e'' f'' e''4) |
+    <e' gis' b' e''>4 <e' e''>8 q q4 | q4 r4 e' |
+}
+
+sintrois = {
+    \clef bass
+    \key a \minor
+    \time 3/4
+
+    <gis b d'>2._> | <a c'>2._> | <e gis b>4 r4 r4 | r2. |
+}
+
 % ****************************** %
 % COMBINATION %
 % ****************************** %
@@ -407,6 +430,17 @@ sindeux = {
         } <<
             \new Staff = "dexterdeux" \dexdeux
             \new Staff = "sinisterdeux" \sindeux
+        >>
+    }
+    \score{
+        \layout{}
+        \new PianoStaff \with {
+            intrumentName = \markup{
+                \bold \fontsize #5 "3"
+            }
+        } <<
+            \new Staff = "dextertrois" \dextrois
+            \new Staff = "sinistertrois" \sintrois
         >>
     }
 }
