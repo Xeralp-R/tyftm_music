@@ -20,9 +20,9 @@ PDolce = \tweak DynamicText.self-alignment-X #LEFT
 
 PDolceEx = \markup {\whiteout \dynamic p \italic \whiteout \pad-markup #0.3 dolce}
 
-% ****************************** %
-% VARIABLES %
-% ****************************** %
+% ==> ************* <== %
+% ==>   VARIABLES   <== %
+% ==> ************* <== %
 
 % Intro, Right Hand
 
@@ -40,7 +40,7 @@ EDomSevMV = \relative c {
     <e e,>4 <e gis d'>4 <e gis d'>4
 }
 
-AMinSecInvDub = \relative c {
+AMinSecInv = \relative c {
     a4 <e' a c>4 <e a c>4 
 }
 
@@ -82,7 +82,7 @@ EDomSev = \relative c {
     <e e,>4 <e gis b d>4 q4
 }
 
-AMinSecInv = \relative c' {
+AMinSecInvDub = \relative c' {
     <a a,>4 <e a c>4 q4
 }
 
@@ -136,9 +136,9 @@ AMinSevDimVSecInvR = \relative c {
     a4 <f' a b d>4 q4
 }
 
-% ****************************** %
-% VOICES %
-% ****************************** %
+% ==> ********** <== %
+% ==>   VOICES   <== %
+% ==> ********** <== %
 
 % Intro, Left Hand
 
@@ -184,7 +184,7 @@ dexunetwo = \relative c''' {
 % Score 2, Part 1, Right Hand
 
 dexdeuxone = \relative c'' {
-    d4^.\p  r c^. | c4^. r bes^. | bes2.^> | \acciaccatura c8 bes4( a bes) |
+    d4^.\p  r c^. | c4^. r bes^. | bes2.^> | \stemUp \acciaccatura c8 bes4( a bes) \stemNeutral |
     f'4^. r e^. | d4^. r c^. | a2.^> | \acciaccatura bes8 a4( gis a) |
     d4^.  r c^. | \break c4^. r b!^. | e,2. | \acciaccatura f8 e4( dis e) |
     \once \override DynamicTextSpanner.style = #'none 
@@ -201,9 +201,18 @@ dexdeuxtwo = \relative c'' {
     c4^>\mf\< <d d,>^> <e e,>^> | <f f,>4^> <g g,>^> <a a,>^> |
 }
 
-% ****************************** %
-% SUB COMBINATION %
-% ****************************** %
+% Score 3, Part 1, Right Hand
+
+dextroisone = \relative c' {
+    \shape #'((0 . -1.5) (0 . -1) (0 . -1) (0 . -0.7)) Slur
+    e4(\<^\markup{\italic "dolce"} a4. c8 | e2.)\! | c'4( b4. a8 | e2.) | 
+    g4( f4. d8 | b2.) | \break d4( c4. b8 | a2.) | e4(\< a4. c8 | e2.)\! | c'4( b4. a8 | e2.) | 
+    \stemUp \acciaccatura c8 b4(\< ais b) \stemNeutral | \acciaccatura d8 c2( b4)\! |
+}
+
+% ==> ******************* <== %
+% ==>   SUB COMBINATION   <== %
+% ==> ******************* <== %
 
 dexintro = \relative c' {
     \clef treble
@@ -378,7 +387,12 @@ dextrois = {
     \time 3/4
 
     e''8(\ff f'' e'' f'' e''4) | e''8( f'' e'' f'' e''4) |
-    <e' gis' b' e''>4 <e' e''>8 q q4 | q4 r4 e' |
+    <e' gis' b' e''>4 <e' e''>8 q q4 | q4 r4 e'\p |
+    \repeat volta 2 { \dextroisone }
+    \alternative {
+        {a'2.~ \f | a'4 r e'\p}
+        {a'2.~ \f | a'4 \acciaccatura f''8 e''8(\p dis'' e'' f'')}
+    }
 }
 
 sintrois = {
@@ -387,11 +401,19 @@ sintrois = {
     \time 3/4
 
     <gis b d'>2._> | <a c'>2._> | <e gis b>4 r4 r4 | r2. |
+    \repeat volta 2 {
+        \repeat unfold 4 {\AMinSecInv} \AMinSevDimVSecInvR \AMinSevDimVSecInvR
+        \repeat unfold 6 {\AMinSecInv} \EDomSevMV \EDomSevMV
+    }
+    \alternative {
+        {\AMinFinishOctave}
+        {\AMinFinishOctave}
+    }
 }
 
-% ****************************** %
-% COMBINATION %
-% ****************************** %
+% ==> *************** <== %
+% ==>   COMBINATION   <== %
+% ==> *************** <== %
 
 \book{
     \paper{
@@ -444,6 +466,7 @@ sintrois = {
         >>
     }
 }
+%{
 \book{
     \score{
         \new PianoStaff <<
@@ -459,3 +482,4 @@ sintrois = {
     }
     \paper{}
 }
+%}
