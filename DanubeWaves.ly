@@ -10,14 +10,9 @@
 }
 
 %#(set-global-staff-size 20)
-#(set-global-staff-size 17.82)
+%#(set-global-staff-size 17.82)
+#(set-global-staff-size 19)
 
-PDolce = \tweak DynamicText.self-alignment-X #LEFT
-#(make-dynamic-script
-    (
-        markup #:dynamic "p" #:italic "dolce"
-    )
-)
 
 PDolceEx = \markup {\whiteout \dynamic p \italic \whiteout \pad-markup #0.3 dolce}
 
@@ -489,6 +484,20 @@ sintrois = {
     }
 }
 
+dexquatre = {
+    \clef treble
+    \key f \major
+    \time 3/4
+    c''
+}
+
+sinquatre = {
+    \clef bass
+    \key f \major
+    \time 3/4
+    c
+}
+
 % ==> *************** <== %
 % ==>   COMBINATION   <== %
 % ==> *************** <== %
@@ -555,12 +564,28 @@ sintrois = {
             }
         }
         \new PianoStaff \with {
-            intrumentName = \markup{
+            instrumentName = \markup{
                 \bold \fontsize #5 "3"
             }
         } <<
             \new Staff = "dextertrois" \dextrois
             \new Staff = "sinistertrois" \sintrois
+        >>
+    }
+    \score{
+        \layout{
+            \context{
+                \Score
+                \remove "Bar_number_engraver"
+            }
+        }
+        \new PianoStaff \with {
+            instrumentName = \markup{
+                \bold \fontsize #5 "4"
+            }
+        } <<
+            \new Staff = "dexterquatre" \dexquatre
+            \new Staff = "sinisterquatre" \sinquatre
         >>
     }
 }
