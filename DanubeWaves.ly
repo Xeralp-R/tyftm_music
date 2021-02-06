@@ -9,7 +9,8 @@
     right-margin = 0.5\in
 }
 
-#(set-global-staff-size 20)
+%#(set-global-staff-size 20)
+#(set-global-staff-size 17.82)
 
 PDolce = \tweak DynamicText.self-alignment-X #LEFT
 #(make-dynamic-script
@@ -116,14 +117,26 @@ ASecInvOE = \relative c {
     <e e,>4 <e a c>4 q4
 }
 
+EDomSevMV = \relative c {
+    <e e,>4 <e gis d'>4 <e gis d'>4
+}
+
 AMinFinishOctave = \relative c {
     <a a'>4 <c c,>4 <e e,>4 | <a a,>4 r4 r4
 }
 
 % Score 2, Part 2, Left Hand
 
+FRR = \relative c {
+    <f f,>4 <f a c>4 q4
+}
+
 CDomSevIstInvOG = \relative c' {
     <g g,>4 <e g bes c>4 q4
+}
+
+CDomSevIstInvRMV = \relative c {
+    <c c,>4 <e bes' c>4 q4
 }
 
 GMinSecInvOBes = \relative c {
@@ -132,8 +145,38 @@ GMinSecInvOBes = \relative c {
 
 % Score 3, Part 1, Left Hand
 
+AMinSecInv = \relative c {
+    a4 <e' a c>4 <e a c>4 
+}
+
 AMinSevDimVSecInvR = \relative c {
     a4 <f' a b d>4 q4
+}
+
+EDomSevMV = \relative c {
+    <e e,>4 <e gis d'>4 <e gis d'>4
+}
+
+% Score 3, Part 2, Left hand
+
+CSecInvSing = \relative c {
+    c4 <e' c g>4 q4
+}
+
+CSecInvOGDub = \relative c'' {
+    <g g,>4 <g c e>4 q4
+}
+
+GDomSevOD = \relative c {
+    d4 <g b f'>4 q4
+}
+
+GDomSevR = \relative c' {
+    <g g,>4 <g b f'>4 q4
+}
+
+DMinIstInvOF = \relative c {
+    <f f,>4 <f a d>4 q4
 }
 
 % ==> ********** <== %
@@ -208,6 +251,25 @@ dextroisone = \relative c' {
     e4(\<^\markup{\italic "dolce"} a4. c8 | e2.)\! | c'4( b4. a8 | e2.) | 
     g4( f4. d8 | b2.) | \break d4( c4. b8 | a2.) | e4(\< a4. c8 | e2.)\! | c'4( b4. a8 | e2.) | 
     \stemUp \acciaccatura c8 b4(\< ais b) \stemNeutral | \acciaccatura d8 c2( b4)\! |
+}
+
+% Score 3, Part 1, Right Hand
+
+dextroistwo = \relative c'' {
+    \slashedGrace e8^( a^.) r \slashedGrace e8^( g^.) r \slashedGrace c,8^( e^.) r |
+    r4 \acciaccatura f8 e( dis e f) |
+    \slashedGrace f8^( a^.) r \slashedGrace b,8^( g'^.) r \slashedGrace b,8^( f') r |
+    r4 \acciaccatura g8 f( e f g) |
+    \slashedGrace g8^( b^.) r \slashedGrace f8^( a^.) r \slashedGrace d,8^( f^.) r | \break
+    \slashedGrace g8^( b^.) r \slashedGrace f8^( a^.) r \slashedGrace d,8^( f^.) r |
+    \slashedGrace f8^( a^.) r \slashedGrace e8^( g^.) r \slashedGrace c,8^( e^.) r |
+    r4 \acciaccatura f8 e( dis e f) |
+    \slashedGrace e8^( a^.) r \slashedGrace e8^( g^.) r \slashedGrace c,8^( e^.) r |
+    r4 \acciaccatura f8 e( dis e f) |
+    \slashedGrace f8^( b^.) r \slashedGrace a,8^( a'^.) r \slashedGrace a,8^( f'^.) r | \break
+    r4 \acciaccatura b8 a( gis a b) |
+    \slashedGrace b8\<^( d^.) r \slashedGrace a8^( c^.) r \slashedGrace f,8^( a^.) r |
+    g8\f a g f d e |
 }
 
 % ==> ******************* <== %
@@ -392,6 +454,11 @@ dextrois = {
     \alternative {
         {a'2.~ \f | a'4 r e'\p}
         {a'2.~ \f | a'4 \acciaccatura f''8 e''8(\p dis'' e'' f'')}
+    } \pageBreak
+    \repeat volta 2 { \dextroistwo }
+    \alternative {
+        {c''2.~ | c''4 \acciaccatura f''8 e''8(\p dis'' e'' f'')}
+        {c''2.~ | \partial 2 c''4 r4}
     }
 }
 
@@ -408,6 +475,17 @@ sintrois = {
     \alternative {
         {\AMinFinishOctave}
         {\AMinFinishOctave}
+    }
+    \repeat volta 2 {
+        \grace s8 \CSecInvSing \CSecInvOGDub
+        \GDomSevOD \GDomSevR \GDomSevOD \GDomSevR 
+        \repeat unfold 4 {\CSecInvSing} 
+        \repeat unfold 3 {\DMinIstInvOF}
+        <g, b, d f g>2._> |
+    }
+    \alternative {
+        {<c e g c'>4 e g | <c' e'>4 r r}
+        {<c e g c'>4 e g | \partial 2 <c' e'>4 r}
     }
 }
 
@@ -426,14 +504,24 @@ sintrois = {
         tagline = ##f
     }
     \score{
-        \layout{}
+        \layout{
+            \context {
+                \Score
+                \remove "Bar_number_engraver"
+            }
+        }
         \new PianoStaff <<
             \new Staff = "dexterint" \dexintro
             \new Staff = "sinisterint" \sinintro
         >>
     }
     \score{
-        \layout{}
+        \layout{
+            \context {
+                \Score
+                \remove "Bar_number_engraver"
+            }
+        }
         \new PianoStaff \with {
             instrumentName = \markup{
                 \bold \fontsize #5 "1"
@@ -444,7 +532,12 @@ sintrois = {
         >>
     }
     \score{
-        \layout{}
+        \layout{
+            \context {
+                \Score
+                \remove "Bar_number_engraver"
+            }
+        }
         \new PianoStaff \with {
             instrumentName = \markup{
                 \bold \fontsize #5 "2"
@@ -455,7 +548,12 @@ sintrois = {
         >>
     }
     \score{
-        \layout{}
+        \layout{
+            \context {
+                \Score
+                \remove "Bar_number_engraver"
+            }
+        }
         \new PianoStaff \with {
             intrumentName = \markup{
                 \bold \fontsize #5 "3"
