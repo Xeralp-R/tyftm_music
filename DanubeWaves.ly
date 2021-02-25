@@ -3,16 +3,19 @@
 
 \paper{
     #(set-paper-size "letter") 
-    top-margin = 0.5\in
-    bottom-margin = 0.5\in
-    left-margin = 0.5\in
-    right-margin = 0.5\in
+    top-margin = 0.4\in
+    bottom-margin = 0.4\in
+    left-margin = 0.4\in
+    right-margin = 0.4\in
+    page-count = #4
+    %system-system-spacing = #'((basic-distance . 0.1) (padding . 0))
+    %ragged-last-bottom = ##f
+    %ragged-bottom = ##f
 }
 
-%#(set-global-staff-size 20)
-%#(set-global-staff-size 17.82)
-#(set-global-staff-size 19)
-
+%#(set-global-staff-size 18)
+#(set-global-staff-size 17.82)
+%#(set-global-staff-size 17)
 
 PDolceEx = \markup {\whiteout \dynamic p \italic \whiteout \pad-markup #0.3 dolce}
 
@@ -174,6 +177,66 @@ DMinIstInvOF = \relative c {
     <f f,>4 <f a d>4 q4
 }
 
+% Score 4, Part 1, Left hand
+
+FSecInvR = \relative c {
+    <f f,>4 <a f c>4 q4
+}
+
+FSecInvOC = \relative c {
+    <c c,>4 <c f a>4 q4
+}
+
+CDomSevROGMV = \relative c' {
+    <g g,>4 <bes e, c>4 q4
+}
+
+CDomSevRRMV = \relative c {
+    <c c,>4 <c e bes'>4 q4
+}
+
+CDomSevROEMV = \relative c {
+    <e e,>4 <c e bes'>4 q4
+}
+
+FRR = \relative c {
+    <f f,>4 <f a c>4 q4
+}
+
+FROC = \relative c {
+    <c c,>4 <f a c>4 q4
+}
+
+FRRMV = \relative c {
+    <f f,>4 <f a>4 q4
+}
+
+GMinSecInvOBes = \relative c {
+    <bes bes,>4 <d g bes>4 q4
+}
+
+CDomSevRRMT = \relative c {
+    <c c,>4 <c g' bes>4 q4
+}
+
+% Score 4, Part 2, Left hand
+
+CSecInvSing = \relative c {
+    c4 <e' c g>4 q4
+}
+
+GDomSevODMT = \relative c {
+    d4 <g d' f>4 q4
+}
+
+GDomSevR = \relative c' {
+    <g g,>4 <g b f'>4 q4
+}
+
+DMinIstInvOF = \relative c {
+    <f f,>4 <f a d>4 q4
+}
+
 % ==> ********** <== %
 % ==>   VOICES   <== %
 % ==> ********** <== %
@@ -248,7 +311,7 @@ dextroisone = \relative c' {
     \stemUp \acciaccatura c8 b4(\< ais b) \stemNeutral | \acciaccatura d8 c2( b4)\! |
 }
 
-% Score 3, Part 1, Right Hand
+% Score 3, Part 2, Right Hand
 
 dextroistwo = \relative c'' {
     \slashedGrace e8^( a^.) r \slashedGrace e8^( g^.) r \slashedGrace c,8^( e^.) r |
@@ -265,6 +328,28 @@ dextroistwo = \relative c'' {
     r4 \acciaccatura b8 a( gis a b) |
     \slashedGrace b8\<^( d^.) r \slashedGrace a8^( c^.) r \slashedGrace f,8^( a^.) r |
     g8\f a g f d e |
+}
+
+% Score 4, Part 1, Right Hand
+
+dexquatreone = \relative c'' {
+    a2.~( | a4 gis a) | c,2.~( | c4 f g) | 
+    a4(\< gis a) | a4(\! d4. c8\>) | c2.( | bes4\!) r r | \break
+    g2.~( | g4 fis g) | c,2.~( | c4 e f) | 
+    g4(\< fis g\!) | <g e>4( <c e>4.\> <bes d>8) | <a c>2.\! | c4( b! bes) |
+    a2.~( | \break a4 gis a) | c,2.~( | c4 f g) | 
+    a4(\< gis a\!) | <a' f>4(\> <g e>4. <f d>8) | <e c>2.( | <d bes>4)\! r4 r4 |
+    e4(\mf d fis, | g4 bes e) | \break d4( c e, | f a d) |
+    c4(\> bes e) | a2( g4)\! |
+}
+
+% Score 4, Part 2, Right Hand
+
+dexquatretwo = \relative c'' {
+    g4(\f c4. e8) | <g g,>2. | a8^.\p g^. f^. e^. d^. c^. | c4(\trill b8) r8 b8 r8 |
+    g4(\f b4. d8) | <f g,>2. | <b g>8^.\p <a f>^. <g e>^. <f d>^. <e c>^. <d b>^. | 
+    d4(\trill c8) r c r | \pageBreak g4(\f c4. e8) | <g g,>2. | a8^.\p g^. f^. e^. d^. c^. | 
+    b4(\trill a8) r a r | a4(\f\< d4. f8) | <a a,>2. | b8^.\ff a^. g^. f^. e^. d^. |
 }
 
 % ==> ******************* <== %
@@ -488,14 +573,143 @@ dexquatre = {
     \clef treble
     \key f \major
     \time 3/4
-    c''
+    \partial 4 e'4\p
+    \repeat volta 2 {\dexquatreone}
+    \alternative {
+        {
+            <<
+                \new Voice {\voiceOne f'2.~ | f'4}
+                \new Voice {\voiceTwo r4 <a c'> <a c'> | <a c'>4}
+            >>
+            r4 c'
+        }
+        {
+            <<
+                \new Voice {\voiceOne f'2.~ | f'4}
+                \new Voice {\voiceTwo r4 <a c'> <a c'> | <a c'>4}
+            >>
+            r4 g'_\markup{\parenthesize{\musicglyph "rests.2"}} \bar "||"
+            \key c \major \break
+        }
+    }
+    \repeat volta 2 {\dexquatretwo}
+    \alternative {
+        {c''4 r g'}
+        {c''4 r c'\p \bar "||" \key f \major \break}
+    }
 }
 
 sinquatre = {
     \clef bass
     \key f \major
     \time 3/4
-    c
+    \partial 4 r4
+    \repeat volta 2 {
+        \repeat unfold 3 {\FSecInvR \FSecInvOC} \CDomSevROGMV \CDomSevRRMV
+        \repeat unfold 3 {\CDomSevROEMV \CDomSevRRMV} \FSecInvR <c c,>4( <d d,>4 <e e,>4)
+        \FRR \FROC \FRRMV \FROC \FRR \FRR \repeat unfold 4 {\GMinSecInvOBes}
+        \FSecInvOC \FSecInvOC \CDomSevRRMT \CDomSevRRMT
+    }
+    \alternative {
+        {<f f,>4 a, c | <f f,> r4 r4}
+        {<f f,>4 a, c | <f f,> r4_"Fine" r4 \bar "||" \key c \major}
+    }
+    \repeat volta 2 {
+        \repeat unfold 3 {\CSecInvSing} \GDomSevODMT \repeat unfold 3 {\GDomSevR}
+        \repeat unfold 4 {\CSecInvSing} \repeat unfold 3 {\DMinIstInvOF}
+        <g, b, f g>4 r <g, b, f g> |
+    }
+    \alternative {
+        {<c e g c'>4 r4 r4}
+        {<c e g c'>4 r4 r4 \bar "||" \key f \major \break}
+    }
+}
+
+dexcoda = {
+    \clef treble
+    \key c \major
+    \time 3/4
+
+    \relative c'' {
+        \repeat tremolo 12 {<c e>32(\ff a32)} | \repeat tremolo 12 {<c e>32( a32)} |
+        \repeat tremolo 12 {<d f>32( a32)} | \repeat tremolo 12 {<d f>32( a32)} |
+        \repeat tremolo 12 {<b! f'>32( g32)} | \repeat tremolo 12 {<c e>32( g32)} |
+        \repeat tremolo 12 {<e' d>32( g,32)} | \repeat tremolo 12 {<c e>32( a32)} |
+        <e gis b e>4 r4 r4 | <e a c e>4 r4 r4 | \break <e gis b e>4 <e e'>8 <e e'>8 <e e'>4 |
+        <e e'>4 r4\fermata e4\p | \bar "||"
+    }
+
+    \relative c' {
+        \shape #'((0 . -1.5) (0 . -1) (0 . -1) (0 . -0.7)) Slur
+        e4(\< a4. c8 | e2.)\! | c'4( b4. a8 | e2.) | g4( f4. d8 | b2.) | d4( c4. b8 | a2.) | \break 
+        e4(\< a4. c8 | e2.)\! | c'4( b4. a8 | e2.) | 
+        \stemUp \acciaccatura c8 b4(\< ais b) \stemNeutral | \acciaccatura d8 c2( b4) |
+        a2.\f | <b g>8^.\< <c a>^. <d b>^. <e c>^. <f d>^. <g e>^.\!
+    }
+
+    \relative c''' {
+        <a f>8-. r q-. r q-. r | q8-. r q-. r q-. r | \break
+        <a f>4( <g e>4. <fis dis>8 | <g e>2.) |
+        <f d>8-. r q-. r q-. r | q8-. r q-. r q-. r |
+        <f d>4( <e c>4. <dis b>8 | <e c>2.) |
+        <d gis,>8-. r q-. r q-. r |
+        q8-.\< r q-. r q-. r | <d f,>4( <c e,>4. <b d,>8 | \break
+        <a c,>2\f a'4) | f4(\p d b) | \acciaccatura d8 c2( b4) |
+        <<
+        \new Voice = "Unus" { \voiceOne a2.~ | a4 r g\f}
+        \new Voice = "Secundus "{ \voiceTwo r4 <e c> <e c> | <e c> s2}
+        >>
+    }
+
+    \relative c'' {
+        g4(\f c4. e8) | <g g,>2. | a8^.\p g^. f^. e^. d^. c^. | c4(\trill b8) r8 b8 r8 |
+        g4(\f b4. d8) | \break <f g,>2. | <b g>8^.\p <a f>^. <g e>^. <f d>^. <e c>^. <d b>^. | 
+        d4(\trill c8) r c r | g4(\f c4. e8) | <g g,>2. | a8^.\p g^. f^. e^. d^. c^. | 
+        b4(\trill a8) r a r | a4(\f\< d4. f8) | <a a,>2. | \break b8^.\ff a^. g^. f^. e^. d^. |
+    }
+
+    \relative c'' {
+        \repeat tremolo 12 {<e g>32( <c>32)} | \repeat tremolo 12 {<e g>32( <c>32)} |
+        \repeat tremolo 12 {<e g>32( <c>32)} | \repeat tremolo 12 {<e g>32( <c>32)} |
+        \repeat tremolo 12 {<e g>32( <c>32)} | <c e g>4 r4 r4
+        \repeat tremolo 12 {<e g>32( <c>32)} | <c e g>4 r4 r4
+        <c e g c>4 r4 r8 <c c,>8 | <c c,>2.\fermata
+    }
+}
+
+sincoda = {
+    \clef bass
+    \key c \major
+    \time 3/4
+    
+    <a, a>4_> <b b,>_> <c c'>_> | <b b,>2_>( <a a,>4) | 
+    <d d'>4_> <e e'>_> <f f'>_> | <e e'>2_>( <d d'>4) |
+    <f f'>4_> <e e'>_> <d d'>_> | <e e'>4_> <d d'>_> <c c'>_> |
+    <d d'>4_> <c c'>_> <b b,>_> | <c c'>4_> <b b,>_> <a a,>_> |
+    <e e,>4 r4 r4 | <e e,>4 r4 r4 | <e e,>4 r4 r4 | r2.\fermata | \bar "||"
+
+    \repeat unfold 4 {\AMinSecInv} \AMinSevDimVSecInvR \AMinSevDimVSecInvR
+    \repeat unfold 6 {\AMinSecInv} \EDomSevMV \EDomSevMV \AMinFinish r2.
+
+    \GDomSevOB | \GDomSevR | \CIIndInv | \CIIndInv |
+    \GDomSevIIIrdInv | \GDomSevIIIrdInv |
+    \CFirstInv | \CFirstInv | \EDomSevOGis | \EDomSev |
+    \AMinSecInvDub | \AMinSecInvDub |
+    \AMinSevDimVSecInvOD | \EDomSevMV
+
+    \relative c' {
+        <a c>4 <c, c,>4 <e e,>4 | <a a,>4 r4 r4
+    }
+
+    \repeat unfold 3 {\CSecInvSing} \GDomSevODMT \repeat unfold 3 {\GDomSevR}
+    \repeat unfold 4 {\CSecInvSing} \repeat unfold 3 {\DMinIstInvOF}
+    <g, b, f g>4 r <g, b, f g> |
+
+    <c c'>4 <c c'> <g g'> | <e e'>4 <g g'> <e e'> |
+    <c c'>4 <e e'> <c c'> | <g g,>4 <c c'> <g g,> |
+    <e e,>4 <g g,> <e e,> | <c c,>4 r4 r4 |
+    <c c,>4 <e e,> <g g,> | <c c'>4 r4 r4 |
+    <c c'>4 r4 r8 <c c,>8 | <c c,>2.\fermata
 }
 
 % ==> *************** <== %
@@ -519,7 +733,11 @@ sinquatre = {
                 \remove "Bar_number_engraver"
             }
         }
-        \new PianoStaff <<
+        \new PianoStaff \with {
+            instrumentName = \markup{
+                \bold \fontsize #4 "Intro"
+            }
+        }<<
             \new Staff = "dexterint" \dexintro
             \new Staff = "sinisterint" \sinintro
         >>
@@ -586,6 +804,22 @@ sinquatre = {
         } <<
             \new Staff = "dexterquatre" \dexquatre
             \new Staff = "sinisterquatre" \sinquatre
+        >>
+    }
+    \score{
+        \layout{
+            \context{
+                \Score 
+                \remove "Bar_number_engraver"
+            }
+        }
+        \new PianoStaff \with {
+            instrumentName = \markup {
+                \bold \fontsize #4 "Coda"
+            }
+        } <<
+            \new Staff = "dextercoda" \dexcoda
+            \new Staff = "sinistercoda" \sincoda
         >>
     }
 }
