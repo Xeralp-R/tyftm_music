@@ -338,7 +338,10 @@ dexquatreone = \relative c'' {
     g2.~( | g4 fis g) | c,2.~( | c4 e f) | 
     g4(\< fis g\!) | <g e>4( <c e>4.\> <bes d>8) | <a c>2.\! | c4( b! bes) |
     a2.~( | \break a4 gis a) | c,2.~( | c4 f g) | 
-    a4(\< gis a\!) | <a' f>4(\> <g e>4. <f d>8) | <e c>2.( | <d bes>4)\! r4 r4 |
+    a4(\< gis a\!) | <a' f>4(\> <g e>4. <f d>8) | 
+    \set doubleSlurs = ##t
+    <e c>2.( | <d bes>4)\! r4 r4 |
+    \set doubleSlurs = ##f
     e4(\mf d fis, | g4 bes e) | \break d4( c e, | f a d) |
     c4(\> bes e) | a2( g4)\! |
 }
@@ -352,6 +355,17 @@ dexquatretwo = \relative c'' {
     b4(\trill a8) r a r | a4(\f\< d4. f8) | <a a,>2. | b8^.\ff a^. g^. f^. e^. d^. |
 }
 
+% Bottom Rehearsal Marks
+
+dynamequatre = {
+    s4
+    \once \override Score.RehearsalMark.font-size = #-1
+    \mark \markup { \musicglyph #"scripts.segno" }
+    \repeat unfold 51 {s2.}
+    \once \override Score.RehearsalMark.font-size = #-1
+    \mark \markup { \musicglyph #"scripts.segno" }
+}
+
 % ==> ******************* <== %
 % ==>   SUB COMBINATION   <== %
 % ==> ******************* <== %
@@ -360,9 +374,12 @@ dexintro = \relative c' {
     \clef treble
     \key a \minor
     \time 2/4
-    \tempo "Allegro Moderato" 4 = 100
+    \tempo "Allegro Moderato"
 
-    \repeat tremolo 8 {e32\ff ( e'32)}
+    \override Beam.beam-thickness = #0.6
+    \override Beam.length-fraction = #1.1
+    \mark \markup {\bold \fontsize #-2 "   Introduction"}
+    \repeat tremolo 8 {e32 ( e'32)}
     \treme \treme \treme \treme \treme \treme \treme
     \trema \break \trema \trema \trema \trema \trema \trema \trema
     \treme \treme \treme \treme \break \treme \treme \treme \treme
@@ -386,6 +403,9 @@ sinintro = \relative c' {
     \key c \major
     \time 2/4
 
+    \override Beam.beam-thickness = #0.6
+    \override Beam.length-fraction = #1.1
+
     \sinintune \sinintune
     \sininteux \sininteux
     \sinintois
@@ -402,7 +422,10 @@ dexune = \relative c' {
     \clef treble
     \key a \minor
     \time 3/4
-    \tempo "Waltz" 4 = 95
+    \tempo "Waltz"
+
+    \override Beam.beam-thickness = #0.6
+    \override Beam.length-fraction = #1.1
 
     \partial 4 e4_\PDolceEx |
     \repeat volta 2 {
@@ -438,6 +461,9 @@ sinune = \relative c' {
     \key a \minor
     \time 3/4
 
+    \override Beam.beam-thickness = #0.6
+    \override Beam.length-fraction = #1.1
+
     \partial 4 r4 |
     \repeat volta 2 {
         \repeat unfold 4 {\EDomSevMV | }
@@ -447,7 +473,7 @@ sinune = \relative c' {
     }
     \alternative {
         {\AMinFinish | <c a>4 r4 r4}
-        {\AMinFinish | r2.}
+        {\AMinFinish | R1*3/4 }
     }
     \repeat volta 2 {
         \GDomSevOB | \GDomSevR | \CIIndInv | \CIIndInv |
@@ -457,8 +483,8 @@ sinune = \relative c' {
         \AMinSevDimVSecInvOD | \EDomSevMV
     }
     \alternative {
-        {\AMinFinish | r2.}
-        {\AMinFinish | r2.}
+        {\AMinFinish | R1*3/4 }
+        {\AMinFinish | R1*3/4 }
     }
 }
 
@@ -466,6 +492,9 @@ dexdeux = {
     \clef treble
     \key f \major
     \time 3/4
+
+    \override Beam.beam-thickness = #0.6
+    \override Beam.length-fraction = #1.1
 
     \repeat volta 2 {\dexdeuxone}
     \alternative {
@@ -495,6 +524,9 @@ sindeux = {
     \key f \major
     \time 3/4
 
+    \override Beam.beam-thickness = #0.6
+    \override Beam.length-fraction = #1.1
+
     \repeat volta 2 {
         \CDomSevIstInvOEMV \CDomSevIstInvRMV
         \CDomSevIstInvOEMV \CDomSevIstInvRMV
@@ -503,7 +535,7 @@ sindeux = {
         \EDomSevMV \EDomSevMV
     }
     \alternative {
-        {\AMinFinish | r2.}
+        {\AMinFinish | R1*3/4 }
         {\AMinFinishOctave}
     }
     \repeat volta 2 {
@@ -528,6 +560,9 @@ dextrois = {
     \key a \minor
     \time 3/4
 
+    \override Beam.beam-thickness = #0.6
+    \override Beam.length-fraction = #1.1
+
     e''8(\ff f'' e'' f'' e''4) | e''8( f'' e'' f'' e''4) |
     <e' gis' b' e''>4 <e' e''>8 q q4 | q4 r4 e'\p |
     \repeat volta 2 { \dextroisone }
@@ -547,7 +582,10 @@ sintrois = {
     \key a \minor
     \time 3/4
 
-    <gis b d'>2._> | <a c'>2._> | <e gis b>4 r4 r4 | r2. |
+    \override Beam.beam-thickness = #0.6
+    \override Beam.length-fraction = #1.1
+
+    <gis b d'>2._> | <a c'>2._> | <e gis b>4 r4 r4 | R1*3/4 |
     \repeat volta 2 {
         \repeat unfold 4 {\AMinSecInv} \AMinSevDimVSecInvR \AMinSevDimVSecInvR
         \repeat unfold 6 {\AMinSecInv} \EDomSevMV \EDomSevMV
@@ -573,6 +611,10 @@ dexquatre = {
     \clef treble
     \key f \major
     \time 3/4
+
+    \override Beam.beam-thickness = #0.6
+    \override Beam.length-fraction = #1.1
+
     \partial 4 e'4\p
     \repeat volta 2 {\dexquatreone}
     \alternative {
@@ -603,6 +645,10 @@ sinquatre = {
     \clef bass
     \key f \major
     \time 3/4
+
+    \override Beam.beam-thickness = #0.6
+    \override Beam.length-fraction = #1.1
+
     \partial 4 r4
     \repeat volta 2 {
         \repeat unfold 3 {\FSecInvR \FSecInvOC} \CDomSevROGMV \CDomSevRRMV
@@ -612,7 +658,12 @@ sinquatre = {
     }
     \alternative {
         {<f f,>4 a, c | <f f,> r4 r4}
-        {<f f,>4 a, c | <f f,> r4_"Fine" r4 \bar "||" \key c \major}
+        {
+            <f f,>4 a, c | <f f,> r4
+            -\tweak self-alignment-X #0
+            _\markup{ \sans \bold \fontsize #-1 "Fine" }
+            r4 \bar "||" \key c \major
+        }
     }
     \repeat volta 2 {
         \repeat unfold 3 {\CSecInvSing} \GDomSevODMT \repeat unfold 3 {\GDomSevR}
@@ -621,7 +672,12 @@ sinquatre = {
     }
     \alternative {
         {<c e g c'>4 r4 r4}
-        {<c e g c'>4 r4 r4 \bar "||" \key f \major \break}
+        {
+            <c e g c'>4 
+            -\tweak self-alignment-X #0
+            _\markup{ \sans \bold \fontsize #-1 "D.S. al Fine" }
+            r4 r4 \bar "||" \key f \major \break
+        }
     }
 }
 
@@ -630,11 +686,16 @@ dexcoda = {
     \key c \major
     \time 3/4
 
+    \override Beam.beam-thickness = #0.6
+    \override Beam.length-fraction = #1.1
+
     \relative c'' {
-        \repeat tremolo 12 {<c e>32(\ff a32)} | \repeat tremolo 12 {<c e>32( a32)} |
+        \mark \markup {\bold \fontsize #0 "   Coda"}
+        \repeat tremolo 12 {<c e>32(\ff a32)} | 
+        \repeat tremolo 12 {<c e>32( a32)} |
         \repeat tremolo 12 {<d f>32( a32)} | \repeat tremolo 12 {<d f>32( a32)} |
         \repeat tremolo 12 {<b! f'>32( g32)} | \repeat tremolo 12 {<c e>32( g32)} |
-        \repeat tremolo 12 {<e' d>32( g,32)} | \repeat tremolo 12 {<c e>32( a32)} |
+        \repeat tremolo 12 {<e' d>32( gis,32)} | \repeat tremolo 12 {<c e>32( a32)} |
         <e gis b e>4 r4 r4 | <e a c e>4 r4 r4 | \break <e gis b e>4 <e e'>8 <e e'>8 <e e'>4 |
         <e e'>4 r4\fermata e4\p | \bar "||"
     }
@@ -648,13 +709,13 @@ dexcoda = {
     }
 
     \relative c''' {
-        <a f>8-. r q-. r q-. r | q8-. r q-. r q-. r | \break
+        <a f>8-.\p r q-. r q-. r | q8-. r q-. r q-. r | \break
         <a f>4( <g e>4. <fis dis>8 | <g e>2.) |
         <f d>8-. r q-. r q-. r | q8-. r q-. r q-. r |
         <f d>4( <e c>4. <dis b>8 | <e c>2.) |
         <d gis,>8-. r q-. r q-. r |
         q8-.\< r q-. r q-. r | <d f,>4( <c e,>4. <b d,>8 | \break
-        <a c,>2\f a'4) | f4(\p d b) | \acciaccatura d8 c2( b4) |
+        <a c,>2\f <a' a>4) | f4( d b) | \acciaccatura d8 c2( b4) |
         <<
         \new Voice = "Unus" { \voiceOne a2.~ | a4 r g\f}
         \new Voice = "Secundus "{ \voiceTwo r4 <e c> <e c> | <e c> s2}
@@ -662,7 +723,7 @@ dexcoda = {
     }
 
     \relative c'' {
-        g4(\f c4. e8) | <g g,>2. | a8^.\p g^. f^. e^. d^. c^. | c4(\trill b8) r8 b8 r8 |
+        g4( c4. e8) | <g g,>2. | a8^.\p g^. f^. e^. d^. c^. | c4(\trill b8) r8 b8 r8 |
         g4(\f b4. d8) | \break <f g,>2. | <b g>8^.\p <a f>^. <g e>^. <f d>^. <e c>^. <d b>^. | 
         d4(\trill c8) r c r | g4(\f c4. e8) | <g g,>2. | a8^.\p g^. f^. e^. d^. c^. | 
         b4(\trill a8) r a r | a4(\f\< d4. f8) | <a a,>2. | \break b8^.\ff a^. g^. f^. e^. d^. |
@@ -673,7 +734,7 @@ dexcoda = {
         \repeat tremolo 12 {<e g>32( <c>32)} | \repeat tremolo 12 {<e g>32( <c>32)} |
         \repeat tremolo 12 {<e g>32( <c>32)} | <c e g>4 r4 r4
         \repeat tremolo 12 {<e g>32( <c>32)} | <c e g>4 r4 r4
-        <c e g c>4 r4 r8 <c c,>8 | <c c,>2.\fermata
+        <c e g c>4 r4 r8 <c c,>8 | <c c,>2.\fermata \bar "|."
     }
 }
 
@@ -681,15 +742,20 @@ sincoda = {
     \clef bass
     \key c \major
     \time 3/4
-    
+
+    \override Beam.beam-thickness = #0.6
+    \override Beam.length-fraction = #1.1
+
+    \set doubleSlurs = ##t
     <a, a>4_> <b b,>_> <c c'>_> | <b b,>2_>( <a a,>4) | 
     <d d'>4_> <e e'>_> <f f'>_> | <e e'>2_>( <d d'>4) |
     <f f'>4_> <e e'>_> <d d'>_> | <e e'>4_> <d d'>_> <c c'>_> |
     <d d'>4_> <c c'>_> <b b,>_> | <c c'>4_> <b b,>_> <a a,>_> |
-    <e e,>4 r4 r4 | <e e,>4 r4 r4 | <e e,>4 r4 r4 | r2.\fermata | \bar "||"
+    <e e,>4 r4 r4 | <e e,>4 r4 r4 | <e e,>4 r4 r4 | R1*3/4 \fermata | \bar "||"
+    \set doubleSlurs = ##f
 
     \repeat unfold 4 {\AMinSecInv} \AMinSevDimVSecInvR \AMinSevDimVSecInvR
-    \repeat unfold 6 {\AMinSecInv} \EDomSevMV \EDomSevMV \AMinFinish r2.
+    \repeat unfold 6 {\AMinSecInv} \EDomSevMV \EDomSevMV \AMinFinish R1*3/4
 
     \GDomSevOB | \GDomSevR | \CIIndInv | \CIIndInv |
     \GDomSevIIIrdInv | \GDomSevIIIrdInv |
@@ -733,11 +799,12 @@ sincoda = {
                 \remove "Bar_number_engraver"
             }
         }
-        \new PianoStaff \with {
-            instrumentName = \markup{
-                \bold \fontsize #4 "Intro"
-            }
-        }<<
+        \new PianoStaff %\with {
+            %instrumentName = \markup{
+                %\bold \fontsize #4 "Intro"
+            %}
+        %}
+        <<
             \new Staff = "dexterint" \dexintro
             \new Staff = "sinisterint" \sinintro
         >>
@@ -794,7 +861,11 @@ sincoda = {
         \layout{
             \context{
                 \Score
-                \remove "Bar_number_engraver"
+                    \remove "Bar_number_engraver"
+            }
+            \context{
+                \Dynamics
+                    \consists "Mark_engraver"
             }
         }
         \new PianoStaff \with {
@@ -804,6 +875,7 @@ sincoda = {
         } <<
             \new Staff = "dexterquatre" \dexquatre
             \new Staff = "sinisterquatre" \sinquatre
+            \new Dynamics \dynamequatre
         >>
     }
     \score{
@@ -813,25 +885,43 @@ sincoda = {
                 \remove "Bar_number_engraver"
             }
         }
-        \new PianoStaff \with {
-            instrumentName = \markup {
-                \bold \fontsize #4 "Coda"
-            }
-        } <<
+        \new PianoStaff %\with {
+            %instrumentName = \markup {
+                %\bold \fontsize #4 "Coda"
+            %}
+        %} 
+        <<
             \new Staff = "dextercoda" \dexcoda
             \new Staff = "sinistercoda" \sincoda
         >>
     }
 }
+
 %{
 \book{
     \score{
         \new PianoStaff <<
              \new Staff = "rightmuse" {
-                \articulate{\dexintro} \unfoldRepeats{\dexune \dexdeux}
+                \articulate{
+                    \dexintro
+                } 
+                \unfoldRepeats{
+                    \dexune \dexdeux \dextrois \dexquatre
+                }
+                \articulate{
+                    \dexcoda
+                }
             }
             \new Staff = "leftmues" {
-                \articulate{\sinintro} \unfoldRepeats{\sinune \sindeux}
+                \articulate{
+                    \sinintro
+                } 
+                \unfoldRepeats{
+                    \sinune \sindeux \sintrois \sinquatre
+                }
+                \articulate {
+                    \sincoda
+                }
             }
         >>
         \midi{}
