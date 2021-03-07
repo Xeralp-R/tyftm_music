@@ -118,7 +118,7 @@ PartPOneVoiceOne =  \relative bes' {
         <<
             \new Voice = "VoiceOne17" { \voiceOne
                 <g bes>8 -. r8 r4  <fis a>2 | % 16
-                <es g>2  <d g>4  <c d fis>8 -. [  d8 ] | % 17
+                <es g>2  <d g>4  <c d fis>8 -. [  d8 ] \ff | % 17
             }
             \new Voice = "VoiceTwo17" { \voiceTwo
                 r4 d2  es4 | % 16
@@ -252,7 +252,7 @@ PartPOneVoiceOne =  \relative bes' {
         <f f'>8 [  <f f'>8 ]  <ges ges'>4 | % 72
         <f f'>8 [  <f f'>8 ]  <es es'>4 
         <des des'>8 [  <des des'>8 ]  <c c'>4 _\> | % 73
-        <des f bes>2  <ces es as>2 _\! \bar "||" \key bes \major 
+        <des f bes>2  <ces es as>2 _\! \bar "||" \key bes \major \pageBreak
         <bes d g>8 -. _\ff r2  a16 [ bes16 ]  c16 [  d16  e16 fis16 ] | % 75
         <d g>8 -. [  bes8 -. ]  <fis fis'>4 <d' g>8 -. [  bes8 -. ]  <a a'>4 | % 76
         <bes d g>8 -. r2  es16 [  d16 ] c16 [  d16  e16  fis16 ] | % 77
@@ -290,245 +290,205 @@ PartPOneVoiceFive =  \relative g, {
 
     \clef "bass" 
     \numericTimeSignature \time 4/4 
-    \key bes \major | % 1
+    \key bes \major
 
-     <g d' g>4 -> ^\ff  <g c g'>8 -. r8 r4  <g c
-        g'>4 -> | % 2
-     <g d' g>8 -. r8 r4  <g d' g>4 ->  <g c g'>4 ->
-    | % 3
-     d2.*1/2 :16  d'2.*1/2 :16  d16 [  c16
-     bes16  a16 ] \repeat volta 2 {
-        | % 4
-         <g d' g>8 -. [  g8 -.  g8 -.  <g,
-            g'>8 -. ]  g'8 -. [  g8 -.  <g, g'>8 -.
-         g'8 -. ] | % 5
-         <g, g'>8 -. [  g'8 -.  g8 -.  <g,
-            g'>8 -. ]  g'8 -. [  g8 -.  <g, g'>8 -.
-         g'8 -. ] | % 6
-         <g, g'>8 -. [  g'8 -.  g8 -.  <g,
-            g'>8 -. ]  g'8 -. [  g8 -.  <g, g'>8 -.
-         g'8 -. ] | % 7
-         g,16 -> [  es'16  g16  es16 ]
-         g16 [  es16  g,16 ->  es'16 ]
-         g16 [  es16  g16 ^\<  es16 ]
-         g,16 -> [  es'16  g16  es16 ] | % 8
-         <g, g'>8 -. [ ^\! ^\f  g'8 -.  g8 -.
-         <g, g'>8 -. ]  g'8 -. [  g8 -.  <g,
-            g'>8 -.  g'8 -. ] | % 9
-         <g, g'>8 -. [  g'8 -.  g8 -.  <g,
-            g'>8 -. ]  g'8 -. [  g8 -.  <g, g'>8 -.
-         g'8 -. ] | \barNumberCheck #10
-         <a, a'>8 -. [  <c c'>8 -.  <es es'>8 -.
-         <fis fis'>8 -. ]  <c c'>8 -. [  <es es'>8
-        -.  <fis fis'>8 -.  <a a'>8 -. ] | % 11
-         <es es'>8 -. [  <fis fis'>8 -. 
-        <a a'>8 -.  <c c'>8 -. ]  <fis, fis'>8 -. [
-         <a a'>8 -.  <c c'>8 -.  <es es'>8 -.
-        ] | % 12
-        \clef "treble" R1 | % 13
-         <c'' es a>8 ^\! r8 ^\>  <a, c fis>8 r8 \clef
-        "bass"  <g, bes d>8 r8  <g, g'>8 -. r8 ^\! ^\ff | % 14
-        r8  <d'' g bes>8 -. [  <d g bes>8 -. ] r8 r8
-         <c d fis a>8 -. [  <c d fis a>8 -. ] r8 | % 15
-        r8  <c es g>8 -. [  <c es g>8 -. ] r8 r8
-         <a c d fis>8 -. [  <a c d fis>8 -. ] r8 | % 16
-         g16 [  d'16 ^\>  bes'16  d,16
-        ]  g,16 [ ^\!  d'16  g16  d16
-        ]  g,16 [  fis'16  c'16 
-        fis,16 ]  g,16 [  fis'16  a16
-         fis16 ] | % 17
-         g,16 [  es'16  bes'16  es,16
-        ]  g,16 [  es'16  c'16  es,16
-        ]  g,8 -. [  <es' fis a>8 -.  <es fis
-            a>8 -. ] r8 ^\ff | % 18
-        r8  <d g bes>8 -. [  <d g bes>8 -. ] r8 r8
-         <c d fis a>8 -. [  <c d fis a>8 -. ] r8 | % 19
-        r8  <c es g>8 -. [  <c es g>8 -. ] r8 r8
-         <a c d fis>8 -. [  <a c d fis>8 -. ] r8 |
+    <g d' g>4 -> ^\ff  <g c g'>8 -. r8 r4  <g c g'>4 -> | % 1
+    <g d' g>8 -. r8 r4  <g d' g>4 ->  <g c g'>4 -> | % 2
+    \repeat tremolo 6 {d16  d'16}  d16 [ c16 bes16  a16 ] | % 3
+    \repeat volta 2 {
+        <g d' g>8 -.-> [  g8 -.  g8 -.  <g, g'>8 -.-> ]  
+        g'8 -. [  g8 -.  <g, g'>8 -.-> g'8 -. ] | % 4
+        <g, g'>8 -.-> [  g'8 -.  g8 -.  <g, g'>8 -.-> ]  
+        g'8 -. [  g8 -.  <g, g'>8 -.-> g'8 -. ] | % 5
+        <g, g'>8 -.-> [  g'8 -.  g8 -.  <g, g'>8 -.-> ]  
+        g'8 -. [  g8 -.  <g, g'>8 -.-> g'8 -. ] | % 6
+        g,16 -> [  es'16  g16  es16 ] g16 [  es16  g,16 ->  es'16 ]
+        g16 [  es16  g16 ^\<  es16 ] g,16 -> [  es'16  g16  es16 ] | % 7
+        <g, g'>8 -.-> [ ^\! ^\f  g'8 -.  g8 -. <g, g'>8 -.-> ]  
+        g'8 -. [  g8 -.  <g, g'>8 -.->  g'8 -. ] | % 8
+        <g, g'>8 -. [  g'8 -.  g8 -.  <g, g'>8 -. ]  
+        g'8 -. [  g8 -.  <g, g'>8 -. g'8 -. ] | % 9
+        
+        \barNumberCheck #10
+        <a, a'>8 -. [  <c c'>8 -.  <es es'>8 -. <fis fis'>8 -. ]  
+        <c c'>8 -. [  <es es'>8 -.  <fis fis'>8 -.  <a a'>8 -. ] | % 10
+        <es es'>8 -. [  <fis fis'>8 -. <a a'>8 -.  <c c'>8 -. ]  
+        <fis, fis'>8 -. [ <a a'>8 -.  <c c'>8 -.  <es es'>8 -. ] | % 11
+        r1 | % 12
+        \clef "treble" <c'' es a>8 ^\! r8 ^\>  <a, c fis>8 r8 
+        \clef "bass"  <g, bes d>8 r8  <g, g'>8 -. r8 ^\! ^\ff | % 13
+        r8 <d'' g bes>8 -. [  <d g bes>8 -. ] r8 
+        r8 <c d fis a>8 -. [  <c d fis a>8 -. ] r8 | % 14
+        r8 <c es g>8 -. [  <c es g>8 -. ] r8 
+        r8 <a c d fis>8 -. [  <a c d fis>8 -. ] r8 | % 15
+        g16 [  d'16 ^\>  bes'16  d,16 ]  g,16 [ ^\!  d'16  g16  d16 ]  
+        g,16 [  fis'16  c'16 fis,16 ] g,16 [  fis'16  a16 fis16 ] | % 16
+        g,16 [  es'16  bes'16  es,16 ]  g,16 [  es'16  c'16  es,16 ]  
+        g,8 -. [  <es' fis a>8 -.  <es fis a>8 -. ] r8 | % 17
+        r8  <d g bes>8 -. [  <d g bes>8 -. ] r8 
+        r8 <c d fis a>8 -. [  <c d fis a>8 -. ] r8 | % 18
+        r8  <c es g>8 -. [  <c es g>8 -. ] r8 
+        r8 <a c d fis>8 -. [  <a c d fis>8 -. ] r8 | % 19
+
         \barNumberCheck #20
-         g16 [  d'16 ^\>  bes'16  d,16
-        ]  g,16 [  d'16  g16  d16 ]
-         g,16 [  fis'16  c'16  fis,16
-        ] ^\!  g,16 [  fis'16  a16 
-        fis16 ] | % 21
-         g,16 [  es'16  cis'16  es,16
-        ]  g,16 [  es'16  cis'16 
-        es,16 ]  d8 -. [  <a' c d>8 -.  <a c
-            d>8 -. ] r8 | % 22
-        r16  g16 [  bes16  d16 ]  g8
-        -. r8 r16  fis,16 [  c'16  fis16 ]
-         a8 -. r8 | % 23
-        r16  es,16 [  g16  c16 ]  es8
-        -. r8 r8  <a,, c d fis>8 -. [  <a c d fis>8 -. ] r8
-        | % 24
-         g16 [  d'16  bes'16  d,16 ]
-         g,16 [  d'16  g16  d16 ]
-         g,16 [  fis'16  c'16  fis,16
-        ]  g,16 [  fis'16  a16  fis16
-        ] | % 25
-         g,16 [  es'16  bes'16  es,16
-        ]  g,16 [  es'16  c'16  es,16
-        ]  g,8 -. [  <es' fis a>8 -.  <es fis
-            a>8 -. ] r8 | % 26
-        r16  g16 [  bes16  d16 ]  g8
-        -. r8 r16  fis,16 [  c'16  fis16 ]
-         a8 -. r8 | % 27
-        r16  es,16 [  g16  c16 ]  es8
-        -. r8 r8  <a,, c d fis>8 -. [  <a c d fis>8 -. ] r8
-        | % 28
-         g16 [  d'16 ^\>  bes'16  d,16
-        ]  g,16 [  d'16  g16  d16 ]
-         g,16 [  fis'16 ^\!  c'16 
-        fis,16 ]  g,16 [  fis'16  a16
-         fis16 ] | % 29
-         g,16 [ ^\<  d'16  bes'16 
-        d,16 ]  g,16 [  fis'16  c'16
-         fis,16 ]  <d d'>8 -. [ ^\!  <c c'>8
-        -.  <bes bes'>8 -.  <a a'>8 -. ] |
+        g16 [  d'16 ^\>  bes'16  d,16 ]  g,16 [  d'16  g16  d16 ]
+        g,16 [  fis'16  c'16  fis,16 ] ^\!  g,16 [  fis'16  a16 fis16 ] | % 20
+        g,16 [  es'16  cis'16  es,16 ]  g,16 [  es'16  cis'16 es,16 ]  
+        d8 -. [  <a' c d>8 -.  <a c d>8 -. ] r8 | % 21
+        r16  g16 [  bes16  d16 ]  g8 -. r8 
+        r16  fis,16 [  c'16  fis16 ] a8 -. r8 | % 22
+        r16  es,16 [  g16  c16 ]  es8 -. r8 
+        r8  <a,, c d fis>8 -. [  <a c d fis>8 -. ] r8 | % 23
+        g16 [  d'16  bes'16  d,16 ] g,16 [  d'16  g16  d16 ]
+        g,16 [  fis'16  c'16  fis,16 ]  g,16 [  fis'16  a16  fis16 ] | % 24
+        g,16 [  es'16  bes'16  es,16 ]  g,16 [  es'16  c'16  es,16 ]  
+        g,8 -. [  <es' fis a>8 -.  <es fis a>8 -. ] r8 | % 25
+        r16  g16 [  bes16  d16 ]  g8 -. r8 
+        r16  fis,16 [  c'16  fis16 ] a8 -. r8 | % 26
+        r16  es,16 [  g16  c16 ]  es8 -. r8 
+        r8  <a,, c d fis>8 -. [  <a c d fis>8 -. ] r8 | % 27
+        g16 [  d'16 ^\>  bes'16  d,16 ]  g,16 [  d'16  g16  d16 ]
+        g,16 [  fis'16 ^\!  c'16 fis,16 ]  g,16 [  fis'16  a16 fis16 ] | % 28
+        g,16 [ ^\<  d'16  bes'16 d,16 ]  g,16 [  fis'16  c'16 fis,16 ]  
+        <d d'>8 -. [ ^\!  <c c'>8 -.  <bes bes'>8 -.  <a a'>8 -. ] | % 29
+
         \barNumberCheck #30
-         <g g'>8 -. r8 r4 r2 | % 31
-        r8  <g, d' g a g'>8 -. r8  <g d' g a g'>8 -.
-         <g d' g a g'>8 -. r8 r4 | % 32
-        r2 r8  <d' d'>8 -. [  <c c'>8 -.  <bes
-            bes'>8 -. ] | % 33
-         <bes bes'>8 -. r8 r4 r2 | % 34
-        r8  <bes f' bes c bes'>8 -. r8  <bes f' bes c
-            bes'>8 -.  <bes f' bes c bes'>8 -. r8 r4 | % 35
-        r2 r8  <c c'>8 -. [  <bes bes'>8 -.  <a a'>8
-        -. ] | % 36
-         g16 -> [  d'16  g16  d16 ] 
-        g16 [  d16  g,16 ->  d'16 ]  g16 [
-         d16  g16  d16 ]  g,16 -> [ 
-        d'16  g16  d16 ] | % 37
-        r8  <g, d' g a g'>8 -. r8  <g d' g a g'>8 -.
-         <g d' g a g'>8 -. [  g'16  d16 ] 
-        g,16 -> [  d'16  g16  d16 ] | % 38
-         g,16 -> [  d'16  g16  d16 ] 
-        g16 [  d16  g,16 ->  d'16 ]  g8 [
-         <d d'>8 -.  <c c'>8 -.  <bes bes'>8 -. ] | % 39
-         bes16 -> [  f'16  bes16  f16 ]
-         bes16 [  f16  bes,16 ->  f'16 ]
-         bes16 [  f16  bes16  f16 ] 
-        bes,16 -> [  f'16  bes16  f16 ] |
+        <g g'>8 -. r8 r4 r2 | % 30
+        r8  <g, d' g a g'>8 -. r8  <g d' g a g'>8 -. <g d' g a g'>8 -. r8 r4 | % 31
+        r2 r8  <d' d'>8 -. [  <c c'>8 -.  <bes bes'>8 -. ] | % 32
+        <bes bes'>8 -. r8 r4 r2 | % 33
+        r8  <bes f' bes c bes'>8 -. r8  <bes f' bes c bes'>8 -.  
+        <bes f' bes c bes'>8 -. r8 r4 | % 34
+        r2 r8  <c c'>8 -. [  <bes bes'>8 -.  <a a'>8-. ] | % 35
+        g16 -> [  d'16  g16  d16 ] g16 [  d16  g,16 ->  d'16 ]  
+        g16 [ d16  g16  d16 ]  g,16 -> [ d'16  g16  d16 ] | % 36
+        r8  <g, d' g a g'>8 -. r8  <g d' g a g'>8 -. 
+        <g d' g a g'>8 -. [  g'16  d16 ] g,16 -> [  d'16  g16  d16 ] | % 37
+        g,16 -> [  d'16  g16  d16 ] g16 [  d16  g,16 ->  d'16 ]  
+        g8 [ <d d'>8 -.  <c c'>8 -.  <bes bes'>8 -. ] | % 38
+        bes16 -> [  f'16  bes16  f16 ] bes16 [  f16  bes,16 ->  f'16 ]
+        bes16 [  f16  bes16  f16 ] bes,16 -> [  f'16  bes16  f16 ] | % 39
+
         \barNumberCheck #40
-        r8  <bes, f' bes c bes'>8 -. r8  <bes f' bes c
-            bes'>8 -.  <bes f' bes c bes'>8 -. [  bes'16
-         f16 ]  bes,16 -> [  f'16  bes16
-         f16 ] | % 41
-         bes,16 -> [  f'16  bes16  f16 ]
-         bes16 [  f16  bes,16 ->  f'16 ]
-         bes8 [  <c c'>8 -.  <des des'>8 -.
-         <es es'>8 -. ] | % 42
-        \clef "treble" r16  bes''16 [  g16  d16 ] r16
-         bes'16 [  g16  d16 ] r16  a'16 [
-         fis16  d16 ] r16  a'16 [  fis16
-         d16 ] | % 43
-        r16  g16 [  d16  bes16 ] r16  g'16 [
-         d16  bes16 ] r16  a'16 [  fis16
-         d16 ] r16  a'16 [  fis16  d16 ] | % 44
-        r16  bes'16 [  g16  d16 ] r16  bes'16
-        [  g16  d16 ] r16  a'16 [  fis16
-         d16 ] r16  a'16 [  fis16  d16 ] | % 45
-        r16  g16 [  d16  bes16 ] r16  g'16 [
-         d16  bes16 ] r16  a'16 [  fis16
-         d16 ]  c16 [  a16  fis16  d16
-        ] | % 46
-        \clef "bass"  <g, g'>4.  a'8  g8 \prall
-        [  fis8  g8  a8 ] | % 47
-         <bes, bes'>4.  c'8  bes8 \prall [
-         a8  bes8  c8 ] | % 48
-         <g bes d>2 ~ ~ ~  <g bes d>8. [  f'8.
-         es8 ] | % 49
-         <f, bes d>2  <f bes>2 | \barNumberCheck #50
-         <es g c>2 ~ ~ ~  <es g c>8. [  g8.
-         c8 ] | % 51
-         <g a d>2  <fis a d>2 | % 52
-        <g bes>1 | % 53
-        <fis a>1 | % 54
-        <g bes>1 | % 55
-        <gis b>1 | % 56
-         <g c es>2.  g,4 | % 57
-        <g' bes cis e>1 | % 58
-        <d a'>1 | % 59
-         <d a'>4  d,4 \times 2/3 {
-             <d' fis>4  <e g>4  <fis a>4 }
-        \bar "||"
-        \key des \major  <f bes des>4 _\mf  <f bes
-            des>4  <f bes des>4  <f bes des>4 | % 61
-         <f a c es>4  <f a c es>4  <f a c es>4
-         <f a c es>4 | % 62
-         <f bes des>4  <f bes des>4  <f bes
-            des>4  <f bes des>4 | % 63
-         <f bes d>4  <f bes d>4  <f b d>4
-         <f b d>4 | % 64
-         <ges bes es>4  <ges bes es>4  <ges
-            bes es>4  <ges bes es>4 | % 65
-         <g bes des e>4  <g bes des e>4  <g
-            bes des e>4  <g bes des e>4 | % 66
-         <f c'>4  <f c'>4  <f c'>4 
-        <f c'>4 | % 67
-         <f c'>4  <f c'>4  <f c'>4 
-        <f c'>4 | % 68
-         <bes, bes'>8 -. [  bes'8 -.  bes8 -.
-         bes8 -. ]  bes8 -. [  bes8 -.
-         bes8 -.  bes8 -. ] | % 69
-         bes8 -. [  bes8 -.  bes8 -.
-         bes8 -. ]  bes8 -. [  bes8 -.
-         bes8 -.  bes8 -. ] | \barNumberCheck #70
-         <bes, bes'>8 -. [  bes'8 -.  bes8 -.
-         bes8 -. ]  bes8 -. [  bes8 -.
-         bes8 -.  bes8 -. ] | % 71
-         bes8 -. [  bes8 -.  bes8 -.
-         bes8 -. ]  bes8 -. [  bes8 -.
-         bes8 -.  bes8 -. ] | % 72
-         <bes, bes'>4 ->  <c c'>4 ->  <des des'>4
-        ->  <c c'>4 -> | % 73
-         <des des'>4 ->  <es es'>4 ->  <e e'>4 ->
-         <f f'>4 -> | % 74
-         <bes, bes'>2  <as as'>2 \bar "||"
-        \key bes \major  <g g'>8 -. [  g'8 -.  g8
-        -.  g8 -. ]  g8 -. [  g8 -.  g8
-        -.  g8 -. ] | % 76
-         g8 -. [  g8 -.  g8 -.  g8
-        -. ]  g8 -. [  g8 -.  g8 -. 
-        g8 -. ] | % 77
-         <g, g'>8 -. [  g'8 -.  g8 -.  g8 -.
-        ]  g8 -. [  g8 -.  g8 -.  g8
-        -. ] | % 78
-         g8 -. [  g8 -.  g8 -.  g8
-        -. ]  g8 -. [  g8 -.  g8 -. 
-        g8 -. ] | % 79
-         <g, g'>4 ->  <a a'>4 ->  <bes bes'>4 ->
-         <a a'>4 -> | \barNumberCheck #80
-         <bes bes'>4 ->  <c c'>4 ->  <cis cis'>4 ->
-         <d d'>4 -> }
-    \alternative { {
-            | % 81
-             <g, g'>2  <gis gis'>2 }
+        r8  <bes, f' bes c bes'>8 -. r8  <bes f' bes c bes'>8 -.  
+        <bes f' bes c bes'>8 -. [  bes'16 f16 ]  bes,16 -> [  f'16  bes16 f16 ] | % 40
+        bes,16 -> [  f'16  bes16  f16 ] bes16 [  f16  bes,16 ->  f'16 ]
+        bes8 [  <c c'>8 -.  <des des'>8 -. <es es'>8 -. ] | % 41
+        \clef "treble" 
+        r16  bes''16 [  g16  d16 ] r16 bes'16 [  g16  d16 ] r16  
+        a'16 [ fis16  d16 ] r16  a'16 [  fis16 d16 ] | % 42
+        r16  g16 [  d16  bes16 ] r16  g'16 [ d16  bes16 ] r16  
+        a'16 [  fis16 d16 ] r16  a'16 [  fis16  d16 ] | % 43
+        r16  bes'16 [  g16  d16 ] r16  bes'16 [  g16  d16 ] 
+        r16  a'16 [  fis16 d16 ] r16  a'16 [  fis16  d16 ] | % 44
+        r16  g16 [  d16  bes16 ] r16  g'16 [ d16  bes16 ] 
+        r16  a'16 [  fis16 d16 ]  c16 [  a16  fis16  d16 ] | % 45
+        \clef "bass"  
+        <<
+            \new Voice = "VoiceOne46Sin" { \voiceOne \stemNeutral
+                <g, g'>4.  a'8  g8 \prall [  fis8  g8  a8 ] | % 46
+                <bes, bes'>4.  c'8  bes8 \prall [ a8  bes8  c8 ] | % 47
+            }
+            \new Voice = "VoiceTwo46Sin" { \voiceTwo
+                s8  d,8 -. [  d8 -. ] s8 s2 | % 46
+                s8 f8 -. [  f8 -. ] b8 s2 | % 47
+            }
+        >>
+        <g' bes d>2 ~ ~ ~  <g bes d>8. [  f'8. es8 ] | % 48
+        <<
+            \new Voice = "VoiceOne49Sin" { \voiceOne
+                <f, bes d>2  <f bes>2 | % 49
+            }
+            \new Voice = "VoiceTwo49Sin" { \voiceTwo
+                s4 <bes,, f' bes>4 s4  <bes f' bes>4 | % 49
+            }
+        >>
+         
+        \barNumberCheck #50
+        <es g c>2 ~ ~ ~  <es g c>8. [ g8. c8 ] | % 50
+        <<
+            \new Voice = "VoiceOne51Sin" { \voiceOne
+                <g a d>2  <fis a d>2 | % 51
+            }
+            \new Voice = "VoiceTwo51Sin" { \voiceTwo
+                r4  <d, d'>4 r4  <d d'>4 | % 51
+            }
+        >>
+        <g bes>1 | % 52
+        <fis a>1 | % 53
+        <g bes>1 | % 54
+        <gis b>1 | % 55
+        <g c es>2.  g,4 | % 56
+        <g' bes cis e>1 | % 57
+        <d a'>1 | % 58
+        <d a'>4  d,4 \times 2/3 { <d' fis>4  <e g>4  <fis a>4 } \bar "||" \key des \major  
+
+        \barNumberCheck #60
+        <f bes des>4 _\mf  <f bes des>4  <f bes des>4  <f bes des>4 | % 60
+        <f a c es>4  <f a c es>4  <f a c es>4 <f a c es>4 | % 61
+        <f bes des>4  <f bes des>4  <f bes des>4  <f bes des>4 | % 62
+        <f bes d>4  <f bes d>4  <f b d>4 <f b d>4 | % 63
+        <ges bes es>4  <ges bes es>4  <ges bes es>4  <ges bes es>4 | % 64
+        <g bes des e>4  <g bes des e>4  <g bes des e>4  <g bes des e>4 | % 65
+        <f c'>4  <f c'>4  <f c'>4 <f c'>4 | % 66
+        <f c'>4  <f c'>4  <f c'>4  <f c'>4 | % 67
+        <bes, bes'>8 -. [  bes'8 -.  bes8 -. bes8 -. ]  
+        bes8 -. [  bes8 -. bes8 -.  bes8 -. ] | % 68
+        bes8 -. [  bes8 -.  bes8 -. bes8 -. ]  
+        bes8 -. [  bes8 -. bes8 -.  bes8 -. ] | % 69
+        
+        \barNumberCheck #70
+        <bes, bes'>8 -. [  bes'8 -.  bes8 -. bes8 -. ]  
+        bes8 -. [  bes8 -. bes8 -.  bes8 -. ] | % 70
+        bes8 -. [  bes8 -.  bes8 -. bes8 -. ]  
+        bes8 -. [  bes8 -. bes8 -.  bes8 -. ] | % 71
+        <bes, bes'>4 ->  <c c'>4 ->  <des des'>4 ->  <c c'>4 -> | % 72
+        <des des'>4 ->  <es es'>4 ->  <e e'>4 -> <f f'>4 -> | % 73
+        <bes, bes'>2  <as as'>2 \bar "||" \key bes \major  
+        <g g'>8 -. [  g'8 -.  g8 -.  g8 -. ]  
+        g8 -. [  g8 -.  g8 -.  g8 -. ] | % 75
+        g8 -. [  g8 -.  g8 -.  g8 -. ]  
+        g8 -. [  g8 -.  g8 -. g8 -. ] | % 76
+        <g, g'>8 -. [  g'8 -.  g8 -.  g8 -. ]  
+        g8 -. [  g8 -.  g8 -.  g8 -. ] | % 77
+        g8 -. [  g8 -.  g8 -.  g8 -. ]  
+        g8 -. [  g8 -.  g8 -. g8 -. ] | % 78
+        <g, g'>4 ->  <a a'>4 ->  <bes bes'>4 -> <a a'>4 -> | % 79
+         
+        \barNumberCheck #80
+        <bes bes'>4 ->  <c c'>4 ->  <cis cis'>4 -> <d d'>4 -> | % 80
+    }
+    \alternative { 
         {
-            | % 82
-             <g g'>2  <gis gis'>2 }
-        } | % 83
-    <g, g'>1 ~ ~ ^\mp | % 84
-    <g g'>1 | % 85
-    <g g'>1 ~ ~ | % 86
-    <g g'>1 | % 87
-    <g g'>1 ~ ~ | % 88
-    <g g'>1 | % 89
-    <g g'>1 ~ ~ | \barNumberCheck #90
-    <g g'>1 | % 91
+            <g, g'>2  <gis gis'>2 | % 81
+        }
+        {
+            <g g'>2  <gis gis'>2 | % 82
+        }
+    }
+    <g, g'>1 ~ ~ ^\mp | % 83
+    <g g'>1 | % 84
+    <g g'>1 ~ ~ | % 85
+    <g g'>1 | % 86
+    <g g'>1 ~ ~ | % 87
+    <g g'>1 | % 88
+    <g g'>1 ~ ~ | 
+    
+    \barNumberCheck #90
+    <g g'>1 | % 90
     <g g'>1 ^\fermata \bar "|."
     }
 
 PartPOneVoiceSix =  \relative d {
     \clef "bass" \numericTimeSignature\time 4/4 \key bes \major s1*3
     \repeat volta 2 {
-        s1*8 | % 12
-        \clef "treble" s1. \clef "bass" s2*57 | % 42
-        \clef "treble" s1*4 | % 46
-        \clef "bass" s8  d8 -. [  d8 -. ] s2.
-         f8 -. [  f8 -. ] s8*15  <bes,, f'
-            bes>4 s4  <bes f' bes>4 s1 | % 51
+        %s1*8 | % 12
+        %\clef "treble" s1. \clef "bass" s2*57 | % 42
+        %\clef "treble" s1*4 | % 46
+        %\clef "bass" s8  d8 -. [  d8 -. ] s8 s2 s8
+        %f8 -. [  f8 -. ] 
+        %s8*13
+        %s4 <bes,, f' bes>4 s4  <bes f' bes>4 s1 | % 51
         r4  <d, d'>4 r4  <d d'>4 s1*8 \bar "||"
         \key des \major s16*193  f''16 [  des16
          f16 ] s16  ges16 [  es16 
