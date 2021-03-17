@@ -39,35 +39,6 @@
     }
 }
 
-PartPOneVoiceTwo =  \relative d'' {
-    \clef "treble" \numericTimeSignature\time 4/4 \key bes \major s4*11
-     d16 [ _\>  c16  bes16  a16 ]
-    \repeat volta 2 {
-        %d,2  es4 s4  a2 s2*5  
-        %bes2 
-        %c4 s4  cis4 _\< s4*11  d,2  es4 s4
-        %a2 s4*9 | % 28
-        %g'16 [  d16  bes16  d16 ]
-        %bes'16 [  d,16  bes16  d16
-        %]  c'16 [  d,16  bes16  d16
-        %]  bes'16 [  d,16  bes16  d16
-        %] | % 29
-        %a'16 [  d,16  bes16  d16 ]
-        % bes'16 [  es,16  c16  es16
-        %] s8*133  <bes, d>8 -. [  <bes d>8 -. ] s2.
-        %<cis f>8 -. [  <cis f>8 -. ] s8*101 \bar "||"
-        %\key des \major s8*24 s8 <bes'' d>8 [  <f bes>8
-        %<bes d>8 ] s8  <b d>8 [  <ges b>8
-         <b d>8 ] s8*28 s8 <f, c'>8 [ _\<  <a
-            f'>8  <c a'>8\! ] s1*7 \bar "||"
-        \key bes \major s1*6 }
-    \alternative { {
-            s1 }
-        {
-            s1 }
-        } s1*9 \bar "|."
-    }
-
 PartPOneVoiceOne =  \relative bes' {
     \override Beam.beam-thickness = #0.5
     \override Staff.Beam.length-fraction = #0.95
@@ -86,7 +57,7 @@ PartPOneVoiceOne =  \relative bes' {
             \once \stemDown <g d' g>2 ^> <fis c' fis>2 ^> | %#3
         }
         \new Voice = "VoiceTwo4" { \voiceTwo 
-            s2 s4 d'16[\> c16 bes16 a16\!] | %#3
+            s2 s4 d'16[\> c16 bes 16 a16\!] | %#3
         }
     >>
     \repeat volta 2 {
