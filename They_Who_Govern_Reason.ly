@@ -7,7 +7,8 @@
     title =  "They Who Govern Reason"
     composer =  \markup \column {
         \line { "Composer: Yasunori Nishiki"}
-        \line { ""} }
+        \line { ""} 
+    }
     
     encodingsoftware =  "MuseScore 3.6.2"
     encodingdate =  "2021-03-05"
@@ -54,10 +55,10 @@ PartPOneVoiceTwo =  \relative d'' {
         %a'16 [  d,16  bes16  d16 ]
         % bes'16 [  es,16  c16  es16
         %] s8*133  <bes, d>8 -. [  <bes d>8 -. ] s2.
-         <cis f>8 -. [  <cis f>8 -. ] s8*101 \bar "||"
-        \key des \major s8*25  <bes'' d>8 [  <f bes>8
-         <bes d>8 ] s8  <b d>8 [  <ges b>8
-         <b d>8 ] s8*29  <f, c'>8 [ _\<  <a
+        %<cis f>8 -. [  <cis f>8 -. ] s8*101 \bar "||"
+        %\key des \major s8*24 s8 <bes'' d>8 [  <f bes>8
+        %<bes d>8 ] s8  <b d>8 [  <ges b>8
+         <b d>8 ] s8*28 s8 <f, c'>8 [ _\<  <a
             f'>8  <c a'>8\! ] s1*7 \bar "||"
         \key bes \major s1*6 }
     \alternative { {
@@ -90,7 +91,7 @@ PartPOneVoiceOne =  \relative bes' {
     >>
     \repeat volta 2 {
         <bes, d g>8_._>^\mf r8 <bes d>8_. r8 <d f>8_. r8 <c es>8_.[ <bes d>8_.] | % 4
-        r8 <bes d>8_.[ <g bes>8_.] r8 <a c>8_. r8 <bes d>8_.[ <c es>8_. ] | \break % 5
+        r8 <bes d>8_.[ <g bes>8_.] r8 <a c>8_. r8 <bes d>8_.[ <c es>8_. ] | % 5
         r4 <bes d>8-. r8 <d f>8-. r8  <c es>8-. r8 | % 6
         <<
             \new Voice = "VoiceOne8" { \voiceOne
@@ -101,24 +102,24 @@ PartPOneVoiceOne =  \relative bes' {
             }
         >>
         <g, d' g>8-. r8  <bes d>8-. r8  <d f>8-. r8  <c es>8-.[  <bes d>8-.] | % 8
-        r8  <bes d>8 -. [  <g bes>8 -. ] r8 <a c>8 -. r8  <bes d>8 -. r8 | \break %9
+        r8  <bes d>8 -. [  <g bes>8 -. ] r8 <a c>8 -. r8  <bes d>8 -. r8 | %9
 
         \barNumberCheck #10 
         es16 -> [  c16  a16  c16 ] es16 [  c16  a16  c16 ] 
         fis16 -> [  es16  c16  es16 ]  fis16 [  es16  c16  es16 ] | % 10
         a16 -> [ \<  fis16  c16  fis16 ]  a16 [  fis16  c16  fis16 ]  
         c'16 -> [  a16  fis16  a16 ]  c16 [  a16  fis16  a16 ] | % 11
-        \repeat tremolo 8 {<g es'>16 _\ff <es c'>16} | \break % 12
+        \repeat tremolo 8 {<g es'>16 _\ff <es c'>16} | % 12
         es'16 [  c16  a16  fis16 ] es16 [  c16  a16  fis16 ]
         es16 [  d16  bes16  a16 ]  g16 r16 d'8 | % 13
         \slashedGrace {  d8 [  g8 ] }  bes8 -.-> r4 d,8 
         \slashedGrace {  c8 [  fis8 ] } a8 -.-> r4  d,8 | % 14
         \slashedGrace {  c8 [  es8 ] }  g4. -> a8 
-        g8 \prall [  <d fis>8  <e g>8 <fis a>8 ] | \break % 15
+        g8 \prall [  <d fis>8  <e g>8 <fis a>8 ] | % 15
         <<
             \new Voice = "VoiceOne17" { \voiceOne
-                <g bes>8 -. r8 r4  <fis a>2 | % 16
-                <es g>2  <d g>4  <c d fis>8 -. [  d8 ] \ff | % 17
+                <g bes>8 ^.^> r8 r4  <fis a>2 | % 16
+                <es g>2  <d g>4  <c d fis>8 _. [  d8 ] \ff | % 17
             }
             \new Voice = "VoiceTwo17" { \voiceTwo
                 r4 d2  es4 | % 16
@@ -145,7 +146,7 @@ PartPOneVoiceOne =  \relative bes' {
         <bes g'>4. ->  a'8  g8 \prall [ <a, fis'>8  <bes g'>8  <c a'>8 ] | % 23
         <<
             \new Voice = "VoiceOne24" { \voiceOne
-                <d g bes>8 _. _\> r8 r4 _\!  <fis, a>2 | % 24
+                <d g bes>8 ^.^> _\> r8 r4 _\!  <fis, a>2 | % 24
                 <es g>2  <d g>4  <c d fis>8 _. [ d'8 ] _\ff | % 25
             }
             \new Voice = "VoiceOne24" {\voiceTwo
@@ -169,7 +170,7 @@ PartPOneVoiceOne =  \relative bes' {
                 bes'16 [  es,16  c16  es16 ]
             }
         >>
-        <a, c a'>8 -.-> [ _\ff <g bes g'>8 -.->  
+        <a, c a'>8 -.-> [ <g bes g'>8 -.->  
         <a c a'>8 -.->  <bes d bes'>8 -.-> ] | % 29
 
         \barNumberCheck #30 % Part 2
@@ -180,7 +181,7 @@ PartPOneVoiceOne =  \relative bes' {
         <bes g'>8 -. [  <a fis'>8-.  <bes g'>8 -.  <c a'>8 -. ] | % 32
         <des bes'>8 -. [  <des bes'>8 -.  <des bes'>8 -.  <es c'>8 -. ]  
         <des bes'>8 -. [ <des bes'>8 -.  <c a'>8 -.  <des bes'>8 -. ] | % 33
-        <des bes'>8 -. r2  <des bes'>8 -. [  <des bes'>8 -.  <es c'>8 -. ] | \break % 34
+        <des bes'>8 -. r2  <des bes'>8 -. [  <des bes'>8 -.  <es c'>8 -. ] |% 34
         <des bes'>8 -. [  <des bes'>8 -.  <c a'>8 -.  <des bes'>8 -. ]  
         <des bes'>8 -. [  <c a'>8 -.  <des bes'>8 -.  <es c'>8 -. ] | % 35
         r8 _\ff  <bes' g'>8 -. [  <bes g'>8 -. <c a'>8 -. ]  
@@ -196,7 +197,7 @@ PartPOneVoiceOne =  \relative bes' {
         <des bes'>8 -. [  <des bes'>8 -.  <c a'>8 -.  <des bes'>8 -. ]  
         <des bes'>8 -. [  <a a'>8 -.  <bes bes'>8 -.  <c c'>8 -. ] | % 41
         <g' a bes d>8 -. _\f r8  <d g a bes>8 -. 
-        r8 <d fis a c>8 -. r8  <c d fis a>8 -. r8 | \break % 42
+        r8 <d fis a c>8 -. r8  <c d fis a>8 -. r8 | % 42
         <d g a bes>8 -. r8  <a bes d g>8 -. r8 
         <c d fis a>8 -. r8  <a c d fis>8 -. r8 | % 43
         <g' a bes d>8 -. r8  <d g a bes>8 -. r8 
@@ -209,8 +210,8 @@ PartPOneVoiceOne =  \relative bes' {
                 bes4.  c8  bes8 \prall [  a8 bes8  c8 ] | % 47
             }
             \new Voice = "VoiceTwo46" { \voiceTwo
-                s8 <bes, d>8 -. [  <bes d>8 -. ] s8 s2 | % 46
-                s8 <cis f>8 -. [  <cis f>8 -. ] s8 s2 | % 47
+                s8 <bes, d>8 ^. [  <bes d>8 ^. ] s8 s2 | % 46
+                s8 <cis f>8 ^. [  <cis f>8 ^. ] s8 s2 | % 47
             }
         >>
         r16 ^\mf  a16 [  bes16  d16 ] g16 [  a16  bes16  d16 ]
@@ -224,35 +225,50 @@ PartPOneVoiceOne =  \relative bes' {
         r16  g,16 [  a16  d16 ]  d16 [  g16  a16  d16 ]  
         d16 [ a16  fis16  d16 ]  d16 [ a16  fis16  d16 ] | % 51
         d2 _\mf  bes'2 | % 52
-        <es, a>4  g4  <c, fis>4  a'4 | \pageBreak % 53
+        <es, a>4  g4  <c, fis>4  a'4 | % 53
         <d, g>2  g4  bes4 | % 54
         <f d'>2  es'2 | % 55
         d4.  c8  c2 | % 56
         bes4  a8  g4  a8  bes4 | % 57
         <d, e a>2 \times 2/3 { g4  a4  g4 } | % 58
-        <d fis>2  d2 \bar "||" \key des \major \break
+        <d fis>2  d2 \bar "||" \key des \major
 
         \barNumberCheck #60
         f4 _\f  des''16 [  c16 bes16  c16 ]  <des, des'>2 | % 60
         <ges, c>4  bes4  a4  c4 | % 61
         bes4  a16 [  bes16  des16 f16 ]  <bes, bes'>4  <des des'>4 | % 62
-        <f f'>2  <ges ges'>2 | % 63
+        <<
+            \new Voice = "VoiceOne63" {\voiceOne
+                <f f'>2  <ges ges'>2 | % 63
+            }
+            \new Voice = "VoiceTwo63" {\voiceTwo
+                s8 <bes d>8 [  <f bes>8 <bes d>8 ] 
+                s8  <b d>8 [  <ges b>8 <b d>8 ]
+            }
+        >>
         <f bes f'>4.  <es es'>8  <es es'>2 | % 64
         <des g des'>4  <c c'>8  <bes bes'>4 <c c'>8  <des des'>4 | % 65
         <c f g c>2 \times 2/3 { <bes bes'>4  <c c'>4  <bes bes'>4 } | % 66
-        <a c a'>2  <f c' f>2 | % 67
-        <des' f bes>8 -. _\! _\ff r2  c16 [ des16 ]  es16 [  f16  g16  a16 ] | % 68
+        <<
+            \new Voice = "VoiceOne67" {\voiceOne
+                <a c a'>2  <f c' f>2 | % 67
+            }
+            \new Voice = "VoiceTwo67" {\voiceTwo
+                s2 s8 <f c'>8 [ _\<  <a f'>8  <c a'>8\! ]
+            }
+        >>
+        <des f bes>8 -. _\! _\ff r2  c16 [ des16 ]  es16 [  f16  g16  a16 ] | % 68
         <f bes>8 -. [  des8 -. ]  <a a'>4 <f' bes>8 -. [  des8 -. ]  <c c'>4 | % 69
 
         \barNumberCheck #70
         <des f bes>8 -. r2  ges16 [  f16 ] es16 [  f16  g16  a16 ] | % 70
         <des, bes'>8 -. [  es8 -.  <c a'>8 -.  es8 -. ]  
-        bes'8 -. [  c8 -. des8 -.  es8 -. ] | \break % 71
+        bes'8 -. [  c8 -. des8 -.  es8 -. ] | % 71
         <f, f'>8 [  <f f'>8 ]  <es es'>4 
         <f f'>8 [  <f f'>8 ]  <ges ges'>4 | % 72
         <f f'>8 [  <f f'>8 ]  <es es'>4 
         <des des'>8 [  <des des'>8 ]  <c c'>4 _\> | % 73
-        <des f bes>2  <ces es as>2 _\! \bar "||" \key bes \major \pageBreak
+        <des f bes>2  <ces es as>2 _\! \bar "||" \key bes \major
         <bes d g>8 -. _\ff r2  a16 [ bes16 ]  c16 [  d16  e16 fis16 ] | % 75
         <d g>8 -. [  bes8 -. ]  <fis fis'>4 <d' g>8 -. [  bes8 -. ]  <a a'>4 | % 76
         <bes d g>8 -. r2  es16 [  d16 ] c16 [  d16  e16  fis16 ] | % 77
@@ -306,8 +322,8 @@ PartPOneVoiceFive =  \relative g, {
         g16 [  es16  g16 ^\<  es16 ] g,16 -> [  es'16  g16  es16 ] | % 7
         <g, g'>8 -.-> [ ^\! ^\f  g'8 -.  g8 -. <g, g'>8 -.-> ]  
         g'8 -. [  g8 -.  <g, g'>8 -.->  g'8 -. ] | % 8
-        <g, g'>8 -. [  g'8 -.  g8 -.  <g, g'>8 -. ]  
-        g'8 -. [  g8 -.  <g, g'>8 -. g'8 -. ] | % 9
+        <g, g'>8 -.-> [  g'8 -.  g8 -.  <g, g'>8 -.-> ]  
+        g'8 -. [  g8 -.  <g, g'>8 -.-> g'8 -. ] | % 9
         
         \barNumberCheck #10
         <a, a'>8 -. [  <c c'>8 -.  <es es'>8 -. <fis fis'>8 -. ]  
@@ -350,28 +366,28 @@ PartPOneVoiceFive =  \relative g, {
         g16 [  d'16 ^\>  bes'16  d,16 ]  g,16 [  d'16  g16  d16 ]
         g,16 [  fis'16 ^\!  c'16 fis,16 ]  g,16 [  fis'16  a16 fis16 ] | % 28
         g,16 [ ^\<  d'16  bes'16 d,16 ]  g,16 [  fis'16  c'16 fis,16 ]  
-        <d d'>8 -. [ ^\!  <c c'>8 -.  <bes bes'>8 -.  <a a'>8 -. ] | % 29
+        <d d'>8 -. [ ^\ff  <c c'>8 -.  <bes bes'>8 -.  <a a'>8 -. ] | % 29
 
         \barNumberCheck #30
-        <g g'>8 -. r8 r4 r2 | % 30
-        r8  <g, d' g a g'>8 -. r8  <g d' g a g'>8 -. <g d' g a g'>8 -. r8 r4 | % 31
-        r2 r8  <d' d'>8 -. [  <c c'>8 -.  <bes bes'>8 -. ] | % 32
-        <bes bes'>8 -. r8 r4 r2 | % 33
-        r8  <bes f' bes c bes'>8 -. r8  <bes f' bes c bes'>8 -.  
-        <bes f' bes c bes'>8 -. r8 r4 | % 34
-        r2 r8  <c c'>8 -. [  <bes bes'>8 -.  <a a'>8-. ] | % 35
+        <g g'>8 _._> r8 r4 r2 | % 30
+        r8  <g, d' g a g'>8 -.-> r8  <g d' g a g'>8 -.-> <g d' g a g'>8 -.-> r8 r4 | % 31
+        r2 r8  <d' d'>8 -.-> [  <c c'>8 -.->  <bes bes'>8 -.-> ] | % 32
+        <bes bes'>8 -.-> r8 r4 r2 | % 33
+        r8  <bes f' bes c bes'>8 -.-> r8  <bes f' bes c bes'>8 -.->  
+        <bes f' bes c bes'>8 -.-> r8 r4 | % 34
+        r2 r8  <c c'>8 -.-> [  <bes bes'>8 -.->  <a a'>8-.-> ] | % 35
         g16 -> [  d'16  g16  d16 ] g16 [  d16  g,16 ->  d'16 ]  
         g16 [ d16  g16  d16 ]  g,16 -> [ d'16  g16  d16 ] | % 36
-        r8  <g, d' g a g'>8 -. r8  <g d' g a g'>8 -. 
-        <g d' g a g'>8 -. [  g'16  d16 ] g,16 -> [  d'16  g16  d16 ] | % 37
+        r8  <g, d' g a g'>8 -.-> r8  <g d' g a g'>8 -.-> 
+        <g d' g a g'>8 -.-> [  g'16  d16 ] g,16 -> [  d'16  g16  d16 ] | % 37
         g,16 -> [  d'16  g16  d16 ] g16 [  d16  g,16 ->  d'16 ]  
         g8 [ <d d'>8 -.  <c c'>8 -.  <bes bes'>8 -. ] | % 38
         bes16 -> [  f'16  bes16  f16 ] bes16 [  f16  bes,16 ->  f'16 ]
         bes16 [  f16  bes16  f16 ] bes,16 -> [  f'16  bes16  f16 ] | % 39
 
         \barNumberCheck #40
-        r8  <bes, f' bes c bes'>8 -. r8  <bes f' bes c bes'>8 -.  
-        <bes f' bes c bes'>8 -. [  bes'16 f16 ]  bes,16 -> [  f'16  bes16 f16 ] | % 40
+        r8  <bes, f' bes c bes'>8 -.-> r8  <bes f' bes c bes'>8 -.->  
+        <bes f' bes c bes'>8 -.-> [  bes'16 f16 ]  bes,16 -> [  f'16  bes16 f16 ] | % 40
         bes,16 -> [  f'16  bes16  f16 ] bes16 [  f16  bes,16 ->  f'16 ]
         bes8 [  <c c'>8 -.  <des des'>8 -. <es es'>8 -. ] | % 41
         \clef "treble" 
@@ -387,25 +403,25 @@ PartPOneVoiceFive =  \relative g, {
         <<
             \new Voice = "VoiceOne46Sin" { \voiceOne \stemNeutral
                 <g, g'>4.  a'8  g8 \prall [  fis8  g8  a8 ] | % 46
-                <bes, bes'>4.  c'8  bes8 \prall [ a8  bes8  c8 ] | % 47
+                <bes bes,>4.  c8  bes8 \prall [ a8  bes8  c8 ] | % 47
             }
             \new Voice = "VoiceTwo46Sin" { \voiceTwo
-                s8  d,8 -. [  d8 -. ] s8 s2 | % 46
-                s8 f8 -. [  f8 -. ] b8 s2 | % 47
+                s8  d,8 ^. [  d8 ^. ] s8 s2 | % 46
+                s8 f8 ^. [  f8 ^. ] s8 s2 | % 47
             }
         >>
-        <g' bes d>2 ~ ~ ~  <g bes d>8. [  f'8. es8 ] | % 48
+        <g bes d>2 ~ ~ ~  <g bes d>8. [  f'8. es8 ] | % 48
         <<
             \new Voice = "VoiceOne49Sin" { \voiceOne
                 <f, bes d>2  <f bes>2 | % 49
             }
             \new Voice = "VoiceTwo49Sin" { \voiceTwo
-                s4 <bes,, f' bes>4 s4  <bes f' bes>4 | % 49
+                r4 <bes,, f' bes>4 r4  <bes f' bes>4 | % 49
             }
         >>
          
         \barNumberCheck #50
-        <es g c>2 ~ ~ ~  <es g c>8. [ g8. c8 ] | % 50
+        <es' g c>2 ~ ~ ~  <es g c>8. [ g8. c8 ] | % 50
         <<
             \new Voice = "VoiceOne51Sin" { \voiceOne
                 <g a d>2  <fis a d>2 | % 51
@@ -414,14 +430,14 @@ PartPOneVoiceFive =  \relative g, {
                 r4  <d, d'>4 r4  <d d'>4 | % 51
             }
         >>
-        <g bes>1 | % 52
+        <g' bes>1 | % 52
         <fis a>1 | % 53
         <g bes>1 | % 54
         <gis b>1 | % 55
         <g c es>2.  g,4 | % 56
         <g' bes cis e>1 | % 57
         <d a'>1 | % 58
-        <d a'>4  d,4 \times 2/3 { <d' fis>4  <e g>4  <fis a>4 } \bar "||" \key des \major  
+        <d a'>4  d,4 \times 2/3 { <d' fis>4  <e g>4  <fis a>4 } \bar "||" \key des \major  \break
 
         \barNumberCheck #60
         <f bes des>4 _\mf  <f bes des>4  <f bes des>4  <f bes des>4 | % 60
@@ -432,31 +448,51 @@ PartPOneVoiceFive =  \relative g, {
         <g bes des e>4  <g bes des e>4  <g bes des e>4  <g bes des e>4 | % 65
         <f c'>4  <f c'>4  <f c'>4 <f c'>4 | % 66
         <f c'>4  <f c'>4  <f c'>4  <f c'>4 | % 67
-        <bes, bes'>8 -. [  bes'8 -.  bes8 -. bes8 -. ]  
+        <bes, bes'>8 -.-> [  bes'8 -.  bes8 -. bes8 -. ]  
         bes8 -. [  bes8 -. bes8 -.  bes8 -. ] | % 68
         bes8 -. [  bes8 -.  bes8 -. bes8 -. ]  
         bes8 -. [  bes8 -. bes8 -.  bes8 -. ] | % 69
         
         \barNumberCheck #70
-        <bes, bes'>8 -. [  bes'8 -.  bes8 -. bes8 -. ]  
+        <bes, bes'>8 -.-> [  bes'8 -.  bes8 -. bes8 -. ]  
         bes8 -. [  bes8 -. bes8 -.  bes8 -. ] | % 70
         bes8 -. [  bes8 -.  bes8 -. bes8 -. ]  
         bes8 -. [  bes8 -. bes8 -.  bes8 -. ] | % 71
-        <bes, bes'>4 ->  <c c'>4 ->  <des des'>4 ->  <c c'>4 -> | % 72
-        <des des'>4 ->  <es es'>4 ->  <e e'>4 -> <f f'>4 -> | % 73
-        <bes, bes'>2  <as as'>2 \bar "||" \key bes \major  
-        <g g'>8 -. [  g'8 -.  g8 -.  g8 -. ]  
+        <<
+            \new Voice = "VoiceOne72Sin" { \voiceOne
+                <bes, bes'>4 ->  <c c'>4 ->  <des des'>4 ->  <c c'>4 -> | % 72
+                <des des'>4 ->  <es es'>4 ->  <e e'>4 -> <f f'>4 -> | % 73
+            }
+            \new Voice = "VoiceTwo72Sin" { \voiceTwo
+                s16 f16 [  des16 f16 ] s16  ges16 [  es16 ges16 ] 
+                s16  bes16 [  f16  bes16 ] s16  ges16 [  es16  ges16 ] | % 72
+                s16 bes16 [  f16  bes16 ] s16 c16 [  a16  c16 ] 
+                s16  c16 [ g16  c16 ] s16  c16 [  a16 c16 ] | % 73
+            }
+        >>
+        <bes, bes'>2  <as as'>2 \bar "||" \key bes \major \break
+        <g g'>8 -.-> [  g'8 -.  g8 -.  g8 -. ]  
         g8 -. [  g8 -.  g8 -.  g8 -. ] | % 75
         g8 -. [  g8 -.  g8 -.  g8 -. ]  
         g8 -. [  g8 -.  g8 -. g8 -. ] | % 76
-        <g, g'>8 -. [  g'8 -.  g8 -.  g8 -. ]  
+        <g, g'>8 -.-> [  g'8 -.  g8 -.  g8 -. ]  
         g8 -. [  g8 -.  g8 -.  g8 -. ] | % 77
         g8 -. [  g8 -.  g8 -.  g8 -. ]  
         g8 -. [  g8 -.  g8 -. g8 -. ] | % 78
-        <g, g'>4 ->  <a a'>4 ->  <bes bes'>4 -> <a a'>4 -> | % 79
-         
-        \barNumberCheck #80
-        <bes bes'>4 ->  <c c'>4 ->  <cis cis'>4 -> <d d'>4 -> | % 80
+        <<
+            \new Voice = "VoiceOne79Sin" { \voiceOne
+                <g, g'>4 ->  <a a'>4 ->  <bes bes'>4 -> <a a'>4 -> | % 79
+                \barNumberCheck #80
+                <bes bes'>4 ->  <c c'>4 ->  <cis cis'>4 -> <d d'>4 -> | % 80
+            }
+            \new Voice = "VoiceTwo79Sin" { \voiceTwo
+                s16 d16 [  bes16 d16 ] s16  es16 [  c16  es16 ] 
+                s16  g16 [  d16  g16 ] s16 es16 [  c16  es16 ] | % 79
+                \barNumberCheck #80
+                s16  g16 [  d16  g16 ] s16  a16 [  fis16  a16 ] 
+                s16  a16 [  e16 a16 ] s16  a16 [  fis16  a16 ] | % 80
+            }
+        >>
     }
     \alternative { 
         {
@@ -477,51 +513,16 @@ PartPOneVoiceFive =  \relative g, {
     \barNumberCheck #90
     <g g'>1 | % 90
     <g g'>1 ^\fermata \bar "|."
-    }
-
-PartPOneVoiceSix =  \relative d {
-    \clef "bass" \numericTimeSignature\time 4/4 \key bes \major s1*3
-    \repeat volta 2 {
-        %s1*8 | % 12
-        %\clef "treble" s1. \clef "bass" s2*57 | % 42
-        %\clef "treble" s1*4 | % 46
-        %\clef "bass" s8  d8 -. [  d8 -. ] s8 s2 s8
-        %f8 -. [  f8 -. ] 
-        %s8*13
-        %s4 <bes,, f' bes>4 s4  <bes f' bes>4 s1 | % 51
-        r4  <d, d'>4 r4  <d d'>4 s1*8 \bar "||"
-        \key des \major s16*193  f''16 [  des16
-         f16 ] s16  ges16 [  es16 
-        ges16 ] s16  bes16 [  f16  bes16 ]
-        s16  ges16 [  es16  ges16 ] s16
-         bes16 [  f16  bes16 ] s16 
-        c16 [  a16  c16 ] s16  c16 [
-         g16  c16 ] s16  c16 [  a16
-         c16 ] s1 \bar "||"
-        \key bes \major s16*65  d,16 [  bes16
-         d16 ] s16  es16 [  c16  es16
-        ] s16  g16 [  d16  g16 ] s16
-         es16 [  c16  es16 ] s16  g16
-        [  d16  g16 ] s16  a16 [ 
-        fis16  a16 ] s16  a16 [  e16
-         a16 ] s16  a16 [  fis16  a16
-        ] }
-    \alternative { {
-            s1 }
-        {
-            s1 }
-        } s1*9 \bar "|."
-    }
-
+}
 
 % The score definition
 \score {
     <<
         
-        \new PianoStaff
+        \new PianoStaff 
         <<
-            %\set PianoStaff.instrumentName = "Piano"
-            %\set PianoStaff.shortInstrumentName = "Pno."
+            \accidentalStyle PianoStaff.teaching
+            \override PianoStaff.AccidentalCautionary.parenthesized = ##f
             \context Staff = "1" << 
                 \mergeDifferentlyDottedOn\mergeDifferentlyHeadedOn
                 \PartPOneVoiceOne
@@ -535,6 +536,6 @@ PartPOneVoiceSix =  \relative d {
     >>
     \layout {}
     % To create MIDI output, uncomment the following line:
-    %  \midi {\tempo 4 = 160 }
+      \midi {\tempo 4 = 160 }
     }
 
