@@ -61,40 +61,40 @@ PartPOneVoiceOne =  \relative a'' {
         \new Voice = "VoiceTwo14" { \voiceTwo c4 ( bes4 ) ^\fermata \breathe }
     >>
     d8 [ d8 ] | % 14
-    d4 _\markup{ \italic {a tempo} } bes4 \stemDown
+    d4 _\markup{ \italic {a tempo} } bes4 
     d4 | % 15
-    c2 g8 [ a8 ] | % 16
+    c2 g8 [ a8 ] | \break % 16
     <f bes>2. | % 17
     r4 a4 g4 | % 18
     <d f>2. ~ | % 19
     <des f>2. | \barNumberCheck #20
     <c f>2. ~ \arpeggio ~ \arpeggio | % 21
-    <c f>2. \bar "||"
+    <c f>2. \bar "||" \break
     R2.*3 ^\markup{ \bold {Allegretto} } | % 25
     r4 r8 a8 a8 [ bes8 ] | % 26
-    c2 a4 | % 27
+    c2 a4 | \break % 27
     f2 a8 [ bes8 ] | % 28
     c4 bes4 a4 | % 29
     g2 g8 [ a8 ] | \barNumberCheck #30
     bes4 a4 bes4 | % 31
-    g2 g8 [ a8 ] | % 32
+    g2 g8 [ a8 ] | \pageBreak % 32
     bes4 a4 g4 | % 33
     f2 a8 [ g8 ] | % 34
     f4 f4 g4 | % 35
     a2 a8 [ a8 ] | % 36
-    a4 bes4 c4 | % 37
+    a4 bes4 c4 | \break % 37
     d2 d8 [ d8 ] | % 38
     d4 bes4 d4 | % 39
     c2 g8 [ a8 ] | \barNumberCheck #40
     bes2. ~ | % 41
-    bes4 a4 g4 | % 42
+    bes4 a4 g4 | \break % 42
     f2. ~ | % 43
     f2. ~ | % 44
     f2. | % 45
     \clef "bass" r4 r8 a,8 a8 [ bes8 ] | % 46
     <<
         \new Voice = "VoiceOne47" { 
-            \voiceOne c8 [ d8 ] c4 a4 | % 47 
+            \voiceOne c8 [ d8 ] c4 a4 | \break % 47 
             \oneVoice f2 a8 [ bes8 ] | % 48
             \voiceOne c8 [ d8 c8 bes8 ] a4 | % 49
             \oneVoice g2 g8 [ a8 ] | \barNumberCheck #50
@@ -108,87 +108,87 @@ PartPOneVoiceOne =  \relative a'' {
             f2.
         }
     >> % 47
-    g2 g8 [ a8 ] | % 52
+    g2 g8 [ a8 ] | \break % 52
     bes8 [ a8 bes8 a8 ]
     g4 | % 53
     f2 a8 [ g8 ] | % 54
     f4 f4 g4 | % 55
     a2 a8 [ a8 ] | % 56
-    a4 a8 [ bes8 ] c4 | % 57
+    a4 a8 [ bes8 ] c4 | \break % 57
     d2 d8 [ d8 ] | % 58
     d4 bes4 d4 | % 59
     c2 g8 [ a8 ] | \barNumberCheck #60
     bes2. ~ | % 61
-    bes4 a4 g4 \bar "||"
+    bes4 a4 g4 \bar "||" \pageBreak
     \time 2/4  f2 ~ ^\markup{ \italic {meno mosso} } | % 63
     f2 ~ | % 64
     f2 | % 65
     \clef "treble" r8 <c'' e a>8 <c e a>8 [
     <d f bes>8 ] | % 66
     <e g c>2 ~ ~ ~ | % 67
-    <e g c>4 <c e a>4 | % 68
+    <e g c>4 <c e a>4 | \break % 68
     <a c f>2 ~ ~ ~ | % 69
     <a c f>4 <c e a>8 [ <d f bes>8 ] |
     \barNumberCheck #70
     <e g c>2 | % 71
     <d f bes>4 <c e a>4 | % 72
     <bes d g>2 ~ ~ ~ | % 73
-    <bes d g>4 <bes d g>8 [ <c e a>8 ] | % 74
+    <bes d g>4 <bes d g>8 [ <c e a>8 ] | \break % 74
     <d f bes>2 | % 75
     <c e a>4 <d f bes>4 | % 76
     <bes d g>2 ~ ~ ~ | % 77
     <bes d g>4 <bes d g>8 [ <c e a>8 ] | % 78
     <d f bes>2 | % 79
-    <c e a>4 <bes d g>4 | \barNumberCheck #80
+    <c e a>4 <bes d g>4 | \break \barNumberCheck #80
     <a c f>2 ~ ~ ~ | % 81
     <a c f>4 <c e a>8 [ <bes d g>8 ] | % 82
     <a c f>2 | % 83
     <a c f>4 <bes d g>4 | % 84
     <c e a>2 ~ ~ ~ | % 85
-    <c e a>4 <c e a>8 [ <c e a>8 ] | % 86
+    <c e a>4 <c e a>8 [ <c e a>8 ] | \break % 86
     <c f a>2 | % 87
     <d f bes>4 <es f c'>4 | % 88
     <f a d>2 ~ ~ ~ | % 89
     <f a d>4 <f a d>8 [ <f a d>8 ] |
     \barNumberCheck #90
     <f bes d>2 | % 91
-    <d f bes>4 <f bes d>4 | % 92
+    <d f bes>4 <f bes d>4 | \break % 92
     <e g c>2 ~ ~ ~ | % 93
     <e g c>4 <bes d g>8 [ <c e a>8 ] | % 94
     <d f bes>2 ~ ~ ~ | % 95
     <d f bes>2 ~ ~ ~ | % 96
     <d f bes>2 | % 97
-    <c e a>4 <bes d g>4 | % 98
+    <c e a>4 <bes d g>4 | \pageBreak % 98
     <a c f>2 ~ ~ ~ | % 99
     <a c f>2 ~ ~ ~ | \barNumberCheck #100
     <a c f>2 ~ ~ ~ | % 101
     <a c f>2 \bar "||"
     \key g \major R2*3 ^\markup{ \italic {piu mosso} } | % 105
-    r8 b,8 b8 [ c8 ] | % 106
+    r8 b,8 b8 [ c8 ] |\break % 106
     \time 5/4  d8 ( [ c8 b8 ) ] d8 ( [
     c8 b8 ) ] <b d>4 <b d>4 | % 107
     d8 ( [ c8 b8 ) ] d8 ( [ c8
     b8 ) ] <a c>4 <a c>4 | % 108
     c8 ( [ b8 a8 ) ] c8 ( [ b8
-    a8 ) ] <a c>4 <a c>4 | % 109
+    a8 ) ] <a c>4 <a c>4 |\break % 109
     c8 ( [ b8 a8 ) ] c8 ( [ b8
     a8 ) ] <a b>4 <a b>4 | \barNumberCheck #110
     d8 ( [ c8 b8 ) ] d8 ( [ c8
     b8 ) ] <b d>4 <b d>4 | % 111
     <a d>8 ( [ c8 b8 ) ] <a d>8 ( [
-    c8 b8 ) ] <d e>4 <d e>4 | % 112
+    c8 b8 ) ] <d e>4 <d e>4 |\break % 112
     e8 ( [ d8 c8 ) ] e8 ( [ d8
     c8 ) ] <a d>4 <a d>4 | % 113
     c8 ( [ b8 a8 ) ] c8 ( [ b8
     a8 ) ] d8 [ e8 ] <c fis>4 | % 114
-    <b g'>2. ~ ~ <b g'>2 ~ ~ | % 115
+    <b g'>2. ~ ~ <b g'>2 ~ ~ |\break % 115
     <b g'>2. ~ ~ <b g'>2 | % 116
-    <b'' d>8 ( -> [ a8 g8 ) ] \stemDown
+    <b'' d>8 ( -> [ a8 g8 ) ] 
     <b, d>8 ( -> [ a8 g8 ) ] <a b d>8 ( [
     g8 ) ] <a b d>8 ( [ g8 ) ] | % 117
     <b' d>8 ( -> [ a8 g8 ) ] <b,
         d>8 ( -> [ a8 g8 ) ] <a c>8 ( [
-    g8 ) ] <a c>8 ( [ g8 ) ] | % 118
+    g8 ) ] <a c>8 ( [ g8 ) ] |\pageBreak % 118
     <g' c>8 ( -> [ b8 a8 ) ] <g,
         c>8 ( -> [ b8 a8 ) ] <a c>8 ( [
     g8 ) ] <a c>8 ( [ g8 ) ] | % 119
@@ -198,7 +198,7 @@ PartPOneVoiceOne =  \relative a'' {
     \barNumberCheck #120
     <b' d>8 ( -> [ a8 g8 ) ] <b,
         d>8 ( -> [ a8 g8 ) ] <a b d>8 ( [
-    g8 ) ] <a b d>8 ( [ g8 ) ] | % 121
+    g8 ) ] <a b d>8 ( [ g8 ) ] | \break % 121
     <b' d>8 ( -> [ a8 g8 ) ] <b,
         d>8 ( -> [ a8 g8 ) ] <d' e>8 ( [
     c8 ) ] <d e>8 ( [ c8 ) ] | % 122
@@ -207,10 +207,11 @@ PartPOneVoiceOne =  \relative a'' {
     d8 ) ] <e fis>8 ( [ d8 ) ] | % 123
     <c' e>8 ( -> [ d8 c8 ) ] <c,
         e>8 ( -> [ d8 c8 ) ] <g c>8 [
-    b8 ] a4 | % 124
+    b8 ] a4 | \break % 124
     <b, g'>2. ~ ~ <b g'>2 ~ ~ | % 125
     <b g'>2. ~ ~ <b g'>2 | % 126
-    R4*10 _\markup{ \italic {diminuendo} } | % 128
+    R4*5 _\markup{ \italic {diminuendo} } | \break % 127
+    R4*5  | % 128
     \ottava #1 <b''' d>8 ( -> [ _\ff a8 _\markup{
         \italic {sub} } g8 ) ] <b, d>8 ( -> [
     a8 g8 ) ] \ottava #0 <a, b d>8 ( [
@@ -218,7 +219,7 @@ PartPOneVoiceOne =  \relative a'' {
     \ottava #1 <b'' d>8 ( -> [ a8 g8 ) ]
     <b, d>8 ( -> [ a8 g8 ) ] \ottava #0
     <a, c>8 ( [ g8 ) ] <a c>8 ( [
-    g8 ) ] | \barNumberCheck #130
+    g8 ) ] | \break \barNumberCheck #130
     \ottava #1 <g'' c>8 ( -> [ b8 a8 ) ]
     <g, c>8 ( -> [ b8 a8 ) ] \ottava #0
     <a, c>8 ( [ g8 ) ] <a c>8 ( [
@@ -230,23 +231,23 @@ PartPOneVoiceOne =  \relative a'' {
     \ottava #1 <b'' d>8 ( -> [ a8 g8 ) ]
     <b, d>8 ( -> [ a8 g8 ) ] \ottava #0
     <a, b d>8 ( [ g8 ) ] <a b d>8 ( [
-    g8 ) ] | % 133
+    g8 ) ] | \pageBreak % 133
     \ottava #1 <b'' d>8 ( -> [ a8 g8 ) ]
     <b, d>8 ( -> [ a8 g8 ) ] \ottava #0
-    <d e>8 ( [ c8 ) ] <d e>8 ( [ \stemDown
+    <d e>8 ( [ c8 ) ] <d e>8 ( [ 
     c8 ) ] | % 134
     \ottava #1 <e'' g>8 ( -> [ d8 a8 ) ]
     <e g>8 ( -> [ d8 c8 ) ] \ottava #0
     <e, fis>8 ( [ d8 ) ] <e fis>8 ( [
     d8 ) ] | % 135
     \time 3/4  <c' e>8 -> [ d8 c8 ]
-    <c, e>8 -> [ d8 c8 ] | % 136
+    <c, e>8 -> [ d8 c8 ] | \break % 136
     \time 5/4  c8 ( -> [ b8 a8 ) ]
     d8 ( -> [ c8 b8 ) ] e8 ( ->
     [ d8 ) ] fis8 ( -> [ e8 ) ] | % 137
     g8 ( -> [ fis8 e8 ) ] a8 (
     -> [ g8 fis8 ) ] b8 ( -> [ a8
-    ) ] c8 ( -> [ b8 ) ] | % 138
+    ) ] c8 ( -> [ b8 ) ] | \break % 138
     \time 3/4  d8 ( -> [ d,8 ) ] r8 \ottava #1
     d''8 ( -> d,8 [ \ottava #0 \change Staff="2"
     d,,8 ) ] \change Staff="1" | % 139
@@ -258,29 +259,29 @@ PartPOneVoiceOne =  \relative a'' {
     \ottava #1 d''8 ( -> [ d,8 ) ] \ottava #0 r8
     d8 ( -> d,4 ) | % 142
     d'8 ( -> [ d,8 ) ] r8 d8 ( ->     d,4 ) | % 143
-    r4 r8 b''8 b8 [ c8 ] | % 144
+    r4 r8 b''8 b8 [ c8 ] | \break % 144
     d2 cis8 ( [ d8 ) ] | % 145
     b2 ais8 ( [ b8 ) ] | % 146
     g2 dis8 ( [ e8 ) ] | % 147
     d2 ais8 ( [ b8 ) ] | % 148
     g2. ~ | % 149
-    g2. ~ | \barNumberCheck #150
+    g2. ~ | \break \barNumberCheck #150
     g2. | % 151
     \clef "bass" r4 r8 b,8 ( b8 [ c8 ) ] | % 152
     d2. ~ | % 153
     d2. ~ | % 154
     d2. ~ | % 155
-    d2 ais8 ( [ b8 ) ] | % 156
+    d2 ais8 ( [ b8 ) ] | \pageBreak % 156
     g2. ~ | % 157
     g2. ~ | % 158
     g2. ~ | % 159
     g2 ais,8 [ b8 ] | \barNumberCheck #160
-    g2. ~ | % 161
+    g2. ~ | \break % 161
     g2. ~ | % 162
     g2. ~ | % 163
     g2. ~ | % 164
     g2. ~ | % 165
-    g2. ~ | % 166
+    g2. ~ | \break % 166
     g2. ~ | % 167
     g2. ~ | % 168
     g2. ~ _\markup{ \italic {senza rit.} } | % 169
@@ -360,7 +361,7 @@ PartPOneVoiceFive =  \relative f'' {
     [ d8 ) ] | % 35
     f,8 ( [ c'8 ) ] r8 f,8 ( c'8
     [ d8 ) ] | % 36
-    f,8 ( [ es'8 ) ] r8 f,8 ( \stemDown
+    f,8 ( [ es'8 ) ] r8 f,8 ( 
     es'8 [ f8 ) ] | % 37
     bes,8 ( [ e8 ) ] r8 bes8 ( e8
     [ f8 ) ] | % 38
@@ -399,7 +400,7 @@ PartPOneVoiceFive =  \relative f'' {
     [ d8 ) ] | % 55
     f,8 ( [ c'8 ) ] r8 f,8 ( c'8
     [ d8 ) ] | % 56
-    f,8 ( [ es'8 ) ] r8 f,8 ( \stemDown
+    f,8 ( [ es'8 ) ] r8 f,8 ( 
     es'8 [ f8 ) ] | % 57
     bes,8 ( [ e8 ) ] r8 bes8 ( e8
     [ f8 ) ] | % 58
@@ -410,7 +411,7 @@ PartPOneVoiceFive =  \relative f'' {
     g,8 ( [ f'8 ) ] r8 g,8 ( f'8
     [ d8 ) ] | % 61
     e8 ( [ g,8 ] c,2 ) \bar "||"
-    \time 2/4  <f c' d>8 [ <f c' d>8 ] r8 \stemDown
+    \time 2/4  <f c' d>8 [ <f c' d>8 ] r8 
     <f c' d>8 | % 63
     <f c' d>8 [ <f c' d>8 ] r8 <f c' d>8 | % 64
     <f c' d>8 [ <f c' d>8 ] r8 <f c' d>8 | % 65
@@ -462,7 +463,7 @@ PartPOneVoiceFive =  \relative f'' {
     <g d' e>8 [ <g d' e>8 ] r8 <g d' e>8 | % 104
     <g d' e>8 [ <g d' e>8 ] r8 <g d' e>8 | % 105
     <g d' e>8 r8 r4 | % 106
-    \time 5/4  <g d' e>8 [ <g d' e>8 ] r8 \stemDown
+    \time 5/4  <g d' e>8 [ <g d' e>8 ] r8 
     <g d' e>4. <g d' e>4 <g d' e>4 | % 107
     <g d' e>8 [ <g d' e>8 ] r8 <g d' e>4.
     <g es'>4 <g es'>4 | % 108
@@ -605,19 +606,6 @@ PartPOneVoiceFive =  \relative f'' {
     r2 e8 ( [ d8 ] | \barNumberCheck #170
     g,4 ) r8 s4. \bar "|."
 }
-
-PartPOneVoiceSix =  \relative f'' {
-    
-     s2*9 \bar "||"
-    \clef "bass" s1*30 \bar "||"
-    \time 2/4  s1*20 \bar "||"
-    \key g \major s1*2 | % 106
-    \time 5/4  s4*145 | % 135
-    \time 3/4  s2. | % 136
-    \time 5/4  s2*5 | % 138
-    \time 3/4  s4*99 \bar "|."
-}
-
 
 % The score definition
 \score {
