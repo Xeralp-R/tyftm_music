@@ -23,28 +23,9 @@
     }
 }
 
-PartPOneVoiceTwo =  \relative c''' {
-    \clef "treble" \time 3/4 \key f \major s1*9 | % 13
-     s4 s4 s4*25 \bar "||"
-    s4*69 | % 45
-    \clef "bass" s2. | % 46
-    g,,2. s2. | % 48
-    g2 a4 s2. | \barNumberCheck #50
-    f2. s4*33 \bar "||"
-    \time 2/4  s1. | % 65
-    \clef "treble" s2*37 \bar "||"
-    \key g \major s1*2 | % 106
-    \time 5/4  s4*145 | % 135
-    \time 3/4  s2. | % 136
-    \time 5/4  s2*5 | % 138
-    \time 3/4  s4*39 | % 151
-    \clef "bass" s1*15 \bar "|."
-}
-
 PartPOneVoiceOne =  \relative a'' {
     \clef "treble" \time 3/4 \key f \major | % 1
-    s4. ^\markup{ \bold {Andante Semplice} } a8 _\markup{
-        \italic {legato} } a8 [ bes8 ] | % 2
+    s4. ^\markup{ \bold {Andante Semplice} } a8 _\markup{ \italic {legato} } a8 [ bes8 ] | % 2
     c2 a4 | % 3
     f2 a8 [ bes8 ] | % 4
     c4 bes4 a4 | % 5
@@ -120,7 +101,8 @@ PartPOneVoiceOne =  \relative a'' {
     c2 g8 [ a8 ] | \barNumberCheck #60
     bes2. ~ | % 61
     bes4 a4 g4 \bar "||" \pageBreak
-    \time 2/4  f2 ~ ^\markup{ \italic {meno mosso} } | % 63
+    \time 2/4  
+    f2 ~ ^\markup{ \italic {meno mosso} } | % 63
     f2 ~ | % 64
     f2 | % 65
     \clef "treble" r8 <c'' e a>8 <c e a>8 [
@@ -165,99 +147,65 @@ PartPOneVoiceOne =  \relative a'' {
     <a c f>2 \bar "||"
     \key g \major R2*3 ^\markup{ \italic {piu mosso} } | % 105
     r8 b,8 b8 [ c8 ] |\break % 106
-    \time 5/4  d8 ( [ c8 b8 ) ] d8 ( [
+    \time 5/4  
+    d8 ( [ c8 b8 ) ] d8 ( [
     c8 b8 ) ] <b d>4 <b d>4 | % 107
-    d8 ( [ c8 b8 ) ] d8 ( [ c8
-    b8 ) ] <a c>4 <a c>4 | % 108
-    c8 ( [ b8 a8 ) ] c8 ( [ b8
-    a8 ) ] <a c>4 <a c>4 |\break % 109
-    c8 ( [ b8 a8 ) ] c8 ( [ b8
-    a8 ) ] <a b>4 <a b>4 | \barNumberCheck #110
-    d8 ( [ c8 b8 ) ] d8 ( [ c8
-    b8 ) ] <b d>4 <b d>4 | % 111
-    <a d>8 ( [ c8 b8 ) ] <a d>8 ( [
-    c8 b8 ) ] <d e>4 <d e>4 |\break % 112
-    e8 ( [ d8 c8 ) ] e8 ( [ d8
-    c8 ) ] <a d>4 <a d>4 | % 113
-    c8 ( [ b8 a8 ) ] c8 ( [ b8
-    a8 ) ] d8 [ e8 ] <c fis>4 | % 114
+    d8 ( [ c8 b8 ) ] d8 ( [ c8 b8 ) ] <a c>4 <a c>4 | % 108
+    c8 ( [ b8 a8 ) ] c8 ( [ b8 a8 ) ] <a c>4 <a c>4 |\break % 109
+    c8 ( [ b8 a8 ) ] c8 ( [ b8 a8 ) ] <a b>4 <a b>4 | \barNumberCheck #110
+    d8 ( [ c8 b8 ) ] d8 ( [ c8 b8 ) ] <b d>4 <b d>4 | % 111
+    <a d>8 ( [ c8 b8 ) ] <a d>8 ( [ c8 b8 ) ] <d e>4 <d e>4 |\break % 112
+    e8 ( [ d8 c8 ) ] e8 ( [ d8 c8 ) ] <a d>4 <a d>4 | % 113
+    c8 ( [ b8 a8 ) ] c8 ( [ b8 a8 ) ] d8 [ e8 ] <c fis>4 | % 114
     <b g'>2. ~ ~ <b g'>2 ~ ~ |\break % 115
     <b g'>2. ~ ~ <b g'>2 | % 116
-    <b'' d>8 ( -> [ a8 g8 ) ] 
-    <b, d>8 ( -> [ a8 g8 ) ] <a b d>8 ( [
-    g8 ) ] <a b d>8 ( [ g8 ) ] | % 117
-    <b' d>8 ( -> [ a8 g8 ) ] <b,
-        d>8 ( -> [ a8 g8 ) ] <a c>8 ( [
-    g8 ) ] <a c>8 ( [ g8 ) ] |\pageBreak % 118
-    <g' c>8 ( -> [ b8 a8 ) ] <g,
-        c>8 ( -> [ b8 a8 ) ] <a c>8 ( [
-    g8 ) ] <a c>8 ( [ g8 ) ] | % 119
-    <g' c>8 ( -> [ b8 a8 ) ] <g,
-        c>8 ( -> [ b8 a8 ) ] <a b>8 ( [
-    g8 ) ] <a b>8 ( [ g8 ) ] |
-    \barNumberCheck #120
-    <b' d>8 ( -> [ a8 g8 ) ] <b,
-        d>8 ( -> [ a8 g8 ) ] <a b d>8 ( [
-    g8 ) ] <a b d>8 ( [ g8 ) ] | \break % 121
-    <b' d>8 ( -> [ a8 g8 ) ] <b,
-        d>8 ( -> [ a8 g8 ) ] <d' e>8 ( [
-    c8 ) ] <d e>8 ( [ c8 ) ] | % 122
-    <e' g>8 ( -> [ d8 a8 ) ] <e
-        g>8 ( -> [ d8 c8 ) ] <e fis>8 ( [
-    d8 ) ] <e fis>8 ( [ d8 ) ] | % 123
-    <c' e>8 ( -> [ d8 c8 ) ] <c,
-        e>8 ( -> [ d8 c8 ) ] <g c>8 [
-    b8 ] a4 | \break % 124
+    <b'' d>8 ( -> [ a8 g8 ) ] <b, d>8 ( -> [ a8 g8 ) ] 
+    <a b d>8 ( [ g8 ) ] <a b d>8 ( [ g8 ) ] | % 117
+    <b' d>8 ( -> [ a8 g8 ) ] <b, d>8 ( -> [ a8 g8 ) ] 
+    <a c>8 ( [ g8 ) ] <a c>8 ( [ g8 ) ] |\pageBreak % 118
+    <g' c>8 ( -> [ b8 a8 ) ] <g, c>8 ( -> [ b8 a8 ) ] 
+    <a c>8 ( [ g8 ) ] <a c>8 ( [ g8 ) ] | % 119
+    <g' c>8 ( -> [ b8 a8 ) ] <g, c>8 ( -> [ b8 a8 ) ] 
+    <a b>8 ( [ g8 ) ] <a b>8 ( [ g8 ) ] | \barNumberCheck #120
+    <b' d>8 ( -> [ a8 g8 ) ] <b, d>8 ( -> [ a8 g8 ) ] 
+    <a b d>8 ( [ g8 ) ] <a b d>8 ( [ g8 ) ] | \break % 121
+    <b' d>8 ( -> [ a8 g8 ) ] <b, d>8 ( -> [ a8 g8 ) ] 
+    <d' e>8 ( [ c8 ) ] <d e>8 ( [ c8 ) ] | % 122
+    <e' g>8 ( -> [ d8 a8 ) ] <e g>8 ( -> [ d8 c8 ) ] 
+    <e fis>8 ( [ d8 ) ] <e fis>8 ( [ d8 ) ] | % 123
+    <c' e>8 ( -> [ d8 c8 ) ] <c, e>8 ( -> [ d8 c8 ) ] 
+    <g c>8 [ b8 ] a4 | \break % 124
     <b, g'>2. ~ ~ <b g'>2 ~ ~ | % 125
     <b g'>2. ~ ~ <b g'>2 | % 126
     R4*5 _\markup{ \italic {diminuendo} } | \break % 127
     R4*5  | % 128
-    \ottava #1 <b''' d>8 ( -> [ _\ff a8 _\markup{
-        \italic {sub} } g8 ) ] <b, d>8 ( -> [
-    a8 g8 ) ] \ottava #0 <a, b d>8 ( [
-    g8 ) ] <a b d>8 ( [ g8 ) ] | % 129
-    \ottava #1 <b'' d>8 ( -> [ a8 g8 ) ]
-    <b, d>8 ( -> [ a8 g8 ) ] \ottava #0
-    <a, c>8 ( [ g8 ) ] <a c>8 ( [
-    g8 ) ] | \break \barNumberCheck #130
-    \ottava #1 <g'' c>8 ( -> [ b8 a8 ) ]
-    <g, c>8 ( -> [ b8 a8 ) ] \ottava #0
-    <a, c>8 ( [ g8 ) ] <a c>8 ( [
-    g8 ) ] | % 131
-    \ottava #1 <g'' c>8 ( -> [ b8 a8 ) ]
-    <g, c>8 ( -> [ b8 a8 ) ] \ottava #0
-    <a, b>8 ( [ g8 ) ] <a b>8 ( [
-    g8 ) ] | % 132
-    \ottava #1 <b'' d>8 ( -> [ a8 g8 ) ]
-    <b, d>8 ( -> [ a8 g8 ) ] \ottava #0
-    <a, b d>8 ( [ g8 ) ] <a b d>8 ( [
-    g8 ) ] | \pageBreak % 133
-    \ottava #1 <b'' d>8 ( -> [ a8 g8 ) ]
-    <b, d>8 ( -> [ a8 g8 ) ] \ottava #0
-    <d e>8 ( [ c8 ) ] <d e>8 ( [ 
-    c8 ) ] | % 134
-    \ottava #1 <e'' g>8 ( -> [ d8 a8 ) ]
-    <e g>8 ( -> [ d8 c8 ) ] \ottava #0
-    <e, fis>8 ( [ d8 ) ] <e fis>8 ( [
-    d8 ) ] | % 135
-    \time 3/4  <c' e>8 -> [ d8 c8 ]
-    <c, e>8 -> [ d8 c8 ] | \break % 136
-    \time 5/4  c8 ( -> [ b8 a8 ) ]
-    d8 ( -> [ c8 b8 ) ] e8 ( ->
-    [ d8 ) ] fis8 ( -> [ e8 ) ] | % 137
-    g8 ( -> [ fis8 e8 ) ] a8 (
-    -> [ g8 fis8 ) ] b8 ( -> [ a8
-    ) ] c8 ( -> [ b8 ) ] | \break % 138
+    \ottava #1 <b''' d>8 ( -> [ _\ff a8 _\markup{ \italic {subito} } g8 ) ] 
+    <b, d>8 ( -> [ a8 g8 ) ] \ottava #0 <a, b d>8 ( [ g8 ) ] <a b d>8 ( [ g8 ) ] | % 129
+    \ottava #1 <b'' d>8 ( -> [ a8 g8 ) ]<b, d>8 ( -> [ a8 g8 ) ] \ottava #0
+    <a, c>8 ( [ g8 ) ] <a c>8 ( [ g8 ) ] | \break \barNumberCheck #130
+    \ottava #1 <g'' c>8 ( -> [ b8 a8 ) ] <g, c>8 ( -> [ b8 a8 ) ] \ottava #0
+    <a, c>8 ( [ g8 ) ] <a c>8 ( [ g8 ) ] | % 131
+    \ottava #1 <g'' c>8 ( -> [ b8 a8 ) ] <g, c>8 ( -> [ b8 a8 ) ] \ottava #0
+    <a, b>8 ( [ g8 ) ] <a b>8 ( [ g8 ) ] | % 132
+    \ottava #1 <b'' d>8 ( -> [ a8 g8 ) ] <b, d>8 ( -> [ a8 g8 ) ] \ottava #0
+    <a, b d>8 ( [ g8 ) ] <a b d>8 ( [ g8 ) ] | \pageBreak % 133
+    \ottava #1 <b'' d>8 ( -> [ a8 g8 ) ] <b, d>8 ( -> [ a8 g8 ) ] \ottava #0
+    <d e>8 ( [ c8 ) ] <d e>8 ( [ c8 ) ] | % 134
+    \ottava #1 <e'' g>8 ( -> [ d8 a8 ) ] <e g>8 ( -> [ d8 c8 ) ] \ottava #0
+    <e, fis>8 ( [ d8 ) ] <e fis>8 ( [ d8 ) ] | % 135
+    \time 3/4  
+    <c' e>8 -> [ d8 c8 ] <c, e>8 -> [ d8 c8 ] | \break % 136
+    \time 5/4  
+    c8 ( -> [ b8 a8 ) ] d8 ( -> [ c8 b8 ) ] 
+    e8 ( -> [ d8 ) ] fis8 ( -> [ e8 ) ] | % 137
+    g8 ( -> [ fis8 e8 ) ] a8 ( -> [ g8 fis8 ) ] 
+    b8 ( -> [ a8 ) ] c8 ( -> [ b8 ) ] | \break % 138
     \time 3/4  d8 ( -> [ d,8 ) ] r8 \ottava #1
-    d''8 ( -> d,8 [ \ottava #0 \change Staff="2"
-    d,,8 ) ] \change Staff="1" | % 139
-    d''8 ( -> [ d,8 ) ] r8 \ottava #1 d''8
-    ( -> d,8 [ \ottava #0 \change Staff="2" d,,8 ) ]
-    \change Staff="1" | \barNumberCheck #140
-    d''8 ( -> [ d,8 ) ] r8 d'8 ( ->
-    d,4 ) | % 141
-    \ottava #1 d''8 ( -> [ d,8 ) ] \ottava #0 r8
-    d8 ( -> d,4 ) | % 142
+    d''8 ( -> d,8 [ \ottava #0 \change Staff="2" d,,8 ) ] \change Staff="1" | % 139
+    d''8 ( -> [ d,8 ) ] r8 \ottava #1 d''8 ( -> 
+    d,8 [ \ottava #0 \change Staff="2" d,,8 ) ] \change Staff="1" | \barNumberCheck #140
+    d''8 ( -> [ d,8 ) ] r8 d'8 ( -> d,4 ) | % 141
+    \ottava #1 d''8 ( -> [ d,8 ) ] \ottava #0 r8 d8 ( -> d,4 ) | % 142
     d'8 ( -> [ d,8 ) ] r8 d8 ( ->     d,4 ) | % 143
     r4 r8 b''8 b8 [ c8 ] | \break % 144
     d2 cis8 ( [ d8 ) ] | % 145
@@ -333,94 +281,55 @@ PartPOneVoiceFive =  \relative f'' {
     bes2. | \barNumberCheck #20
     <f a>2. ~ \arpeggio ~ \arpeggio | % 21
     <f a>2. \bar "||"
-    \clef "bass" f,8 ( [ c'8 ) ] r8 f,8 (
-    c'8 [ d8 ) ] | % 23
-    f,8 ( [ c'8 ) ] r8 f,8 ( c'8
-    [ d8 ) ] | % 24
-    f,8 ( [ c'8 ) ] r8 f,8 ( c'8
-    [ d8 ) ] | % 25
-    f,8 ( [ c'8 ) ] r8 f,8 ( c'8
-    [ d8 ) ] | % 26
-    f,8 ( [ c'8 ) ] r8 f,8 ( c'8
-    [ d8 ) ] | % 27
-    f,8 ( [ c'8 ) ] r8 f,8 ( c'8
-    [ d8 ) ] | % 28
-    f,8 ( [ c'8 ) ] r8 f,8 ( c'8
-    [ d8 ) ] | % 29
-    f,8 ( [ c'8 ) ] r8 f,8 ( c'8
-    [ d8 ) ] | \barNumberCheck #30
-    f,8 ( [ c'8 ) ] r8 f,8 ( c'8
-    [ d8 ) ] | % 31
-    f,8 ( [ c'8 ) ] r8 f,8 ( c'8
-    [ d8 ) ] | % 32
-    f,8 ( [ c'8 ) ] r8 f,8 ( c'8
-    [ d8 ) ] | % 33
-    f,8 ( [ c'8 ) ] r8 f,8 ( c'8
-    [ d8 ) ] | % 34
-    f,8 ( [ c'8 ) ] r8 f,8 ( c'8
-    [ d8 ) ] | % 35
-    f,8 ( [ c'8 ) ] r8 f,8 ( c'8
-    [ d8 ) ] | % 36
-    f,8 ( [ es'8 ) ] r8 f,8 ( 
-    es'8 [ f8 ) ] | % 37
-    bes,8 ( [ e8 ) ] r8 bes8 ( e8
-    [ f8 ) ] | % 38
-    g,8 ( [ f'8 ) ] r8 g,8 ( f'8
-    [ e8 ) ] | % 39
-    a,8 ( [ g'8 ) ] r8 a,8 ( f'4
-    ) | \barNumberCheck #40
-    g,8 ( [ f'8 ) ] r8 g,8 ( f'8
-    [ d8 ) ] | % 41
+    \clef "bass" f,8 ( [ c'8 ) ] r8 f,8 ( c'8 [ d8 ) ] | % 23
+    f,8 ( [ c'8 ) ] r8 f,8 ( c'8 [ d8 ) ] | % 24
+    f,8 ( [ c'8 ) ] r8 f,8 ( c'8 [ d8 ) ] | % 25
+    f,8 ( [ c'8 ) ] r8 f,8 ( c'8 [ d8 ) ] | % 26
+    f,8 ( [ c'8 ) ] r8 f,8 ( c'8 [ d8 ) ] | % 27
+    f,8 ( [ c'8 ) ] r8 f,8 ( c'8 [ d8 ) ] | % 28
+    f,8 ( [ c'8 ) ] r8 f,8 ( c'8 [ d8 ) ] | % 29
+    f,8 ( [ c'8 ) ] r8 f,8 ( c'8 [ d8 ) ] | \barNumberCheck #30
+    f,8 ( [ c'8 ) ] r8 f,8 ( c'8 [ d8 ) ] | % 31
+    f,8 ( [ c'8 ) ] r8 f,8 ( c'8 [ d8 ) ] | % 32
+    f,8 ( [ c'8 ) ] r8 f,8 ( c'8 [ d8 ) ] | % 33
+    f,8 ( [ c'8 ) ] r8 f,8 ( c'8 [ d8 ) ] | % 34
+    f,8 ( [ c'8 ) ] r8 f,8 ( c'8 [ d8 ) ] | % 35
+    f,8 ( [ c'8 ) ] r8 f,8 ( c'8 [ d8 ) ] | % 36
+    f,8 ( [ es'8 ) ] r8 f,8 ( es'8 [ f8 ) ] | % 37
+    bes,8 ( [ e8 ) ] r8 bes8 ( e8 [ f8 ) ] | % 38
+    g,8 ( [ f'8 ) ] r8 g,8 ( f'8 [ e8 ) ] | % 39
+    a,8 ( [ g'8 ) ] r8 a,8 ( f'4 ) | \barNumberCheck #40
+    g,8 ( [ f'8 ) ] r8 g,8 ( f'8 [ d8 ) ] | % 41
     e8 ( [ d8 ] c4 ) c,4 | % 42
-    f,8 ( [ c'8 ) ] r8 f,8 ( c'8
-    [ d8 ) ] | % 43
-    f,8 ( [ c'8 ) ] r8 f,8 ( c'8
-    [ d8 ) ] | % 44
-    f,8 ( [ c'8 ) ] r8 f,8 ( c'8
-    [ d8 ) ] | % 45
-    f,8 ( [ c'8 ) ] r8 f,8 ( c'8
-    [ d8 ) ] | % 46
-    f,8 ( [ c'8 ) ] r8 f,8 ( c'8
-    [ d8 ) ] | % 47
-    f,8 ( [ c'8 ) ] r8 f,8 ( c'8
-    [ d8 ) ] | % 48
-    f,8 ( [ c'8 ) ] r8 f,8 ( c'8
-    [ d8 ) ] | % 49
-    f,8 ( [ c'8 ) ] r8 f,8 ( c'8
-    [ d8 ) ] | \barNumberCheck #50
-    f,8 ( [ c'8 ) ] r8 f,8 ( c'8
-    [ d8 ) ] | % 51
-    f,8 ( [ c'8 ) ] r8 f,8 ( c'8
-    [ d8 ) ] | % 52
-    f,8 ( [ c'8 ) ] r8 f,8 ( c'8
-    [ d8 ) ] | % 53
-    f,8 ( [ c'8 ) ] r8 f,8 ( c'8
-    [ d8 ) ] | % 54
-    f,8 ( [ c'8 ) ] r8 f,8 ( c'8
-    [ d8 ) ] | % 55
-    f,8 ( [ c'8 ) ] r8 f,8 ( c'8
-    [ d8 ) ] | % 56
-    f,8 ( [ es'8 ) ] r8 f,8 ( 
-    es'8 [ f8 ) ] | % 57
-    bes,8 ( [ e8 ) ] r8 bes8 ( e8
-    [ f8 ) ] | % 58
-    g,8 ( [ f'8 ) ] r8 g,8 ( f'8
-    [ e8 ) ] | % 59
-    a,8 ( [ g'8 ) ] r8 a,8 ( f'4
-    ) | \barNumberCheck #60
-    g,8 ( [ f'8 ) ] r8 g,8 ( f'8
-    [ d8 ) ] | % 61
+    f,8 ( [ c'8 ) ] r8 f,8 ( c'8 [ d8 ) ] | % 43
+    f,8 ( [ c'8 ) ] r8 f,8 ( c'8 [ d8 ) ] | % 44
+    f,8 ( [ c'8 ) ] r8 f,8 ( c'8 [ d8 ) ] | % 45
+    f,8 ( [ c'8 ) ] r8 f,8 ( c'8 [ d8 ) ] | % 46
+    f,8 ( [ c'8 ) ] r8 f,8 ( c'8 [ d8 ) ] | % 47
+    f,8 ( [ c'8 ) ] r8 f,8 ( c'8 [ d8 ) ] | % 48
+    f,8 ( [ c'8 ) ] r8 f,8 ( c'8 [ d8 ) ] | % 49
+    f,8 ( [ c'8 ) ] r8 f,8 ( c'8 [ d8 ) ] | \barNumberCheck #50
+    f,8 ( [ c'8 ) ] r8 f,8 ( c'8 [ d8 ) ] | % 51
+    f,8 ( [ c'8 ) ] r8 f,8 ( c'8 [ d8 ) ] | % 52
+    f,8 ( [ c'8 ) ] r8 f,8 ( c'8 [ d8 ) ] | % 53
+    f,8 ( [ c'8 ) ] r8 f,8 ( c'8 [ d8 ) ] | % 54
+    f,8 ( [ c'8 ) ] r8 f,8 ( c'8 [ d8 ) ] | % 55
+    f,8 ( [ c'8 ) ] r8 f,8 ( c'8 [ d8 ) ] | % 56
+    f,8 ( [ es'8 ) ] r8 f,8 ( es'8 [ f8 ) ] | % 57
+    bes,8 ( [ e8 ) ] r8 bes8 ( e8 [ f8 ) ] | % 58
+    g,8 ( [ f'8 ) ] r8 g,8 ( f'8 [ e8 ) ] | % 59
+    a,8 ( [ g'8 ) ] r8 a,8 ( f'4 ) | \barNumberCheck #60
+    g,8 ( [ f'8 ) ] r8 g,8 ( f'8 [ d8 ) ] | % 61
     e8 ( [ g,8 ] c,2 ) \bar "||"
-    \time 2/4  <f c' d>8 [ <f c' d>8 ] r8 
-    <f c' d>8 | % 63
+    \time 2/4  
+    <f c' d>8 [ <f c' d>8 ] r8 <f c' d>8 | % 63
     <f c' d>8 [ <f c' d>8 ] r8 <f c' d>8 | % 64
     <f c' d>8 [ <f c' d>8 ] r8 <f c' d>8 | % 65
     <f c' d>8 [ <f c' d>8 ] r8 <f c' d>8 | % 66
     <f c' d>8 [ <f c' d>8 ] r8 <f c' d>8 | % 67
     <f c' d>8 [ <f c' d>8 ] r8 <f c' d>8 | % 68
     <f c' d>8 [ <f c' d>8 ] r8 <f c' d>8 | % 69
-    <f c' d>8 [ <f c' d>8 ] r8 <f c' d>8 |
-    \barNumberCheck #70
+    <f c' d>8 [ <f c' d>8 ] r8 <f c' d>8 | \barNumberCheck #70
     <f c' d>8 [ <f c' d>8 ] r8 <f c' d>8 | % 71
     <f c' d>8 [ <f c' d>8 ] r8 <f c' d>8 | % 72
     <f c' d>8 [ <f c' d>8 ] r8 <f c' d>8 | % 73
@@ -430,8 +339,7 @@ PartPOneVoiceFive =  \relative f'' {
     <f c' d>8 [ <f c' d>8 ] r8 <f c' d>8 | % 77
     <f c' d>8 [ <f c' d>8 ] r8 <f c' d>8 | % 78
     <f c' d>8 [ <f c' d>8 ] r8 <f c' d>8 | % 79
-    <f c' d>8 [ <f c' d>8 ] r8 <f c' d>8 |
-    \barNumberCheck #80
+    <f c' d>8 [ <f c' d>8 ] r8 <f c' d>8 | \barNumberCheck #80
     <f c' d>8 [ <f c' d>8 ] r8 <f c' d>8 | % 81
     <f c' d>8 [ <f c' d>8 ] r8 <f c' d>8 | % 82
     <f c' d>8 [ <f c' d>8 ] r8 <f c' d>8 | % 83
@@ -441,8 +349,7 @@ PartPOneVoiceFive =  \relative f'' {
     <f es'>8 [ <f es'>8 ] r8 <f es'>8 | % 87
     <f es'>8 [ <f es'>8 ] r8 <f es'>8 | % 88
     <bes f'>8 [ <bes f'>8 ] r8 <bes f'>8 | % 89
-    <bes f'>8 [ <bes f'>8 ] r8 <bes f'>8 |
-    \barNumberCheck #90
+    <bes f'>8 [ <bes f'>8 ] r8 <bes f'>8 | \barNumberCheck #90
     <g f'>8 [ <g f'>8 ] r8 <g f'>8 | % 91
     <g f'>8 [ <g f'>8 ] r8 <g f'>8 | % 92
     <a g'>8 [ <a g'>8 ] r8 <a g'>8 | % 93
@@ -451,19 +358,17 @@ PartPOneVoiceFive =  \relative f'' {
     <g f'>8 [ <g f'>8 ] r8 <g f'>8 | % 96
     <c f>8 [ <c f>8 ] r8 <c f>8 | % 97
     <c e>8 [ <c e>8 ] r8 <c e>8 | % 98
-    <f, c' d>8 [ <f c' d>8 ] r8 <f c' d>8
-    | % 99
-    <f c' d>8 [ <f c' d>8 ] r8 <f c' d>8 |
-    \barNumberCheck #100
+    <f, c' d>8 [ <f c' d>8 ] r8 <f c' d>8 | % 99
+    <f c' d>8 [ <f c' d>8 ] r8 <f c' d>8 | \barNumberCheck #100
     <f c' d>8 [ <f c' d>8 ] r8 <f c' d>8 | % 101
-    <f c' d>8 [ <f c' d>8 ] r8 <f c' d>8
-    \bar "||"
+    <f c' d>8 [ <f c' d>8 ] r8 <f c' d>8 \bar "||"
     \key g \major <g d' e>8 [ <g d' e>8 ] r8
     <g d' e>8 | % 103
     <g d' e>8 [ <g d' e>8 ] r8 <g d' e>8 | % 104
     <g d' e>8 [ <g d' e>8 ] r8 <g d' e>8 | % 105
     <g d' e>8 r8 r4 | % 106
-    \time 5/4  <g d' e>8 [ <g d' e>8 ] r8 
+    \time 5/4  
+    <g d' e>8 [ <g d' e>8 ] r8 
     <g d' e>4. <g d' e>4 <g d' e>4 | % 107
     <g d' e>8 [ <g d' e>8 ] r8 <g d' e>4.
     <g es'>4 <g es'>4 | % 108
@@ -479,125 +384,82 @@ PartPOneVoiceFive =  \relative f'' {
     <b fis'>4 <b fis'>4 | % 113
     <a g'>8 [ <a g'>8 ] r8 <a g'>4.
     <d g>4 <d a'>4 | % 114
-    g,8 ( [ d'8 e8 ) ] g,8 ( [
-    d'8 e8 ) ] g,8 ( [ <d' e>8 )
-    ] g,8 ( [ <d' e>8 ) ] | % 115
-    g,8 ( [ d'8 e8 ) ] g,8 ( [
-    d'8 e8 ) ] g,8 ( [ <d' e>8 )
-    ] g,8 ( [ <d' e>8 ) ] | % 116
-    g,8 ( [ d'8 e8 ) ] g,8 ( [
-    d'8 e8 ) ] g,8 ( [ <d' e>8 )
-    ] g,8 ( [ <d' e>8 ) ] | % 117
-    g,8 ( [ d'8 e8 ) ] g,8 ( [
-    d'8 e8 ) ] g,8 ( [ e'8 ) ]
-    g,8 ( [ e'8 ) ] | % 118
-    g,8 ( [ d'8 es8 ) ] g,8 ( [
-    d'8 es8 ) ] g,8 ( [ es'8 ) ]
-    g,8 ( [ es'8 ) ] | % 119
-    g,8 ( [ d'8 es8 ) ] g,8 ( [
-    d'8 es8 ) ] g,8 ( [ d'8 ) ]
-    g,8 ( [ d'8 ) ] | \barNumberCheck #120
-    g,8 ( [ d'8 e8 ) ] g,8 ( [
-    d'8 e8 ) ] g,8 ( [ <d' e>8 )
-    ] g,8 ( [ <d' e>8 ) ] | % 121
-    g,8 ( [ d'8 f8 ) ] g,8 ( [
-    d'8 f8 ) ] c8 ( [ g'8 ) ]
-    c,8 ( [ g'8 ) ] | % 122
-    a,8 ( [ e'8 g8 ) ] a,8 ( [
-    e'8 g8 ) ] b,8 ( [ fis'8 ) ]
-    b,8 ( [ fis'8 ) ] | % 123
-    a,8 ( [ e'8 g8 ) ] a,8 ( [
-    e'8 g8 ) ] d8 ( [ a'8 ) ]
-    d,8 ( [ fis8 ) ] | % 124
-    g,8 ( [ d'8 e8 ) ] g,8 ( [
-    d'8 e8 ) ] g,8 ( [ <d' e>8 )
-    ] g,8 ( [ <d' e>8 ) ] | % 125
-    g,8 ( [ d'8 e8 ) ] g,8 ( [
-    d'8 e8 ) ] g,8 ( [ <d' e>8 )
-    ] g,8 ( [ <d' e>8 ) ] | % 126
-    g,8 ( [ d'8 e8 ) ] g,8 ( [
-    d'8 e8 ) ] g,8 ( [ <d' e>8 )
-    ] g,8 ( [ <d' e>8 ) ] | % 127
-    g,8 ( [ ^\> d'8 e8 ) ] g,8 (
-    [ d'8 e8 ) ] g,8 ( [ <d' e>8
-    ) ] ^\! ^\pp g,8 ( [ <d' e>8 ) ] | % 128
-    g,,8 ( [ d'8 e8 ) ] g,8 ( [
-    d'8 e8 ) ] g,8 ( [ <d' e>8 )
-    ] g,8 ( [ <d' e>8 ) ] | % 129
-    g,8 ( [ d'8 e8 ) ] g,8 ( [
-    d'8 e8 ) ] g,8 ( [ e'8 ) ]
-    g,8 ( [ e'8 ) ] | \barNumberCheck #130
-    g,8 ( [ d'8 e8 ) ] g,8 ( [
-    d'8 e8 ) ] g,8 ( [ e'8 ) ]
-    g,8 ( [ e'8 ) ] | % 131
-    g,8 ( [ d'8 es8 ) ] g,8 ( [
-    d'8 es8 ) ] g,8 ( [ es'8 ) ]
-    g,8 ( [ es'8 ) ] | % 132
-    g,8 ( [ d'8 e8 ) ] g,8 ( [
-    d'8 e8 ) ] g,8 ( [ <d' e>8 )
-    ] g,8 ( [ <d' e>8 ) ] | % 133
-    g,8 ( [ d'8 f8 ) ] g,8 ( [
-    d'8 f8 ) ] c8 ( [ g'8 ) ]
-    c,8 ( [ g'8 ) ] | % 134
-    a,8 ( [ e'8 g8 ) ] a,8 ( [
-    e'8 g8 ) ] b,8 ( [ fis'8 ) ]
-    b,8 ( [ fis'8 ) ] | % 135
-    \time 3/4  a,8 ( [ e'8 g8 ) ]
-    a,8 ( [ e'8 g8 ) ] | % 136
-    \time 5/4  c8 ( -> [ b8 a8 ) ]
-    d8 ( -> [ c8 b8 ) ] e8 ( ->
-    [ d8 ) ] fis8 ( -> [ e8 ) ] | % 137
-    g8 ( -> [ fis8 e8 ) ] a8 (
-    -> [ g8 fis8 ) ] b8 ( -> [ a8
-    ) ] c8 ( -> [ b8 ) ] | % 138
-    \time 3/4  d,8 ( -> [ d'8 ) ] r4 r4 | % 139
+    g,8 ( [ d'8 e8 ) ] g,8 ( [ d'8 e8 ) ] 
+    g,8 ( [ <d' e>8 ) ] g,8 ( [ <d' e>8 ) ] | % 115
+    g,8 ( [ d'8 e8 ) ] g,8 ( [ d'8 e8 ) ] 
+    g,8 ( [ <d' e>8 ) ] g,8 ( [ <d' e>8 ) ] | % 116
+    g,8 ( [ d'8 e8 ) ] g,8 ( [ d'8 e8 ) ] 
+    g,8 ( [ <d' e>8 ) ] g,8 ( [ <d' e>8 ) ] | % 117
+    g,8 ( [ d'8 e8 ) ] g,8 ( [ d'8 e8 ) ] 
+    g,8 ( [ e'8 ) ] g,8 ( [ e'8 ) ] | % 118
+    g,8 ( [ d'8 es8 ) ] g,8 ( [ d'8 es8 ) ] 
+    g,8 ( [ es'8 ) ] g,8 ( [ es'8 ) ] | % 119
+    g,8 ( [ d'8 es8 ) ] g,8 ( [ d'8 es8 ) ] 
+    g,8 ( [ d'8 ) ] g,8 ( [ d'8 ) ] | \barNumberCheck #120
+    g,8 ( [ d'8 e8 ) ] g,8 ( [ d'8 e8 ) ] 
+    g,8 ( [ <d' e>8 ) ] g,8 ( [ <d' e>8 ) ] | % 121
+    g,8 ( [ d'8 f8 ) ] g,8 ( [ d'8 f8 ) ] 
+    c8 ( [ g'8 ) ] c,8 ( [ g'8 ) ] | % 122
+    a,8 ( [ e'8 g8 ) ] a,8 ( [ e'8 g8 ) ] 
+    b,8 ( [ fis'8 ) ] b,8 ( [ fis'8 ) ] | % 123
+    a,8 ( [ e'8 g8 ) ] a,8 ( [ e'8 g8 ) ] 
+    d8 ( [ a'8 ) ] d,8 ( [ fis8 ) ] | % 124
+    g,8 ( [ d'8 e8 ) ] g,8 ( [ d'8 e8 ) ] 
+    g,8 ( [ <d' e>8 ) ] g,8 ( [ <d' e>8 ) ] | % 125
+    g,8 ( [ d'8 e8 ) ] g,8 ( [ d'8 e8 ) ] 
+    g,8 ( [ <d' e>8 ) ] g,8 ( [ <d' e>8 ) ] | % 126
+    g,8 ( [ d'8 e8 ) ] g,8 ( [ d'8 e8 ) ] 
+    g,8 ( [ <d' e>8 ) ] g,8 ( [ <d' e>8 ) ] | % 127
+    g,8 ( [ ^\> d'8 e8 ) ] g,8 ( [ d'8 e8 ) ] 
+    g,8 ( [ <d' e>8 ) ] ^\! ^\pp g,8 ( [ <d' e>8 ) ] | % 128
+    g,,8 ( [ d'8 e8 ) ] g,8 ( [ d'8 e8 ) ] 
+    g,8 ( [ <d' e>8 ) ] g,8 ( [ <d' e>8 ) ] | % 129
+    g,8 ( [ d'8 e8 ) ] g,8 ( [ d'8 e8 ) ] 
+    g,8 ( [ e'8 ) ] g,8 ( [ e'8 ) ] | \barNumberCheck #130
+    g,8 ( [ d'8 e8 ) ] g,8 ( [ d'8 e8 ) ] 
+    g,8 ( [ e'8 ) ] g,8 ( [ e'8 ) ] | % 131
+    g,8 ( [ d'8 es8 ) ] g,8 ( [ d'8 es8 ) ] 
+    g,8 ( [ es'8 ) ] g,8 ( [ es'8 ) ] | % 132
+    g,8 ( [ d'8 e8 ) ] g,8 ( [ d'8 e8 ) ] 
+    g,8 ( [ <d' e>8 ) ] g,8 ( [ <d' e>8 ) ] | % 133
+    g,8 ( [ d'8 f8 ) ] g,8 ( [ d'8 f8 ) ] 
+    c8 ( [ g'8 ) ] c,8 ( [ g'8 ) ] | % 134
+    a,8 ( [ e'8 g8 ) ] a,8 ( [ e'8 g8 ) ] 
+    b,8 ( [ fis'8 ) ] b,8 ( [ fis'8 ) ] | % 135
+    \time 3/4  
+    a,8 ( [ e'8 g8 ) ] a,8 ( [ e'8 g8 ) ] | % 136
+    \time 5/4  
+    c8 ( -> [ b8 a8 ) ] d8 ( -> [ c8 b8 ) ] 
+    e8 ( -> [ d8 ) ] fis8 ( -> [ e8 ) ] | % 137
+    g8 ( -> [ fis8 e8 ) ] a8 ( -> [ g8 fis8 ) ] 
+    b8 ( -> [ a8 ) ] c8 ( -> [ b8 ) ] | % 138
+    \time 3/4  
+    d,8 ( -> [ d'8 ) ] r4 r4 | % 139
     d,8 ( -> [ d'8 ) ] r4 r4 | \barNumberCheck #140
-    d,8 ( -> [ d'8 ) ] r8 d,8 ( ->
-    d'4 ) | % 141
-    d,8 ( -> [ d'8 ) ] r8 d,8 ( ->
-    d'4 ) | % 142
+    d,8 ( -> [ d'8 ) ] r8 d,8 ( -> d'4 ) | % 141
+    d,8 ( -> [ d'8 ) ] r8 d,8 ( -> d'4 ) | % 142
     r4 r4 r8 d,,8 ( | % 143
     d,4 ) r2 | % 144
-    g8 ( [ d'8 ) ] r8 g,8 ( d'8 [
-    e8 ) ] | % 145
-    g,8 ( [ d'8 ) ] r8 g,8 ( d'8 [
-    e8 ) ] | % 146
-    g,8 ( [ d'8 ) ] r8 g,8 ( d'8 [
-    e8 ) ] | % 147
-    g,8 ( [ d'8 ) ] r8 g,8 ( d'8 [
-    e8 ) ] | % 148
-    g,8 ( [ d'8 ) ] r8 g,8 ( d'8 [
-    e8 ) ] | % 149
-    g,8 ( [ d'8 ) ] r8 g,8 ( d'8 [
-    e8 ) ] | \barNumberCheck #150
-    g,8 ( [ d'8 ) ] r8 g,8 ( d'8 [
-    e8 ) ] | % 151
-    g,8 ( [ d'8 ) ] r8 g,8 ( d'8 [
-    e8 ) ] | % 152
-    g,8 ( [ d'8 ) ] r8 g,8 ( d'8 [
-    e8 ) ] | % 153
-    g,8 ( [ d'8 ) ] r8 g,8 ( d'8 [
-    e8 ) ] | % 154
-    g,8 ( [ d'8 ) ] r8 g,8 ( d'8 [
-    e8 ) ] | % 155
-    g,8 ( [ d'8 ) ] r8 g,8 ( d'8 [
-    e8 ) ] | % 156
-    g,8 ( [ d'8 ) ] r8 g,8 ( d'8 [
-    e8 ) ] | % 157
-    g,8 ( [ d'8 ) ] r8 g,8 ( d'8 [
-    e8 ) ] | % 158
-    g,8 ( [ d'8 ) ] r8 g,8 ( d'8 [
-    e8 ) ] | % 159
-    g,8 ( [ d'8 ) ] r8 g,8 ( d'8 [
-    e8 ) ] | \barNumberCheck #160
-    g,8 ( [ d'8 ) ] r8 g,8 ( d'8 [
-    e8 ) ] | % 161
-    g,8 ( [ d'8 ) ] r8 g,8 ( d'8 [
-    e8 ) ] | % 162
-    g,8 ( [ d'8 ) ] r8 g,8 ( d'8 [
-    e8 ) ] | % 163
-    g,8 ( [ d'8 ) ] r8 g,8 ( d'8 [
-    e8 ) ] | % 164
+    g8 ( [ d'8 ) ] r8 g,8 ( d'8 [ e8 ) ] | % 145
+    g,8 ( [ d'8 ) ] r8 g,8 ( d'8 [ e8 ) ] | % 146
+    g,8 ( [ d'8 ) ] r8 g,8 ( d'8 [ e8 ) ] | % 147
+    g,8 ( [ d'8 ) ] r8 g,8 ( d'8 [ e8 ) ] | % 148
+    g,8 ( [ d'8 ) ] r8 g,8 ( d'8 [ e8 ) ] | % 149
+    g,8 ( [ d'8 ) ] r8 g,8 ( d'8 [ e8 ) ] | \barNumberCheck #150
+    g,8 ( [ d'8 ) ] r8 g,8 ( d'8 [ e8 ) ] | % 151
+    g,8 ( [ d'8 ) ] r8 g,8 ( d'8 [ e8 ) ] | % 152
+    g,8 ( [ d'8 ) ] r8 g,8 ( d'8 [ e8 ) ] | % 153
+    g,8 ( [ d'8 ) ] r8 g,8 ( d'8 [ e8 ) ] | % 154
+    g,8 ( [ d'8 ) ] r8 g,8 ( d'8 [ e8 ) ] | % 155
+    g,8 ( [ d'8 ) ] r8 g,8 ( d'8 [ e8 ) ] | % 156
+    g,8 ( [ d'8 ) ] r8 g,8 ( d'8 [ e8 ) ] | % 157
+    g,8 ( [ d'8 ) ] r8 g,8 ( d'8 [ e8 ) ] | % 158
+    g,8 ( [ d'8 ) ] r8 g,8 ( d'8 [ e8 ) ] | % 159
+    g,8 ( [ d'8 ) ] r8 g,8 ( d'8 [ e8 ) ] | \barNumberCheck #160
+    g,8 ( [ d'8 ) ] r8 g,8 ( d'8 [ e8 ) ] | % 161
+    g,8 ( [ d'8 ) ] r8 g,8 ( d'8 [ e8 ) ] | % 162
+    g,8 ( [ d'8 ) ] r8 g,8 ( d'8 [ e8 ) ] | % 163
+    g,8 ( [ d'8 ) ] r8 g,8 ( d'8 [ e8 ) ] | % 164
     g,8 ( [ d'8 ) ] r8 g,8 ( d'4 ) | % 165
     g,8 ( [ d'8 ) ] r8 g,8 ( d'4 ) | % 166
     g,4 -. r4 d'4 -. | % 167
