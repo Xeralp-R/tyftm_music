@@ -222,74 +222,188 @@ right = {
     \bar "|."
 }
 
+leftvoiceone = {
+    % the first bit
+    g,2. | 
+    d,2. | 
+    g,2. | 
+    d,2. |
+    % sin combinatoriae
+    r4 <b d' fis'>2 | 
+    r4 <a cis' fis'>2 |
+    r4 <b d' fis'>2 | 
+    r4 <a cis' fis'>2 |
+    g,2. | 
+    d,2. | 
+    g,2. | 
+    d,2. |
+    r4 <b d' fis'>2 | 
+    r4 <a cis' fis'>2 |
+    r4 <b d' fis'>2 | 
+    r4 <a cis' fis'>2 |
+    r4 <a cis' fis'>2 | 
+    r4 <b d' fis'>2 |
+    e,2. | 
+    e,2. | 
+    d,2. |
+    r4 <e' c'! a>2 | 
+    r4 <e' b g>2 |
+    r4 <b g d>2 | 
+    r4 <a e c!>2 |
+    r4 <a fis c!>2 | 
+    r4 <f'! c'! a>2 |
+    r4 <e' c'! a>2 | 
+    r4 <b g d>2 |
+    % finale bit
+    r4 <a e c!>2 | 
+    r4 <a fis c!>2 | 
+    r4 <g' e' b>2 | 
+    r4 <fis' cis' a>2 |
+    r4 <fis' d' b>2 | 
+    r4 \clef treble <cis' e' a'>2 \clef bass |
+    r4 <fis' cis' a>2 | 
+    r4 <a b,> <b e> |
+    <g a,>2. | 
+    <d a, d,>2. |
+    % back to beginning
+    g,2. | 
+    d,2. | 
+    g,2. | 
+    d,2. | \break
+    % sin combinatoriae
+    r4 <b d' fis'>2 | 
+    r4 <a cis' fis'>2 |
+    r4 <b d' fis'>2 | 
+    r4 <a cis' fis'>2 |
+    g,2. | 
+    d,2. | 
+    g,2. | 
+    d,2. |
+    r4 <b d' fis'>2 | 
+    r4 <a cis' fis'>2 |
+    r4 <b d' fis'>2 | 
+    r4 <a cis' fis'>2 |
+    r4 <a cis' fis'>2 | 
+    r4 <b d' fis'>2 |
+    e,2. | 
+    e,2. | 
+    d,2. |
+    r4 <e' c'! a>2 | 
+    r4 <e' b g>2 |
+    r4 <b g d>2 | 
+    r4 <a e c!>2 |
+    r4 <a fis c!>2 | 
+    r4 <f'! c'! a>2 |
+    r4 <e' c'! a>2 | 
+    r4 <b g d>2 |
+    % end
+    r4 <a e c!>2 | 
+    r4 <a fis c!>2 | 
+    r4 <g' e' b>2 | 
+    r4 <f'! d' a>2 |
+    r4 <f'! c'! a>2 | 
+    r4 \clef treble <c'! e' a'>2 \clef bass |
+    r4 <f'! c'! a>2 | 
+    r4 <a b,> <b e> |
+    <g a,>2. | 
+    <d a, d,>2. |
+}
+
+leftvoicetwo = {
+    % the intro bit
+    s2. |
+    s2. |
+    s2. |
+    s2. |
+    % sin combinatoriae
+    g,2. | 
+    d,2. | 
+    g,2. | 
+    d,2. |
+    s2. |
+    s2. |
+    s2. |
+    s2. |
+    g,2. | 
+    d,2. | 
+    g,2. | 
+    d,2. |
+    fis,2. | 
+    b,,2. | 
+    s2. | 
+    s2. | 
+    s2. | 
+    a,,2. |
+    d,2. |
+    d,2. |
+    d,2. |
+    d,2. |
+    d,2. |
+    d,2. |
+    d,2. |
+    % semi-finale
+    d,2. | 
+    d,2. | 
+    e,2. | 
+    fis,2. |
+    b,,2. | 
+    e,2. | 
+    e,2. | 
+    e,2. | 
+    s2. | 
+    s2. |
+    % next intro bit
+    s2. |
+    s2. |
+    s2. |
+    s2. |
+    % sin combinatoriae
+    g,2. | 
+    d,2. | 
+    g,2. | 
+    d,2. |
+    s2. |
+    s2. |
+    s2. |
+    s2. |
+    g,2. | 
+    d,2. | 
+    g,2. | 
+    d,2. |
+    fis,2. | 
+    b,,2. | 
+    s2. | 
+    s2. | 
+    s2. | 
+    a,,2. |
+    d,2. |
+    d,2. |
+    d,2. |
+    d,2. |
+    d,2. |
+    d,2. |
+    d,2. |
+    % final finalet
+    d,2. |
+    d,2. |
+    e,2. |
+    e,2. |
+    e,2. |
+    e,2. |
+    e,2. |
+    e,2. |
+    s2. |
+    s2. |
+}
+
 left = {
     \clef bass
     \key d \major
     \time 3/4
                 
-    g,2. | 
-    d,2. | 
-    g,2. | 
-    d,2. |
-    \sincombinatoriae
     <<
-        { % Finale
-            r4 <a e c!>2 | 
-            r4 <a fis c!>2 | 
-            r4 <g' e' b>2 | 
-            r4 <fis' cis' a>2 |
-            r4 <fis' d' b>2 | 
-            r4 \clef treble <cis' e' a'>2 \clef bass |
-            r4 <fis' cis' a>2 | 
-            r4 <a b,> <b e> |
-            <g a,>2. | 
-            <d a, d,>2. |
-        }
-    \\
-        { % Finale
-            d,2. | 
-            d,2. | 
-            e,2. | 
-            fis,2. |
-            b,,2. | 
-            e,2. | 
-            e,2. | 
-            e,2. | 
-            s2. | 
-            s2. |
-        }
-    >>
-    g,2. | 
-    d,2. | 
-    g,2. | 
-    d,2. |\break
-    \sincombinatoriae
-    <<
-        {
-            r4 <a e c!>2 | 
-            r4 <a fis c!>2 | 
-            r4 <g' e' b>2 | 
-            r4 <f'! d' a>2 |
-            r4 <f'! c'! a>2 | 
-            r4 \clef treble <c'! e' a'>2 \clef bass |
-            r4 <f'! c'! a>2 | 
-            r4 <a b,> <b e> |
-            <g a,>2. | 
-            <d a, d,>2. |
-        }
-    \\
-        {
-            d,2. |
-            d,2. |
-            e,2. |
-            e,2. |
-            e,2. |
-            e,2. |
-            e,2. |
-            e,2. |
-            s2. |
-            s2. |
-        }
+        \new Voice = "leftvoxune" \leftvoiceone
+        \new Voice = "leftvoxdeux" \leftvoicetwo
     >>
     \bar "|."
 }
