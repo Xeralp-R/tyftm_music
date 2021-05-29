@@ -164,7 +164,23 @@ right = {
             \new Voice = "rb62" \relative c' { \voiceTwo
                 ees2 ees2 |
             }
-        >>
+        >> \pageBreak
+        b8 b bes4 a8 a bes4 |
+        b8 b bes bes a4 bes,->\f |
+    % 65
+        ees4-> bes-> <ees g bes ees>4.-> <bes d f>8 | \break
+        <bes d f>8 <bes ees g> <bes f' aes> <bes ees g> <bes d f>
+        <g' bes ees>[ <g bes ees> <g bes ees>~ ] |
+        <g bes ees>4 bes,-> ees4-> bes8-> <bes d f>8 | 
+        <bes d f>8 <bes ees g> <bes f' aes> <bes ees g> <bes d f>
+        <g' bes ees>[ <g bes ees> <g bes ees>~ ] | \break
+        <g bes ees>4 bes,-> ees4-> bes8-> <bes d f>8 |
+    % 70
+        <bes d f>8 <bes ees g> <bes f' aes> <bes ees g> <bes d f> ees'[ ees ees ] |
+        <bes, d f>8 <bes ees g> <bes f' aes> <bes ees g> <bes d f> ees'[ ees ees ] | \break
+        <bes, d f>8 <bes ees g> <bes f' aes> <bes ees g> <bes d f> ees'[ ees des~ ] |
+        des1 |
+        d,!4-> cis-> <a d fis>_> <des f aes!>_> |
     }
 }
 
@@ -273,6 +289,21 @@ left = {
         aes,4 aes8 aes g4 g8 g |
         f8 ees d c bes4 r4 |
         aes''4 g fis f |
+        \clef treble
+        <b dis fis>4 <bes d f> <a cis e> <bes d f> |
+        <b dis fis>4 <bes d f> <a cis e> \clef bass bes,-> |
+    % 65
+        ees4-> bes-> <ees ees,>4.-> <bes bes,>8 |
+        <bes bes,>8 q q q q r8 r4 |
+        r4 bes-> ees4-> bes8-> <bes bes,>8 |
+        <bes bes,>8 q q q q r8 r4 |
+        r4 bes-> ees4-> bes8-> <bes bes,>8 |
+    % 70
+        <bes bes,>8 q q q q r8 r4 |
+        <bes bes,>8 q q q q r8 r4 |
+        <bes bes,>8 q q q q r8 r4 |
+        d'4( bes ges fes) |
+        <fis b,>4-> <e a,>4-> <d d,>4-> <des des,>4-> |
     }
 }
 
