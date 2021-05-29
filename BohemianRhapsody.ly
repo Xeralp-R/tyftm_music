@@ -180,7 +180,32 @@ right = {
         <bes, d f>8 <bes ees g> <bes f' aes> <bes ees g> <bes d f> ees'[ ees ees ] | \break
         <bes, d f>8 <bes ees g> <bes f' aes> <bes ees g> <bes d f> ees'[ ees des~ ] |
         des1 |
-        d,!4-> cis-> <a d fis>_> <des f aes!>_> |
+        d,!4-> cis-> <a d fis>_> <des f aes!>_> | \pageBreak
+    % 75
+        <des ges bes>4-> <d f bes d!>_> <ees g! bes ees>8_> bes'[ bes bes] |
+        c8 bes bes bes c[ bes] <ees, g bes>[ <ees g bes>] |
+        <ees aes c>8 <ees g bes> <f aes> <ees g> <bes d f>4 <bes bes'>4 | \break
+        <ees g bes ees>4. q8 <ees aes c ees>4 q8 q8 |
+        <d fis a d>8 q q q <g bes d g>4 q |
+    % 80
+        <d f! bes>2. <bes d g>4 |
+        <<
+            \new Voice = "ra81" \relative c'' { \voiceOne
+                c2 bes4 g |
+            }
+            \new Voice = "rb81" \relative c' { \voiceTwo
+                <d f>2. <bes d>4 |
+            }
+        >> \break
+        <d f bes>1~ |
+        <d f bes>2. r4 | \bar "||"
+        <g bes ees>4_"Instrumental Solo" g16 aes8. bes8. c16 d16 ees8. |
+    % 85
+        <g, bes ees>4 g16 aes8. bes8. c16 bes4 | \break
+        <g bes ees>4 g16 aes8. bes8. c16 d16 ees8. |
+        <a, ees' f>4 g16 aes8. bes8. c16 bes4 |
+        \tuplet 3/2 {r4 <bes d aes'>4 q} \tuplet 3/2 {r4 <bes ees g>4 q} |
+        \tuplet 3/2 {r4 <bes d f>4 q} \tuplet 3/2 {r4 <g bes ees>4 q} | \pageBreak
     }
 }
 
@@ -304,6 +329,24 @@ left = {
         <bes bes,>8 q q q q r8 r4 |
         d'4( bes ges fes) |
         <fis b,>4-> <e a,>4-> <d d,>4-> <des des,>4-> |
+    % 75
+        <ges ges,>4-> <bes, bes,>_> <ees ees,>8_> r8 r4 |
+        r2 r4 ees,8 ees |
+        a8 ees d c bes4 <bes bes'>4 |
+        <ees ees'>4. q8 aes4 aes8 aes |
+        d,8 d d d g4 g |
+    % 80
+        <bes, bes'>4 q8 q q4 q |
+        <bes bes'>8 q q q q4 q4 |
+        <bes bes'>4 q8. q16 q8 q q q |
+        \tuplet 3/2 {<bes bes'>8 q q} \tuplet 3/2 {q8 q q} \tuplet 3/2 {q8 q q} q8 q |
+        ees4 ees ees ees |
+    % 85
+        ees4 ees ees ees |
+        ees4 ees ees ees |
+        f4 f f f |
+        <bes bes,>4 q q q |
+        <bes bes,>4 q <ees ees,> q |
     }
 }
 
