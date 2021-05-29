@@ -138,9 +138,33 @@ right = {
         d8 d cis cis c4 <cis e>8 q8 | \break
         <d a'>4 <cis e>8 q8 <d a'>4 <cis e>8 q8 |
         <c ees>8 q8 <cis e>4 <d fis>4 <cis e>4 |
-        <aes des f>8 q q q <aes cis ees>4 q4 |
+        <aes des f>8\f q q q <aes cis ees>4 q4 |
     % 50
         <c! e! g!>8 <c e g> q q <e b gis>4 <gis e b> | \pageBreak
+        <a e cis>4_> e'8[ e] f[ e]  a,[ a] |
+        bes8[ a] e'[ e] f[ e] a,[ a] |
+        bes8[ a] a[ a] bes a g f | \break
+        \time 2/4
+        e[ bes] a'8[ a] |
+    % 55
+        \time 4/4
+        bes4( g ees c8 bes8) | 
+        \bar "||" \key ees \major
+        b4\mf bes8 bes a4 bes8 bes | \break
+        b4 bes8 bes a4 bes |
+        <ees aes c>4\f <ees g bes>8 q <ees fis a>4 <ees g bes> |
+        <ees aes c>8 q <ees g bes>4 <ees fis a>8 q <ees g bes>4 | \break
+    % 60
+        <ees aes c>4 <ees aes>8 <ees bes'> <bes ees g>4 q8 q |
+        <a c f>4 q8 q <bes d f bes>4 bes'8\mf bes |
+        <<
+            \new Voice = "ra62" \relative c'' { \voiceOne
+                c8( ees bes ees a, ees' aes, ees') |
+            }
+            \new Voice = "rb62" \relative c' { \voiceTwo
+                ees2 ees2 |
+            }
+        >>
     }
 }
 
@@ -232,6 +256,23 @@ left = {
         aes8 aes aes aes aes4 aes |
     % 50
         g8 g g g e4 e4 |
+        <a a,>4-> r4 r2 |
+        r1 |
+        r4 a'8 a bes a g f |
+        \time 2/4
+        e8 r8 r4
+    % 55
+        \time 4/4
+        r1 |
+        \bar "||" \key ees \major
+        dis4 d cis d |
+        dis4 d cis d |
+        <ees ees,>4 q8 q8 q4 q |
+        <ees ees,>8 q q4 q8 q8 q4 |
+    % 60
+        aes,4 aes8 aes g4 g8 g |
+        f8 ees d c bes4 r4 |
+        aes''4 g fis f |
     }
 }
 
