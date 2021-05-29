@@ -122,7 +122,25 @@ right = {
                 r4 <g ees>4 g2 |
                 s1 |
             }
-        >>
+        >> \pageBreak
+        \tuplet 6/4 { bes16 aes g aes g f } \tuplet 6/4 { g f ees f ees d}
+        \tuplet 6/4 { ees d c d c bes} b4 |
+        r16 bes( c d ees32 f g aes bes8) r16 bes,( c d ees32 f g aes bes8 | \break
+    % 40
+        <ees, g c>4.) d16( ees c8 d16 ees c8 d16 ees |
+        <aes, c f>4.) f16( g16 aes4 <aes c f>4) |
+        <f aes>4. aes16 des <f, aes des>4 des | 
+        \bar "||" \key a \major \break
+        <cis? a?>4-. q-. q-. q-. |
+        <cis? a?>4-. q-. q-. q-. |
+    % 45
+        d4 cis8 cis c c cis cis |
+        d8 d cis cis c4 <cis e>8 q8 | \break
+        <d a'>4 <cis e>8 q8 <d a'>4 <cis e>8 q8 |
+        <c ees>8 q8 <cis e>4 <d fis>4 <cis e>4 |
+        <aes des f>8 q q q <aes cis ees>4 q4 |
+    % 50
+        <c! e! g!>8 <c e g> q q <e b gis>4 <gis e b> | \pageBreak
     }
 }
 
@@ -193,10 +211,27 @@ left = {
             }
             {
                 ees,2 d2 |
-                c2 c'2 |
-                f,4. e8 ees4 d4 |
             }
         }
+        c2 c'2 |
+        f,4. e8 ees4 d4 |
+        bes'8. f16 bes8. f16 bes8. f16 bes16 f bes, d |
+        ees4. ees8 d4. d8 |
+    % 40
+        c4. c8 c4. c8 |
+        f4. e8 ees4 d |
+        des4. des16 c ces4 bes |
+        \bar "||" \key a \major
+        <a? a'?> r4 r2 |
+        r1 |
+    % 45
+        <a' fis'>4 <a e'>8 q <a ees'>4 <a e'> |
+        <a fis'>4 <a e'>8 q <a ees'>4 <a e'>8 q |
+        <a fis'>4 <a e'>8 q <a fis'>4 <a e'>8 q |
+        <a fis'>8 q <a e'>4 <a fis'>4 <a e'>4 |
+        aes8 aes aes aes aes4 aes |
+    % 50
+        g8 g g g e4 e4 |
     }
 }
 
