@@ -78,7 +78,51 @@ right = {
                     <ees bes>2. bes4 |
                 }
             >> \pageBreak
+            <c, ees g>2. r8 g'16 g16 |
+            <<
+                \new Voice = "ra27" \relative c'' { \voiceOne
+                    <aes f>8 g g f f4. bes8
+                }
+                \new Voice = "rb27" \relative c' { \voiceTwo 
+                    c2 c4. r8
+                }
+            >>
+            bes,8 <d f> <d f> g g <aes f> <aes f> <bes d,> | \break
         }
+        \alternative {
+            {
+                <aes f>8 <g ees>4 f16 g16 <f bes>4. f16 g16 |
+            % 30
+                <ees c f>4. bes16 q ces8 des ces des |
+                ces8 bes g'(_"Instrumental Solo" bes <aes c!> ees' <g, bes> ees' | \break
+                \time 2/4
+                <fis, a?> ees' <f, aes> ees') |
+                \time 4/4
+                r8 f,( bes d <g g,>4 <f f,>4) |
+                r8 f,( bes d <g g,>4 <f f,>4) | \break
+            % 35
+            }
+            {
+                <<
+                    \new Voice = "ra36" \relative c'' { \voiceOne
+                        <g ees>8( bes,_"Instrumental Solo" g' f16 ees16 bes'4. g8) |
+                    }
+                    \new Voice = "ra36" \relative c' { \voiceTwo
+                        s2 r4 <f bes,>4 |
+                    }
+                >>
+            }
+        }
+        <<
+            \new Voice = "ra37" \relative c'' { \voiceOne
+                c2 c8( d16 ees16 c8 d16 ees16 | \oneVoice
+                <f c aes>4.) c8( f16 g aes bes c4) |
+            }
+            \new Voice = "ra37" \relative c'' { \voiceTwo
+                r4 <g ees>4 g2 |
+                s1 |
+            }
+        >>
     }
 }
 
@@ -130,6 +174,28 @@ left = {
             a2 aes4 g4 |
         % 25
             ees8( bes' ees bes ees4) d4 |
+            c,8( g' c g c,4) g' |
+            f4. e!8 ees4 d |
+            bes4. bes8 bes4 bes |
+        }
+        \alternative {
+            {
+                ees2 d2 |
+            % 30
+                c2 <aes' ees'>2 |
+                ees1~ |
+                \time 2/4
+                ees2 |
+                \time 4/4
+                <bes' d bes'>1 |
+                <bes d bes'>1 |
+            % 35
+            }
+            {
+                ees,2 d2 |
+                c2 c'2 |
+                f,4. e8 ees4 d4 |
+            }
         }
     }
 }
