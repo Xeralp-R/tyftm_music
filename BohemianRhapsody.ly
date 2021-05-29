@@ -55,7 +55,7 @@ right = {
             d8\mf d~ d2 r8 bes |
             c8 <d bes> q2 r8 c16 d16 |
             <c ees>8 f ees d c4 c8 d | \break
-        % 20
+    % 20
             <ees c>8 f ees d <c a>4 r4 |
             d8 d~ d2 d8 f |
             <<
@@ -69,7 +69,7 @@ right = {
                 }
             >>
             <c f,>2. r4 |
-        % 25
+    % 25
             <<
                 \new Voice = "ra25" \relative c'' { \voiceOne
                     g8 g~ g2 f8 g16 aes |
@@ -92,7 +92,7 @@ right = {
         \alternative {
             {
                 <aes f>8 <g ees>4 f16 g16 <f bes>4. f16 g16 |
-            % 30
+    % 30
                 <ees c f>4. bes16 q ces8 des ces des |
                 ces8 bes g'(_"Instrumental Solo" bes <aes c!> ees' <g, bes> ees' | \break
                 \time 2/4
@@ -100,7 +100,7 @@ right = {
                 \time 4/4
                 r8 f,( bes d <g g,>4 <f f,>4) |
                 r8 f,( bes d <g g,>4 <f f,>4) | \break
-            % 35
+    % 35
             }
             {
                 <<
@@ -206,6 +206,43 @@ right = {
         <a, ees' f>4 g16 aes8. bes8. c16 bes4 |
         \tuplet 3/2 {r4 <bes d aes'>4 q} \tuplet 3/2 {r4 <bes ees g>4 q} |
         \tuplet 3/2 {r4 <bes d f>4 q} \tuplet 3/2 {r4 <g bes ees>4 q} | \pageBreak
+    % 90
+        <bes d>8( <c ees> <bes d f>2.) |
+        \time 2/4
+        r2
+        \time 4/4
+        \tuplet 3/2 {r4 <bes d aes'>4 q} \tuplet 3/2 {r4 <bes ees g>4 q} |
+        \tuplet 3/2 {r4 <bes d f>4 q} \tuplet 3/2 {r4 <g bes ees>4 q} | \break
+        <<
+            \new Voice = "ra94" \relative c''' { \voiceOne
+                aes8( bes c4) r2
+    % 95, Voice 1
+                g8( a8~ a2.) |
+                g4 f2( g4) |
+            }
+            \new Voice = "rb94" \relative c'' { \voiceTwo
+                <c ees>2 s2 |
+    % 95, Voice 2
+                <aes c>1 |
+                <bes d>1 |
+            }
+        >>
+        \tuplet 3/2 {r4 <aes c aes'> q} \tuplet 3/2 {<aes c aes'>4 <aes c bes'> q} | \break
+        <<
+            \new Voice = "ra98" \relative c''' { \voiceOne
+                g4 f2( g4) |
+            }
+            \new Voice = "rb98" \relative c'' { \voiceTwo
+                <bes d>1 |
+            }
+        >>
+        <aes c ees>4 q16 q16 q8 <bes d f>2 |
+    % 100
+        <aes c ees>4 q16 q16 q8 \tuplet 3/2 {<bes d f>4 <c ees> <bes d>} | \break
+        <g bes ees>8(_"Instrumental Solo" g) g8[ aes] bes8. c16 d16 ees8. |
+        <g, bes ees>4 g8 aes8 bes16 c8. bes4 |
+        <d, f bes>4_"poco a poco ritard. e dim" f8( g16 f aes8 f d bes~ |
+        bes1) | \bar "||"
     }
 }
 
@@ -347,6 +384,26 @@ left = {
         f4 f f f |
         <bes bes,>4 q q q |
         <bes bes,>4 q <ees ees,> q |
+    % 90
+        <bes bes,>4 q8 q q4 q |
+        \time 2/4
+        des,4 des' |
+        \time 4/4 
+        <bes bes,>4 q q q |
+        <bes bes,>4 q <ees ees,> q |
+        <aes aes,>4 q \tuplet 3/2{q4 q <g g,>} |
+    % 95
+        <f f,>4 q q q |
+        <bes, bes,>4 q q q |
+        <f' f,>4 q q q |
+        <bes, bes,>4 q q q |
+        f4 f bes, bes' |
+    % 100
+        f4 f bes, bes' |
+        ees,4 ees ees ees |
+        ees4 ees ees ees |
+        bes'1 |
+        aes'8( f d bes aes f d bes) |
     }
 }
 
