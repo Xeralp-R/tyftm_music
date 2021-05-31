@@ -5,12 +5,186 @@
 }
 #(set-global-staff-size 17.82)
 
+% the voice bit
+melody = {
+    \clef treble
+    \key bes \major
+    \time 4/4
+    \tempo \markup {"Slowly"}
+
+    \relative c'' {
+        r8 bes bes[ bes] bes4 bes |
+        r8 bes bes[ bes] bes[ bes] g4 |
+        \time 5/4
+        r8 a a[ a] bes4 a f8[ f] | \break
+        \time 4/4
+        bes8 bes bes bes a f4. |
+    % 5
+        d8 d d d~ d4. d8 |
+        d8 d ees f~ f4 bes,4 | \break
+        g'1 |
+        r8 g g[ g] g4 g |
+        \time 5/4
+        r8 f f[ g] f[ ees] c[ g'] a[ bes] | \break
+    % 10
+        \time 4/4
+        b8 b bes4 a8 a bes4 |
+        b8 b bes4 a8 a bes4 |
+        g8 g g g f4 bes | \pageBreak
+        e,8 e e e f4 a,8 c |
+        a'2. a,8( bes) |
+    % 15
+        bes2. r4 |
+        r1 | \break
+        \repeat volta 2 {
+            d8 d~ d2 r8 bes |
+            c8 d d2 r8 c16 d16 |
+            ees8 f ees d c4 c8 d | \break
+    % 20
+            ees8 f ees d c4 r4 |
+            d8 d~ d2 d8 f |
+            a8 g g2 r8 g | \break
+            bes8 bes bes bes bes g ees d |
+            c2. r4 |
+    % 25
+            g'8 g~ g2 f8( g16 aes16 | \pageBreak
+            g2.) r8 g16 g |
+            aes8 g g f f4. bes,8 |
+            bes8 f' f g g aes aes bes | \break
+        }
+        \alternative {
+            \relative c'' {
+                aes8 g4 f16 g bes4. f 16 g |
+    % 30
+                ees4. bes16 bes ces8 des ces des |
+                ces8 bes~ bes2 r4 | \break
+                \time 2/4
+                r2 |
+                \time 4/4
+                r1 |
+                r1 | \break
+            }
+    % 35
+            \relative c'' {
+                g4 r4 r2 |
+            }
+        }
+        r1 |
+        r1 | \pageBreak
+        r1 |
+        r1 | \break
+    % 40
+        r1 |
+        r1 |
+        r1 |
+        \bar "||" \key a \major \break
+        r1 |
+        r1 |
+    % 45
+        d,4 cis8 cis c c cis cis |
+        d8 d cis cis c4 e8 e | \break
+        a4 e8 e a4 e8 e |
+        ees8 ees e4 fis e |
+        f8 f f f ees4 ees |
+    % 50
+        g8 g g g e4 gis4 | \pageBreak
+        a4 \voiceTwo r4 r4 \oneVoice a8 a |
+        bes8 a \voiceTwo r4 r4 \oneVoice a8 a | 
+        bes8[ a] a[ a] bes a g f |
+        \break \time 2/4
+        e8 bes a' a |
+    % 55
+        \time 4/4
+        bes4( g ees c8 bes) |
+        \bar "||" \key ees \major
+        b4 bes8 bes a4 bes8 bes | \break
+        b4 bes8 bes a4 bes |
+        c'4 bes8 bes a4 bes4 |
+        c8 c bes4 a8 a bes4 | \break
+    % 60
+        c4 aes?8 bes g4 g8 g |
+        f4 f8 f bes4 r4 |
+        r1 | \pageBreak
+        b8 b bes4 a8 a bes4 |
+        b8 b bes bes a4 bes, |
+    % 65
+        ees4 bes ees'4. f,8 | \break
+        \voiceTwo f8 g aes g f r8 r4 |
+        r4 bes, ees bes8 f' |
+        f8 g aes g f r8 r4 | \break
+        r4 bes, ees bes8 f' |
+    % 70
+        f8 g aes g f r8 r4 |
+        f8 g aes g f r8 r4 | \break
+        f8 g aes g f r8 r4 |
+        des'4( bes ges fes) |
+        \oneVoice d!4 cis fis aes! | \pageBreak
+    % 75
+        \voiceTwo bes4 d! ees8 r8 r4 |
+        r2 r4 bes8 bes |
+        \oneVoice c8 bes aes g f4 bes4 | \break
+        ees4. ees8 ees4 ees8 ees8 |
+        d8 d d d g4 g |
+    % 80
+        bes,2. g4 |
+        c2( bes4) g4 | \break
+        bes1~ |
+        bes2. r4 | \bar"||"
+        r1 |
+    % 85
+        r1 | \break
+        r1 |
+        r1 |
+        \tuplet 3/2 {r4 aes' aes} \tuplet 3/2 {g g g} |
+        \tuplet 3/2 {f4 f f} \tuplet 3/2 {ees ees ees} | \pageBreak
+    % 90
+        d8( ees f2.) |
+        \time 2/4
+        r2 |
+        \time 4/4
+        \tuplet 3/2 {r4 aes aes} \tuplet 3/2 {g g g} |
+        \tuplet 3/2 {f4 f f} \tuplet 3/2 {ees ees ees} | \break
+        aes8( bes c4) r2 |
+    % 95
+        g8( aes~ aes2.) |
+        g4 f2( g4) |
+        \tuplet 3/2 {r4 aes aes} \tuplet 3/2 {aes g g} | \break
+        g4 f2( g4) |
+        ees4 ees16 ees16 ees8 f2 |
+    % 100
+        ees4 ees16 ees16 ees8 \tuplet 3/2 {f4 ees d} | \break
+        ees8( g,4.) r2 |
+        r1 |
+        r1 |
+        r1 | \bar "||" \pageBreak
+    % 105
+        r1 |
+        r1 |
+        r1 |
+        r1 | \break
+        r1 |
+    % 110
+        aes'?8 g ees g, bes bes4. |
+        g'8 f ees d bes2 |
+        g'8 ees f g ees ces4. |
+        g'8 f f ees ees c!4 d8 |
+        ees1~ |
+    % 115
+        ees2 r2 |
+        r1 |
+        r1 |
+        r1 |
+        bes8[ bes] a[ a] aes4 f'4 |
+    % 120
+        r1\fermata |
+    }
+}
+
 % right hand
 right = {
     \clef treble
     \key bes \major
     \time 4/4
-    \tempo \markup {"Slowly"}
 
     \relative c' {
         r8 <d f g bes>8\mf q[ q] q4 q4 |
@@ -33,7 +207,7 @@ right = {
         <<
             \new Voice = "ra12" \relative c'' { \voiceOne
                 g8 g g g f4 bes4 | \pageBreak
-                e8 e e e <a, f'>4 f8 a |
+                e,8 e e e <a, f'>4 f8 a |
             }
             \new Voice = "rb12" \relative c' { \voiceTwo
                 <bes ees?>2 <bes f'>2 |
@@ -52,7 +226,7 @@ right = {
         >>
         r8 f'( bes d <g g,>4 <f f,>4) | \break
         \repeat volta 2 {
-            d8\mf d~ d2 r8 bes |
+            d,8\mf d~ d2 r8 bes |
             c8 <d bes> q2 r8 c16 d16 |
             <c ees>8 f ees d c4 c8 d | \break
     % 20
@@ -61,7 +235,7 @@ right = {
             <<
                 \new Voice = "ra23" \relative c'' { \voiceOne
                     a8 g8 g2 r8 g8 | \break
-                    bes8 q q q q g ees d |
+                    bes8 bes bes bes bes g ees d |
                 }
                 \new Voice = "rb23" \relative c' { \voiceTwo
                     <d bes>2. r4 |
@@ -78,7 +252,7 @@ right = {
                     <ees bes>2. bes4 |
                 }
             >> \pageBreak
-            <c, ees g>2. r8 g'16 g16 |
+            <c ees g>2. r8 g'16 g16 |
             <<
                 \new Voice = "ra27" \relative c'' { \voiceOne
                     <aes f>8 g g f f4. bes8
@@ -481,9 +655,14 @@ left = {
     }
     \score {
         \layout {}
-        \new PianoStaff <<
-            \new Staff = "dexter" \right
-            \new Staff = "sinister" \left
+        <<
+            \new Staff = "voice" {
+                \new Voice = "melody" \melody
+            }
+            \new PianoStaff <<
+                \new Staff = "dexter" \right
+                \new Staff = "sinister" \left
+            >>
         >>
     }
 }
