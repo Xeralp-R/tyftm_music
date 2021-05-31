@@ -241,8 +241,50 @@ right = {
         <aes c ees>4 q16 q16 q8 \tuplet 3/2 {<bes d f>4 <c ees> <bes d>} | \break
         <g bes ees>8(_"Instrumental Solo" g) g8[ aes] bes8. c16 d16 ees8. |
         <g, bes ees>4 g8 aes8 bes16 c8. bes4 |
-        <d, f bes>4_"poco a poco ritard. e dim" f8( g16 f aes8 f d bes~ |
-        bes1) | \bar "||"
+        <d, f bes>4_\markup{\italic "poco a poco rit. e dim."} f8( g16 f aes8 f d bes~ |
+        bes1) | \bar "||" \pageBreak
+    % 105
+        <<
+            \new Voice = "ra105" \relative c' {
+                \oneVoice ees16(\mf bes ees g bes4~ \voiceOne bes2) |
+                \oneVoice r16 c,^( ees g <ees g c>4 \voiceOne g2) |
+            }
+            \new Voice = "rb105" \relative c' { \voiceTwo
+                s2 <bes f>2 |
+                s2 d4( ees4) |
+            }
+        >>
+        <d b>8.( f16 <ees c>4) <f d>8( g16 aes <g ees>8) aes16( bes? |
+        <a! fis d>4 d, <bes' g d>2) | \break
+        <<
+            \new Voice = "ra109" \relative c'' { \voiceOne
+                c4. c16 d bes2 |
+            }
+            \new Voice = "rb109" \relative c' { \voiceTwo
+                r4 <ees aes?>4 r4 <ees g> |
+            }
+        >>
+    % 110
+        aes'?8 g ees g, <g bes>8 q4. |
+        g'8 f ees d <g, bes>2 |
+        <g' ees>8 <ees c> <f d> <g ees> <ees ces>_\markup{\italic "rit."} <ces aes>4. | \break
+        <<
+            \new Voice = "ra112" \relative c'' { \voiceOne
+                <ees g>8 f f ees ees c?4 d8 |
+            }
+            \new Voice = "rb112" \relative c'' { \voiceTwo
+                aes1_\markup{\italic "a tempo"}
+            }
+        >>
+        <g bes ees>8( ees g bes <c aes ees> d <c aes ees> d) |
+    % 115
+        r8 ees,( g bes <c a! fis ees> d <c a fis ees> d) |
+        <bes f!>8( d, f bes <bes f des> c <bes f des> c) | \break
+        <g e bes>8( c, e g <bes e, des> aes aes g) |
+        <g e bes>8(_\markup{\italic "poco a poco rit. e dim."} e c bes <f' c a> c' f f,) |
+        <d' bes>8([ f] <c a>[ f] <b, aes>[ f'] <bes, g>[ f']) |
+    % 120
+        <a, f c>1\p \fermata | \bar "|."
     }
 }
 
@@ -404,6 +446,26 @@ left = {
         ees4 ees ees ees |
         bes'1 |
         aes'8( f d bes aes f d bes) |
+    % 105
+        ees4 ees d d |
+        c4 c b c |
+        b4 c bes ees |
+        d8. a'16 d8. a16 g4 d'8 g, |
+        aes?4. aes8 ees4. d8 |
+    % 110
+        c8( g' c ees g, d' g g,) |
+        c,8( g' c ees g, d' g g,) |
+        c,8 g' c ees <aes, ees' ces'>2\arpeggio |
+        <bes aes' c?>1\arpeggio |
+        ees,1 |
+    % 115
+        ees1 |
+        d2 des2 |
+        c1 |
+        c2 f2 |
+        bes'8[ bes] a[ a] aes4 f' |
+    % 120
+        <a, c, f,>1\fermata\arpeggio |
     }
 }
 
