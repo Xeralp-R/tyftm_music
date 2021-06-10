@@ -7,11 +7,6 @@
 
 % the voice bit
 melody = {
-    \clef treble
-    \key bes \major
-    \time 4/4
-    \tempo \markup {"Slowly"}
-
     \relative c'' {
         r8 bes bes[ bes] bes4 bes |
         r8 bes bes[ bes] bes[ bes] g4 |
@@ -657,6 +652,11 @@ left = {
         \layout {}
         <<
             \new Staff = "voice" {
+                \clef treble
+                \key bes \major
+                \time 4/4
+                \tempo \markup {"Slowly"}
+                
                 \new Voice = "melody" \melody
             }
             \new PianoStaff <<
