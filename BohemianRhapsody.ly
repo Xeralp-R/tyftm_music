@@ -83,8 +83,8 @@ melody = {
         f8 f f f ees4 ees |
     % 50
         g8 g g g e4 gis4 | \pageBreak
-        a4 \voiceTwo r4 r4 \oneVoice a8 a |
-        bes8 a \voiceTwo r4 r4 \oneVoice a8 a | 
+        a4 \voiceTwo r4 r4 a8 a |
+        bes8 a r4 r4 a8 a | \oneVoice
         bes8[ a] a[ a] bes a g f |
         \break \time 2/4
         e8 bes a' a |
@@ -173,6 +173,122 @@ melody = {
     % 120
         r1\fermata |
     }
+}
+
+% the first lyric
+lyrone = \lyricmode {
+    Is this the real life?
+    Is this just fan -- ta -- sy?
+    Caught in a land -- slide, No es --
+    cape from re -- al -- i -- ty.
+% 5
+    O -- pen your eyes. __ Look
+    up to the skies __ and
+    see,
+    I'm just a poor boy,
+    I need no sym -- pa -- thy, Be -- cause I'm
+% 10
+    eas -- y come, eas -- y go,
+    Lit -- tle high, lit -- tle low,
+    An -- y way the wind blows
+    does -- n't real -- ly mat -- ter to
+    me, to __
+% 15
+    me.
+
+    "1. Ma" -- ma __ just
+    killed a man, put a
+    gun a -- against his head, pulled my
+% 20
+    trig -- ger now he's dead.
+    Ma -- ma, __ life had 
+    just be -- gun, But 
+    now I've gone and thrown it all a --
+    way,
+% 25
+    Ma -- ma, __ ooh, 
+    __ Did --  n't
+    mean to make you cry, If 
+    I'm not back a -- gain this time to --
+    mor -- row, car -- ry on, car -- ry
+% 30
+    on as if noth -- ing real -- ly
+    mat -- ters __
+% 35
+    all.
+% 45
+    I see a lit -- tle sil -- hou --
+    et -- to of a man, Scar -- a -- 
+    mouche, Scar -- a -- mouche, will you
+    do the Fan -- dan -- go.
+    Thun -- der -- bolt and light -- ning,
+% 50
+    ver -- y, ver -- y fright -- ning
+    me. Gal -- li --
+    le -- o. Gal -- li --
+    le -- o. Gal -- li -- le -- o fig -- a --
+    ro Mag -- ni -- fi -- 
+% 55
+    co __ 
+    I'm just a poor boy and
+    no -- bod -- y loves me.
+    He's just a poor boy
+    from a poor fam -- i -- ly,
+% 60
+    Spare him his life from this
+    mon -- stros -- i -- ty
+
+    Eas -- y come, eas -- y go,
+    will you let me go. Bis -- 
+% 65
+    mil -- lah! No, we
+    will not let you go.
+    Bis -- mil -- lah! We 
+    will not let you go.
+    Bis -- mil -- lah! We
+% 70
+    will not let you go.
+    Will not let you go.
+    Will not let you go.
+    Ah. __
+    No, no, no, no,
+% 75
+    no, no, no.
+    Ma -- ma
+    mi -- a, let me go. Be --
+    el -- ze -- bub has a 
+    de -- vil put a -- side for 
+% 80
+    me, for
+    me, __ for
+    me
+    __
+% 88
+    So you think you can 
+    stone me and spit in my
+% 90
+    eye. __
+
+    So you think you can
+    love me and leave me to
+    die. __
+% 95
+    Oh, __
+    ba -- by, __
+    can't do this to me,
+    ba -- by, __
+    Just got -- ta get out,
+% 100
+    just got -- ta get right out -- ta 
+    here. __
+% 110
+    Noth -- ing real -- ly mat -- ters,
+    An -- y -- one can see,
+    Noth -- ing real -- ly mat -- ters,
+    Noth -- ing real -- ly mat -- ters to
+    me. __
+% 119
+    An -- y way the wind blows.
 }
 
 % right hand
@@ -659,6 +775,7 @@ left = {
                 
                 \new Voice = "melody" \melody
             }
+            \new Lyrics \lyricsto melody \lyrone
             \new PianoStaff <<
                 \new Staff = "dexter" \right
                 \new Staff = "sinister" \left
