@@ -175,6 +175,72 @@ melody = {
     }
 }
 
+% the extra bit
+extra = { \voiceTwo
+    \magnifyMusic 0.63 {
+        s1 * 2
+        \time 5/4
+        s4 * 5
+        \time 4/4
+        s1 * 5
+        \time 5/4
+        s4 * 5
+        \time 4/4
+        s1 * 7
+        \repeat volta 2 {
+            % 18
+            s1 s2 s4 s8 d'8
+            s1 * 2
+            % 21
+            s4 d'8 c'16 bes c'8 d' r8 f'8 |
+            s2 s4 s8 f'16 g'16 |
+            s1 * 5
+            % 28
+            s2 g'16 g'16 aes'8 s4 |
+        }
+        \alternative {
+            {
+                s1 * 3
+                \time 2/4
+                s2
+                \time 4/4
+                s1 * 2
+            }
+            {
+                s1
+            }
+        }
+        s1 * 7
+        s1 * 8
+        \voiceOne
+        % 51
+        s4 e''8[ e''] f''[ e''] s4 |
+        s4 e''8[ e''] f''[ e''] s4 |
+        s1
+        \time 2/4
+        s2
+        \time 4/4
+        s1
+        s1 * 7
+        s1 * 3
+        % 66
+        r2 r8 ees'' ees'' ees''~ |
+        ees''4 r4 r2 |
+        r2 r8 ees'' ees'' ees''~ |
+        ees''4 r4 r2 |
+        r2 r8 ees'' ees'' ees''~ |
+        ees''4 r4 r8 ees'' ees'' ees''~ |
+        ees''4 r4 r8 ees'' ees'' des''~ |
+        des''1 |
+        s1
+        % 75
+        r2 r8 bes' bes' bes' |
+        c''8 bes' bes' bes' c'' bes' r4 |
+        s1
+        % empty to the end
+    }
+}
+
 % the first lyric
 lyrone = \lyricmode {
     Is this the real life?
@@ -291,10 +357,15 @@ lyrone = \lyricmode {
     An -- y way the wind blows.
 }
 
+lyrtwo = \lyricmode {
+    Test -- ing
+}
+
 % right hand
 right = {
     \clef treble
     \key bes \major
+    \numericTimeSignature
     \time 4/4
 
     \relative c' {
@@ -378,7 +449,7 @@ right = {
             {
                 <aes f>8 <g ees>4 f16 g16 <f bes>4. f16 g16 |
     % 30
-                <ees c f>4. bes16 q ces8 des ces des |
+                <ees c f>4. bes16 bes ces8 des ces des |
                 ces8 bes g'(_"Instrumental Solo" bes <aes c!> ees' <g, bes> ees' | \break
                 \time 2/4
                 <fis, a?> ees' <f, aes> ees') |
@@ -576,6 +647,7 @@ right = {
 left = {
     \clef bass
     \key bes \major
+    \numericTimeSignature
     \time 4/4
 
     \relative c {
@@ -770,12 +842,17 @@ left = {
             \new Staff = "voice" {
                 \clef treble
                 \key bes \major
+                \numericTimeSignature
                 \time 4/4
                 \tempo \markup {"Slowly"}
                 
-                \new Voice = "melody" \melody
+                <<
+                    \new Voice = "melody" \melody
+                    \new Voice = "extra" \extra
+                >>
             }
             \new Lyrics \lyricsto melody \lyrone
+            \new Lyrics \lyricsto melody \lyrtwo
             \new PianoStaff <<
                 \new Staff = "dexter" \right
                 \new Staff = "sinister" \left
