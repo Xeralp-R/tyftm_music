@@ -1,5 +1,13 @@
 \version "2.22.0"
 
+#(define-markup-command 
+    (ensmall layout props text) 
+    (markup?)
+    "Make text smaller."
+    (interpret-markup layout props 
+        #{\markup \fontsize #-2 { #text }#})
+)
+
 \paper{
     #(set-paper-size "letter") 
 }
@@ -290,8 +298,12 @@ lyrone = \lyricmode {
     Thun -- der -- bolt and light -- ning,
 % 50
     ver -- y, ver -- y fright -- ning
-    me. Gal -- li --
-    le -- o. Gal -- li --
+    \set associatedVoice = "extra" me. 
+    \markup \ensmall Gal -- \markup \ensmall li -- \markup \ensmall le -- \set associatedVoice = "melody" \markup \ensmall o.
+    Gal -- li --
+    le -- \set associatedVoice = "extra" o. 
+    \markup \ensmall Gal -- \markup \ensmall li -- \markup \ensmall le -- \set associatedVoice = "melody" \markup \ensmall o.
+    Gal -- li --
     le -- o. Gal -- li -- le -- o fig -- a --
     ro Mag -- ni -- fi -- 
 % 55
@@ -308,18 +320,26 @@ lyrone = \lyricmode {
     will you let me go. Bis -- 
 % 65
     mil -- lah! No, we
-    will not let you go.
+    will not let you \set associatedVoice = "extra" go.
+    \markup \ensmall Let \markup \ensmall him \set associatedVoice = "melody" \markup \ensmall go! __
     Bis -- mil -- lah! We 
-    will not let you go.
+    will not let you \set associatedVoice = "extra" go.
+    \markup \ensmall Let \markup \ensmall him \set associatedVoice = "melody" \markup \ensmall go! __
     Bis -- mil -- lah! We
 % 70
-    will not let you go.
-    Will not let you go.
-    Will not let you go.
+    will not let you \set associatedVoice = "extra" go.
+    \markup \ensmall Let \markup \ensmall me \set associatedVoice = "melody" \markup \ensmall go. __
+    Will not let you \set associatedVoice = "extra" go.
+    \markup \ensmall Let \markup \ensmall me \set associatedVoice = "melody" \markup \ensmall go. __
+    Will not let you \set associatedVoice = "extra" go.
+    \markup \ensmall Let \markup \ensmall me \set associatedVoice = "melody" \markup \ensmall go. __
     Ah. __
     No, no, no, no,
 % 75
-    no, no, no.
+    no, no, \set associatedVoice = "extra" no.
+    \markup \ensmall Oh \markup \ensmall ma -- \markup \ensmall ma
+    \markup \ensmall mi -- \markup \ensmall a \markup \ensmall ma -- \markup \ensmall ma
+    \markup \ensmall mi -- \set associatedVoice = "melody" \markup \ensmall a.
     Ma -- ma
     mi -- a, let me go. Be --
     el -- ze -- bub has a 
@@ -358,7 +378,21 @@ lyrone = \lyricmode {
 }
 
 lyrtwo = \lyricmode {
-    Test -- ing
+    \repeat unfold 77 {
+        \skip 1
+    }
+    "2. Too" late, __ my
+    time has come, Sends \skip 16
+    shiv -- ers down my spine, bod -- y's
+    ach -- ing all the time.
+    Good -- \set associatedVoice = "extra" bye, __ \skip 8 ev -- 'ry -- bod -- y, \set associatedVoice = "melody" I've
+    got to go, Gotta
+    leave you all be -- hind and face the
+    truth.
+    Ma -- ma, __ ohh,
+    __ \skip 16 \skip 16
+    I don't wan't to die, I
+    some -- times wish \set associatedVoice = "extra" I'd nev -- \set associatedVoice = "melody" er been born at
 }
 
 % right hand
