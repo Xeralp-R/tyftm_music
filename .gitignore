@@ -9,3 +9,4 @@
 *~
 #To ignore --1.tmp
 *.tmp
+*.tmp*
