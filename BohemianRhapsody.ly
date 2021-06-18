@@ -1,5 +1,8 @@
 \version "2.22.0"
 
+\include "predefined-guitar-fretboards.ly"
+
+% Make the test smaller, as necessary
 #(define-markup-command 
     (ensmall layout props text) 
     (markup?)
@@ -8,8 +11,196 @@
         #{\markup \fontsize #-2 { #text }#})
 )
 
+% Make a new fretboard table as a copy of default-fret-table
+#(define bohemian-fretboards
+   (make-fretboard-table default-fret-table)
+)
+
+% Add the necessary chords:
+% A flat major
+\storePredefinedDiagram #bohemian-fretboards
+    \chordmode {aes}
+    #guitar-tuning
+    "x;x;6;5;4;4;"
+% A major
+\storePredefinedDiagram #bohemian-fretboards
+    \chordmode {a}
+    #guitar-tuning
+    "x;o;2;2;2;o;"
+% A diminished
+\storePredefinedDiagram #bohemian-fretboards
+    \chordmode {a:dim}
+    #guitar-tuning
+    "x;x;1;2;1;2;"
+% B flat major
+\storePredefinedDiagram #bohemian-fretboards
+    \chordmode {bes}
+    #guitar-tuning
+    "1-1-(;1-1;3-2;3-3;3-4;1-1-);"
+% B flat major over D
+\storePredefinedDiagram #bohemian-fretboards
+    \chordmode {bes/d}
+    #guitar-tuning
+    "x;x;o;3;3;1;"
+% B flat minor
+\storePredefinedDiagram #bohemian-fretboards
+    \chordmode {bes:m}
+    #guitar-tuning
+    "1;1;3;3;2;1;"
+% B flat 6
+\storePredefinedDiagram #bohemian-fretboards
+    \chordmode {bes:6}
+    #guitar-tuning
+    "x;x;3;3;3;3;"
+% B flat 7
+\storePredefinedDiagram #bohemian-fretboards
+    \chordmode {bes:7}
+    #guitar-tuning
+    "1-1-(;1-1;3-2;1-1;3-3;1-1-);"
+% B flat 11
+\storePredefinedDiagram #bohemian-fretboards
+    \chordmode {bes:11}
+    #guitar-tuning
+    "1-1-(;1-1;1-1;1-1;1-1;1-1-);"
+% B major
+\storePredefinedDiagram #bohemian-fretboards
+    \chordmode {b}
+    #guitar-tuning
+    "2-(;2;4;4;4;2-);"
+% B augmented
+\storePredefinedDiagram #bohemian-fretboards
+    \chordmode {b:aug}
+    #guitar-tuning
+    "x;x;5;4;4;3;"
+% C major over G
+\storePredefinedDiagram #bohemian-fretboards
+    \chordmode {c/g}
+    #guitar-tuning
+    "3;3;2;o;1;o;"
+% C minor
+\storePredefinedDiagram #bohemian-fretboards
+    \chordmode {c:m}
+    #guitar-tuning
+    "x;x;1;o;1;3;"
+% C 7
+\storePredefinedDiagram #bohemian-fretboards
+    \chordmode {c:7}
+    #guitar-tuning
+    "x;3-3;2-2;3-4;1-1;o;"
+% C minor 7
+\storePredefinedDiagram #bohemian-fretboards
+    \chordmode {c:m7}
+    #guitar-tuning
+    "x;x;1-1;3-2;1-1;3-3;"
+% C 7 flat 9
+\storePredefinedDiagram #bohemian-fretboards
+    \chordmode {c:7-9}
+    #guitar-tuning
+    "x;3;2;3;2;3;"
+% C sharp diminished
+\storePredefinedDiagram #bohemian-fretboards
+    \chordmode {cis:dim}
+    #guitar-tuning
+    "x;x;2;3;2;3;"
+% D flat major (default fret table)
+\storePredefinedDiagram #bohemian-fretboards
+    \chordmode {des}
+    #guitar-tuning
+    "x;x;3-3;1-1-(;2-2;1-1-);"
+% D flat major over A flat
+\storePredefinedDiagram #bohemian-fretboards
+    \chordmode {des/aes}
+    #guitar-tuning
+    "4;x;3;1;2;1;"
+% D flat 7 over C flat
+\storePredefinedDiagram #bohemian-fretboards
+    \chordmode {des:7/ces}
+    #guitar-tuning
+    "x;2;x;1;2;1;"
+% D major (default fret table)
+\storePredefinedDiagram #bohemian-fretboards
+    \chordmode {d}
+    #guitar-tuning
+    "x;x;o;2-1;3-3;2-2;"
+% E flat major
+\storePredefinedDiagram #bohemian-fretboards
+    \chordmode {ees}
+    #guitar-tuning
+    "x;x;1;3;4;3;"
+% E flat major over B flat
+\storePredefinedDiagram #bohemian-fretboards
+    \chordmode {ees/bes}
+    #guitar-tuning
+    "x;1;1;3;4;3;"
+% E flat major over G
+\storePredefinedDiagram #bohemian-fretboards
+    \chordmode {ees/g}
+    #guitar-tuning
+    "x;x;5;3;4;3;"
+% E flat diminished
+\storePredefinedDiagram #bohemian-fretboards
+    \chordmode {ees:dim}
+    #guitar-tuning
+    "x;x;1;2;1;2;"
+% F major
+\storePredefinedDiagram #bohemian-fretboards
+    \chordmode {f}
+    #guitar-tuning
+    "x;x;3;2;1;1;"
+% F major over A
+\storePredefinedDiagram #bohemian-fretboards
+    \chordmode {f/a}
+    #guitar-tuning
+    "x;o;3;2;1;1;"
+% F major over C
+\storePredefinedDiagram #bohemian-fretboards
+    \chordmode {f/c}
+    #guitar-tuning
+    "x;3;3;2;1;1;"
+% F minor
+\storePredefinedDiagram #bohemian-fretboards
+    \chordmode {f:m}
+    #guitar-tuning
+    "x;x;3;1;1;1;"
+% F minor over A flat
+\storePredefinedDiagram #bohemian-fretboards
+    \chordmode {f:m/aes}
+    #guitar-tuning
+    "4;x;3;1;1;1;"
+% F 7 (default fret table)
+\storePredefinedDiagram #bohemian-fretboards
+    \chordmode {f:7}
+    #guitar-tuning
+    "1-1-(;3-3;1-1;2-2;1-1;1-1-);"
+% F minor 7
+\storePredefinedDiagram #bohemian-fretboards
+    \chordmode {f:m7}
+    #guitar-tuning
+    "1-(;3;1;1;1;1-);"
+% F sharp diminished
+\storePredefinedDiagram #bohemian-fretboards
+    \chordmode {fis:dim}
+    #guitar-tuning
+    "x;x;1;2;1;2;"
+% G flat major
+\storePredefinedDiagram #bohemian-fretboards
+    \chordmode {ges}
+    #guitar-tuning
+    "x;x;5;4;3;3;"
+% G flat 7
+\storePredefinedDiagram #bohemian-fretboards
+    \chordmode {ges:7}
+    #guitar-tuning
+    "x;x;5;4;3;o;"
+% G minor over D
+\storePredefinedDiagram #bohemian-fretboards
+    \chordmode {g:m/d}
+    #guitar-tuning
+    "x;5;5;3;3;3;"
+
 \paper{
     #(set-paper-size "letter") 
+    page-count = #9
 }
 #(set-global-staff-size 17.82)
 
@@ -393,6 +584,180 @@ lyrtwo = \lyricmode {
     __ \skip 16 \skip 16
     I don't wan't to die, I
     some -- times wish \set associatedVoice = "extra" I'd nev -- \set associatedVoice = "melody" er been born at
+}
+
+% the chords
+regularchords = \chordmode {
+    bes1:6~ |
+    s8 c4:7 bes8:6 c2:7 |
+    \time 5/4
+    d8 f4.:7 c4:m7 f4:7 s4 |
+    \time 4/4
+    bes4 c8:m7 bes8 s2 |
+% 5
+    g1:m |
+    bes1:7 |
+    ees1 |
+    c1:m |
+    \time 5/4
+    f1:7 s4 |
+% 10
+    \time 4/4
+    b4 bes4 a4 bes4 |
+    b4 bes4 a4 bes4 |
+    ees2 bes2/d |
+    cis2:dim f2/c |
+    f1 |
+% 15
+    bes1 |
+    s1 |
+    \repeat volta 2 {
+        bes1 |
+        g1:m |
+        c1:m |
+    % 20
+        s2 f2 |
+        bes1 |
+        g1:m |
+        c2:m7 b4:aug ees4/bes |
+        f2/a f2:m/aes |
+    % 25
+        ees2. bes4/d |
+        c1:m |
+        f1:m |
+        bes1 |
+    }
+    \alternative {
+        {
+            ees2 bes2/d |
+        % 30
+            c2:m aes2:m |
+            ees2 aes4 ees4 |
+            \time 2/4
+            ees4:dim f4:m7 |
+            \time 4/4
+            bes1 |
+            s1 |
+        }
+    % 35
+        {
+            ees2 bes2/d |
+        }
+    }
+    c1:m |
+    f1:m |
+    bes1:7 |
+    ees2 g2:m/d |
+% 40
+    c1:m |
+    f:m |
+    des2 des4:7/ces bes4:m |
+    a1 |
+    s1 |
+% 45
+    d4 a a:dim a |
+    d4 a a:dim a |
+    d4 a d a |
+    a4:dim a d a |
+    des2/aes aes2 |
+% 50
+    c2/g e2 |
+    a4 r2. |
+    s1 |
+    s1 |
+    \time 2/4 
+    s2 |
+% 55
+    \time 4/4
+    s1 |
+    b4 bes a bes |
+    b4 bes a bes |
+    aes4 ees ees:dim ees |
+    aes4 ees ees:dim ees |
+% 60
+    aes2 ees2/g |
+    f2 bes2 |
+    aes4 ees/g fis:dim f:m7 |
+    b4 bes a bes |
+    b4 bes a bes |
+% 65
+    ees2. bes4 |
+    s2 s8 ees4. |
+    s2 s4. bes8 |
+    s2 s8 ees4. |
+    s2 s4. bes8 |
+% 70
+    s1 |
+    s1 |
+    s1 |
+    ges1:7 |
+    b4:m a d des |
+% 75
+    ges4 bes ees r4 |
+    s2. ees4 |
+    s2 bes2 |
+    ees2 aes2 |
+    d2 g2:m |
+% 80
+    bes1 |
+    s1 |
+    s1 |
+    s1 |
+    ees1 |
+% 85
+    s1 |
+    s1 |
+    f1:7 |
+    bes2:7 ees2/bes |
+    bes2 ees2 |
+% 90
+    bes1 |
+    \time 2/4
+    des2 |
+    \time 4/4
+    bes2:7 ees2/bes |
+    bes2 ees2 |
+    aes1 |
+% 95
+    f1:m |
+    bes1 |
+    f1:m |
+    bes1 |
+    f2:m7 bes2 |
+% 100
+    f2:m7 bes2 |
+    ees1 |
+    s1 |
+    bes:7 |
+    s1 |
+% 105
+    ees2 bes2/d |
+    c2:m g4 c4:m |
+    g4:7 c4:m bes4:7 ees4 |
+    d2 g2:m |
+    aes2 ees2 |
+% 110
+    c2:m g2:m |
+    c2:m g2:m |
+    c2:m aes2:m |
+    bes1:11 |
+    ees2 aes2/ees |
+% 115
+    ees2 ees2:dim |
+    bes2/d bes2:m/des |
+    c2:7 c2:7-9 |
+    c2:7 f2 |
+    bes4 f4 aes4:dim g4:m7 |
+% 120
+    f1 |
+}
+
+guitarchords = \chordmode {
+    % uses bohemian fretboards, as defined above.
+    \set predefinedDiagramTable = #bohemian-fretboards
+    % removes fingerings
+    \override FretBoard.fret-diagram-details.finger-code = #'none
+    \regularchords
 }
 
 % right hand
@@ -873,6 +1238,12 @@ left = {
     \score {
         \layout {}
         <<
+            \new ChordNames {
+                \regularchords
+            }
+            \new FretBoards {
+                \guitarchords
+            }
             \new Staff = "voice" {
                 \clef treble
                 \key bes \major
