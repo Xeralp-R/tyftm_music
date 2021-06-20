@@ -29,8 +29,45 @@ right = {
                 b'8 b b8. g16 c8 b4 ais16 b | \break
                 <e b gis>8 <e b gis>8 <b gis>8 d c4\) r8 a16\( b |
                 c4. d8 c8 b4 fis8 |
-                b8 a g f e4\) r8 e8 |
+                b8 a g f e4\) r8 e8\( | \break
+                d8 fis g a <b g d>4.\arpeggio fis16 g |
+            % 15
+                a4. d,8 <g c>8 <g b>4\) e8\( |
+                d8 fis g a <b g d>4.\arpeggio\) b8\( | \break
+                <fis ais>8 b <fis ais! cis>2 \voiceOne d'4 \oneVoice |
+                <d b fis>4\) r16 d,16 fis a! d4. d8\( |
+                b8 d4 g8 a b4 b,16 d\) |
             }
+        }
+        \new Voice = extra { \voiceTwo
+            \partial 8 s8 |
+            s1 * 2
+            \time 2/4 
+            s2
+            \time 4/4
+            s1 * 2
+            s1 * 8
+            s1
+            % 15
+            \magnifyMusic 0.63 {
+                a'8. a'16  a'8  d'8 s2
+            }
+            s1 * 1
+            % 17
+            \magnifyMusic 0.63 {
+                s2. <fis' ais' cis''>8. d''16 |
+            }
+            \hide NoteHead \hide Stem \hide Beam \hide Flag
+            \once \override Slur.control-points = #'(
+                (0 . -5)
+                (10 . -7)
+                (21 . 0)
+                (24 . 6)
+            )
+            \change Staff = "left"
+            b,16( d fis a b
+            \change Staff = "right"
+            d' fis' a' d'')
         }
     >>
 }
@@ -61,7 +98,12 @@ left = {
         e,8_( e' <gis b d>4) a,16^( e' a b c4) |
         a,16^( e' a b c4) e,,16_( b' e fis g4) |
         b,8_( dis <fis a>4) e,16_( b' e fis g4) |
-
+        d,8_( a' <d fis>4) d,16_( g d' g b4) |
+        d,,8_( a' <d fis>4) d,16_( g d' g b4) |
+        d,,8_( a' <d fis>4) d,16_( g d' g b4) |
+        cis,4 ais fis16^( cis' fis gis ais4) |
+        b,16 d fis a! b4 <d, a' c!> d, |
+        g8_( d' <g b>4) g,16^( d' g a b4) |
     }
 }
 
