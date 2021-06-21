@@ -23,20 +23,34 @@ right = {
                 e16 b fis' g e b fis' g e b fis' g a g fis\) b,\( |
                 b'8. c16 b8 a g a b a16 b |
                 c8 b a8. g16 fis4\) r8 fis16\( g | \break
-                a4 a8 bes16 a16~ a4\) r8 b16\( c |
+                a4 a8 b16 a16~ a4\) r8 b16\( c |
                 b8 a g a b4\) r8. b,16\( |
             % 10
                 b'8 b b8. g16 c8 b4 ais16 b | \break
                 <e b gis>8 <e b gis>8 <b gis>8 d c4\) r8 a16\( b |
                 c4. d8 c8 b4 fis8 |
-                b8 a g f e4\) r8 e8\( | \break
+                b8 a g fis e4\) r8 e8\( | \break
                 d8 fis g a <b g d>4.\arpeggio fis16 g |
             % 15
                 a4. d,8 <g c>8 <g b>4\) e8\( |
                 d8 fis g a <b g d>4.\arpeggio\) b8\( | \break
                 <fis ais>8 b <fis ais! cis>2 \voiceOne d'4 \oneVoice |
                 <d b fis>4\) r16 d,16 fis a! d4. d8\( |
-                b8 d4 g8 a b4 b,16 d\) |
+                b8 d4 g8 a b4 b,16 d | \break
+            % 20
+                c8 e a b c4.\) g8\( |
+                fis8 e fis g a a16 b a8. g16 |
+                fis8. g16 fis8. e16 e8 d4\) d16\( c | \pageBreak
+                b8 d g8. a16 a8 <a f d>4\arpeggio b,16 d |
+                c8 e a b <c a e>4.\arpeggio\) g8\( |
+            % 25
+                f8 e f16 f g8 a d,4 d8 | \break
+                \time 2/4 \bar "||"
+                <e a c>8 <e a c> <d fis b> <c e a>\) |
+                \time 4/4 \bar "||"
+                <b d g>4 r16 g b d g4 <b, fis dis>4-- |
+                e,16 b fis' g e b fis' g e b fis' g a g fis b,\( |
+                b'8. c16 b16 b16 a8 g a b a16 b\) |
             }
         }
         \new Voice = extra { \voiceTwo
@@ -99,11 +113,26 @@ left = {
         a,16^( e' a b c4) e,,16_( b' e fis g4) |
         b,8_( dis <fis a>4) e,16_( b' e fis g4) |
         d,8_( a' <d fis>4) d,16_( g d' g b4) |
+    % 15
         d,,8_( a' <d fis>4) d,16_( g d' g b4) |
         d,,8_( a' <d fis>4) d,16_( g d' g b4) |
         cis,4 ais fis16^( cis' fis gis ais4) |
         b,16 d fis a! b4 <d, a' c!> d, |
         g8_( d' <g b>4) g,16^( d' g a b4) |
+    % 20
+        g,8_( c <e g>4) g,16_( c e g c4) |
+        d,,8_( a' <d fis>4) d8^( a' <c fis,>4) |
+        <g e g,>4 <c a c,> g,16^( d' g a b4) |
+        g,8_( d' <g b>4) g,16^( d' g a b4) |
+        g,8_( c <e g>4) g,16_( c e g c4) |
+    % 25
+        d,,8_( a' <d fis>4) d8^( a' <c fis,>4) |
+        \time 2/4 \bar "||"
+        a,4 d4 |
+        \time 4/4 \bar "||"
+        g,16( d' g b d4) r4 <b fis b,>4-- |
+        <e, b e,>1 |
+        e,8_( b' <e g>4) e,16_( b' e fis g4) |
     }
 }
 
@@ -125,5 +154,6 @@ left = {
             \new Staff = "right" \right
             \new Staff = "left" \left
         >>
+        \midi{}
     }
 }
