@@ -64,7 +64,19 @@ right = {
                 \stopStaff \cadenzaOn s32 \cadenzaOff \bar "||" \startStaff
                 <e' a c>8 <e a c> <d fis b> <c e a> <b d g>4 <bes ees g>8 ees |
                 \bar "||" \key aes \major 
-                c8\( ees4 aes8 bes <c aes ees>4\arpeggio c,16 ees\) |
+                c8\( ees4 aes8 bes <c aes ees>4\arpeggio c,16 ees | \break
+                des8 f bes c <des bes f>4.\)\arpeggio aes8\( |
+            % 40
+                g8 f g aes bes bes16 c bes8. aes16 |
+                g8. aes16 g8. f16 f8 ees4\) ees16\( des16 | \break
+                c8 ees aes8. bes16 bes8 <c aes ees>4\)\arpeggio c,16\( ees |
+                d8 f bes c <des bes g>4\)\arpeggio r8 aes8\( |
+                g8 f g16 g aes8 bes8 ees, r8 ees | \break
+            % 45
+                <f bes des>4 <f bes des>4 <ees aes c>4 <des f bes>4 |
+                <c ees aes>4\) r8 c16 ees16 <des aes f>4\arpeggio r8 des16 f |
+                <ees bes g>4\arpeggio r8 ees16 aes des,4 r8 aes16 des16 |
+                c4 r16 ees, aes bes <c aes ees>2\arpeggio\fermata | \bar "|."
             }
         }
         \new Voice = extra { \voiceTwo
@@ -96,6 +108,23 @@ right = {
             b,16( d fis a b
             \change Staff = "right"
             d' fis' a' d'')
+            s16 * 7 |
+            s1 * 7 |
+            \time 2/4 s2 * 1 | \time 4/4
+            s1 * 10 |
+            \cadenzaOn s32 \cadenzaOff
+            s1 * 9 |
+        % 46
+            \change Staff = "left" aes,16^( ees aes bes c' ees'
+            \change Staff = "right" ces'' ees'')
+            \change Staff = "left" aes,16^( des f aes des' f'
+            \change Staff = "right" des'' f'')
+            \change Staff = "left" aes,16^( ees g bes d' ees'
+            \change Staff = "right" ees'' aes'')
+            \change Staff = "left" aes,16^( des f aes des' f'
+            \change Staff = "right" des'' f'')
+            \change Staff = "left" aes,16^( ees aes bes c'
+            \change Staff = "right" ees' aes' bes' c'')
         }
     >>
 }
@@ -161,6 +190,18 @@ left = {
         a,4  <d, d'> g ees' | 
         \bar "||" \key aes \major
         aes,8^( ees' <aes c>4) aes,16^( ees' aes bes c4) |
+        aes,8_( des <f aes>4) aes,16^( des f aes c4) |
+    % 40
+        ees,,8_( bes' <ees g>4) ees8^( bes' <des g,>4) |
+        <aes f bes,>4 <des bes ees,>4 aes,16^( ees' aes bes c4) |
+        aes,8^( ees' <aes c>4) aes,16^( ees' aes bes c4) |
+        aes,8_( des <f aes>4) aes,16^( des f aes c4) |
+        ees,,8_( bes' <ees g>4) ees8^( bes' <des g,>4) |
+    % 45
+        bes,8 <f' bes>4 <f bes>8 ees, <ees' g des'>4 <ees g des'>8 |
+        aes,16 ees' aes bes c ees8. aes,,16 des f aes des f8. |
+        aes,,16 ees' g bes des ees8. aes,,16 des f aes des f8. |
+        aes,,16 ees' aes bes c4 <aes ees aes,>2\fermata | \bar "||"
     }
 }
 
@@ -168,6 +209,7 @@ left = {
     \paper {
         #(set-paper-size "letter")
         indent = 0.3\cm
+        page-count = #2
     }
     \header {
         title = \markup { \fontsize #3 "Christmas in our Hearts"}
