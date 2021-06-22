@@ -1,25 +1,25 @@
 \version "2.22.1"
-#(set-global-staff-size 17.82)
+#(set-global-staff-size 15.87)
 
 % the right-hand part
 right = {
     \clef treble
     \key g \major
     \time 4/4
-    \tempo "Moderato espressivo (con rubato se senza voce)"
+    \tempo "Moderato espressivo"
 
     <<
         \new Voice = "melody" { \oneVoice
             \override BreathingSign.text = \markup { \musicglyph #"scripts.caesura.curved" }
             \relative c' {
                 \partial 8
-                <c d>8 |
+                <c d>8\< |
                 <b d g>4 <b d g>8 a' a <b, d g> r8 b16 d |
-                c8 e a b <c g ees>4-- <a g ees>-- |
+                c8 e a b <c g ees>4--\! <a g ees>--^\markup{\italic "poco rit."} |
                 \time 2/4 \bar "||"
                 <b g ees>4-- <c g ees>4-- |
                 \time 4/4 \bar "||"
-                b16\( b, fis' g e! b fis' g e b fis' g a g fis g | \break
+                b16^\(\mp^\markup{\italic "a tempo"} b, fis' g e! b fis' g e b fis' g a g fis g | \break
             % 5
                 e16 b fis' g e b fis' g e b fis' g a g fis\) b,\( |
                 b'8. c16 b8 a g a b a16 b |
@@ -205,6 +205,72 @@ left = {
     }
 }
 
+lyrone = \lyricmode {
+    \override LyricText.font-size = #0
+    \repeat unfold 47 { \skip 1 }
+    When |
+% 6
+    e -- ver I see girls and boys sel -- ling |
+    lan -- terns on the streets, I re -- |
+    mem -- ber the child, in a |
+    man -- ger as he sleeps. Where |
+% 10
+    e -- ver I see peo -- ple gi -- ving |
+    gifts, ex -- chan -- ging cards, I be -- |
+    lieve that Christ -- mas is |
+    tru -- ly in our hearts. Let's |
+    light our Christ -- mas trees, for a |
+% 15
+    bright to -- mor -- row where |
+    na -- tions are at peace, and |
+    all are one __ in |
+    God! \skip 1 \skip 1 \skip 1 \skip 1 Let's |
+    sing mer -- ry Christ -- mas, and a |
+% 20
+    hap -- py ho -- li -- day, this |
+    sea -- son, may we ne -- ver for -- get the |
+    love we have for Je -- sus. Let him |
+    be the one to guide us, as a -- |
+    no -- ther New Year starts, and |
+% 25
+    may the spi -- rit of Christ -- mas be |
+    al -- ways in our hearts.
+    \repeat unfold 20 { \skip 1 }
+    In |
+    ev' -- ry pra -- yer and ev' -- ry song the com -- |
+% 30
+    mu -- ni -- ty u -- nites, ce -- le -- |
+    bra -- ting the birth __ of our |
+    sa -- vior Je -- sus Christ, __ let |
+    love, like that star -- light on that |
+    first Christ -- mas morn, lead us |
+% 35
+    back to the man -- ger, where |
+    Christ the Child was born. So |
+    al -- ways in our hearts. _ Let's |
+    sing mer -- ry Christ -- mas, and a |
+    hap -- py ho -- li -- day, this |
+% 40
+    sea -- son, may we ne -- ver for -- get the |
+    love we have for Je -- sus. Let him |
+    be the one to guide us, as a -- |
+    no -- ther New Year starts, and |
+    may the spi -- rit of Christ -- mas be |
+% 45
+    al -- ways in our |
+    hearts.
+}
+
+lyrtwo = \lyricmode {
+    \override LyricText.font-size = #0
+    \repeat unfold 102 { \skip 1 }
+    come let us re -- joice, come \set associatedVoice = "extra" and |
+    sing a Christ -- \set associatedVoice = "melody" mas ca -- rol, with |
+    one big joy -- ful voice, pro -- |
+    claim the \set associatedVoice = "extra" name __ of \set associatedVoice = "melody" the |
+    Lord!
+}
+
 \book {
     \paper {
         #(set-paper-size "letter")
@@ -222,6 +288,8 @@ left = {
         \layout {}
         \new PianoStaff <<
             \new Staff = "right" \right
+            \new Lyrics \lyricsto "melody" \lyrone
+            \new Lyrics \lyricsto "melody" \lyrtwo
             \new Staff = "left" \left
         >>
         \midi{}
