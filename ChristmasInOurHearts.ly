@@ -1,4 +1,4 @@
-\version "2.22.0"
+\version "2.22.1"
 #(set-global-staff-size 17.82)
 
 % the right-hand part
@@ -10,6 +10,7 @@ right = {
 
     <<
         \new Voice = "melody" { \oneVoice
+            \override BreathingSign.text = \markup { \musicglyph #"scripts.caesura.curved" }
             \relative c' {
                 \partial 8
                 <c d>8 |
@@ -48,9 +49,22 @@ right = {
                 \time 2/4 \bar "||"
                 <e a c>8 <e a c> <d fis b> <c e a>\) |
                 \time 4/4 \bar "||"
-                <b d g>4 r16 g b d g4 <b, fis dis>4-- |
+                <b d g>4 r16 g b d g4 \breathe <b, fis dis>4-- |
                 e,16 b fis' g e b fis' g e b fis' g a g fis b,\( |
-                b'8. c16 b16 b16 a8 g a b a16 b\) |
+                b'8. c16 b16 b16 a8 g a b a16 b | \break
+            % 30
+                c8. b16 a8. g16 fis4\) r8 f16\( g |
+                a4 a8 b16 a16~ a4 r8 b16 c16 |
+                b8 a g a b4\) r8. b,16\( | \break
+                b'4 b8 g c b4 ais16 b16 |
+                <gis b e>4 <gis b>8 d' <c a e>4.\) a16\( b16 |
+            % 35
+                <c a e>4 d8 c8 c b4 fis8 | \break
+                b8 a g fis e4\) r8 e8 | \bar "||"
+                \stopStaff \cadenzaOn s32 \cadenzaOff \bar "||" \startStaff
+                <e' a c>8 <e a c> <d fis b> <c e a> <b d g>4 <bes ees g>8 ees |
+                \bar "||" \key aes \major 
+                c8\( ees4 aes8 bes <c aes ees>4\arpeggio c,16 ees\) |
             }
         }
         \new Voice = extra { \voiceTwo
@@ -92,6 +106,7 @@ left = {
     \key g \major
     \time 4/4
 
+    \override BreathingSign.text = \markup { \musicglyph #"scripts.caesura.curved" }
     \relative c {
         \partial 8
         <d a'>8 |
@@ -130,9 +145,22 @@ left = {
         \time 2/4 \bar "||"
         a,4 d4 |
         \time 4/4 \bar "||"
-        g,16( d' g b d4) r4 <b fis b,>4-- |
+        g,16( d' g b d4) r4 \breathe <b fis b,>4-- |
         <e, b e,>1 |
         e,8_( b' <e g>4) e,16_( b' e fis g4) |
+    % 30
+        a,8_( e' <a c>4) b,16^( dis fis a b4) |
+        fis,8_( e' <a c>4) b,16^( dis fis a b4) |
+        e,,8_( b' <e g>4) e,16_( b' e fis g4) |
+        e,8_( b' <e g>4) e,16_( b' e fis g4) |
+        e,8_( e' <gis b d>4) a,16^( e' a b c4) |
+    % 35
+        a,16^( e' a b c4) e,,16_( b' e fis g4) |
+        b,8_( dis <fis a>4) e,16_( b' e fis g4) | \bar "||"
+        \stopStaff \cadenzaOn s32 \cadenzaOff \bar "||" \startStaff
+        a,4  <d, d'> g ees' | 
+        \bar "||" \key aes \major
+        aes,8^( ees' <aes c>4) aes,16^( ees' aes bes c4) |
     }
 }
 
