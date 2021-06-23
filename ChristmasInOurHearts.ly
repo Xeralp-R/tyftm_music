@@ -15,11 +15,11 @@ right = {
                 \partial 8
                 <c d>8\< |
                 <b d g>4 <b d g>8 a' a <b, d g> r8 b16 d |
-                c8 e a b <c g ees>4--\! <a g ees>--^\markup{\italic "poco rit."} |
+                c8 e a b <c g ees>4--\! <a g ees>--_\markup{\italic\center-align "poco rit."} |
                 \time 2/4 \bar "||"
                 <b g ees>4-- <c g ees>4-- |
                 \time 4/4 \bar "||"
-                b16^^\(\mp^\markup{\italic "a tempo"} b, fis' g e! b fis' g e b fis' g a g fis g | \break
+                b16^\(\mp b,_\markup{\italic "a tempo"}  fis' g e! b fis' g e b fis' g a g fis g | \break
             % 5
                 e16 b fis' g e b fis' g e b fis' g a g fis\) b,^\( |
                 b'8. c16 b8 a g a b a16 b |
@@ -101,8 +101,8 @@ right = {
             \once \override Slur.control-points = #'(
                 (0 . -5)
                 (10 . -7)
-                (21 . 0)
-                (24 . 6)
+                (22 . 0)
+                (27 . 10)
             )
             \change Staff = "left"
             b,16( d fis a b
@@ -115,14 +115,38 @@ right = {
             \cadenzaOn s32 \cadenzaOff
             s1 * 9 |
         % 46
+            \override Slur.control-points = #'(
+                (0 . 0)
+                (4 . 10)
+                (13 . 16)
+                (19 . 13)
+            )
             \change Staff = "left" aes,16^( ees aes bes c' ees'
             \change Staff = "right" ces'' ees'')
             \change Staff = "left" aes,16^( des f aes des' f'
             \change Staff = "right" des'' f'')
+            \override Slur.control-points = #'(
+                (0 . 0)
+                (4 . 13)
+                (13 . 19)
+                (19 . 13)
+            )
             \change Staff = "left" aes,16^( ees g bes d' ees'
             \change Staff = "right" ees'' aes'')
+            \override Slur.control-points = #'(
+                (0 . 0)
+                (4 . 10)
+                (13 . 16)
+                (19 . 13)
+            )
             \change Staff = "left" aes,16^( des f aes des' f'
             \change Staff = "right" des'' f'')
+            \override Slur.control-points = #'(
+                (0 . 0)
+                (4 . 10)
+                (13 . 18)
+                (19 . 13)
+            )
             \change Staff = "left" aes,16^( ees aes bes c'
             \change Staff = "right" ees' aes' bes' c'')
         }
@@ -258,7 +282,7 @@ lyrone = \lyricmode {
     may the spi -- rit of Christ -- mas be |
 % 45
     al -- ways in our |
-    hearts.
+    \markup { \whiteout \pad-markup #0.5 "hearts." }
 }
 
 lyrtwo = \lyricmode {
@@ -269,6 +293,77 @@ lyrtwo = \lyricmode {
     one big joy -- ful voice, pro -- |
     claim the \set associatedVoice = "extra" name __ of \set associatedVoice = "melody" the |
     Lord!
+}
+
+christmaschords = \chordmode {
+    \time 4/4
+    \override ChordName.font-family = #'roman
+    \override ChordName.font-size = #0
+
+    \partial 8
+    s8 |
+    g1 |
+    c2 c2:m |
+    \time 2/4
+    s2 |
+    \time 4/4
+    e1:m9 |
+% 5
+    s1 |
+    s1 |
+    a2:m b2:7 |
+    a2:m/fis b2:7 |
+    e1:m9 |
+% 10
+    s1 |
+    e2:7 a2:m |
+    s2 e2:m |
+    b2:7 e2:m |
+    d2 g2/d |
+% 15
+    d2 g2/d |
+    d2 g2/d |
+    fis4/cis fis4/ais fis2 |
+    b2:m7 d2:7
+    g1 |
+% 20
+    c1/g |
+    d1:7 |
+    a4:m7 d4:7 g2 |
+    g1 |
+    c1/g |
+% 25
+    d1:7 |
+    \time 2/4
+    a4:m7 d4:7 |
+    \time 4/4
+    g2. b4:7 |
+    e1:m7 |
+    s1 |
+% 30
+    a2:m b2:7 |
+    a2:m/fis b2:7 |
+    e1:m9 |
+    s1 |
+    e2:7 a2:m |
+% 35
+    s2 e2:m |
+    b2:7 e2:m |
+    \cadenzaOn s32 \cadenzaOff
+    a4:m d4:7 g4 bes4 |
+    aes1 |
+    des1/aes |
+% 40
+    ees1 |
+    bes4:m7 ees4:7 aes2 |
+    s1 |
+    des1/aes |
+    ees1 |
+% 45
+    bes2:m7 ees2:7 |
+    aes2 des2/aes |
+    ees2/aes des2/aes |
+    aes1 |
 }
 
 \book {
@@ -287,6 +382,7 @@ lyrtwo = \lyricmode {
     \score {
         \layout {}
         \new PianoStaff <<
+            \new ChordNames \christmaschords
             \new Staff = "right" \right
             \new Lyrics \lyricsto "melody" \lyrone
             \new Lyrics \lyricsto "melody" \lyrtwo
