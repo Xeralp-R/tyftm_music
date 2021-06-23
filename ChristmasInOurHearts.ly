@@ -30,8 +30,8 @@ right = {
                 b'8 b b8. g16 c8 b4 ais16 b | \break
                 <e b gis>8 <e b gis>8 <b gis>8 d c4\) r8 a16^\( b |
                 c4. d8 c8 b4 fis8 |
-                b8 a g fis e4\) r8 e8^\( | \break
-                d8 fis g a <b g d>4.\arpeggio fis16 g |
+                b8 a g fis e4\) r8 e8^\( | \break \mark \markup { \musicglyph #"scripts.segno" }
+                d8fis g a <b g d>4.\arpeggio fis16 g |
             % 15
                 a4. d,8 <g c>8 <g b>4\) e8^\( |
                 d8 fis g a <b g d>4.\arpeggio\) b8^\( | \break
@@ -45,7 +45,7 @@ right = {
                 b8 d g8. a16 a8 <a f d>4\arpeggio b,16 d |
                 c8 e a b <c a e>4.\arpeggio\) g8^\( |
             % 25
-                f8 e f16 f g8 a d,4 d8 | \break
+                f8 e f16 f g8 a d,4 d8 | \break \mark \markup { \musicglyph #"scripts.coda" }
                 \time 2/4 \bar "||"
                 <e a c>8 <e a c> <d fis b> <c e a>\) |
                 \time 4/4 \bar "||"
@@ -60,8 +60,8 @@ right = {
                 <gis b e>4 <gis b>8 d' <c a e>4.\) a16^\( b16 |
             % 35
                 <c a e>4 d8 c8 c b4 fis8 | \break
-                b8 a g fis e4\) r8 e8 | \bar "||"
-                \stopStaff \cadenzaOn s32 \cadenzaOff \bar "||" \startStaff
+                b8 a g fis e4\) r8 e8 | \bar "||" \mark \markup { \musicglyph #"scripts.segno" }
+                \stopStaff \cadenzaOn s32 \cadenzaOff \bar "||" \startStaff \mark \markup { \musicglyph #"scripts.coda" }
                 <e' a c>8 <e a c> <d fis b> <c e a> <b d g>4 <bes ees g>8 ees |
                 \bar "||" \key aes \major 
                 c8^\( ees4 aes8 bes <c aes ees>4\arpeggio c,16 ees | \break
