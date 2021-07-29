@@ -1,12 +1,5 @@
-# PDF and Midi are dependent on Ly file, which is saved
-*.pdf 
-*.midi 
-*.mid 
-# Music XML is not necessary (As of the moment)
-*.musicxml
-*.mxl 
-# Temp files
-*~
-#To ignore --1.tmp
-*.tmp
-*.tmp*
+# Ignore everything
+*
+
+#Except .ly files
+!*.ly

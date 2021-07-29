@@ -1,7 +1,7 @@
 \version "2.22.0"
 
 \paper{
-    #(set-paper-size "letter") 
+    #(set-paper-size "arch a") 
     top-margin = 0.5\in
     bottom-margin = 0.5\in
     left-margin = 0.5\in
@@ -9,7 +9,7 @@
     page-count = #2
 }
 
-#(set-global-staff-size 20)
+#(set-global-staff-size 17.82)
 
 PCantabile = \markup {\whiteout \dynamic p \italic \whiteout \pad-markup #0.3 cantabile}
 
