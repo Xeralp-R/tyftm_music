@@ -1,10 +1,41 @@
 \version "2.22.0"
 
 \header {
-    title = "Sacro-Monte"
-    subtitle = \markup{ No. 5 from \italic Cinco \italic danzas \italic gitanas, Op. 55}
-    composer = "Joaquin Turina"
+    title = \markup {
+        \column {
+            \vspace #1
+            \fontsize #5  Sacro-Monte
+            \vspace #0.5
+        }
+    }
+    subtitle = \markup{ 
+        \column {
+            \vspace #0.5
+            \fontsize #3 \line { No. 5 from \italic Cinco \italic danzas \italic gitanas, Op. 55 }
+            \vspace #0.5
+        }
+    }
+    composer = \markup{ 
+        \column {
+            \fontsize #2 \smallCaps "Joaquin Turina"
+        }
+    }
     tagline = ##f
+}
+
+txt = \markup \wordwrap {
+    \vspace #3
+    \huge \justify {
+        The Spanish composer Joaquin Turina (1892-1949) studied in his hometown
+        of Seville, at the Madrid Conservatory, and then in Paris, where he 
+        lived from 1905 to 1914. That year he returned to Madrid, where he was active
+        as a teacher, composer, conductor, and critic. He and his
+        compatriots Falla and Albéniz jointly vowed to write music in a national style,
+        and to that end all three incorporated Spanish folk idioms in their 
+        music. \italic Cinco \italic danzas \italic gitanas (Five Gypsy Dances) 
+        was written in 1930.
+    }
+    \vspace #1
 }
 
 \paper {
@@ -14,6 +45,14 @@
     %print-first-page-number = ##t
     %evenHeaderMarkup = \oddHeaderMarkup %force pages to have same header (i.e. page number to right)
     ragged-last-bottom = ##f
+    
+    oddFooterMarkup = \markup \fill-line {
+    \override #'(baseline-skip . 1)
+    \center-column {
+    \on-the-fly #(on-page 1) \txt
+    \fill-line { \teeny " " " " }
+    }
+  }
 }
 
 #(set-global-staff-size 17.82)
@@ -35,9 +74,9 @@ right = {
         r8\pp <a cis e>16 q r8 <a cis e>16 q r8 <bes d e>16 q r8 <bes d e>16 q |
         r8 a''16\f( f g e f d e8\noBeam) <d, e>8_. <d e>_. <d e>_. |
         <d e>8_.\noBeam a''16( f g e f d e8\noBeam) <d, e>8_. <d e>_. <d e>_. | \break
-        <d e>8_.\noBeam a'16 f g e f d e cis d f e c! d bes |
+        <d e>8_.\noBeam a'16( f g e f d e cis d f e c! d bes |
     % 10
-        c16 d c bes \change Staff = "down" a bes a g f g f e d e f g | \change Staff = "up"
+        c16 d c bes \change Staff = "down" a bes a g f g f e d e f g) | \change Staff = "up"
         r8\p <a cis e>16 q r8 <a cis e>16 q r8 <bes d e>16 q r8 <bes d e>16 q | \pageBreak
         r8 \voiceOne d'16( e fis g a bes c8)\noBeam \oneVoice <c, fis a>-. <des g bes>-. <ees a c>-. |
         r8 \voiceOne d16( e fis g a bes c8)\noBeam \oneVoice <c, fis a>-. <ees a c>-. <des g bes>-. |
@@ -67,7 +106,7 @@ right = {
                 r2 r8 d'16 d16 f g f g |
             }
         >>
-        f''16 g f g f g f ees d ees d ees d c bes aes |
+        f''16 g f g f\< g f ees d ees d\! ees d c bes aes |
         <g e! c>8. r16 <g f des>8. r16 <g e c>8. r16 r4 | \break
         <g e! c>8. r16 <g f des>8. r16 <g e c>8. r16 r4 | \bar "||"
     % 25
@@ -79,6 +118,33 @@ right = {
     % 30
         r8\p <a cis e>16 q r8 <a cis e>16 q r8 <bes d e>16 q r8 <bes d e>16 q |
         r8\pp <a cis e>16 q r8 <a cis e>16 q r8 <bes d e>16 q r8 <bes d e>16 q | \break
+        r8 a''16\f( f g e f d e8\noBeam) <d, e>8_. <d e>_. <d e>_. |
+        <d e>8_.\noBeam a''16( f g e f d e8\noBeam) <d, e>8_. <d e>_. <d e>_. |
+        <d e>8_.\noBeam a'16^( f g e f d e cis d f e c! d bes | \break
+    % 35
+        c16 d c bes \change Staff = "down" \voiceOne a bes a g f g f e d e f g) | 
+        \change Staff = "up" \oneVoice \bar"||" \tempo "Piú vivo"
+        \tuplet 3/2 4 {
+            r8\mf <a cis e>8 q r <a cis e> q r <bes d e> q r <bes d e> q |
+            r8 <a cis e>8 q r <a cis e> q r <bes d e> q r <bes d e> q | \break
+            r8 <a cis e>8 q r <a cis e> q r <d f a> q r <d f a> q |
+            r8 <c! e g>8 q r <c e g> q r <bes d f> q r <bes d f> q |
+        }
+    % 40
+        r16\f <a' cis e> e <a cis e> r <a cis e> e <a cis e> 
+        r <bes d e> f <bes d e> r <c! d e> g <c d e> | \break
+        r16 <a cis e> e <a cis e> r <a cis e> e <a cis e> 
+        r <bes d e> f <bes d e> r <c! d e> g <c d e> |
+        r16 <c e a> a <c e a> r <c e a> a <c e a>
+        r\cresc <bes d g> g <bes d g> r <aes c f> f <aes c f> |
+        r16\ff <a! cis e> e <a cis e> r <a cis e> e <a cis e> 
+        r <a' c! f> f <a c f> r <bes d g> g <bes d g> | \break
+        r16 <a, cis e> e <a cis e> r <a cis e> e <a cis e> 
+        r <a' c! f> f <a c f> r <bes d g> g <bes d g> |
+    % 45
+        r8 <a e' a>\noBeam <g d' g>[ <f c' f>] <d a' d>[ <c g' c>] <a e' a>[ <g d' g>] |
+        \clef "bass" g,,8 <c d>4.\< \clef "treble" g'8 <c d e>4. |
+        <a cis e a>4->\fff r4 r2 \bar "|." |
     }
 }
 
@@ -129,6 +195,24 @@ left = {
     % 30
         a,8[ e'] bes'[ e,] a,[ e'] c'![ e,] |
         a,8[ e'] bes'[ e,] a,[ e'] c'![ e,] |
+        r8 a'16( f g e f d e8\noBeam) c8-. bes-. c-. |
+        a8-. a'16( f g e f d e8\noBeam) c8-. bes-. c-. |
+        a8-. r8 r4 r2 |
+    % 35
+        \voiceTwo <d,, d,>8 r <e e,> r <f f,> r <g g,> r8 | \oneVoice
+        a8 e' <a c!> r <bes c> r <bes c> r |
+        a,8 e' <a c!> r <bes c> r <bes c> r |
+        a,8 e' <a c!> r <e' f> r <e f> r |
+        <d e>8 r <d e> r <c d> r <c d> r |
+    % 40
+        a,8[ e'] a[ cis] <d f> r <e g> r |
+        a,,8[ e'] a[ cis] <d f> r <e g> r |
+        f,8[ c'] d[ f] c,[ g'] d[ <aes' bes>] |
+        a,8[ e'] a[ cis] \clef "treble" <d f a c!>4 <e g bes d> |
+        \clef "bass" a,,8[ e'] a[ cis] \clef "treble" <d f a c!>4 <e g bes d> |
+        \clef "bass" <a, e' a>4 <g d' g>8[ <f c' f>] <d a' d>[ <c g' c>] <a e' a>[ <g d' g>] |
+        \afterGrace g,1\startTrillSpan {s32\stopTrillSpan}  |
+        <a e' a>4-> r4 r2 \bar "|." |
     }
 }
 
