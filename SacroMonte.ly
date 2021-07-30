@@ -118,9 +118,9 @@ right = {
     % 30
         r8\p <a cis e>16 q r8 <a cis e>16 q r8 <bes d e>16 q r8 <bes d e>16 q |
         r8\pp <a cis e>16 q r8 <a cis e>16 q r8 <bes d e>16 q r8 <bes d e>16 q | \break
-        r8 a''16\f( f g e f d e8\noBeam) <d, e>8_. <d e>_. <d e>_. |
-        <d e>8_.\noBeam a''16( f g e f d e8\noBeam) <d, e>8_. <d e>_. <d e>_. |
-        <d e>8_.\noBeam a'16^( f g e f d e cis d f e c! d bes | \break
+        r8 aes''16\f( f g e f des e8\noBeam) <d, e>8_. <d e>_. <d e>_. |
+        <d e>8_.\noBeam aes''16( f g e f des e8\noBeam) <d, e>8_. <d e>_. <d e>_. |
+        <d e>8_.\noBeam aes'16^( f g e f d e cis d f e c! d bes | \break
     % 35
         c16 d c bes \change Staff = "down" \voiceOne a bes a g f g f e d e f g) | 
         \change Staff = "up" \oneVoice \bar"||" \tempo "Piú vivo"
@@ -195,8 +195,8 @@ left = {
     % 30
         a,8[ e'] bes'[ e,] a,[ e'] c'![ e,] |
         a,8[ e'] bes'[ e,] a,[ e'] c'![ e,] |
-        r8 a'16( f g e f d e8\noBeam) c8-. bes-. c-. |
-        a8-. a'16( f g e f d e8\noBeam) c8-. bes-. c-. |
+        r8 aes'16( f g e f des e8\noBeam) c8-. bes-. c-. |
+        a8-. aes'16( f g e f des e8\noBeam) c8-. bes-. c-. |
         a8-. r8 r4 r2 |
     % 35
         \voiceTwo <d,, d,>8 r <e e,> r <f f,> r <g g,> r8 | \oneVoice
