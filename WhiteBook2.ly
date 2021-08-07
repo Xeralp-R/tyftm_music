@@ -1,60 +1,5 @@
 \version "2.22.0"
 
-\header {
-    title = \markup {
-        \column {
-            \vspace #1
-            \fontsize #5  Sacro-Monte
-            \vspace #0.5
-        }
-    }
-    subtitle = \markup{ 
-        \column {
-            \vspace #0.5
-            \fontsize #3 \line { No. 5 from \italic Cinco \italic danzas \italic gitanas, Op. 55 }
-            \vspace #0.5
-        }
-    }
-    composer = \markup{ 
-        \column {
-            \fontsize #2 \smallCaps "Joaquin Turina"
-        }
-    }
-    tagline = ##f
-}
-
-txt = \markup \wordwrap {
-    \vspace #3
-    \huge \justify {
-        The Spanish composer Joaquin Turina (1892-1949) studied in his hometown
-        of Seville, at the Madrid Conservatory, and then in Paris, where he 
-        lived from 1905 to 1914. That year he returned to Madrid, where he was active
-        as a teacher, composer, conductor, and critic. He and his
-        compatriots Falla and Albéniz jointly vowed to write music in a national style,
-        and to that end all three incorporated Spanish folk idioms in their 
-        music. \italic Cinco \italic danzas \italic gitanas (Five Gypsy Dances) 
-        was written in 1930.
-    }
-    \vspace #1
-}
-
-\paper {
-    %#(set-paper-size "a4")      %uncomment to test specific paper size
-    #(set-paper-size "letter")  %uncomment to test specific paper size
-    %indent = 0.0
-    %print-first-page-number = ##t
-    %evenHeaderMarkup = \oddHeaderMarkup %force pages to have same header (i.e. page number to right)
-    ragged-last-bottom = ##f
-    
-    oddFooterMarkup = \markup \fill-line {
-    \override #'(baseline-skip . 1)
-    \center-column {
-    \on-the-fly #(on-page 1) \txt
-    \fill-line { \teeny " " " " }
-    }
-  }
-}
-
 #(set-global-staff-size 17.82)
 
 right = {
@@ -216,8 +161,10 @@ left = {
     }
 }
 
-\score {
-    \layout {}
+WhiteBookTwo = \score {
+    \layout {
+        #(layout-set-staff-size 17.82)
+    }
     \new PianoStaff <<
         \new Staff = "up" \right
         \new Staff = "down" \left

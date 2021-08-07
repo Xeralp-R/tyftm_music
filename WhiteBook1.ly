@@ -3,37 +3,7 @@
 
 \version "2.22.1"
 
-\header {
-    title =  "Can Can"
-    composer =  \markup \column {
-        \line { "Jacques Offenbach"}
-        \line { ""} 
-    }
-    encodingsoftware =  "MuseScore 3.6.2"
-    encodingdate =  "2021-07-18"
-    subtitle =  "Orpheus in the Underworld"
-    tagline = ##f
-}
-
-#(set-global-staff-size 20.029714285714284)
-
-\paper {
-    paper-width = 21.59\cm
-    paper-height = 27.94\cm
-    top-margin = 0.99\cm
-    bottom-margin = 2.01\cm
-    left-margin = 0.99\cm
-    right-margin = 0.99\cm
-}
-
-\layout {
-    \context { \Score
-        skipBars = ##t
-        % autoBeaming = ##f
-    }
-}
-
-PartPOneVoiceOne =  \relative fis'' {
+CanCanRightHand =  \relative fis'' {
     \clef "treble" 
     \time 2/4 
     \key d \major
@@ -59,7 +29,7 @@ PartPOneVoiceOne =  \relative fis'' {
     \acciaccatura b'8( a4) \acciaccatura b8( a4) |
     \acciaccatura b8( a4) \acciaccatura b8( a4) | \break \bar ".|:-||"
     \repeat volta 2 {
-        a,8_\p_\markup{ \italic "staccato" }  e'8 e8 fis8 |
+        a,8_\p e'8_\markup{ \italic "staccato" } e8 fis8 |
         \acciaccatura fis8( e8) d8 d8 fis8 |
         g8 b8 d8 b8 | 
     % 20
@@ -134,7 +104,7 @@ PartPOneVoiceOne =  \relative fis'' {
         }
     }
 % 60
-    a8_\p_\markup{ \italic "stacc." } e'8 e8 fis8 |
+    a8_\p e'8_\markup{ \italic "stacc." } e8 fis8 |
     \acciaccatura fis8( e8) d8 d8 fis8 |
     g8  b8  d8  b8 |
     b8(  a8)  a4 |
@@ -224,13 +194,13 @@ PartPOneVoiceOne =  \relative fis'' {
     <a d fis>4 r4 |
     <fis a d>4 r4 |
     <a d fis>4 r4 |
-    \repeat tremolo 4 {<a d>16 fis16} |
+    \repeat tremolo 4 {<a d>16\fff fis16} |
     \repeat tremolo 4 {<a d>16 fis16} |
 % 130
     <fis a d>4 -> r4_"Fine"  \bar "|."
 }
 
-PartPOneVoiceFive =  \relative fis' {
+CanCanLeftHand =  \relative fis' {
     \clef "bass" 
     \time 2/4 
     \key d \major
@@ -426,25 +396,19 @@ PartPOneVoiceFive =  \relative fis' {
 }
 
 % The score definition
-%%{
-\score {
+WhiteBookOne = \score {
     <<
         
         \new PianoStaff
         <<   
-            \context Staff = "1" << 
-                \mergeDifferentlyDottedOn\mergeDifferentlyHeadedOn
-                \context Voice = "PartPOneVoiceOne" \PartPOneVoiceOne
-            >> 
-            \context Staff = "2" <<
-                \mergeDifferentlyDottedOn\mergeDifferentlyHeadedOn
-                \context Voice = "PartPOneVoiceFive" \PartPOneVoiceFive
-            >>
+            \context Staff = "1" \CanCanRightHand
+            \context Staff = "2" \CanCanLeftHand
         >>
         
     >>
-    \layout {}
+    \layout {
+        #(layout-set-staff-size 20)
+    }
     % To create MIDI output, uncomment the following line:
     %  \midi {\tempo 4 = 144 }
-    }
-%%}
+}
