@@ -3,6 +3,7 @@
 \include "WhiteBookAux.ly"
 \include "WhiteBook1.ly"
 \include "WhiteBook2.ly"
+\include "WhiteBook3.ly"
 
 #(set-default-paper-size "letter")
 #(set-global-staff-size 20)
@@ -29,5 +30,16 @@
         }
 
         \WhiteBookTwo
+    }
+
+    \bookpart {
+        \header {
+            title = \markup \make-title "Canon in D"
+            composer = \markup \make-composer "Johann Pachelbel"
+            arranger = \markup \make-composer "Arranged by MARION VERHAALEN"
+            tagline = ##f
+        }
+
+        \WhiteBookThree
     }
 }
