@@ -1,31 +1,12 @@
 \version "2.22.0"
 
-\header{
-    title = "Ave Maria"
-    subtitle = "Based on Bach's Prelude in C Major"
-    %opus = "BWV 846"
-    composer = "Charles Gounod"
-    tagline = ##f
-}
-
-\paper {
-    %#(set-paper-size "a4")      %uncomment to test specific paper size
-    #(set-paper-size "letter")  %uncomment to test specific paper size
-    %indent = 0.0
-    %print-first-page-number = ##t
-    %evenHeaderMarkup = \oddHeaderMarkup %force pages to have same header (i.e. page number to right)
-    ragged-last-bottom = ##f
-}
-
-#(set-global-staff-size 15.5)
-
 %% The actual right hand
 pianovoice = {
     \time 4/4
-    \clef "treble^(8)"
+    \clef "treble"
     \new Voice = "pianovoice" {
         \autoBeamOff
-        \relative c''' {
+        \relative c'' {
             e1\omit\mf |
             f2. r8 f8 |
             g2.( d4) |
@@ -248,7 +229,7 @@ left = {
 %%
 %% Bring the two hands together
 %%   
-\score {
+WhiteBookFive = \score {
     \context PianoStaff <<
         \set PianoStaff.connectArpeggios = ##t
         \new Staff = "pianovoice" \pianovoice
@@ -258,8 +239,9 @@ left = {
             \consists "Span_arpeggio_engraver"
         } \left
     >>
-    \layout { }
-    \midi { 
-        
+    \layout { 
+        indent = 0\cm
+        #(layout-set-staff-size 15.5)
     }
+    %\midi {}
 }

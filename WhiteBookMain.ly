@@ -5,6 +5,7 @@
 \include "WhiteBook2.ly"
 \include "WhiteBook3.ly"
 \include "WhiteBook4.ly"
+\include "WhiteBook5.ly"
 
 #(set-default-paper-size "letter")
 #(set-global-staff-size 20)
@@ -52,5 +53,17 @@
         }
 
         \WhiteBookFour
+    }
+
+    \bookpart {
+        \header{
+            title = \markup \make-title "Ave Maria"
+            subtitle = \markup \make-subtitle "Based on Bach's Prelude in C Major"
+            %opus = "BWV 846"
+            composer = \markup \make-composer "Charles Gounod"
+            tagline = ##f
+        }
+        
+        \WhiteBookFive
     }
 }
