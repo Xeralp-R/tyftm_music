@@ -4,6 +4,7 @@
 \include "WhiteBook1.ly"
 \include "WhiteBook2.ly"
 \include "WhiteBook3.ly"
+\include "WhiteBook4.ly"
 
 #(set-default-paper-size "letter")
 #(set-global-staff-size 20)
@@ -41,5 +42,15 @@
         }
 
         \WhiteBookThree
+    }
+
+    \bookpart {
+        \header {
+            title = \markup \make-title "Come Back to Sorrento"
+            composer = \markup \make-composer "Ernesto Curtis"
+            tagline = ##f
+        }
+
+        \WhiteBookFour
     }
 }

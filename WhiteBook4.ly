@@ -1,28 +1,6 @@
 \version "2.22.1"
 % automatically converted by musicxml2ly from Come_Back_to_Sorrento.musicxml
 
-%% additional definitions required by the score:
-
-
-\header {
-    title =  "Come Back to Sorrento"
-    composer =  "Ernesto Curtis"
-    encodingsoftware =  "MuseScore 3.6.2"
-    encodingdate =  "2021-08-28"
-}
-
-#(set-global-staff-size 24.605714285714285)
-\paper {
-    
-    paper-width = 21.59\cm
-    paper-height = 27.94\cm
-    top-margin = 1.0\cm
-    bottom-margin = 1.0\cm
-    left-margin = 1.0\cm
-    right-margin = 1.0\cm
-    tagline = ##f
-}
-
 PartPOneVoiceOne =  \relative a {
     \clef "treble" 
     \time 3/4 
@@ -79,8 +57,8 @@ PartPOneVoiceOne =  \relative a {
     <e a d>4 -1 -3 -5 <e a d>4 <e a d>4 | \break
     <e a cis>4 -1 -3 -5 <e a cis>4 _\< <e a cis>4 |
     d4 ( -1 _\! _\f <d f>4 <d f a>4 |
-\barNumberCheck 30
-    <e c'>8 -1 -5 b'8 a2 ) | \break
+% 30
+    <e c'>8 -1 -5 b'8 a2 ) | % \break
     r8 _\> b8 -5 <d, f gis>4. -1 -2 -3 gis8 -4 |
     <c, a'>2. -1 -5 _\! _\mf |
     <<
@@ -161,14 +139,13 @@ PartPOneVoiceFive =  \relative g {
     <a, fis'>2. _1 _5 \sustainOff \sustainOn | 
 % 35
     <a f'>2. \sustainOff \sustainOn | % 36
-    <a e'>2. ^\fermata _1 _5 \sustainOff \bar "|."
+    <a e'>2. \fermata _1 _5 \sustainOff \bar "|."
 }
 
 
 % The score definition
-\score {
+WhiteBookFour = \score {
     <<
-        
         \new PianoStaff <<
             \context Staff = "1" << 
                 \mergeDifferentlyDottedOn\mergeDifferentlyHeadedOn
@@ -180,8 +157,8 @@ PartPOneVoiceFive =  \relative g {
             >>
         >>
     >>
-    \layout {}
-    % To create MIDI output, uncomment the following line:
-    %  \midi {\tempo 4 = 100 }
+    \layout {
+        % #(layout-set-staff-size 24.605714285714285)
+        #(layout-set-staff-size 24.605714285714285)
     }
-
+}
