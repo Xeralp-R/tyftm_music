@@ -1,11 +1,10 @@
 \version "2.22.1"
 % automatically converted by musicxml2ly from Tarantella.musicxml
-\pointAndClickOff
 
 %% additional definitions required by the score:
 fz = #(make-dynamic-script "fz")
-sempre  = #(make-dynamic-script "sempre ")
-z = #(make-dynamic-script "z")
+sempre_ff  = #(make-dynamic-script "sempre ff")
+fffz = #(make-dynamic-script "fffz")
 ffz = #(make-dynamic-script "ffz")
 
 \header {
@@ -56,12 +55,12 @@ PartPOneVoiceOne =  {
     c''4 ) c''8 ( -3 a'4 ) a'8 ( -2 | % 16
     b'4 ) b'8 ( -4 f'4 ) f'8 ( -2 | % 17
     b'4 ) -5 b'8 ( e'4. ) | % 18
-    r8 _\fz _\markup{ \small\italic {sempre cresc.} } \startTrillSpan a'8
+    r8 _\fz _\markup{ \small\italic {sempre cresc.} } a'8
     ( -1 b'8 c''8 b'8 a'8 | % 19
     e''4 ) e''8 -4 e''4 -3 e''8 -2 | \barNumberCheck #20
     e''4 -1 e''8 -4 e''4 -3 e''8 ( -2 | % 21
     a''2. ) -> _\markup{ \small\italic {al} } | % 22
-    r8 \stopTrillSpan _\f a''8 ( -2 b''8 c'''8 b''8 a''8 | % 23
+    r8 _\f a''8 ( -2 b''8 c'''8 b''8 a''8 | % 23
     g''8 _\fz g'''8 f'''8 e'''8 d'''8 c'''8 | % 24
     b''8 -4 a''8 g''8 f''8 e''8 -3 d''8 | % 25
     c''4. ) r4 r8 | % 26
@@ -81,10 +80,10 @@ PartPOneVoiceOne =  {
     c'''8 c''''8 c'''8 ) b''8 ( -2 c'''8 b''8 | % 38
     a''8 a'''8 a''8 b''8 -2 c'''8 b''8 | % 39
     a''8 a'''8 a''8 b''8 _\markup{ \small\italic {sempre cresc.} }
-    \startTrillSpan c'''8 b''8 | \barNumberCheck #40
+    c'''8 b''8 | \barNumberCheck #40
     a''8 a'''8 a''8 b''8 c'''8 b''8 | % 41
     a''8 a'''8 a''8 ) -1 b''8 ( -2 c'''8 b''8 ) | % 42
-    e''4. \ottava #0 f'8 ( -2 \stopTrillSpan _\markup{ \small\italic
+    e''4. \ottava #0 f'8 ( -2 _\markup{ \small\italic
         {al} } _\pp g'8 f'8 | % 43
     e'4. ) r4 r8 | % 44
     r4 r8 f'8 ( _\p _\< g'8 f'8 | % 45
@@ -103,12 +102,12 @@ PartPOneVoiceOne =  {
     c''4 ) c''8 ( -3 a'4 ) a'8 ( -2 | % 58
     b'4 ) b'8 ( -4 f'4 ) f'8 ( -2 | % 59
     b'4 ) -5 b'8 ( e'4. ) | \barNumberCheck #60
-    r8 a'8 ( -1 _\markup{ \small\italic {cresc.} } \startTrillSpan b'8
+    r8 a'8 ( -1 _\markup{ \small\italic {cresc.} } b'8
     c''8 b'8 a'8 | % 61
     e''4 ) e''8 -4 e''4 -3 e''8 -2 | % 62
     e''4 -1 e''8 -4 e''4 -3 e''8 ( -2 | % 63
     a''2. ) -> | % 64
-    r8 \stopTrillSpan a''8 ( -2 _\< b''8 c'''8 b''8 a''8 | % 65
+    r8  a''8 ( -2 _\< b''8 c'''8 b''8 a''8 | % 65
     e'''4 _\! _\fz d'''8 _\f c'''8 b''8 a''8 | % 66
     gis''8 -4 f''8 e''8 d''8 c''8 -3 b'8 | % 67
     a'4. ) e'8 _\ff f'8 e'8 | % 68
@@ -133,7 +132,7 @@ PartPOneVoiceOne =  {
     a'8 ( -5 e'8 -3 cis'8 -2 s4. | % 85
     r4 r8 c''8 e'8 c'8 ) \bar "||"
     \key c \major b'8 ( ^\markup{ \italic {doloroso} } _\markup{
-        \small\italic {cresc.} } \startTrillSpan f'8 d'8 a'8 f'8 d'8 | % 87
+        \small\italic {cresc.} }   f'8 d'8 a'8 f'8 d'8 | % 87
     g'8 e'8 c'8 gis'8 e'8 c'8 | % 88
     a'8 e'8 c'8 g'8 _\< e'8 a8 | % 89
     f'8 d'8 _\! a8 ) f'8 ( c'8 a8 | \barNumberCheck #90
@@ -147,7 +146,7 @@ PartPOneVoiceOne =  {
     a'8 e'8 c'8 g'8 e'8 a8 | % 97
     f'8 d'8 a8 ) f'8 ( c'8 a8 | % 98
     e'8 c'8 a8 dis'8 c'8 a8 | % 99
-    e'8 c'8 a8 ) f'8 ( \stopTrillSpan _\ff c'8 a8 | \barNumberCheck #100
+    e'8 c'8 a8 ) f'8 (  _\ff c'8 a8 | \barNumberCheck #100
     e'8 c'8 a8 a'8 dis'8 b8 | % 101
     gis'8 e'8 b8 ) e''8 ( _\pp a'8 e'8 \bar "||"
     \key a \major dis''8 -4 a'8 e'8 e''8 a'8 e'8 | % 103
@@ -182,12 +181,12 @@ PartPOneVoiceOne =  {
     c''4 ) c''8 ( -3 a'4 ) a'8 ( -2 | % 128
     b'4 ) b'8 ( -4 f'4 ) f'8 ( -2 | % 129
     b'4 ) -5 b'8 ( e'4. ) | \barNumberCheck #130
-    r8 _\fz _\markup{ \small\italic {sempre piu} } \startTrillSpan a'8 (
+    r8 _\fz _\markup{ \small\italic {sempre piu} }  a'8 (
     -1 b'8 c''8 b'8 a'8 | % 131
     e''4 ) e''8 -4 e''4 -3 e''8 -2 | % 132
     e''4 -1 e''8 -4 e''4 -3 e''8 ( -2 | % 133
     a''2. ) -> _\markup{ \small\italic {al} } | % 134
-    r8 \stopTrillSpan _\f a''8 ( -2 b''8 c'''8 b''8 a''8 | % 135
+    r8  _\f a''8 ( -2 b''8 c'''8 b''8 a''8 | % 135
     g''8 _\ff g'''8 f'''8 e'''8 d'''8 c'''8 | % 136
     b''8 -4 a''8 g''8 f''8 e''8 -3 d''8 | % 137
     c''4. ) r4 r8 | % 138
@@ -226,19 +225,19 @@ PartPOneVoiceOne =  {
     c''4 ) c''8 ( -3 a'4 ) a'8 ( -2 | \barNumberCheck #170
     b'4 ) b'8 ( -4 f'4 ) f'8 ( -2 | % 171
     b'4 ) -5 b'8 ( e'4. ) | % 172
-    r8 a'8 ( -1 _\markup{ \small\italic {cresc.} } \startTrillSpan b'8
+    r8 a'8 ( -1 _\markup{ \small\italic {cresc.} }  b'8
     c''8 b'8 a'8 | % 173
     e''4 ) e''8 -4 e''4 -3 e''8 -2 | % 174
     e''4 -1 e''8 -4 e''4 -3 e''8 ( -2 | % 175
     a''2. ) -> | % 176
-    r8 \stopTrillSpan a''8 -2 _\< b''8 c'''8 b''8 a''8 | % 177
+    r8  a''8 -2 _\< b''8 c'''8 b''8 a''8 | % 177
     e'''4 _\! _\fz d'''8 _\f c'''8 b''8 a''8 | % 178
     gis''8 -4 f''8 e''8 d''8 c''8 -3 b'8 | % 179
     a'4 -. r8 a'8 ( _\pp e'8 c'8 ) | \barNumberCheck #180
-    a'8 ( _\markup{ \small\italic {molto cresc. al} } \startTrillSpan e'8
+    a'8 ( _\markup{ \small\italic {molto cresc. al} }  e'8
     c'8 ) a'8 ( e'8 c'8 ) | % 181
     a'8 ( e'8 c'8 ) a'8 ( e'8 c'8 ) | % 182
-    a'8 ( \stopTrillSpan _\ff e'8 c'8 ) a'8 ( e'8 c'8 ) | % 183
+    a'8 (  _\ff e'8 c'8 ) a'8 ( e'8 c'8 ) | % 183
     a'8 ( e'8 c'8 ) a'8 ( e'8 c'8 ) _\mf | % 184
     f''8 ( -3 _\markup{ \italic {scherzando} } a''8 g''8 f''8 e''8 d''8
     ) | % 185
@@ -246,9 +245,9 @@ PartPOneVoiceOne =  {
     gis'8 ( -3 b'8 a'8 gis'8 fis'8 e'8 | % 187
     a'4. ) a''8 ( _\pp e''8 c''8 ) | % 188
     a''8 ( e''8 c''8 ) a''8 ( _\markup{ \small\italic {cresc. molto} }
-    \startTrillSpan e''8 c''8 ) | % 189
+     e''8 c''8 ) | % 189
     a''8 ( e''8 c''8 ) a''8 ( e''8 c''8 ) | \barNumberCheck #190
-    a''8 ( \stopTrillSpan _\ff e''8 c''8 ) a''8 ( e''8 c''8 ) | % 191
+    a''8 (  _\ff e''8 c''8 ) a''8 ( e''8 c''8 ) | % 191
     a''8 ( e''8 c''8 ) a''8 ( e''8 c''8 ) _\ff | % 192
     f''8 ( _\markup{ \italic {scherzando} } a''8 g''8 f''8 e''8 d''8 ) | % 193
     c''8 ( e''8 d''8 c''8 b'8 a'8 ) | % 194
@@ -264,9 +263,9 @@ PartPOneVoiceOne =  {
     f'''8 ( -> a'''8 g'''8 f'''8 e'''8 d'''8 ) | % 202
     f'''8 ( -> a'''8 g'''8 f'''8 e'''8 d'''8 ) | % 203
     f'''8 ( -> a'''8 g'''8 f'''8 e'''8 d'''8 ) | % 204
-    \ottava #1 e''''4 ( -> _\fff _\z d''''8 c''''8 b'''8 a'''8 | % 205
+    \ottava #1 e''''4 ( -> _\fffz d''''8 c''''8 b'''8 a'''8 | % 205
     gis'''8 f'''8 e'''8 d'''8 c'''8 b''8 \ottava #0 | % 206
-    a''8 e'''8 _\sempre _\ff d'''8 c'''8 b''8 a''8 | % 207
+    a''8 e'''8 _\sempre_ff d'''8 c'''8 b''8 a''8 | % 207
     gis''8 f''8 e''8 d''8 c''8 b'8 | % 208
     a'8 e''8 d''8 c''8 b'8 a'8 | % 209
     gis'8 f'8 e'8 d'8 c'8 b8 | \barNumberCheck #210
