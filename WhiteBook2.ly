@@ -22,10 +22,10 @@ right = {
         <d e>8_.\noBeam a'16( f g e f d e cis d f e c! d bes |
     % 10
         c16 d c bes \change Staff = "down" a bes a g f g f e d e f g) | \change Staff = "up"
-        r8\p <a cis e>16 q r8 <a cis e>16 q r8 <bes d e>16 q r8 <bes d e>16 q | \pageBreak
+        r8\p <a cis e>16 q r8 <a cis e>16 q r8 <bes d e>16 q r8 <bes d e>16 q | \break
         r8 \voiceOne d'16( e fis g a bes c8)\noBeam \oneVoice <c, fis a>-. <des g bes>-. <ees a c>-. |
         r8 \voiceOne d16( e fis g a bes c8)\noBeam \oneVoice <c, fis a>-. <ees a c>-. <des g bes>-. |
-        r8 d16 e fis g a bes <c a fis>8[ <c a fis>16 <d a fis>] <c a fis>8[ <bes fis>] | \break
+        r8 d16 e fis g a bes <c a fis>8[ <c a fis>16 <d a fis>] <c a fis>8[ <bes fis>] | \pageBreak
     % 15
         <a fis>8[ <g fis>] <a fis>[ <bes fis>] <c a fis>8[ <c a fis>16 <d a fis>] <c a fis>8[ <bes fis>] |
         <a fis>8[ <g fis>] <a fis>[ <bes fis>] <c a fis>8 r8 r4 |
@@ -59,10 +59,10 @@ right = {
         \time 4/4 <a cis e>4.-> <a cis e>16\p q r8 <bes d e>16 q r8 <bes d e>16 q | \break
         r8 <a cis e>16 q r8 <a cis e>16 q r8 <bes d e>16 q r8 <bes d e>16 q |
         r8 <a cis e>16 q r8 <a cis e>16 q r8 <d f a>16\sfz q r8 <d f a>16 q |
-        r8 <c! e g>16 q r8 <c e g>16\dim q r8 <bes d f>16 q r8 <bes d f>16 q | \pageBreak
+        r8 <c! e g>16 q r8 <c e g>16\dim q r8 <bes d f>16 q r8 <bes d f>16 q | \break
     % 30
         r8\p <a cis e>16 q r8 <a cis e>16 q r8 <bes d e>16 q r8 <bes d e>16 q |
-        r8\pp <a cis e>16 q r8 <a cis e>16 q r8 <bes d e>16 q r8 <bes d e>16 q | \break
+        r8\pp <a cis e>16 q r8 <a cis e>16 q r8 <bes d e>16 q r8 <bes d e>16 q | \pageBreak
         r8 aes''16\f( f g e f des e8\noBeam) <d, e>8_. <d e>_. <d e>_. |
         <d e>8_.\noBeam aes''16( f g e f des e8\noBeam) <d, e>8_. <d e>_. <d e>_. |
         <d e>8_.\noBeam aes'16^( f g e f d e cis d f e c! d bes | \break

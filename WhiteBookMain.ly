@@ -6,9 +6,15 @@
 \include "WhiteBook3.ly"
 \include "WhiteBook4.ly"
 \include "WhiteBook5.ly"
+\include "WhiteBook6.ly"
 
 #(set-default-paper-size "letter")
 #(set-global-staff-size 20)
+
+\paper {
+    ragged-last-bottom = ##f
+    ragged-bottom = ##f
+}
 
 \book {
     \bookpart {
@@ -65,5 +71,16 @@
         }
         
         \WhiteBookFive
+    }
+
+    \bookpart {
+        \header {
+            title =  \markup \make-title "Game of Thrones"
+            subtitle =  \markup \make-subtitle "Main Theme"
+            composer =  \markup \make-composer "Ramin Djawadi"
+            tagline = ##f
+        }
+        
+        \WhiteBookSix
     }
 }

@@ -1,26 +1,6 @@
 \version "2.22.1"
 % automatically converted by musicxml2ly from Game_of_Thrones.musicxml
 
-\header {
-    title =  "Game of Thrones"
-    composer =  "Ramin Djawadi"
-    encodingsoftware =  "MuseScore 3.6.2"
-    encodingdate =  "2021-08-30"
-    subtitle =  "Main Theme"
-    tagline = ##f
-}
-
-#(set-global-staff-size 20.029714285714284)
-\paper {
-    
-    paper-width = 21.59\cm
-    paper-height = 27.94\cm
-    top-margin = 0.76\cm
-    bottom-margin = 2.01\cm
-    left-margin = 0.64\cm
-    right-margin = 0.64\cm
-}
-
 PartPOneVoiceOne =  {
     \clef "treble" 
     \time 12/8 
@@ -259,7 +239,7 @@ PartPOneVoiceFive =  {
 
 
 % The score definition
-\score {
+WhiteBookSix = \score {
     <<
         \new PianoStaff  <<
             \context Staff = "1" << 

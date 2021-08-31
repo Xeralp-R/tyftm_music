@@ -25,7 +25,7 @@ pianovoice = {
             d2~ d8 d( e) f |
         % 15
             g2 g,4 r4 |
-            c2~ c8 c8( d e) | \break
+            c2~ c8 c8( d e) | \pageBreak
             f2~ f8 f8( g a) |
             b4. a8  g4( d4) |
             e2. r4 |
