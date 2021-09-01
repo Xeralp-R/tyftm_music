@@ -49,8 +49,8 @@ PartPOneVoiceOne =  {
     \tempo "Presto"
 
     \change Staff="2"  \voiceOne
-    f8 ( -> -1 _\pp
-    _\markup{ \italic {misterioso} } a8 -3 b8 c'8 b8 a8 ) | 
+    f8 ( -> -1 ^\pp
+    ^\markup{ \italic {misterioso} } a8 -3 b8 c'8 b8 a8 ) | 
     e8 ( -> a8 b8 c'8 b8 a8 ) | 
     d8 ( -> a8 b8 c'8 b8 a8 ) | 
     e8 ( -> a8 b8 c'8 b8 a8 ) | \break
