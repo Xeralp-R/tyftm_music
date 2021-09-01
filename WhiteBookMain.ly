@@ -7,6 +7,7 @@
 \include "WhiteBook4.ly"
 \include "WhiteBook5.ly"
 \include "WhiteBook6.ly"
+\include "WhiteBook7.ly"
 
 #(set-default-paper-size "letter")
 #(set-global-staff-size 20)
@@ -82,5 +83,15 @@
         }
         
         \WhiteBookSix
+    }
+
+    \bookpart {
+        \header {
+            title =    \markup \make-title    "Tarantella"
+            composer = \markup \make-composer "A. Pieczonka"
+            tagline =  ##f
+        }
+
+        \WhiteBookSeven
     }
 }

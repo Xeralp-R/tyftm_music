@@ -6,6 +6,7 @@ fz = #(make-dynamic-script "fz")
 sempre_ff  = \markup{ \italic {"sempre"} \dynamic { ff } }
 fffz = #(make-dynamic-script "fffz")
 ffz = #(make-dynamic-script "ffz")
+pp_misterioso = \markup{ \dynamic {pp} \italic {misterioso} }
 
 custom_cresc =
 #(define-music-function (parser location cresc_name) (markup?)
@@ -19,29 +20,12 @@ sempre_piu = \custom_cresc "sempre piu"
 molto_cresc_al = \custom_cresc "molto cresc. al"
 cresc_molto = \custom_cresc "cresc. molto"
 
-\header {
-    title =  Tarantella
-    composer =  "A. Pieczonka"
-    poet =  "Lyricist?"
-    encodingsoftware =  "MuseScore 3.6.2"
-    encodingdate =  "2021-08-31"
-    }
-
-#(set-global-staff-size 20.029714285714284)
-\paper {
-    paper-width = 21.59\cm
-    paper-height = 27.94\cm
-    top-margin = 0.99\cm
-    bottom-margin = 0.99\cm
-    left-margin = 0.99\cm
-    right-margin = 0.99\cm
-}
-
 \layout {
     \context { \Score
         skipBars = ##t
-        }
     }
+}
+
 PartPOneVoiceOne =  {
     \clef "treble" 
     \time 6/8 
@@ -49,8 +33,7 @@ PartPOneVoiceOne =  {
     \tempo "Presto"
 
     \change Staff="2"  \voiceOne
-    f8 ( -> -1 ^\pp
-    ^\markup{ \italic {misterioso} } a8 -3 b8 c'8 b8 a8 ) | 
+    f8 ( -> -1 ^\pp_misterioso a8 -3 b8 c'8 b8 a8 ) | 
     e8 ( -> a8 b8 c'8 b8 a8 ) | 
     d8 ( -> a8 b8 c'8 b8 a8 ) | 
     e8 ( -> a8 b8 c'8 b8 a8 ) | \break
@@ -596,7 +579,7 @@ PartPOneVoiceTwo =  {
 
 
 % The score definition
-\score {
+WhiteBookSeven = \score {
     <<
         
         \new PianoStaff
@@ -615,5 +598,5 @@ PartPOneVoiceTwo =  {
     \layout {}
     % To create MIDI output, uncomment the following line:
     %  \midi {\tempo 4 = 220 }
-    }
+}
 
