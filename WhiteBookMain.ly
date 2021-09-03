@@ -15,6 +15,47 @@
 \paper {
     ragged-last-bottom = ##f
     ragged-bottom = ##f
+
+    #(ly:font-config-add-directory "./EB_Garamond/static")
+    #(define fonts
+        (set-global-fonts
+            #:roman "EB Garamond"
+            #:sans "Avenir"
+            #:typewriter "Menlo"
+            ; unnecessary if the staff size is default
+            #:factor (/ staff-height pt 20)
+    ))
+
+    bookTitleMarkup = \markup {
+        \override #'(baseline-skip . 3.5)
+        \column {
+            \fill-line { \fromproperty #'header:dedication }
+            \override #'(baseline-skip . 3.5)
+            \column {
+                \fill-line {
+                    \huge \larger \larger \bold
+                    \fromproperty #'header:title
+                }
+                \fill-line {
+                    \large \bold
+                    \fromproperty #'header:subtitle
+                }
+                \fill-line {
+                    \smaller \bold
+                    \fromproperty #'header:subsubtitle
+                }
+                \fill-line {
+                    \fromproperty #'header:poet
+                    { \large \bold \fromproperty #'header:instrument }
+                    \fromproperty #'header:composer
+                }
+                \fill-line {
+                    \fromproperty #'header:meter
+                    \fromproperty #'header:arranger
+                }
+            }
+        }
+    }
 }
 
 \book {

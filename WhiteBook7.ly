@@ -107,7 +107,7 @@ PartPOneVoiceOne =  {
     b'4 ) b'8 ( -4 f'4 ) f'8 ( -2 | 
     b'4 ) -5 b'8 ( e'4. ) |
 % 60
-    r8 a'8 ( -1 _\markup{ \small\italic {cresc.} } b'8
+    r8 \once \override DynamicTextSpanner.style = #'none a'8 ( -1 _\cresc b'8
     c''8 b'8 a'8 | 
     e''4 ) e''8 -4 e''4 -3 e''8 -2 | 
     e''4 -1 e''8 -4 e''4 -3 e''8 ( -2 | 
@@ -250,7 +250,7 @@ PartPOneVoiceOne =  {
 % 170
     b'4 ) b'8 ( -4 f'4 ) f'8 ( -2 | 
     b'4 ) -5 b'8 ( e'4. ) | 
-    r8 a'8 ( -1 _\markup{ \small\italic {cresc.} }  b'8
+    r8 \once \override DynamicTextSpanner.style = #'none a'8 ( -1 \cresc  b'8
     c''8 b'8 a'8 | 
     e''4 ) e''8 -4 e''4 -3 e''8 -2 | \break
     e''4 -1 e''8 -4 e''4 -3 e''8 ( -2 | 
@@ -527,8 +527,8 @@ PartPOneVoiceFive =  {
 % 180
     b,,4. c,4. | 
     d,4. e,4. _1 | 
-    f,4. _2 _\! _\ff _\> e,4. _1 | 
-    d,4. c,4. ) _\! _\mf | 
+    f,4. _2 _\! \omit _\ff _\> e,4. _1 | 
+    d,4. c,4. ) _\! \omit _\mf | 
     d4. ( <f b>4. ) | 
 % 185
     e4. ( <a c'>4. ) | 
@@ -537,8 +537,8 @@ PartPOneVoiceFive =  {
     b,4. c4. | 
     d4. e4. _1 |
 % 190
-    f4. _2 _\! _\ff _\> e4. _1 | 
-    d4. c4. ) _\! _\f | 
+    f4. _2 _\! \omit _\ff _\> e4. _1 | 
+    d4. c4. ) _\! \omit _\f | 
     d4. ( <f b>4. ) | 
     e4. ( <a c'>4. ) | 
     e4. ( <b d'>4. ) | 
