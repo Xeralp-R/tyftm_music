@@ -198,12 +198,6 @@
     #guitar-tuning
     "x;5;5;3;3;3;"
 
-\paper{
-    #(set-paper-size "letter") 
-    page-count = #9
-}
-#(set-global-staff-size 17.82)
-
 % the voice bit
 melody = {
     \relative c'' {
@@ -757,6 +751,7 @@ guitarchords = \chordmode {
     \set predefinedDiagramTable = #bohemian-fretboards
     % removes fingerings
     \override FretBoard.fret-diagram-details.finger-code = #'none
+    \override FretBoard.size = #0.8
     \regularchords
 }
 
@@ -1226,42 +1221,34 @@ left = {
 }
 
 % Organization
-\book {
-    \paper {
-        #(set-paper-size "letter")
+WhiteBookEight = \score {
+    \layout {
+        #(layout-set-staff-size 15.87)
     }
-    \header {
-        title = \markup { \fontsize #3 "Bohemian Rhapsody"}
-        composer = \markup { \fontsize #1 "Freddie Mercury"}
-        tagline = ##f
-    }
-    \score {
-        \layout {}
-        <<
-            \new ChordNames {
-                \regularchords
-            }
-            \new FretBoards {
-                \guitarchords
-            }
-            \new Staff = "voice" {
-                \clef treble
-                \key bes \major
-                \numericTimeSignature
-                \time 4/4
-                \tempo \markup {"Slowly"}
-                
-                <<
-                    \new Voice = "melody" \melody
-                    \new Voice = "extra" \extra
-                >>
-            }
-            \new Lyrics \lyricsto melody \lyrone
-            \new Lyrics \lyricsto melody \lyrtwo
-            \new PianoStaff <<
-                \new Staff = "dexter" \right
-                \new Staff = "sinister" \left
+    <<
+        \new ChordNames {
+            \regularchords
+        }
+        \new FretBoards {
+            \guitarchords
+        }
+        \new Staff = "voice" {
+            \clef treble
+            \key bes \major
+            \numericTimeSignature
+            \time 4/4
+            \tempo \markup {"Slowly"}
+            
+            <<
+                \new Voice = "melody" \melody
+                \new Voice = "extra" \extra
             >>
+        }
+        \new Lyrics \lyricsto melody \lyrone
+        \new Lyrics \lyricsto melody \lyrtwo
+        \new PianoStaff <<
+            \new Staff = "dexter" \right
+            \new Staff = "sinister" \left
         >>
-    }
+    >>
 }

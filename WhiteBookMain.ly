@@ -8,6 +8,7 @@
 \include "WhiteBook5.ly"
 \include "WhiteBook6.ly"
 \include "WhiteBook7.ly"
+\include "WhiteBook8.ly"
 
 #(set-default-paper-size "letter")
 #(set-global-staff-size 20)
@@ -16,10 +17,10 @@
     ragged-last-bottom = ##f
     ragged-bottom = ##f
 
-    #(ly:font-config-add-directory "./EB_Garamond/static")
+    #(ly:font-config-add-directory "./Libre_Bodoni")
     #(define fonts
         (set-global-fonts
-            #:roman "EB Garamond"
+            #:roman "Libre Bodoni"
             #:sans "Avenir"
             #:typewriter "Menlo"
             ; unnecessary if the staff size is default
@@ -33,13 +34,17 @@
             \override #'(baseline-skip . 3.5)
             \column {
                 \fill-line {
-                    \huge \larger \larger \bold
+                    \huge \larger \larger 
+                    \bold \fontsize #4
                     \fromproperty #'header:title
                 }
+                \vspace #0.75
                 \fill-line {
-                    \large \bold
+                    \large 
+                    \bold \fontsize #2
                     \fromproperty #'header:subtitle
                 }
+                \vspace #0.5
                 \fill-line {
                     \smaller \bold
                     \fromproperty #'header:subsubtitle
@@ -47,7 +52,7 @@
                 \fill-line {
                     \fromproperty #'header:poet
                     { \large \bold \fromproperty #'header:instrument }
-                    \fromproperty #'header:composer
+                    \fontsize #0 \fromproperty #'header:composer
                 }
                 \fill-line {
                     \fromproperty #'header:meter
@@ -61,22 +66,20 @@
 \book {
     \bookpart {
         \header {
-            title = \markup \make-title "Can Can"
-            subtitle =  \markup \make-subtitle "Orpheus in the Underworld"
-            composer =  \markup \make-composer "Jacques Offenbach"
-            encodingsoftware =  "MuseScore 3.6.2"
-            encodingdate =  "2021-07-18"
-            tagline = ##f
+            title =    "Can Can"
+            subtitle = "Orpheus in the Underworld"
+            composer = "Jacques Offenbach"
+            tagline =  ##f
         }
         \WhiteBookOne
     }
 
     \bookpart {
         \header {
-            title = \markup \make-title "Sacro-Monte"
-            subtitle = \markup \make-subtitle { No. 5 from \italic Cinco \italic danzas \italic gitanas, Op. 55 }
-            composer = \markup \make-composer "Joaquin Turina"
-            tagline = ##f
+            title =    "Sacro-Monte"
+            subtitle = \markup { No. 5 from \italic Cinco \italic danzas \italic gitanas, Op. 55 }
+            composer = "Joaquin Turina"
+            tagline =  ##f
         }
 
         \WhiteBookTwo
@@ -84,10 +87,10 @@
 
     \bookpart {
         \header {
-            title = \markup \make-title "Canon in D"
-            composer = \markup \make-composer "Johann Pachelbel"
-            arranger = \markup \make-composer "Arranged by MARION VERHAALEN"
-            tagline = ##f
+            title =    "Canon in D"
+            composer = "Johann Pachelbel"
+            arranger = "Arranged by MARION VERHAALEN"
+            tagline =  ##f
         }
 
         \WhiteBookThree
@@ -95,9 +98,9 @@
 
     \bookpart {
         \header {
-            title = \markup \make-title "Come Back to Sorrento"
-            composer = \markup \make-composer "Ernesto Curtis"
-            tagline = ##f
+            title =    "Come Back to Sorrento"
+            composer = "Ernesto Curtis"
+            tagline =  ##f
         }
 
         \WhiteBookFour
@@ -105,11 +108,11 @@
 
     \bookpart {
         \header{
-            title = \markup \make-title "Ave Maria"
-            subtitle = \markup \make-subtitle "Based on Bach's Prelude in C Major"
+            title =    "Ave Maria"
+            subtitle = "Based on Bach's Prelude in C Major"
             %opus = "BWV 846"
-            composer = \markup \make-composer "Charles Gounod"
-            tagline = ##f
+            composer = "Charles Gounod"
+            tagline =  ##f
         }
         
         \WhiteBookFive
@@ -117,10 +120,10 @@
 
     \bookpart {
         \header {
-            title =  \markup \make-title "Game of Thrones"
-            subtitle =  \markup \make-subtitle "Main Theme"
-            composer =  \markup \make-composer "Ramin Djawadi"
-            tagline = ##f
+            title =    "Game of Thrones"
+            subtitle = "Main Theme"
+            composer = "Ramin Djawadi"
+            tagline =  ##f
         }
         
         \WhiteBookSix
@@ -128,11 +131,25 @@
 
     \bookpart {
         \header {
-            title =    \markup \make-title    "Tarantella"
-            composer = \markup \make-composer "A. Pieczonka"
+            title =    "Tarantella"
+            composer = "A. Pieczonka"
             tagline =  ##f
         }
 
         \WhiteBookSeven
+    }
+
+    \bookpart {
+        \header {
+            title =    "Bohemian Rhapsody"
+            composer = "Freddie Mercury"
+            tagline =  ##f
+        }
+
+        \paper {
+            page-count = 9
+        }
+
+        \WhiteBookEight
     }
 }
