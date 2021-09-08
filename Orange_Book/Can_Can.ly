@@ -396,19 +396,28 @@ CanCanLeftHand =  \relative fis' {
 }
 
 % The score definition
-WhiteBookOne = \score {
-    <<
-        
-        \new PianoStaff
-        <<   
-            \context Staff = "1" \CanCanRightHand
-            \context Staff = "2" \CanCanLeftHand
-        >>
-        
-    >>
-    \layout {
-        #(layout-set-staff-size 20)
+Can_Can = \bookpart {
+    \header {
+        title =    "Can Can"
+        subtitle = "Orpheus in the Underworld"
+        composer = "Jacques Offenbach"
+        tagline =  ##f
     }
-    % To create MIDI output, uncomment the following line:
-    %  \midi {\tempo 4 = 144 }
+
+    \score {
+        <<
+
+            \new PianoStaff
+            <<   
+                \context Staff = "1" \CanCanRightHand
+                \context Staff = "2" \CanCanLeftHand
+            >>
+
+        >>
+        \layout {
+            #(layout-set-staff-size 20)
+        }
+        % To create MIDI output, uncomment the following line:
+        %  \midi {\tempo 4 = 144 }
+    }
 }

@@ -144,21 +144,29 @@ PartPOneVoiceFive =  \relative g {
 
 
 % The score definition
-WhiteBookFour = \score {
-    <<
-        \new PianoStaff <<
-            \context Staff = "1" << 
-                \mergeDifferentlyDottedOn\mergeDifferentlyHeadedOn
-                \PartPOneVoiceOne
-                >> 
-            \context Staff = "2" <<
-                \mergeDifferentlyDottedOn\mergeDifferentlyHeadedOn
-                \PartPOneVoiceFive
+Come_Back_to_Sorrento = \bookpart {
+    \header {
+        title =    "Come Back to Sorrento"
+        composer = "Ernesto Curtis"
+        tagline =  ##f
+    }
+    
+    \score {
+        <<
+            \new PianoStaff <<
+                \context Staff = "1" << 
+                    \mergeDifferentlyDottedOn\mergeDifferentlyHeadedOn
+                    \PartPOneVoiceOne
+                    >> 
+                \context Staff = "2" <<
+                    \mergeDifferentlyDottedOn\mergeDifferentlyHeadedOn
+                    \PartPOneVoiceFive
+                >>
             >>
         >>
-    >>
-    \layout {
-        % #(layout-set-staff-size 24.605714285714285)
-        #(layout-set-staff-size 24.605714285714285)
+        \layout {
+            % #(layout-set-staff-size 24.605714285714285)
+            #(layout-set-staff-size 24.605714285714285)
+        }
     }
 }

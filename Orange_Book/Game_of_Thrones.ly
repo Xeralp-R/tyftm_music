@@ -239,21 +239,29 @@ PartPOneVoiceFive =  {
 
 
 % The score definition
-WhiteBookSix = \score {
-    <<
-        \new PianoStaff  <<
-            \context Staff = "1" << 
-                \mergeDifferentlyDottedOn\mergeDifferentlyHeadedOn
-                \PartPOneVoiceOne
-            >> 
-            \context Staff = "2" <<
-                \mergeDifferentlyDottedOn\mergeDifferentlyHeadedOn
-                \PartPOneVoiceFive
+Game_of_Thrones = \bookpart {
+    \header {
+        title =    "Game of Thrones"
+        subtitle = "Main Theme"
+        composer = "Ramin Djawadi"
+        tagline =  ##f
+    }
+
+    \score {
+        <<
+            \new PianoStaff  <<
+                \context Staff = "1" << 
+                    \mergeDifferentlyDottedOn\mergeDifferentlyHeadedOn
+                    \PartPOneVoiceOne
+                >> 
+                \context Staff = "2" <<
+                    \mergeDifferentlyDottedOn\mergeDifferentlyHeadedOn
+                    \PartPOneVoiceFive
+                >>
             >>
         >>
-    >>
-    \layout {}
-    % To create MIDI output, uncomment the following line:
-    %  \midi {\tempo 4 = 85 }
+        \layout {}
+        % To create MIDI output, uncomment the following line:
+        %  \midi {\tempo 4 = 85 }
+    }
 }
-

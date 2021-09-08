@@ -313,26 +313,35 @@ left = {
     \bar "|."
 }
 
-WhiteBookThree = \score {
-    \layout{
-        \override Beam.collision-interfaces = #'(beam-interface
-            clef-interface
-            clef-modifier-interface
-            flag-interface
-            inline-accidental-interface
-            key-signature-interface
-            note-head-interface
-            stem-interface
-            time-signature-interface
-            dynamic-interface
-        )
-        \override Beam.damping = #1
-        #(layout-set-staff-size 22.45)
+Canon_in_D = \bookpart {
+    \header {
+        title =    "Canon in D"
+        composer = "Johann Pachelbel"
+        arranger = "Arranged by MARION VERHAALEN"
+        tagline =  ##f
     }
-    \new PianoStaff <<
-        \set PianoStaff.connectArpeggios = ##t
-        \override PianoStaff.Arpeggio.X-offset = #-2.5
-        \new Staff = "dexter" \right
-        \new Staff = "sinister" \left
-    >>
+
+    \score {
+        \layout{
+            \override Beam.collision-interfaces = #'(beam-interface
+                clef-interface
+                clef-modifier-interface
+                flag-interface
+                inline-accidental-interface
+                key-signature-interface
+                note-head-interface
+                stem-interface
+                time-signature-interface
+                dynamic-interface
+            )
+            \override Beam.damping = #1
+            #(layout-set-staff-size 22.45)
+        }
+        \new PianoStaff <<
+            \set PianoStaff.connectArpeggios = ##t
+            \override PianoStaff.Arpeggio.X-offset = #-2.5
+            \new Staff = "dexter" \right
+            \new Staff = "sinister" \left
+        >>
+    }
 }

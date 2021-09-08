@@ -229,19 +229,29 @@ left = {
 %%
 %% Bring the two hands together
 %%   
-WhiteBookFive = \score {
-    \context PianoStaff <<
-        \set PianoStaff.connectArpeggios = ##t
-        \new Staff = "pianovoice" \pianovoice
-        \new Lyrics \lyricsto "pianovoice" \pianolyr
-        \new Staff = "upper" \right
-        \new Staff = "lower" \with {
-            \consists "Span_arpeggio_engraver"
-        } \left
-    >>
-    \layout { 
-        indent = 0\cm
-        #(layout-set-staff-size 15.5)
+Ave_Maria_Gounod = \bookpart {
+    \header{
+        title =    "Ave Maria"
+        subtitle = "Based on Bach's Prelude in C Major"
+        %opus = "BWV 846"
+        composer = "Charles Gounod"
+        tagline =  ##f
     }
-    %\midi {}
+    
+    \score {
+        \context PianoStaff <<
+            \set PianoStaff.connectArpeggios = ##t
+            \new Staff = "pianovoice" \pianovoice
+            \new Lyrics \lyricsto "pianovoice" \pianolyr
+            \new Staff = "upper" \right
+            \new Staff = "lower" \with {
+                \consists "Span_arpeggio_engraver"
+            } \left
+        >>
+
+        \layout { 
+            indent = 0\cm
+            #(layout-set-staff-size 15.5)
+        }
+    }
 }

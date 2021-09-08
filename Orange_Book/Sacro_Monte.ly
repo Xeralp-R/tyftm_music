@@ -1,7 +1,5 @@
 \version "2.22.0"
 
-#(set-global-staff-size 17.82)
-
 right = {
     \clef "treble"
     \key a \minor
@@ -161,13 +159,22 @@ left = {
     }
 }
 
-WhiteBookTwo = \score {
-    \layout {
-        #(layout-set-staff-size 17.82)
+Sacro_Monte = \bookpart {
+    \header {
+        title =    "Sacro-Monte"
+        subtitle = \markup { No. 5 from \italic Cinco \italic danzas \italic gitanas, Op. 55 }
+        composer = "Joaquin Turina"
+        tagline =  ##f
     }
-    \new PianoStaff <<
-        \new Staff = "up" \right
-        \new Staff = "down" \left
-    >>
-    \midi {}
+
+    \score {
+        \layout {
+            #(layout-set-staff-size 17.82)
+        }
+        \new PianoStaff <<
+            \new Staff = "up" \right
+            \new Staff = "down" \left
+        >>
+        %\midi {}
+    }
 }
