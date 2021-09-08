@@ -1221,34 +1221,46 @@ left = {
 }
 
 % Organization
-WhiteBookEight = \score {
-    \layout {
-        #(layout-set-staff-size 15.87)
+Bohemian_Rhapsody = \bookpart {
+    \header {
+        title =    "Bohemian Rhapsody"
+        composer = "Freddie Mercury"
+        tagline =  ##f
     }
-    <<
-        \new ChordNames {
-            \regularchords
+
+    \paper {
+        page-count = 9
+    }
+
+    \score {
+        \layout {
+            #(layout-set-staff-size 15.87)
         }
-        \new FretBoards {
-            \guitarchords
-        }
-        \new Staff = "voice" {
-            \clef treble
-            \key bes \major
-            \numericTimeSignature
-            \time 4/4
-            \tempo \markup {"Slowly"}
-            
-            <<
-                \new Voice = "melody" \melody
-                \new Voice = "extra" \extra
+        <<
+            \new ChordNames {
+                \regularchords
+            }
+            \new FretBoards {
+                \guitarchords
+            }
+            \new Staff = "voice" {
+                \clef treble
+                \key bes \major
+                \numericTimeSignature
+                \time 4/4
+                \tempo \markup {"Slowly"}
+
+                <<
+                    \new Voice = "melody" \melody
+                    \new Voice = "extra" \extra
+                >>
+            }
+            \new Lyrics \lyricsto melody \lyrone
+            \new Lyrics \lyricsto melody \lyrtwo
+            \new PianoStaff <<
+                \new Staff = "dexter" \right
+                \new Staff = "sinister" \left
             >>
-        }
-        \new Lyrics \lyricsto melody \lyrone
-        \new Lyrics \lyricsto melody \lyrtwo
-        \new PianoStaff <<
-            \new Staff = "dexter" \right
-            \new Staff = "sinister" \left
         >>
-    >>
+    }
 }

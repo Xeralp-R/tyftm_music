@@ -579,24 +579,31 @@ PartPOneVoiceTwo =  {
 
 
 % The score definition
-WhiteBookSeven = \score {
-    <<
-        
-        \new PianoStaff
+Tarantella = \bookpart {
+    \header {
+        title =    "Tarantella"
+        composer = "A. Pieczonka"
+        tagline =  ##f
+    }
+    
+    \score {
         <<
-            \context Staff = "1" << 
-                    \mergeDifferentlyDottedOn\mergeDifferentlyHeadedOn
-                    \PartPOneVoiceOne
-            >> 
-            \context Staff = "2" <<
-                    \mergeDifferentlyDottedOn\mergeDifferentlyHeadedOn
-                    \PartPOneVoiceFive
-            >>
-        >>
-        
-    >>
-    \layout {}
-    % To create MIDI output, uncomment the following line:
-    %  \midi {\tempo 4 = 220 }
-}
 
+            \new PianoStaff
+            <<
+                \context Staff = "1" << 
+                        \mergeDifferentlyDottedOn\mergeDifferentlyHeadedOn
+                        \PartPOneVoiceOne
+                >> 
+                \context Staff = "2" <<
+                        \mergeDifferentlyDottedOn\mergeDifferentlyHeadedOn
+                        \PartPOneVoiceFive
+                >>
+            >>
+
+        >>
+        \layout {}
+        % To create MIDI output, uncomment the following line:
+        %  \midi {\tempo 4 = 220 }
+    }
+}
