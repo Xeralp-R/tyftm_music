@@ -9,7 +9,6 @@ right = {
 
     <<
         \new Voice = "melody" { \oneVoice
-            \override BreathingSign.text = \markup { \musicglyph #"scripts.caesura.curved" }
             \relative c' {
                 \partial 8
                 <c d>8\< |
@@ -98,10 +97,10 @@ right = {
             }
             \hide NoteHead \hide Stem \hide Beam \hide Flag
             \once \override Slur.control-points = #'(
-                (0 . -5)
-                (10 . -7)
-                (22 . 0)
-                (27 . 10)
+                (0 . 0)
+                (7 . 8)
+                (14 . 4)
+                (20 . 10)
             )
             \change Staff = "left"
             b,16( d fis a b
@@ -116,35 +115,41 @@ right = {
         % 46
             \override Slur.control-points = #'(
                 (0 . 0)
-                (4 . 10)
-                (13 . 16)
-                (19 . 13)
+                (4 . 5)
+                (9 . 4)
+                (14 . 7)
             )
             \change Staff = "left" aes,16^( ees aes bes c' ees'
             \change Staff = "right" ces'' ees'')
+            \override Slur.control-points = #'(
+                (0 . 0)
+                (5 . 5)
+                (11 . 4)
+                (15.5 . 6)
+            )
             \change Staff = "left" aes,16^( des f aes des' f'
             \change Staff = "right" des'' f'')
             \override Slur.control-points = #'(
                 (0 . 0)
-                (4 . 13)
-                (13 . 19)
-                (19 . 13)
+                (4 . 5)
+                (9 . 4)
+                (14 . 7)
             )
             \change Staff = "left" aes,16^( ees g bes d' ees'
             \change Staff = "right" ees'' aes'')
             \override Slur.control-points = #'(
                 (0 . 0)
-                (4 . 10)
-                (13 . 16)
-                (19 . 13)
+                (5 . 5)
+                (11 . 4)
+                (15 . 7)
             )
             \change Staff = "left" aes,16^( des f aes des' f'
             \change Staff = "right" des'' f'')
             \override Slur.control-points = #'(
                 (0 . 0)
-                (4 . 10)
-                (13 . 18)
-                (19 . 13)
+                (4 . 4)
+                (8 . 3.5)
+                (13.5 . 6.5)
             )
             \change Staff = "left" aes,16^( ees aes bes c'
             \change Staff = "right" ees' aes' bes' c'')
@@ -158,7 +163,6 @@ left = {
     \key g \major
     \time 4/4
 
-    \override BreathingSign.text = \markup { \musicglyph #"scripts.caesura.curved" }
     \relative c {
         \partial 8
         <d a'>8 |
@@ -296,7 +300,6 @@ lyrtwo = \lyricmode {
 
 christmaschords = \chordmode {
     \time 4/4
-    \override ChordName.font-family = #'roman
     \override ChordName.font-size = #0
 
     \partial 8
@@ -370,11 +373,11 @@ Christmas_in_Our_Hearts = \bookpart {
         page-count = #2
     }
     \header {
-        title = \markup { \fontsize #3 "Christmas in our Hearts"}
-        composer = \markup { \fontsize #1 "Jose Mari Chan"}
-        arranger = \markup { \fontsize #1 "Boboy Bagayaua"}
-        poet = \markup { \fontsize #1 "Rica Cañiza"}
-        tagline = ##f
+        title =    "Christmas in our Hearts"
+        composer = "Jose Mari Chan"
+        %arranger = "Boboy Bagayaua"
+        poet =     "Rica Cañiza"
+        tagline =  ##f
     }
     \score {
         \layout {
