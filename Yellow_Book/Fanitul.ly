@@ -1,29 +1,17 @@
 \version "2.22.1"
 % automatically converted by musicxml2ly from Fanitul.musicxml
-\pointAndClickOff
-
-%% additional definitions required by the score:
-rit. = #(make-dynamic-script "rit.")
-marcato = #(make-dynamic-script "marcato")
 
 \header {
-    title =  Fanitul
-    copyright =  Copyright
-    composer =  \markup \column {
-        \line { "Ole Olsen"}
-        \line { ""} }
-    
-    poet =  \markup \column {
-        \line { "Original: Red Book"}
-        \line { ""} }
-    
-    encodingsoftware =  "MuseScore 3.5.2"
-    encodingdate =  "2021-01-02"
+    title =     "Fanitul"
+    composer =  "Ole Olsen"
     subtitle =  "Op. 23, No. 3"
-    }
+}
 
 PartPOneVoiceOne =  {
-    \clef "treble" \time 2/4 \key c \major \repeat volta 2 {
+    \clef "treble" 
+    \time 2/4 
+    \key c \major 
+    \repeat volta 2 {
         | % 1
         a16 ( ^^ _\f ^\markup{ \bold {Allegro vivace} } b16 c'16 b16 a16
         b16 c'16 b16 | % 2
@@ -140,7 +128,7 @@ PartPOneVoiceOne =  {
     a16 b16 c'16 e'16 dis'16 e'16 c'16 b16 | % 89
     a2 ~ | \barNumberCheck #90
     a2 ) | % 91
-    r8 _\f _\marcato <b a'>8 <c' a'>8 <d' a'>8 | % 92
+    r8 _\f _"marcato" <b a'>8 <c' a'>8 <d' a'>8 | % 92
     <e' a'>8. ^^ <f' a'>16 <e' a'>8 <f' a'>8 | % 93
     <e' a'>8. ^^ <f' a'>16 <e' a'>8 <f' a'>8 | % 94
     \once \omit TupletBracket
@@ -161,12 +149,15 @@ PartPOneVoiceOne =  {
     \times 4/5  {
         b,16 ( \change Staff="1" c16 b,16 a,16 b,16 ) }
     r4 | \barNumberCheck #100
-    \tempo 4=100 <b c'>4 ^^ _\fff _\rit. \tempo 4=90 a4 ^^ | % 101
+    \tempo 4=100 <b c'>4 ^^ _\fff _"rit." \tempo 4=90 a4 ^^ | % 101
     \tempo 4=80 a2 ^\fermata ^^ \bar "|."
-    }
+}
 
 PartPOneVoiceFive =  {
-    \clef "bass" \time 2/4 \key c \major \repeat volta 2 {
+    \clef "bass" 
+    \time 2/4 
+    \key c \major 
+    \repeat volta 2 {
         | % 1
         a,8 -. <a, gis>8 -. <a, g>8 -. <a, fis>8 -. | % 2
         <a, f>8 -. <a, e>8 -. <a, dis>8 -. <a, d>8 -. | % 3
@@ -315,8 +306,8 @@ PartPOneVoiceFive =  {
     <e a>8 <f a>8 <e a>8 <d a>8 | % 97
     <c a>8 <d a>4 ^^ <e a>8 s2. a,8 -. b,8 -. | \barNumberCheck #100
     <b, c>4 ^^ a,4 ^^ | % 101
-    <a,, a,>2 ^\fermata ^^ \sustainOn \bar "|."
-    \sustainOff }
+    <a,, a,>2 ^\fermata ^^ \bar "|."
+}
 
 PartPOneVoiceSix =  {
     \clef "bass" \time 2/4 \key c \major \repeat volta 2 {
@@ -377,7 +368,7 @@ PartPOneVoiceTwo =  {
         s1 s1*3 }
     s2*5 s2*5 s1*3 s2*5 s1 | % 98
     \clef "bass" s1*2 \bar "|."
-    }
+}
 
 
 % The score definition
@@ -404,5 +395,5 @@ PartPOneVoiceTwo =  {
     \layout {}
     % To create MIDI output, uncomment the following line:
     %  \midi {\tempo 4 = 144 }
-    }
+}
 
