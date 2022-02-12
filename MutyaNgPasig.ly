@@ -30,7 +30,7 @@ voice_staff = {
     ees''8.( f''16) ees''4 ces''8 aes' |
     ges'8 aes'8 bes'4 f'8. ges'16 |
     ees'4 ees'4 r4 |
-    r4 r4 f'8( ges'8) \newline
+    r4 r4 f'8 ges'8 \newline
 
     aes'8 aes' aes' ces''16 aes'16 fes'8 aes' |
     ges'8.( aes'16) bes'4 a'8. bes'16 |
@@ -50,21 +50,43 @@ voice_staff = {
 
     bes'8. \acciaccatura {des''!} ces''16 bes'4 des''16 ces''16 aes' f' |
     ges'8.( f'16) ees'8 d'!16 ees'16 f'8 ges'16 f'16 |
-    \key ees \major ees'2 r4 | R2. |
+    \key ees \major ees'2 r4 | R2. | \newpage 
+
+    g'8 aes'16 g' f'4 ees'8 f' |
+    g'4 g'2 |
+    bes'8 c''16 bes'16 aes'8 g' f' ees' | \newline
+
+    g'4 f'2 |
+    aes'8 bes' c''4 aes'8 g' |
+    g'8. f'16 aes'4. c''8 | \newline
+
+    c''8 bes' d'' c'' f'' aes' |
+    g'8.( bes32 aes32) g4. r8 |
+    fis'8. fis'16 fis'8 eis' eis' dis'' | \newline
+
+    cis''4 b'! r8 b'8 |
+    b'!4. a'!8 d''!8 e''! |
+    e''!8. b'!16 d''!4 r8 g'8 | \newpage
 }
 
 voice_lyric = \lyricmode {
     Kun -- ga -- bing ang buan sa la -- ngit ay na -- ka -- du -- ngaw,
     Ti -- la gi -- ni -- gi -- sing ng ha --  ba -- gat sa kan -- yang 
     pag tu -- log sa tu -- big,
-    ang % Missing Word
-    sang -- la -- ra wang pu -- tiat bu -- si -- lak 
+    ang i -- sang la -- ra wang pu -- ti't bu -- si -- lak 
     na lu -- gay ang bu -- hok na a -- ni -- moy a -- gos,
     I -- to ang Mut -- ya ng Pa -- sig,
     I -- to ang Mut -- ya ng Pa -- sig.
 
     Sa kan -- yang pag -- sik -- lot sa ma -- pu -- ting bu -- la
     ka -- sa -- bay ang a -- wit, ka -- sa -- bay ang tu -- la: 
+
+    "\"Da" -- ti a -- kong pa -- ra -- lu -- man 
+    sa ka -- ha -- ri -- an ng pag -- i -- big,
+    Ang pag -- i -- big ng ma -- ma -- tay, 
+    nag -- la -- ho -- rin ang ka -- ha -- ri -- an.
+    Ang la -- kas ko ay na -- li -- pat 
+    sa pu -- so't dib -- dib ng la -- hat;
 }
 
 piano_upper = {
@@ -168,6 +190,58 @@ piano_upper = {
             \bar "||"
         }
     >> \newpage
+
+    <<
+        \context Voice = "upper" { \voiceOne
+            g'8 aes'16 g' f'4 ees'8 <d' f'> |
+            g'4 g'2 |
+            bes'8 c''16 bes'16 aes'8 g' f' ees' |
+        }
+        \context Voice = "lower" { \voiceTwo
+            <bes ees'>4 <a c'>4 <aes ces'> |
+            <g bes>8 <bes ees'>4 <bes ees'> <bes ees'>8 |
+            r8 <bes ees'>4 <bes ees> b!8 |
+        }
+    >> \newline
+
+    <<
+        \context Voice = "upper" { \voiceOne
+            g'4 f'2 |
+            aes'8 bes' c''4 aes'8 g' |
+            g'8. f'16 aes'4. <aes' c''>8 |
+        }
+        \context Voice = "lower" { \voiceTwo
+            r8 <c' ees'>4 <c' ees'>4 <c' ees'>8 |
+            r8 ees'4 <c' ees'>4 <aes c'>8 |
+            r8 <aes ces'> b <aes c'> d' e' |
+        }
+    >> \newline 
+
+    <<
+        \context Voice = "upper" { \voiceOne
+            c''8 bes' d'' c'' f'' aes' |
+            g'8. bes'32 aes'32 g'4. r8 |
+            fis'8. fis'16 fis'8 eis' eis' dis'' | 
+        }
+        \context Voice = "lower" { \voiceTwo
+            <d' e'>4 f'4. f'8 |
+            f'4 e'4. d'8 |
+            cis'2. |
+        }
+    >> \newline 
+
+    <<
+        \context Voice = "upper" { \voiceOne
+            cis''4 b'! r8 b'8 |
+            b'!4. a'!8 d''!8 e''! |
+            e''!8. b'!16 d''!4 r8 g'8 |
+        }
+        \context Voice = "lower" { \voiceTwo
+            r8 <dis' fis'>4 <dis' fis'>4 <dis' fis'>8 |
+            r8 <d'! fis'>4 <d' fis'> <d' fis' a'!>8 |
+            r8 <d'! g'!>4 <d' g'> d'8 |
+        }
+    >>
 }
 
 piano_lower = {
@@ -255,6 +329,48 @@ piano_lower = {
             des8 c ces \fermata |
         }
     >> \newpage
+
+    ees,8 bes,4 bes, bes,8 |
+    ees,8 a,!16 bes,16 f8 ees8 fis g |
+    ges,8 ees4 ees4 \context Voice = "voiceone" {ees8} | \newline 
+
+    <<
+        \context Voice = "voiceone" { \voiceOne
+            ees8 e f g aes bes |
+            c'4( aes4) f8 ees |
+            ees4 d8 ees f g |
+        }
+        \context Voice = "voicetwo" { \voiceTwo
+            aes,2. |
+            f,2. |
+            bes,2. |
+        }
+    >> \newline
+
+    <<
+        \context Voice = "voiceone" { \voiceOne
+            aes4 b8 c' des' d' |
+            bes2. |
+            r8 <fis ais>4 <fis ais> <fis ais>8 |
+        }
+        \context Voice = "voicetwo" { \voiceTwo 
+            bes,8 f4 aes8 ces' bes |
+            ees,8 bes, g ees bes4 |
+            e2. |
+        }
+    >> \newline
+
+    <<
+        \context Voice = "voiceone" { \voiceOne
+            fis8. eis16 fis8 gis ais b |
+            c'!4 ees'!8 \parenthesize d' cis' c'! |
+        }
+        \context Voice = "voicetwo" { \voiceTwo
+            dis2. |
+            d!2. |
+        }
+    >>
+    <g, b>4. fis8 g b! |
 }
 
 \score {
