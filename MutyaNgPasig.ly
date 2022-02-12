@@ -3,6 +3,15 @@
 #(set-global-staff-size 20)
 
 newline = { \break }
+newpage = { \pageBreak }
+
+\header {
+    title =  "Mutya ng Pasig"
+    subtitle = "Kumintang"
+    composer =  "Nicanor Abelardo"
+    poet = "Deogracias A. Rosario"
+    tagline = ##f
+}
 
 voice_staff = {
     \time 3/4
@@ -14,16 +23,28 @@ voice_staff = {
 
     bes'8. bes'16 bes'4 ces'' |
     f'8. ges'16 as'8 as' ges' as'16 ges'16 |
-    f'8.. ges'32 f'4 r4 |
+    f'8..( ges'32) f'4 r4 |
     R2. | \newline
 
-    d''
+    d''8 d''16 d''16 d''8 d''8 d''8 d''16 d''16 |
+    ees''8.( f''16) ees''4 ces''8 aes' |
+    ges'8 aes'8 bes'4 f'8. ges'16 |
+    ees'4 ees'4 r4 |
+    r4 r4 f'8( ges'8) \newline
+
+    aes'8 aes' aes' ces''16 aes'16 fes'8 aes' |
+    ges'8.( aes'16) bes'4 a'8. bes'16 |
+    ees''8 ees''16 ees''16 ees''8 d''!16 ees''16 f''8 ees''8 |
+    d''!8.( f''32 ees''32) d''4 r8 des'8 | \newpage
 }
 
 voice_lyric = \lyricmode {
     Kun -- ga -- bing ang buan sa la -- ngit ay na -- ka -- du -- ngaw
     Ti -- la gi -- ni -- gi -- sing ng ha --  ba -- gat sa kan -- yang 
-    pag tu -- log so tu -- big 
+    pag tu -- log sa tu -- big ang % Missing Word
+    sang -- la -- ra wang pu -- tiat bu -- si -- lak 
+    na lu -- gay ang bu -- hok na a -- ni -- moy a -- gos,
+    I
 }
 
 piano_upper = {
@@ -61,7 +82,20 @@ piano_upper = {
     <ges es'>8 ges'16 es' bes4 
     \change Staff = "pianolower" \voiceOne <as d'!>4 |
     <ges es'> \change Staff = "pianoupper" \oneVoice
-    r4 <d' f'>8 <es' ges'> |
+    r4 <d' f'>8 <es' ges'> | \newline 
+
+    <f' aes'>4. <aes' ces''>8 <d'! f'>8 <f' aes'>8 |
+    <ees' ges'>8. <f' aes'>16 <ges' bes'>4 <f' a'!>8 <ges' bes'>8 |
+    <<
+        \context Voice = "upper" { \voiceOne
+            <ges ges'>4. <g! g'!>8 <aes aes'>8 <a! a'!>8 |
+            <bes bes'>2.
+        }
+        \context Voice = "lower" { \voiceTwo
+            ees'2 ees'4 |
+            d'!2.
+        }
+    >> \newpage
 }
 
 piano_lower = {
@@ -116,7 +150,15 @@ piano_lower = {
             es,4 r4 \afterGrace bes, { a,16 bes,16 } |
             es8 bes, es, bes4. |
         }
-    >>
+    >> \newline
+
+    d,!8 a!16 bes16 ces'8 bes bes, bes |
+    ees,8 a!16 bes ees'8 bes ces' bes |
+    ces,8 ges,16 ees16 ces'4 <ces, ces>4 |
+    bes,,8 f,16 bes,16 f8 bes \change Staff = "pianoupper" f' bes' |
+    \newpage
+
+    \voiceTwo <bes,, f,>2.
 }
 
 \score {
