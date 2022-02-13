@@ -5,6 +5,15 @@
 newline = { \break }
 newpage = { \pageBreak }
 
+\paper {
+    #(ly:font-config-add-directory "./Fonts")
+    #(define fonts
+        (set-global-fonts
+            #:roman "Cardo"
+            #:factor (/ staff-height pt 20)
+        ))
+}
+
 \header {
     title =  "Mutya ng Pasig"
     subtitle = "Kumintang"
@@ -19,7 +28,7 @@ voice_staff = {
     \tempo "Andante"
     \clef treble
 
-    s2.*5 | \newline
+    R2.*5 | \newline
 
     bes'8. bes'16 bes'4 ces'' |
     f'8. ges'16 as'8 as' ges' as'16 ges'16 |
@@ -52,21 +61,39 @@ voice_staff = {
     ges'8.( f'16) ees'8 d'!16 ees'16 f'8 ges'16 f'16 |
     \key ees \major ees'2 r4 | R2. | \newpage 
 
-    g'8 aes'16 g' f'4 ees'8 f' |
-    g'4 g'2 |
-    bes'8 c''16 bes'16 aes'8 g' f' ees' | \newline
+    \repeat volta 2 {
+        g'8 aes'16 g' f'4 ees'8 f' |
+        g'4 g'2 |
+        bes'8 c''16 bes'16 aes'8 g' f' ees' | \newline
 
-    g'4 f'2 |
-    aes'8 bes' c''4 aes'8 g' |
-    g'8. f'16 aes'4. c''8 | \newline
+        g'4 f'2 |
+        aes'8 bes' c''4 aes'8 g' |
+        g'8. f'16 aes'4. c''8 | \newline
 
-    c''8 bes' d'' c'' f'' aes' |
-    g'8.( bes32 aes32) g4. r8 |
-    fis'8. fis'16 fis'8 eis' eis' dis'' | \newline
+        c''8 bes' d'' c'' f'' aes' |
+        g'8.( bes'32 aes'32) g'4. r8 |
+        fis'8. fis'16 fis'8 eis' eis' dis'' | \newline
 
-    cis''4 b'! r8 b'8 |
-    b'!4. a'!8 d''!8 e''! |
-    e''!8. b'!16 d''!4 r8 g'8 | \newpage
+        cis''4 b'! r8 b'8 |
+        b'!4. a'!8 d''!8 e''! |
+        e''!8. b'!16 d''!4 r8 g'8 | \newpage
+
+        g'8 f' d'' c'' g''8. f''16 |
+        f''8.( ees''16) g'8 bes' d'' ees'' |
+        e''!8 f'' aes''4. d''16 d''16 | \newline
+    }
+    \alternative {
+        { ees''4 r4 r4 | R2. }
+        { ees''4 r4 r4 }
+    } | \newline
+
+    r4 r8 g'8 g'8 g'8 |
+    g'4. g'8 g'8 g'8 |
+    g'8( bes'16 aes') g'16 r16 c''8 d'' ees'' |
+    aes''4 r8 d''8 d''8 d''16 d''16 |
+    e''2.~ |
+    e''4 r4 r4 |
+    R2.*2 |
 }
 
 voice_lyric = \lyricmode {
@@ -87,6 +114,12 @@ voice_lyric = \lyricmode {
     nag -- la -- ho -- rin ang ka -- ha -- ri -- an.
     Ang la -- kas ko ay na -- li -- pat 
     sa pu -- so't dib -- dib ng la -- hat;
+    kung nais nin -- yong a -- ko'y ma -- bu -- hay,
+    pag -- i -- big ko'y in -- yong i -- bi -- gay.
+    gay.
+
+    Kung nais nin -- yong a -- ko'y ma -- bu -- hay, 
+    pag -- i -- big ko'y mu -- ling i -- bi -- gay. __
 }
 
 piano_upper = {
@@ -115,12 +148,9 @@ piano_upper = {
     d'!8 f'16 d'16 bes4 <ces' es'> |
     <bes d'>8 f'16 d'16 bes4 <ges ces'> | \newline
 
-    \change Staff = "pianolower" \voiceOne <d f bes>4 
-    \change Staff = "pianoupper" \oneVoice r4 
-    \change Staff = "pianolower" \voiceOne <f ces'! d'!>4 |
+    \clef bass <d f bes>4 r4 <f ces'! d'!>4 |
     <es bes es'>2 <f ces' es' f'>4 |
-    <ges es' ges'>2 
-    \change Staff = "pianoupper" \oneVoice <as d'!>4 |
+    \clef treble <ges es' ges'>2  <as d'!>4 |
     <ges es'>8 ges'16 es' bes4 
     \change Staff = "pianolower" \voiceOne <as d'!>4 |
     <ges es'> \change Staff = "pianoupper" \oneVoice
@@ -146,7 +176,7 @@ piano_upper = {
     \change Staff = "pianoupper" \oneVoice f'16 d'! bes' f' 
     d''!16 bes' f' d' |
     \change Staff = "pianolower" \voiceOne r16 ees a! ges 
-    ees' a \change Staff = "pianoupper" \oneVoice ges' ees'
+    \change Staff = "pianoupper" \oneVoice ees' a ges' ees'
     ces'' ges' ees' a! | \newline
 
     \change Staff = "pianolower" \voiceOne r16 d! bes f 
@@ -176,8 +206,8 @@ piano_upper = {
             bes8 d'! ges' |
 
             \key ees \major
-            ges'8 bes'16 ges' ees'4 f' |
-            ges'8 bes'16 ges' ees'4 f'8 fis'\fermata |
+            g'8 bes'16 ges' ees'4 f' |
+            g'8 bes'16 ges' ees'4 f'8 fis'\fermata |
             \bar "||"
         }
         \context Voice = "lower" { \voiceTwo 
@@ -185,63 +215,113 @@ piano_upper = {
             s4. bes4. |
 
             \key ees \major
-            bes4 r8 bes ces' des' |
+            bes4 r8 bes c' d' |
             ees'4 ees'4 ees'4 |
             \bar "||"
         }
     >> \newpage
 
-    <<
-        \context Voice = "upper" { \voiceOne
-            g'8 aes'16 g' f'4 ees'8 <d' f'> |
-            g'4 g'2 |
-            bes'8 c''16 bes'16 aes'8 g' f' ees' |
+    \repeat volta 2 {
+        <<
+            \context Voice = "upper" { \voiceOne
+                g'8 aes'16 g' f'4 ees'8 <d' f'> |
+                g'4 g'2 |
+                bes'8 c''16 bes'16 aes'8 g' f' ees' |
+            }
+            \context Voice = "lower" { \voiceTwo
+                <bes ees'>4 <a c'>4 <aes ces'> |
+                <g bes>8 <bes ees'>4 <bes ees'> <bes ees'>8 |
+                r8 <bes ees'>4 <bes ees> b!8 |
+            }
+        >> \newline
+
+        <<
+            \context Voice = "upper" { \voiceOne
+                g'4 f'2 |
+                aes'8 bes' c''4 aes'8 g' |
+                g'8. f'16 aes'4. <aes' c''>8 |
+            }
+            \context Voice = "lower" { \voiceTwo
+                r8 <c' ees'>4 <c' ees'>4 <c' ees'>8 |
+                r8 ees'4 <c' ees'>4 <aes c'>8 |
+                r8 <aes ces'> b <aes c'> d' e' |
+            }
+        >> \newline 
+
+        <<
+            \context Voice = "upper" { \voiceOne
+                c''8 bes' d'' c'' f'' aes' |
+                g'8. bes'32 aes'32 g'4. r8 |
+                fis'8. fis'16 fis'8 eis' eis' dis'' | 
+            }
+            \context Voice = "lower" { \voiceTwo
+                <d' e'>4 f'4. f'8 |
+                f'4 e'4. d'8 |
+                cis'2. |
+            }
+        >> \newline 
+
+        <<
+            \context Voice = "upper" { \voiceOne
+                cis''4 b'! r8 b'8 |
+                b'!4. a'!8 d''!8 e''! |
+                e''!8. b'!16 d''!4 r8 g'8 |
+            }
+            \context Voice = "lower" { \voiceTwo
+                r8 <dis' fis'>4 <dis' fis'>4 <dis' fis'>8 |
+                r8 <d'! fis'>4 <d' fis'> <d' fis' a'!>8 |
+                r8 <d'! g'!>4 <d' g'> d'8 |
+            }
+        >>
+
+        <<
+            \context Voice = "upper" { \voiceOne
+                g'8 f' d'' c'' g''8. f''16 |
+                f''8. ees''16 g'8 bes' d'' ees'' |
+                e''!8 f'' aes''4. d''8 |
+            }
+            \context Voice = "lower" {
+                c'4 <f' aes'>4 <aes' c''>8 <aes' ces''>8 |
+                <g' bes'>4 ees'8 <ees' ges'> <ges' bes'> <ges' bes'> |
+                <aes' ces''>4 <aes' c''>4 <aes' bes'!>4 |
+            }
+        >>
+    }
+    \alternative {
+        {
+            <ees' g' bes' ees''>8 bes'16 g' ees'4 f'4 |
+            g'8 bes'16 g'16 ees'4 <ees' f'>8 fis' |
         }
-        \context Voice = "lower" { \voiceTwo
-            <bes ees'>4 <a c'>4 <aes ces'> |
-            <g bes>8 <bes ees'>4 <bes ees'> <bes ees'>8 |
-            r8 <bes ees'>4 <bes ees> b!8 |
+        {
+            <g' ees''>16 ees' g' ees' g' ees' g' ees' g' ees' g' ees' |
         }
-    >> \newline
+    } \newline 
 
     <<
         \context Voice = "upper" { \voiceOne
-            g'4 f'2 |
-            aes'8 bes' c''4 aes'8 g' |
-            g'8. f'16 aes'4. <aes' c''>8 |
+            <f' g'>16 ees'16 <f' g'>16 ees'16 <f' g'>16 ees'16 <f' g'>16 ees'16
+            <f' g'>16 ees'16 <f' g'>16 ees'16 |
+            <f' g'>16 ees'16 <f' g'>16 ees'16 <f' g'>16 ees'16 <f' g'>16 ees'16  
+            <f' g'>16 ees'16 <f' g'>16 ees'16 |
+            <f' g'>16 ees'16 <f' g'>16 ees'16 <f' g'>8
         }
         \context Voice = "lower" { \voiceTwo
-            r8 <c' ees'>4 <c' ees'>4 <c' ees'>8 |
-            r8 ees'4 <c' ees'>4 <aes c'>8 |
-            r8 <aes ces'> b <aes c'> d' e' |
+            r4 bes2 |
+            b!2. |
+            c'4~ c'8
         }
-    >> \newline 
+    >> r8 r4 | \newline 
 
-    <<
-        \context Voice = "upper" { \voiceOne
-            c''8 bes' d'' c'' f'' aes' |
-            g'8. bes'32 aes'32 g'4. r8 |
-            fis'8. fis'16 fis'8 eis' eis' dis'' | 
-        }
-        \context Voice = "lower" { \voiceTwo
-            <d' e'>4 f'4. f'8 |
-            f'4 e'4. d'8 |
-            cis'2. |
-        }
-    >> \newline 
-
-    <<
-        \context Voice = "upper" { \voiceOne
-            cis''4 b'! r8 b'8 |
-            b'!4. a'!8 d''!8 e''! |
-            e''!8. b'!16 d''!4 r8 g'8 |
-        }
-        \context Voice = "lower" { \voiceTwo
-            r8 <dis' fis'>4 <dis' fis'>4 <dis' fis'>8 |
-            r8 <d'! fis'>4 <d' fis'> <d' fis' a'!>8 |
-            r8 <d'! g'!>4 <d' g'> d'8 |
-        }
-    >>
+    r4 \grace {
+        \change Staff = "pianolower" f,32 c aes 
+        \change Staff = "pianoupper" c'32 ees' aes' c''
+    } aes''8 r8 <aes' bes' d'' bes''> r8 | \voiceOne
+    <ees'' g'' bes'' ees'''>8 <f'' f'''>16 <ees'' ees'''>16 
+    <bes' ees'' g'' bes''>4 <d'' g'' bes'' d'''>4 |
+    <c'' ees'' g'' c'''>8 <d'' d'''>16 <c'' c'''>16 
+    <ees' c'' ees''>4 \oneVoice <fis' b' fis''>8 <g' g''> |
+    <g' bes'! ees'' g''>2. ~ |
+    <g' bes'! ees'' g''>8 r8 r4 r4\fermata | \bar "|."
 }
 
 piano_lower = {
@@ -330,47 +410,123 @@ piano_lower = {
         }
     >> \newpage
 
-    ees,8 bes,4 bes, bes,8 |
-    ees,8 a,!16 bes,16 f8 ees8 fis g |
-    ges,8 ees4 ees4 \context Voice = "voiceone" {ees8} | \newline 
+    \repeat volta 2 {
+        ees,8 bes,4 bes, bes,8 |
+        ees,8 a,!16 bes,16 f8 ees8 fis g |
+        ges,8 ees4 ees4 \context Voice = "voiceone" {ees8} | \newline 
 
+        <<
+            \context Voice = "voiceone" { \voiceOne
+                ees8 e f g aes bes |
+                c'4( aes4) f8 ees |
+                ees4 d8 ees f g |
+            }
+            \context Voice = "voicetwo" { \voiceTwo
+                aes,2. |
+                f,2. |
+                bes,2. |
+            }
+        >> \newline
+
+        <<
+            \context Voice = "voiceone" { \voiceOne
+                aes4 b8 c' des' d' |
+                bes2. |
+                r8 <fis ais>4 <fis ais> <fis ais>8 |
+            }
+            \context Voice = "voicetwo" { \voiceTwo 
+                bes,8 f4 aes8 ces' bes |
+                ees,8 bes, g ees bes4 |
+                e2. |
+            }
+        >> \newline
+
+        <<
+            \context Voice = "voiceone" { \voiceOne
+                fis8. eis16 fis8 gis ais b |
+                c'!4 ees'!8 \parenthesize d' cis' c'! |
+            }
+            \context Voice = "voicetwo" { \voiceTwo
+                dis2. |
+                d!2. |
+            }
+        >>
+        <g, b>4. fis8 g b! | \newpage
+
+        <<
+            \context Voice = "voiceone" { \voiceOne
+                aes!4 b!8 c' ees' f |
+            }
+            \context Voice = "voicetwo" { \voiceTwo
+                aes,!2. |
+            }
+        >>
+        bes,4 bes8 d' f' ees' |
+        <f aes ees'>4 <bes,, f,>4 <<
+            \context Voice = "voiceone" { \voiceOne
+                g'8 f'8
+            }
+            \context Voice = "voicetwo" { \voiceTwo
+                <aes bes d'>
+            }
+        >> |
+    }
+    \alternative {
+        {
+            <<
+                \context Voice = "voiceone" {
+                    \change Staff = "pianoupper" \voiceTwo
+                    s4 r8 bes c' d' | 
+                    ees'4 \change Staff = "pianolower" \voiceOne 
+                    r8 g aes b! |
+                }
+                \context Voice = "voicetwo" {
+                    <ees, bes, g>4 r4 <bes, aes> |
+                    <ees, bes, g>4 \voiceTwo r8 des c ces |
+                }
+            >>
+        }
+        {
+            <<
+                \context Voice = "voiceone" { \voiceOne
+                    ees'4 d' c' |
+                }
+                \context Voice = "voicetwo" { \voiceTwo
+                    ees4 r4 r4 |
+                }
+            >>
+        }
+    } \newline 
+
+    bes4 g4 ees |
+    <ees, d>2. |
+    <ees, ees>4 ~ <ees, ees>8 r8 r4 | \newline 
+
+    r4 r4 
     <<
         \context Voice = "voiceone" { \voiceOne
-            ees8 e f g aes bes |
-            c'4( aes4) f8 ees |
-            ees4 d8 ees f g |
+            \acciaccatura {<bes,, bes,>8} g'8 f'
         }
         \context Voice = "voicetwo" { \voiceTwo
-            aes,2. |
-            f,2. |
-            bes,2. |
+            <aes bes d'>4
         }
-    >> \newline
-
+    >> |
+    \slashedGrace {<ees, bes,>8(} 
+    \clef treble <ees' g' bes'>4)
+    <d' ees' g'>4 <c' ees' g'>4 |
+    <bes ees' g'>4 <a! c' g'>4 
+    \clef bass
+    \acciaccatura {<e, b,>8} <gis d>4 |
     <<
         \context Voice = "voiceone" { \voiceOne
-            aes4 b8 c' des' d' |
-            bes2. |
-            r8 <fis ais>4 <fis ais> <fis ais>8 |
-        }
-        \context Voice = "voicetwo" { \voiceTwo 
-            bes,8 f4 aes8 ces' bes |
-            ees,8 bes, g ees bes4 |
-            e2. |
-        }
-    >> \newline
-
-    <<
-        \context Voice = "voiceone" { \voiceOne
-            fis8. eis16 fis8 gis ais b |
-            c'!4 ees'!8 \parenthesize d' cis' c'! |
+            <ees g! bes ees'!>2.~ |
+            <ees g! bes ees'!>8
         }
         \context Voice = "voicetwo" { \voiceTwo
-            dis2. |
-            d!2. |
+            r4 \repeat tremolo 8 {ees,32 bes,32} |
+            <ees, bes,>8
         }
-    >>
-    <g, b>4. fis8 g b! |
+    >> r8 r4 r4\fermata | \bar "|."
 }
 
 \score {
@@ -382,4 +538,10 @@ piano_lower = {
             \new Staff = "pianolower" \piano_lower
         >>
     >>
+    \layout {
+        \context {
+            \Lyrics
+            \override LyricText.font-size = #0.0
+        }
+    }
 }
