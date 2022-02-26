@@ -29,181 +29,145 @@ sustainOffOn = {\sustainOff \sustainOn}
 }
 
 \header {
-    lyricist = "Arr. Person of Hourai"
+    poet = "Arr. Person of Hourai"
     composer = "Takeru Kanazaki, Hiroki Morishita, Rei Kondoh"
     title = "A Funeral of Flowers (Thunder)"
 }
 
 part-Pone-one = {
     \key d \major
-    \time 3/4
+    \time 6/4
     \clef treble
 
     \voiceOne
-    \slashedGrace{s8 s8} <f' b' d'' f'' >2.\arpeggio\mp  |
-    r2  <e' e'' >8  <f' f'' >8   |
-    <g' g'' >2. |
+    \slashedGrace{s8 s8} <fis' b' d'' fis'' >2.\arpeggio\mp  %|
+    r2  <e' e'' >8  <fis' fis'' >8   |
+    <g' g'' >2. %|
     R2.  |
-    <g' b' g'' >2. |
+    <g' b' g'' >2.\arpeggio %|
     % 5
     <a' a'' >2. | \newline
-    <fis' fis'' >2. |
-    r2 \voiceTwo <d'' d''' >8  <e'' e''' >8 |
-    <fis'' b'' d''' fis''' >2. |
+    <fis' fis'' >2. %|
+    r2 \oneVoice <d'' d''' >8  <e'' e''' >8 |
+    <fis'' b'' d''' fis''' >2. %|
     <g'' g''' >2. |
     % 10
-    <b'' b''' >2. |
+    <b'' b''' >2. %|
     <a'' a''' >2. |
-    <a'' a''' >2. |
+    <a'' a''' >2. %|
     <g'' g''' >2. |
-    <fis'' fis''' >2. |
+    <fis'' fis''' >2. %|
     % 15
     <<
         \context Voice = "voiceone" { \voiceOne
             s2. |
+            b''4 s2 %|
             b''4 s2 |
-            b''4 s2 |
-            b''4 s8 cis'''4 s8 |
+            b''4 s8 cis'''4 s8 %|
             cis'''4 s8 d'''4 s8 |
-            d'''4 s8 cis'''4 s8 |
+            d'''4 s8 cis'''4 s8 %|
             b''4 s8 fis''4 s8 |
-            e''4 s8 fis''4 s8 |
+            e''4 s8 fis''4 s8 %|
             d''4 s8 e''4 s8 |
+            b''4 s2 %|
             b''4 s2 |
-            b''4 s2 |
-            b''4 s8 cis'''4 s8 |
+            b''4 s8 cis'''4 s8 %|
             cis'''4 s8 d'''4 s8 |
-            d'''4 s8 cis'''4 s8 |
+            d'''4 s8 cis'''4 s8 %|
             cis'''4 s8 a''4 s8 |
-            e'''4 s8 e'''4 s8 |
+            e'''4 s8 e'''4 s8 %|
             fis'''4 s8 fis'''4 s8 |
         }
         \context Voice = "voicetwo" { \voiceTwo
             \override Voice.Slur.direction = #1
             <e'' e''' >2\>  d''8(  e''8  |
-            <d'' f'' b'' >8)\arpeggio\p b'8(  cis''8  d''8  e''8  fis''8 |
+            <d'' fis'' b'' >8)\arpeggio\p b'8(  cis''8  d''8  e''8  fis''8 %|
             b''8)  b'8(  cis''8  d''8  e''8  fis''8   |
-            b''8)  d''8(  fis''8  cis'''8)  cis''8(  fis''8  |
+            b''8)  d''8(  fis''8  cis'''8)  cis''8(  fis''8  %|
             cis'''8)  cis''8(  fis''8  d'''8)  d''8(  fis''8   |
             % 20
-            d'''8)  d''8(  fis''8  cis'''8)  d''8(  fis''8 |
+            d'''8)  d''8(  fis''8  cis'''8)  d''8(  fis''8 %|
             b''8)  b'8(  d''8  fis''8)  b'8(  d''8   |
-            e''8)  g'8(  b'8  fis''8)  b'8(  g'8    |
+            e''8)  g'8(  b'8  fis''8)  b'8(  g'8    %|
             d''8)  g'8(  b'8  e''8)  b'8(  e''8   |
-            <d'' fis'' b'' >8)\arpeggio  b'8(  cis''8  d''8  e''8  fis''8 |
+            <d'' fis'' b'' >8)\arpeggio  b'8(  cis''8  d''8  e''8  fis''8 %|
             % 25
             b''8)  b'8(  cis''8  d''8  e''8  fis''8   |
-            b''8)  d''8(  fis''8  cis'''8)  d''8(  fis''8 |
+            b''8)  d''8(  fis''8  cis'''8)  d''8(  fis''8 %|
             cis'''8)  e''8(  fis''8  d'''8)  e''8(  fis''8   |
-            <e'' a'' d''' >8)\arpeggio  e''8(  a''8  cis'''8)  e''8(  a''8 |
+            <e'' a'' d''' >8)\arpeggio  e''8(  a''8  cis'''8)  e''8(  a''8 %|
             cis'''8)  e''8(  fis''8  a''8)  cis''8(  e''8   |
             % 30
-            e'''8)  fis''8(  a''8  e'''8)  fis''8(  a''8  |
+            e'''8)  fis''8(  a''8  e'''8)  fis''8(  a''8  %|
             fis'''8)  fis''8(  a''8  fis'''8)  fis''8(  a''8)   |
         }
     >>
-    <f'' f''' >4(  <g'' g''' >4  <a'' a''' >4 |
-r4  <g'' g''' >4  <f'' f''' >4   |
-<< { <e'' e''' >4  <f'' f''' >2   } \\{  }  >> |
-% 35
-<e'' e''' >4  <d'' d''' >4  <c'' c''' >4   |
-<< { <c'' c''' >8  <d'' d''' >8  <b' b'' >2)   } \\{  }  >> |
-cis'8  d'8  fis'8  b'8  b'4)   |
-<< { <d' g' c'' >8(  d''8  b'2)   } \\{  }  >> |
-b8  d'8  g'8  b'8  b'4)   |
-% 40
-<<
-    \context Voice = "voiceone" { \voiceOne 
-        \tuplet 3/2 { <d' a' >8(  d''8  f''8 }  \tuplet 3/2 { a''8  f''8  a''8 }  \tuplet 3/2 { d'''8  a''8  d'''8 }   |
-        \tuplet 3/2 { f'''8  d'''8  f'''8 }  \tuplet 3/2 { a'''8  f'''8  d'''8 }  \tuplet 3/2 { a''8  f''8  d''8) }   |
-        \tuplet 3/2 { <f' a' >8(  c''8  f''8 }  \tuplet 3/2 { aes''8  f''8  aes''8 }  \tuplet 3/2 { c'''8  aes''8  c'''8 }   |
-
-    }
-    \context Voice = "voicetwo" { \voiceTwo 
-         |
-         |
-         |
-
-    }
->>
-\tuplet 3/2 { f'''8  c'''8  f'''8 }  \tuplet 3/2 { aes'''8  f'''8  c'''8 }  \tuplet 3/2 { aes''8  f''8  c''8) }   |
-<<
-    \context Voice = "voiceone" { \voiceOne 
-        \tuplet 3/2 { <d' b' >8(  dis''8  gis''8 }  \tuplet 3/2 { b''8  gis''8  b''8 }  \tuplet 3/2 { dis'''8  b''8  dis'''8 }   |
+    <fis'' fis''' >4^(\f  <g'' g''' >4  <a'' a''' >4 %|
+    r4  <g'' g''' >4  <fis'' fis''' >4 |
+    <e'' e''' >4  <fis'' fis''' >2 %|
+    % 35
+    <e'' e''' >4  <d'' d''' >4  <cis'' cis''' >4 |
+    <cis'' cis''' >8\mp  <d'' d''' >8  <b' b'' >2) %|
+    \voiceOne r2. |
+    \oneVoice <d' g' cis'' >8^(  d''8  b'2) %|
+    \voiceOne r2. |
+    % 40    
+    \set Staff.beatStructure = #'(1 1 1 1 1 1)
+    \oneVoice
+    \tuplet 3/2 { <d' a' >8(  d''8  f''8 }  \tuplet 3/2 { a''8  f''8  a''8 }  
+    \tuplet 3/2 { d'''8  a''8  d'''8 }   %|
+    \override TupletNumber.stencil = ##f \override TupletBracket.stencil = ##f
+    \tuplet 3/2 { f'''8  d'''8  f'''8 }  \tuplet 3/2 { a'''8  f'''8  d'''8 }  
+    \tuplet 3/2 { a''8  f''8  d''8) }   |
+    \tuplet 3/2 { <f' aes' >8(  c''8  f''8 }  \tuplet 3/2 { aes''8  f''8  aes''8 }  
+    \tuplet 3/2 { c'''8  aes''8  c'''8 }   %|
+    \tuplet 3/2 { f'''8  c'''8  f'''8 }  \tuplet 3/2 { aes'''8  f'''8  c'''8 }  
+    \tuplet 3/2 { aes''8  f''8  c''8) }   |
+    \tuplet 3/2 { <dis' b' >8(  dis''8  gis''8 }  \tuplet 3/2 { b''8  gis''8  b''8 }  
+    \tuplet 3/2 { dis'''8  b''8  dis'''8 }   |
+    % 45
+    \tuplet 3/2 { gis'''8  dis'''8  gis'''8 }  \tuplet 3/2 { b'''8  gis'''8  dis'''8 }  
+    \tuplet 3/2 { b''8  gis''8  dis''8) }   |
+    \unset Staff.beatStructure
+    \key b \major
+    \time 3/2
+    \tuplet 3/2 { e'''8(  b''8  gis''8 }  \tuplet 3/2 { e''8  gis''8  b''8 }  
+    \tuplet 3/2 { dis'''8  b''8  gis''8 }  \tuplet 3/2 { e''8  b'8  e''8 }  
+    \tuplet 3/2 { b''8  gis''8  e''8 }  \tuplet 3/2 { b'8  gis'8  b'8) }   |
+    \tuplet 3/2 { gis''8(  dis''8  b'8 }  \tuplet 3/2 { gis'8  b'8  dis''8 }  
+    \tuplet 3/2 { gis''8  dis''8  b'8 }  \tuplet 3/2 { gis'8  b'8  dis''8 }  
+    \tuplet 3/2 { b''8  gis''8  dis''8 }  \tuplet 3/2 { b'8  gis'8  b'8) }   |
+    \time 2/2
+    s2  r2   |
+    \time 12/8
+    <<
+        \context Voice = "voiceone" { \voiceOne
+            dis'''4 s8 b''4 s8 cis'''4 s8 ais''4 s8 |
         % 45
-        \tuplet 3/2 { gis'''8  dis'''8  gis'''8 }  \tuplet 3/2 { b'''8  gis'''8  dis'''8 }  \tuplet 3/2 { b''8  gis''8  dis''8) }   |
+            b''4 s8 gis''4 s8 ais''4 s8 b''4 s8 |
+        }
+        \context Voice = "voicetwo" { \voiceTwo
+            \override Voice.Slur.direction = #1
+            \slashedGrace { b''8(^[  cis'''8] }  dis'''8)  dis''8(  gis''8  b''8) 
+            dis''8(  gis''8  cis'''8)  dis''8(  gis''8  ais''8)  dis''8(  gis''8   |
         % 45
-        \key b \major
-        \time 3/2
-        \tuplet 3/2 { e'''8(  b''8  gis''8 }  \tuplet 3/2 { e''8  gis''8  b''8 }  \tuplet 3/2 { dis'''8  b''8  gis''8 }  \tuplet 3/2 { e''8  b'8  e''8 }  \tuplet 3/2 { b''8  gis''8  e''8 }  \tuplet 3/2 { b'8  gis'8  b'8) }   |
-        % 45
-        \tuplet 3/2 { gis''8(  dis''8  b'8 }  \tuplet 3/2 { gis'8  b'8  dis''8 }  \tuplet 3/2 { gis''8  dis''8  b'8 }  \tuplet 3/2 { gis'8  b'8  dis''8 }  \tuplet 3/2 { b''8  gis''8  dis''8 }  \tuplet 3/2 { b'8  gis'8  b'8) }   |
-        % 45
-        \time 4/4
-        \tuplet 3/2 { cis''8(  b'8  ais'8 }  \tuplet 3/2 { gis'8  dis'8  b8 }  r2   |
-        % 45
-        \time 12/8
-    \slashedGrace { b''8(  cis'''8 }  dis'''8)->  dis''8(  gis''8  b''8)->  dis''8(  gis''8  cis'''8)->  dis''8(  gis''8  ais''8)->  dis''8(  gis''8   |
-    % 45
-b''8)->  b'8(  e''8  gis''8)->  b'8(  e''8->  ais''8)->  b'8(  e''8  b''4.)->   |
+            b''8)  b'8(  e''8  gis''8)  b'8(  e''8  ais''8)  b'8(  e''8  b''4.)   |
+        }
+    >>
+    r4.  <b' dis'' gis'' b'' >4.(  <cis'' cis''' >4.  <ais' ais'' >4.   |
+    <b' b'' >1.)   |
+    r4.  <b' b'' >4.(  <cis'' cis''' >4.  <ais' ais'' >4.   |
+    <fis' fis'' >1.)   |
+    % 50
+    r4.  <b' b'' >4.(  <cis'' cis''' >4.  <ais' ais'' >4.   |
+    <b' b'' >2.  <fis'' fis''' >2.   |
+    <fis'' ais'' dis''' fis''' >4.  <e'' e''' >4.  <dis'' dis''' >4.  
+    <cis'' cis''' >4.)   |
+    r4.  <dis'' dis''' >4.  r4.  <ais' ais'' >4.   |
+    % 55
+    \time 3/4
+    <gis' bis' dis'' gis'' >4  dis'8(  gis'8  b'8  gis'8)   |
 % 45
-r4.  <b' d'' g'' b'' >4.(  <c'' c''' >4.  <a' a'' >4.   |
-% 45
-<b' b'' >1.)   |
-% 45
-r4.  <b' b'' >4.(  <c'' c''' >4.  <a' a'' >4.   |
-% 45
-<f' f'' >1.)   |
-% 45
-r4.  <b' b'' >4.(  <c'' c''' >4.  <a' a'' >4.   |
-% 45
-<b' b'' >2.  <f'' f''' >2.   |
-% 45
-<f'' a'' d''' f''' >4.  <e'' e''' >4.  <d'' d''' >4.  <c'' c''' >4.)   |
-% 45
-r4.  <d'' d''' >4.  r4.  <a' a'' >4.   |
-% 45
-\time 3/4
-<g' b' d'' g'' >4  dis'8(  gis'8  b'8  gis'8)   |
-% 45
-
-}
-\context Voice = "voicetwo" { \voiceTwo 
-     |
-    % 45
-     |
-    % 45
-     |
-    % 45
-     |
-    % 45
-     |
-    % 45
-     |
-    % 45
-     |
-    % 45
-     |
-    % 45
-     |
-    % 45
-     |
-    % 45
-     |
-    % 45
-     |
-    % 45
-     |
-    % 45
-     |
-    % 45
-     |
-    % 45
-     |
-    % 45
-
-}
->>
 dis'8(  gis'8  cis''8  gis'8)  dis'8(  gis'8   |
 << { dis''8  gis'8)  dis'8(  gis'8  ais'8  gis'8)   } \\{  }  >> |
 dis'8(  gis'8  b'8  gis'8)  dis'8(  gis'8)   |
@@ -420,89 +384,102 @@ a''16  b''16  c'''16  d'''16  \tuplet 3/2 { e'''8  fis'''8  g'''8 }  a'''4)   |
 
 part-Pone-two = {
     \key d \major
-    \time 3/4
+    \time 6/4
     \clef bass
 
-    \slashedGrace { b,,8(  b,,8 }  b,,8)_(\sustainOn  b,8  cis8  d8  fis8  b8   |
+    \slashedGrace { b,,8(  b,,8 }  b,,8)_(\sustainOn  b,8  cis8  d8  fis8  b8   %|
     \change Staff = "upper" \voiceTwo d'8  fis'8  b'8  d''8)
     \change Staff = "lower" \oneVoice r4   |
-    b,,8_(\sustainOffOn  b,8  d8  g8  b8 \change Staff = "upper" \voiceTwo d'8   |
+    b,,8_(\sustainOffOn  b,8  d8  g8  b8 \change Staff = "upper" \voiceTwo d'8   %|
     g'8  d'8  g'8  b'8 cis''8  d''8)   |
     \once \override TextScript.avoid-slur = #'outside
     \change Staff = "lower" \oneVoice a,,8_(\sustainOffOn 
-    e,8  a,8_\markup{\italic "sim."}  cis8  e8  a8   |
+    e,8 a,8_\markup{\italic "sim."} cis8 e8 a8 %|
     % 5
     \change Staff = "upper" \voiceTwo
     cis'8  e'8  a'8  cis''8  e''8  a''8)   |
     \change Staff = "lower" \oneVoice
-    a,,8(  a,8  cis8  e8  fis8  b8   |
+    a,,8_(  a,8  cis8  e8  fis8  b8   %|
     \change Staff = "upper" \voiceTwo cis'8  e'8  fis'8  a'8) 
     \change Staff = "lower" \oneVoice r4   |
-    g,8(  d8  g8  a8  b8  d'8   |
+    g,8(  d8  g8  a8  b8  d'8   %|
     d'8  cis'8  b8  a8  g8  d8)   |
     % 10
-    g,8(  d8  g8  a8  cis'8  e'8   |
+    g,8(  d8  g8  a8  cis'8  e'8   %|
     e'8  d'8  cis'8  a8  g8  d8)   |
-    fis,8(  d8  fis8  a8  cis'8  d'8   |
+    fis,8(  d8  fis8  a8  cis'8  d'8   %|
     e'8  d'8  cis'8  a8  fis8  fis,8)   |
-    c,8(  c8  e8  g8  c'8  d'8   |
+    c,8(  c8  e8  g8  c'8  d'8   %|
     % 15
     e'4.)  c'4.   |
-    b,4(  fis4  b4   |
+    b,4(  fis4  b4   %|
     cis'4  d'2)   |
-    b,4(  g4  b4   |
+    b,4(  g4  b4   %|
     e'4  fis'4  d'4)   |
     % 20
-    b,4(  fis4  b4   |
+    b,4(  fis4  b4   %|
     d'4  fis'2)   |
-    b,4(  g4  b4   |
+    b,4(  g4  b4   %|
     e'2.)   |
-    b,,4(  fis,4  b,4   |
+    b,,4(  fis,4  b,4   %|
     % 25
     d4  fis4  b4)   |
-    g,,4(  d,4  g,4   |
+    g,,4(  d,4  g,4   %|
     b,4  d4  g4)   |
-    a,,4(  e,4  a,4   |
+    a,,4(  e,4  a,4   %|
     cis4  e2)   |
     % 30
-    fis,,4(  fis,4  a,4   |
+    fis,,4(  fis,4  a,4   %|
     cis4  fis2)   |
-    e,8(  b,8  e8  g8  b8  e'8   |
+    e,8(  b,8  e8  g8  b8  e'8   %|
     g'2.)   |
-    fis,8(  d8  fis8  a8  cis'8  e'8   |
+    fis,8(  d8  fis8  a8  cis'8  e'8   %|
     % 35
     fis'2.)   |
-    b,,8(  fis,8  b,8  d8  fis8  b8   |
-    r1   |
-    b,,8(  b,8  d8  g8  b8  g8   |
-    r1   |
+    b,,8_(  fis,8  b,8  d8  fis8  b8   %|
+    \change Staff = "upper" \voiceTwo cis'8  d'8  fis'8  b'4.) |
+    \change Staff = "lower" \oneVoice b,,8_(  b,8  d8  g8  b8  g8   %|
+    \change Staff = "upper" \voiceTwo b8  d'8  g'8  b'4.)   |
     % 40
-    r4  <e, e >4  <f, f >4   |
+    \change Staff = "lower" \oneVoice r4  <e, e >4  <f, f >4   %|
     <d, d >4  \tuplet 3/2 { <a,, a, >4  <f,, f, >4  <d,, d, >4 }   |
-    r4  <f,, f, >4  <c, c >4   |
-    <f, f >4  \tuplet 3/2 { <g, g >4  <a, a >4  <b, b >4 }   |
-    r4  <a, a >4  <b, b >4   |
+    r4  <f,, f, >4  <c, c >4   %|
+    <f, f >4  \tuplet 3/2 { <g, g >4  <aes, aes >4  <bes, bes >4 }   |
+    r4  <ais, ais >4  <b, b >4   %|
     % 45
-    <g, g >4  \tuplet 3/2 { <d, d >4  <b,, b, >4  <g,, g, >4 }   |
-    \key b \major
-    \time 3/2
-    \tuplet 3/2 { e,,4(  b,,4  e,4 }  \tuplet 3/2 { fis,4  gis,4  b,4 }  e2)   |
-    \tuplet 3/2 { e,,4(  b,,4  e,4 }  \tuplet 3/2 { gis,4  b,4  e4 }  gis2)   |
-    \time 4/4
-    r2  \tuplet 3/2 { gis8  dis8  b,8 }  \tuplet 3/2 { ais,8  gis,8  dis,8 }   |
-    \time 12/8
-    gis,,1.)   |
+    <gis, gis >4  \tuplet 3/2 { <dis, dis >4  <b,, b, >4  <gis,, gis, >4 }   |
+    \key b \major \time 3/2
+    \tuplet 3/2 { e,,4_(  b,,4  e,4 }  \tuplet 3/2 { fis,4  gis,4  b,4 }  e2)   |
+    \override TupletNumber.stencil = ##f \override TupletBracket.stencil = ##f
+    \tuplet 3/2 { e,,4_(  b,,4  e,4 }  \tuplet 3/2 { gis,4  b,4  e4 }  gis2)   |
+    \time 2/2
+    <<
+        \context Voice = "voiceone" { \voiceOne
+            \override TupletNumber.stencil = ##f \override TupletBracket.stencil = ##f
+            \change Staff = "upper" \voiceTwo
+            \tuplet 3/2 { cis''8(  b'8  ais'8 }  \tuplet 3/2 { gis'8  dis'8  b8 }  
+            \change Staff = "lower" \voiceOne
+            \tuplet 3/2 { gis8  dis8  b,8 }  \tuplet 3/2 { ais,8  gis,8  dis,8 }   |
+            \time 12/8 \oneVoice
+            \slashedGrace { s8  s8 } gis,,1.)   |
+        }
+        \context Voice = "voicetwo" { \voiceTwo
+            r2 s2 |
+            \time 12/8
+            \slashedGrace { s8  s8 } s1.   |
+        }
+    >>
     % 50
-    gis,8(  e8  gis8)  b4.  b2.   |
-    gis,8(  dis8  gis8  ais8  b8  dis'8  dis'8  b8  ais8  gis8)  gis8  e8(   |
-    gis,8)(  dis8  gis8  ais8  b8  dis'8  dis'8  b8  ais8  gis8)  gis8  gis,8(   |
+    gis,8(  e8  gis8)  b4.~  b2.   |
+    gis,8(  dis8  gis8  ais8  b8  dis'8  dis'8  b8  ais8  gis4)  e8(   |
+    gis,8)(  dis8  gis8  ais8  b8  dis'8  dis'8  b8  ais8  gis4)  gis,8(   |
     e,8)(  b,8  e8  fis8  gis8  b8  b8  gis8  fis8  b,4.)   |
-    e,8(  b,8  e8  fis8  gis8  b8  b8  gis8  fis8  e8)  e8  b,8(   |
+    e,8(  b,8  e8  fis8  gis8  b8  b8  gis8  fis8  e4)  b,8(   |
     % 55
     fis,8)(  cis8  fis8  gis8  ais8  cis'8  cis'8  ais8  gis8  fis8  cis8  ais,8)   |
-    fis,8(  cis8  fis8  gis8  ais8  cis'8  cis'8  ais8  gis8  fis8)  fis8  cis8(   |
-    dis,8)(  ais,8  dis8  eis8  fis8  gis8  ais8  gis8  fis8  eis8)  eis8  ais,8(   |
-    dis,8)(  ais,8  dis8  eis8  fis8  ais8  cis'8  ais8  fis8  eis8)  eis8  ais,8   |
+    fis,8(  cis8  fis8  gis8  ais8  cis'8  cis'8  ais8  gis8  fis4)  cis8(   |
+    dis,8)(  ais,8  dis8  eis8  fis8  gis8  ais8  gis8  fis8  eis4)  ais,8(   |
+    dis,8)(  ais,8  dis8  eis8  fis8  ais8  cis'8  ais8  fis8  eis4)  ais,8   |
     \time 3/4
     e,8  b,8  e8  fis8  gis4   |
     % 60
@@ -653,6 +630,7 @@ e2.   |
     \new GrandStaff \with {
         \mergeDifferentlyHeadedOn
         \mergeDifferentlyDottedOn
+        \numericTimeSignature
     } <<
         \new Staff = "upper" \part-Pone-one
         \new Staff = "lower" \part-Pone-two
