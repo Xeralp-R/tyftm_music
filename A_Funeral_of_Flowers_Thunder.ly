@@ -1,18 +1,30 @@
 % Automatically generated from a musicxml file.
 \version "2.22.1"
 
-#(set-global-staff-size 20.0038)
+#(set-global-staff-size 20)
 
-
+newline = { \break }
+newpage = { \pageBreak }
+sustainOffOn = {\sustainOff \sustainOn}
 
 #(set! paper-alist 
 (cons '("new_size" . (cons (* 210.061 mm) (* 296.931 mm))) paper-alist))
 \paper {
+    %%{
+    #(ly:font-config-add-directory "./Fonts")
+    #(define fonts
+        (set-global-fonts
+            #:roman "Bodoni Moda 9pt"
+            #:music "Beethoven"
+            #:brace "Beethoven"
+            #:factor (/ staff-height pt 20)
+        ))%%}
     #(set-paper-size "new_size")
+    %{
     top-margin = 10\mm
-    bottom-margin = 20.0001\mm
+    bottom-margin = 10\mm
     left-margin = 10\mm
-    right-margin = 10\mm
+    right-margin = 10\mm%}
     ragged-last-bottom = ##f
 }
 
@@ -23,48 +35,74 @@
 }
 
 part-Pone-one = {
-    << { \key d \major
-        \time 3/4
-        \clef treble
-    <f' b' d'' f'' >2.   } \\{  }  >> |
-    d'8  fis'8  b'8  d''8  <e' e'' >8  <f' f'' >8   |
-    << { <g' g'' >2.)   } \\{  }  >> |
-    r4  g'8  b'8  cis''8  d''8   |
-    << { <g' b' g'' >2.)   } \\{  }  >> |
+    \key d \major
+    \time 3/4
+    \clef treble
+
+    \voiceOne
+    \slashedGrace{s8 s8} <f' b' d'' f'' >2.\arpeggio\mp  |
+    r2  <e' e'' >8  <f' f'' >8   |
+    <g' g'' >2. |
+    R2.  |
+    <g' b' g'' >2. |
     % 5
-    <a' a'' >2.   |
-    << { <f' f'' >2.   } \\{  }  >> |
-    r4  r4  <d'' d''' >8  <e'' e''' >8   |
-    << { <f'' b'' d''' f''' >2.)   } \\{  }  >> |
-    <g'' g''' >2.   |
+    <a' a'' >2. | \newline
+    <fis' fis'' >2. |
+    r2 \voiceTwo <d'' d''' >8  <e'' e''' >8 |
+    <fis'' b'' d''' fis''' >2. |
+    <g'' g''' >2. |
     % 10
-    << { <b'' b''' >2.   } \\{  }  >> |
-    <a'' a''' >2.   |
-    << { <a'' a''' >2.   } \\{  }  >> |
-    <g'' g''' >2.   |
-    << { <f'' f''' >2.   } \\{  }  >> |
+    <b'' b''' >2. |
+    <a'' a''' >2. |
+    <a'' a''' >2. |
+    <g'' g''' >2. |
+    <fis'' fis''' >2. |
     % 15
-    <e'' e''' >2  d''8  e''8   |
-<< { <d'' f'' b'' >8->  b'8(  cis''8  d''8  e''8  fis''8   } \\{  }  >> |
-b''8)->  b'8(  cis''8  d''8  e''8  fis''8   |
-<< { b''8)->  d''8(  fis''8  cis'''8)->  cis''8(  fis''8   } \\{  }  >> |
-cis'''8)->  cis''8(  fis''8  d'''8)->  d''8(  fis''8   |
-% 20
-<< { d'''8)->  d''8(  fis''8  cis'''8)->  d''8(  fis''8   } \\{  }  >> |
-b''8)->  b'8(  d''8  fis''8)->  b'8(  d''8   |
-<< { e''8)->  g'8(  b'8  fis''8)->  b'8(  g'8   } \\{  }  >> |
-d''8)->  g'8(  b'8  e''8)->  b'8(  e''8   |
-<< { <d'' f'' b'' >8)->  b'8(  cis''8  d''8  e''8  fis''8   } \\{  }  >> |
-% 25
-b''8)->  b'8(  cis''8  d''8  e''8  fis''8   |
-<< { b''8)->  d''8(  fis''8  cis'''8)->  d''8(  fis''8   } \\{  }  >> |
-cis'''8)->  e''8(  fis''8  d'''8)->  e''8(  fis''8   |
-<< { <e'' a'' d''' >8)->  e''8(  a''8  cis'''8)->  e''8(  a''8   } \\{  }  >> |
-cis'''8)->  e''8(  fis''8  a''8)->  cis''8(  e''8   |
-% 30
-<< { e'''8)->  fis''8(  a''8  e'''8)  fis''8(  a''8   } \\{  }  >> |
-fis'''8)->  fis''8(  a''8  fis'''8)  fis''8(  a''8   |
-<< { <f'' f''' >4)(  <g'' g''' >4  <a'' a''' >4   } \\{  }  >> |
+    <<
+        \context Voice = "voiceone" { \voiceOne
+            s2. |
+            b''4 s2 |
+            b''4 s2 |
+            b''4 s8 cis'''4 s8 |
+            cis'''4 s8 d'''4 s8 |
+            d'''4 s8 cis'''4 s8 |
+            b''4 s8 fis''4 s8 |
+            e''4 s8 fis''4 s8 |
+            d''4 s8 e''4 s8 |
+            b''4 s2 |
+            b''4 s2 |
+            b''4 s8 cis'''4 s8 |
+            cis'''4 s8 d'''4 s8 |
+            d'''4 s8 cis'''4 s8 |
+            cis'''4 s8 a''4 s8 |
+            e'''4 s8 e'''4 s8 |
+            fis'''4 s8 fis'''4 s8 |
+        }
+        \context Voice = "voicetwo" { \voiceTwo
+            \override Voice.Slur.direction = #1
+            <e'' e''' >2\>  d''8(  e''8  |
+            <d'' f'' b'' >8)\arpeggio\p b'8(  cis''8  d''8  e''8  fis''8 |
+            b''8)  b'8(  cis''8  d''8  e''8  fis''8   |
+            b''8)  d''8(  fis''8  cis'''8)  cis''8(  fis''8  |
+            cis'''8)  cis''8(  fis''8  d'''8)  d''8(  fis''8   |
+            % 20
+            d'''8)  d''8(  fis''8  cis'''8)  d''8(  fis''8 |
+            b''8)  b'8(  d''8  fis''8)  b'8(  d''8   |
+            e''8)  g'8(  b'8  fis''8)  b'8(  g'8    |
+            d''8)  g'8(  b'8  e''8)  b'8(  e''8   |
+            <d'' fis'' b'' >8)\arpeggio  b'8(  cis''8  d''8  e''8  fis''8 |
+            % 25
+            b''8)  b'8(  cis''8  d''8  e''8  fis''8   |
+            b''8)  d''8(  fis''8  cis'''8)  d''8(  fis''8 |
+            cis'''8)  e''8(  fis''8  d'''8)  e''8(  fis''8   |
+            <e'' a'' d''' >8)\arpeggio  e''8(  a''8  cis'''8)  e''8(  a''8 |
+            cis'''8)  e''8(  fis''8  a''8)  cis''8(  e''8   |
+            % 30
+            e'''8)  fis''8(  a''8  e'''8)  fis''8(  a''8  |
+            fis'''8)  fis''8(  a''8  fis'''8)  fis''8(  a''8)   |
+        }
+    >>
+    <f'' f''' >4(  <g'' g''' >4  <a'' a''' >4 |
 r4  <g'' g''' >4  <f'' f''' >4   |
 << { <e'' e''' >4  <f'' f''' >2   } \\{  }  >> |
 % 35
@@ -384,17 +422,22 @@ part-Pone-two = {
     \key d \major
     \time 3/4
     \clef bass
-    \slashedGrace { b,,8(  b,,8 }  b,,8)(  b,8  cis8  d8  fis8  b8   |
-    r1   |
-    b,,8(  b,8  d8  g8  b8  d'8   |
-    g'8  d'8  r2   |
-    a,,8(  e,8  a,8  cis8  e8  a8   |
+
+    \slashedGrace { b,,8(  b,,8 }  b,,8)_(\sustainOn  b,8  cis8  d8  fis8  b8   |
+    \change Staff = "upper" \voiceTwo d'8  fis'8  b'8  d''8)
+    \change Staff = "lower" \oneVoice r4   |
+    b,,8_(\sustainOffOn  b,8  d8  g8  b8 \change Staff = "upper" \voiceTwo d'8   |
+    g'8  d'8  g'8  b'8 cis''8  d''8)   |
+    \once \override TextScript.avoid-slur = #'outside
+    \change Staff = "lower" \oneVoice a,,8_(\sustainOffOn 
+    e,8  a,8_\markup{\italic "sim."}  cis8  e8  a8   |
     % 5
-    \clef treble
+    \change Staff = "upper" \voiceTwo
     cis'8  e'8  a'8  cis''8  e''8  a''8)   |
-    \clef bass
+    \change Staff = "lower" \oneVoice
     a,,8(  a,8  cis8  e8  fis8  b8   |
-    cis'8  e'8  fis'8  a'8  r4   |
+    \change Staff = "upper" \voiceTwo cis'8  e'8  fis'8  a'8) 
+    \change Staff = "lower" \oneVoice r4   |
     g,8(  d8  g8  a8  b8  d'8   |
     d'8  cis'8  b8  a8  g8  d8)   |
     % 10
@@ -607,8 +650,11 @@ e2.   |
 }
 
 \score {
-    \new GrandStaff <<
-        \new Staff \part-Pone-one
-        \new Staff \part-Pone-two
+    \new GrandStaff \with {
+        \mergeDifferentlyHeadedOn
+        \mergeDifferentlyDottedOn
+    } <<
+        \new Staff = "upper" \part-Pone-one
+        \new Staff = "lower" \part-Pone-two
     >>
 }
