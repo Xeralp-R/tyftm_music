@@ -1,4 +1,4 @@
-#(set-global-staff-size 17.82)
+#(set-global-staff-size 20)
 
 \paper {
     %system-system-spacing = #'((basic-distance . 0.1) (padding . 0))
@@ -10,10 +10,10 @@
         (set-global-fonts
             #:roman "Bodoni Moda 9pt"
             #:music "Cadence"
-            #:brace "Emmentaller"
-            #:factor (/ staff-height pt 17.82)
+            #:brace "Emmentaler"
+            #:factor (/ staff-height pt 20)
     ))
-
+%{
     bookTitleMarkup = \markup {
         \override #'(baseline-skip . 3.5)
         \column {
@@ -47,7 +47,7 @@
                 }
             }
         }
-    }
+    }%}
 }
 
 \layout {
@@ -56,8 +56,6 @@
         \override MetronomeMark.font-size = #'0
         \override SpacingSpanner.common-shortest-duration =
         #(ly:make-moment 1/4)
-        \remove "Fingering_engraver"
-        \remove "Fretboard_engraver"
     }
     \context {
         \Staff
@@ -68,11 +66,15 @@
         \override LyricText.font-size = #0
     }
     \context {
-        \ChordNames
-        \override ChordName.font-family = #'roman
-    }
-    \context {
         \Voice 
         \override DynamicTextSpanner.font-size = #'0
+    }
+    \context {
+        \FretBoards
+        \remove "Fretboard_engraver"
+    }
+    \context {
+        \ChordNames
+        \remove "Chord_name_engraver"
     }
 }
