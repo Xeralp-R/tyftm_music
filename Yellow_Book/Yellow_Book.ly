@@ -7,7 +7,7 @@
 \include "Christmas_in_Our_Hearts.ly"
 
 \book {
-    %\bookpart { \Tarantella              }
+    \bookpart { \Tarantella              }
     %\bookpart { \Bohemian_Rhapsody       }
     \bookpart { \Christmas_in_Our_Hearts }
 }

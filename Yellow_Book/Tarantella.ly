@@ -1,6 +1,9 @@
 \version "2.22.1"
 % automatically converted by musicxml2ly from Tarantella.musicxml
 
+newline = { \break }
+newpage = { \pageBreak }
+
 %% additional definitions required by the score:
 fz = #(make-dynamic-script "fz")
 sempre_ff  = \markup{ \italic {"sempre"} \dynamic { ff } }
@@ -20,12 +23,6 @@ sempre_piu = \custom_cresc "sempre piu"
 molto_cresc_al = \custom_cresc "molto cresc. al"
 cresc_molto = \custom_cresc "cresc. molto"
 
-\layout {
-    \context { \Score
-        skipBars = ##t
-    }
-}
-
 PartPOneVoiceOne =  {
     \clef "treble" 
     \time 6/8 
@@ -36,7 +33,7 @@ PartPOneVoiceOne =  {
     f8 ( -> -1 ^\pp_misterioso a8 -3 b8 c'8 b8 a8 ) | 
     e8 ( -> a8 b8 c'8 b8 a8 ) | 
     d8 ( -> a8 b8 c'8 b8 a8 ) | 
-    e8 ( -> a8 b8 c'8 b8 a8 ) | \break
+    e8 ( -> a8 b8 c'8 b8 a8 ) | \newline
 % 5
     f8 ( -> -1 a8 -2 b8 c'8 e'8 d'8 ) | 
     <a c'>2. ( -1 -3 -4 | 
@@ -44,13 +41,13 @@ PartPOneVoiceOne =  {
     \change Staff="1" R2.*2 | \oneVoice
 % 10
     r8 _\fz _\< a'8 ( -1 ^\markup{ \italic {risoluto} } b'8 c''8 b'8 a'8 | 
-    e''4 ) _\! e''8 ( a'4 ) a'8 ( | \break
+    e''4 ) _\! e''8 ( a'4 ) a'8 ( | \newline
     f''4 ) f''8 ( a'4 ) a'8 ( _\< | 
     e''2. ) -- -5 | 
     r8 _\! b'8 ( -2 c''8 d''8 c''8 b'8 | 
 % 15
     c''4 ) c''8 ( -3 a'4 ) a'8 ( -2 | 
-    b'4 ) b'8 ( -4 f'4 ) f'8 ( -2 | \break
+    b'4 ) b'8 ( -4 f'4 ) f'8 ( -2 | \newline
     b'4 ) -5 b'8 ( e'4. ) | 
     \once \override DynamicTextSpanner #'(bound-details right text) = \markup { \italic { al } }
     r8 _\fz \sempre_cresc a'8
@@ -58,52 +55,52 @@ PartPOneVoiceOne =  {
     e''4 ) e''8 -4 e''4 -3 e''8 -2 |
 % 20
     e''4 -1 e''8 -4 e''4 -3 e''8 ( -2 | 
-    a''2. ) -> \! | \break
+    a''2. ) -> \! | \newline
     r8 _\f a''8 ( -2 b''8 c'''8 b''8 a''8 | 
     g''8 _\fz g'''8 f'''8 e'''8 d'''8 c'''8 | 
     b''8 -4 a''8 g''8 f''8 e''8 -3 d''8 | 
 % 25
-    c''4. ) r4 r8 | \pageBreak
+    c''4. ) r4 r8 | \newpage
     e'4. _\fz \ottava #1 f'''8 ( -2 ^\markup{ \italic {brillante} } g'''8
     f'''8 | 
     e'''8 f''''8 e'''8 d'''8 -2 e'''8 d'''8 | 
     c'''8 c''''8 c'''8 b''8 -2 c'''8 b''8 | 
     a''8 a'''8 a''8 ) \ottava #0 f''8 ( -2 g''8 f''8 | % \barNumberCheck
 % 30
-    e''8 e'''8 e''8 f''8 g''8 f''8 | \break
+    e''8 e'''8 e''8 f''8 g''8 f''8 | \newline
     e''8 e'''8 e''8 d''8 -2 e''8 d''8 | 
     c''8 c'''8 c''8 b'8 -2 c''8 b'8 | 
     a'8 a''8 a'8 ) a'8 ( -2 b'8 a'8 | 
     g'4. ) \ottava #1 a'''8 ( -2 b'''8 a'''8 | 
 % 35
-    g'''8 g''''8 g'''8 f'''8 -2 g'''8 f'''8 | \break
+    g'''8 g''''8 g'''8 f'''8 -2 g'''8 f'''8 | \newline
     e'''8 e''''8 e'''8 d'''8 -2 e'''8 d'''8 | 
     c'''8 c''''8 c'''8 ) b''8 ( -2 c'''8 b''8 | 
     a''8 a'''8 a''8 b''8 -2 c'''8 b''8 | 
     a''8 a'''8 a''8 b''8 \sempre_cresc
     c'''8 b''8 |
 % 40
-    a''8 a'''8 a''8 b''8 c'''8 b''8 | \break
+    a''8 a'''8 a''8 b''8 c'''8 b''8 | \newline
     a''8 a'''8 a''8 ) -1 b''8 ( -2 c'''8 b''8 ) | 
     e''4. \ottava #0 f'8 ( -2  _\pp g'8 f'8 | 
     e'4. ) r4 r8 | 
     r4 r8 f'8 ( _\p _\< g'8 f'8 | 
 % 45
     e'4. ) f'8 ( g'8 f'8 | 
-    e'4. ) _\! _\f r4 r8 | \break
+    e'4. ) _\! _\f r4 r8 | \newline
     r4 r8 f'8 ( -2 g'8 f'8 | 
     e'8 _\f e''8 e'8 ) f'8 ( g'8 f'8 | 
     e'8 _\ff e''8 e'8 ) f'8 ( g'8 f'8 |
 % 50
     e'8 _\fff e''8 e'8 d'8 -2 e'8 d'8 | 
-    c'8 c''8 c'8 b8 -2 c'8 b8 ) | \break
+    c'8 c''8 c'8 b8 -2 c'8 b8 ) | \newline
     r8 a'8 ( -1 _\p b'8 c''8 b'8 a'8 | 
     e''4 ) e''8 ( a'4 ) a'8 ( | 
     f''4 ) f''8 ( a'4 ) a'8 ( | 
 % 55
     e''2. ) -- -5 | 
     r8 b'8 ( -2 c''8 d''8 c''8 b'8 | 
-    c''4 ) c''8 ( -3 a'4 ) a'8 ( -2 | \pageBreak
+    c''4 ) c''8 ( -3 a'4 ) a'8 ( -2 | \newpage
     b'4 ) b'8 ( -4 f'4 ) f'8 ( -2 | 
     b'4 ) -5 b'8 ( e'4. ) |
 % 60
@@ -111,57 +108,57 @@ PartPOneVoiceOne =  {
     c''8 b'8 a'8 | 
     e''4 ) e''8 -4 e''4 -3 e''8 -2 | 
     e''4 -1 e''8 -4 e''4 -3 e''8 ( -2 | 
-    a''2. ) -> | \break
+    a''2. ) -> | \newline
     r8  a''8 ( -2 _\< b''8 c'''8 b''8 a''8 | 
 % 65
     e'''4 _\! _\fz d'''8 _\f c'''8 b''8 a''8 | 
     gis''8 -4 f''8 e''8 d''8 c''8 -3 b'8 | 
     a'4. ) e'8 _\ff f'8 e'8 | 
-    a4. r4 r8 \bar "||" \break
+    a4. r4 r8 \bar "||" \newline
     \key a \major r4 r8 e''8 ( _\pp ^\markup{ \italic {dolce e
             cantabile} } a'8 e'8 |
 % 70
     dis''8 -4 a'8 e'8 e''8 a'8 e'8 | 
     cis''8 -4 a'8 e'8 ) cis''8 ( g'8 e'8 | 
-    d''8 gis'8 e'8 ais'8 -3 gis'8 e'8 | \break
+    d''8 gis'8 e'8 ais'8 -3 gis'8 e'8 | \newline
     b'8 gis'8 e'8 ) cis''8 ( -4 g'8 e'8 | 
     <gis' d''>4. ) -2 -5 <d'' fis''>4. ( -3 -5 ^\markup{ \italic
         {expressivo} } | 
 % 75
     <cis'' e''>4. _2 _5 <b' d''>4. ) -1 -3 | 
     cis''8 ( -4 a'8 e'8 d''8 a'8 e'8 | 
-    dis''8 -5 a'8 e'8 ) e''8 ( a'8 e'8 | \break
+    dis''8 -5 a'8 e'8 ) e''8 ( a'8 e'8 | \newline
     dis''8 -4 a'8 e'8 e''8 a'8 e'8 | 
     cis''8 -4 a'8 e'8 ) cis''8 ( g'8 e'8 |
 % 80
     d''8 gis'8 e'8 ais'8 -3 gis'8 e'8 | 
-    b'8 gis'8 e'8 ) cis''8 ( -4 g'8 e'8 | \break
+    b'8 gis'8 e'8 ) cis''8 ( -4 g'8 e'8 | \newline
     d''8 gis'8 e'8 dis''8 -5 gis'8 e'8 | 
     e''8 gis'8 e'8 gis'8 -4 e'8 d'8 ) | 
     a'8 ( -5 e'8 -3 cis'8 -2 s4. | 
 % 85
-    r4 r8 c''8 e'8 c'8 ) \bar "||" \pageBreak
+    r4 r8 c''8 e'8 c'8 ) \bar "||" \newpage
     \key c \major b'8 ( ^\markup{ \italic {doloroso} } _\markup{
         \small\italic {cresc.} }   f'8 d'8 a'8 f'8 d'8 | 
     g'8 e'8 c'8 gis'8 e'8 c'8 | 
     a'8 e'8 c'8 g'8 _\< e'8 a8 | 
     f'8 d'8 _\! a8 ) f'8 ( c'8 a8 |
 % 90
-    e'8 c'8 a8 dis'8 c'8 a8 | \break
+    e'8 c'8 a8 dis'8 c'8 a8 | \newline
     e'8 c'8 a8 ) f'8 ( c'8 a8 | 
     e'8 b8 gis8 e8 gis8 b8 | 
     e'8 ) \noBeam _\< c'8 ( e'8 ) c''8 ( _\! ^\markup{ \italic {con molto
             passione} } e'8 c'8 | 
     b'8 f'8 d'8 a'8 f'8 d'8 | 
 % 95
-    g'8 e'8 c'8 ) gis'8 ( e'8 c'8 | \break
+    g'8 e'8 c'8 ) gis'8 ( e'8 c'8 | \newline
     a'8 e'8 c'8 g'8 e'8 a8 | 
     f'8 d'8 a8 ) f'8 ( c'8 a8 | 
     e'8 c'8 a8 dis'8 c'8 a8 | 
     e'8 c'8 a8 ) f'8 (  _\ff c'8 a8 |
 % 100
     e'8 c'8 a8 a'8 dis'8 b8 | 
-    gis'8 e'8 b8 ) e''8 ( _\pp a'8 e'8 \bar "||" \break
+    gis'8 e'8 b8 ) e''8 ( _\pp a'8 e'8 \bar "||" \newline
     \key a \major dis''8 -4 a'8 e'8 e''8 a'8 e'8 | 
     cis''8 -4 a'8 e'8 ) cis''8 ( g'8 e'8 | 
     d''8 gis'8 e'8 ais'8 -3 gis'8 e'8 | 
@@ -169,34 +166,34 @@ PartPOneVoiceOne =  {
     b'8 gis'8 e'8 ) cis''8 ( -4 _\< g'8 e'8 | 
     <gis' d''>4. ) -2 -5 <d'' fis''>4. ( -3 -5 _\! ^\markup{ \italic
         {expressivo} } _\> | 
-    <cis'' e''>4. -2 -5 <b' d''>4. ) -1 -3 | \break
+    <cis'' e''>4. -2 -5 <b' d''>4. ) -1 -3 | \newline
     cis''8 ( -4 _\! a'8 e'8 d''8 a'8 e'8 | 
     dis''8 -5 a'8 e'8 ) e''8 ( a'8 e'8 |
 % 110
     dis''8 -4 a'8 e'8 e''8 a'8 e'8 | 
     cis''8 -4 a'8 e'8 ) a''8 ( d''8 a'8 | 
-    gis''8 d''8 a'8 fis''8 d''8 a'8 | \break
+    gis''8 d''8 a'8 fis''8 d''8 a'8 | \newline
     e''8 a'8 e'8 ) dis''8 ( a'8 e'8 | 
     d''8 a'8 e'8 cis''8 g'8 e'8 | 
 % 115
     d''8 a'8 e'8 ) r4 r8 | 
     d''8 ( a'8 e'8 cis''8 g'8 e'8 | 
     d''8 a'8 e'8 ) r4 r8 | 
-    d''8 ( a'8 e'8 cis''8 g'8 e'8 | \break
+    d''8 ( a'8 e'8 cis''8 g'8 e'8 | \newline
     d''8 a'8 e'8 cis''8 g'8 e'8 |
 % 120
     d''8 ^\markup{ \italic {un poco riten.} } a'8 e'8 dis''8 a'8 e'8 | 
     e''8 a'8 e'8 gis'8 e'8 d'8 ) \bar "||"
     \key c \major r8 _\fz _\< a'8 ( -1
     ^\markup{ \italic {risoluto} } b'8 c''8 b'8 a'8 | 
-    e''4 ) _\! e''8 ( a'4 ) a'8 ( | \break
+    e''4 ) _\! e''8 ( a'4 ) a'8 ( | \newline
     f''4 ) f''8 ( a'4 ) a'8 ( _\< | 
 % 125
     e''2. ) -- -5 | 
     r8 _\! b'8 ( -2 c''8 d''8 c''8 b'8 | 
     c''4 ) c''8 ( -3 a'4 ) a'8 ( -2 | 
     b'4 ) b'8 ( -4 f'4 ) f'8 ( -2 | 
-    b'4 ) -5 b'8 ( e'4. ) | \break
+    b'4 ) -5 b'8 ( e'4. ) | \newline
 % 130
     r8 _\fz \sempre_piu  a'8 (
     -1 b'8 c''8 b'8 a'8 | 
@@ -205,46 +202,46 @@ PartPOneVoiceOne =  {
     a''2. ) -> | 
     r8  _\f a''8 ( -2 b''8 c'''8 b''8 a''8 | 
 % 135
-    g''8 _\ff g'''8 f'''8 e'''8 d'''8 c'''8 | \break
+    g''8 _\ff g'''8 f'''8 e'''8 d'''8 c'''8 | \newline
     b''8 -4 a''8 g''8 f''8 e''8 -3 d''8 | 
     c''4. ) r4 r8 | 
     e'4. _\fz \ottava #1 f'''8 ( -2 ^\markup{ \italic {con forza} } g'''8
     f'''8 | 
     e'''8 f''''8 e'''8 d'''8 -2 e'''8 d'''8 |
 % 140
-    c'''8 c''''8 c'''8 b''8 -2 c'''8 b''8 | \break
+    c'''8 c''''8 c'''8 b''8 -2 c'''8 b''8 | \newline
     a''8 a'''8 a''8 ) \ottava #0 f''8 ( -2 g''8 f''8 | 
     e''8 e'''8 e''8 f''8 g''8 f''8 | 
     e''8 e'''8 e''8 d''8 -2 e''8 d''8 | 
     c''8 c'''8 c''8 b'8 -2 c''8 b'8 | 
 % 145
-    a'8 a''8 a'8 ) a'8 ( -2 b'8 a'8 | \break
+    a'8 a''8 a'8 ) a'8 ( -2 b'8 a'8 | \newline
     g'4. ) \ottava #1 a'''8 ( -2 b'''8 a'''8 | 
     g'''8 g''''8 g'''8 f'''8 -2 g'''8 f'''8 | 
     e'''8 e''''8 e'''8 d'''8 -2 e'''8 d'''8 | 
     c'''8 c''''8 c'''8 ) b''8 ( -2 c'''8 b''8 |
 % 150
-    a''8 a'''8 a''8 b''8 -2 c'''8 b''8 | \pageBreak
+    a''8 a'''8 a''8 b''8 -2 c'''8 b''8 | \newpage
     a''8 a'''8 a''8 b''8 c'''8 b''8 | 
     a''8 a'''8 a''8 b''8 c'''8 b''8 |
     a''8 a'''8 a''8 ) -1 b''8 ( -2 c'''8 b''8 ) | 
     e''4. \ottava #0 f'8 ( -2 _\pp g'8 f'8 | 
 % 155
-    e'4. ) r4 r8 | \break
+    e'4. ) r4 r8 | \newline
     r4 r8 f'8 ( _\p _\< g'8 f'8 | 
     e'4. ) f'8 ( g'8 f'8 | 
     e'4. ) _\! _\f r4 r8 | 
     r4 r8 f'8 ( -2 g'8 f'8 |
 % 160
     e'8 _\f e''8 e'8 ) f'8 ( g'8 f'8 | 
-    e'8 _\ff e''8 e'8 ) f'8 ( g'8 f'8 | \break
+    e'8 _\ff e''8 e'8 ) f'8 ( g'8 f'8 | \newline
     e'8 _\fff e''8 e'8 d'8 -2 e'8 d'8 | 
     c'8 c''8 c'8 b8 -2 c'8 b8 ) | 
     r8 a'8 ( -1 _\p b'8 c''8 b'8 a'8 | 
 % 165
     e''4 ) e''8 ( a'4 ) a'8 ( | 
     f''4 ) f''8 ( a'4 ) a'8 ( | 
-    e''2. ) -- -5 | \break
+    e''2. ) -- -5 | \newline
     r8 b'8 ( -2 c''8 d''8 c''8 b'8 | 
     c''4 ) c''8 ( -3 a'4 ) a'8 ( -2 |
 % 170
@@ -252,53 +249,53 @@ PartPOneVoiceOne =  {
     b'4 ) -5 b'8 ( e'4. ) | 
     r8 \once \override DynamicTextSpanner.style = #'none a'8 ( -1 \cresc  b'8
     c''8 b'8 a'8 | 
-    e''4 ) e''8 -4 e''4 -3 e''8 -2 | \break
+    e''4 ) e''8 -4 e''4 -3 e''8 -2 | \newline
     e''4 -1 e''8 -4 e''4 -3 e''8 ( -2 | 
 % 175
     a''2. ) -> | 
     r8  a''8 -2 _\< b''8 c'''8 b''8 a''8 | 
     e'''4 _\! _\fz d'''8 _\f c'''8 b''8 a''8 | 
     gis''8 -4 f''8 e''8 d''8 c''8 -3 b'8 | 
-    a'4 -. r8 a'8 ( _\pp e'8 c'8 ) | \break
+    a'4 -. r8 a'8 ( _\pp e'8 c'8 ) | \newline
 % 180
     a'8 ( \molto_cresc_al  e'8
     c'8 ) a'8 ( e'8 c'8 ) | 
     a'8 ( e'8 c'8 ) a'8 ( e'8 c'8 ) | 
     a'8 (  _\ff e'8 c'8 ) a'8 ( e'8 c'8 ) | 
-    a'8 ( e'8 c'8 ) a'8 ( e'8 c'8 ) _\mf | \pageBreak
+    a'8 ( e'8 c'8 ) a'8 ( e'8 c'8 ) _\mf | \newpage
     f''8 ( -3 _\markup{ \italic {scherzando} } a''8 g''8 f''8 e''8 d''8
     ) | 
 % 185
     c''8 ( -3 e''8 d''8 c''8 b'8 a'8 ) | 
     gis'8 ( -3 b'8 a'8 gis'8 fis'8 e'8 | 
-    a'4. ) a''8 ( _\pp e''8 c''8 ) | \break
+    a'4. ) a''8 ( _\pp e''8 c''8 ) | \newline
     a''8 ( e''8 c''8 ) a''8 ( \cresc_molto
      e''8 c''8 ) | 
     a''8 ( e''8 c''8 ) a''8 ( e''8 c''8 ) |
 % 190
     a''8 (  _\ff e''8 c''8 ) a''8 ( e''8 c''8 ) | 
-    a''8 ( e''8 c''8 ) a''8 ( e''8 c''8 ) _\ff | \break
+    a''8 ( e''8 c''8 ) a''8 ( e''8 c''8 ) _\ff | \newline
     f''8 ( _\markup{ \italic {scherzando} } a''8 g''8 f''8 e''8 d''8 ) | 
     c''8 ( e''8 d''8 c''8 b'8 a'8 ) | 
     gis'8 ( b'8 a'8 gis'8 fis'8 e'8 ) | 
 % 195
     c''8 ( e''8 d''8 c''8 b'8 a'8 ) | 
     f''8 ( _\markup{ \italic {accelerando} } a''8 g''8 f''8 e''8 d''8 )
-    | \break
+    | \newline
     c''8 ( e''8 d''8 c''8 b'8 a'8 ) | 
     gis'8 ( b'8 a'8 gis'8 fis'8 e'8 ) | 
     c''8 ( e''8 d''8 c''8 b'8 a'8 ) |
 % 200
     f'''8 ( -> _\markup{ \bold {Prestissimo} } a'''8 g'''8 f'''8 e'''8
     d'''8 ) | 
-    f'''8 ( -> a'''8 g'''8 f'''8 e'''8 d'''8 ) | \break
+    f'''8 ( -> a'''8 g'''8 f'''8 e'''8 d'''8 ) | \newline
     f'''8 ( -> a'''8 g'''8 f'''8 e'''8 d'''8 ) | 
     f'''8 ( -> a'''8 g'''8 f'''8 e'''8 d'''8 ) | 
     \ottava #1 e''''4 ( -> _\fffz d''''8 c''''8 b'''8 a'''8 | 
 % 205
     gis'''8 f'''8 e'''8 d'''8 c'''8 b''8 \ottava #0 | 
     a''8 _\sempre_ff e'''8 d'''8 c'''8 b''8 a''8 | 
-    gis''8 f''8 e''8 d''8 c''8 b'8 | \break
+    gis''8 f''8 e''8 d''8 c''8 b'8 | \newline
     a'8 e''8 d''8 c''8 b'8 a'8 | 
     gis'8 f'8 e'8 d'8 c'8 b8 |
 % 210

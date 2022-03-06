@@ -1,6 +1,5 @@
 \version "2.22.1"
 
-\include "WhiteBookAux.ly"
 \include "WhiteBook1.ly"
 \include "WhiteBook2.ly"
 \include "WhiteBook3.ly"

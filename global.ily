@@ -54,7 +54,8 @@
         \Score 
         \override MetronomeMark.font-size = #'0
         \override SpacingSpanner.common-shortest-duration =
-        #(ly:make-moment 1/4)
+        #(ly:make-moment 1/8)
+        skipBars = ##t
     }
     \context {
         \Staff
@@ -67,6 +68,8 @@
     \context {
         \Voice 
         \override DynamicTextSpanner.font-size = #'0
+        \remove "Fingering_engraver"
+        \remove "New_fingering_engraver"
     }
     \context {
         \FretBoards
