@@ -1,4 +1,5 @@
 #(set-global-staff-size 20)
+#(set-default-paper-size "a4")
 
 \paper {
     %system-system-spacing = #'((basic-distance . 0.1) (padding . 0))
@@ -13,7 +14,7 @@
             #:brace "Emmentaler"
             #:factor (/ staff-height pt 20)
     ))
-%{
+    %%{
     bookTitleMarkup = \markup {
         \override #'(baseline-skip . 3.5)
         \column {
@@ -21,17 +22,15 @@
             \override #'(baseline-skip . 3.5)
             \column {
                 \fill-line {
-                    \huge \larger \larger 
-                    \fontsize #4
+                    \huge \larger \larger
+                    \fontsize #1
+                    \override #'(font-name . "Bodoni Moda 9pt, serif, Semibold")
                     \fromproperty #'header:title
                 }
-                \vspace #0.5
                 \fill-line {
                     \large 
-                    \fontsize #2
                     \fromproperty #'header:subtitle
                 }
-                \vspace #0.5
                 \fill-line {
                     \smaller
                     \fromproperty #'header:subsubtitle
@@ -63,7 +62,7 @@
     }
     \context{
         \Lyrics 
-        \override LyricText.font-size = #0
+        \override LyricText.font-size = #-1
     }
     \context {
         \Voice 

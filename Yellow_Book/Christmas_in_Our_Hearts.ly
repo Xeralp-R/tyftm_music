@@ -86,12 +86,13 @@ VoicePart = {
             s2|
             \time 4/4
             s1 |
-            s1 |
         % 5
+            s1 |
             s4 b'16 b'16 a'8 s2 |
             c''8. b'16 s4 s2 |
             s1 |
             s1 |
+        % 10
             b'4 b'8 g'8 s2 |
             e''4 s2. |
             c''4 d''8 c''8 s2 |
@@ -220,7 +221,7 @@ right = {
     <e'' a'' c'''>8 <e'' a'' c'''> <d'' fis'' b''> <c'' e'' a''>\) |
     \time 4/4 \bar "||"
     <b' d'' g''>4 r16 g' b' d'' g''4 \breathe <b' fis' dis'>4-- |
-    e'16 b fis' g' e' b fis' g' e' b fis' g' a' g' fis' b^\( |
+    e'16 b fis' g' e' b fis' g' e' b fis' g' a' g' fis' b |
     <e'' a'' c'''>8 <e'' a'' c'''> <d'' fis'' b''> <c'' e'' a''> <b' 
     d'' g''>4 <bes' es'' g''>8 es'' |
     \bar "||" \key aes \major 
@@ -366,6 +367,12 @@ christmaschords = \chordmode {
     aes1 |
 }
 
+scaleStaff = #(define-music-function (scaleFac) (number?)
+#{
+    \magnifyStaff #scaleFac
+    \override KeySignature.padding = #(* 2/3 (- 1 scaleFac))
+#}) 
+
 Christmas_in_Our_Hearts = \bookpart {
     \header {
         title = "Christmas in our Hearts"
@@ -376,7 +383,7 @@ Christmas_in_Our_Hearts = \bookpart {
     }
     \score {
         <<
-            \new Staff = "voicepart" \VoicePart
+            \new Staff = "voicepart" \with { \scaleStaff #5/7 } \VoicePart
             \new Lyrics \lyricsto "voiceone" \lyrone
             \new Lyrics \lyricsto "voiceone" \lyrtwo
             \new PianoStaff <<
