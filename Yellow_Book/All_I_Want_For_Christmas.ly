@@ -3,18 +3,21 @@
 
 \include "../global.ily"
 
-#(set! paper-alist 
-(cons '("new_size" . (cons (* 215.754 mm) (* 279.372 mm))) paper-alist))
-\paper {
-    #(set-paper-size "new_size")
-    top-margin = 11.5146\mm
-    bottom-margin = 11.5146\mm
-    left-margin = 11.5146\mm
-    right-margin = 11.5146\mm
-    ragged-last-bottom = ##f
+newline = { \break }
+newpage = { \pageBreak }
+
+part-voice = {
+    \key g \major
+    \time 4/4 
+    \clef treble 
+
+    \new Voice = "voiceone" {
+        a2 a2 |
+    }
 }
 
-\header {
+part-lyrics = \lyricmode {
+    Ta -- cent
 }
 
 part-Pone-one = {
@@ -437,10 +440,33 @@ part-Pone-two = {
     g,,1 |
 }
 
-\score {
-    \new GrandStaff <<
-        \new Staff \part-Pone-one
-        \new Staff \part-Pone-two
-    >>
-    \layout {}
+scaleStaff = #(define-music-function (scaleFac) (number?)
+#{
+    \magnifyStaff #scaleFac
+    \override KeySignature.padding = #(* 2/3 (- 1 scaleFac))
+#}) 
+
+AllIWantForChristmas = \bookpart {
+    \header {
+        title = "All I Want for Christmas"
+        composer = "Mariah Carey"
+        poet = "arr. Francesco Parrino"
+        tagline = ##f
+    }
+    \score {
+        <<
+            \new Staff = "voicepart" \with { \scaleStaff #5/7 } \part-voice
+            \new Lyrics \lyricsto "voiceone" \part-lyrics
+            \new GrandStaff <<
+                \new Staff \part-Pone-one
+                \new Staff \part-Pone-two
+            >>
+        >>
+        \layout {
+            \mergeDifferentlyDottedOn
+            \mergeDifferentlyHeadedOn
+        }
+    }
 }
+
+\AllIWantForChristmas
