@@ -5,6 +5,11 @@
 
 newline = { \break }
 newpage = { \pageBreak }
+cadenzaMeasure = {
+  \cadenzaOff
+  \partial 1024 s1024
+  \cadenzaOn
+}
 
 part-voice = {
     \key g \major
@@ -12,59 +17,128 @@ part-voice = {
     \clef treble 
 
     \new Voice = "voiceone" {
-        a2 a2 |
+        R1 |
+        R1 |
+        R1 |
+        r2 r4 g''8( a''8 |
+        g''4) b'4 d''4 fis''4 | \newline
+    % 5
+        g''4 fis''4 e''4 d''4 |
+        a''4 g''4 fis''4 fis''4 |
+        g''4 fis''4 e''4( d''4) |
+        c''4 e''4 g''4 a''4 |
+        b''4 a''4 g''4 e''4 | \newline
+    % 10
+        c''4 ees''4 g''4 a''4 |
+        bes''4 a''4 g''2 |
+        g''4 a''4 fis''4 g''4 |
+        \tuplet 3/2 { e''4( fis''4) e''4 } dis''2 | \newline
+        b''4 a''4 g''4 fis''4 |
+    % 15
+        \cadenzaOn 
+        \tuplet 3/2 { g''4( fis''4 e''4) } 
+        dis''2\fermata s1 
+        \cadenzaMeasure
+        \cadenzaOff \bar "|" |
+        d''4 e''4 g''4 d'''4 | \newpage
+        \cadenzaOn
+        c'''2\fermata
+        s2 s1
+        \cadenzaMeasure
+        \cadenzaOff
+        b''4 a''4 g''4 e''4 | \newline
+        \cadenzaOn
+        dis''4 a''2.\fermata
+        s1 s1
+        \cadenzaMeasure
+        \cadenzaOff
+        a''1\fermata | \newline
+        g''1 |
     }
 }
 
 part-lyrics = \lyricmode {
-    Ta -- cent
+    I don't want a lot for Christ --  mas,
+    There is just one thing I need;
+    I don't care a -- bout the pre -- sents
+    un -- der -- neath the Christ -- mas tree;
+    I just want you for my own,
+    More than you could ever know,
+    Make my wish come true:
+    All I want for Christ -- mas
+    is you.
 }
 
 part-Pone-one = {
     \key g \major
     \time 4/4
     \clef treble
-    g''4\p b''4 d'''4 fis'''4 |
-    g'''4-- fis'''4 d'''4 b''4 |
-    g''4 c'''4 d'''4 g'''4 |
-    d'''2. g''8\f a''8 |
-    g''4 b'4 d''4 r4 fis''4 r4 |
+
+    \ottava #1 g'''4\p b'''4 d''''4 fis''''4 |
+    g''''4 fis''''4 d''''4 b'''4 |
+    g'''4 c''''4 d''''4 g''''4 |
+    d''''2 \ottava #0 r4 g''8\f a''8 |
+    g''4 b'4 d''4 fis''4 |
 % 5
     <d'' g'' >4 fis''4 e''4 d''4 |
-    <a' d'' a'' >4 g''4 fis''4 fis''4 |
-    <g' d'' g'' >4 r4 fis''4 r4 e''4 d''4 |
+    <a' d'' a'' >4\arpeggio g''4 fis''4 fis''4 |
+    <g' d'' g'' >4\arpeggio fis''4 e''4 d''4 |
     <c' e' c'' >4 <e' e'' >4 <g' g'' >4 <a' a'' >4 |
     <b' e'' b'' >4 <a' a'' >4 <g' g'' >4 <e' e'' >4 |
 % 10
-    <c'' dis'' c''' >4 <dis'' dis''' >4 <g'' g''' >4 <a'' a''' >4 |
-    <ais'' d''' ais''' >4 r4 <a'' a''' >4 r4 <g'' g''' >2 |
+    <c'' ees'' c''' >4 <ees'' ees''' >4 <g'' g''' >4 <a'' a''' >4 |
+    <bes'' d''' bes''' >4 <a'' a''' >4 <g'' g''' >2 |
     <g' g'' >4 <a' a'' >4 <fis' fis'' >4 <g' g'' >4 |
     \tuplet 3/2 { <e' e'' >4 <fis' fis'' >4 <e' e'' >4 } <dis' a' dis'' >2 |
     <b' e'' b'' >4 a''4 g''4 fis''4 |
 % 15
-    \tuplet 3/2 { g''4 fis''4 e''4 } dis''2\prall r4 |
-    \tuplet 3/2 { a'8 c''8 dis''8 } \tuplet 3/2 { g''8 a''8 c'''8 } dis'''2 |
-    d''4\mp e''4 g''4 d'''4 |
-    c'''2 \tuplet 3/2 { b'8 d''8 e''8 } g''8 a''8 |
-    <b'' d''' >16-- a''16 g''16 a''16 g''16 e''16 g''4 e''4 d''4 e''4 d''4 b'4 
-    d''16 b'16 a'16 b'16 a'16 g'16 \tuplet 3/2 { e''8 g''8 a''8 } |
+    \cadenzaOn 
+    \tuplet 3/2 { g''4 fis''4 e''4 } 
+    dis''2\prall\fermata s1 
+    \cadenzaMeasure
+    \cadenzaOff \bar "|" |
+    d''4\mp e''4 g''4 d'''4 | 
+    \cadenzaOn
+    c'''2\trill\fermata 
+    \ottava #1
+    \tuplet 3/2 { b''8[ d'''8 e'''8] } g'''8[ a'''8] 
+    \acciaccatura {aes'''16} \tuplet 6/4 { <b''' d'''' >16[ a'''16 g'''16 a'''16 g'''16 e'''16] }
+    \tuplet 6/4 { g'''16[ e'''16 d'''16 e'''16 d'''16 b''16]  }
+    \tuplet 6/4 { d'''16[ b''16 a''16 b''16 a''16 g''16]  }
+    \ottava #0
+    \tuplet 3/2 { e''8[ g''8 a''8] } |
+    \cadenzaMeasure
+    \cadenzaOff
 % 20
-    <c'' e'' b'' >4 a''4 g''4 e''4 |
-    dis''4 a''2. |
-    c''8 dis''8 g''8 a''8 c''8 dis''8 g''8 a''8 |
-    \tuplet 3/2 { <b'' d''' >4-- a''4 g''4 } \tuplet 3/2 { a''8 g''8 e''8 } 
-    \tuplet 3/2 { g''8 e''8 d''8 } \tuplet 3/2 { e''8 d''8 b'8 } |
-    a'1 |
+    <c'' e'' b'' >4\arpeggio a''4 g''4 e''4 |
+    \cadenzaOn
+    dis''4 a''2.\fermata |
+    c''8[^\markup{\italic "m.d."} dis''!8 g''8 a''8] 
+    \ottava #1 c'''8[ dis'''8 g'''8 a'''8] 
+    \slashedGrace {cis''''(} \tuplet 3/2 { <b''' d'''' >8--[) a'''8 g'''8] } 
+    \tuplet 3/2 { a'''8[ g'''8 e'''8] } 
+    \tuplet 3/2 { g'''8[ e'''8 d'''8] } 
+    \tuplet 3/2 { e'''8[ d'''8 b''8] }
+    \cadenzaMeasure
+    \cadenzaOff
+    a''1\fermata |
 % 25
-    g''1 |
-    r4 d''16 g''16 b''16 d'''16 r2 |
-    \tuplet 3/2 { <b' d'' >8\f g'8 <b' d'' >8\mp } r8 \tuplet 3/2 { g'4 <b' 
-    d'' >4 g'4 } \tuplet 3/2 { <b' d'' >8 g'8 <b' d'' >8 } \tuplet 3/2 { g'8 
-    <b' d'' >8 g'8 } r8 |
-    \tuplet 3/2 { <b' e'' >8 g'8 <b' e'' >8 } \tuplet 3/2 { g'8 <b' e'' >8 g'8 
-    } r8 \tuplet 3/2 { <b' e'' >4 g'4 <b' e'' >4 } |
-    <c'' e'' >8 g'8-. <c'' e'' >8 g'8 <c'' e'' >8-. g'8 \tuplet 3/2 { <c'' e'' 
-    >8 g'8 <c'' e'' >8 } \tuplet 3/2 { g'8 <c'' e'' >8 g'8 } |
+    g''1\trill | \voiceOne
+    r4 d'''16 g'''16 b'''16 d''''16 s2 | 
+    \oneVoice \ottava #0
+    \tempo "Allegro" \bar "||"
+    \tuplet 3/2 { <b' d'' >8\f g'8 <b' d'' >8 } 
+    \tuplet 3/2 { g'8 <b' d'' >8 g'8 } 
+    \tuplet 3/2 { <b' d'' >8 g'8 <b' d'' >8 } 
+    \tuplet 3/2 { g'8 <b' d'' >8 g'8 } |
+    \tuplet 3/2 { <b' e'' >8 g'8 <b' e'' >8 } 
+    \tuplet 3/2 { g'8 <b' e'' >8 g'8 } 
+    \tuplet 3/2 { <b' e'' >8 g'8 <b' e'' >8 } 
+    \tuplet 3/2 { g'8 <b' e'' >8 g'8 } | \newline
+    \tuplet 3/2 { <c'' e'' >8 g'8 <c'' e'' >8 } 
+    \tuplet 3/2 { g'8 <c'' e'' >8 g'8 }
+    \tuplet 3/2 { <c'' e'' >8 g'8 <c'' e'' >8 } 
+    \tuplet 3/2 { g'8 <c'' e'' >8 g'8 } |
 % 30
     r8 <d'' fis'' d''' >8 <d'' fis'' d''' >4 <d'' fis'' d''' >4 <d'' fis'' 
     d''' >4 <d'' fis'' d''' >4 d'''4 a'4 |
@@ -251,45 +325,63 @@ part-Pone-two = {
     c'''1 |
     d'''1 |
     \clef bass
-    g,,8 d,8 g,8 b,8 d4( g4 b4) d'4 |
+    g,,8 d,8 g,8 b,8 d8 g8 b8 d'8 |
 % 5
     g'8 d'8 b8 g8 d8 b,8 g,8 d8 |
     b,,8 b,8 d8 g8 b8 g8 d8 g8 |
-    b,4( d4 g4 b4) g8 d8 b,8 d8 |
+    b,8 d8 g8 b8 g8 d8 b,8 d8 |
     c,8 g,8 c8 e8 g8 c'8 e'8 c'8 |
     g8 e8 c8 g,8 c8 e8 c8 g,8 |
 % 10
-    dis,8 c8 dis8 g8 c'8 g8 dis8 g8 |
-    dis'4 g4 d'4 g4 c'8 g8 dis8 c8 |
+    ees,8 c8 ees8 g8 c'8 g8 ees8 g8 |
+    ees'8 g8 d'8 g8 c'8 g8 ees8 c8 |
     d,8 b,8 d8 g8 b8 g8 d8 g8 |
     d8 b,8 d8 g8 b,,8 b,8 dis8 fis8 |
     e,8 b,8 e8 g8 b8 e'8 b8 g8 |
 % 15
-    e8 g8 b8 g8 \tuplet 3/2 { dis4( g4 a4) } \tuplet 3/2 { c'8 dis'8 g'8 } |
-    r1 |
-    << { <b, d >1 } \\ { fis,1 } >> |
+    \cadenzaOn e8[ g8 b8 g8]
+    \tuplet 3/2 { dis8[ g8 a8] } 
+    \tuplet 3/2 { c'8[ ees'8 g'8] }
+    \change Staff = "upper"
+    \tuplet 3/2 { a'8[ c''8 ees''8] } 
+    \tuplet 3/2 { g''8[ a''8 c'''8] } ees'''2\fermata
+    \change Staff = "lower" 
+    \cadenzaMeasure \cadenzaOff \bar "|" |
+    <b, d fis,>1 |
     \clef treble
-    <e' fis' fis' g' a' b' d'' >1( |
-    <e' g' b' d'' >1) \clef bass
-    r1. |
+    \cadenzaOn
+    <e' gis' b' d'' >1~ |
+    <e' gis' b' d'' >1
+    \cadenzaMeasure
+    \cadenzaOff
 % 20
+    \clef bass 
     a,8 e8 a8 b8 c'8 e'8 c'8 a8 |
-    dis,8 dis8 g8 a8 e,8 fis,8 b,8 c8 |
-    r1 |
-    << { <b, d >1 r4 } \\ { fis,1 } >> |
+    \cadenzaOn
+    dis,8[ dis8 g8 a8]
+    \change Staff = "upper"
+    c'8_[ dis'8 g'8 a'8] |
+    s1 |
+    \change Staff = "lower" \clef treble
+    <d' g' b'>1 |
+    \cadenzaMeasure
+    \cadenzaOff
+    \clef bass
     <d fis a c' >1 |
 % 25
-    \clef treble
     r1 |
-    g''2 g'''2 |
-    g8 d'8-. g8 \tuplet 3/2 { d'8 g8 d'8 } r4 \tuplet 3/2 { g8 d'8 g8 } d'8 
-    g8-. d'8 |
-    \tuplet 3/2 { g8 e'8 g8 } e'8 g8-. e'8 g8 e'8-. g8 \tuplet 3/2 { e'8 r16 } |
-    \tuplet 3/2 { a8 e'8 a8 } r8 \tuplet 3/2 { e'8 a8 e'8 } r8 \tuplet 3/2 { 
-    a8 e'8 a8 } \tuplet 3/2 { e'8 a8 e'8 } |
+    \change Staff = "upper" \voiceTwo
+    g''2_\markup{\italic "m.s."} g''''2-\markup{\italic "m.s."} |
+    \change Staff = "lower" \oneVoice
+    \tuplet 3/2 { g8 d'8 g8 } \tuplet 3/2 { d'8 g8 d'8 } 
+    \tuplet 3/2 { g8 d'8 g8 } \tuplet 3/2 { d'8 g8 d'8 } |
+    \tuplet 3/2 { g8 e'8 g8 } \tuplet 3/2 { e'8 g8 e'8 } 
+    \tuplet 3/2 { g8 e'8 g8 } \tuplet 3/2 { e'8 g8 e'8 } |
+    \tuplet 3/2 { a8 e'8 a8 } \tuplet 3/2 { e'8 a8 e'8 } 
+    \tuplet 3/2 { a8 e'8 a8 } \tuplet 3/2 { e'8 a8 e'8 } |
 % 30
     \clef bass
-    r8 r1.. |
+    r1 |
     <g,, g, >4 <g b >4 d4 d8 d8 <g b >4 r4 |
     <g,, g, >4 <g b >8 d8 d8 d8 <g b >4 |
     <g,, g, >4 <g b >4 d4 d8 d8 <g b >4 |
@@ -458,8 +550,8 @@ AllIWantForChristmas = \bookpart {
             \new Staff = "voicepart" \with { \scaleStaff #5/7 } \part-voice
             \new Lyrics \lyricsto "voiceone" \part-lyrics
             \new GrandStaff <<
-                \new Staff \part-Pone-one
-                \new Staff \part-Pone-two
+                \new Staff = "upper" \part-Pone-one
+                \new Staff = "lower" \part-Pone-two
             >>
         >>
         \layout {
