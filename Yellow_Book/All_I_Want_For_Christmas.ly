@@ -91,8 +91,7 @@ part-voice = {
         R1 |
         R1 | \newline
         \cadenzaOn
-        r1\fermata |
-        s1 |
+        R1*2
         \cadenzaMeasure \cadenzaOff
     % 60
         \key e \major \bar "||"
@@ -119,10 +118,7 @@ part-voice = {
         R1 |
         R1 | \newline
         \cadenzaOn
-        r1 |
-    % 80
-        s1 |
-        s1 |
+        R1*3
         \cadenzaMeasure \cadenzaOff
         \bar "||" \key g \major
         b''2 b'8 b'4 c''8~ | \newline
@@ -145,9 +141,56 @@ part-voice = {
         b'8 e'8 b'8 e'8 b'4 b'8 e'8 | \newline
     % 95
         b'8 e'8 b'4 b'8 e'8 b'4 |
-        e''4 d''8( d'8) d''8 d'8 
-        d''8 e''8~( |
-        e''8 d''4.)
+        e''4 d''8( d'8) d''8 d'8 d''8 e''8~( |
+        e''8 d''4.) r2 |
+        g'4 b'4 d''4 fis''8 g''8~ |
+        g''8 fis''4 e''4 d''4. | \newline
+    % 100
+        a''4 g''4 fis''4 fis''8 g''8~ |
+        g''8 fis''4 e''4( d''4.) |
+        c''4 e''4 g''4 a''8 b''8~ |
+        b''8 a''4 g''4 e''4. | \newline
+        ees''4 d''4 c''4 bes'4 |
+    % 105
+        a'4 bes'8( a'4) g'4. |
+        g''4 a''4 fis''4 g''8 e''8~( |
+        e''8 fis''4) e''4 dis''4. | \newline
+        b''4 a''4 g''4 fis''8 g''8~( |
+        g''8 fis''4) e''4 dis''4. |
+    % 110
+        d''4 e''4 g''4 d'''4 |
+        c'''1 | \newline
+        b''4 a''4 g''4 e''4 |
+        dis''4 a''2. |
+        b''4 a''4 g''4 e''4 |
+        cis''4 a''2. |
+        b''4 a''4 g''4 e''4 | \newline
+        \cadenzaOn
+        d''4 s2. 
+        s1 
+        s1
+        s2 d''4 b''4 
+        \cadenzaMeasure \cadenzaOff
+        g''1~ |
+        g''1 |
+        b''1 |
+        b''4. a''8~ a''2 | \newline
+    % 125
+        b''4 a''4 g''4 a''4 |
+        b''4 g''2 a''4 |
+        b''1 |
+        R1 | \newline
+        b''4 a''4 g''4 a''4 |
+    % 130
+        b''4 g''2 a''4 |
+        b''1( |
+        a''1) | \newline 
+        \cadenzaOn
+        R1*2
+        \cadenzaMeasure \cadenzaOff \newline
+        \cadenzaOn
+        R1*3 
+        \cadenzaMeasure \cadenzaOff  \bar "|."
     }
 }
 
@@ -190,6 +233,21 @@ part-lyrics = \lyricmode {
     I hear those sleigh bells ring -- ing;
     San -- ta, won't you bring me the one I need? Won't you please 
     bring my ba -- by to me?
+
+    I don't want a lot for Christ -- mas,
+    This is all I'm ask -- ing for;
+    I just wan -- na see my ba -- by 
+    stand -- ing right out -- side my door;
+    I just want you for my own,
+    More than you could ev -- er know,
+    Make my wish come true:
+    All I want for Christ -- mas;
+    All I want for Christ -- mas;
+    All I want for Christ -- mas is you.
+
+    Ooh, ba -- by;
+    All I want for Christ -- mas is you;
+    All I want for Christ -- mas is you.
 }
 
 part-Pone-one = {
@@ -358,97 +416,117 @@ part-Pone-one = {
     r4 <g' g'' >8 <a' a'' >4 <bes' bes'' >8~ |
     <bes' bes'' >8 <a' a'' >8 <g' g'' >4 
     \change Staff = "lower" \voiceOne <g a c' >4 <g a c' >4 |
-    <g b >4 \change Staff = "upper" 
-    <d' d'' >8 <e' e'' >8 <g' g'' >8 <a' a'' >4 <e'' gis'' e''' >8 |
+    <g b >4 \change Staff = "upper" \oneVoice
+    <d' d'' >8 <e' e'' >8 <g' g'' >8 <a' a'' >4 <e'' gis'' e''' >8~ |
     <e'' gis'' e''' >8\< <d'' d''' >4 <b' b'' >4 <g' g'' >4.\! |
     <e'' b'' >8 b'8 <e'' b'' >8 b'8 <e'' b'' >4 <e'' b'' >8 b'8 |
 % 95
     <e'' b'' >8 b'8 <e'' b'' >4 <e'' b'' >8 b'8 <e'' b'' >4 |
     <e'' fis'' a'' e''' >4\f <fis'' a'' d''' >8 d''8 <fis'' a'' d''' >8 d''8 
     <fis'' a'' d''' >8 <e'' fis'' a'' e''' >8~ |
-    <e'' fis'' a'' e''' >8 <d'' fis'' a'' d''' >4. d'''4\trill a'4 |
+    <e'' fis'' a'' e''' >8 <d'' fis'' a'' d''' >4. d'''4\glissando a'4 |
     r4 <fis' fis'' >4 <g' g'' >4 <a' a'' >8 <b' d'' b'' >8 |
-    <b' d'' b'' >8 <a' a'' >4 <g' g'' >8 <g' g'' >8 <fis' fis'' >4. r4 |
+    <b' d'' b'' >8 <a' a'' >4 <g' g'' >4 <fis' fis'' >4. |
 % 100
-    <a' d'' a'' >4 g''4 r4 fis''4 fis''8 <g' d'' g'' >8 |
-    <g' d'' g'' >8 fis''4 e''8 e''8 d''4. |
-    <c' e' c'' >4 <e' e'' >4 <g' g'' >4 r4 <a' a'' >4 <b' e'' b'' >4 |
-    <b' e'' b'' >8 <a' a'' >4 <g' g'' >8 <g' g'' >8 <e' e'' >4. |
-    \tuplet 3/2 { dis'''8 dis''8 g''8 } \tuplet 3/2 { d'''8 d''8 g''8 } <c'' 
-    c''' >4 r4 <ais' ais'' >4 |
+    <a' d'' a'' >4 g''4 fis''4 fis''8 <g' d'' g'' >8~ |
+    <g' d'' g'' >8 fis''4 e''4 d''4. |
+    <c' e' c'' >4 <e' e'' >4 <g' g'' >4 <a' a'' >8 <b' e'' b'' >8~ |
+    <b' e'' b'' >8 <a' a'' >4 <g' g'' >4 <e' e'' >4. |
+    \tuplet 3/2 { ees'''8 ees''8 g''8 } \tuplet 3/2 { d'''8 d''8 g''8 } 
+    <c'' c''' >4 <ais' ais'' >4 |
 % 105
-    <a' a'' >4 <ais' ais'' >4( <a' a'' >4) <a' a'' >8 <g' g'' >4. |
-    <g' b' d'' g'' >4 <a' a'' >4 r4 <fis' fis'' >4 <g' g'' >4 <e' e'' >4 |
-    <e' e'' >8 <fis' fis'' >4 <e' a' e'' >8 <e' a' e'' >8 <dis' dis'' >4. |
-    << { r4 <b' b'' >4-.-. r8 <d'' d''' >4 \tuplet 3/2 { <e'' e''' >4 <d'' 
-    d''' >4 r4. } \\ { r4. } \\ { <b' b'' >4 } } >> |
+    <a' a'' >4 <bes' bes'' >8 <a' a'' >4 <g' g'' >4. |
+    <g' b' d'' g'' >4 <a' a'' >4 <fis' fis'' >4 <g' g'' >8 <e' e'' >8~ |
+    <e' e'' >8 <fis' fis'' >4 <e' a' e'' >4 <dis' dis'' >4. |
+    \tuplet 3/2 { r4 <b' b'' >4 <d'' d''' >4 } 
+    \tuplet 3/2 { <e'' e''' >4 <d'' d''' >4 <b' b'' >4 } |
     \tuplet 3/2 { <a' a'' >4 <b' b'' >4 <a' a'' >4 } <g' c'' g'' >2 |
 % 110
     <d' g' d'' >4 <e' e'' >4 <g' g'' >4 <d'' d''' >4 |
-    \tuplet 3/2 { <e'' gis'' c''' >8 d'''8 c'''8 } d'''4 |
-    <b' e'' g'' b'' >4 <a' a'' >4 <g' g'' >4 <e' e'' >4 |
-    <dis' a' dis'' >4 <a' a'' >2. r4 |
-    b''4 b'4-. d''4 a''8 a'8-. d''8 <g' g'' >4 <d' d'' >4 |
+    <e'' gis'' c''' >2\trill <e'' gis'' c''' >2 |
+    <b' e'' g'' b'' >4\arpeggio <a' a'' >4 <g' g'' >4 <e' e'' >4 |
+    <dis' a' dis'' >4 <a' a'' >2. |
+    \tuplet 3/2 { b''8 b'8 d''8 } \tuplet 3/2 { a''8 a'8 d''8 } 
+    <g' g'' >4 <d' d'' >4 |
 % 115
-    <cis' a' cis'' >4 <a' a'' >2. r4 |
-    r4. <a'' a''' >4 r8 <g'' g''' >4 <e'' e''' >4 |
-    <d'' fis'' a'' d''' >4 r1. |
-    fis8-. |
-    a8-. |
-    c'8-. d'8 |
-    r4 d'4 fis'4 r1 |
-    fis'8 |
-    a'8-. |
-    c''8-. d''8 |
-    |
-% 120
-    d''8 |
-% 120
-    fis''8 |
-% 120
-    a''8-. |
-% 120
-    c'''8-. a'''8 |
-% 120
-    <fis''' a''' d'''' >8 d'''8 <fis''' a''' d'''' >8 d'''8 <fis''' a''' d'''' 
-    >8 d'''8 <d''' fis''' a''' d'''' >4 <b'' b''' >4 |
-    << { \tuplet 3/2 { <b' d'' g'' >8 g'8 <b' d'' g'' >8 } g'8 <b' d'' g'' 
-    >8-. g'8 \tuplet 3/2 { <b' d'' g'' >4 g'4 r4. } \\ { r8. } \\ { <b' 
-    d'' g'' >4 } g'4 <b' d'' g'' >4-. g'4 r16.. } >> |
-    << { \tuplet 3/2 { <b' d'' g'' >8 g'8 <b' d'' g'' >8 } g'8 <b' d'' g'' 
-    >8-.-- g'8 \tuplet 3/2 { <b' d'' g'' >4 } \\ { s1 r8 } } >> |
+    <cis' a' cis'' >4 <a' a'' >2. |
+    <b'' e''' g''' b''' >4\arpeggio <a'' a''' >4 <g'' g''' >4 <e'' e''' >4 |
+    \cadenzaOn
+    <d'' fis'' a'' d''' >4\fermata
+    \change Staff = "lower" 
+    \omit Score.TupletBracket
+    \tuplet 3/2 { \stemDown d8   \stemUp fis8[ a8]   }
+    \tuplet 3/2 { \stemDown fis8 \stemUp a8[ c'8]    }
+    \omit Score.TupletNumber
+    \tuplet 3/2 { \stemDown a8   \stemUp c'8[ d'8]   }
+    \change Staff = "upper"
+    \tuplet 3/2 { \stemDown c'8  \stemUp d'8[ fis'8] }
+    \tuplet 3/2 { \stemDown d'8   \stemUp fis'8[ a'8]   }
+    \tuplet 3/2 { \stemDown fis'8 \stemUp a'8[ c''8]    }
+    \tuplet 3/2 { \stemDown a'8   \stemUp c''8[ d''8]   }
+    \ottava #1
+    \tuplet 3/2 { \stemDown c''8  \stemUp d''8[ fis''8] }
+    \tuplet 3/2 { \stemDown d''8   \stemUp fis''8[ a''8]   }
+    \tuplet 3/2 { \stemDown fis''8 \stemUp a''8[ c'''8]    }
+    \tuplet 3/2 { \stemDown a''8   \stemUp c'''8[ a'''8] }
+    \stemNeutral
+    \undo \omit Score.TupletBracket
+    \undo \omit Score.TupletNumber
+    \tuplet 3/2 { <fis''' a''' d'''' >8[ d'''8 <fis''' a''' d'''' >8] }
+    \tuplet 3/2 { d'''8[ <fis''' a''' d'''' >8 d'''8] }
+    <d''' fis''' a''' d'''' >4 <b'' b''' >4 
+    \cadenzaMeasure \cadenzaOff
+    \tuplet 3/2 { <b'' d''' g''' >8 g''8 <b'' d''' g''' >8 } 
+    \tuplet 3/2 { g''8 <b'' d''' g''' >8 g''8  }
+    \tuplet 3/2 { <b'' d''' g''' >8 g''8 <b'' d''' g''' >8 } 
+    \tuplet 3/2 { g''8 <b'' d''' g''' >8 g''8  } |
+    \tuplet 3/2 { <b'' d''' g''' >8 g''8 <b'' d''' g''' >8 } 
+    \tuplet 3/2 { g''8 <b'' d''' g''' >8 g''8  }
+    \tuplet 3/2 { <b'' d''' g''' >8 g''8 <b'' d''' g''' >8 } 
+    \tuplet 3/2 { g''8 <b'' d''' g''' >8 g''8  } |
+    \ottava #0
     <g'' b'' >8 d''8 <g'' b'' >8 d''8 <g'' b'' >8 d'''8 <g'' b'' >4 |
-    <d'' fis'' b'' >4. <d'' fis'' a'' >8 <d'' fis'' a'' >2 r4 |
+    <d'' fis'' b'' >4. <d'' fis'' a'' >8~ <d'' fis'' a'' >2 |
 % 125
-    <b' d'' g'' b'' >4 <a' d'' a'' >4 <g' d'' g'' >4 <a' d'' a'' >4 |
-    <b' d'' b'' >4 <g' d'' g'' >2 r4 <a' a'' >4 |
-    <<
-        \context Voice = "voiceone" { \voiceOne 
-            \tuplet 3/2 { <g'' b'' >8 d''8 <g'' b'' >8 } \tuplet 3/2 { d''8 
-            <g'' b'' >8 d''8 } \tuplet 3/2 { <g'' b'' >4 |
-                \tuplet 3/2 { d''8 e''8 fis''8 } \tuplet 3/2 { g''4 |
-                }
-                \context Voice = "voicetwo" { \voiceTwo 
-                s1 r8 } |
-            s2 r8 } |
-        }
-    >>
-    b'''4 <d'' a'' >4 <d'' g'' >4 <d'' a'' >4-- |
+    <b' d'' g'' b'' >4\arpeggio <a' d'' a'' >4 <g' d'' g'' >4 <a' d'' a'' >4 |
+    <b' d'' b'' >4 <g' d'' g'' >2 <a' a'' >4 |
+    \tuplet 3/2 { <g'' b'' >8 d''8 <g'' b'' >8 } 
+    \tuplet 3/2 { d''8 <g'' b'' >8 d''8 } 
+    \tuplet 3/2 { <g'' b'' >8 d''8 <g'' b'' >8 } 
+    d''4 |
+    \tuplet 3/2 { d''8 e''8 fis''8 } 
+    \tuplet 3/2 { g''8 a''8 b''8 }
+    \ottava #1
+    \tuplet 3/2 { c'''8 d'''8 e'''8 } 
+    \tuplet 3/2 { fis'''8 g'''8 a'''8 } |
+    b'''4 <d''' a''' >4 <d''' g''' >4 <d''' a''' >4 |
 % 130
-    <d'' b'' >4-- <d'' g'' >2 <d'' a'' >4 |
-    << { \tuplet 3/2 { <g'' b'' >4-- d''4 <g'' b'' >4-- } d''8 <g'' b'' >8-.-- 
-    d''8 \tuplet 3/2 { <g'' b'' >4-- } \\ { r8 } } >> |
-    \tuplet 3/2 { <fis'' a'' >8 d''8 <fis'' a'' >8 } \tuplet 3/2 { d''4 <fis'' 
-    a'' >4 d''4 } \tuplet 3/2 { <fis'' a'' >4-- d''4 <fis'' a'' >4-- } d''4 |
-    g'''8 f'''8 dis'''8 d'''4 c'''4 ais''4 \tuplet 3/2 { a''8 g''8 f''8 } 
-    \tuplet 3/2 { dis''8 d''8 c''8 } |
-    \tuplet 3/2 { ais'8 a'8 g'8 } \tuplet 3/2 { f'8 dis'8 d'8 } \tuplet 3/2 { 
-    c'8 ais8 a8 } \tuplet 3/2 { g8 f8 dis8 } |
+    <d''' b''' >4 <d''' g''' >2 <d''' a''' >4 |
+    \tuplet 3/2 { <g''' b''' >8 d'''8 <g''' b''' >8 } 
+    \tuplet 3/2 { d'''8 <g''' b''' >8 d'''8 }
+    \tuplet 3/2 { <g''' b''' >8 d'''8 <g''' b''' >8 } 
+    d'''4  |
+    \tuplet 3/2 { <fis''' a''' >8 d'''8 <fis''' a''' >8 } 
+    \tuplet 3/2 { d'''8 <fis''' a''' >8 d'''8 } 
+    \tuplet 3/2 { <fis''' a''' >8 d'''8 <fis''' a''' >8 }  
+    d'''4 |
+    \cadenzaOn
+    \tuplet 3/2 { g'''8[ f'''8 ees'''8] } 
+    \tuplet 3/2 { d'''8[ c'''8 bes''8] } 
+    \ottava #0
+    \tuplet 3/2 { a''8[ g''8 f''8] } 
+    \tuplet 3/2 { ees''8[ d''8 c''8] }
+    \tuplet 3/2 { bes'8[ a'8 g'8] } 
+    \tuplet 3/2 { f'8[ ees'8 d'8] } 
+    \tuplet 3/2 { c'8[ bes8 a8] } 
+    \tuplet 3/2 { g8[ f8 ees8] }
+    \cadenzaMeasure \cadenzaOff
 % 135
-    d4 r4 \tuplet 3/2 { d'8 fis'8 g'8 } \tuplet 3/2 { b'4 d''4 fis''4 } |
-    \tuplet 3/2 { g''8 b''8 d'''8 } \tuplet 3/2 { fis''4 g''4 b''4 } d'''8 
-    fis'''8 g'''4 |
-    g'''1 |
+    \cadenzaOn
+    d1
+    s1
+    s1
+    \cadenzaMeasure \cadenzaOff \bar "|."
 }
 
 part-Pone-two = {
@@ -610,64 +688,78 @@ part-Pone-two = {
     e8 a,8 a,,4 cis'8 a8 e4 |
     <d, d >4 d,8 d,,8 d,8 d,,8 d,4 |
     <d fis a c' >4 <d fis a c' >4 <d fis a c' >4 <d fis a c' >4 |
-    <g,, g, >4 <g b >8 d8 d4 d4 <g b >4 |
-    <g,, g, >4 <g b >8 d8 d4 d4 <g b >4 |
+    <g,, g, >4 <g b >8 d4 d8 <g b >4 |
+    <g,, g, >4 <g b >8 d4 d8 <g b >4 |
 % 100
-    <g,, g, >4 <g b >4 d4 d8 d8 <g b >4 |
+    <g,, g, >4 <g b >8 d4 d8 <g b >4 |
     g,,8 g,8 a,,8 a,8 ais,,8 ais,8 b,,8 b,8 |
-    c,4 <e g c' >8 c8 c4 c4 <e g c' >4 r4 |
-    c,4 <e g c' >8 c8 c8 <b,, b, >8 <c, c >8 <d, d >8 |
-    <dis, dis >4 <g c' >8 dis8 dis4 dis4 <g c' >4 |
+    c,4 <e g c' >8 c4 c8 <e g c' >4 |
+    c,4 <e g c' >8 c4 <b,, b, >8 <c, c >8 <d, d >8 |
+    <ees, ees >4 <g c' >8 ees4 ees8 <g c' >4 |
 % 105
-    dis4 <g c' >8 dis8 r4 dis8 dis8 <g c' >4 |
-    <d, d >4 <g b >4 d4 d8 d8 <g b >4 r4 |
+    ees4 <g c' >8 ees4 ees8 <g c' >4 |
+    <d, d >4 <g b >8 d4 d8 <g b >4 |
     d4 <g b >4 <b,, b, >4 <dis fis b >4 |
-    <e,, e, >4 r4 <g b >8 e8 e4 e4 <g b >4 r8. |
-    e4 <g b >4 <dis,, dis, >4 <dis a c' >4 |
+    <e,, e, >4 <g b >8 e4 e8 <g b >4 |
+    e4 <g b >4 <ees,, ees, >4 <ees a c' >4 |
 % 110
-    <d, d >4 <g b >8 d8 d8 d8 <g b >4 |
-    <e,, e, >4 <gis b >8 r8 |
-    <a,, a, >4 <a c' >8 e8 e8 e8 <a c' >4 |
-    <dis,, dis, >4. dis8 c'4( a4) dis4 |
-    <d,, d, >4. r2 d8 r8 b8 g8 d4 |
+    <d, d >4 <g b >8 d4 d8 <g b >4 |
+    <e,, e, >4 <gis b >8 e4 e8 <gis b >4 |
+    <a,, a, >4 <a c' >8 e4 e8 <a c' >4 |
+    <dis,, dis, >4. dis8 c'8 a8 dis4 |
+    <d,, d, >4. d8 b8 g8 d4 |
 % 115
-    <cis,, cis, >4. cis8 cis'4( a4) cis4 |
-    <c,, c, >4. r4 c8 c'8 g8 c4 |
-    <d,, d, >4 |
-     |
-     |
-    c'4 r2 |
-     |
-     |
-     |
-% 120
-     |
-% 120
-     |
-% 120
-     |
-% 120
-    c'8 fis8-. c'8 fis8 c'8-. fis8 c'2 |
-    <g,, g, >4 <g b >4 d4 d4 d4 r8.. <g b >4 r2 |
-    <e,, e, >4 <g b >8 e8 r8 e8 r32 |
-    <a,, a, >4 <a c' >8 e8 e8 e8 <a c' >4 |
-    <d,, d, >4 <fis a >8 d8 d4 d4 <fis a >4 |
+    <cis,, cis, >4. cis8 cis'8 a8 cis4 |
+    <c,, c, >4. c8 c'8 g8 c4 |
+    \cadenzaOn
+    <d,, d, >4 s2.
+    s1 
+    s1
+    \tuplet 3/2 { c'8[ fis8 c'8] }
+    \tuplet 3/2 { fis8[ c'8 fis8] }
+    c'2
+    \cadenzaMeasure \cadenzaOff
+    <g,, g, >4 <g b >8 d8~ d8 d8 <g b >4 |
+    <e,, e, >4 <g b >8 e8~ e8 e8 <g b >4 |
+    <a,, a, >4 <a c' >8 e8~ e8 e8 <a c' >4 |
+    <d,, d, >4 <fis a >8 d8~ d8 d8 <fis a >4 |
 % 125
-    <g,, g, >4 <g b >8 d8 d8 d8 <g b >4 |
-    <e,, e, >4 <g b >4 e4 e8 e8 <g b >4 |
-    <a,, a, >4 <a c' >8 e8 e8 r32 |
-    r4 <fis a >8 r32 |
-    <g,, g, >4 <g b >8 d8 d8 d8 <g b >4 |
+    <g,, g, >4 <g b >8 d8~ d8 d8 <g b >4 |
+    <e,, e, >4 <g b >8 e8~ e8 e8 <g b >4 |
+    <a,, a, >4 <a c' >8 e8~ e8 e8 <a c' >4 |
+    <d,, d, >4 <fis a >8 d8~ d8 d8 <fis a >4 |
+    <g,, g, >4 <g b >8 d8~ d8 d8 <g b >4 |
 % 130
-    <e,, e, >4 <g b >8 e8 e8 e8 <g b >4 |
-    <a,, a, >4 r4 <a c' >8 e8 r8 e8 r32 |
-    r4 d4 r4 <fis a d' >4 r4 d4 |
-    <dis ais dis' >4 r8 d'4 r2 ais4 dis4 |
-    ais,4 dis,4 ais,,2 |
+    <e,, e, >4 <g b >8 e8~ e8 e8 <g b >4 |
+    <a,, a, >4 <a c' >8 e8~ e8 e8 <a c' >4 |
+    <d,, d, >4 d4 <fis a d' >4 d4 |
+    \cadenzaOn
+    <ees bes ees' >4 d'4 bes4 ees4
+    bes,4 ees,4 bes,,2
+    \cadenzaMeasure \cadenzaOff
 % 135
-    \tuplet 3/2 { g,,8 g,8 d8 } \tuplet 3/2 { fis8 g8 b8 } r2. |
-    g,,1 r4 |
-    g,,1 |
+    \cadenzaOn
+    <<
+        \context Voice = "voiceone" { \voiceOne
+            \tuplet 3/2 { g,,8[ g,8 d8] } 
+            \tuplet 3/2 { fis8[ g8 b8] }
+            \change Staff = "upper" \oneVoice
+            \tuplet 3/2 { d'8[ fis'8 g'8] } 
+            \tuplet 3/2 { b'8[ d''8 fis''8] }
+            \ottava #1
+            \tuplet 3/2 { g''8[ b''8 d'''8] } 
+            \tuplet 3/2 { fis'''8[ g'''8 b'''8] } 
+            d''''8[ fis''''8] g''''4~
+            g''''1
+            \ottava #0
+        }
+        \context Voice = "voicetwo" { \voiceTwo
+            g,,1~
+            g,,1~
+            g,,1
+        }
+    >>
+    \cadenzaMeasure \cadenzaOff \bar "|."
 }
 
 scaleStaff = #(define-music-function (scaleFac) (number?)
