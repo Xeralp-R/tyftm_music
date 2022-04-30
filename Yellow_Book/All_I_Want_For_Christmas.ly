@@ -533,7 +533,7 @@ part-Pone-two = {
     \key g \major
     \time 4/4
     \clef treble
-    r1 |
+    R1 |
     e'''1 |
     c'''1 |
     d'''1 |
@@ -596,33 +596,33 @@ part-Pone-two = {
     \clef bass
     r8 <d,, d,>8 <d,, d,>8 <d,, d,>8 
     <d,, d,>8 <d,, d,>8 <d,, d,>4 |
-    <g,, g, >4 <g b >8 d4 d8 <g b >4 |
-    <g,, g, >4 <g b >8 d4 d8 <g b >4 |
-    <g,, g, >4 <g b >8 d4 d8 <g b >4 |
+    <g,, g, >4 <g b >8 d8~ d8 d8 <g b >4 |
+    <g,, g, >4 <g b >8 d8~ d8 d8 <g b >4 |
+    <g,, g, >4 <g b >8 d8~ d8 d8 <g b >4 |
     g,,8 g,8 a,,8 a,8 ais,,8 ais,8 b,,8 b,8 |
 % 35
-    c,4 <e g c' >8 c4 c8 <e g c' >4 |
-    c,4 <e g c' >8 c4 <b,, b, >8 <c, c >8 <d, d >8 |
-    <ees, ees >4 <g c' >8 ees4 ees8 <g c' >4 |
-    ees4 <g c' >8 ees4 ees8 <g c' >4 |
-    <g,, g, >4 <g b >8 d4 d8 <g b >4 |
+    c,4 <e g c' >8 c8~ c8 c8 <e g c' >4 |
+    c,4 <e g c' >8 c8~ c8 <b,, b, >8 <c, c >8 <d, d >8 |
+    <ees, ees >4 <g c' >8 ees8~ ees8 ees8 <g c' >4 |
+    ees4 <g c' >8 ees8~ ees8 ees8 <g c' >4 |
+    <g,, g, >4 <g b >8 d8~ d8 d8 <g b >4 |
 % 40
-    <g,, g, >4 <g b >8 d4 d8 <g b >4 |
-    <g,, g, >4 <g b >8 d4 d8 <g b >4 |
+    <g,, g, >4 <g b >8 d8~ d8 d8 <g b >4 |
+    <g,, g, >4 <g b >8 d8~ d8 d8 <g b >4 |
     g,,8 g,8 a,,8 a,8 ais,,8 ais,8 b,,8 b,8 |
-    c,4 <e g c' >8 c4 c8 <e g c' >4 |
-    c,4 <e g c' >8 c4 <b,, b, >8 <c, c >8 <d, d >8 |
+    c,4 <e g c' >8 c8~ c8 c8 <e g c' >4 |
+    c,4 <e g c' >8 c8~ c8 <b,, b, >8 <c, c >8 <d, d >8 |
 % 45
-    <ees, ees >4 <g c' >8 ees4 ees8 <g c' >4 |
-    ees4 <g c' >8 ees4 ees8 <g c' >4 |
-    <d, d >4 <g b >8 d4 d8 <g b >4 |
+    <ees, ees >4 <g c' >8 ees8~ ees8 ees8 <g c' >4 |
+    ees4 <g c' >8 ees8~ ees8 ees8 <g c' >4 |
+    <d, d >4 <g b >8 d8~ d8 d8 <g b >4 |
     d4 <g b >4 <b,, b, >4 <dis fis b >4 |
-    <e,, e, >4 <g b >8 e4 e8 <g b >4 |
+    <e,, e, >4 <g b >8 e8~ e8 e8 <g b >4 |
 % 50
     e4 <g b >4 <dis,, dis, >4 <dis a c' >4 |
-    <d, d >4 <g b >8 d4 d8 <g b >4 |
-    <e,, e, >4 <gis b >8 e4 e8 <gis b >4 |
-    <a,, a, >4 <a c' >8 e4 e8 <a c' >4 |
+    <d, d >4 <g b >8 d8~ d8 d8 <g b >4 |
+    <e,, e, >4 <gis b >8 e8~ e8 e8 <gis b >4 |
+    <a,, a, >4 <a c' >8 e8~ e8 e8 <a c' >4 |
     <dis,, dis, >4. dis8 c'8 a8 dis4 |
 % 55
     <d,, d, >4. d8 b8 g8 d4 |
@@ -630,7 +630,7 @@ part-Pone-two = {
     <c,, c, >4. c8 c'8 g8 c4 |
     \cadenzaOn
     b,,8[ b,8 dis8 fis8] a8[ b8 dis'8 fis'8] |
-    r1 |
+    s1 |
     \cadenzaMeasure \cadenzaOff
 % 60
     \key e \major \bar "||" \clef treble
@@ -688,24 +688,24 @@ part-Pone-two = {
     e8 a,8 a,,4 cis'8 a8 e4 |
     <d, d >4 d,8 d,,8 d,8 d,,8 d,4 |
     <d fis a c' >4 <d fis a c' >4 <d fis a c' >4 <d fis a c' >4 |
-    <g,, g, >4 <g b >8 d4 d8 <g b >4 |
-    <g,, g, >4 <g b >8 d4 d8 <g b >4 |
+    <g,, g, >4 <g b >8 d8~ d8 d8 <g b >4 |
+    <g,, g, >4 <g b >8 d8~ d8 d8 <g b >4 |
 % 100
-    <g,, g, >4 <g b >8 d4 d8 <g b >4 |
+    <g,, g, >4 <g b >8 d8~ d8 d8 <g b >4 |
     g,,8 g,8 a,,8 a,8 ais,,8 ais,8 b,,8 b,8 |
-    c,4 <e g c' >8 c4 c8 <e g c' >4 |
-    c,4 <e g c' >8 c4 <b,, b, >8 <c, c >8 <d, d >8 |
-    <ees, ees >4 <g c' >8 ees4 ees8 <g c' >4 |
+    c,4 <e g c' >8 c8~ c8 c8 <e g c' >4 |
+    c,4 <e g c' >8 c8~ c8 <b,, b, >8 <c, c >8 <d, d >8 |
+    <ees, ees >4 <g c' >8 ees8~ ees8 ees8 <g c' >4 |
 % 105
-    ees4 <g c' >8 ees4 ees8 <g c' >4 |
-    <d, d >4 <g b >8 d4 d8 <g b >4 |
+    ees4 <g c' >8 ees8~ ees8 ees8 <g c' >4 |
+    <d, d >4 <g b >8 d8~ d8 d8 <g b >4 |
     d4 <g b >4 <b,, b, >4 <dis fis b >4 |
-    <e,, e, >4 <g b >8 e4 e8 <g b >4 |
+    <e,, e, >4 <g b >8 e8~ e8 e8 <g b >4 |
     e4 <g b >4 <ees,, ees, >4 <ees a c' >4 |
 % 110
-    <d, d >4 <g b >8 d4 d8 <g b >4 |
-    <e,, e, >4 <gis b >8 e4 e8 <gis b >4 |
-    <a,, a, >4 <a c' >8 e4 e8 <a c' >4 |
+    <d, d >4 <g b >8 d8~ d8 d8 <g b >4 |
+    <e,, e, >4 <gis b >8 e8~ e8 e8 <gis b >4 |
+    <a,, a, >4 <a c' >8 e8~ e8 e8 <a c' >4 |
     <dis,, dis, >4. dis8 c'8 a8 dis4 |
     <d,, d, >4. d8 b8 g8 d4 |
 % 115
