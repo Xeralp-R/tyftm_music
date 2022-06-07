@@ -2,6 +2,8 @@
 
 \include "predefined-guitar-fretboards.ly"
 
+\include "../global.ily"
+
 % Make the test smaller, as necessary
 #(define-markup-command 
     (ensmall layout props text) 
@@ -204,153 +206,153 @@ melody = {
         r8 bes bes[ bes] bes4 bes |
         r8 bes bes[ bes] bes[ bes] g4 |
         \time 5/4
-        r8 a a[ a] bes4 a f8[ f] | \break
+        r8 a a[ a] bes4 a f8[ f] | \newline
         \time 4/4
         bes8 bes bes bes a f4. |
     % 5
         d8 d d d~ d4. d8 |
-        d8 d ees f~ f4 bes,4 | \break
+        d8 d ees f~ f4 bes,4 | \newline
         g'1 |
         r8 g g[ g] g4 g |
         \time 5/4
-        r8 f f[ g] f[ ees] c[ g'] a[ bes] | \break
+        r8 f f[ g] f[ ees] c[ g'] a[ bes] | \newline
     % 10
         \time 4/4
         b8 b bes4 a8 a bes4 |
         b8 b bes4 a8 a bes4 |
-        g8 g g g f4 bes | \pageBreak
+        g8 g g g f4 bes | \newpage
         e,8 e e e f4 a,8 c |
         a'2. a,8( bes) |
     % 15
         bes2. r4 |
-        r1 | \break
+        R1 | \newline
         \repeat volta 2 {
             d8 d~ d2 r8 bes |
             c8 d d2 r8 c16 d16 |
-            ees8 f ees d c4 c8 d | \break
+            ees8 f ees d c4 c8 d | \newline
     % 20
             ees8 f ees d c4 r4 |
             d8 d~ d2 d8 f |
-            a8 g g2 r8 g | \break
+            a8 g g2 r8 g | \newline
             bes8 bes bes bes bes g ees d |
             c2. r4 |
     % 25
-            g'8 g~ g2 f8( g16 aes16 | \pageBreak
+            g'8 g~ g2 f8( g16 aes16 | \newpage
             g2.) r8 g16 g |
             aes8 g g f f4. bes,8 |
-            bes8 f' f g g aes aes bes | \break
+            bes8 f' f g g aes aes bes | \newline
         }
         \alternative {
             \relative c'' {
                 aes8 g4 f16 g bes4. f 16 g |
     % 30
                 ees4. bes16 bes ces8 des ces des |
-                ces8 bes~ bes2 r4 | \break
+                ces8 bes~ bes2 r4 | \newline
                 \time 2/4
-                r2 |
+                R2 |
                 \time 4/4
-                r1 |
-                r1 | \break
+                R1 |
+                R1 | \newline
             }
     % 35
             \relative c'' {
                 g4 r4 r2 |
             }
         }
-        r1 |
-        r1 | \pageBreak
-        r1 |
-        r1 | \break
+        R1 |
+        R1 | \newpage
+        R1 |
+        R1 | \newline
     % 40
-        r1 |
-        r1 |
-        r1 |
-        \bar "||" \key a \major \break
-        r1 |
-        r1 |
+        R1 |
+        R1 |
+        R1 |
+        \bar "||" \key a \major \newline
+        R1 |
+        R1 |
     % 45
         d,4 cis8 cis c c cis cis |
-        d8 d cis cis c4 e8 e | \break
+        d8 d cis cis c4 e8 e | \newline
         a4 e8 e a4 e8 e |
         ees8 ees e4 fis e |
         f8 f f f ees4 ees |
     % 50
-        g8 g g g e4 gis4 | \pageBreak
+        g8 g g g e4 gis4 | \newpage
         a4 \voiceTwo r4 r4 a8 a |
         bes8 a r4 r4 a8 a | \oneVoice
         bes8[ a] a[ a] bes a g f |
-        \break \time 2/4
+        \newline \time 2/4
         e8 bes a' a |
     % 55
         \time 4/4
         bes4( g ees c8 bes) |
         \bar "||" \key ees \major
-        b4 bes8 bes a4 bes8 bes | \break
+        b4 bes8 bes a4 bes8 bes | \newline
         b4 bes8 bes a4 bes |
         c'4 bes8 bes a4 bes4 |
-        c8 c bes4 a8 a bes4 | \break
+        c8 c bes4 a8 a bes4 | \newline
     % 60
         c4 aes?8 bes g4 g8 g |
         f4 f8 f bes4 r4 |
-        r1 | \pageBreak
+        R1 | \newpage
         b8 b bes4 a8 a bes4 |
         b8 b bes bes a4 bes, |
     % 65
-        ees4 bes ees'4. f,8 | \break
+        ees4 bes ees'4. f,8 | \newline
         \voiceTwo f8 g aes g f r8 r4 |
         r4 bes, ees bes8 f' |
-        f8 g aes g f r8 r4 | \break
+        f8 g aes g f r8 r4 | \newline
         r4 bes, ees bes8 f' |
     % 70
         f8 g aes g f r8 r4 |
-        f8 g aes g f r8 r4 | \break
+        f8 g aes g f r8 r4 | \newline
         f8 g aes g f r8 r4 |
         des'4( bes ges fes) |
-        \oneVoice d!4 cis fis aes! | \pageBreak
+        \oneVoice d!4 cis fis aes! | \newpage
     % 75
         \voiceTwo bes4 d! ees8 r8 r4 |
         r2 r4 bes8 bes |
-        \oneVoice c8 bes aes g f4 bes4 | \break
+        \oneVoice c8 bes aes g f4 bes4 | \newline
         ees4. ees8 ees4 ees8 ees8 |
         d8 d d d g4 g |
     % 80
         bes,2. g4 |
-        c2( bes4) g4 | \break
+        c2( bes4) g4 | \newline
         bes1~ |
         bes2. r4 | \bar"||"
-        r1 |
+        R1 |
     % 85
-        r1 | \break
-        r1 |
-        r1 |
+        R1 | \newline
+        R1 |
+        R1 |
         \tuplet 3/2 {r4 aes' aes} \tuplet 3/2 {g g g} |
-        \tuplet 3/2 {f4 f f} \tuplet 3/2 {ees ees ees} | \pageBreak
+        \tuplet 3/2 {f4 f f} \tuplet 3/2 {ees ees ees} | \newpage
     % 90
         d8( ees f2.) |
         \time 2/4
-        r2 |
+        R2 |
         \time 4/4
         \tuplet 3/2 {r4 aes aes} \tuplet 3/2 {g g g} |
-        \tuplet 3/2 {f4 f f} \tuplet 3/2 {ees ees ees} | \break
+        \tuplet 3/2 {f4 f f} \tuplet 3/2 {ees ees ees} | \newline
         aes8( bes c4) r2 |
     % 95
         g8( aes~ aes2.) |
         g4 f2( g4) |
-        \tuplet 3/2 {r4 aes aes} \tuplet 3/2 {aes g g} | \break
+        \tuplet 3/2 {r4 aes aes} \tuplet 3/2 {aes g g} | \newline
         g4 f2( g4) |
         ees4 ees16 ees16 ees8 f2 |
     % 100
-        ees4 ees16 ees16 ees8 \tuplet 3/2 {f4 ees d} | \break
+        ees4 ees16 ees16 ees8 \tuplet 3/2 {f4 ees d} | \newline
         ees8( g,4.) r2 |
-        r1 |
-        r1 |
-        r1 | \bar "||" \pageBreak
+        R1 |
+        R1 |
+        R1 | \bar "||" \newpage
     % 105
-        r1 |
-        r1 |
-        r1 |
-        r1 | \break
-        r1 |
+        R1 |
+        R1 |
+        R1 |
+        R1 | \newline
+        R1 |
     % 110
         aes'?8 g ees g, bes bes4. |
         g'8 f ees d bes2 |
@@ -359,18 +361,17 @@ melody = {
         ees1~ |
     % 115
         ees2 r2 |
-        r1 |
-        r1 |
-        r1 |
+        R1 |
+        R1 |
+        R1 |
         bes8[ bes] a[ a] aes4 f'4 |
     % 120
-        r1\fermata |
+        R1\fermata |
     }
 }
 
 % the extra bit
 extra = { \voiceTwo
-    \magnifyMusic 0.63 {
         s1 * 2
         \time 5/4
         s4 * 5
@@ -431,7 +432,6 @@ extra = { \voiceTwo
         c''8 bes' bes' bes' c'' bes' r4 |
         s1
         % empty to the end
-    }
 }
 
 % the first lyric
@@ -767,22 +767,22 @@ right = {
         r8 <c e g bes>8 q[ <d f g bes>] <c e g bes>[ q] <bes e g>4 |
         \time 5/4
         r8 <c ees! f a> q[ q] <c ees g bes>4 <c ees f a> <f f,>8 q |
-        \time 4/4 \break
+        \time 4/4 \newline
         <bes, d f bes>8 q <c ees g bes> <bes d f bes> <a d f a> <f bes d f>4. |
     % 5
         <bes d>8 q q q~ q4. q8 |
-        <aes d>8 q <aes c ees> <aes d f>~ q4 bes | \break
+        <aes d>8 q <aes c ees> <aes d f>~ q4 bes | \newline
         <bes ees g>1 |
         r8 <ees g> q[ q] q4 q |
         \time 5/4
         r8 <a, ees' f> q[ g'] <f a,>[ ees] <a, c>[ <bes g'>] <c a'>[ <d bes'>] |
-        \time 4/4 \break
+        \time 4/4 \newline
     % 10
         <b fis' b>8 q <bes f' bes>4 <a e' a>8 q <bes f' bes>4 |
         <b fis' b>8 q <bes f' bes>4 <a e' a>8 q <bes f' bes>4 |
         <<
             \new Voice = "ra12" \relative c'' { \voiceOne
-                g8 g g g f4 bes4 | \pageBreak
+                g8 g g g f4 bes4 | \newpage
                 e,8 e e e <a, f'>4 f8 a |
             }
             \new Voice = "rb12" \relative c' { \voiceTwo
@@ -800,17 +800,17 @@ right = {
                 bes2. r4
             }
         >>
-        r8 f'( bes d <g g,>4 <f f,>4) | \break
+        r8 f'( bes d <g g,>4 <f f,>4) | \newline
         \repeat volta 2 {
             d,8\mf d~ d2 r8 bes |
             c8 <d bes> q2 r8 c16 d16 |
-            <c ees>8 f ees d c4 c8 d | \break
+            <c ees>8 f ees d c4 c8 d | \newline
     % 20
             <ees c>8 f ees d <c a>4 r4 |
             d8 d~ d2 d8 f |
             <<
                 \new Voice = "ra23" \relative c'' { \voiceOne
-                    a8 g8 g2 r8 g8 | \break
+                    a8 g8 g2 r8 g8 | \newline
                     bes8 bes bes bes bes g ees d |
                 }
                 \new Voice = "rb23" \relative c' { \voiceTwo
@@ -827,7 +827,7 @@ right = {
                 \new Voice = "rb25" \relative c' { \voiceTwo
                     <ees bes>2. bes4 |
                 }
-            >> \pageBreak
+            >> \newpage
             <c ees g>2. r8 g'16 g16 |
             <<
                 \new Voice = "ra27" \relative c'' { \voiceOne
@@ -837,19 +837,19 @@ right = {
                     c2 c4. r8
                 }
             >>
-            bes,8 <d f> <d f> g g <aes f> <aes f> <bes d,> | \break
+            bes,8 <d f> <d f> g g <aes f> <aes f> <bes d,> | \newline
         }
         \alternative {
             {
                 <aes f>8 <g ees>4 f16 g16 <f bes>4. f16 g16 |
     % 30
                 <ees c f>4. bes16 bes ces8 des ces des |
-                ces8 bes g'(_"Instrumental Solo" bes <aes c!> ees' <g, bes> ees' | \break
+                ces8_"Instrumental Solo" bes g'( bes <aes c!> ees' <g, bes> ees' | \newline
                 \time 2/4
                 <fis, a?> ees' <f, aes> ees') |
                 \time 4/4
                 r8 f,( bes d <g g,>4 <f f,>4) |
-                r8 f,( bes d <g g,>4 <f f,>4) | \break
+                r8 f,( bes d <g g,>4 <f f,>4) | \newline
     % 35
             }
             {
@@ -872,38 +872,38 @@ right = {
                 r4 <g ees>4 g2 |
                 s1 |
             }
-        >> \pageBreak
+        >> \newpage
         \tuplet 6/4 { bes16 aes g aes g f } \tuplet 6/4 { g f ees f ees d}
         \tuplet 6/4 { ees d c d c bes} b4 |
-        r16 bes( c d ees32 f g aes bes8) r16 bes,( c d ees32 f g aes bes8 | \break
+        r16 bes( c d ees32 f g aes bes8) r16 bes,( c d ees32 f g aes bes8 | \newline
     % 40
         <ees, g c>4.) d16( ees c8 d16 ees c8 d16 ees |
         <aes, c f>4.) f16( g16 aes4 <aes c f>4) |
         <f aes>4. aes16 des <f, aes des>4 des | 
-        \bar "||" \key a \major \break
+        \bar "||" \key a \major \newline
         <cis? a?>4-. q-. q-. q-. |
         <cis? a?>4-. q-. q-. q-. |
     % 45
         d4 cis8 cis c c cis cis |
-        d8 d cis cis c4 <cis e>8 q8 | \break
+        d8 d cis cis c4 <cis e>8 q8 | \newline
         <d a'>4 <cis e>8 q8 <d a'>4 <cis e>8 q8 |
         <c ees>8 q8 <cis e>4 <d fis>4 <cis e>4 |
         <aes des f>8\f q q q <aes cis ees>4 q4 |
     % 50
-        <c! e! g!>8 <c e g> q q <e b gis>4 <gis e b> | \pageBreak
+        <c! e! g!>8 <c e g> q q <e b gis>4 <gis e b> | \newpage
         <a e cis>4_> e'8[ e] f[ e]  a,[ a] |
         bes8[ a] e'[ e] f[ e] a,[ a] |
-        bes8[ a] a[ a] bes a g f | \break
+        bes8[ a] a[ a] bes a g f | \newline
         \time 2/4
         e[ bes] a'8[ a] |
     % 55
         \time 4/4
         bes4( g ees c8 bes8) | 
         \bar "||" \key ees \major
-        b4\mf bes8 bes a4 bes8 bes | \break
+        b4\mf bes8 bes a4 bes8 bes | \newline
         b4 bes8 bes a4 bes |
         <ees aes c>4\f <ees g bes>8 q <ees fis a>4 <ees g bes> |
-        <ees aes c>8 q <ees g bes>4 <ees fis a>8 q <ees g bes>4 | \break
+        <ees aes c>8 q <ees g bes>4 <ees fis a>8 q <ees g bes>4 | \newline
     % 60
         <ees aes c>4 <ees aes>8 <ees bes'> <bes ees g>4 q8 q |
         <a c f>4 q8 q <bes d f bes>4 bes'8\mf bes |
@@ -914,27 +914,27 @@ right = {
             \new Voice = "rb62" \relative c' { \voiceTwo
                 ees2 ees2 |
             }
-        >> \pageBreak
+        >> \newpage
         b8 b bes4 a8 a bes4 |
         b8 b bes bes a4 bes,->\f |
     % 65
-        ees4-> bes-> <ees g bes ees>4.-> <bes d f>8 | \break
+        ees4-> bes-> <ees g bes ees>4.-> <bes d f>8 | \newline
         <bes d f>8 <bes ees g> <bes f' aes> <bes ees g> <bes d f>
         <g' bes ees>[ <g bes ees> <g bes ees>~ ] |
         <g bes ees>4 bes,-> ees4-> bes8-> <bes d f>8 | 
         <bes d f>8 <bes ees g> <bes f' aes> <bes ees g> <bes d f>
-        <g' bes ees>[ <g bes ees> <g bes ees>~ ] | \break
+        <g' bes ees>[ <g bes ees> <g bes ees>~ ] | \newline
         <g bes ees>4 bes,-> ees4-> bes8-> <bes d f>8 |
     % 70
         <bes d f>8 <bes ees g> <bes f' aes> <bes ees g> <bes d f> ees'[ ees ees ] |
-        <bes, d f>8 <bes ees g> <bes f' aes> <bes ees g> <bes d f> ees'[ ees ees ] | \break
+        <bes, d f>8 <bes ees g> <bes f' aes> <bes ees g> <bes d f> ees'[ ees ees ] | \newline
         <bes, d f>8 <bes ees g> <bes f' aes> <bes ees g> <bes d f> ees'[ ees des~ ] |
         des1 |
-        d,!4-> cis-> <a d fis>_> <des f aes!>_> | \pageBreak
+        d,!4-> cis-> <a d fis>_> <des f aes!>_> | \newpage
     % 75
         <des ges bes>4-> <d f bes d!>_> <ees g! bes ees>8_> bes'[ bes bes] |
         c8 bes bes bes c[ bes] <ees, g bes>[ <ees g bes>] |
-        <ees aes c>8 <ees g bes> <f aes> <ees g> <bes d f>4 <bes bes'>4 | \break
+        <ees aes c>8 <ees g bes> <f aes> <ees g> <bes d f>4 <bes bes'>4 | \newline
         <ees g bes ees>4. q8 <ees aes c ees>4 q8 q8 |
         <d fis a d>8 q q q <g bes d g>4 q |
     % 80
@@ -946,23 +946,23 @@ right = {
             \new Voice = "rb81" \relative c' { \voiceTwo
                 <d f>2. <bes d>4 |
             }
-        >> \break
+        >> \newline
         <d f bes>1~ |
         <d f bes>2. r4 | \bar "||"
         <g bes ees>4_"Instrumental Solo" g16 aes8. bes8. c16 d16 ees8. |
     % 85
-        <g, bes ees>4 g16 aes8. bes8. c16 bes4 | \break
+        <g, bes ees>4 g16 aes8. bes8. c16 bes4 | \newline
         <g bes ees>4 g16 aes8. bes8. c16 d16 ees8. |
         <a, ees' f>4 g16 aes8. bes8. c16 bes4 |
         \tuplet 3/2 {r4 <bes d aes'>4 q} \tuplet 3/2 {r4 <bes ees g>4 q} |
-        \tuplet 3/2 {r4 <bes d f>4 q} \tuplet 3/2 {r4 <g bes ees>4 q} | \pageBreak
+        \tuplet 3/2 {r4 <bes d f>4 q} \tuplet 3/2 {r4 <g bes ees>4 q} | \newpage
     % 90
         <bes d>8( <c ees> <bes d f>2.) |
         \time 2/4
         r2
         \time 4/4
         \tuplet 3/2 {r4 <bes d aes'>4 q} \tuplet 3/2 {r4 <bes ees g>4 q} |
-        \tuplet 3/2 {r4 <bes d f>4 q} \tuplet 3/2 {r4 <g bes ees>4 q} | \break
+        \tuplet 3/2 {r4 <bes d f>4 q} \tuplet 3/2 {r4 <g bes ees>4 q} | \newline
         <<
             \new Voice = "ra94" \relative c''' { \voiceOne
                 aes8( bes c4) r2
@@ -977,7 +977,7 @@ right = {
                 <bes d>1 |
             }
         >>
-        \tuplet 3/2 {r4 <aes c aes'> q} \tuplet 3/2 {<aes c aes'>4 <aes c bes'> q} | \break
+        \tuplet 3/2 {r4 <aes c aes'> q} \tuplet 3/2 {<aes c aes'>4 <aes c bes'> q} | \newline
         <<
             \new Voice = "ra98" \relative c''' { \voiceOne
                 g4 f2( g4) |
@@ -988,11 +988,11 @@ right = {
         >>
         <aes c ees>4 q16 q16 q8 <bes d f>2 |
     % 100
-        <aes c ees>4 q16 q16 q8 \tuplet 3/2 {<bes d f>4 <c ees> <bes d>} | \break
+        <aes c ees>4 q16 q16 q8 \tuplet 3/2 {<bes d f>4 <c ees> <bes d>} | \newline
         <g bes ees>8(_"Instrumental Solo" g) g8[ aes] bes8. c16 d16 ees8. |
         <g, bes ees>4 g8 aes8 bes16 c8. bes4 |
         <d, f bes>4_\markup{\italic "poco a poco rit. e dim."} f8( g16 f aes8 f d bes~ |
-        bes1) | \bar "||" \pageBreak
+        bes1) | \bar "||" \newpage
     % 105
         <<
             \new Voice = "ra105" \relative c' {
@@ -1005,7 +1005,7 @@ right = {
             }
         >>
         <d b>8.( f16 <ees c>4) <f d>8( g16 aes <g ees>8) aes16( bes? |
-        <a! fis d>4 d, <bes' g d>2) | \break
+        <a! fis d>4 d, <bes' g d>2) | \newline
         <<
             \new Voice = "ra109" \relative c'' { \voiceOne
                 c4. c16 d bes2 |
@@ -1017,7 +1017,7 @@ right = {
     % 110
         aes'?8 g ees g, <g bes>8 q4. |
         g'8 f ees d <g, bes>2 |
-        <g' ees>8 <ees c> <f d> <g ees> <ees ces>_\markup{\italic "rit."} <ces aes>4. | \break
+        <g' ees>8 <ees c> <f d> <g ees> <ees ces>_\markup{\italic "rit."} <ces aes>4. | \newline
         <<
             \new Voice = "ra112" \relative c'' { \voiceOne
                 <ees g>8 f f ees ees c?4 d8 |
@@ -1029,12 +1029,12 @@ right = {
         <g bes ees>8( ees g bes <c aes ees> d <c aes ees> d) |
     % 115
         r8 ees,( g bes <c a! fis ees> d <c a fis ees> d) |
-        <bes f!>8( d, f bes <bes f des> c <bes f des> c) | \break
+        <bes f!>8( d, f bes <bes f des> c <bes f des> c) | \newline
         <g e bes>8( c, e g <bes e, des> aes aes g) |
         <g e bes>8(_\markup{\italic "poco a poco rit. e dim."} e c bes <f' c a> c' f f,) |
         <d' bes>8([ f] <c a>[ f] <b, aes>[ f'] <bes, g>[ f']) |
     % 120
-        <a, f c>1\p \fermata | \bar "|."
+        <a, f c>1\p \fermata | \bar ".."
     }
 }
 
@@ -1045,18 +1045,18 @@ left = {
     \time 4/4
 
     \relative c {
-        r1 |
-        r1 |
+        R1 |
+        R1 |
         \time 5/4
-        r1*5/4 |
+        R1*5/4 |
         \time 4/4
-        r1 |
+        R1 |
     % 5
         g2. g4 |
         bes2. d,4 |
         <<
             \new Voice = "la6" \relative c { \voiceOne
-                r4 bes( g bes) |
+                r4 bes( g' bes,) |
             }
             \new Voice = "lb6" \relative c, { \voiceTwo
                 e1 |
@@ -1118,7 +1118,7 @@ left = {
         des4. des16 c ces4 bes |
         \bar "||" \key a \major
         <a? a'?> r4 r2 |
-        r1 |
+        R1 |
     % 45
         <a' fis'>4 <a e'>8 q <a ees'>4 <a e'> |
         <a fis'>4 <a e'>8 q <a ees'>4 <a e'>8 q |
@@ -1128,13 +1128,13 @@ left = {
     % 50
         g8 g g g e4 e4 |
         <a a,>4-> r4 r2 |
-        r1 |
+        R1 |
         r4 a'8 a bes a g f |
         \time 2/4
         e8 r8 r4
     % 55
         \time 4/4
-        r1 |
+        R1 |
         \bar "||" \key ees \major
         dis4 d cis d |
         dis4 d cis d |
@@ -1227,15 +1227,7 @@ Bohemian_Rhapsody = \bookpart {
         composer = "Freddie Mercury"
         tagline =  ##f
     }
-
-    \paper {
-        page-count = 9
-    }
-
     \score {
-        \layout {
-            #(layout-set-staff-size 15.87)
-        }
         <<
             \new ChordNames {
                 \regularchords
@@ -1243,7 +1235,7 @@ Bohemian_Rhapsody = \bookpart {
             \new FretBoards {
                 \guitarchords
             }
-            \new Staff = "voice" {
+            \new Staff = "voice" \with { \scaleStaff #5/7 } {
                 \clef treble
                 \key bes \major
                 \numericTimeSignature

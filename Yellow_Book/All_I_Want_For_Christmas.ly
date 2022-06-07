@@ -3,8 +3,6 @@
 
 \include "../global.ily"
 
-newline = { \break }
-newpage = { \pageBreak }
 cadenzaMeasure = {
   \cadenzaOff
   \noBreak \partial 1024 s1024
@@ -190,7 +188,7 @@ part-voice = {
         \cadenzaMeasure \cadenzaOff \newline
         \cadenzaOn
         R1*3 
-        \cadenzaMeasure \cadenzaOff  \bar "|."
+        \cadenzaMeasure \cadenzaOff  \bar ".."
     }
 }
 
@@ -294,7 +292,7 @@ part-Pone-one = {
     <c'' e'' b'' >4\arpeggio a''4 g''4 e''4 |
     \cadenzaOn
     dis''4 a''2.\fermata |
-    c''8[^\markup{\italic "m.d."} dis''!8 g''8 a''8] 
+    c''8[^\markup{"m.d."} dis''!8 g''8 a''8] 
     \ottava #1 c'''8[ dis'''8 g'''8 a'''8] 
     \slashedGrace {cis''''(} \tuplet 3/2 { <b''' d'''' >8--[) a'''8 g'''8] } 
     \tuplet 3/2 { a'''8[ g'''8 e'''8] } 
@@ -305,7 +303,7 @@ part-Pone-one = {
     a''1\fermata |
 % 25
     g''1\trill | \voiceOne
-    r4 d'''16^\markup{\italic "m.d."} g'''16 b'''16 d''''16 s2 | 
+    r4 d'''16^\markup{"m.d."} g'''16 b'''16 d''''16 s2 | 
     \oneVoice \ottava #0
     \tempo "Allegro" \bar "||"
     \tuplet 3/2 { <b' d'' >8\f g'8 <b' d'' >8 } 
@@ -511,6 +509,7 @@ part-Pone-one = {
     \tuplet 3/2 { <fis''' a''' >8 d'''8 <fis''' a''' >8 }  
     d'''4 |
     \cadenzaOn
+    \omit Score.TupletNumber
     \tuplet 3/2 { g'''8[ f'''8 ees'''8] } 
     \tuplet 3/2 { d'''8[ c'''8 bes''8] } 
     \ottava #0
@@ -518,7 +517,8 @@ part-Pone-one = {
     \tuplet 3/2 { ees''8[ d''8 c''8] }
     \tuplet 3/2 { bes'8[ a'8 g'8] } 
     \tuplet 3/2 { f'8[ ees'8 d'8] } 
-    \tuplet 3/2 { c'8[ bes8 a8] } 
+    \change Staff = "lower" \voiceOne
+    \tuplet 3/2 { c'8[^"m.d." bes8 a8] } 
     \tuplet 3/2 { g8[ f8 ees8] }
     \cadenzaMeasure \cadenzaOff
 % 135
@@ -526,7 +526,7 @@ part-Pone-one = {
     d1
     s1
     s1
-    \cadenzaMeasure \cadenzaOff \bar "|."
+    \cadenzaMeasure \cadenzaOff \bar ".."
 }
 
 part-Pone-two = {
@@ -584,7 +584,7 @@ part-Pone-two = {
 % 25
     r1 |
     \change Staff = "upper" \voiceTwo
-    g''2_\markup{\italic "m.s."} g''''2^\markup{\italic "m.s."} |
+    g''2_\markup{"m.s."} g''''2^\markup{"m.s."} |
     \change Staff = "lower" \oneVoice
     \tuplet 3/2 { g8 d'8 g8 } \tuplet 3/2 { d'8 g8 d'8 } 
     \tuplet 3/2 { g8 d'8 g8 } \tuplet 3/2 { d'8 g8 d'8 } |
@@ -759,16 +759,10 @@ part-Pone-two = {
             g,,1
         }
     >>
-    \cadenzaMeasure \cadenzaOff \bar "|."
+    \cadenzaMeasure \cadenzaOff \bar ".."
 }
 
-scaleStaff = #(define-music-function (scaleFac) (number?)
-#{
-    \magnifyStaff #scaleFac
-    \override KeySignature.padding = #(* 2/3 (- 1 scaleFac))
-#}) 
-
-AllIWantForChristmas = \bookpart {
+All_I_Want_For_Christmas = \bookpart {
     \header {
         title = "All I Want for Christmas"
         composer = "Mariah Carey"
@@ -790,5 +784,3 @@ AllIWantForChristmas = \bookpart {
         }
     }
 }
-
-\AllIWantForChristmas
