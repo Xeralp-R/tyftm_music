@@ -150,7 +150,7 @@ PartPOneVoiceOne =  {
         b,16 ( \change Staff="1" c16 b,16 a,16 b,16 ) }
     r4 | \barNumberCheck #100
     \tempo 4=100 <b c'>4 ^^ _\fff _"rit." \tempo 4=90 a4 ^^ | % 101
-    \tempo 4=80 a2 ^\fermata ^^ \bar "|."
+    \tempo 4=80 a2 ^\fermata ^^ \bar ".."
 }
 
 PartPOneVoiceFive =  {
@@ -306,7 +306,7 @@ PartPOneVoiceFive =  {
     <e a>8 <f a>8 <e a>8 <d a>8 | % 97
     <c a>8 <d a>4 ^^ <e a>8 s2. a,8 -. b,8 -. | \barNumberCheck #100
     <b, c>4 ^^ a,4 ^^ | % 101
-    <a,, a,>2 ^\fermata ^^ \bar "|."
+    <a,, a,>2 ^\fermata ^^ \bar ".."
 }
 
 PartPOneVoiceSix =  {
@@ -333,7 +333,7 @@ PartPOneVoiceSix =  {
         s1 s1*3 }
     s1 | % 77
     a2 s1 s2 | % 81
-    a,2 s1. s1*3 s2*5 s1*3 \bar "|."
+    a,2 s1. s1*3 s2*5 s1*3 \bar ".."
     }
 
 PartPOneVoiceTwo =  {
@@ -367,7 +367,7 @@ PartPOneVoiceTwo =  {
         } \repeat volta 2 {
         s1 s1*3 }
     s2*5 s2*5 s1*3 s2*5 s1 | % 98
-    \clef "bass" s1*2 \bar "|."
+    \clef "bass" s1*2 \bar ".."
 }
 
 

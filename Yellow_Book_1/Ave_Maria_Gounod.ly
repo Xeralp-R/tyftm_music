@@ -223,7 +223,7 @@ left = {
         c,_\markup{\teeny " "}_\fermata
     }
     >>
-    \bar "|." 
+    \bar ".." 
 }
 
 %%

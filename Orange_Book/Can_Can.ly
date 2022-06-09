@@ -199,7 +199,7 @@ CanCanRightHand =  {
     \repeat tremolo 4 {<a' d''>16\fff fis'16} |
     \repeat tremolo 4 {<a' d''>16 fis'16} |
 % 130
-    <fis' a' d''>4 -> r4_"Fine"  \bar "|."%}
+    <fis' a' d''>4 -> r4_"Fine"  \bar ".."%}
 }
 
 CanCanLeftHand =  {
@@ -394,11 +394,13 @@ CanCanLeftHand =  {
     \repeat tremolo 4 {<d, a,>16 d16} |
     \repeat tremolo 4 {<d, a,>16 d16} | 
 % 130
-    <d, a, d>4 -> r4 \bar "|."%}
+    <d, a, d>4 -> r4 \bar ".."%}
 }
 
 % The score definition
 Can_Can = \bookpart {
+    \tocItem \markup "Offenbach. Can Can"
+    
     \header {
         title =    "Can Can"
         subtitle = "Orpheus in the Underworld"

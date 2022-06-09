@@ -91,7 +91,7 @@ right = {
     % 40
         <fis a, fis>1\ppp\arpeggio\fermata |
     }
-    \bar "|."
+    \bar ".."
 }
 
 left = {
@@ -167,10 +167,11 @@ left = {
         <d a d,>1\arpeggio\fermata |
     }
 
-    \bar "|."
+    \bar ".."
 }
 
 Canon_in_D = \bookpart {
+    \tocItem \markup "Pachelbel. Canon in D"
     \header {
         title =    "Canon in D"
         composer = "Johann Pachelbel"

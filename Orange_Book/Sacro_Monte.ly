@@ -91,7 +91,7 @@ right = {
     % 45
         r8 <a e' a>\noBeam <g d' g>[ <f c' f>] <d a' d>[ <c g' c>] <a e' a>[ <g d' g>] |
         \clef "bass" g,,8 <c d>4.\< \clef "treble" g'8 <c d e>4. |
-        <a cis e a>4->\fff r4 r2 \bar "|." |
+        <a cis e a>4->\fff r4 r2 \bar ".." |
     }
 }
 
@@ -161,11 +161,13 @@ left = {
         \clef "bass" a,,8[ e'] a[ cis] \clef "treble" <d f a c!>4 <e g bes d> |
         \clef "bass" <a, e' a>4 <g d' g>8[ <f c' f>] <d a' d>[ <c g' c>] <a e' a>[ <g d' g>] |
         \afterGrace 31/32 g,1\startTrillSpan {s32\stopTrillSpan}  |
-        <a e' a>4-> r4 r2 \bar "|." |
+        <a e' a>4-> r4 r2 \bar ".." |
     }
 }
 
 Sacro_Monte = \bookpart {
+    \tocItem \markup "Turina. Sacro Monte"
+
     \header {
         title =    "Sacro-Monte"
         subtitle = \markup { No. 5 from \italic Cinco \italic danzas \italic gitanas, Op. 55 }

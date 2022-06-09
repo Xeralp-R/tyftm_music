@@ -303,7 +303,7 @@ PartPOneVoiceOne =  {
     gis8 f8 e8 d8 c8 b,8 | 
     a,2. ) \change Staff="1" | \oneVoice
     <gis' b' e''>2. _\ffz | 
-    <c'' e'' a''>2. _\ffz \bar "|."
+    <c'' e'' a''>2. _\ffz \bar ".."
     }
 
 PartPOneVoiceFive =  {
@@ -562,7 +562,7 @@ PartPOneVoiceFive =  {
     e,2. ( | 
     a,,2. ) | \voiceOne
     e,2. | 
-    a,,2. \bar "|."
+    a,,2. \bar ".."
     }
 
 PartPOneVoiceTwo =  {
@@ -571,7 +571,7 @@ PartPOneVoiceTwo =  {
     \key a \major s4*51 \bar "||"
     \key c \major s1*12 \bar "||"
     \key a \major s1*15 \bar "||"
-    \key c \major s4*279 \bar "|."
+    \key c \major s4*279 \bar ".."
     }
 
 
@@ -600,7 +600,5 @@ Tarantella = \bookpart {
 
         >>
         \layout {}
-        % To create MIDI output, uncomment the following line:
-        %  \midi {\tempo 4 = 220 }
     }
 }

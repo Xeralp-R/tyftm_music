@@ -65,18 +65,13 @@
         \Lyrics 
         \override LyricText.font-size = #-1
     }
-    \context {
-        \Voice 
-        \override DynamicTextSpanner.font-size = #'0
-        \remove "Fingering_engraver"
-        \remove "New_fingering_engraver"
-    }
-    \context {
-        \FretBoards
-        \remove "Fretboard_engraver"
-    }
-    \context {
-        \ChordNames
-        \remove "Chord_name_engraver"
-    }
 }
+
+newline = { \break }
+newpage = { \pageBreak }
+
+scaleStaff = #(define-music-function (scaleFac) (number?)
+#{
+    \magnifyStaff #scaleFac
+    \override KeySignature.padding = #(* 2/3 (- 1 scaleFac))
+#}) 

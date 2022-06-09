@@ -133,7 +133,7 @@ PartPOneVoiceOne =  {
     c'16 c16 g16 c16 as16 bes16 c'16 c16 g16 c16 as16 bes16 c'16 c16 g16
     c16 as16 bes16 c'16 c16 g16 c16 as16 bes16 | 
 % 40
-    c'1. \bar "|."
+    c'1. \bar ".."
     }
 
 PartPOneVoiceFive =  {
@@ -234,7 +234,7 @@ PartPOneVoiceFive =  {
     as,,8 es,8 as,8 c8 as,8 es,8 f,,8 c,8 f,8 g,,8 es,8 g,8 | 
     <c,, c,>1. ~ ~ | 
 % 40
-    <c,, c,>1. \bar "|."
+    <c,, c,>1. \bar ".."
 }
 
 

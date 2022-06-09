@@ -78,7 +78,7 @@ PartPOneVoiceOne =  {
             s4 b'4 ( a'4 ) |
         }
     >>
-    <c'' a''>2. ^\fermata -1 -5 _\p \bar "|."
+    <c'' a''>2. ^\fermata -1 -5 _\p \bar ".."
 }
 
 PartPOneVoiceFive =  {
@@ -141,12 +141,13 @@ PartPOneVoiceFive =  {
     <a, fis?>2. _1 _5 \sustainOffOn | 
 % 35
     <a, f>2. \sustainOffOn | % 36
-    <a, e>2. \fermata _1 _5 \sustainOff \bar "|."
+    <a, e>2. \fermata _1 _5 \sustainOff \bar ".."
 }
 
 
 % The score definition
 Come_Back_to_Sorrento = \bookpart {
+    \tocItem \markup "Curtis. Come Back to Sorrento"
     \header {
         title =    "Come Back to Sorrento"
         composer = "Ernesto Curtis"
