@@ -24,21 +24,10 @@
         }
     }
     \bookpart { \Can_Can                }
-    \bookpart {
-        \markup {
-            \center-column {
-                \vspace #10
-                \fill-line {
-                    \italic
-                    \fontsize #'1
-                    "Page intentionally left blank for easier page-turn."
-                }
-            }
-        }
-    }
+    \bookpart { \spacer_page            }
     \bookpart { \Sacro_Monte            }
     \bookpart { \Canon_in_D             }
-    %{\bookpart { \Come_Back_to_Sorrento  }
-    \bookpart { \Ave_Maria_Gounod       }
+    \bookpart { \Come_Back_to_Sorrento  }
+    %{\bookpart { \Ave_Maria_Gounod       }
     \bookpart { \Game_of_Thrones        }%}
 }
