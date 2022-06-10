@@ -1,56 +1,68 @@
 \version "2.22.0"
 
+\include "../global.ily"
+
+to_staff = #(define-music-function (arg) (string?) (_i "Go to staff with name arg")
+#{
+    \change Staff = #arg
+#})
+
+to_lower = { \to_staff "lower" \voiceOne }
+to_upper = { \to_staff "upper" \voiceTwo }
+
 %% The actual right hand
 pianovoice = {
     \time 4/4
     \clef "treble"
     \new Voice = "pianovoice" {
-        \autoBeamOff
-        \relative c'' {
-            e1\omit\mf |
-            f2. r8 f8 |
-            g2.( d4) |
-            e2. r4 | \break
-        % 5
-            a2~ a8 a, b  c |
-            d4.( e8) d2 |
-            g2~ g8 g, a b |
-            c4.( d8) c2 | \break
-            c'2~ c8 c, d( e) | 
-        % 10
-            fis4.( e8 d4) a |
-            b2~ b8 r8 d4 |
-            e2~ e8 e( f g) | \break
-            a4. a,8 a4 r4 |
-            d2~ d8 d( e) f |
-        % 15
-            g2 g,4 r4 |
-            c2~ c8 c8( d e) | \pageBreak
-            f2~ f8 f8( g a) |
-            b4. a8  g4( d4) |
-            e2. r4 |
-        % 20
-            g2 e4 r8. e16 | \break
-            a2 a,4 r4 |
-            a'2 c,4 r8. a'16 |
-            c2 ees,4 r8. c'16 |
-            c2 d,4 r4 | \break
-        % 25
-            d2~ d8 d( c) b |
-            g'4.( e8) c4 r4 |
-            f2~ f8 f e d |
-            d'4. b8 g2 | \break
-            a2~ a8 a( b) c |
-        % 30
-            e2~ e8 c g e |
-            d2~ d8 a' b( a) |
-            a8( g) f( d) b( g) f( d) | \break
-            c1 |
-            c1 |
-        % 35
-            g'1 |
-            g1 |
-        }
+        R1 |
+        R1 |
+        R1 |
+        R1 |
+
+        e''1\omit\mf |
+        f''2. r8 f''8 |
+        g''2.( d''4) |
+        e''2. r4 | \newline
+    % 5
+        a''2~ a''8 a' b'  c'' |
+        d''4.( e''8) d''2 |
+        g''2~ g''8 g' a' b' |
+        c''4.( d''8) c''2 | \newline
+        c'''2~ c'''8 c'' d''( e'') | 
+    % 10
+        fis''4.( e''8 d''4) a' |
+        b'2~ b'8 r8 d''4 |
+        e''2~ e''8 e''( f'' g'') | \newline
+        a''4. a'8 a'4 r4 |
+        d''2~ d''8 d''( e'') f'' |
+    % 15
+        g''2 g'4 r4 |
+        c''2~ c''8 c''8( d'' e'') | \newpage
+        f''2~ f''8 f''8( g'' a'') |
+        b''4. a''8  g''4( d''4) |
+        e''2. r4 |
+    % 20
+        g''2 e''4 r8. e''16 | \newline
+        a''2 a'4 r4 |
+        a''2 c''4 r8. a''16 |
+        c'''2 es''4 r8. c'''16 |
+        c'''2 d''4 r4 | \newline
+    % 25
+        d''2~ d''8 d''( c'') b' |
+        g''4.( e''8) c''4 r4 |
+        f''2~ f''8 f'' e'' d'' |
+        d'''4. b''8 g''2 | \newline
+        a''2~ a''8 a''( b'') c''' |
+    % 30
+        e'''2~ e'''8 c''' g'' e'' |
+        d''2~ d''8 a'' b''( a'') |
+        a''8( g'') f''( d'') b'( g') f'( d') | \newline
+        c'1 |
+        c'1 |
+    % 35
+        g'1 |
+        g'1 |
     }
 }
 
@@ -76,56 +88,118 @@ pianolyr = \lyricmode {
 %% Define the left and the right hand in new variables
 %%
 right = {
-    \transpose c c' {
-        \time 4/4
-        \clef "violin"
-        \tempo "Moderato cantabile, molto espressivo" 4 = 64
-        %\set Score.tempoHideNote = ##t
-        \voiceOne
-        r8\omit\pp   g16[ c']   e'[ g c' e'] r8   g16[ c']   e'[ g c' e'] |
-        r8   a16[ d']   f'[ a d' f'] r8   a16[ d']   f'[ a d' f'] |
-        r8   g16[ d']   f'[ g d' f'] r8   g16[ d']   f'[ g d' f'] |
-        r8   g16[ c']   e'[ g c' e'] r8   g16[ c']   e'[ g c' e'] | 
-        r8   a16[ e']   a'[ a e' a'] r8   a16[ e']   a'[ a e' a'] |
-        r8   fis16[ a]   d'[ fis a d'] r8   fis16[ a]   d'[ fis a d'] |
-        r8   g16[ d']   g'[ g d' g'] r8   g16[ d']   g'[ g d' g'] | \oneVoice
-        r8   e16[ g]   c'[ e g c'] r8   e16[ g]   c'[ e g c'] |
-        r8   e16[ g]   c'[ e g c'] r8   e16[ g]   c'[ e g c'] |
-        %% 10
-        r8   d16[ fis]   c'[ d fis c'] r8   d16[ fis]   c'[ d fis c'] |
-        r8   d16[ g]   b[ d g b] r8   d16[ g]   b[ d g b] |
-        r8   e16[ g]   cis'[ e g cis'] r8   e16[ g]   cis'[ e g cis'] |
-        r8   d16[ a]   d'[ d a d'] r8   d16[ a]   d'[ d a d'] | 
-        r8   d16[ f]   b[ d f b] r8   d16[ f]   b[ d f b] |
-        r8   c16[ g]   c'[ c g c'] r8   c16[ g]   c'[ c g c'] |
-        r8   a,16[ c]   f[ a, c f] r8   a,16[ c]   f[ a, c f] | 
-        r8   a,16[ c]   f[ a, c f] r8   a,16[ c]   f[ a, c f] |
-        r8   g,16[ b,]   f[ g, b, f] r8   g,16[ b,]   f[ g, b, f] |
-        r8   g,16[ c]   e[ g, c e] r8   g,16[ c]   e[ g, c e] |
-        %% 20
-        r8   bes,16[ c]   e[ bes, c e] r8   bes,16[ c]   e[ bes, c e] |
-        r8   a,16[ c]   e[ a, c e] r8   a,16[ c]   e[ a, c e] |
-        r8   a,16[ c]   ees[ a, c ees] r8   a,16[ c]   ees[ a, c ees] |
-        r8   b,16[ c]   ees[ b, c ees] r8   b,16[ c]   ees[ b, c ees] | % Schwencke measure
-        r8   b,16[ c]   d[ b, c d] r8   b,16[ c]   d[ b, c d] |
-        r8   g,16[ b,]   d[ g, b, d] r8   g,16[ b,]   d[ g, b, d] |
-        r8   g,16[ c]   e[ g, c e] r8   g,16[ c]   e[ g, c e] |
-        r8   g,16[ c]   f[ g, c f] r8   g,16[ c]   f[ g, c f] |
-        r8   g,16[ b,]   f[ g, b, f] r8   g,16[ b,]   f[ g, b, f] |
-        r8   a,16[ c]   fis[ a, c fis] r8   a,16[ c]   fis[ a, c fis] |
-        %% 30
-        r8   g,16[ c]   g[ g, c g] r8   g,16[ c]   g[ g, c g] |
-        r8   g,16[ c]   f[ g, c f] r8   g,16[ c]   f[ g, c f] |
-        r8   g,16[ b,]   f[ g, b, f] r8   g,16[ b,]   f[ g, b, f] |
-        r8   g,16[ bes,]   e[ g, bes, e] r8   g,16[ bes,]   e[ g, bes, e] | \voiceOne
-    
-        % easier to read
-        
-        r8 \change Staff = "lower" \once \override Slur.eccentricity = #-3.0 f,16[( a,]  \change Staff = "upper" c[ f c a,]   
-        \change Staff = "lower" c[ a, f, a,]   f,[ d, f, d,]) | \change Staff = "upper" \oneVoice
-        r8 g16[( b]   d'[ f' d' b]   d'[ b g b]   d[ f e d]) |
-        <e g c'>1\fermata
-    }
+    \time 4/4
+    \clef "treble"
+    \tempo "Andante Semplice"
+    <<
+        \new Voice = "canto" {
+            s1 |
+            s1 |
+            s1 |
+            s1 |
+
+            \voiceOne
+            e''1^\markup{\italic "Le Chant bien marqué et très lié. (avec le sentiment comtemplatif.)"} |
+            f''1 |
+            g''2.( d''4) |
+            e''2. r4 |
+        % 5
+            a''2~ a''8 a' b'  c'' |
+            d''4.( e''8) d''2 |
+            g''2~ g''8 g' a' b' |
+            c''4.( d''8) c''2 | 
+            c'''2~ c'''8 c'' d''( e'') | 
+        % 10
+            fis''4.( e''8 d''4) a' |
+            b'2~ b'8 r8 d''4 |
+            e''2~ e''8 e''( f'' g'') | 
+            a''4. a'8 a'4 r4 |
+            d''2~ d''8 d''( e'') f'' |
+        % 15
+            g''2 g'4 r4 |
+            c''2~ c''8 c''8( d'' e'') | 
+            f''2~ f''8 f''8( g'' a'') |
+            b''4. a''8  g''4( d''4) |
+            e''2. r4 |
+        % 20
+            g''2 e''4 r8. e''16 | 
+            a''2 a'4 r4 |
+            a''2 c''4 r8. a''16 |
+            c'''2 es''4 r8. c'''16 |
+            c'''2 d''4 r4 | 
+        % 25
+            d''2~ d''8 d''( c'') b' |
+            g''4.( e''8) c''4 r4 |
+            f''2~ f''8 f'' e'' d'' |
+            d'''4. b''8 g''2 | 
+            a''2~ a''8 a''( b'') c''' |
+        % 30
+            e'''2~ e'''8 c''' g'' e'' |
+            d''2~ d''8 a'' b''( a'') |
+            a''8( g'') f''( d'') b'( g') f'( d') | 
+            c'1 |
+            c'1 |
+        % 35
+            g'1 |
+            g'1 |
+        }
+        \new Voice = "accompaniment" {
+            \voiceOne
+            r8   g'16 c''   e'' g' c'' e'' r8   g'16 c''   e'' g' c'' e'' |
+            r8   a'16 d''   f'' a' d'' f'' r8   a'16 d''   f'' a' d'' f'' |
+            r8   g'16 d''   f'' g' d'' f'' r8   g'16 d''   f'' g' d'' f'' |
+            r8   g'16 c''   e'' g' c'' e'' r8   g'16 c''   e'' g' c'' e'' | 
+
+            \voiceTwo
+            \to_lower c'16 e' \to_upper  g'16 c''   e'' g' c'' e'' 
+            \to_lower c'16 e' \to_upper  g'16 c''   e'' g' c'' e'' |
+            \to_lower c'16 d' \to_upper  a'16 d''   f'' a' d'' f'' 
+            \to_lower c'16 d' \to_upper  a'16 d''   f'' a' d'' f'' |
+            \to_lower b16 d'  \to_upper  g'16 d''   f'' g' d'' f'' 
+            \to_lower b16 d'             f'16 g'~   g'  d' f'  g'  |
+            c'16 e'           \to_upper  g'16 c''   e'' g' c'' e'' 
+            \to_lower c'16 e' \to_upper  g'16 c''   e'' g' c'' e'' | 
+            r8   a'16 e''   a'' a' e'' a'' r8   a'16 e''   a'' a' e'' a'' |
+            r8   fis'16 a'   d'' fis' a' d'' r8   fis'16 a'   d'' fis' a' d'' |
+            r8   g'16 d''   g'' g' d'' g'' r8   g'16 d''   g'' g' d'' g'' |
+            r8   e'16 g'   c'' e' g' c'' r8   e'16 g'   c'' e' g' c'' |
+            r8   e'16 g'   c'' e' g' c'' r8   e'16 g'   c'' e' g' c'' |
+            %% 10
+            r8   d'16 fis'   c'' d' fis' c'' r8   d'16 fis'   c'' d' fis' c'' |
+            r8   d'16 g'   b' d' g' b' r8   d'16 g'   b' d' g' b' |
+            r8   e'16 g'   cis'' e' g' cis'' r8   e'16 g'   cis'' e' g' cis'' |
+            r8   d'16 a'   d'' d' a' d'' r8   d'16 a'   d'' d' a' d'' | 
+            r8   d'16 f'   b' d' f' b' r8   d'16 f'   b' d' f' b' |
+            r8   c'16 g'   c'' c' g' c'' r8   c'16 g'   c'' c' g' c'' |
+            r8   a16 c'   f' a c' f' r8   a16 c'   f' a c' f' | 
+            r8   a16 c'   f' a c' f' r8   a16 c'   f' a c' f' |
+            r8   g16 b   f' g b f' r8   g16 b   f' g b f' |
+            r8   g16 c'   e' g c' e' r8   g16 c'   e' g c' e' |
+            %% 20
+            r8   bes16 c'   e' bes c' e' r8   bes16 c'   e' bes c' e' |
+            r8   a16 c'   e' a c' e' r8   a16 c'   e' a c' e' |
+            r8   a16 c'   es' a c' es' r8   a16 c'   es' a c' es' |
+            r8   b16 c'   es' b c' es' r8   b16 c'   es' b c' es' | % Schwencke measure
+            r8   b16 c'   d' b c' d' r8   b16 c'   d' b c' d' |
+            r8   g16 b   d' g b d' r8   g16 b   d' g b d' |
+            r8   g16 c'   e' g c' e' r8   g16 c'   e' g c' e' |
+            r8   g16 c'   f' g c' f' r8   g16 c'   f' g c' f' |
+            r8   g16 b   f' g b f' r8   g16 b   f' g b f' |
+            r8   a16 c'   fis' a c' fis' r8   a16 c'   fis' a c' fis' |
+            %% 30
+            r8   g16 c'   g' g c' g' r8   g16 c'   g' g c' g' |
+            r8   g16 c'   f' g c' f' r8   g16 c'   f' g c' f' |
+            r8   g16 b   f' g b f' r8   g16 b   f' g b f' |
+            r8   g16 bes   e' g bes e' r8   g16 bes   e' g bes e' | \voiceOne
+
+            % easier to read
+            
+            r8 \change Staff = "lower" \once \override Slur.eccentricity = #-3.0 f16( a  \change Staff = "upper" c' f' c' a   
+            \change Staff = "lower" c' a f a   f d f d) | \change Staff = "upper" \oneVoice
+            r8 g'16( b'   d'' f'' d'' b'   d'' b' g' b'   d' f' e' d') |
+            <e' g' c''>1\fermata
+        }
+    >>
 }
 
 left = {
@@ -139,12 +213,20 @@ left = {
         r16 d'8. ~ d'4 r16 d'8. ~ d'4 |
         r16 d'8. ~ d'4 r16 d'8. ~ d'4 |
         r16 e'8. ~ e'4 r16 e'8. ~ e'4 |
+
+        \change Staff = "lower"
+        \voiceTwo
+        \clef "treble"
+        s16 e'8. ~ e'4 s16 e'8. ~ e'4 |
+        s16 d'8. ~ d'4 s16 d'8. ~ d'4 |
+        s16 d'8. ~ d'4 s2 |
+        s16 e'8. ~ e'4 s16 e'8. ~ e'4 |
+        \voiceOne
         r16 e'8. ~ e'4 r16 e'8. ~ e'4 |
         r16 d'8. ~ d'4 r16 d'8. ~ d'4 |
         r16 d'8. ~ d'4 r16 d'8. ~ d'4 |
-        \change Staff = "lower"
-        \voiceOne
         r16 c'8. ~ c'4 r16 c'8. ~ c'4 |
+        \clef "bass"
         r16 c'8. ~ c'4 r16 c'8. ~ c'4 |
         %% 10
         r16 a8. ~ a4 r16 a8. ~ a4 |
@@ -184,10 +266,15 @@ left = {
         c' c' |
         b b |
         c' c' |
+
+        \voiceTwo
+        c'2_\markup{\musicglyph "pedal.Ped" "à chaque mesure"} c' |
+        c' c' |
+        b b |
+        c' c' |
         c' c' |
         c' c' |
         b b |
-        \voiceTwo
         b b |
         a a |
         %% 10
@@ -239,19 +326,28 @@ Ave_Maria_Gounod = \bookpart {
     }
     
     \score {
-        \context PianoStaff <<
-            \set PianoStaff.connectArpeggios = ##t
-            \new Staff = "pianovoice" \pianovoice
+        <<
+            \new Staff = "pianovoice" \with { \scaleStaff #5/7 } \pianovoice
             \new Lyrics \lyricsto "pianovoice" \pianolyr
-            \new Staff = "upper" \right
-            \new Staff = "lower" \with {
-                \consists "Span_arpeggio_engraver"
-            } \left
+
+            \new PianoStaff <<
+                \set PianoStaff.connectArpeggios = ##t
+                \new Staff = "upper" \right
+                \new Staff = "lower" \with {
+                    \consists "Span_arpeggio_engraver"
+                } \left
+            >>
         >>
 
-        \layout { 
-            indent = 0\cm
-            #(layout-set-staff-size 15.5)
+        \layout {
+            \mergeDifferentlyDottedOn
+            \mergeDifferentlyHeadedOn
+            %\set Staff.pedalSustainStyle = #'mixed
+            \context {
+                \Score 
+                \override SpacingSpanner.common-shortest-duration = 
+                #(ly:make-moment 1/16)
+            }
         }
     }
 }
