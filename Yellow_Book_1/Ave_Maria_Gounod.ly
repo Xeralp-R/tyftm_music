@@ -26,9 +26,9 @@ pianovoice = {
         e''2. r4 | \newline
     % 5
         a''2~ a''8 a' b'  c'' |
-        d''4.( e''8) d''2 |
+        d''4..( e''16) d''2 |
         g''2~ g''8 g' a' b' |
-        c''4.( d''8) c''2 | \newline
+        c''4..( d''16) c''2 | \newline
         c'''2~ c'''8 c'' d''( e'') | 
     % 10
         fis''4.( e''8 d''4) a' |
@@ -93,34 +93,42 @@ right = {
     \tempo "Andante Semplice"
     <<
         \new Voice = "canto" {
+            \showStaffSwitch
+
             s1 |
             s1 |
             s1 |
             s1 |
 
             \voiceOne
+            \footnote "*" #'(-1 . 1) \markup {
+                \column {
+                    "* All notes in the upper staff are for the right hand, and those in the lower staff for the left hand,"
+                    "  except where indicated otherwise."
+                }
+            }
             e''1^\markup{\italic "Le Chant bien marqué et très lié. (avec le sentiment comtemplatif.)"} |
             f''1 |
-            g''2.( d''4) |
+            g''2. d''4 |
             e''2. r4 |
         % 5
-            a''2~ a''8 a' b'  c'' |
-            d''4.( e''8) d''2 |
-            g''2~ g''8 g' a' b' |
-            c''4.( d''8) c''2 | 
-            c'''2~ c'''8 c'' d''( e'') | 
+            a''2~ a''8\noBeam \to_lower a' b'  c'' \to_staff "upper" |
+            d''4.. e''16 d''2 |
+            g''2~ g''8\noBeam \to_lower g' a' b' \to_staff "upper" |
+            c''4.. d''16 c''2 | 
+            c'''2~ \oneVoice c'''8 c'' d'' e'' \voiceOne | 
         % 10
-            fis''4.( e''8 d''4) a' |
+            fis''4. e''8^\markup{"m.s."} d''4 a' |
             b'2~ b'8 r8 d''4 |
-            e''2~ e''8 e''( f'' g'') | 
+            e''2~ \oneVoice e''8 e'' f'' g'' \voiceOne | 
             a''4. a'8 a'4 r4 |
-            d''2~ d''8 d''( e'') f'' |
+            d''2~ \oneVoice d''8 d'' e'' f'' \voiceOne |
         % 15
-            g''2 g'4 r4 |
-            c''2~ c''8 c''8( d'' e'') | 
-            f''2~ f''8 f''8( g'' a'') |
-            b''4. a''8  g''4( d''4) |
-            e''2. r4 |
+            g''2 g'2 |
+            c''2~ \oneVoice c''8 c''8 d'' e'' \voiceOne | 
+            f''2~ \oneVoice f''8 f''8 g'' a'' |
+            b''4. a''8  g''4 d''4 |
+            e''2 r2^\markup{"turn page"} \allowPageTurn |
         % 20
             g''2 e''4 r8. e''16 | 
             a''2 a'4 r4 |
@@ -159,22 +167,37 @@ right = {
             \to_lower b16 d'             f'16 g'~   g'  d' f'  g'  |
             c'16 e'           \to_upper  g'16 c''   e'' g' c'' e'' 
             \to_lower c'16 e' \to_upper  g'16 c''   e'' g' c'' e'' | 
-            r8   a'16 e''   a'' a' e'' a'' r8   a'16 e''   a'' a' e'' a'' |
-            r8   fis'16 a'   d'' fis' a' d'' r8   fis'16 a'   d'' fis' a' d'' |
-            r8   g'16 d''   g'' g' d'' g'' r8   g'16 d''   g'' g' d'' g'' |
-            r8   e'16 g'   c'' e' g' c'' r8   e'16 g'   c'' e' g' c'' |
-            r8   e'16 g'   c'' e' g' c'' r8   e'16 g'   c'' e' g' c'' |
+            \to_lower c'16 e' \to_upper  a'16 e''   a'' a' e'' a'' 
+            \to_lower c'16 e' \to_upper  \parenthesize a'16  e''   a'' a' e'' a'' |
+            \to_lower c'16 d' \to_upper  fis'16 a'   d'' fis' a' r
+            \to_lower c'16 d' \to_upper  fis'16 a'   d'' fis' a' d'' |
+            \to_lower b16 d'  \to_upper  g'16 d''   g'' g' d'' g'' 
+            \to_lower b16 d'  \to_upper  \parenthesize g'16 d''   g'' g' d'' g'' |
+            \to_lower b16 c'  \to_upper  e'16 g'   c'' e' g' r 
+            \to_lower b16 c'  \to_upper  e'16 g'   c'' e' g' c'' |
+            \to_lower a16 c'  \to_upper  e'16 g'   c'' e' g' c'' 
+            \to_lower a16 c'             e'16 g'~  g'  e' g' c'' |
             %% 10
-            r8   d'16 fis'   c'' d' fis' c'' r8   d'16 fis'   c'' d' fis' c'' |
-            r8   d'16 g'   b' d' g' b' r8   d'16 g'   b' d' g' b' |
-            r8   e'16 g'   cis'' e' g' cis'' r8   e'16 g'   cis'' e' g' cis'' |
-            r8   d'16 a'   d'' d' a' d'' r8   d'16 a'   d'' d' a' d'' | 
-            r8   d'16 f'   b' d' f' b' r8   d'16 f'   b' d' f' b' |
-            r8   c'16 g'   c'' c' g' c'' r8   c'16 g'   c'' c' g' c'' |
-            r8   a16 c'   f' a c' f' r8   a16 c'   f' a c' f' | 
-            r8   a16 c'   f' a c' f' r8   a16 c'   f' a c' f' |
-            r8   g16 b   f' g b f' r8   g16 b   f' g b f' |
-            r8   g16 c'   e' g c' e' r8   g16 c'   e' g c' e' |
+            d16 a             \to_upper  d'16 fis'   c'' d' fis' c'' 
+            \to_lower d16 a   \to_upper  d'16 fis'   a'  d' fis' a' |
+            \to_lower g16 b   \to_upper  d'16 g'   b' d' g' b' 
+            \to_lower g16 b   \to_upper  d'16 g'   r  d' g' b' |
+            \to_lower g16 bes \to_upper  e'16 g'   cis'' e' g' cis'' 
+            \to_lower g16 bes \clef "treble"  e'16 g'   cis'' e' g' cis'' |
+            \clef "bass" f16 a   \to_upper  d'16 a'   d'' d' a' d'' 
+            \to_lower f16 a   \to_upper  d'16 a'   d'' d' a' d'' | 
+            \to_lower f16 aes \to_upper  d'16 f'   b' d' f' b' 
+            \to_lower f16 aes \clef "treble"  d'16 f'   b' d' f' b' |
+            \clef "bass" e16 g   \to_upper  c'16 g'   c'' c' g' c'' 
+            \to_lower e16 g   \to_upper  c'16 g'   c'' c' g' c'' |
+            \to_lower e16 f   \to_upper  a16 c'   f' a c' f' 
+            \to_lower e16 f              a16 c'   f' a c' f' | 
+            d16 f             \to_upper  a16 c'   f' a c' f' 
+            \to_lower d16 f              a16 c'   f' a c' f' |
+            g,16 d  g16 b   f' g b f' 
+            g,16 d  g16 b   f' g b f' |
+            c16  e  g16 c'   e' g c' e' 
+            c16  e  g16 c'   e' g c' e' |
             %% 20
             r8   bes16 c'   e' bes c' e' r8   bes16 c'   e' bes c' e' |
             r8   a16 c'   e' a c' e' r8   a16 c'   e' a c' e' |
@@ -221,24 +244,23 @@ left = {
         s16 d'8. ~ d'4 s16 d'8. ~ d'4 |
         s16 d'8. ~ d'4 s2 |
         s16 e'8. ~ e'4 s16 e'8. ~ e'4 |
-        \voiceOne
-        r16 e'8. ~ e'4 r16 e'8. ~ e'4 |
-        r16 d'8. ~ d'4 r16 d'8. ~ d'4 |
-        r16 d'8. ~ d'4 r16 d'8. ~ d'4 |
-        r16 c'8. ~ c'4 r16 c'8. ~ c'4 |
-        \clef "bass"
-        r16 c'8. ~ c'4 r16 c'8. ~ c'4 |
+        s16 e'8. ~ e'4 s2 |
+        s16 d'8. ~ d'4 s16 d'8. ~ d'4 |
+        s16 d'8. ~ d'4 s2 |
+        s16 c'8. ~ c'4 s16 c'8. ~ c'4 |
+        s16 c'8. ~ c'4 s2 |
         %% 10
-        r16 a8. ~ a4 r16 a8. ~ a4 |
-        r16 b8. ~ b4 r16 b8. ~ b4 |
-        r16 bes8. ~ bes4 r16 bes8. ~ bes4 |
-        r16 a8. ~ a4 r16 a8. ~ a4 |
-        r16 as8. ~ as4 r16 as8. ~ as4 |
-        r16 g8. ~ g4 r16 g8. ~ g4 |
-        r16 f8. ~ f4 r16 f8. ~ f4 |
-        r16 f8. ~ f4 r16 f8. ~ f4 |
-        r16 d8. ~ d4 r16 d8. ~ d4 |
-        r16 e8. ~ e4 r16 e8. ~ e4 |
+        \clef "bass"
+        s16 a8. ~ a4 s16 a8. ~ a4 |
+        s16 b8. ~ b4 s16 b8. ~ b4 |
+        s16 bes8. ~ bes4 s2 |
+        s16 a8. ~ a4 s16 a8. ~ a4 |
+        s16 as8. ~ as4 s2 |
+        s16 g8. ~ g4 s16 g8. ~ g4 |
+        s16 f8. ~ f4 s2 |
+        s16 f8. ~ f4 s2 |
+        s1 |
+        s1 |
         %% 20
         r16 g8. ~ g4 r16 g8. ~ g4 |
         r16 f8. ~ f4 r16 f8. ~ f4 |
@@ -317,6 +339,10 @@ left = {
 %% Bring the two hands together
 %%   
 Ave_Maria_Gounod = \bookpart {
+    \paper {
+        page-breaking = #ly:page-turn-breaking
+    }
+
     \header{
         title =    "Ave Maria"
         subtitle = "Based on Bach's Prelude in C Major"
@@ -332,7 +358,9 @@ Ave_Maria_Gounod = \bookpart {
 
             \new PianoStaff <<
                 \set PianoStaff.connectArpeggios = ##t
-                \new Staff = "upper" \right
+                \new Staff = "upper" \with { 
+                    \consists "Page_turn_engraver" 
+                } \right
                 \new Staff = "lower" \with {
                     \consists "Span_arpeggio_engraver"
                 } \left
@@ -343,6 +371,7 @@ Ave_Maria_Gounod = \bookpart {
             \mergeDifferentlyDottedOn
             \mergeDifferentlyHeadedOn
             %\set Staff.pedalSustainStyle = #'mixed
+            \set Staff.minimumPageTurnLength = #(ly:make-moment 1/2)
             \context {
                 \Score 
                 \override SpacingSpanner.common-shortest-duration = 

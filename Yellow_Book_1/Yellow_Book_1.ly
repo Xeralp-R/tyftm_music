@@ -9,6 +9,10 @@
 
 \book {
     \bookpart {
+        \paper {
+            print-page-number = ##f
+        }
+
         \markup {
             \center-column {
                 \vspace #10

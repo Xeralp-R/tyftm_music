@@ -60,6 +60,7 @@
         \override MetronomeMark.font-size = #'0
         \override SpacingSpanner.common-shortest-duration = 
         #(ly:make-moment 1/16)
+        \override Score.Footnote.annotation-line = ##f
         skipBars = ##t
     }
     \context {
@@ -125,6 +126,10 @@ smallen_note = #(define-music-function (arg) (ly:music?)
 #})
 
 spacer_page = \bookpart {
+    \paper {
+        print-page-number = ##f
+    }
+    
     \markup {
         \center-column {
             \vspace #10
@@ -138,6 +143,10 @@ spacer_page = \bookpart {
 }
 
 blank_page = \bookpart {
+    \paper {
+        print-page-number = ##f
+    }
+
     \markup {
         \center-column {
             "    "
