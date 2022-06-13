@@ -118,7 +118,7 @@ right = {
             c''4.. d''16 c''2 | 
             c'''2~ \oneVoice c'''8 c'' d'' e'' \voiceOne | 
         % 10
-            fis''4. e''8^\markup{"m.s."} d''4 a' |
+            fis''4. e''8 d''4 a' |
             b'2~ b'8 r8 d''4 |
             e''2~ \oneVoice e''8 e'' f'' g'' \voiceOne | 
             a''4. a'8 a'4 r4 |
@@ -128,28 +128,28 @@ right = {
             c''2~ \oneVoice c''8 c''8 d'' e'' \voiceOne | 
             f''2~ \oneVoice f''8 f''8 g'' a'' |
             b''4. a''8  g''4 d''4 |
-            e''2 r2^\markup{"turn page"} \allowPageTurn |
+            e''2 r2\allowPageTurn |
         % 20
-            g''2 e''4 r8. e''16 | 
-            a''2 a'4 r4 |
-            a''2 c''4 r8. a''16 |
-            c'''2 es''4 r8. c'''16 |
-            c'''2 d''4 r4 | 
+            \voiceOne g''2 \oneVoice e''4 r8. e''16 | 
+            \voiceOne a''2 a'4 r4 |
+            a''2 \oneVoice c''4 r8. a''16 |
+            \voiceOne c'''2 \oneVoice es''4 r8. c'''16 |
+            \voiceOne c'''2 d''4 r4 | 
         % 25
-            d''2~ d''8 d''( c'') b' |
-            g''4.( e''8) c''4 r4 |
-            f''2~ f''8 f'' e'' d'' |
-            d'''4. b''8 g''2 | 
-            a''2~ a''8 a''( b'') c''' |
+            d''2~ \oneVoice d''8 d'' c'' b' |
+            g''4. e''8 \voiceOne c''4 r4 |
+            f''2~ \oneVoice f''8 f'' e'' d'' |
+            d'''4. b''8 \voiceOne g''2 | 
+            <a'' a'>2~ \oneVoice <a'' a'>8 <a'' a'> <b'' b'> <c''' c''> \voiceOne |
         % 30
-            e'''2~ e'''8 c''' g'' e'' |
-            d''2~ d''8 a'' b''( a'') |
-            a''8( g'') f''( d'') b'( g') f'( d') | 
+            <e''' e''>2~ \oneVoice <e''' e''>8 <c''' c''> <g'' g'> <e'' e'> \voiceOne |
+            <d'' d'>2~ \oneVoice <d'' d'>8 <a'' a'> <b'' b'> <a'' a'> |
+            <a'' a'>8->_\markup{\italic "molto marcato"} <g'' g'>-> <f'' f'>-> <d'' d'>-> b'-> g'-> f'-> d'-> | 
             c'1 |
-            c'1 |
+            <c' c''>1 |
         % 35
-            g'1 |
-            g'1 |
+            <g' g''>1 |
+            g''1\fermata _"arp." |
         }
         \new Voice = "accompaniment" {
             \voiceOne
@@ -199,28 +199,43 @@ right = {
             c16  e  g16 c'   e' g c' e' 
             c16  e  g16 c'   e' g c' e' |
             %% 20
-            r8   bes16 c'   e' bes c' e' r8   bes16 c'   e' bes c' e' |
-            r8   a16 c'   e' a c' e' r8   a16 c'   e' a c' e' |
-            r8   a16 c'   es' a c' es' r8   a16 c'   es' a c' es' |
-            r8   b16 c'   es' b c' es' r8   b16 c'   es' b c' es' | % Schwencke measure
-            r8   b16 c'   d' b c' d' r8   b16 c'   d' b c' d' |
-            r8   g16 b   d' g b d' r8   g16 b   d' g b d' |
-            r8   g16 c'   e' g c' e' r8   g16 c'   e' g c' e' |
-            r8   g16 c'   f' g c' f' r8   g16 c'   f' g c' f' |
-            r8   g16 b   f' g b f' r8   g16 b   f' g b f' |
-            r8   a16 c'   fis' a c' fis' r8   a16 c'   fis' a c' fis' |
+            c16  g  \to_upper bes16 c'   e' bes c' e' \to_lower
+            c16  g  bes16 c'   e' bes c' e' |
+            f,16 f  \to_upper a16 c'   e' a c' e' \to_lower
+            f,16 f  \to_upper a16 c'   e' a c' e' \to_lower |
+            fis,16 c  \to_upper a16 c'   es' a c' es' \to_lower
+            fis,16 c  a16 c'   es' a c' es' |
+            g,16 ees  \to_upper b16 c'   es' b c' es' \to_lower
+            g,16 ees  b16 c'   es' b c' es' | % Schwencke measure
+            aes,16 f  \to_upper b16 c'   d' b c' d' \to_lower
+            aes,16 f  \to_upper b16 c'   d' b c' d' \to_lower |
+            g,16   f  \to_upper g16 b   d' g b d' \to_lower
+            g,16   f  g16 b   d' g b d' |
+            g,16   e  g16 c'   e' g c' e' 
+            g,16   e  \to_upper g16 c'   e' g c' e' \to_lower |
+            g,16   d  \to_upper g16 c'   f' g c' f' \to_lower
+            g,16   d  g16 c'   f' g c' f' |
+            g,16   d  g16 b   f' g b f' 
+            g,16   d  \to_upper g16 b   f' g b f' \to_lower |
+            g,16 ees  \to_upper a16 c'   fis' a c' fis' \to_lower
+            g,16 ees  a16 c'   fis' a c' fis' |
             %% 30
-            r8   g16 c'   g' g c' g' r8   g16 c'   g' g c' g' |
-            r8   g16 c'   f' g c' f' r8   g16 c'   f' g c' f' |
-            r8   g16 b   f' g b f' r8   g16 b   f' g b f' |
-            r8   g16 bes   e' g bes e' r8   g16 bes   e' g bes e' | \voiceOne
+            g,16  e!  \to_upper g16 c'   g' g c' g' \to_lower
+            g,16   e  g16 c'   g' g c' g' |
+            g,16   d  \to_upper g16 c'   f' g c' f' \to_lower
+            g,16   d  g16 c'   f' g c' f' |
+            g,16   d  g16 b   f' g b f' 
+            g,16   d  g16 b   f' g b f' |
+            c,16   c  \to_upper g16 bes   e' g bes e' \to_lower 
+            c,16   c  \to_upper g16 bes   e' g bes e' \to_lower | \voiceOne
 
             % easier to read
             
-            r8 \change Staff = "lower" \once \override Slur.eccentricity = #-3.0 f16( a  \change Staff = "upper" c' f' c' a   
-            \change Staff = "lower" c' a f a   f d f d) | \change Staff = "upper" \oneVoice
+            r8 \change Staff = "lower" \once \override Slur.eccentricity = #-3.0 
+            f16(^"m.d." a  \change Staff = "upper" c' f' c' a   
+            \change Staff = "lower" c' a f a   f d f d) | \change Staff = "upper" \voiceTwo
             r8 g'16( b'   d'' f'' d'' b'   d'' b' g' b'   d' f' e' d') |
-            <e' g' c''>1\fermata
+            <e' g' c''>1
         }
     >>
 }
@@ -257,26 +272,27 @@ left = {
         s16 a8. ~ a4 s16 a8. ~ a4 |
         s16 as8. ~ as4 s2 |
         s16 g8. ~ g4 s16 g8. ~ g4 |
-        s16 f8. ~ f4 s2 |
-        s16 f8. ~ f4 s2 |
-        s1 |
-        s1 |
+        s16 f8. ~ f4 s16 f8. ~ f4 |
+        s16 f8. ~ f4 s16 f8. ~ f4 |
+        s16 d8. ~ d4 s16 d8. ~ d4 |
+        s16 e8. ~ e4 s16 e8. ~ e4 |
         %% 20
-        r16 g8. ~ g4 r16 g8. ~ g4 |
-        r16 f8. ~ f4 r16 f8. ~ f4 |
-        r16 c8. ~ c4 r16 c8. ~ c4 |
-        r16 es8. ~ es4 r16 es8. ~ es4 | % Schwencke measure
-        r16 f8. ~ f4 r16 f8. ~ f4 |
-        r16 f8. ~ f4 r16 f8. ~ f4 |
-        r16 e8. ~ e4 r16 e8. ~ e4 |
-        r16 d8. ~ d4 r16 d8. ~ d4 |
-        r16 d8. ~ d4 r16 d8. ~ d4 |
-        r16 es8. ~ es4 r16 es8. ~ es4 |
+        \voiceFour
+        s16 g8. ~ g4 s16 g8. ~ g4 |
+        s16 f8. ~ f4 s16 f8. ~ f4 |
+        s16 c8. ~ c4 s16 c8. ~ c4 |
+        s16 es8. ~ es4 s16 es8. ~ es4 | % Schwencke measure
+        s16 f8. ~ f4 s16 f8. ~ f4 |
+        s16 f8. ~ f4 s16 f8. ~ f4 |
+        s16 e8. ~ e4 s16 e8. ~ e4 |
+        s16 d8. ~ d4 s16 d8. ~ d4 |
+        s16 d8. ~ d4 s16 d8. ~ d4 |
+        s16 es8. ~ es4 s16 es8. ~ es4 |
         %% 30
-        r16 e!8. ~ e4 r16 e8. ~ e4 |
-        r16 d8. ~ d4 r16 d8. ~ d4 |
-        r16 d8. ~ d4 r16 d8. ~ d4 |
-        r16 c8. ~ c4 r16 c8. ~ c4 |
+        s16 e!8. ~ e4 s16 e8. ~ e4 |
+        s16 d8. ~ d4 s16 d8. ~ d4 |
+        s16 d8. ~ d4 s16 d8. ~ d4 |
+        s16 c8. ~ c4 s16 c8. ~ c4 |
     
         r16 c8._~ c4_~ \stemDown c2 \stemUp |
         r16 b,8. ~ b,4 ~ b,2 |
@@ -311,6 +327,7 @@ left = {
         g, g, |
         c c |
         %% 20
+        \voiceTwo
         c c |
         f, f, |
         fis, fis, |
@@ -343,6 +360,7 @@ Ave_Maria_Gounod = \bookpart {
         page-breaking = #ly:page-turn-breaking
     }
 
+    \tocItem \markup "Bach-Gounod. Ave Maria"
     \header{
         title =    "Ave Maria"
         subtitle = "Based on Bach's Prelude in C Major"
