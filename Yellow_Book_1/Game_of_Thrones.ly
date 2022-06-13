@@ -240,10 +240,12 @@ PartPOneVoiceFive =  {
 
 % The score definition
 Game_of_Thrones = \bookpart {
+    \tocItem \markup "Djawadi. Game of Thrones Main Theme"
     \header {
         title =    "Game of Thrones"
         subtitle = "Main Theme"
         composer = "Ramin Djawadi"
+        arranger = "Patrik Pietschmann"
         tagline =  ##f
     }
 

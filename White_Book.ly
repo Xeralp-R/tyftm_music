@@ -7,8 +7,18 @@
 \include "Orange_Book/Canon_in_D.ly"
 \include "Orange_Book/Come_Back_to_Sorrento.ly"
 
+\include "Yellow_Book_1/Ave_Maria_Gounod.ly"
+\include "Yellow_Book_1/Game_of_Thrones.ly"
+\include "Yellow_Book_1/Tarantella.ly"
+\include "Yellow_Book_1/Bohemian_Rhapsody.ly"
+
 \book {
+    \header {
+        tagline = ##f
+    }
+
     \bookpart {
+        \remove_page_number
         \markup {
             \center-column {
                 \vspace #10
@@ -27,6 +37,7 @@
 
     \bookpart { \blank_page }
     \bookpart {
+        \remove_page_number
         \markup {
             \center-column {
                 \vspace #10
@@ -47,6 +58,7 @@
 
     \bookpart { \blank_page }
     \bookpart {
+        \remove_page_number
         \markup {
             \center-column {
                 \vspace #10
@@ -59,4 +71,9 @@
             }
         }
     }
+
+    \bookpart { \Ave_Maria_Gounod         }
+    \bookpart { \Game_of_Thrones          }
+    \bookpart { \Tarantella               }
+    \bookpart { \Bohemian_Rhapsody        }
 }

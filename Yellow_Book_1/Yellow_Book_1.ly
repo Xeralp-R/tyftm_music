@@ -26,7 +26,7 @@
         }
     }
     \bookpart { \Ave_Maria_Gounod         }
-    %{\bookpart { \Game_of_Thrones          }
+    \bookpart { \Game_of_Thrones          }
     \bookpart { \Tarantella               }
-    \bookpart { \Bohemian_Rhapsody        }%}
+    \bookpart { \Bohemian_Rhapsody        }
 }

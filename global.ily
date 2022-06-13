@@ -125,11 +125,15 @@ smallen_note = #(define-music-function (arg) (ly:music?)
   \tweak font-size -4 $arg
 #})
 
+remove_page_number = \paper {
+    print-page-number = ##f
+}
+
 spacer_page = \bookpart {
     \paper {
         print-page-number = ##f
     }
-    
+
     \markup {
         \center-column {
             \vspace #10

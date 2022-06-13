@@ -1,8 +1,7 @@
 \version "2.22.1"
 % automatically converted by musicxml2ly from Tarantella.musicxml
 
-newline = { \break }
-newpage = { \pageBreak }
+\include "../global.ily"
 
 %% additional definitions required by the score:
 fz = #(make-dynamic-script "fz")
@@ -269,8 +268,7 @@ PartPOneVoiceOne =  {
     c''8 ( -3 e''8 d''8 c''8 b'8 a'8 ) | 
     gis'8 ( -3 b'8 a'8 gis'8 fis'8 e'8 | 
     a'4. ) a''8 ( _\pp e''8 c''8 ) | \newline
-    a''8 ( e''8 c''8 ) a''8 ( \cresc_molto
-     e''8 c''8 ) | 
+    a''8 (\cresc_molto e''8 c''8 ) a''8 ( e''8 c''8 ) | 
     a''8 ( e''8 c''8 ) a''8 ( e''8 c''8 ) |
 % 190
     a''8 (  _\ff e''8 c''8 ) a''8 ( e''8 c''8 ) | 
@@ -563,20 +561,16 @@ PartPOneVoiceFive =  {
     a,,2. ) | \voiceOne
     e,2. | 
     a,,2. \bar ".."
-    }
-
-PartPOneVoiceTwo =  {
-    \clef "treble" \time 6/8 \key c \major s4*21 | 
-    s4*183 \bar "||"
-    \key a \major s4*51 \bar "||"
-    \key c \major s1*12 \bar "||"
-    \key a \major s1*15 \bar "||"
-    \key c \major s4*279 \bar ".."
-    }
+}
 
 
 % The score definition
 Tarantella = \bookpart {
+    \paper {
+        page-breaking = #ly:page-turn-breaking
+    }
+
+    \tocItem \markup "Pieczonka. Tarantella"
     \header {
         title =    "Tarantella"
         composer = "A. Pieczonka"
@@ -585,20 +579,25 @@ Tarantella = \bookpart {
     
     \score {
         <<
-
             \new PianoStaff
             <<
-                \context Staff = "1" << 
-                        \mergeDifferentlyDottedOn\mergeDifferentlyHeadedOn
-                        \PartPOneVoiceOne
-                >> 
-                \context Staff = "2" <<
-                        \mergeDifferentlyDottedOn\mergeDifferentlyHeadedOn
-                        \PartPOneVoiceFive
-                >>
+                \context Staff = "1" \with { 
+                    \consists "Page_turn_engraver" 
+                } \PartPOneVoiceOne
+                \context Staff = "2" \PartPOneVoiceFive
             >>
 
         >>
-        \layout {}
+        
+        \layout {
+            \mergeDifferentlyDottedOn
+            \mergeDifferentlyHeadedOn
+            \set Staff.minimumPageTurnLength = #(ly:make-moment 3/8)
+            \context {
+                \Score 
+                \override SpacingSpanner.common-shortest-duration = 
+                #(ly:make-moment 1/8)
+            }
+        }
     }
 }
