@@ -32,36 +32,35 @@ soprano_solo = {
 
   R2.*16 |
 
-  % undo this another time
   \key d \major
-  \transpose c d \relative c' {
-    e4^\ff f4 g4 |
-    g4 f2 |
-    d4 e4 f4 |
-    f4 e2 |
-    c4 d4 e4 |
-    e4 d4 c4 |
-    f8 e8 d4 c4 |
-    d2. |
+  \relative c'' {
+    R2.
+    a2.~\ff |
+    a2.
+    r4 fis4 e4 |
+    fis4 fis2~ |
+    fis2. |
+    fis2. |
+    e4 fis g |
 
-    e4 f4 g4 |
-    g4 f2 |
-    e4 a4 b4 |
-    b4 c2 |
-    a4 c4 a4 |
-    g4 e2 |
+    a2.~ |
+    a2 b4 |
+    cis2. |
+    d2. |
+    R2. |
+    R2. |
     R2. |
     R2. |
 
-    a4 c4 a4 |
-    g4 e4 c4 |
-    f8 e8 d2~( |
-    d2 c4 |
-    d2. |
-    d2~ d8) c8 |
-    c2.~ |
-    c2.~ | 
-    c2.\fermata | \bar "|."
+    b4 d4 b4 |
+    a4 fis4 d4 |
+    g8 fis8 e2~( |
+    e2 d4 |
+    e2. |
+    e2~ e8) d8 |
+    d2.~ |
+    d2.~ | 
+    d2.\fermata | \bar "|."
   }
 }
 
@@ -72,13 +71,11 @@ sop_solo_lyr = \lyricmode {
   Strong __ and faint,
   All wel -- come to come __ in -- side! __
 
-  Come to the ta -- ble!
-  En -- ter His pre -- sence, 
-  Feast in thanks -- gi -- ving and 
-  ce -- le -- brate His love,
-  Come to the ta -- ble!
-  En -- ter His pre -- sence!
-  Feast in thanks -- gi -- ving,
+  Come! __
+  To the ta -- ble, __
+  And let us feast __
+  in His love!
+  
   Feast in thanks -- gi -- ving and
   ce -- le -- brate His love.
 }
@@ -114,35 +111,35 @@ bass_solo = {
     a2) r4 |
   }
 
-    \key d \major
-  \transpose c d \relative c {
-    e4^\ff f4 g4 |
-    g4 f2 |
-    d4 e4 f4 |
-    f4 e2 |
-    c4 d4 e4 |
-    e4 d4 c4 |
-    f8 e8 d4 c4 |
-    d2. |
+  \key d \major
+  \relative c {
+    R2.
+    a2.~\ff |
+    a2.
+    r4 fis4 e4 |
+    fis4 fis2~ |
+    fis2. |
+    fis2. |
+    e4 fis g |
 
-    e4 f4 g4 |
-    g4 f2 |
-    e4 a4 b4 |
-    b4 c2 |
+    a2.~ |
+    a2 b4 |
+    cis2. |
+    d2. |
     R2. |
     R2. |
-    a4 c4 a4 |
-    b8( c8) c2 |
+    R2. |
+    R2. |
 
-    a4 c4 a4 |
-    g4 e4 c4 |
-    f8 e8 d2~( |
-    d2 c4 |
-    d2. |
-    d2~ d8) c8 |
-    c2.~ |
-    c2.~ |  
-    c2.\fermata | \bar "|."
+    b'4 d4 b4 |
+    a4 fis4 d4 |
+    g8 fis8 e2~( |
+    e2 d4 |
+    e2. |
+    e2~ e8) d8 |
+    d2.~ |
+    d2.~ | 
+    d2.\fermata | \bar "|."
   }
 }
 
@@ -153,13 +150,11 @@ bass_solo_lyr = \lyricmode {
   He makes us whole,
   one bo -- dy we now __ a -- rise! __
 
-  Come to the ta -- ble!
-  En -- ter His pre -- sence, 
-  Feast in thanks -- gi -- ving and 
-  ce -- le -- brate His love,
-  Come to the ta -- ble!
-  En -- ter His pre -- sence!
-  Feast in thanks -- gi -- ving!
+  Come! __
+  To the ta -- ble, __
+  And let us feast __
+  in His love!
+
   Feast in thanks -- gi -- ving and
   ce -- le -- brate His love.
 }
@@ -589,19 +584,19 @@ saxophone = \transpose ees c' {
 
   \key d \major
 
-  d'4_\markup{\dynamic "ff" \italic "quasi tromba"}-> \tuplet 3/2 {d'8 d' d'} d' d' |
-  a'4-> \tuplet 3/2 {a'8 a' a'} a' a' |
-  cis'4-> \tuplet 3/2 {cis'8 cis' cis'} cis' cis' |
-  b'4-> \tuplet 3/2 {b'8 b' b'} b' b' |
-  b4_\markup{\italic "sim"} \tuplet 3/2 {b8 b b} b b |
-  fis'4 \tuplet 3/2 {fis'8 fis' fis'} fis' fis |
-  e'4 \tuplet 3/2 {e'8 e' e'} e' e' |
-  a'4 \tuplet 3/2 {a'8 a' a'} a' a' |
+  d'4_\markup{\dynamic "ff" \italic "quasi tromba"}-> \tuplet 3/2 {d'8 d' d'} d'4 |
+  a'4-> \tuplet 3/2 {a'8 a' a'} a'4 |
+  cis'4-> \tuplet 3/2 {cis'8 cis' cis'} cis'4 |
+  b'4-> \tuplet 3/2 {b'8 b' b'} b'4 |
+  b4_\markup{\italic "sim"} \tuplet 3/2 {b8 b b} b4 |
+  fis'4 \tuplet 3/2 {fis'8 fis' fis'} fis'4 |
+  e'4 \tuplet 3/2 {e'8 e' e'} e'4 |
+  a'4 \tuplet 3/2 {a'8 a' a'} a'4 |
 
-  d'4 \tuplet 3/2 { d'8 d' d' } d' d' |
-  fis'4 \tuplet 3/2 { fis'8 fis' fis' } fis' fis' |
-  e'4 \tuplet 3/2 { e'8 e' e' } e' e' |
-  b'4 \tuplet 3/2 { b'8 b' b' } b' b' |
+  d'4 \tuplet 3/2 { d'8 d' d' } d'4 |
+  fis'4 \tuplet 3/2 { fis'8 fis' fis' } fis'4 |
+  e'4 \tuplet 3/2 { e'8 e' e' } e'4 |
+  b'4 \tuplet 3/2 { b'8 b' b' } b'4 |
   b8->-. r8 r4 r4 |
   r4 b8 r8 b8 r8 |
   cis'8->-. r8 r4 r |
@@ -609,10 +604,10 @@ saxophone = \transpose ees c' {
 
   g'4 fis e |
   d'4 e fis |
-  g4 \tuplet 3/2 {g8 g g} g g |
-  g4 \tuplet 3/2 {g8 g g} g g |
-  a4 \tuplet 3/2 {a8 a a} a a |
-  a4 \tuplet 3/2 {a8 a a} a a |
+  g4 \tuplet 3/2 {g8 g g} g4 |
+  g4 \tuplet 3/2 {g8 g g} g4 |
+  a4 \tuplet 3/2 {a8 a a} a4 |
+  a4 \tuplet 3/2 {a8 a a} a4 |
   d'2.~ |
   d'2.~ |
   d'2.\fermata | \bar "|."
@@ -731,13 +726,10 @@ piano_upper = {
     r4 \tuplet 3/2 { f,8( a c } f4-.) |
     r4 \tuplet 3/2 { e,8( gis b } e4-.) |
     r4 \tuplet 3/2 { a,8( c e } a4-.) |
+    r4 \tuplet 3/2 { f,8( a c } f4-.) |
+    r4 \tuplet 3/2 { d,8( f a } c4-.) |
+    r4 \tuplet 3/2 { g,8( b d } g4-.) |
   }
-  \clef treble
-  f''8[( f']) e''[( e']) d''[( d']) |
-  c''[( c']) b'[( b]) a'[( a]) |
-  \clef bass
-  r4 \tuplet 3/2 { g8( b d' } g'4-.) |
-  \clef treble
   <c' e' g' c''>2. | \newline_final
 
   \relative c'' {
@@ -1025,13 +1017,12 @@ first_violin = {
     f2 a4 |
     gis2 b4 |
     c2 b4 |
+    a,4 c4 a4 |
+    g4 e2 |
+    R2. |
+    R2. |
   }
   \relative c''' {
-    b8 r8 r4 r4 |
-    r4 b8 r b8 r |
-    cis8  r8 r4 r4 |
-    r4 cis8 r cis8 r |
-
     b2 g4 |
     fis2  d4 |
     e2.~ |
@@ -1144,13 +1135,12 @@ second_violin = {
     f2 a4 |
     gis2 b4 |
     c2 b4 |
+    a4 c4 a4 |
+    g4 e2 |
+    R2. |
+    R2. |
   }
   \relative c'' {
-    b8 r8 r4 r4 |
-    r4 b8 r b8 r |
-    cis8  r8 r4 r4 |
-    r4 cis8 r cis8 r |
-
     b2 g4 |
     fis2  d4 |
     e2.~ |
@@ -1263,13 +1253,12 @@ viola = {
     f2 a4 |
     gis2 b4 |
     c2 b4 |
+    R2. |
+    R2. |
+    a4 c4 a4 |
+    b8 c8 c2 |
   }
   \relative c' {
-    b8 r8 r4 r4 |
-    r4 b8 r b8 r |
-    cis8  r8 r4 r4 |
-    r4 cis8 r cis8 r |
-
     b2 g4 |
     fis2  d4 |
     e2.~ |
@@ -1382,13 +1371,12 @@ cello = {
     f2 a4 |
     gis2 b4 |
     c2 b4 |
+    R2. |
+    R2. |
+    a'4 c4 a4 |
+    b8 c8 c2 |
   }
   \relative c {
-    b8 r8 r4 r4 |
-    r4 b8 r b8 r |
-    cis8  r8 r4 r4 |
-    r4 cis8 r cis8 r |
-
     b2 g4 |
     fis2  d4 |
     e2.~ |
