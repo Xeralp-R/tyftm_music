@@ -1,21 +1,11 @@
 \version "2.22.1"
 \include "./global.ily"
 
-% convenience functions
-
-shift_down = {
-  \change Staff = "piano_lower" \voiceOne 
-}
-
-shift_back_up = {
-  \change Staff = "piano_upper" \oneVoice
-}
-
 soprano_solo = {
   \time 3/4
   \key c \major
   \clef treble
-  \tempo "Allegro triomphante" 4 = 160
+  \tempo "Allegro trionfale" 4 = 160
 
   R2.*16 |
 
@@ -97,7 +87,7 @@ bass_solo = {
   \time 3/4
   \key c \major
   \clef bass
-  \tempo "Allegro triomphante" 4 = 160
+  \tempo "Allegro trionfale" 4 = 160
 
   R2.*16 |
 
@@ -178,7 +168,7 @@ soprano = \relative c' {
   \time 3/4
   \key c \major
   \clef treble
-  \tempo "Allegro triomphante" 4 = 160
+  \tempo "Allegro trionfale" 4 = 160
   \voiceOne
 
   e4^\f f4 g4 |
@@ -258,7 +248,7 @@ alto = \relative c' {
   \time 3/4
   \key c \major
   \clef treble
-  \tempo "Allegro triomphante" 4 = 160
+  \tempo "Allegro trionfale" 4 = 160
   \voiceTwo
 
   c4_\f c4 d4 |
@@ -338,7 +328,7 @@ tenor = \relative c' {
   \time 3/4
   \key c \major
   \clef bass
-  \tempo "Allegro triomphante" 4 = 160
+  \tempo "Allegro trionfale" 4 = 160
   \voiceOne
 
   g4^\f g4 b4 |
@@ -418,7 +408,7 @@ bass = \relative c {
   \time 3/4
   \key c \major
   \clef bass
-  \tempo "Allegro triomphante" 4 = 160
+  \tempo "Allegro trionfale" 4 = 160
   \voiceTwo
 
   c4_\f c4 g'4 |
@@ -658,7 +648,7 @@ piano_upper = {
   \time 3/4  
   \key c \major
   \clef treble
-  \tempo "Allegro triomphante" 4 = 160
+  \tempo "Allegro trionfale" 4 = 160
 
   <e' e''>2_\f <g' g''>4 |
   <f' f''>2 <e' e''>4 |
@@ -933,6 +923,110 @@ piano_lower = {
   <d, d>2.\fermata | \bar "|."
 }
 
+first_violin = {
+  \clef treble 
+  \key c \major 
+  \time 3/4
+
+  \relative c'' {
+    e2_\f g4 |
+    f2 e4 |
+    d2 f4 |
+    e2 d4 |
+    c2 d4 |
+    e2 f4 |
+    d2 c4 |
+    d2. |
+
+    e2 g4 |
+    f2 a4 |
+    g2 b4 |
+    c2 b4 |
+    a4 g4 f4 |
+    e4 d4 c4 |
+    g2 c4 |
+    c2. |
+  }
+}
+
+second_violin = {
+  \time 3/4
+  \key c \major
+  \clef treble
+
+  \relative c' {
+    e2_\f g4 |
+    f2 e4 |
+    d2 f4 |
+    e2 d4 |
+    c2 d4 |
+    e2 f4 |
+    d2 c4 |
+    d2. |
+
+    e2 g4 |
+    f2 a4 |
+    g2 b4 |
+    c2 b4 |
+    a4 g4 f4 |
+    e4 d4 c4 |
+    g2 c4 |
+    c2. |
+  }
+}
+
+viola = {
+  \time 3/4
+  \key c \major
+  \clef alto
+
+  \relative c {
+    e2_\f g4 |
+    f2 e4 |
+    d2 f4 |
+    e2 d4 |
+    c2 d4 |
+    e2 f4 |
+    d2 c4 |
+    d2. |
+
+    e2 g4 |
+    f2 a4 |
+    g2 b4 |
+    c2 b4 |
+    a4 g4 f4 |
+    e4 d4 c4 |
+    g2 c4 |
+    c2. |
+  }
+}
+
+cello = {
+  \time 3/4
+  \key c \major
+  \clef bass
+
+  \relative c {
+    e2_\f g4 |
+    f2 e4 |
+    d2 f4 |
+    e2 d4 |
+    c2 d4 |
+    e2 f4 |
+    d2 c4 |
+    d2. |
+
+    e2 g4 |
+    f2 a4 |
+    g2 b4 |
+    c2 b4 |
+    a4 g4 f4 |
+    e4 d4 c4 |
+    g2 c4 |
+    c2. |
+  }
+}
+
 \book {
   \paper {
     #(set-paper-size "philippine-legal")
@@ -999,6 +1093,13 @@ piano_lower = {
         } \saxophone
       >>
 
+      \new RhythmicStaff = "bell" \with {
+        midiInstrument = "tinkle bell"
+        instrumentName = "Bell (ad lib.)"
+        shortInstrumentName = "Bell"
+        \RemoveEmptyStaves
+      } \bell
+
       \new PianoStaff \with {
         instrumentName = "Pianoforte"
         midiInstrument = "acoustic grand"
@@ -1008,12 +1109,35 @@ piano_lower = {
         \new Staff = "piano_lower" \piano_lower
       >>
 
-      \new RhythmicStaff = "bell" \with {
-        midiInstrument = "tinkle bell"
-        instrumentName = "Bell (ad lib.)"
-        shortInstrumentName = "Bell"
-        \RemoveEmptyStaves
-      } \bell
+      \new StaffGroup <<
+        \new StaffGroup \with {
+          systemStartDelimiter = #'SystemStartSquare
+          instrumentName = "Violin"
+          shortInstrumentName = "Vln."
+          midiInstrument = "violin"
+        } <<
+          \new Staff \first_violin
+          \new Staff \second_violin
+        >>
+
+        \new Staff \with {
+          instrumentName = "Viola"
+          shortInstrumentName = "Vla."
+          midiInstrument = "viola"
+        } \viola
+
+        \new Staff \with {
+          instrumentName = "Violoncello"
+          shortInstrumentName = "Vcl."
+          midiInstrument = "cello"
+        } \cello
+
+        \new Staff \with {
+          instrumentName = "Contrabass"
+          shortInstrumentName = "Cbs."
+          midiInstrument = "contrabass"
+        } \cello
+      >>
     >>
     \layout {
       \RemoveEmptyStaffContext
