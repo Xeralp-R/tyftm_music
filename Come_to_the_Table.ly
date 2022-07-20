@@ -1,5 +1,5 @@
 \version "2.22.1"
-\include "./global.ily"
+\include "./fullscore.ily"
 
 soprano_solo = {
   \time 3/4
@@ -191,7 +191,7 @@ soprano = \relative c' {
 
   R2.*16 
 
-  e4 f4 g4 |
+  e4^\f f4 g4 |
   g4 f2 |
   d4 e4 f4 |
   f4 e2 |
@@ -251,62 +251,63 @@ alto = \relative c' {
   \tempo "Allegro trionfale" 4 = 160
   \voiceTwo
 
-  c4_\f c4 d4 |
-  d4 c2 |
-  b4 b4 b4 |
-  c2 b4 |
-  a4 a4 a4 |
-  b4 b4 a4 |
-  a8 a8 a4 a4 |
+  e4_\f f4 g4 |
+  g4 f2 |
+  d4 e4 f4 |
+  f4 e2 |
+  c4 d4 e4 |
+  e4 d4 c4 |
+  f8 e8 d4 c4 |
+  d2. |
 
-  b4( c4 d4) |
-  c4 c4 b4 |
-  c2 d4 |
-  e4 e4 gis4 |
-  e2 e4 |
-  f4 g4 f4 |
-  e4 c4 a4 |
-  b8 b8 b4 a4 |
-  g2. | \bar "||"
+  e4 f4 g4 |
+  g4 f2 |
+  e4 a4 b4 |
+  b4 c2 |
+  a4 c4 a4 |
+  g4 e4 c4 |
+  f8 e8 d4 c4 |
+  c2. | \bar "||"
 
   R2.*16
 
-  c4 c4 d4 |
-  d4 c2 |
-  b4 b4 b4 |
-  c2 b4 |
-  a4 a4 a4 |
-  b4 b4 a4 |
-  a8 a8 a4 a4 |
+  e4_\f f4 g4 |
+  g4 f2 |
+  d4 e4 f4 |
+  f4 e2 |
+  c4 d4 e4 |
+  e4 d4 c4 |
+  f8 e8 d4 c4 |
+  d2. |
 
-  b4( c4 d4) |
-  c4 c4 b4 |
-  c2 d4 |
-  e4 e4 gis4 |
-  e2 e4 |
-  f4 g4 f4 |
-  e4 c4 a4 |
-  b8 b8 b4 a4 |
-  g2. | \bar "||"
+  e4 f4 g4 |
+  g4 f2 |
+  e4 a4 b4 |
+  b4 c2 |
+  a4 c4 a4 |
+  g4 e4 c4 |
+  f8 e8 d4 c4 |
+  c2. | \bar "||"
 
   R2.*16
 
   % undo this another time
   \key d \major
   \transpose c d \relative c' {
-    e4_\ff f4 g4 |
-    g4 f2 |
-    d4 e4 f4 |
-    f4 e2 |
-    c4 d4 e4 |
-    e4 d4 c4 |
-    f8 e8 d4 c4 |
-    d2. |
+    c4 c4 d4 |
+    d4 c2 |
+    b4 b4 b4 |
+    c2 b4 |
+    a4 a4 a4 |
+    b4 b4 a4 |
+    a8 a8 a4 a4 |
+    b4( c4 d4) |
 
-    e4 f4 g4 |
-    g4 f2 |
-    e4 a4 b4 |
-    b4 c2 |
+    c4 c4 b4 |
+    c2 d4 |
+    e4 e4 gis4 |
+    e2 e4 |
+
     a4 c4 a4 |
     g4 e2 |
     R2. |
@@ -324,69 +325,70 @@ alto = \relative c' {
   }
 }
 
-tenor = \relative c' {
+tenor = \relative c {
   \time 3/4
   \key c \major
   \clef bass
   \tempo "Allegro trionfale" 4 = 160
   \voiceOne
 
-  g4^\f g4 b4 |
-  a2 g4 |
-  f4 f4 g4 |
-  e2 d4 |
-  e4 e4 f4 |
-  g4 g4 f4 |
-  f8 f8 f4 c4 |
-  g'2. |
+  e4^\f f4 g4 |
+  g4 f2 |
+  d4 e4 f4 |
+  f4 e2 |
+  c4 d4 e4 |
+  e4 d4 c4 |
+  f8 e8 d4 c4 |
+  d2. |
 
-  g4 g4 f4 |
-  a2 b4 |
-  b4 b4 b4 |
-  c2 b4 |
-  a4 e'4 a,4 |
-  c4 g4 a4 |
-  g8 g8 g4 f4 |
-  e2. | \bar "||"
+  e4 f4 g4 |
+  g4 f2 |
+  e4 a4 b4 |
+  b4 c2 |
+  a4 c4 a4 |
+  g4 e4 c4 |
+  f8 e8 d4 c4 |
+  c2. | \bar "||"
 
   R2.*16
 
-  g4 g4 b4 |
-  a2 g4 |
-  f4 f4 g4 |
-  e2 d4 |
-  e4 e4 f4 |
-  g4 g4 f4 |
-  f8 f8 f4 c4 |
-  g'2. |
+  e4^\f f4 g4 |
+  g4 f2 |
+  d4 e4 f4 |
+  f4 e2 |
+  c4 d4 e4 |
+  e4 d4 c4 |
+  f8 e8 d4 c4 |
+  d2. |
 
-  g4 g4 f4 |
-  a2 b4 |
-  b4 b4 b4 |
-  c2 b4 |
-  a4 e'4 a,4 |
-  c4 g4 a4 |
-  g8 g8 g4 f4 |
-  e2. | \bar "||"
+  e4 f4 g4 |
+  g4 f2 |
+  e4 a4 b4 |
+  b4 c2 |
+  a4 c4 a4 |
+  g4 e4 c4 |
+  f8 e8 d4 c4 |
+  c2. | \bar "||"
 
   R2.*16
 
   % undo this another time
   \key d \major
   \transpose c d \relative c {
-    e4^\ff f4 g4 |
-    g4 f2 |
-    d4 e4 f4 |
-    f4 e2 |
-    c4 d4 e4 |
-    e4 d4 c4 |
-    f8 e8 d4 c4 |
-    d2. |
+    g'4^\ff g4 b4 |
+    a2 g4 |
+    f4 f4 g4 |
+    e2 d4 |
+    e4 e4 f4 |
+    g4 g4 f4 |
+    f8 f8 f4 c4 |
+    g'2. |
 
-    e4 f4 g4 |
-    g4 f2 |
-    e4 a4 b4 |
-    b4 c2 |
+    g4 g4 f4 |
+    a2 b4 |
+    b4 b4 b4 |
+    c2 b4 |
+
     R2. |
     R2. |
     a4 c4 a4 |
@@ -411,42 +413,42 @@ bass = \relative c {
   \tempo "Allegro trionfale" 4 = 160
   \voiceTwo
 
-  c4_\f c4 g'4 |
-  f2 c4 |
-  d4 d4 g,4 |
-  a2 b4 |
-  c4 c4 d4 |
-  e4 e4 f4 |
-  d8 d8 d4 a4 |
-  g4( b4 d4) |
+  e4_\f f4 g4 |
+  g4 f2 |
+  d4 e4 f4 |
+  f4 e2 |
+  c4 d4 e4 |
+  e4 d4 c4 |
+  f8 e8 d4 c4 |
+  d2. |
 
-  e4 e4 d4 |
-  f2 f4 |
-  g4 g4 gis4 |
-  a2 g4 |
-  f4 e4 d4 |
-  c4 b4 a4 |
-  b8 b8 b4 c4 |
+  e4 f4 g4 |
+  g4 f2 |
+  e4 a4 b4 |
+  b4 c2 |
+  a4 c4 a4 |
+  g4 e4 c4 |
+  f8 e8 d4 c4 |
   c2. | \bar "||"
 
   R2.*16
 
-  c4 c4 g'4 |
-  f2 c4 |
-  d4 d4 g,4 |
-  a2 b4 |
-  c4 c4 d4 |
-  e4 e4 f4 |
-  d8 d8 d4 a4 |
-  g4( b4 d4) |
+  e4_\f f4 g4 |
+  g4 f2 |
+  d4 e4 f4 |
+  f4 e2 |
+  c4 d4 e4 |
+  e4 d4 c4 |
+  f8 e8 d4 c4 |
+  d2. |
 
-  e4 e4 d4 |
-  f2 f4 |
-  g4 g4 gis4 |
-  a2 g4 |
-  f4 e4 d4 |
-  c4 b4 a4 |
-  b8 b8 b4 c4 |
+  e4 f4 g4 |
+  g4 f2 |
+  e4 a4 b4 |
+  b4 c2 |
+  a4 c4 a4 |
+  g4 e4 c4 |
+  f8 e8 d4 c4 |
   c2. | \bar "||"
 
   R2.*16
@@ -454,19 +456,20 @@ bass = \relative c {
   % undo this another time
   \key d \major
   \transpose c d \relative c {
-    e4_\ff f4 g4 |
-    g4 f2 |
-    d4 e4 f4 |
-    f4 e2 |
-    c4 d4 e4 |
-    e4 d4 c4 |
-    f8 e8 d4 c4 |
-    d2. |
+    c4_\ff c4 g'4 |
+    f2 c4 |
+    d4 d4 g,4 |
+    a2 b4 |
+    c4 c4 d4 |
+    e4 e4 f4 |
+    d8 d8 d4 a4 |
+    g4( b4 d4) |
 
-    e4 f4 g4 |
-    g4 f2 |
-    e4 a4 b4 |
-    b4 c2 |
+    e4 e4 d4 |
+    f2 f4 |
+    g4 g4 gis4 |
+    a2 g4 |
+
     R2. |
     R2. |
     a4 c4 a4 |
@@ -519,7 +522,7 @@ men_lyr = \lyricmode {
   Feast in thanks -- gi -- ving!
 }
 
-saxophone = \transpose c, ees {
+saxophone = \transpose ees c' {
   \clef treble
   \key c \major
   \time 3/4
@@ -564,8 +567,6 @@ saxophone = \transpose c, ees {
   g4 r r |
   c'4 r r |
 
-  \key d \major
-
   \relative c' {
     R2. |
     R2. |
@@ -585,6 +586,8 @@ saxophone = \transpose c, ees {
     e2. |
     e2. |
   }
+
+  \key d \major
 
   d'4_\markup{\dynamic "ff" \italic "quasi tromba"}-> \tuplet 3/2 {d'8 d' d'} d' d' |
   a'4-> \tuplet 3/2 {a'8 a' a'} a' a' |
@@ -655,8 +658,8 @@ piano_upper = {
   <d' d''>2 <f' f''>4 |
   <e' e''>2 <d' d''>4 |
   <c' c''>2 <d' d''>4 |
-  <e' e''>2 <f' f''>4 |
-  <d' d''>2 <c' c''>4 |
+  <e' e''>2 <g' g''>4 |
+  <f' f''>2 <e' e''>4 |
   <d' d''>2. |
 
   <e' e''>2 <g' g''>4 |
@@ -665,7 +668,7 @@ piano_upper = {
   <c'' c'''>2 <b' b''>4 |
   <a' a''>4 <g' g''>4 <f' f''>4 |
   <e' e''>4 <d' d''>4 <c' c''>4 |
-  <g' g''>2 <c' c''>4 |
+  <d' d''>2 <c' c''>4 |
   <c' c''>2. |
 
   R2. |
@@ -714,21 +717,21 @@ piano_upper = {
     \tuplet 3/2 { f e d } | \bar "||" \newline_final
   }
 
-  c''4\f \clef bass 
-  \tuplet 3/2 { c8( e g } c'4-.) |
+  \relative c'' {
+    c4\f \tuplet 3/2 { c8( e g } c4-.) |
+    r4 \tuplet 3/2 { f,8( a c } f4-.) |
+    r4 \tuplet 3/2 { b,,8( d f } b4-.) |
+    r4 \tuplet 3/2 { a8( c e } a4-.) |
+    r4 \tuplet 3/2 { c,,8( e g } c4-.) |
+    r4 \tuplet 3/2 { e,8( g b } e4-.) |
+    r4 \tuplet 3/2 { d,8( f a } d4-.) |
+    r4 \tuplet 3/2 { g,8( b d } g4-.) |
 
-  r4 \tuplet 3/2 { f8( a c' } f'4-.) |
-  r4 \tuplet 3/2 { b,8( d f } b4-.) |
-  r4 \tuplet 3/2 { a8( c' e' } a'4-.) |
-  r4 \tuplet 3/2 { c8( e g } c'4-.) |
-  r4 \tuplet 3/2 { e8( g b } e'4-.) |
-  r4 \tuplet 3/2 { d8( f a } d'4-.) |
-  r4 \tuplet 3/2 { g8( b d' } g'4-.) |
-
-  r4 \tuplet 3/2 { c8( e g } c'4-.) |
-  r4 \tuplet 3/2 { f8( a c' } f'4-.) |
-  r4 \tuplet 3/2 { e8( gis b } e'4-.) |
-  r4 \tuplet 3/2 { a8( c' e' } a'4-.) |
+    r4 \tuplet 3/2 { c,,8( e g } c4-.) |
+    r4 \tuplet 3/2 { f,8( a c } f4-.) |
+    r4 \tuplet 3/2 { e,8( gis b } e4-.) |
+    r4 \tuplet 3/2 { a,8( c e } a4-.) |
+  }
   \clef treble
   f''8[( f']) e''[( e']) d''[( d']) |
   c''[( c']) b'[( b]) a'[( a]) |
@@ -807,8 +810,8 @@ piano_lower = {
   <d, d>2 <f, f>4 |
   <e, e>2 <d, d>4 |
   <c, c>2 <d, d>4 |
-  <e, e>2 <f, f>4 |
-  <d, d>2 <c, c>4 |
+  <e, e>2 <g, g>4 |
+  <f, f>2 <e, e>4 |
   <d, d>2. |
 
   <e, e>2 <g, g>4 |
@@ -817,7 +820,7 @@ piano_lower = {
   <c c'>2 <b, b>4 |
   <a, a>4 <g, g>4 <f, f>4 |
   <e, e>4 <d, d>4 <c, c>4 |
-  <g, g>2 <c, c>4 |
+  <d, d>2 <c, c>4 |
   <c, c>4 e4 g4 | \newline_final
 
   c'4 r4 r4 |
@@ -867,25 +870,24 @@ piano_lower = {
     \tuplet 3/2 { f e d } |
   }
 
-  c,,4  \ottava #0 \voiceTwo r4 r4 |
-  f,4 r r |
-  b,,4 r r |
-  a,4 r r |
-  c,4 r r |
-  e,4 r r |
-  d,4 r r |
-  g,4 r r |
+  \ottava #0
 
-  c,4 r r |
-  f,4 r r |
-  e,4 r r |
-  a,4 r r |
-  \oneVoice
-  f,8[( f]) e,[( e]) d,[( d]) |
-  c,8[( c]) b,,[( b,]) a,,[( a,]) |
-  \voiceTwo
-  g,,4 r r |
-  \oneVoice
+  <e, e>2 <g, g>4 |
+  <f, f>2 <e, e>4 |
+  <d, d>2 <f, f>4 |
+  <e, e>2 <d, d>4 |
+  <c, c>2 <d, d>4 |
+  <e, e>2 <g, g>4 |
+  <f, f>2 <e, e>4 |
+  <d, d>2. |
+
+  <e, e>2 <g, g>4 |
+  <f, f>2 <a, a>4 |
+  <gis, gis>2 <b, b>4 |
+  <c c'>2 <b, b>4 |
+  <a, a>4 <g, g>4 <f, f>4 |
+  <e, e>4 <d, d>4 <c, c>4 |
+  <d, d>2 <c, c>4 |
   <c, c>4 <e, e> <g, g> |
 
   <c' c>2. |
@@ -934,18 +936,111 @@ first_violin = {
     d2 f4 |
     e2 d4 |
     c2 d4 |
-    e2 f4 |
-    d2 c4 |
+    e2 g4 |
+    f2 e4 |
     d2. |
 
     e2 g4 |
     f2 a4 |
-    g2 b4 |
+    gis2 b4 |
     c2 b4 |
     a4 g4 f4 |
     e4 d4 c4 |
-    g2 c4 |
+    d2 c4 |
     c2. |
+  }
+
+  \relative c' {
+    e2.\p |
+    f2. |
+    g2. |
+    f2. |
+    e2. |
+    f2. |
+    g2. |
+    f2. |
+
+    e2. |
+    gis2. |
+    a2. |
+    e2. |
+    f2. |
+    a2. |
+    b2. |
+    g'2. |
+  }
+
+  \relative c'' {
+    e2_\f g4 |
+    f2 e4 |
+    d2 f4 |
+    e2 d4 |
+    c2 d4 |
+    e2 g4 |
+    f2 e4 |
+    d2. |
+
+    e2 g4 |
+    f2 a4 |
+    gis2 b4 |
+    c2 b4 |
+    a4 g4 f4 |
+    e4 d4 c4 |
+    d2 c4 |
+    c2. |
+  }
+
+  \relative c' {
+    e2.\p |
+    f2. |
+    g2. |
+    f2. |
+    e2. |
+    f2. |
+    g2. |
+    f2. |
+
+    e2. |
+    gis2. |
+    a2. |
+    e2. |
+    f2. |
+    a2. |
+    b2. |
+    cis2. |
+  }
+
+  \key d \major
+  \transpose c d \relative c'' {
+    e2_\ff g4 |
+    f2 e4 |
+    d2 f4 |
+    e2 d4 |
+    c2 d4 |
+    e2 g4 |
+    f2 e4 |
+    d2. |
+
+    e2 g4 |
+    f2 a4 |
+    gis2 b4 |
+    c2 b4 |
+  }
+  \relative c''' {
+    b8 r8 r4 r4 |
+    r4 b8 r b8 r |
+    cis8  r8 r4 r4 |
+    r4 cis8 r cis8 r |
+
+    b2 g4 |
+    fis2  d4 |
+    e2.~ |
+    e2 d4 |
+    e2.~ |
+    e2~ e8 d8 |
+    d2.~ |
+    d2.~ |
+    d2.\fermata |
   }
 }
 
@@ -960,18 +1055,111 @@ second_violin = {
     d2 f4 |
     e2 d4 |
     c2 d4 |
-    e2 f4 |
-    d2 c4 |
+    e2 g4 |
+    f2 e4 |
     d2. |
 
     e2 g4 |
     f2 a4 |
-    g2 b4 |
+    gis2 b4 |
     c2 b4 |
     a4 g4 f4 |
     e4 d4 c4 |
-    g2 c4 |
+    d2 c4 |
     c2. |
+  }
+
+  \relative c' {
+    c2.\p |
+    c2. |
+    d2. |
+    b2. |
+    c2. |
+    c2. |
+    d2. |
+    b2. |
+
+    b2. |
+    e2. |
+    e2. |
+    c2. |
+    c2. |
+    c2. |
+    d2. |
+    d2. |
+  }
+
+  \relative c' {
+    e2_\f g4 |
+    f2 e4 |
+    d2 f4 |
+    e2 d4 |
+    c2 d4 |
+    e2 g4 |
+    f2 e4 |
+    d2. |
+
+    e2 g4 |
+    f2 a4 |
+    gis2 b4 |
+    c2 b4 |
+    a4 g4 f4 |
+    e4 d4 c4 |
+    d2 c4 |
+    c2. |
+  }
+
+  \relative c' {
+    c2.\p |
+    c2. |
+    d2. |
+    b2. |
+    c2. |
+    c2. |
+    d2. |
+    b2. |
+
+    b2. |
+    e2. |
+    e2. |
+    c2. |
+    c2. |
+    c2. |
+    d2. |
+    g2. |
+  }
+
+  \key d \major
+  \transpose c d \relative c' {
+    e2_\ff g4 |
+    f2 e4 |
+    d2 f4 |
+    e2 d4 |
+    c2 d4 |
+    e2 g4 |
+    f2 e4 |
+    d2. |
+
+    e2 g4 |
+    f2 a4 |
+    gis2 b4 |
+    c2 b4 |
+  }
+  \relative c'' {
+    b8 r8 r4 r4 |
+    r4 b8 r b8 r |
+    cis8  r8 r4 r4 |
+    r4 cis8 r cis8 r |
+
+    b2 g4 |
+    fis2  d4 |
+    e2.~ |
+    e2 d4 |
+    e2.~ |
+    e2~ e8 d8 |
+    d2.~ |
+    d2.~ |
+    d2.\fermata |
   }
 }
 
@@ -986,18 +1174,111 @@ viola = {
     d2 f4 |
     e2 d4 |
     c2 d4 |
-    e2 f4 |
-    d2 c4 |
+    e2 g4 |
+    f2 e4 |
     d2. |
 
     e2 g4 |
     f2 a4 |
-    g2 b4 |
+    gis2 b4 |
     c2 b4 |
     a4 g4 f4 |
     e4 d4 c4 |
-    g2 c4 |
+    d2 c4 |
     c2. |
+  }
+
+  \relative c' {
+    g2.\p |
+    f2. |
+    g2. |
+    g2. |
+    g2. |
+    f2. |
+    g2. |
+    g2. |
+
+    gis2. |
+    b2. |
+    c2. |
+    a2. |
+    f2. |
+    a2. |
+    b2. |
+    b2. |
+  }
+
+  \relative c {
+    e2_\f g4 |
+    f2 e4 |
+    d2 f4 |
+    e2 d4 |
+    c2 d4 |
+    e2 g4 |
+    f2 e4 |
+    d2. |
+
+    e2 g4 |
+    f2 a4 |
+    gis2 b4 |
+    c2 b4 |
+    a4 g4 f4 |
+    e4 d4 c4 |
+    d2 c4 |
+    c2. |
+  }
+
+  \relative c' {
+    g2.\p |
+    f2. |
+    g2. |
+    g2. |
+    g2. |
+    f2. |
+    g2. |
+    g2. |
+
+    gis2. |
+    b2. |
+    c2. |
+    a2. |
+    f2. |
+    a2. |
+    b2. |
+    cis2. |
+  }
+
+  \key d \major
+  \transpose c d \relative c {
+    e2\ff g4 |
+    f2 e4 |
+    d2 f4 |
+    e2 d4 |
+    c2 d4 |
+    e2 g4 |
+    f2 e4 |
+    d2. |
+
+    e2 g4 |
+    f2 a4 |
+    gis2 b4 |
+    c2 b4 |
+  }
+  \relative c' {
+    b8 r8 r4 r4 |
+    r4 b8 r b8 r |
+    cis8  r8 r4 r4 |
+    r4 cis8 r cis8 r |
+
+    b2 g4 |
+    fis2  d4 |
+    e2.~ |
+    e2 d4 |
+    e2.~ |
+    e2~ e8 d8 |
+    d2.~ |
+    d2.~ |
+    d2.\fermata |
   }
 }
 
@@ -1006,32 +1287,240 @@ cello = {
   \key c \major
   \clef bass
 
-  \relative c {
+  \relative c, {
     e2_\f g4 |
     f2 e4 |
     d2 f4 |
     e2 d4 |
     c2 d4 |
-    e2 f4 |
-    d2 c4 |
+    e2 g4 |
+    f2 e4 |
     d2. |
 
     e2 g4 |
     f2 a4 |
-    g2 b4 |
+    gis2 b4 |
     c2 b4 |
     a4 g4 f4 |
     e4 d4 c4 |
-    g2 c4 |
+    d2 c4 |
     c2. |
+  }
+
+  \relative c {
+    c2.\p |
+    c2. |
+    d2. |
+    d2. |
+    c2. |
+    c2. |
+    d2. |
+    d2. |
+
+    e2. |
+    e2. |
+    a,2. |
+    c2. |
+    c2. |
+    c2. |
+    d2. |
+    d2. |
+  }
+
+  \relative c, {
+    e2_\f g4 |
+    f2 e4 |
+    d2 f4 |
+    e2 d4 |
+    c2 d4 |
+    e2 g4 |
+    f2 e4 |
+    d2. |
+
+    e2 g4 |
+    f2 a4 |
+    gis2 b4 |
+    c2 b4 |
+    a4 g4 f4 |
+    e4 d4 c4 |
+    d2 c4 |
+    c2. |
+  }
+
+  \relative c {
+    c2.\p |
+    c2. |
+    d2. |
+    d2. |
+    c2. |
+    c2. |
+    d2. |
+    d2. |
+
+    e2. |
+    e2. |
+    a,2. |
+    c2. |
+    c2. |
+    c2. |
+    d2. |
+    g2. |
+  }
+
+  \key d \major
+  \transpose c d \relative c, {
+    e2\ff g4 |
+    f2 e4 |
+    d2 f4 |
+    e2 d4 |
+    c2 d4 |
+    e2 g4 |
+    f2 e4 |
+    d2. |
+
+    e2 g4 |
+    f2 a4 |
+    gis2 b4 |
+    c2 b4 |
+  }
+  \relative c {
+    b8 r8 r4 r4 |
+    r4 b8 r b8 r |
+    cis8  r8 r4 r4 |
+    r4 cis8 r cis8 r |
+
+    b2 g4 |
+    fis2  d4 |
+    e2.~ |
+    e2 d4 |
+    e2.~ |
+    e2~ e8 d8 |
+    d2.~ |
+    d2.~ |
+    d2.\fermata |
+  }
+}
+
+contrabass = \transpose c c' {
+  \time 3/4
+  \key c \major
+  \clef bass
+
+  \relative c, {
+    e2_\f g4 |
+    f2 e4 |
+    d2 f4 |
+    e2 d4 |
+    c2 d4 |
+    e2 g4 |
+    f2 e4 |
+    d2. |
+
+    e2 g4 |
+    f2 a4 |
+    gis2 b4 |
+    c2 b4 |
+    a4 g4 f4 |
+    e4 d4 c4 |
+    d2 c4 |
+    c2. |
+  }
+
+  \relative c {
+    g2.\p |
+    f2. |
+    g2. |
+    g2. |
+    g2. |
+    f2. |
+    g2. |
+    g2. |
+
+    e2. |
+    e2. |
+    c2. |
+    e2. |
+    f2. |
+    f2. |
+    g2. |
+    g2. |
+  }
+
+  \relative c, {
+    e2_\f g4 |
+    f2 e4 |
+    d2 f4 |
+    e2 d4 |
+    c2 d4 |
+    e2 g4 |
+    f2 e4 |
+    d2. |
+
+    e2 g4 |
+    f2 a4 |
+    gis2 b4 |
+    c2 b4 |
+    a4 g4 f4 |
+    e4 d4 c4 |
+    d2 c4 |
+    c2. |
+  }
+
+  \relative c {
+    g2.\p |
+    f2. |
+    g2. |
+    g2. |
+    g2. |
+    f2. |
+    g2. |
+    g2. |
+
+    e2. |
+    e2. |
+    c2. |
+    e2. |
+    f2. |
+    f2. |
+    g2. |
+    a2. |
+  }
+
+  \key d \major
+  \transpose c d \relative c, {
+    e2\ff g4 |
+    f2 e4 |
+    d2 f4 |
+    e2 d4 |
+    c2 d4 |
+    e2 g4 |
+    f2 e4 |
+    d2. |
+
+    e2 g4 |
+    f2 a4 |
+    gis2 b4 |
+    c2 b4 |
+  }
+  \relative c {
+    b8 r8 r4 r4 |
+    r4 b8 r b8 r |
+    cis8  r8 r4 r4 |
+    r4 cis8 r cis8 r |
+
+    b2 g4 |
+    fis2  d4 |
+    e2.~ |
+    e2 d4 |
+    e2.~ |
+    e2~ e8 d8 |
+    d2.~ |
+    d2.~ |
+    d2.\fermata |
   }
 }
 
 \book {
-  \paper {
-    #(set-paper-size "philippine-legal")
-  }
-
   \header {
     title = "Come to the Table"
     subtitle = "Ouvertura"
@@ -1136,25 +1625,10 @@ cello = {
           instrumentName = "Contrabass"
           shortInstrumentName = "Cbs."
           midiInstrument = "contrabass"
-        } \cello
+        } \contrabass
       >>
     >>
-    \layout {
-      \RemoveEmptyStaffContext
-      \context {
-        \Score 
-        \override SystemStartBar.collapse-height = #4
-      }
-      \context {
-        \PianoStaff
-        \override SystemStartBrace.collapse-height = #4
-        
-      }
-      \context {
-        \StaffGroup 
-        \override SystemStartBracket.collapse-height = #4
-      }
-    }
+    \layout {}
     \midi {
       \tempo 4 = 168
     }
