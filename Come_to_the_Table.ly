@@ -709,7 +709,7 @@ piano_upper = {
     \tuplet 3/2 { a g f } | \ottava #0
     \tuplet 3/2 { e d c }
     \tuplet 3/2 { b a g }
-    \tuplet 3/2 { f e d } | \bar "||" \newline_final
+    \tuplet 3/2 { f e d } | \bar "||"
   }
 
   \relative c'' {
@@ -730,7 +730,7 @@ piano_upper = {
     r4 \tuplet 3/2 { d,8( f a } c4-.) |
     r4 \tuplet 3/2 { g,8( b d } g4-.) |
   }
-  <c' e' g' c''>2. | \newline_final
+  <c' e' g' c''>2. |
 
   \relative c'' {
     c8_\mp_\markup{\italic "luminoso"} g e' c g' e |
@@ -756,7 +756,7 @@ piano_upper = {
     \ottava #1
     a'8 f c' a f' c |
     \repeat tremolo 6 { g'16 d'16 } |
-    \repeat tremolo 6 { a cis } \bar "||" \newline_final
+    \repeat tremolo 6 { a cis } \bar "||"
     \ottava #0
   }
 
@@ -813,7 +813,7 @@ piano_lower = {
   <a, a>4 <g, g>4 <f, f>4 |
   <e, e>4 <d, d>4 <c, c>4 |
   <d, d>2 <c, c>4 |
-  <c, c>4 e4 g4 | \newline_final
+  <c, c>4 e4 g4 |
 
   c'4 r4 r4 |
   R2. |
