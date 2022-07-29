@@ -1,6 +1,5 @@
 \version "2.22.1"
-% automatically converted by musicxml2ly from Christify.musicxml
-\pointAndClickOff
+\include "fullscore.ily"
 
 \header {
   title =  Christify
@@ -11,24 +10,6 @@
   subtitle =  Offertorium
 }
 
-#(set-global-staff-size 20.0)
-\paper {
-
-  paper-width = 21.0\cm
-  paper-height = 29.7\cm
-  top-margin = 1.5\cm
-  bottom-margin = 1.5\cm
-  left-margin = 1.5\cm
-  right-margin = 1.5\cm
-  indent = 1.6153846153846154\cm
-}
-\layout {
-  \context {
-    \Score
-    skipBars = ##t
-    autoBeaming = ##f
-  }
-}
 PartPOneVoiceOne =  \relative a' {
   \clef "treble" \numericTimeSignature\time 4/4 \key d \major | % 1
   R1*8 | % 9
