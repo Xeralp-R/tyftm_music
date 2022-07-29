@@ -59,14 +59,14 @@ soprano_solo = {
     e2. |
     e2~ e8) d8 |
     d2.~ |
-    d2.~ | 
+    d2.~ |
     d2.\fermata | \bar "|."
   }
 }
 
 sop_solo_lyr = \lyricmode {
   This is the house of the LORD, __
-  The gates __ are o __ pen wide, 
+  The gates __ are o __ pen wide,
   Sin -- ner and saint,
   Strong __ and faint,
   All wel -- come to come __ in -- side! __
@@ -75,7 +75,7 @@ sop_solo_lyr = \lyricmode {
   To the ta -- ble, __
   And let us feast __
   in His love!
-  
+
   Feast in thanks -- gi -- ving and
   ce -- le -- brate His love.
 }
@@ -89,7 +89,7 @@ bass_solo = {
   R2.*16 |
 
   R2.*16 |
-  
+
   R2.*16 |
 
   \relative c {
@@ -138,7 +138,7 @@ bass_solo = {
     e2. |
     e2~ e8) d8 |
     d2.~ |
-    d2.~ | 
+    d2.~ |
     d2.\fermata | \bar "|."
   }
 }
@@ -164,7 +164,6 @@ soprano = \relative c' {
   \key c \major
   \clef treble
   \tempo "Allegro trionfale" 4 = 160
-  \voiceOne
 
   e4^\f f4 g4 |
   g4 f2 |
@@ -184,7 +183,7 @@ soprano = \relative c' {
   f8 e8 d4 c4 |
   c2. | \bar "||"
 
-  R2.*16 
+  R2.*16
 
   e4^\f f4 g4 |
   g4 f2 |
@@ -204,7 +203,7 @@ soprano = \relative c' {
   f8 e8 d4 c4 |
   c2. | \bar "||"
 
-  R2.*16 
+  R2.*16
 
   % undo this another time
   \key d \major
@@ -234,7 +233,7 @@ soprano = \relative c' {
     d2. |
     d2~ d8) c8 |
     c2.~ |
-    c2.~ | 
+    c2.~ |
     c2.\fermata | \bar "|."
   }
 }
@@ -244,7 +243,6 @@ alto = \relative c' {
   \key c \major
   \clef treble
   \tempo "Allegro trionfale" 4 = 160
-  \voiceTwo
 
   e4_\f f4 g4 |
   g4 f2 |
@@ -315,7 +313,7 @@ alto = \relative c' {
     d2. |
     d2~ d8) c8 |
     c2.~ |
-    c2.~ |  
+    c2.~ |
     c2.\fermata | \bar "|."
   }
 }
@@ -325,7 +323,6 @@ tenor = \relative c {
   \key c \major
   \clef bass
   \tempo "Allegro trionfale" 4 = 160
-  \voiceOne
 
   e4^\f f4 g4 |
   g4 f2 |
@@ -396,7 +393,7 @@ tenor = \relative c {
     d2. |
     d2~ d8) c8 |
     c2.~ |
-    c2.~ |  
+    c2.~ |
     c2.\fermata | \bar "|."
   }
 }
@@ -406,7 +403,6 @@ bass = \relative c {
   \key c \major
   \clef bass
   \tempo "Allegro trionfale" 4 = 160
-  \voiceTwo
 
   e4_\f f4 g4 |
   g4 f2 |
@@ -477,15 +473,15 @@ bass = \relative c {
     d2. |
     d2~ d8) c8 |
     c2.~ |
-    c2.~ |  
+    c2.~ |
     c2.\fermata | \bar "|."
   }
 }
 
 lyr = \lyricmode {
   Come to the ta -- ble!
-  En -- ter His pre -- sence, 
-  Feast in thanks -- gi -- ving and 
+  En -- ter His pre -- sence,
+  Feast in thanks -- gi -- ving and
   ce -- le -- brate His love,
   Come to the ta -- ble!
   En -- ter His pre -- sence!
@@ -493,8 +489,8 @@ lyr = \lyricmode {
   ce -- le -- brate His love.
 
   Come to the ta -- ble!
-  En -- ter His pre -- sence, 
-  Feast in thanks -- gi -- ving and 
+  En -- ter His pre -- sence,
+  Feast in thanks -- gi -- ving and
   ce -- le -- brate His love,
   Come to the ta -- ble!
   En -- ter His pre -- sence!
@@ -502,19 +498,14 @@ lyr = \lyricmode {
   ce -- le -- brate His love.
 
   Come to the ta -- ble!
-  En -- ter His pre -- sence, 
-  Feast in thanks -- gi -- ving and 
+  En -- ter His pre -- sence,
+  Feast in thanks -- gi -- ving and
   ce -- le -- brate His love,
   Come to the ta -- ble!
   En -- ter His pre -- sence!
   Feast in thanks -- gi -- ving,
   Feast in thanks -- gi -- ving and
   ce -- le -- brate His love.
-}
-
-men_lyr = \lyricmode {
-  \repeat unfold 115 { \skip 8 }
-  Feast in thanks -- gi -- ving!
 }
 
 saxophone = \transpose ees c' {
@@ -643,7 +634,7 @@ bell = \drummode {
 }
 
 piano_upper = {
-  \time 3/4  
+  \time 3/4
   \key c \major
   \clef treble
   \tempo "Allegro trionfale" 4 = 160
@@ -670,13 +661,13 @@ piano_upper = {
   R2. |
   \ottava #1 \voiceOne
   \relative c''' {
-    \tuplet 3/2 { b8_\p c d } 
-    \tuplet 3/2 { e f g } 
+    \tuplet 3/2 { b8_\p c d }
+    \tuplet 3/2 { e f g }
     \tuplet 3/2 { a b c } |
-    \tuplet 3/2 { d8 e d } 
-    \tuplet 3/2 { c d c } 
+    \tuplet 3/2 { d8 e d }
+    \tuplet 3/2 { c d c }
     \tuplet 3/2 { b c b } |
-    e4 
+    e4
   }
   \ottava #0 \oneVoice
   r4 r4 |
@@ -686,13 +677,13 @@ piano_upper = {
     \tuplet 3/2 { d8^\markup{\italic "m.d."} c b }
     \tuplet 3/2 { a g f }
     \tuplet 3/2 { e d c } |
-    \tuplet 3/2 { b a b } 
-    \tuplet 3/2 { c b c } 
+    \tuplet 3/2 { b a b }
+    \tuplet 3/2 { c b c }
     \tuplet 3/2 { d c d } |
     e4
   }
   \change Staff = "piano_upper" \oneVoice
-  r4 r4 | 
+  r4 r4 |
   \relative c''' {
     r4 \ottava #2 \tuplet 3/2 { e8( gis b) } e4 \ottava #0 |
   }
@@ -819,24 +810,24 @@ piano_lower = {
   R2. |
   \change Staff = "piano_upper" \voiceTwo
   \relative c'' {
-    \tuplet 3/2 { b8_\markup{\italic "m.s."} c d } 
-    \tuplet 3/2 { e f g } 
+    \tuplet 3/2 { b8_\markup{\italic "m.s."} c d }
+    \tuplet 3/2 { e f g }
     \tuplet 3/2 { a b c } |
-    \tuplet 3/2 { d8 e d } 
-    \tuplet 3/2 { c d c } 
+    \tuplet 3/2 { d8 e d }
+    \tuplet 3/2 { c d c }
     \tuplet 3/2 { b c b } |
     e4
   }
   \change Staff = "piano_lower" \oneVoice
-  r4 r4 | 
+  r4 r4 |
   R2. |
   \voiceTwo
   \relative c {
     \tuplet 3/2 { d8 c b }
     \tuplet 3/2 { a g f }
     \tuplet 3/2 { e d c } |
-    \tuplet 3/2 { b a b } 
-    \tuplet 3/2 { c b c } 
+    \tuplet 3/2 { b a b }
+    \tuplet 3/2 { c b c }
     \tuplet 3/2 { d c d } |
     e4
   }
@@ -851,7 +842,7 @@ piano_lower = {
   }
   R2. |
   R2. |
-  
+
   \relative c' {
     \tuplet 3/2 { g8 f e }
     \tuplet 3/2 { d c b }
@@ -883,9 +874,9 @@ piano_lower = {
   <c, c>4 <e, e> <g, g> |
 
   <c' c>2. |
-  R2.*15 
+  R2.*15
 
-  \key d \major 
+  \key d \major
   \transpose c d {
     <e, e>2 <g, g>4 |
     <f, f>2 <e, e>4 |
@@ -913,13 +904,13 @@ piano_lower = {
   <e, e>2.~ |
   <e, e>2~ <e e,>8 <d, d>8 |
   <d, d>2.~
-  <d, d>2.~ |  
+  <d, d>2.~ |
   <d, d>2.\fermata | \bar "|."
 }
 
 first_violin = {
-  \clef treble 
-  \key c \major 
+  \clef treble
+  \key c \major
   \time 3/4
 
   \relative c'' {
@@ -1508,117 +1499,169 @@ contrabass = \transpose c c' {
   }
 }
 
-\book {
+come_to_the_table = \score {
   \header {
     title = "Come to the Table"
-    subtitle = "Ouvertura"
+    subtitle = "Processional"
     composer = "Barbie Dumlao"
     poet = "Moses Catan"
-    arranger = "Arr. Rex Alphonse Reventar"
     tagline = ##f
   }
 
-  \score {
-    <<
-      \new StaffGroup <<
-        \set StaffGroup.systemStartDelimiter = #'SystemStartSquare
+  <<
+    \tag #'full_chorus \tag #'voice_soli
+    \new ChoirStaff \with {
+      systemStartDelimiter = #'SystemStartSquare
+    } <<
 
-        \new Staff \with {
-          midiInstrument = "choir aahs"
-          instrumentName = "Soprano Solo"
-          shortInstrumentName = "Sop."
-        } <<
-          \new Voice = "sop_solo" \soprano_solo
-        >>
+      \tag #'soprano_solo
+      \new Staff \with {
+        midiInstrument = "voice oohs"
+        instrumentName = "Soprano Solo"
+        shortInstrumentName = "S-solo"
+      } <<
+        \new Voice = "sop_solo" \soprano_solo
         \new Lyrics \lyricsto "sop_solo" \sop_solo_lyr
+      >>
 
-        \new Staff \with {
-          midiInstrument = "choir aahs"
-          instrumentName = "Bass Solo"
-          shortInstrumentName = "Bass"
-        } << 
-          \new Voice = "bass_solo" \bass_solo 
-        >>
+      \tag #'bass_solo
+      \new Staff \with {
+        midiInstrument = "voice oohs"
+        instrumentName = "Bass Solo"
+        shortInstrumentName = "B-solo"
+      } <<
+        \new Voice = "bass_solo" \bass_solo
         \new Lyrics \lyricsto "bass_solo" \bass_solo_lyr
       >>
+    >>
 
-      \new ChoirStaff \with {
-        instrumentName = "Chorus"
-        shortInstrumentName = "Ch."
+    \tag #'full_chorus \tag #'chorus
+    \new ChoirStaff \with {
+      instrumentName = "Chorus"
+    } <<
+
+      \tag #'soprano_chorus
+      \new Staff \with {
+        midiInstrument = "choir aahs"
+        instrumentName = "Soprano"
+        shortInstrumentName = "S."
       } <<
-        \new Staff \with {
-          midiInstrument = "choir aahs"
-        } <<
-          \new Voice = "soprano" \soprano
-          \new Voice = "alto" \alto
-        >>
+        \new Voice = "soprano" \soprano
         \new Lyrics \lyricsto "soprano" \lyr
-        \new Staff \with {
-          midiInstrument = "choir aahs"
-        } <<
-          \new Voice = "tenor" \tenor
-          \new Voice = "bass" \bass
-        >>
-        \new Lyrics \lyricsto "tenor" \men_lyr
       >>
 
-      \new StaffGroup <<
-        \new Staff = "saxophone" \with {
-          midiInstrument = "alto sax"
-          instrumentName = "Alto Saxophone"
-          shortInstrumentName = "A. Sax."
-        } \saxophone
+      \tag #'alto_chorus
+      \new Staff \with {
+        midiInstrument = "choir aahs"
+        instrumentName = "Alto"
+        shortInstrumentName = "A."
+      } <<
+        \new Voice = "alto" \alto
+        \new Lyrics \lyricsto "alto" \lyr
       >>
 
+      \tag #'tenor_chorus
+      \new Staff \with {
+        midiInstrument = "choir aahs"
+        instrumentName = "Tenor"
+        shortInstrumentName = "T."
+      } <<
+        \new Voice = "tenor" \tenor
+        \new Lyrics \lyricsto "tenor" \lyr
+      >>
+
+      \tag #'bass_chorus
+      \new Staff \with {
+        midiInstrument = "choir aahs"
+        instrumentName = "Bass"
+        shortInstrumentName = "B."
+      } <<
+        \new Voice = "bass" \bass
+        \new Lyrics \lyricsto "bass" \lyr
+      >>
+    >>
+
+    \tag #'soli
+    \new StaffGroup <<
+
+      \tag #'asax_solo
+      \new Staff = "saxophone" \with {
+        midiInstrument = "alto sax"
+        instrumentName = "Alto Saxophone"
+        shortInstrumentName = "Asax."
+      } \saxophone
+
+      \tag #'bell_solo
       \new RhythmicStaff = "bell" \with {
         midiInstrument = "tinkle bell"
-        instrumentName = "Bell (ad lib.)"
-        shortInstrumentName = "Bell"
+        instrumentName = "Handbell (ad lib.)"
+        shortInstrumentName = "Bl."
         \RemoveEmptyStaves
       } \bell
 
+      \tag #'piano_solo
       \new PianoStaff \with {
-        instrumentName = "Pianoforte"
         midiInstrument = "acoustic grand"
-        shortInstrumentName = "Pno."
+        instrumentName = "Pianoforte"
+        shortInstrumentName = "Pf."
       } <<
         \new Staff = "piano_upper" \piano_upper
         \new Staff = "piano_lower" \piano_lower
       >>
+    >>
 
-      \new StaffGroup <<
-        \new StaffGroup \with {
-          systemStartDelimiter = #'SystemStartSquare
-          instrumentName = "Violin"
-          shortInstrumentName = "Vln."
-          midiInstrument = "violin"
-        } <<
-          \new Staff \first_violin
-          \new Staff \second_violin
-        >>
-
+    \tag #'tutti
+    \new StaffGroup <<
+      \new StaffGroup \with {
+        systemStartDelimiter = #'SystemStartSquare
+        midiInstrument = "violin"
+      } <<
+        \tag #'violin_i
         \new Staff \with {
-          instrumentName = "Viola"
-          shortInstrumentName = "Vla."
-          midiInstrument = "viola"
-        } \viola
+          instrumentName = "Violin 1"
+          shortInstrumentName = "Vl. 1"
+        } \first_violin
 
+        \tag #'violin_ii
+        \new Staff \with {
+          instrumentName = "Violin 2"
+          shortInstrumentName = "Vl. 2"
+        } \second_violin
+      >>
+
+      \tag #'viola
+      \new Staff \with {
+        instrumentName = "Viola"
+        shortInstrumentName = "Vla."
+        midiInstrument = "viola"
+      } \viola
+
+      \new StaffGroup \with {
+        systemStartDelimiter = #'SystemStartSquare
+      } <<
+        \tag #'cello
         \new Staff \with {
           instrumentName = "Violoncello"
           shortInstrumentName = "Vcl."
           midiInstrument = "cello"
         } \cello
 
+        \tag #'contrabass
         \new Staff \with {
           instrumentName = "Contrabass"
-          shortInstrumentName = "Cbs."
+          shortInstrumentName = "Cb."
           midiInstrument = "contrabass"
         } \contrabass
       >>
     >>
-    \layout {}
-    \midi {
-      \tempo 4 = 168
-    }
+  >>
+
+  \layout {}
+  \midi {
+    \tempo 4 = 168
   }
+}
+
+\book {
+  \come_to_the_table
 }
