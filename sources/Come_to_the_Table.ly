@@ -321,7 +321,7 @@ alto = \relative c' {
 tenor = \relative c {
   \time 3/4
   \key c \major
-  \clef bass
+  \clef "treble_8"
   \tempo "Allegro trionfale" 4 = 160
 
   e4^\f f4 g4 |
@@ -1582,7 +1582,7 @@ come_to_the_table = \score {
     >>
 
     \tag #'soli
-    \new StaffGroup <<
+    \new ChoirStaff <<
 
       \tag #'asax_solo
       \new Staff = "saxophone" \with {
