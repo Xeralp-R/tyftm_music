@@ -27,15 +27,15 @@ part-Pone-one = {
     \key d \major
     \time 4/4
     \clef treble
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R1 |
+    R1 |
+    R1 |
+    R1 |
+    R1 |
 % 5
-    r1 |
-    r1 |
-    r1 |
+    R1 |
+    R1 |
+    R1 |
     <<
         \context Voice = "voiceone" { \voiceOne 
             a'4 d''4 e''4 fis''4 |
@@ -80,25 +80,25 @@ part-Pone-one = {
             d'2. r4 |
         }
     >>
-    r1 |
+    R1 |
 % 25
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R1 |
+    R1 |
+    R1 |
+    R1 |
+    R1 |
 % 30
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R1 |
+    R1 |
+    R1 |
+    R1 |
+    R1 |
 % 35
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R1 |
+    R1 |
+    R1 |
+    R1 |
+    R1 |
 % 40
     <<
         \context Voice = "voiceone" { \voiceOne 
@@ -121,8 +121,8 @@ part-Pone-one = {
             d''1 |
         % 55
             d''2. r4 |
-            r1 |
-            r1 |
+            R1 |
+            R1 |
             a'4 d''4 e''4 fis''4 |
             g''4 fis''4 e''4 d''4 |
         % 60
@@ -132,7 +132,7 @@ part-Pone-one = {
             g''4 fis''4 fis''4 e''4 |
             d''1 |
         % 65
-            r1 |
+            R1 |
             a'4 g'4 g'4 fis'4 |
             fis'4 e'4 dis'4 fis'4 |
             g'2. g'4 |
@@ -182,41 +182,41 @@ part-Pone-one = {
             d'2. r4 |
         }
     >>
-    r1 |
+    R1 |
 }
 
 part-Ptwo-one = {
     \key d \major
     \time 4/4
     \clef bass
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R1 |
+    R1 |
+    R1 |
+    R1 |
+    R1 |
 % 5
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R1 |
+    R1 |
+    R1 |
+    R1 |
+    R1 |
 % 10
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R1 |
+    R1 |
+    R1 |
+    R1 |
+    R1 |
 % 15
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R1 |
+    R1 |
+    R1 |
+    R1 |
+    R1 |
 % 20
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R1 |
+    R1 |
+    R1 |
+    R1 |
     <<
         \context Voice = "voiceone" { \voiceOne 
             a4 d'4 e'4 fis'4 |
@@ -263,8 +263,8 @@ part-Ptwo-one = {
         % 40
         }
     >>
-    r1 |
-    r1 |
+    R1 |
+    R1 |
     <<
         \context Voice = "voiceone" { \voiceOne 
             a4 d'4 e'4 fis'4 |
@@ -287,7 +287,7 @@ part-Ptwo-one = {
             d1 |
         }
     >>
-    r1 |
+    R1 |
 % 50
     <<
         \context Voice = "voiceone" { \voiceOne 
@@ -298,8 +298,8 @@ part-Ptwo-one = {
             a1 |
         % 55
             a2. r4 |
-            r1 |
-            r1 |
+            R1 |
+            R1 |
             a4 d'4 e'4 fis'4 |
             g'4 fis'4 e'4 d'4 |
         % 60
@@ -309,7 +309,7 @@ part-Ptwo-one = {
             g'4 fis'4 fis'4 e'4 |
             d'1 |
         % 65
-            r1 |
+            R1 |
             a4 g4 g4 fis4 |
             fis4 e4 dis4 fis4 |
             g2. g4 |
@@ -347,7 +347,7 @@ part-Ptwo-one = {
             d2. r4 |
         }
     >>
-    r1 |
+    R1 |
 }
 
 part-Pthree-one = {
