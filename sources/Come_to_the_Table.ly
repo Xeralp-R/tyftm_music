@@ -1,5 +1,5 @@
 \version "2.22.1"
-\include "./fullscore.ily"
+\include "../Full_Score.ily"
 
 soprano_solo = {
   \time 3/4
