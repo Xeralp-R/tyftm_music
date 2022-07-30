@@ -2,14 +2,13 @@
 \version "2.22.1"
 \include "../Full_Score.ily"
 
-
 PartPOneVoiceOne =  {
-  \clef "treble" 
-  \time 2/4 
-  \key g \major 
+  \clef "treble"
+  \time 2/4
+  \key g \major
   \tempo "Andante dolente. (Andante)"
-  
-  \partial 4 r4 
+
+  \partial 4 r4
   R2*4 | % 5
   r4 g'8 [ fis'8 ] | % 6
   e'4. fis'8 | % 7
@@ -58,25 +57,30 @@ PartPOneVoiceOneLyricsOne =  \lyricmode {
 }
 
 PartPTwoVoiceOne =  {
-  \clef "treble" 
-  \time 2/4 
-  \key g \major 
-  \voiceOne
-  
+  \clef "treble"
+  \time 2/4
+  \key g \major
+
   \partial 4 r4 | % 1
+
   R2*12 | % 13
+
   r4 g'8 [ b'8 ] | % 14
   e'4. e'8 | % 15
   fis'4. g'8 | % 16
   g'2 ~ | % 17
   g'4 r4 | % 18
+
   R2*7 | % 25
-  r4 g'8 [ b'8 ] | % 26
+
+  r4 g'8 [( b'8 ]) | % 26
   e'4. e'8 | % 27
   fis'4. g'8 | % 28
   g'2 ~ | % 29
   g'4 r4 | \barNumberCheck #30
+
   R2*11 | % 41
+
   r4 g'8 [ b'8 ] | % 42
   e'4. e'8 | % 43
   fis'4. g'8 | % 44
@@ -85,25 +89,30 @@ PartPTwoVoiceOne =  {
 }
 
 alto = {
-  \clef "treble" 
-  \time 2/4 
-  \key g \major 
-  \voiceTwo
-  
+  \clef "treble"
+  \time 2/4
+  \key g \major
+
   \partial 4 r4 | % 1
+
   R2*12 | % 13
+
   r4 g'8 [ b'8 ] | % 14
   e'4. e'8 | % 15
   fis'4. g'8 | % 16
   g'2 ~ | % 17
   g'4 r4 | % 18
+
   R2*7 | % 25
-  r4 g'8 [ b'8 ] | % 26
+
+  r4 g'8 [( b'8 ]) | % 26
   e'4. e'8 | % 27
   fis'4. g'8 | % 28
   g'2 ~ | % 29
   g'4 r4 | \barNumberCheck #30
+
   R2*11 | % 41
+
   r4 g'8 [ b'8 ] | % 42
   e'4. e'8 | % 43
   fis'4. g'8 | % 44
@@ -112,17 +121,15 @@ alto = {
 }
 
 PartPTwoVoiceOneLyricsOne =  \lyricmode {
-  \set ignoreMelismata = ##t Ky
-  -- ri -- "e," e -- le -- i -- "son. " __\skip1 Chris --\skip1 te e
-  -- le -- i -- "son. " __\skip1 Ky -- ri -- "e," e -- le -- i --
-  "son. " __\skip1
+  Ky -- ri -- e, __ e -- le -- i -- son. __ 
+  Chris -- te, __ e -- le -- i -- son.  __ 
+  Ky -- ri -- e, __ e -- le -- i -- son. __
 }
 
 PartPThreeVoiceOne =  {
-  \clef "bass" 
-  \time 2/4 
-  \key g \major 
-  \voiceOne
+  \clef "treble_8"
+  \time 2/4
+  \key g \major
 
   \partial 4 r4 | % 1
   R2*12 | % 13
@@ -131,13 +138,17 @@ PartPThreeVoiceOne =  {
   d'4. e'8 | % 16
   d'2 ~ | % 17
   d'4 r4 | % 18
+
   R2*7 | % 25
-  r4 g8 [ b8 ] | % 26
+
+  r4 g8 [( b8 ]) | % 26
   d'4( c'8) [ c'8 ] | % 27
   d'4. e'8 | % 28
   d'2 ~ | % 29
   d'4 r4 | \barNumberCheck #30
+
   R2*11 | % 41
+
   r4 g8 [ b8 ] | % 42
   d'4 ( c'8 ) [ c'8 ] | % 43
   d'4. e'8 | % 44
@@ -146,25 +157,30 @@ PartPThreeVoiceOne =  {
 }
 
 bass = {
-  \clef "bass" 
-  \time 2/4 
-  \key g \major 
-  \voiceTwo
-  
+  \clef "bass"
+  \time 2/4
+  \key g \major
+
   \partial 4 r4 | % 1
+
   R2*12 | % 13
+
   r4 g8 [ b8 ] | % 14
   g4 ~ g8 [ g8 ] | % 15
   a4. c'8 | % 16
   c'2 ( | % 17
   b4 ) r4 | % 18
+
   R2*7 | % 25
-  r4 g8 [ b8 ] | % 26
+
+  r4 g8 [( b8 ]) | % 26
   g4~ g8 [ g8 ] | % 27
   a4. c'8 | % 28
   c'2 ( | % 29
   b4 ) r4 | \barNumberCheck #30
+
   R2*11 | % 41
+
   r4 g8 [ b8 ] | % 42
   g4 ~ g8 [ g8 ] | % 43
   a4. c'8 | % 44
@@ -173,11 +189,11 @@ bass = {
 }
 
 PartPFourVoiceOne =  {
-  \clef "treble" 
-  \time 2/4 
-  \key g \major 
+  \clef "treble"
+  \time 2/4
+  \key g \major
   \voiceOne
-  
+
   \partial 4 g'8 [
   fis'8 ] | % 1
   e'4. fis'8 | % 2
@@ -228,11 +244,11 @@ PartPFourVoiceOne =  {
 }
 
 PartPFourVoiceTwo =  {
-  \clef "treble" 
-  \time 2/4 
-  \key g \major 
+  \clef "treble"
+  \time 2/4
+  \key g \major
   \voiceTwo
-  
+
   \partial 4 d'4 | % 1
   d'4 c'4 | % 2
   a2 s2 | % 4
@@ -280,10 +296,11 @@ PartPFourVoiceTwo =  {
 }
 
 PartPFourVoiceFive =  {
-  \clef "bass" 
-  \time 2/4 
-  \key g \major 
-  
+  \clef "bass"
+  \time 2/4
+  \key g \major
+  \voiceOne
+
   \partial 4 <b, g>4 | % 1
   <c g>2 | % 2
   <b, g>2 | % 3
@@ -333,10 +350,11 @@ PartPFourVoiceFive =  {
 }
 
 PartPFourVoiceSix =  {
-  \clef "bass" 
-  \time 2/4 
-  \key g \major 
-  
+  \clef "bass"
+  \time 2/4
+  \key g \major
+  \voiceTwo
+
   \partial 4 s4*7 | % 4
   g,2 ~ | % 5
   g,2 | % 6
@@ -373,10 +391,10 @@ PartPFourVoiceSix =  {
 }
 
 PartPFiveVoiceOne =  {
-  \clef "treble" 
-  \time 2/4 
-  \key g \major 
-  
+  \clef "treble"
+  \time 2/4
+  \key g \major
+
   \partial 4 g'8 [
   fis'8 ] | % 1
   e'4. fis'8 | % 2
@@ -405,10 +423,10 @@ PartPFiveVoiceOne =  {
 }
 
 PartPSixVoiceOne =  {
-  \clef "treble" 
-  \time 2/4 
-  \key g \major 
-  
+  \clef "treble"
+  \time 2/4
+  \key g \major
+
   \partial 4 d'4 | % 1
   d'4 c'4 | % 2
   a2 | % 3
@@ -436,10 +454,10 @@ PartPSixVoiceOne =  {
 }
 
 PartPSevenVoiceOne =  {
-  \clef "alto" 
-  \time 2/4 
-  \key g \major 
-  
+  \clef "alto"
+  \time 2/4
+  \key g \major
+
   \partial 4 g4 | % 1
   g2 | % 2
   g2 | % 3
@@ -467,10 +485,10 @@ PartPSevenVoiceOne =  {
 }
 
 PartPEightVoiceOne =  {
-  \clef "bass" 
-  \time 2/4 
-  \key g \major 
-  
+  \clef "bass"
+  \time 2/4
+  \key g \major
+
   \partial 4 b,4 | % 1
   c2 | % 2
   b,2 | % 3
@@ -498,10 +516,10 @@ PartPEightVoiceOne =  {
 }
 
 PartPNineVoiceOne =  {
-  \clef "bass" 
-  \time 2/4 
-  \key g \major 
-  
+  \clef "bass"
+  \time 2/4
+  \key g \major
+
   \transposition c \partial 4
   b4 | % 1
   c'2 | % 2
@@ -529,11 +547,7 @@ PartPNineVoiceOne =  {
   g2 ^\fermata \bar "|."
 }
 
-\book {
-  \paper {
-    #(set-paper-size "philippine-legal")
-  }
-
+kyrie_eleison = \score {
   \header {
     title =  "Kyrie Eleison"
     composer =  "Fr. Manoling Francisco, SJ"
@@ -544,129 +558,139 @@ PartPNineVoiceOne =  {
   }
 
   % The score definition
-  \score {
+  <<
+    \tag #'full_chorus \tag #'cantor_solo
+    \new Staff \with {
+      instrumentName = "Cantor"
+      shortInstrumentName = "Ctr."
+      midiInstrument = "voice oohs"
+    }
     <<
-      \new Staff \with {
-        instrumentName = "Cantor"
-        shortInstrumentName = "Ctr."
-        midiInstrument = "voice oohs"
-      }
-      <<
-        \context Staff <<
-          \context Voice = "PartPOneVoiceOne" {  \PartPOneVoiceOne }
-          \new Lyrics \lyricsto "PartPOneVoiceOne" { \PartPOneVoiceOneLyricsOne }
-        >>
-      >>
-      \new ChoirStaff \with {
-        instrumentName = "Choir"
-        shortInstrumentName = "Ch."
-        midiInstrument = "choir aahs"
-      } <<
-        \new Staff
-        <<
-          \context Staff <<
-            \context Voice = "PartPTwoVoiceOne" {  \PartPTwoVoiceOne }
-            \context Voice = "alto" { \alto }
-            \new Lyrics \lyricsto "PartPTwoVoiceOne" { \PartPTwoVoiceOneLyricsOne }
-          >>
-        >>
-        \new Staff
-        <<
-          \context Staff <<
-            \context Voice = "PartPThreeVoiceOne" {  \PartPThreeVoiceOne }
-            \context Voice = "bass" { \bass }
-          >>
-        >>
+      \new Voice = "PartPOneVoiceOne" {  \PartPOneVoiceOne }
+      \new Lyrics \lyricsto "PartPOneVoiceOne" { \PartPOneVoiceOneLyricsOne }
+    >>
 
+    \tag #'full_chorus \tag #'chorus
+    \new ChoirStaff \with {
+      instrumentName = "Choir"
+      midiInstrument = "choir aahs"
+    } <<
+
+      \tag #'soprano_chorus
+      \new Staff \with {
+        instrumentName = "Soprano"
+        shortInstrumentName = "S."
+      } <<
+        \new Voice = "PartPTwoVoiceOne" {  \PartPTwoVoiceOne }
+        \new Lyrics \lyricsto "PartPTwoVoiceOne" { \PartPTwoVoiceOneLyricsOne }
       >>
-      \new PianoStaff \with {
-        instrumentName = "Piano"
-        shortInstrumentName = "Pno."
-        midiInstrument = "acoustic grand"
-      }
-      <<
-        \context Staff = "1" <<
-          \context Voice = "PartPFourVoiceOne" {  \voiceOne \PartPFourVoiceOne }
-          \context Voice = "PartPFourVoiceTwo" {  \voiceTwo \PartPFourVoiceTwo }
-        >> 
-        \context Staff = "2" <<
-          \context Voice = "PartPFourVoiceFive" {  \voiceOne \PartPFourVoiceFive }
-          \context Voice = "PartPFourVoiceSix" {  \voiceTwo \PartPFourVoiceSix }
-        >>
+
+      \tag #'alto_chorus
+      \new Staff \with {
+        instrumentName = "Alto"
+        shortInstrumentName = "A."
+      } <<
+        \new Voice = "alto" { \alto }
+        \new Lyrics \lyricsto "alto" { \PartPTwoVoiceOneLyricsOne }
       >>
-      \new StaffGroup
-      <<
+
+      \tag #'tenor_chorus
+      \new Staff \with {
+        instrumentName = "Tenor"
+        shortInstrumentName = "T."
+      } <<
+          \new Voice = "tenor" {  \PartPThreeVoiceOne }
+          \new Lyrics \lyricsto "tenor" { \PartPTwoVoiceOneLyricsOne }
+      >>
+
+      \tag #'bass_chorus
+      \new Staff \with {
+        instrumentName = "Bass"
+        shortInstrumentName = "B."
+      } <<
+        \new Voice = "bass" { \bass }
+        \new Lyrics \lyricsto "bass" { \PartPTwoVoiceOneLyricsOne }
+      >>
+    >>
+
+    \tag #'accompaniment \tag #'piano_solo
+    \new PianoStaff \with {
+      instrumentName = "Piano"
+      shortInstrumentName = "Pf."
+      midiInstrument = "acoustic grand"
+    }
+    <<
+      \new Staff = "1" <<
+        \new Voice = "PartPFourVoiceOne" {  \voiceOne \PartPFourVoiceOne }
+        \new Voice = "PartPFourVoiceTwo" {  \voiceTwo \PartPFourVoiceTwo }
+      >>
+      \new Staff = "2" <<
+        \new Voice = "PartPFourVoiceFive" {  \voiceOne \PartPFourVoiceFive }
+        \new Voice = "PartPFourVoiceSix" {  \voiceTwo \PartPFourVoiceSix }
+      >>
+    >>
+
+    \tag #'accompaniment \tag #'tutti
+    \new StaffGroup <<
+
+      \tag #'violins
+      \new StaffGroup \with {
+        systemStartDelimiter = #'SystemStartSquare
+        midiInstrument = "violin"
+      } <<
+
+        \tag #'violin_i
         \new Staff \with {
           instrumentName = "Violin 1"
-          shortInstrumentName = "Vln. 1"
-          midiInstrument = "violin"
-        }
-        <<
-          \context Staff <<
-            \context Voice = "PartPFiveVoiceOne" {  \PartPFiveVoiceOne }
-          >>
+          shortInstrumentName = "Vl. 1"
+        } <<
+          \new Voice = "PartPFiveVoiceOne" {  \PartPFiveVoiceOne }
         >>
+
+        \tag #'violin_ii
         \new Staff \with {
           instrumentName = "Violin 2"
-          shortInstrumentName = "Vln. 2"
-          midiInstrument = "violin"
-        }
-        <<
-          \context Staff <<
-            \context Voice = "PartPSixVoiceOne" {  \PartPSixVoiceOne }
-          >>
-        >>
-        \new Staff \with {
-          instrumentName = "Viola"
-          shortInstrumentName = "Vla."
-          midiInstrument = "viola"
+          shortInstrumentName = "Vl. 2"
         } <<
-          \context Staff <<
-            \context Voice = "PartPSevenVoiceOne" {  \PartPSevenVoiceOne }
-          >>
+          \new Voice = "PartPSixVoiceOne" {  \PartPSixVoiceOne }
         >>
+      >>
+
+      \tag #'viola
+      \new Staff \with {
+        instrumentName = "Viola"
+        shortInstrumentName = "Vla."
+        midiInstrument = "viola"
+      } <<
+        \new Voice = "PartPSevenVoiceOne" {  \PartPSevenVoiceOne }
+      >>
+      
+      \new StaffGroup \with {
+        systemStartDelimiter = #'SystemStartSquare
+      } <<
+        \tag #'cello
         \new Staff \with {
           instrumentName = "Violoncello"
-          shortInstrumentName = "Vc."
+          shortInstrumentName = "Vcl."
           midiInstrument = "cello"
         } <<
-          \context Staff <<
-            \context Voice = "PartPEightVoiceOne" {  \PartPEightVoiceOne }
-          >>
+          \new Voice = "PartPEightVoiceOne" {  \PartPEightVoiceOne }
         >>
+
+        \tag #'contrabass
         \new Staff \with {
           instrumentName = "Contrabass"
           shortInstrumentName = "Cb."
           midiInstrument = "contrabass"
         } <<
-          \context Staff <<
-            \context Voice = "PartPNineVoiceOne" {  \PartPNineVoiceOne }
-          >>
+          \new Voice = "PartPNineVoiceOne" {  \PartPNineVoiceOne }
         >>
       >>
     >>
+  >>
 
-    \layout {
-      \RemoveEmptyStaffContext
-      \mergeDifferentlyDottedOn
-      \mergeDifferentlyHeadedOn
-      \context {
-        \Score
-        \override SystemStartBar.collapse-height = #4
-      }
-      \context {
-        \PianoStaff
-        \override SystemStartBrace.collapse-height = #4
-
-      }
-      \context {
-        \StaffGroup
-        \override SystemStartBracket.collapse-height = #4
-      }
-    }
-    % To create MIDI output, uncomment the following line:
-    \midi {
-      \tempo 4 = 68
-    }
+  \layout {}
+  \midi {
+    \tempo 4 = 68
   }
 }

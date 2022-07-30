@@ -1581,7 +1581,7 @@ come_to_the_table = \score {
       >>
     >>
 
-    \tag #'soli
+    \tag #'accompaniment \tag #'soli
     \new ChoirStaff <<
 
       \tag #'asax_solo
@@ -1610,8 +1610,10 @@ come_to_the_table = \score {
       >>
     >>
 
-    \tag #'tutti
+    \tag #'accompaniment \tag #'tutti
     \new StaffGroup <<
+
+      \tag #'violins
       \new StaffGroup \with {
         systemStartDelimiter = #'SystemStartSquare
         midiInstrument = "violin"
@@ -1660,8 +1662,4 @@ come_to_the_table = \score {
   \midi {
     \tempo 4 = 168
   }
-}
-
-\book {
-  \come_to_the_table
 }

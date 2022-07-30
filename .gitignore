@@ -1,4 +1,9 @@
 *
 
 !*.ly
+!*.ily
+!sources/
+
 !.gitignore
+
+testing.ly
