@@ -137,7 +137,7 @@ part-Pone-one = {
   g'2. |
   % 145
 
-  R2.*32 \fermata \bar "|." |
+  R2.*31 R2. \fermata \bar "|." |
 }
 
 PartPOneVoiceOneLyricsOne =  \lyricmode {

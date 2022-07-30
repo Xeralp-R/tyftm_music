@@ -43,7 +43,7 @@ PartPOneVoiceOne =  {
   fis'4. g'8 | \barNumberCheck #40
   g'2 ~ | % 41
   g'8 r8 r4 | % 42
-  R2*4 \bar "|."
+  R2*3 R2\fermata \bar "|."
 }
 
 PartPOneVoiceOneLyricsOne =  \lyricmode {
