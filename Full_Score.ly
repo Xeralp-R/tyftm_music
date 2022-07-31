@@ -5,7 +5,16 @@
 \include "./sources/Come_to_the_Table.ly"
 \include "./sources/Kyrie_Eleison.ly"
 \include "./sources/Glory_to_God.ly"
+\include "./sources/Alleluia-simplified.ly"
 \include "./sources/Alleluia-elaborated.ly"
+
+tocSection =
+#(define-music-function (label text) (symbol-list-or-symbol? markup?)
+  (add-toc-item! 'tocSectionMarkup text label))
+
+tocGroup = 
+#(define-music-function (label text) (symbol-list-or-symbol? markup?)
+  (add-toc-item! 'tocGroupMarkup text label))
 
 \book {
   \header {
@@ -53,10 +62,17 @@
   \bookpart {
     \paper {
       tocFormatMarkup = #markup %% Cancelling the default bold setting.
-      tocActMarkup = \markup \large \column {
+      tocSectionMarkup = \markup \large \column {
         \hspace #1
         \fill-line { \null \italic \fromproperty #'toc:text \null }
         \hspace #1
+      }
+      tocGroupMarkup = \markup \column {
+        \line {
+          \hspace #-4 %% Cancelling the first level's tocIndentMarkup
+          \fromproperty #'toc:indent \fromproperty #'toc:text
+          \hspace #2
+        }
       }
       tocItemMarkup = \markup \fill-line {
         \fill-with-pattern #1.5 #CENTER .
@@ -92,13 +108,14 @@
       }
     }
 
-    \tocAct intro \markup { "Introductory Rite" }
+    \tocSection intro \markup { "Introductory Rite" }
   }
 
   \bookpart { \blank_page }
 
   \bookpart {
-    \tocItem intro.processional \markup { "Come to the Table" }
+    \tocGroup intro.processional \markup { "Processional" }
+    \tocItem intro.processional.come \markup { "Come to the Table" }
     \header {
       \come_to_the_table_header
     }
@@ -111,7 +128,8 @@
   }
 
   \bookpart {
-    \tocItem intro.kyrie \markup { "Kyrie Eleison" }
+    \tocGroup intro.penitential \markup { "Penitential Act" }
+    \tocItem intro.penitential.kyrie \markup { "Kyrie Eleison" }
     \header {
       \kyrie_eleison_header
     }
@@ -123,7 +141,8 @@
   }
 
   \bookpart {
-    \tocItem intro.gloria \markup { "Glory to God" }
+    \tocGroup intro.gloria \markup { "Gloria" }
+    \tocItem intro.gloria.glory_to_god \markup { "Glory to God" }
     \header {
       \glory_to_god_header
     }
@@ -155,11 +174,24 @@
       }
     }
 
-    \tocAct word \markup { "Liturgy of the Word" }
+    \tocSection word \markup { "Liturgy of the Word" }
   }
 
   \bookpart {
-    \tocItem word.alleluia.elaborated \markup { "Alleluia (elaborated)" }
+    \tocGroup word.alleluia \markup { "Alleluia" }
+    \tocItem word.alleluia.simplified \markup { "Simplified Form" }
+    \header {
+      \alleluia-simplified_header
+    }
+    \score {
+      \alleluia-simplified
+      \layout {}
+      %  \midi {\tempo 4 = 100 }
+    }
+  }
+
+  \bookpart {
+    \tocItem word.alleluia.elaborated \markup { "Elaborated Form" }
     \header {
       \alleluia-elaborated_header
     }
