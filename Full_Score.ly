@@ -1,4 +1,5 @@
 \version "2.22.1"
+\include "./Global.ily"
 \include "./Full_Score.ily"
 
 \include "./sources/Come_to_the_Table.ly"
@@ -97,16 +98,38 @@
 
   \bookpart {
     \tocItem intro.processional \markup { "Come to the Table" }
-    \come_to_the_table
+    \header {
+      \come_to_the_table_header
+    }
+    \score {
+      \come_to_the_table
+
+      \layout {}
+      %\midi { \tempo 4 = 168 }
+    }
   }
 
   \bookpart {
     \tocItem intro.kyrie \markup { "Kyrie Eleison" }
-    \kyrie_eleison
+    \header {
+      \kyrie_eleison_header
+    }
+    \score {
+      \kyrie_eleison
+      \layout {}
+      %\midi { \tempo 4 = 68 }
+    }
   }
 
   \bookpart {
     \tocItem intro.gloria \markup { "Glory to God" }
-    \glory_to_god
+    \header {
+      \glory_to_god_header
+    }
+    \score {
+      \glory_to_god
+      \layout {}
+      %\midi {}
+    }
   }
 }

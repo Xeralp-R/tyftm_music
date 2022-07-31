@@ -309,7 +309,7 @@ part-Pthree-one = {
   f'4 e'4 d'4 |
   c'2.~ |
   c'2 r4 |
-  
+
   R2.*16
 
   g'4^\f g'4 g'4 |
@@ -405,7 +405,7 @@ part-Pfour-one = {
   \clef "treble_8"
 
   R2. |
-  
+
   R2.*16 |
 
   g4^\f g4 g4 |
@@ -427,8 +427,8 @@ part-Pfour-one = {
   f4 e4 d4 |
   c2.~ |
   c2 r4 |
-  
-  R2.*16 
+
+  R2.*16
 
   g4^\f g4 g4 |
   % 50
@@ -450,8 +450,8 @@ part-Pfour-one = {
   c2.~ |
   c2 r4 |
   % 65
-  
-  R2.*38 
+
+  R2.*38
 
   g4^\f g4 g4 |
   g4 f4 e4 |
@@ -472,7 +472,7 @@ part-Pfour-one = {
   f4 e4 d4 |
   c2.~ |
   c2 r4 |
-  
+
   R2.*26
 
   % 145
@@ -521,7 +521,7 @@ part-Pfive-one = {
   \key c \major
   \time 3/4
   \clef bass
-  
+
   R2.
 
   R2.*16 |
@@ -569,7 +569,7 @@ part-Pfive-one = {
   c2 r4 |
   % 65
 
-  
+
   R2.*38
 
   g4^\f g4 g4 |
@@ -592,7 +592,7 @@ part-Pfive-one = {
   c2.~ |
   c2 r4 |
 
-  R2.*26 
+  R2.*26
 
   % 145
   g4^\f g4 g4 |
@@ -1182,17 +1182,17 @@ part-Pseven-two = {
   c4 f4 a4 |
   % 140
   c4 ees4 ges4 |
-  \tuplet 3/2 { g,,8 a,,8 b,,8 } 
-  \tuplet 3/2 { c,8 d,8 e,8 } 
+  \tuplet 3/2 { g,,8 a,,8 b,,8 }
+  \tuplet 3/2 { c,8 d,8 e,8 }
   \tuplet 3/2 { f,8 g,8 a,8 } |
-  \tuplet 3/2 { b,8 c8 d8 } 
-  \tuplet 3/2 { e8 f8 g8 } 
+  \tuplet 3/2 { b,8 c8 d8 }
+  \tuplet 3/2 { e8 f8 g8 }
   \tuplet 3/2 { a8 b8 c'8 } |
-  \tuplet 3/2 { b8 c'8 b8 } 
-  \tuplet 3/2 { a8 b8 a8 } 
+  \tuplet 3/2 { b8 c'8 b8 }
+  \tuplet 3/2 { a8 b8 a8 }
   \tuplet 3/2 { g8 a8 g8 } |
-  \tuplet 3/2 { f8 g8 f8 } 
-  \tuplet 3/2 { e8 f8 e8 } 
+  \tuplet 3/2 { f8 g8 f8 }
+  \tuplet 3/2 { e8 f8 e8 }
   \tuplet 3/2 { d8 e8 d8 } |
   % 145
   <c, c >4 <e, e >4 <g, g >4 |
@@ -1477,7 +1477,7 @@ part-Ponezero-one = {
   \clef alto
 
   R2. |
-  
+
   R2.*16 |
 
   e'2. |
@@ -1594,7 +1594,7 @@ part-Poneone-one = {
   \clef bass
 
   R2. |
-  
+
   R2.*16 |
 
   c2. |
@@ -1712,7 +1712,7 @@ part-Ponetwo-one = {
   \clef bass
 
   R2. |
-  
+
   R2.*16 |
 
   c2. |
@@ -1824,14 +1824,16 @@ part-Ponetwo-one = {
   c'2.\fermata \bar "|." |
 }
 
-glory_to_god = \score {
-  \header {
-    composer = "Fr. Manoling Francisco, SJ"
-    subtitle = "Gloria"
-    title = "Glory to God"
-  }
+
+glory_to_god_header = \header {
+  composer = "Fr. Manoling Francisco, SJ"
+  subtitle = "Gloria"
+  title = "Glory to God"
+}
+
+glory_to_god = {
   <<
-    \tag #'full_chorus \tag #'cantor_solo
+    \tag #'(full_chorus solo cantor)
     \new Staff \with {
       instrumentName = "Cantor"
       shortInstrumentName = "Ctr."
@@ -1842,13 +1844,11 @@ glory_to_god = \score {
       \new Lyrics \lyricsto "PartPOneVoiceOne" { \PartPOneVoiceOneLyricsOne }
     >>
 
-    \tag #'full_chorus \tag #'chorus
     \new ChoirStaff \with {
-      instrumentName = "Choir"
       midiInstrument = "choir aahs"
     } <<
 
-      \tag #'soprano_chorus
+      \tag #'(full_chorus chorus tutti soprano)
       \new Staff \with {
         instrumentName = "Soprano"
         shortInstrumentName = "S."
@@ -1857,7 +1857,7 @@ glory_to_god = \score {
         \new Lyrics \lyricsto "PartPTwoVoiceOne" { \chor_alt_lyr }
       >>
 
-      \tag #'alto_chorus
+      \tag #'(full_chorus chorus tutti alto)
       \new Staff \with {
         instrumentName = "Alto"
         shortInstrumentName = "A."
@@ -1866,7 +1866,7 @@ glory_to_god = \score {
         \new Lyrics \lyricsto "alto" { \chor_lyr }
       >>
 
-      \tag #'tenor_chorus
+      \tag #'(full_chorus chorus tutti tenor)
       \new Staff \with {
         instrumentName = "Tenor"
         shortInstrumentName = "T."
@@ -1875,7 +1875,7 @@ glory_to_god = \score {
         \new Lyrics \lyricsto "tenor" { \chor_alt_lyr }
       >>
 
-      \tag #'bass_chorus
+      \tag #'(full_chorus chorus tutti bass)
       \new Staff \with {
         instrumentName = "Bass"
         shortInstrumentName = "B."
@@ -1885,16 +1885,15 @@ glory_to_god = \score {
       >>
     >>
 
-    \tag #'accompaniment \tag #'soli
     \new ChoirStaff <<
-      \tag #'asax_solo
+      \tag #'(accompaniment solo asax)
       \new Staff \with {
         instrumentName = "Alto Saxophone"
         shortInstrumentName = "Asax."
         midiInstrument = "alto sax"
       } \part-Psix-one
 
-      \tag #'piano_solo
+      \tag #'(accompaniment solo piano)
       \new PianoStaff \with {
         instrumentName = "Piano"
         shortInstrumentName = "Pf."
@@ -1907,16 +1906,13 @@ glory_to_god = \score {
       >>
     >>
 
-    \tag #'accompaniment \tag #'tutti
     \new StaffGroup <<
-
-      \tag #'violins
       \new StaffGroup \with {
         systemStartDelimiter = #'SystemStartSquare
         midiInstrument = "violin"
       } <<
 
-        \tag #'violin_i
+        \tag #'(accompaniment tutti violins violin_i)
         \new Staff \with {
           instrumentName = "Violin 1"
           shortInstrumentName = "Vl. 1"
@@ -1924,7 +1920,7 @@ glory_to_god = \score {
           \new Voice = "PartPFiveVoiceOne" { \part-Peight-one }
         >>
 
-        \tag #'violin_ii
+        \tag #'(accompaniment tutti violins violin_ii)
         \new Staff \with {
           instrumentName = "Violin 2"
           shortInstrumentName = "Vl. 2"
@@ -1933,7 +1929,7 @@ glory_to_god = \score {
         >>
       >>
 
-      \tag #'viola
+      \tag #'(accompaniment tutti viola)
       \new Staff \with {
         instrumentName = "Viola"
         shortInstrumentName = "Vla."
@@ -1945,7 +1941,7 @@ glory_to_god = \score {
       \new StaffGroup \with {
         systemStartDelimiter = #'SystemStartSquare
       } <<
-        \tag #'cello
+        \tag #'(accompaniment tutti cello)
         \new Staff \with {
           instrumentName = "Violoncello"
           shortInstrumentName = "Vcl."
@@ -1954,7 +1950,7 @@ glory_to_god = \score {
           \new Voice = "PartPEightVoiceOne" { \part-Poneone-one }
         >>
 
-        \tag #'contrabass
+        \tag #'(accompaniment tutti cbass)
         \new Staff \with {
           instrumentName = "Contrabass"
           shortInstrumentName = "Cb."
@@ -1965,7 +1961,4 @@ glory_to_god = \score {
       >>
     >>
   >>
-
-  \layout {}
-  \midi {}
 }

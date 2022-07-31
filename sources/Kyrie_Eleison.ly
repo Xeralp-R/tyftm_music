@@ -121,8 +121,8 @@ alto = {
 }
 
 PartPTwoVoiceOneLyricsOne =  \lyricmode {
-  Ky -- ri -- e, __ e -- le -- i -- son. __ 
-  Chris -- te, __ e -- le -- i -- son.  __ 
+  Ky -- ri -- e, __ e -- le -- i -- son. __
+  Chris -- te, __ e -- le -- i -- son.  __
   Ky -- ri -- e, __ e -- le -- i -- son. __
 }
 
@@ -547,19 +547,19 @@ PartPNineVoiceOne =  {
   g2 ^\fermata \bar "|."
 }
 
-kyrie_eleison = \score {
-  \header {
-    title =  "Kyrie Eleison"
-    composer =  "Fr. Manoling Francisco, SJ"
-    poet =  "Palan Reyes"
-    encodingsoftware =  "MuseScore 3.6.2"
-    encodingdate =  "2022-07-17"
-    subtitle =  Responsorial
-  }
+kyrie_eleison_header = \header {
+  title =  "Kyrie Eleison"
+  composer =  "Fr. Manoling Francisco, SJ"
+  poet =  "Palan Reyes"
+  encodingsoftware =  "MuseScore 3.6.2"
+  encodingdate =  "2022-07-17"
+  subtitle =  Responsorial
+}
 
+kyrie_eleison = {
   % The score definition
   <<
-    \tag #'full_chorus \tag #'cantor_solo
+    \tag #'(full_chorus solo cantor)
     \new Staff \with {
       instrumentName = "Cantor"
       shortInstrumentName = "Ctr."
@@ -570,13 +570,11 @@ kyrie_eleison = \score {
       \new Lyrics \lyricsto "PartPOneVoiceOne" { \PartPOneVoiceOneLyricsOne }
     >>
 
-    \tag #'full_chorus \tag #'chorus
     \new ChoirStaff \with {
-      instrumentName = "Choir"
       midiInstrument = "choir aahs"
     } <<
 
-      \tag #'soprano_chorus
+      \tag #'(full_chorus chorus tutti soprano)
       \new Staff \with {
         instrumentName = "Soprano"
         shortInstrumentName = "S."
@@ -585,7 +583,7 @@ kyrie_eleison = \score {
         \new Lyrics \lyricsto "PartPTwoVoiceOne" { \PartPTwoVoiceOneLyricsOne }
       >>
 
-      \tag #'alto_chorus
+      \tag #'(full_chorus chorus tutti alto)
       \new Staff \with {
         instrumentName = "Alto"
         shortInstrumentName = "A."
@@ -594,16 +592,16 @@ kyrie_eleison = \score {
         \new Lyrics \lyricsto "alto" { \PartPTwoVoiceOneLyricsOne }
       >>
 
-      \tag #'tenor_chorus
+      \tag #'(full_chorus chorus tutti tenor)
       \new Staff \with {
         instrumentName = "Tenor"
         shortInstrumentName = "T."
       } <<
-          \new Voice = "tenor" {  \PartPThreeVoiceOne }
-          \new Lyrics \lyricsto "tenor" { \PartPTwoVoiceOneLyricsOne }
+        \new Voice = "tenor" {  \PartPThreeVoiceOne }
+        \new Lyrics \lyricsto "tenor" { \PartPTwoVoiceOneLyricsOne }
       >>
 
-      \tag #'bass_chorus
+      \tag #'(full_chorus chorus tutti bass)
       \new Staff \with {
         instrumentName = "Bass"
         shortInstrumentName = "B."
@@ -613,7 +611,7 @@ kyrie_eleison = \score {
       >>
     >>
 
-    \tag #'accompaniment \tag #'piano_solo
+    \tag #'(accompaniment solo piano)
     \new PianoStaff \with {
       instrumentName = "Piano"
       shortInstrumentName = "Pf."
@@ -630,16 +628,14 @@ kyrie_eleison = \score {
       >>
     >>
 
-    \tag #'accompaniment \tag #'tutti
     \new StaffGroup <<
 
-      \tag #'violins
       \new StaffGroup \with {
         systemStartDelimiter = #'SystemStartSquare
         midiInstrument = "violin"
       } <<
 
-        \tag #'violin_i
+        \tag #'(accompaniment tutti violins violin_i)
         \new Staff \with {
           instrumentName = "Violin 1"
           shortInstrumentName = "Vl. 1"
@@ -647,7 +643,7 @@ kyrie_eleison = \score {
           \new Voice = "PartPFiveVoiceOne" {  \PartPFiveVoiceOne }
         >>
 
-        \tag #'violin_ii
+        \tag #'(accompaniment tutti violins violin_ii)
         \new Staff \with {
           instrumentName = "Violin 2"
           shortInstrumentName = "Vl. 2"
@@ -656,7 +652,7 @@ kyrie_eleison = \score {
         >>
       >>
 
-      \tag #'viola
+      \tag #'(accompaniment tutti viola)
       \new Staff \with {
         instrumentName = "Viola"
         shortInstrumentName = "Vla."
@@ -664,11 +660,11 @@ kyrie_eleison = \score {
       } <<
         \new Voice = "PartPSevenVoiceOne" {  \PartPSevenVoiceOne }
       >>
-      
+
       \new StaffGroup \with {
         systemStartDelimiter = #'SystemStartSquare
       } <<
-        \tag #'cello
+        \tag #'(accompaniment tutti cello)
         \new Staff \with {
           instrumentName = "Violoncello"
           shortInstrumentName = "Vcl."
@@ -677,7 +673,7 @@ kyrie_eleison = \score {
           \new Voice = "PartPEightVoiceOne" {  \PartPEightVoiceOne }
         >>
 
-        \tag #'contrabass
+        \tag #'(accompaniment tutti cbass)
         \new Staff \with {
           instrumentName = "Contrabass"
           shortInstrumentName = "Cb."
@@ -688,9 +684,4 @@ kyrie_eleison = \score {
       >>
     >>
   >>
-
-  \layout {}
-  \midi {
-    \tempo 4 = 68
-  }
 }

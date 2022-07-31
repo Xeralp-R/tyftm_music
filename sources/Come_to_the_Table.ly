@@ -1499,22 +1499,21 @@ contrabass = \transpose c c' {
   }
 }
 
-come_to_the_table = \score {
-  \header {
-    title = "Come to the Table"
-    subtitle = "Processional"
-    composer = "Barbie Dumlao"
-    poet = "Moses Catan"
-    tagline = ##f
-  }
+come_to_the_table_header = \header {
+  title = "Come to the Table"
+  subtitle = "Processional"
+  composer = "Barbie Dumlao"
+  poet = "Moses Catan"
+  tagline = ##f
+}
 
+come_to_the_table = {
   <<
-    \tag #'full_chorus \tag #'voice_soli
     \new ChoirStaff \with {
       systemStartDelimiter = #'SystemStartSquare
     } <<
 
-      \tag #'soprano_solo
+      \tag #'(full_chorus solo soprano)
       \new Staff \with {
         midiInstrument = "voice oohs"
         instrumentName = "Soprano Solo"
@@ -1524,7 +1523,7 @@ come_to_the_table = \score {
         \new Lyrics \lyricsto "sop_solo" \sop_solo_lyr
       >>
 
-      \tag #'bass_solo
+      \tag #'(full_chorus solo bass)
       \new Staff \with {
         midiInstrument = "voice oohs"
         instrumentName = "Bass Solo"
@@ -1535,12 +1534,11 @@ come_to_the_table = \score {
       >>
     >>
 
-    \tag #'full_chorus \tag #'chorus
     \new ChoirStaff \with {
-      instrumentName = "Chorus"
+      midiInstrument = "choir aahs"
     } <<
 
-      \tag #'soprano_chorus
+      \tag #'(full_chorus tutti chorus soprano)
       \new Staff \with {
         midiInstrument = "choir aahs"
         instrumentName = "Soprano"
@@ -1550,7 +1548,7 @@ come_to_the_table = \score {
         \new Lyrics \lyricsto "soprano" \lyr
       >>
 
-      \tag #'alto_chorus
+      \tag #'(full_chorus tutti chorus alto)
       \new Staff \with {
         midiInstrument = "choir aahs"
         instrumentName = "Alto"
@@ -1560,7 +1558,7 @@ come_to_the_table = \score {
         \new Lyrics \lyricsto "alto" \lyr
       >>
 
-      \tag #'tenor_chorus
+      \tag #'(full_chorus tutti chorus tenor)
       \new Staff \with {
         midiInstrument = "choir aahs"
         instrumentName = "Tenor"
@@ -1570,7 +1568,7 @@ come_to_the_table = \score {
         \new Lyrics \lyricsto "tenor" \lyr
       >>
 
-      \tag #'bass_chorus
+      \tag #'(full_chorus tutti chorus bass)
       \new Staff \with {
         midiInstrument = "choir aahs"
         instrumentName = "Bass"
@@ -1581,17 +1579,16 @@ come_to_the_table = \score {
       >>
     >>
 
-    \tag #'accompaniment \tag #'soli
     \new ChoirStaff <<
 
-      \tag #'asax_solo
+      \tag #'(accompaniment solo asax)
       \new Staff = "saxophone" \with {
         midiInstrument = "alto sax"
         instrumentName = "Alto Saxophone"
         shortInstrumentName = "Asax."
       } \saxophone
 
-      \tag #'bell_solo
+      \tag #'(accompaniment solo bell)
       \new RhythmicStaff = "bell" \with {
         midiInstrument = "tinkle bell"
         instrumentName = "Handbell (ad lib.)"
@@ -1599,7 +1596,7 @@ come_to_the_table = \score {
         \RemoveEmptyStaves
       } \bell
 
-      \tag #'piano_solo
+      \tag #'(accompaniment solo piano)
       \new PianoStaff \with {
         midiInstrument = "acoustic grand"
         instrumentName = "Pianoforte"
@@ -1610,28 +1607,26 @@ come_to_the_table = \score {
       >>
     >>
 
-    \tag #'accompaniment \tag #'tutti
     \new StaffGroup <<
 
-      \tag #'violins
       \new StaffGroup \with {
         systemStartDelimiter = #'SystemStartSquare
         midiInstrument = "violin"
       } <<
-        \tag #'violin_i
+        \tag #'(accompaniment tutti violins violin_i)
         \new Staff \with {
           instrumentName = "Violin 1"
           shortInstrumentName = "Vl. 1"
         } \first_violin
 
-        \tag #'violin_ii
+        \tag #'(accompaniment tutti violins violin_ii)
         \new Staff \with {
           instrumentName = "Violin 2"
           shortInstrumentName = "Vl. 2"
         } \second_violin
       >>
 
-      \tag #'viola
+      \tag #'(accompaniment tutti viola)
       \new Staff \with {
         instrumentName = "Viola"
         shortInstrumentName = "Vla."
@@ -1641,14 +1636,14 @@ come_to_the_table = \score {
       \new StaffGroup \with {
         systemStartDelimiter = #'SystemStartSquare
       } <<
-        \tag #'cello
+        \tag #'(accompaniment tutti cello)
         \new Staff \with {
           instrumentName = "Violoncello"
           shortInstrumentName = "Vcl."
           midiInstrument = "cello"
         } \cello
 
-        \tag #'contrabass
+        \tag #'(accompaniment tutti cbass)
         \new Staff \with {
           instrumentName = "Contrabass"
           shortInstrumentName = "Cb."
@@ -1657,9 +1652,4 @@ come_to_the_table = \score {
       >>
     >>
   >>
-
-  \layout {}
-  \midi {
-    \tempo 4 = 168
-  }
 }
