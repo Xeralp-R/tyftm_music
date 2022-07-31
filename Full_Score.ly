@@ -5,6 +5,7 @@
 \include "./sources/Come_to_the_Table.ly"
 \include "./sources/Kyrie_Eleison.ly"
 \include "./sources/Glory_to_God.ly"
+\include "./sources/Alleluia-elaborated.ly"
 
 \book {
   \header {
@@ -130,6 +131,42 @@
       \glory_to_god
       \layout {}
       %\midi {}
+    }
+  }
+
+  \bookpart { \blank_page }
+  
+  \bookpart {
+    \paper {
+      print-page-number = ##f
+    }
+
+    \markup {
+      \center-column {
+        \vspace #15
+
+        \fill-line {
+          \huge \larger \larger
+          \fontsize #4 \bold
+          \center-column {
+            "Liturgy of the Word"
+          }
+        }
+      }
+    }
+
+    \tocAct word \markup { "Liturgy of the Word" }
+  }
+
+  \bookpart {
+    \tocItem word.alleluia.elaborated \markup { "Alleluia (elaborated)" }
+    \header {
+      \alleluia-elaborated_header
+    }
+    \score {
+      \alleluia-elaborated
+      \layout {}
+      %  \midi {\tempo 4 = 100 }
     }
   }
 }
