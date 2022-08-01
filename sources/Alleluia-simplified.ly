@@ -388,7 +388,7 @@ part-Psix-two = {
 
 alleluia-simplified_header = \header {
   composer = "Fr. Manoling Fransisco, SJ"
-  lyricist = "Palan Reyes"
+  poet = "Palan Reyes"
   subtitle = "Simplified Form"
   title = "Alleluia"
 }

@@ -632,7 +632,7 @@ part-Poneone-one = {
 
 alleluia-elaborated_header = \header {
   composer = "Fr. Manoling Fransisco, SJ"
-  lyricist = "Palan Reyes"
+  poet = "Palan Reyes"
   subtitle = "Elaborated Form"
   title = "Alleluia"
 }

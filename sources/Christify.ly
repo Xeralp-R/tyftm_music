@@ -582,7 +582,7 @@ part-Pthree-two = {
 
 christify_header = \header {
   composer = "Fr. Manoling Francisco, SJ"
-  lyricist = "Palan Reyes"
+  poet = "Palan Reyes"
   subtitle = "Offertorium"
   title = "Christify"
 }
