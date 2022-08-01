@@ -79,19 +79,19 @@ soprano = {
 }
 
 soprano_lyr = \lyricmode {
-  Chris -- ti -- fy the gifts we bring to you, __ 
-  Boun -- ty of the earth, re -- cieve a -- new,  __ 
-  Take and bless the work of o -- ur __ hands, __ 
+  Chris -- ti -- fy the gifts we bring to you, __
+  Boun -- ty of the earth, re -- cieve a -- new,  __
+  Take and bless the work of o -- ur __ hands, __
   Chris -- ti -- fy these gifts at your com -- mand. __
-  
+
   Turn this bread and wine, our hearts im -- plore, __
-  To the li -- ving pre -- sence of the LORD, __ 
+  To the li -- ving pre -- sence of the LORD, __
   Bless'd and bro -- ken, shared with all in need,  __
-  All our hun -- gers sa -- cred bread will feed. __ 
-  
+  All our hun -- gers sa -- cred bread will feed. __
+
   With this bread and wine You Chris -- ti -- fy, __
   Now our deep -- est thirst You sa -- tis -- fy,  __
-  We, who by this bread, You sanc -- ti -- fy,  __ 
+  We, who by this bread, You sanc -- ti -- fy,  __
   For You to Chris -- ti -- fy.  __
 }
 
@@ -172,19 +172,19 @@ alto = {
 }
 
 alto_lyr = \lyricmode {
-  Chris -- ti -- fy the gifts we bring to you, __ 
-  Boun -- ty of the earth, re -- cieve a -- new,  __ 
-  Take and bless the work of o -- ur __ hands, __ 
+  Chris -- ti -- fy the gifts we bring to you, __
+  Boun -- ty of the earth, re -- cieve a -- new,  __
+  Take and bless the work of o -- ur __ hands, __
   Chris -- ti -- fy these gifts at your com -- mand. __
-  
+
   Turn this bread and wine, our hearts im -- plore, __
-  To the li -- ving pre -- sence of the LORD, __ 
+  To the li -- ving pre -- sence of the LORD, __
   Bless'd and bro -- ken, shared with all in need,  __
-  All our hun -- gers sa -- cred bread will feed. __ 
-  
+  All our hun -- gers sa -- cred bread will feed. __
+
   With this bread and wine You Chris -- ti -- fy, __
   Now our deep -- est thirst You sa -- tis -- fy,  __
-  We, who by this bread, You sanc -- ti -- fy,  __ 
+  We, who by this bread, You sanc -- ti -- fy,  __
   Draw the world for You to Chris -- ti -- fy.  __
 }
 
@@ -265,19 +265,19 @@ tenor = {
 }
 
 tenor_lyr = \lyricmode {
-  Sun and moon and earth and wind and rain, __ 
-  All the world's con -- tained in ev' -- ry grain, __ 
-  All the toil and dreams of hu -- man -- kind,  __ 
+  Sun and moon and earth and wind and rain, __
+  All the world's con -- tained in ev' -- ry grain, __
+  All the toil and dreams of hu -- man -- kind,  __
   All we are we bring as bread and wine. __
 
   Turn this bread and wine, our hearts im -- plore, __
-  To the li -- ving pre -- sence of the LORD, __ 
+  To the li -- ving pre -- sence of the LORD, __
   Bless'd and bro -- ken, shared with all in need,  __
-  The sa -- cred bread will feed. __ 
-  
+  The sa -- cred bread will feed. __
+
   With this bread and wine You Chris -- ti -- fy, __
   Now our deep -- est thirst You sa -- tis -- fy,  __
-  We, who by this bread, You sanc -- ti -- fy,  __ 
+  We, who by this bread, You sanc -- ti -- fy,  __
   For You to Chris -- ti -- fy.  __
 }
 
@@ -358,19 +358,19 @@ bass = {
 }
 
 bass_lyr = \lyricmode {
-  Sun and moon and earth and wind and rain, __ 
-  All the world's con -- tained in ev' -- ry grain, __ 
-  All the toil and dreams of hu -- man -- kind,  __ 
+  Sun and moon and earth and wind and rain, __
+  All the world's con -- tained in ev' -- ry grain, __
+  All the toil and dreams of hu -- man -- kind,  __
   All we are we bring as bread and wine. __
 
   Turn this bread and wine, our hearts im -- plore, __
-  To the li -- ving pre -- sence of the LORD, __ 
+  To the li -- ving pre -- sence of the LORD, __
   Bless'd and bro -- ken, shared with all in need,  __
-  The sa -- cred bread will feed. __ 
-  
+  The sa -- cred bread will feed. __
+
   With this bread and wine You Chris -- ti -- fy, __
   Now our deep -- est thirst You sa -- tis -- fy,  __
-  We, who by this bread, You sanc -- ti -- fy,  __ 
+  We, who by this bread, You sanc -- ti -- fy,  __
   Draw the world for You to Chris -- ti -- fy.  __
 }
 
@@ -580,29 +580,30 @@ part-Pthree-two = {
   <d, a, d >1\arpeggio |
 }
 
-christify = \score {
-  \header {
-    composer = "Fr. Manoling Francisco, SJ"
-    lyricist = "Palan Reyes"
-    subtitle = "Offertorium"
-    title = "Christify"
-  }
+christify_header = \header {
+  composer = "Fr. Manoling Francisco, SJ"
+  lyricist = "Palan Reyes"
+  subtitle = "Offertorium"
+  title = "Christify"
+}
 
+
+christify = {
   <<
-    \tag #'full_chorus \tag #'chorus
-    \new ChoirStaff <<
+    \new ChoirStaff \with {
+      midiInstrument = "choir aahs"
+    } <<
 
-      \tag #'soprano_chorus
+      \tag #'(full_chorus tutti chorus soprano)
       \new Staff \with {
         instrumentName = "Soprano"
         shortInstrumentName = "S."
-        midiInstrument = "choir aahs"
       } <<
         \new Voice = "soprano" \soprano
         \new Lyrics \lyricsto "soprano" \soprano_lyr
       >>
 
-      \tag #'alto_chorus
+      \tag #'(full_chorus tutti chorus alto)
       \new Staff \with {
         instrumentName = "Alto"
         shortInstrumentName = "A."
@@ -612,7 +613,7 @@ christify = \score {
         \new Lyrics \lyricsto "alto" \alto_lyr
       >>
 
-      \tag #'tenor_chorus
+      \tag #'(full_chorus tutti chorus tenor)
       \new Staff \with {
         instrumentName = "Tenor"
         shortInstrumentName = "T."
@@ -622,18 +623,18 @@ christify = \score {
         \new Lyrics \lyricsto "tenor" \tenor_lyr
       >>
 
-      \tag #'bass_chorus
+      \tag #'(full_chorus tutti chorus bass)
       \new Staff \with {
         instrumentName = "Bass"
         shortInstrumentName = "B."
         midiInstrument = "choir aahs"
       } <<
-        \new Voice = "bass" \bass 
+        \new Voice = "bass" \bass
         \new Lyrics \lyricsto "bass" \bass_lyr
       >>
     >>
 
-    \tag #'piano_accompaniment
+    \tag #'(accompaniment solo piano)
     \new PianoStaff \with {
       instrumentName = "Piano"
       shortInstrumentName = "Pf."
@@ -644,8 +645,4 @@ christify = \score {
       \new Staff \part-Pthree-two
     >>
   >>
-}
-
-\book {
-  \christify
 }

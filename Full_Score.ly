@@ -8,6 +8,8 @@
 \include "./sources/Alleluia-simplified.ly"
 \include "./sources/Alleluia-elaborated.ly"
 
+\include "./sources/Christify.ly"
+
 tocSection =
 #(define-music-function (label text) (symbol-list-or-symbol? markup?)
   (add-toc-item! 'tocSectionMarkup text label))
@@ -197,6 +199,44 @@ tocGroup =
     }
     \score {
       \alleluia-elaborated
+      \layout {}
+      %  \midi {\tempo 4 = 100 }
+    }
+  }
+
+  \bookpart { \blank_page }
+
+  \bookpart {
+    \paper {
+      print-page-number = ##f
+    }
+
+    \markup {
+      \center-column {
+        \vspace #15
+
+        \fill-line {
+          \huge \larger \larger
+          \fontsize #4 \bold
+          \center-column {
+            "Liturgy of the Eucharist"
+          }
+        }
+      }
+    }
+
+    \tocSection eucharist \markup { "Liturgy of the Eucharist" }
+  }
+
+  \bookpart {
+    \tocGroup eucharist.offertorium \markup { "Offertorium" }
+    \tocItem eucharist.offertorium.christify \markup { "Christify" }
+
+    \header {
+      \christify_header
+    }
+    \score {
+      \christify
       \layout {}
       %  \midi {\tempo 4 = 100 }
     }
