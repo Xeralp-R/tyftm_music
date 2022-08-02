@@ -9,6 +9,7 @@
 \include "./sources/Alleluia-elaborated.ly"
 
 \include "./sources/Christify.ly"
+\include "./sources/When_We_Eat_This_Bread.ly"
 
 tocSection =
 #(define-music-function (label text) (symbol-list-or-symbol? markup?)
@@ -239,6 +240,20 @@ tocGroup =
       \christify
       \layout {}
       %  \midi {\tempo 4 = 100 }
+    }
+  }
+
+  \bookpart {
+    \tocGroup eucharist.mystery \markup { "The Mystery of Faith" }
+    \tocItem eucharist.mystery.when \markup { "When We Eat This Bread" }
+
+    \header {
+      \when_we_eat_this_bread_header
+    }
+    \score {
+      \when_we_eat_this_bread
+      \layout {}
+      %  \midi {\tempo 4 = 60 }
     }
   }
 }
