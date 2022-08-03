@@ -75,7 +75,7 @@ soprano = {
   a'1~ |
   a'2. r4 |
 
-  R1 |
+  R1\fermata \bar "|." |
 }
 
 soprano_lyr = \lyricmode {
@@ -168,7 +168,7 @@ alto = {
   d'1~ |
   d'2. r4 |
 
-  R1 |
+  R1\fermata \bar "|." |
 }
 
 alto_lyr = \lyricmode {
@@ -261,7 +261,7 @@ tenor = {
   a1~ |
   a2. r4 |
 
-  R1 |
+  R1\fermata \bar "|." |
 }
 
 tenor_lyr = \lyricmode {
@@ -354,7 +354,7 @@ bass = {
   d1~ |
   d2. r4 |
 
-  R1 |
+  R1\fermata \bar "|." |
 }
 
 bass_lyr = \lyricmode {
@@ -474,7 +474,7 @@ part-Pthree-one = {
   a''1 |
   <a' a'' >4 <g' g'' >4 <fis' fis'' >4 <e' e'' >4 |
 
-  <fis' d'' a'' >1\arpeggio |
+  <fis' d'' a'' >1\arpeggio \fermata \bar "|." |
 }
 
 part-Pthree-two = {
@@ -577,7 +577,7 @@ part-Pthree-two = {
   <fis, d >4 a,4 <a, d >4 <cis e >4 |
   <d fis >1 |
 
-  <d, a, d >1\arpeggio |
+  <d, a, d >1\arpeggio \fermata \bar "|." |
 }
 
 christify_header = \header {
