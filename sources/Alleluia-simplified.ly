@@ -12,8 +12,8 @@ part-Pone-one = {
 
   \newline
   \omit \time 25/4 \tempo "Recit. Adagio"
-  g'4 g'2 g'4 g'2 g'4 f'4 g'4 a'4 g'1\fermata \bar "'"
-  g'4 g'4 e'4 c'4 d'4 f'4 b4 c'1\fermata | \bar "||"
+  g'4 g'2 g'4 c''2 g'4 f'4 g'4 a'4 g'1\fermata \bar "'"
+  g'4 g'4 g'4 g'4 d''4 c''4 b'4 c''1\fermata | \bar "||"
   \newline 
 
   \time 3/8 \tempo "Chor. Vivace"
@@ -304,8 +304,8 @@ part-Psix-one = {
   r4 <c'' e'' g'' >1.\arpeggio <b' d'' f'' >4 <c'' e'' g'' >4 <c'' f'' a'' >4 
   <c'' e'' g'' >1 \arpeggio \fermata \bar "'"
 
-  r4 <c'' e'' g'' >4 <a' c'' e'' >4 <f' a' c'' >4 <f' a' d'' >4
-  <b' d'' f'' >4 <d' g' b' >4 <e' g' c'' >1\arpeggio \fermata \bar "||" |
+  r4 <c'' e'' g'' >2.\arpeggio  <f'' a'' d''' >4 <d'' g'' c''' >4 
+  <d'' g'' b'' >4 <e'' g'' c''' >1\arpeggio \fermata \bar "||" |
 
   \time 3/8
   c'4. |
@@ -359,7 +359,7 @@ part-Psix-two = {
   r4 <c e g c' >1.\arpeggio <b, d f b >4 <c e g c' >4 <c f a c' >4 
   <c e g c' >1 \arpeggio \fermata \bar "'"
 
-  r4 <c e g c' >4 <c e a c' >4 <c f a c' >4 <d f a d' >4 <d f b d' >4 <b, d f b >4
+  r4 <c e g c' >2. <d f a d' >4 <d f b d' >4 <b, d f b >4
   <c e g c' >1\arpeggio \fermata \bar "||" |
 
   \time 3/8
