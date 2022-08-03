@@ -48,8 +48,8 @@ part-Ptwo-one = {
   c'4. c'8 |
   % 5
   d'4. dis'8 |
-  e'2~ |
-  e'8 b8 d'8 d'8 |
+  dis'2( |
+  e'8) b8 d'8 d'8 |
   c'4. d'8 |
   b8 b8 e'8 fis'8 |
   % 10
@@ -77,7 +77,7 @@ part-Pthree-one = {
   d4 b8 b8 |
   a4. g8 |
   % 5
-  fis8( g8) a8( b8) |
+  fis8( g8 a8) b8 |
   b2~ |
   b8 g8 b8 b8 |
   g4 fis4 |
@@ -108,8 +108,8 @@ part-Pfour-one = {
   e8( g8 fis8) e8 |
   % 5
   d4 dis4 |
-  fis4( d4 |
-  e8) e8 d8 b,8 |
+  e2~ |
+  e8 e8 d8 b,8 |
   c4. a,8 |
   b,8 b,8 e8 d8 |
   % 10
@@ -123,41 +123,11 @@ part-Pfour-one = {
   g4 \fermata | \bar "|."
 }
 
-part-Pfive-one = {
-  \key g \major
-  \time 2/4
-  \clef treble
-
-  \partial 4
-  g'8 fis'8 |
-  % 0
-  e'4. fis'8 |
-  d'4. e'8 |
-  c'4. d'8 |
-  b4 g'8 b'8 |
-  e'4. e'8 |
-  % 5
-  fis'4. g'8 |
-  g'2~ |
-  g'8 b8 g'8 fis'8 |
-  e'4. fis'8 |
-  d'8 d'8 g'8 d''8 |
-  % 10
-  \tuplet 3/2 { d''8 e''8 d''8 } \tuplet 3/2 { c''8 d''8 c''8 } |
-  b'8 r8-\markup { \italic "G.P." } g'8 b'8 |
-  e'4. e'8 |
-  fis'4. g'8 |
-  g'2~ |
-  % 15
-  \partial 4
-  g'4 \fermata | \bar "|."
-}
-
 chor_lyr = \lyricmode {
   When we eat this bread and drink this cup,
-  We pro -- claim Your name, O LORD! __
+  We pro -- claim Your death, O LORD! __
   Un -- til You come a -- gain, un -- til You come a -- gain,
-  We pro -- claim Your name, O LORD! __
+  We pro -- claim Your death, O LORD! __
 }
 
 when_we_eat_this_bread_header = \header {
