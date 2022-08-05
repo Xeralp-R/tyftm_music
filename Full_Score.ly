@@ -10,6 +10,7 @@
 
 \include "./sources/Christify.ly"
 \include "./sources/When_We_Eat_This_Bread.ly"
+\include "./sources/Holy,_Holy,_Holy.ly"
 
 tocSection =
 #(define-music-function (label text) (symbol-list-or-symbol? markup?)
@@ -240,6 +241,20 @@ tocGroup =
       \christify
       \layout {}
       %  \midi {\tempo 4 = 100 }
+    }
+  }
+
+  \bookpart {
+    \tocGroup eucharist.sanctus \markup { "Sanctus" }
+    \tocItem eucharist.sanctus.holy \markup { "Holy, Holy, Holy" }
+
+    \header {
+      \holy_holy_holy_header
+    }
+    \score {
+      \holy_holy_holy 
+      \layout {}
+      %  \midi {\tempo 4 = 132 }
     }
   }
 
