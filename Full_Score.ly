@@ -11,6 +11,7 @@
 \include "./sources/Christify.ly"
 \include "./sources/When_We_Eat_This_Bread.ly"
 \include "./sources/Holy,_Holy,_Holy.ly"
+\include "./sources/Amen_WYD.ly"
 
 tocSection =
 #(define-music-function (label text) (symbol-list-or-symbol? markup?)
@@ -269,6 +270,20 @@ tocGroup =
       \when_we_eat_this_bread
       \layout {}
       %  \midi {\tempo 4 = 60 }
+    }
+  }
+
+  \bookpart {
+    \tocGroup eucharist.mystery \markup { "Great Amen" }
+    \tocItem eucharist.mystery.when \markup { "Amen (World Youth Day)" }
+
+    \header {
+      \amen_wyd_header
+    }
+    \score {
+      \amen_wyd
+      \layout {}
+      %  \midi {\tempo 4 = 92 }
     }
   }
 }
