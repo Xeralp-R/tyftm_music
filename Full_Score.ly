@@ -13,6 +13,7 @@
 \include "./sources/Holy,_Holy,_Holy.ly"
 \include "./sources/Amen_WYD.ly"
 \include "./sources/Ama_Namin.ly"
+\include "./sources/Lamb_of_God.ly"
 
 tocSection =
 #(define-music-function (label text) (symbol-list-or-symbol? markup?)
@@ -298,6 +299,20 @@ tocGroup =
     \score {
       \ama_namin 
       \layout {}
+    }
+  }
+
+  \bookpart {
+    \tocGroup eucharist.agnus \markup { "Agnus Dei" }
+    \tocItem eucharist.agnus.lamb \markup { "Lamb of God" }
+
+    \header {
+      \lamb_of_god_header
+    }
+    \score {
+      \lamb_of_god
+      \layout {}
+      %  \midi {\tempo 4 = 84 }
     }
   }
 }
