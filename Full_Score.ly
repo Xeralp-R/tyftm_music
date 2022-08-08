@@ -12,6 +12,7 @@
 \include "./sources/When_We_Eat_This_Bread.ly"
 \include "./sources/Holy,_Holy,_Holy.ly"
 \include "./sources/Amen_WYD.ly"
+\include "./sources/Ama_Namin.ly"
 
 tocSection =
 #(define-music-function (label text) (symbol-list-or-symbol? markup?)
@@ -284,6 +285,19 @@ tocGroup =
       \amen_wyd
       \layout {}
       %  \midi {\tempo 4 = 92 }
+    }
+  }
+
+  \bookpart {
+    \tocGroup eucharist.lords \markup { "Lord's Prayer" }
+    \tocItem eucharist.lords.ama \markup { "Ama Namin" }
+
+    \header {
+      \ama_namin_header
+    }
+    \score {
+      \ama_namin 
+      \layout {}
     }
   }
 }
