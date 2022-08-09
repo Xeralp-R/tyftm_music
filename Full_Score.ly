@@ -16,6 +16,8 @@
 \include "./sources/Lamb_of_God.ly"
 \include "./sources/Anima_Christi.ly"
 
+\include "./sources/Humayo't_Ihayag.ly"
+
 tocSection =
 #(define-music-function (label text) (symbol-list-or-symbol? markup?)
   (add-toc-item! 'tocSectionMarkup text label))
@@ -328,6 +330,43 @@ tocGroup =
       \anima_christi
       \layout {}
       %  \midi {\tempo 4 = 84 }
+    }
+  }
+
+  \bookpart { \blank_page }
+
+  \bookpart {
+    \paper {
+      print-page-number = ##f
+    }
+
+    \markup {
+      \center-column {
+        \vspace #15
+
+        \fill-line {
+          \huge \larger \larger
+          \fontsize #4 \bold
+          \center-column {
+            "Concluding Rite"
+          }
+        }
+      }
+    }
+
+    \tocSection concluding \markup { "Concluding Rite" }
+  }
+
+  \bookpart {
+    \tocGroup concluding.recessional \markup { "Recessional" }
+    \tocItem oncluding.recessional.humayot \markup { "Humayo't Ihayag" }
+
+    \header {
+      \humayot_ihayag_header
+    }
+    \score {
+      \humayot_ihayag
+      \layout {}
     }
   }
 }
