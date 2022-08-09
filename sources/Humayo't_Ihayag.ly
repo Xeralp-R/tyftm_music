@@ -16,25 +16,25 @@ part-Pone-one = {
   r4 r8 b8\f
   \repeat volta 2 {
     cis'8 e'8 e'8 cis'8 |
-  % 5
-  e'4 r4 r2 |
-  r4 r8 b8 cis'8 e'8 e'8 cis'8 |
-  e'4 r4 r2 |
-  r4 r8 b8 cis'8 e'8 e'8 cis'8 |
-  e'8 e'8 e'8 fis'8~ fis'8 e'8 dis'8 e'8~ |
-  % 10
-  e'4 r8 e'8 gis'8 b'8 gis'8 b'8~ |
-  b'2~ b'8 a'8 gis'8 fis'8~ |
-  fis'8-\markup { \italic "second note only 2da volta" } e'8 r4 gis'8 b'8
-  gis'8 b'8~ |
-  b'8 b'4. b'8 a'8 gis'8 fis'8~ |
-  fis'8 e'4 r8 gis'8 b'8 gis'8 b'8~ |
-  % 15
-  b'8 b'4. b'8 a'8 gis'8 fis'8~( |
-  fis'8 gis'8) e'2 r4 |
-  cis'8 e'8 cis'8 b8~ b8 e'8 b8 a8~ |
-  a8 e'8 e'8 gis'8~ gis'8 b'8 gis'16( fis'16 e'8) |
-  e'8 r8 r4 r2 |
+    % 5
+    e'4 r4 r2 |
+    r4 r8 b8 cis'8 e'8 e'8 cis'8 |
+    e'4 r4 r2 |
+    r4 r8 b8 cis'8 e'8 e'8 cis'8 |
+    e'8 e'8 e'8 fis'8~ fis'8 e'8 dis'8 e'8~ |
+    % 10
+    e'4 r8 e'8 gis'8 b'8 gis'8 b'8~ |
+    b'2~ b'8 a'8 gis'8 fis'8~ |
+    fis'8-\markup { \italic "second note only 2da volta" } e'8 r4 gis'8 b'8
+    gis'8 b'8~ |
+    b'8 b'4. b'8 a'8 gis'8 fis'8~ |
+    fis'8 e'4 r8 gis'8 b'8 gis'8 b'8~ |
+    % 15
+    b'8 b'4. b'8 a'8 gis'8 fis'8~( |
+    fis'8 gis'8) e'2 r4 |
+    cis'8 e'8 cis'8 b8~ b8 e'8 b8 a8~ |
+    a8 e'8 e'8 gis'8~ gis'8 b'8 gis'16( fis'16 e'8) |
+    e'8 r8 r4 r2 |
   }
   \alternative {
     {
@@ -129,9 +129,9 @@ sop_solo_lyr_first =  \lyricmode {
 }
 
 sop_solo_lyr_second = \lyricmode {
-  \skip 1 li -- na't su -- ma -- yaw! 
-  Luk -- so sa -- bay si -- gaw: 
-  Ang nga -- lan N'yang ang -- kin 'sing ning -- ning __ ng bit -- uin,  __ 
+  \skip 1 li -- na't su -- ma -- yaw!
+  Luk -- so sa -- bay si -- gaw:
+  Ang nga -- lan N'yang ang -- kin 'sing ning -- ning __ ng bit -- uin,  __
   Li -- wa -- nag ng Diyos,  __ su -- ma -- a -- tin!
 }
 
@@ -253,9 +253,9 @@ bass_solo_lyr_first = \lyricmode {
 }
 
 bass_solo_lyr_second = \lyricmode {
-  \skip 1 li -- na't su -- ma -- yaw! 
-  Luk -- so sa -- bay si -- gaw: 
-  Ang nga -- lan N'yang ang -- kin 'sing ning -- ning __ ng bit -- uin,  __ 
+  \skip 1 li -- na't su -- ma -- yaw!
+  Luk -- so sa -- bay si -- gaw:
+  Ang nga -- lan N'yang ang -- kin 'sing ning -- ning __ ng bit -- uin,  __
   Li -- wa -- nag ng Diyos,  __ su -- ma -- a -- tin!
 }
 
@@ -357,46 +357,46 @@ part-Pthree-one = {
 }
 
 chor_lyr_first = \lyricmode {
-  Pu -- ri -- hin Siya!  __ 
+  Pu -- ri -- hin Siya!  __
   A -- wi -- tan Siya!  __
-  (doo) (doo)  (doo)  (doo) (doo)  
-  La -- ngit at lu  __ pa,  __ 
+  (doo) (doo)  (doo)  (doo) (doo)
+  La -- ngit at lu  __ pa,  __
   A -- raw at ta -- la, __
-  A -- ting 'pag -- di -- wang pag -- i -- big ng Diyos  __ sa ta -- nan.  
-  Al -- le -- lu -- ia!  __ 
-  
-  At i -- si -- gaw  __  sa la -- hat  __ 
-  Ka -- li  __ nga N'ya'y  __ wa -- gas  __ 
-  Ka -- yong  __ duk -- ha't  __ sa -- lat  __ 
-  Pag -- i -- big N'ya sa in -- yo  __ ay ta -- pat!  __   
+  A -- ting 'pag -- di -- wang pag -- i -- big ng Diyos  __ sa ta -- nan.
+  Al -- le -- lu -- ia!  __
 
-  Hu -- ma -- yo't i -- ha -- yag, 
-  Pu -- ri -- hin Siya!  __   
-  At a -- ting i -- bun -- yag, 
-  A -- wi -- tan -- Siya!  __ 
-  Pag -- li -- lig -- tas ng D'yos na sa Krus  __ ni He -- sus  __ 
-  Ang s'yang sa mun -- do'y  __  tu -- mu -- bos  __ 
-  La -- ngit at lu -- pa 
-  S'ya'y pa -- pu -- ri -- han! 
-  A -- raw at ta -- la'y 
-  S'ya'y pa -- ra -- nga --  lan! 
-  A -- ting 'pag -- di -- wang pag -- i -- big ng D'yos  __ sa ta -- nan. __ 
-  Al -- le -- lu -- ia!  __ 
-  
-  Ha -- li -- na't su -- ma -- yaw, 
-  Bu -- ong ba -- yan!  __  
-  Luk -- so sa -- bay si -- gaw, 
-  San -- li -- bu -- tan! __    
-  Ang nga -- lan  N'yang ang -- kin 'sing ning -- ning  __ ng bit -- uin  __ 
-  Li -- wa -- nag ng Diyos  __  su -- ma -- a -- tin! 
-  La -- ngit at lu -- pa, 
-  Siya'y pa -- pu -- ri -- han! 
+  At i -- si -- gaw  __  sa la -- hat  __
+  Ka -- li  __ nga N'ya'y  __ wa -- gas  __
+  Ka -- yong  __ duk -- ha't  __ sa -- lat  __
+  Pag -- i -- big N'ya sa in -- yo  __ ay ta -- pat!  __
+
+  Hu -- ma -- yo't i -- ha -- yag,
+  Pu -- ri -- hin Siya!  __
+  At a -- ting i -- bun -- yag,
+  A -- wi -- tan -- Siya!  __
+  Pag -- li -- lig -- tas ng D'yos na sa Krus  __ ni He -- sus  __
+  Ang s'yang sa mun -- do'y  __  tu -- mu -- bos  __
+  La -- ngit at lu -- pa
+  S'ya'y pa -- pu -- ri -- han!
+  A -- raw at ta -- la'y
+  S'ya'y pa -- ra -- nga --  lan!
+  A -- ting 'pag -- di -- wang pag -- i -- big ng D'yos  __ sa ta -- nan. __
+  Al -- le -- lu -- ia!  __
+
+  Ha -- li -- na't su -- ma -- yaw,
+  Bu -- ong ba -- yan!  __
+  Luk -- so sa -- bay si -- gaw,
+  San -- li -- bu -- tan! __
+  Ang nga -- lan  N'yang ang -- kin 'sing ning -- ning  __ ng bit -- uin  __
+  Li -- wa -- nag ng Diyos  __  su -- ma -- a -- tin!
+  La -- ngit at lu -- pa,
+  Siya'y pa -- pu -- ri -- han!
   A -- raw at ta -- la,
-  Siya'y pa -- ra -- nga --  lan! 
-  A -- ting pag -- di -- wang pag -- i -- big ng Diyos  __ sa ta -- nan,  __  
+  Siya'y pa -- ra -- nga --  lan!
+  A -- ting pag -- di -- wang pag -- i -- big ng Diyos  __ sa ta -- nan,  __
   sa ta -- nan!  __ Hey!
-  
-  Al -- le -- lu -- ia! 
+
+  Al -- le -- lu -- ia!
   Al -- le -- lu -- ia!
   Al -- le -- lu -- ia!
   Hey!
@@ -606,7 +606,7 @@ part-Psix-one = {
   \clef bass
 
   \override DynamicLineSpanner.direction = #UP
-  
+
   R1 |
   R1 |
   R1 |
@@ -820,16 +820,17 @@ part-Peight-one = {
   <b' b'' >8 r8 <b' e'' gis'' >4 <cis'' fis'' a'' >8 <cis'' fis'' a'' >4 <b'
   e'' gis'' >8~ |
   <b' e'' gis'' >4 r4 r8 <a' a'' >4 <b' b'' >8 |
-  <e' gis' b' e'' >4.\arpeggio <fis' b' dis'' fis'' >2\arpeggio 
+  <e' gis' b' e'' >4.\arpeggio <fis' b' dis'' fis'' >2\arpeggio
   <<
     \context Voice = "voiceone" {
       s8 | \voiceOne % 10
-      r8 <e'' e''' >8 <e'' e''' >8 <fis' fis'' >8 
+      r8 <e'' e''' >8 <e'' e''' >8 <fis' fis'' >8
       r8 <gis' gis'' >8 r8 <a' a'' >8
     }
-    \context Voice = "voicetwo" { \oneVoice
+    \context Voice = "voicetwo" {
+      \oneVoice
       <e' gis' cis'' e''>8~\arpeggio | \voiceTwo % 10
-      <e' gis' cis'' e'' >2 
+      <e' gis' cis'' e'' >2
     }
   >> |
   <b' b'' >4-. <b' b'' >4-. <b' b'' >8-. <a' a'' >8( <gis' gis'' >8 <fis'
@@ -864,14 +865,31 @@ part-Peight-one = {
   <gis' e'' gis'' >8~ |
   % 20
   <gis' e'' gis'' >8 <e'' e''' >8 <e'' e''' >8 r8 |
-  r8 <e'' e''' >8 <e'' e''' >8 r8 r2 |
-  cis''8 e''8 cis'''8 e''8 dis''8 fis''8 cis'''8 dis''8 |
-  b'8 gis''8 b''8 gis''8 b''8 gis''8 e''8 cis''8 |
-  a'8 cis''8 a''8 cis''8 b'8 dis''8 a''8 dis''8 |
-  % 25
-  gis'8 e''8 gis''8 e''8 b''8 gis''8 e'''8 b''8 |
-  a''8 c'''8 e'''8 c'''8 a''8 d'''8 fis'''8 d'''8 |
-  g''8 b''8 f'''8 b''8 g''8 b''8 e'''8 b''8 |
+  r8 <e'' e''' >8 <e'' e''' >8 r8
+  <<
+    \context Voice = "voiceone" {
+      e''8 gis''8 b''8 cis'''8~ |
+      \voiceOne
+      cis'''2~ cis'''8 cis'''8 dis'''8 b''8~ |
+      b''4 r8 e''8 e''8 fis''8 gis''8 a''8~ |
+      a''2. b''8 gis''8~ |
+      % 25
+      gis''4 r8 gis''8 gis''8 a''8 b''8 c'''8~ |
+      c'''2. d'''8 b''8~ |
+      b''2 r8 e''8 fis''8 g''8 |
+    }
+    \context Voice = "voicetwo" {
+      s2 |
+      \voiceTwo
+      r4 <cis'' e'' a'' >4 r4 <e'' a'' >4 |
+      r4 <fis' b' dis'' >4 r4 <b' dis'' >4 |
+      r4 <a' cis'' e'' >4 r4 <cis'' e'' >4 |
+      % 25
+      r4 <b' dis'' fis'' >4 r4 <dis'' fis'' >4 |
+      r4 <c'' e'' a'' >4 r4 <e'' a'' >4 |
+      r4 <b' f'' >4 r4 <gis' b' >4 |
+    }
+  >>
   <a' c'' e'' a'' >4.\arpeggio <ais' cis'' fis''
   ais'' >8~\arpeggio <ais' cis'' fis'' ais''
   >4. <b' dis'' fis'' b'' >8~\arpeggio |
@@ -889,15 +907,16 @@ part-Peight-one = {
   <c'' f'' a'' >4 r4 r8 <bes' bes'' >4 <c'' c''' >8 |
   % 35
   <f' a' c'' f'' >4.\arpeggio <g' c'' e'' g''
-  >2\arpeggio 
+  >2\arpeggio
   <<
     \context Voice = "voiceone" {
       s8 | \voiceOne
       r8 <f'' f''' >8 <f'' f''' >8 <g' g'' >8 r8 <a' a'' >8 r8 <bes' bes'' >8
-    } 
-    \context Voice = "voicetwo" { \oneVoice
+    }
+    \context Voice = "voicetwo" {
+      \oneVoice
       <f' a' d'' f'' >8~\arpeggio | \voiceTwo
-      <f' a' d'' f'' >2 
+      <f' a' d'' f'' >2
     }
   >> |
   <c'' c''' >4-. <c'' c''' >4-. <c'' c''' >8-. <bes' bes'' >8( <a' a'' >8
@@ -945,15 +964,16 @@ part-Peight-one = {
   <f'' b'' d''' >16 c'''16 b''8 r8 b''16 g''16 c''16 g'16 e'16 c'16 <a' d''
   fis'' a'' >4 |
   <g' b' d'' g'' >4.\arpeggio <a' d'' fis'' a''
-  >2\arpeggio 
+  >2\arpeggio
   <<
     \context Voice = "voiceone" {
       s8 | \voiceOne
       r8 <g'' g''' >8 <g'' g''' >8 r8
-    } 
-    \context Voice = "voicetwo" { \oneVoice
+    }
+    \context Voice = "voicetwo" {
+      \oneVoice
       <g' b' e'' g'' >8~\arpeggio | \voiceTwo
-      <g' b' e'' g'' >2 
+      <g' b' e'' g'' >2
     }
   >> <b' b'' >8 <d'' d''' >8 <b' b'' >8 <e'' e''' >8 |
   <d'' d''' >4-. <d'' d''' >4-. <d'' d''' >8-. <c'' c''' >8( <b' b'' >8 <a'
@@ -993,18 +1013,19 @@ part-Peight-one = {
   <e' e'' >8 r8 r8 r8 r2 |
   R1 |
   <<
-    \context Voice = "voiceone" { \oneVoice
+    \context Voice = "voiceone" {
+      \oneVoice
       % 65
-      <g' b' d'' g'' >4\arpeggio\fz <b b' >4\pp\< 
+      <g' b' d'' g'' >4\arpeggio\fz <b b' >4\pp\<
       <b b' >8 <c' c'' >4 <d' d'' >8~ |
-      <d' d'' >4 <g' d'' g'' >4 <d'' f'' d''' >8 <c'' e'' c''' >4 
+      <d' d'' >4 <g' d'' g'' >4 <d'' f'' d''' >8 <c'' e'' c''' >4
       <b' g'' b'' >8~ | \voiceOne
-      <b' g'' b'' >4 <d' g' d'' >4 <e' g' e'' >8 e''4 <g' b' g'' >8\!\ff 
+      <b' g'' b'' >4 <d' g' d'' >4 <e' g' e'' >8 e''4 <g' b' g'' >8\!\ff
     }
-    \context Voice = "voicetwo" { 
-      s1 | 
+    \context Voice = "voicetwo" {
+      s1 |
       s1 | \voiceTwo
-      s4 c''8 g'8 
+      s4 c''8 g'8
     }
   >> |
   r4 <g'' g''' >2.\sfz \fermata \bar "|." |
@@ -1044,13 +1065,13 @@ part-Peight-two = {
   % 20
   <e b >4 r4 |
   R1 |
-  cis8 e8 cis'8 e8 dis8 fis8 cis'8 dis8 |
-  b,8 gis8 b8 gis8 b8 gis8 e8 cis8 |
-  a,8 cis8 a8 cis8 b,8 dis8 a8 dis8 |
+  <cis, cis >4 r4 <cis, cis >4 r4 |
+  <b,, b, >4 r4 <b,, b, >4 r4 |
+  <a,, a, >4 r4 <a,, a, >4 r4 |
   % 25
-  gis,8 e8 gis8 e8 b8 gis8 e'8 b8 |
-  a8 c'8 e'8 c'8 a8 d'8 fis'8 d'8 |
-  g8 b8 f'8 b8 g8 b8 e'8 b8 |
+  <gis,, gis, >4 r4 <gis,, gis, >4 r4 |
+  <a, a >4 r4 <a, a >4 r4 |
+  <g, g >4 r4 <g, g >4 r4 |
   <a, c e a >4.\arpeggio <ais, cis fis ais
   >8~\arpeggio <ais, cis fis ais >4. <b, dis
   fis b >8~\arpeggio |
@@ -1110,13 +1131,14 @@ part-Peight-two = {
   <g, g >4\arpeggio <d, d >4 <d, d >8 <e, e >4 <f, f >8~ |
   <f, f >4 <g, b, g >4 <b,, g, b, >8 <c, g, c >4
   <<
-    \context Voice = "voiceone"{ \oneVoice
+    \context Voice = "voiceone"{
+      \oneVoice
       <d, b, d >8~ | \voiceOne
-      <d, b, d >4 <e, b, e >4 <c e c' >8 e4 <g, d g >8 
+      <d, b, d >4 <e, b, e >4 <c e c' >8 e4 <g, d g >8
     }
-    \context Voice = "voicetwo" { 
+    \context Voice = "voicetwo" {
       s8 | \voiceTwo
-      s4 a,8 c8 
+      s4 a,8 c8
     }
   >> |
   r4 <g,, g, >2. \fermata \bar "|." |
@@ -1125,7 +1147,7 @@ part-Peight-two = {
 part-Pnine-one = \drummode {
   \time 4/4
   \clef percussion
-  
+
   R1 |
   R1 |
   R1 |
