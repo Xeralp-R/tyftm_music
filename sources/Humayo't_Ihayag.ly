@@ -102,7 +102,7 @@ part-Pone-one = {
   g'8 r8 r4 r2 |
   R1 |
   R1 |
-  R1 \fermata \bar "|." |
+  r4 \xNote{a''4^\sfz} r2 \fermata \bar "|." |
 }
 
 sop_solo_lyr_first =  \lyricmode {
@@ -125,6 +125,7 @@ sop_solo_lyr_first =  \lyricmode {
   S'ya'y pa -- pu -- ri -- han!  __
   S'ya'y pa -- ra -- nga -- lan!
   A -- ting 'pag -- di -- wang pag -- i -- big ng Diyos  __ sa ta -- nan.
+  Hey!
 }
 
 sop_solo_lyr_second = \lyricmode {
@@ -225,7 +226,7 @@ part-Ptwo-one = {
   g8 r8 r4 r2 |
   R1 |
   R1 |
-  R1 \fermata \bar "|." |
+  r4 \xNote{c'4^\sfz} r2 \fermata \bar "|." |
 }
 
 bass_solo_lyr_first = \lyricmode {
@@ -248,6 +249,7 @@ bass_solo_lyr_first = \lyricmode {
   S'ya'y pa -- pu -- ri -- han!  __
   S'ya'y pa -- ra -- nga -- lan!
   A -- ting 'pag -- di -- wang pag -- i -- big ng Diyos  __ sa ta -- nan.
+  Hey!
 }
 
 bass_solo_lyr_second = \lyricmode {
@@ -351,7 +353,7 @@ part-Pthree-one = {
   r4 b4\pp\< b8 c'4 d'8 |
   r4 g'4 d''8 c''4 b'8 |
   r4 d''4 e''8 e''4 g''8\!\ff |
-  R1 \fermata \bar "|." |
+  r4 \xNote{a''4\sfz} r2 \fermata \bar "|." |
 }
 
 chor_lyr_first = \lyricmode {
@@ -397,6 +399,7 @@ chor_lyr_first = \lyricmode {
   Al -- le -- lu -- ia! 
   Al -- le -- lu -- ia!
   Al -- le -- lu -- ia!
+  Hey!
 }
 
 chor_lyr_second = \lyricmode {
@@ -497,7 +500,7 @@ part-Pfour-one = {
   r4 b4\pp\< b8 c'4 d'8 |
   r4 d'4 f'8 e'4 g'8 |
   r4 g'4 g'8 c''8( g'8) b'8\!\ff |
-  R1 \fermata \bar "|." |
+  r4 \xNote{a''4\sfz} r2 \fermata \bar "|." |
 }
 
 part-Pfive-one = {
@@ -594,7 +597,7 @@ part-Pfive-one = {
   r4 g4\pp\< g8 g4 g8 |
   r4 b4 g8 g4 b8 |
   r4 b4 e'8 e'4 d'8\!\ff |
-  R1 \fermata \bar "|." |
+  r4 \xNote{a'4\sfz} r2 \fermata \bar "|." |
 }
 
 part-Psix-one = {
@@ -691,7 +694,7 @@ part-Psix-one = {
   r4 d4\pp\< d8 e4 f8 |
   r4 g4 b,8 c4 d8 |
   r4 e4 c'8 a8( c'8) g8\!\ff |
-  R1 \fermata \bar "|." |
+  r4 \xNote{c'4\sfz} r2 \fermata \bar "|." |
 }
 
 part-Pseven-one = {
@@ -1005,7 +1008,7 @@ part-Peight-one = {
       s4 c''8 g'8 
     }
   >> |
-  r4 <g g' >2.\sfz \fermata \bar "|." |
+  r4 <g'' g''' >2.\sfz \fermata \bar "|." |
 }
 
 part-Peight-two = {
