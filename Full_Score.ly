@@ -12,7 +12,8 @@
 \include "./sources/When_We_Eat_This_Bread.ly"
 \include "./sources/Holy,_Holy,_Holy.ly"
 \include "./sources/Amen_WYD.ly"
-\include "./sources/Ama_Namin.ly"
+\include "./sources/Ama_Namin-simplified.ly"
+\include "./sources/Ama_Namin-elaborated.ly"
 \include "./sources/Lamb_of_God.ly"
 \include "./sources/Anima_Christi.ly"
 
@@ -294,13 +295,25 @@ tocGroup =
 
   \bookpart {
     \tocGroup eucharist.lords \markup { "Lord's Prayer" }
-    \tocItem eucharist.lords.ama \markup { "Ama Namin" }
+    \tocItem eucharist.lords.ama_simple \markup { "Ama Namin (Simplified)" }
 
     \header {
-      \ama_namin_header
+      \ama_namin-simplified_header
     }
     \score {
-      \ama_namin 
+      \ama_namin-simplified
+      \layout {}
+    }
+  }
+
+  \bookpart {
+    \tocItem eucharist.lords.ama_elaborate \markup { "Ama Namin (Elaborated)" }
+
+    \header {
+      \ama_namin-elaborated_header
+    }
+    \score {
+      \ama_namin-elaborated
       \layout {}
     }
   }

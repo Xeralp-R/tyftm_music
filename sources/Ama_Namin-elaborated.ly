@@ -349,14 +349,14 @@ part-Pfive-two = {
   % 30
 }
 
-ama_namin_header = \header {
+ama_namin-elaborated_header = \header {
   poet = "Paulo K. Tirol"
   composer = "Fr. Manoling Francisco, SJ"
-  subtitle = "Lord's Prayer"
+  subtitle = "Elaborated Form"
   title = "Ama Namin"
 }
 
-ama_namin = {
+ama_namin-elaborated = {
   <<
     \new ChoirStaff \with {
       midiInstrument = "choir aahs"
