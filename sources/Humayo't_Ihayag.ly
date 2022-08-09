@@ -949,14 +949,13 @@ part-Peight-one = {
   <<
     \context Voice = "voiceone" {
       s8 | \voiceOne
-      r8 <g'' g''' >8 <g'' g''' >8 r8 g'''16 d'''16 b''16 g''16 b''16 g''16
-      d''16 b'16
+      r8 <g'' g''' >8 <g'' g''' >8 r8
     } 
     \context Voice = "voicetwo" { \oneVoice
       <g' b' e'' g'' >8~\arpeggio | \voiceTwo
       <g' b' e'' g'' >2 
     }
-  >> |
+  >> <b' b'' >8 <d'' d''' >8 <b' b'' >8 <e'' e''' >8 |
   <d'' d''' >4-. <d'' d''' >4-. <d'' d''' >8-. <c'' c''' >8( <b' b'' >8 <a'
   a'' >8~)~ |
   <a' a'' >8 d'''16 a''16 fis''16 d''16 a'16 fis'16 d'8 <d' d'' >4 <dis'
@@ -1091,7 +1090,7 @@ part-Peight-two = {
   <g, b, d g >4.\arpeggio <fis, a, d fis
   >2\arpeggio <b, e g b
   >8~\arpeggio |
-  <b, e g b >2 g'16 d'16 b16 g16 b16 g16 d16 b,16 |
+  <b, e g b >2 <b, b >8 <d d' >8 <b, b >8 <e e' >8 |
   <d d' >4-. <d d' >4-. <d d' >8-. <c c' >8( <b, b >8 <a, a >8~)~ |
   <a, a >8 r8 r16 d'16 a16 fis16 d4 <cis, cis >4 |
   % 55
