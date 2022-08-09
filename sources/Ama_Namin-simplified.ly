@@ -279,8 +279,8 @@ part-Pfive-two = {
   \time 2/4
   b8 fis8 d8 b,8 |
   % 25
-  \time 4/4
-  fis,8 d,8 b,,8 fis,,8 d,,2 |
+  \time 4/4 \ottava #-1
+  fis,8 d,8 b,,8 fis,,8 d,,2 \ottava #0 |
   <g, b, d g >2\arpeggio <d, g, b, d
   >2\arpeggio |
   <e, a, cis e >2\arpeggio a2 |
