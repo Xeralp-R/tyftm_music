@@ -51,8 +51,8 @@
     }
   }
   \bookpart { \Can_Can                }
-  \bookpart { \spacer_page            }
   \bookpart { \Sacro_Monte            }
+  \bookpart { \spacer_page            }
   \bookpart { \Canon_in_D             }
   \bookpart { \Come_Back_to_Sorrento  }
 
