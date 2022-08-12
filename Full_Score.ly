@@ -19,6 +19,8 @@
 
 \include "./sources/Humayo't_Ihayag.ly"
 
+\pointAndClickOff
+
 tocSection =
 #(define-music-function (label text) (symbol-list-or-symbol? markup?)
   (add-toc-item! 'tocSectionMarkup text label))
@@ -59,7 +61,7 @@ tocGroup =
         \fill-line {
           \italic
           \center-column {
-            "Dedicated to my wonderful teacher, Ma'am Belinda Salazar,"
+            "Dedicated to my wonderful piano teacher,"
             "Without whom this mass would never have been completed."
           }
         }
