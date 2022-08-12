@@ -9,7 +9,7 @@ soprano_solo = {
 
   R2.*4
 
-  R2.*16 |
+  R2.*16 | \mark \default \bar "||"
 
   \relative c'' {
     e4^\mp f^\markup{\italic "ligato e dolce"} g |
@@ -28,11 +28,11 @@ soprano_solo = {
     c4( d) e |
     g2.~ |
     g2 r4 |
-  }
+  } \mark \default \bar "||"
 
-  R2.*16 |
+  R2.*16 | \mark \default \bar "||"
 
-  R2.*16 |
+  R2.*16 | \mark \default \bar "||"
 
   \key d \major
   \relative c'' {
@@ -90,11 +90,11 @@ bass_solo = {
 
   R2.*4
 
-  R2.*16 |
+  R2.*16 | \mark \default \bar "||"
 
-  R2.*16 |
+  R2.*16 | \mark \default \bar "||"
 
-  R2.*16 |
+  R2.*16 | \mark \default \bar "||"
 
   \relative c {
     e4^\mp f^\markup{\italic "ligato e dolce"} g |
@@ -113,7 +113,7 @@ bass_solo = {
     c4( d) e |
     g2.( |
     a2) r4 |
-  }
+  } \mark \default \bar "||"
 
   \key d \major
   \relative c {
@@ -187,9 +187,9 @@ soprano = \relative c' {
   a4 c4 a4 |
   g4 e4 c4 |
   f8 e8 d4 c4 |
-  c2. | \bar "||"
+  c2. | \mark \default \bar "||"
 
-  R2.*16
+  R2.*16 \mark \default \bar "||"
 
   e4^\f f4 g4 |
   g4 f2 |
@@ -207,9 +207,9 @@ soprano = \relative c' {
   a4 c4 a4 |
   g4 e4 c4 |
   f8 e8 d4 c4 |
-  c2. | \bar "||"
+  c2. | \mark \default \bar "||"
 
-  R2.*16
+  R2.*16 \mark \default \bar "||"
 
   % undo this another time
   \key d \major
@@ -268,9 +268,9 @@ alto = \relative c' {
   a4 c4 a4 |
   g4 e4 c4 |
   f8 e8 d4 c4 |
-  c2. | \bar "||"
+  c2. | \mark \default \bar "||"
 
-  R2.*16
+  R2.*16 \mark \default \bar "||"
 
   e4_\f f4 g4 |
   g4 f2 |
@@ -288,9 +288,9 @@ alto = \relative c' {
   a4 c4 a4 |
   g4 e4 c4 |
   f8 e8 d4 c4 |
-  c2. | \bar "||"
+  c2. | \mark \default \bar "||"
 
-  R2.*16
+  R2.*16 \mark \default \bar "||"
 
   % undo this another time
   \key d \major
@@ -350,9 +350,9 @@ tenor = \relative c {
   a4 c4 a4 |
   g4 e4 c4 |
   f8 e8 d4 c4 |
-  c2. | \bar "||"
+  c2. | \mark \default \bar "||"
 
-  R2.*16
+  R2.*16 \mark \default \bar "||"
 
   e4^\f f4 g4 |
   g4 f2 |
@@ -370,9 +370,9 @@ tenor = \relative c {
   a4 c4 a4 |
   g4 e4 c4 |
   f8 e8 d4 c4 |
-  c2. | \bar "||"
+  c2. | \mark \default \bar "||"
 
-  R2.*16
+  R2.*16 \mark \default \bar "||"
 
   % undo this another time
   \key d \major
@@ -432,9 +432,9 @@ bass = \relative c {
   a4 c4 a4 |
   g4 e4 c4 |
   f8 e8 d4 c4 |
-  c2. | \bar "||"
+  c2. | \mark \default \bar "||"
 
-  R2.*16
+  R2.*16 \mark \default \bar "||"
 
   e4_\f f4 g4 |
   g4 f2 |
@@ -452,9 +452,9 @@ bass = \relative c {
   a4 c4 a4 |
   g4 e4 c4 |
   f8 e8 d4 c4 |
-  c2. | \bar "||"
+  c2. | \mark \default \bar "||"
 
-  R2.*16
+  R2.*16 \mark \default \bar "||"
 
   % undo this another time
   \key d \major
@@ -527,7 +527,7 @@ saxophone = \transpose ees c' {
 
   R2.*4
 
-  R2.*16 |
+  R2.*16 | \mark \default \bar "||"
 
   \relative c {
     r4 e4_\mp g4_\markup{\italic "quasi oboi"} |
@@ -547,7 +547,7 @@ saxophone = \transpose ees c' {
     f4 a4 c4 |
     d2.~ |
     d2 r4 |
-  }
+  } \mark \default \bar "||"
 
   c'4_\f_\markup{\italic "quasi tromba"} r r |
   g'4 r r |
@@ -565,7 +565,7 @@ saxophone = \transpose ees c' {
   f'4 r r |
   c'4 r r |
   g4 r r |
-  c'4 r r |
+  c'4 r r | \mark \default \bar "||"
 
   \relative c' {
     R2. |
@@ -585,7 +585,7 @@ saxophone = \transpose ees c' {
     b4 c4 d4 |
     e2. |
     e2. |
-  }
+  } \mark \default \bar "||"
 
   \key d \major
 
@@ -623,13 +623,13 @@ bell = \drummode {
 
   R2.*4
 
-  R2.*16
+  R2.*16 \mark \default \bar "||"
 
-  R2.*16
+  R2.*16 \mark \default \bar "||"
 
-  R2.*16
+  R2.*16 \mark \default \bar "||"
 
-  R2.*16
+  R2.*16 \mark \default \bar "||"
 
   tamb2. \ff\startTrillSpan |
   tamb2. |
@@ -676,7 +676,7 @@ piano_upper = {
   <a' a''>4 <g' g''>4 <f' f''>4 |
   <e' e''>4 <d' d''>4 <c' c''>4 |
   <d' d''>2 <c' c''>4 |
-  <c' c''>2. |
+  <c' c''>2. | \mark \default \bar "||"
 
   R2. |
   R2. |
@@ -722,7 +722,7 @@ piano_upper = {
     \tuplet 3/2 { e d c }
     \tuplet 3/2 { b a g }
     \tuplet 3/2 { f e d } | \bar "||"
-  }
+  } \mark \default \bar "||"
 
   \relative c'' {
     c4\f \tuplet 3/2 { c8( e g } c4-.) |
@@ -742,7 +742,7 @@ piano_upper = {
     r4 \tuplet 3/2 { d,8( f a } c4-.) |
     r4 \tuplet 3/2 { g,8( b d } g4-.) |
   }
-  <c' e' g' c''>2. |
+  <c' e' g' c''>2. | \mark \default \bar "||"
 
   \relative c'' {
     c8_\mp_\markup{\italic "luminoso"} g e' c g' e |
@@ -770,7 +770,7 @@ piano_upper = {
     \repeat tremolo 6 { g'16 d'16 } |
     \repeat tremolo 6 { a cis } \bar "||"
     \ottava #0
-  }
+  } \mark \default \bar "||"
 
   \key d \major \ottava #1
   \repeat tremolo 6 { d''''16^\markup{\italic "quasi campana"}\ff a'''' } |
@@ -959,7 +959,7 @@ first_violin = {
     e4 d4 c4 |
     d2 c4 |
     c2. |
-  }
+  } \mark \default \bar "||"
 
   \relative c' {
     e2.\p |
@@ -979,7 +979,7 @@ first_violin = {
     a2. |
     b2. |
     g'2. |
-  }
+  } \mark \default \bar "||"
 
   \relative c'' {
     e2_\f g4 |
@@ -999,7 +999,7 @@ first_violin = {
     e4 d4 c4 |
     d2 c4 |
     c2. |
-  }
+  } \mark \default \bar "||"
 
   \relative c' {
     e2.\p |
@@ -1019,7 +1019,7 @@ first_violin = {
     a2. |
     b2. |
     cis2. |
-  }
+  } \mark \default \bar "||"
 
   \key d \major
   \transpose c d \relative c'' {
@@ -1079,7 +1079,7 @@ second_violin = {
     e4 d4 c4 |
     d2 c4 |
     c2. |
-  }
+  } \mark \default \bar "||"
 
   \relative c' {
     c2.\p |
@@ -1099,7 +1099,7 @@ second_violin = {
     c2. |
     d2. |
     d2. |
-  }
+  } \mark \default \bar "||"
 
   \relative c' {
     e2_\f g4 |
@@ -1119,7 +1119,7 @@ second_violin = {
     e4 d4 c4 |
     d2 c4 |
     c2. |
-  }
+  } \mark \default \bar "||"
 
   \relative c' {
     c2.\p |
@@ -1139,7 +1139,7 @@ second_violin = {
     c2. |
     d2. |
     g2. |
-  }
+  } \mark \default \bar "||"
 
   \key d \major
   \transpose c d \relative c' {
@@ -1199,7 +1199,7 @@ viola = {
     e4 d4 c4 |
     d2 c4 |
     c2. |
-  }
+  } \mark \default \bar "||"
 
   \relative c' {
     g2.\p |
@@ -1219,7 +1219,7 @@ viola = {
     a2. |
     b2. |
     b2. |
-  }
+  } \mark \default \bar "||"
 
   \relative c {
     e2_\f g4 |
@@ -1239,7 +1239,7 @@ viola = {
     e4 d4 c4 |
     d2 c4 |
     c2. |
-  }
+  } \mark \default \bar "||"
 
   \relative c' {
     g2.\p |
@@ -1259,7 +1259,7 @@ viola = {
     a2. |
     b2. |
     cis2. |
-  }
+  } \mark \default \bar "||"
 
   \key d \major
   \transpose c d \relative c {
@@ -1319,7 +1319,7 @@ cello = {
     e4 d4 c4 |
     d2 c4 |
     c2. |
-  }
+  } \mark \default \bar "||"
 
   \relative c {
     c2.\p |
@@ -1339,7 +1339,7 @@ cello = {
     c2. |
     d2. |
     d2. |
-  }
+  } \mark \default \bar "||"
 
   \relative c, {
     e2_\f g4 |
@@ -1359,7 +1359,7 @@ cello = {
     e4 d4 c4 |
     d2 c4 |
     c2. |
-  }
+  } \mark \default \bar "||"
 
   \relative c {
     c2.\p |
@@ -1379,7 +1379,7 @@ cello = {
     c2. |
     d2. |
     g2. |
-  }
+  } \mark \default \bar "||"
 
   \key d \major
   \transpose c d \relative c, {
@@ -1439,7 +1439,7 @@ contrabass = \transpose c c' {
     e4 d4 c4 |
     d2 c4 |
     c2. |
-  }
+  } \mark \default \bar "||"
 
   \relative c {
     g2.\p |
@@ -1459,7 +1459,7 @@ contrabass = \transpose c c' {
     f2. |
     g2. |
     g2. |
-  }
+  } \mark \default \bar "||"
 
   \relative c, {
     e2_\f g4 |
@@ -1479,7 +1479,7 @@ contrabass = \transpose c c' {
     e4 d4 c4 |
     d2 c4 |
     c2. |
-  }
+  } \mark \default \bar "||"
 
   \relative c {
     g2.\p |
@@ -1499,7 +1499,7 @@ contrabass = \transpose c c' {
     f2. |
     g2. |
     a2. |
-  }
+  } \mark \default \bar "||"
 
   \key d \major
   \transpose c d \relative c, {
