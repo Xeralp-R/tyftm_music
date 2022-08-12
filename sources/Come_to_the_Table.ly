@@ -1635,7 +1635,7 @@ come_to_the_table = {
       \tag #'(accompaniment solo piano)
       \new PianoStaff \with {
         midiInstrument = "acoustic grand"
-        instrumentName = "Pianoforte"
+        instrumentName = "Piano"
         shortInstrumentName = "Pf."
       } <<
         \new Staff = "piano_upper" \piano_upper

@@ -1788,7 +1788,7 @@ humayot_ihayag = {
       \tag #'(accompaniment solo piano)
       \new PianoStaff \with {
         midiInstrument = "acoustic grand"
-        instrumentName = "Pianoforte"
+        instrumentName = "Piano"
         shortInstrumentName = "Pf."
         connectArpeggios = ##t
       } <<
