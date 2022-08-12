@@ -1,6 +1,6 @@
 % Automatically generated from a musicxml file.
 \version "2.22.1"
-\include "../Full_Score.ily"
+\include "../Global.ily"
 
 soprano = {
   \key d \major

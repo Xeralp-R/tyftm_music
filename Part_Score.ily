@@ -1,13 +1,13 @@
 \version "2.22.1"
 
 #(set-global-staff-size 20)
-#(set-default-paper-size "arch a")
+#(set-default-paper-size "a4")
 
 \paper {
   %system-system-spacing = #'((basic-distance . 0.1) (padding . 0))
   top-margin = 15\mm
   bottom-margin = 15\mm
-  left-margin = 15\mm
+  left-margin = 20\mm
   right-margin = 15\mm
   ragged-last-bottom = ##f
   ragged-bottom = ##f
@@ -55,6 +55,7 @@
     }
   }%}
   %print-all-headers = ##t
+  system-separator-markup = #f
 }
 
 \layout {
