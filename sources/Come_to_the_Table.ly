@@ -7,6 +7,8 @@ soprano_solo = {
   \clef treble
   \tempo "Allegro trionfale" 4 = 160
 
+  R2.*4
+
   R2.*16 |
 
   \relative c'' {
@@ -85,6 +87,8 @@ bass_solo = {
   \key c \major
   \clef bass
   \tempo "Allegro trionfale" 4 = 160
+
+  R2.*4
 
   R2.*16 |
 
@@ -165,6 +169,8 @@ soprano = \relative c' {
   \clef treble
   \tempo "Allegro trionfale" 4 = 160
 
+  R2.*4
+
   e4^\f f4 g4 |
   g4 f2 |
   d4 e4 f4 |
@@ -243,6 +249,8 @@ alto = \relative c' {
   \key c \major
   \clef treble
   \tempo "Allegro trionfale" 4 = 160
+
+  R2.*4
 
   e4_\f f4 g4 |
   g4 f2 |
@@ -324,6 +332,8 @@ tenor = \relative c {
   \clef "treble_8"
   \tempo "Allegro trionfale" 4 = 160
 
+  R2.*4
+
   e4^\f f4 g4 |
   g4 f2 |
   d4 e4 f4 |
@@ -403,6 +413,8 @@ bass = \relative c {
   \key c \major
   \clef bass
   \tempo "Allegro trionfale" 4 = 160
+
+  R2.*4
 
   e4_\f f4 g4 |
   g4 f2 |
@@ -513,6 +525,8 @@ saxophone = \transpose ees c' {
   \key c \major
   \time 3/4
 
+  R2.*4
+
   R2.*16 |
 
   \relative c {
@@ -607,6 +621,8 @@ saxophone = \transpose ees c' {
 bell = \drummode {
   \time 3/4
 
+  R2.*4
+
   R2.*16
 
   R2.*16
@@ -639,7 +655,12 @@ piano_upper = {
   \clef treble
   \tempo "Allegro trionfale" 4 = 160
 
-  <e' e''>2_\f <g' g''>4 |
+  <a' a'' >4_\f <c'' c''' >4 <a' a'' >4 |
+  <g' g'' >4 <e' e'' >4 <c' c'' >4 |
+  <f' f'' >8 <e' e'' >8 <d' d'' >4 <c' c'' >4 |
+  <c' c'' >2. |
+
+  <e' e''>2 <g' g''>4 |
   <f' f''>2 <e' e''>4 |
   <d' d''>2 <f' f''>4 |
   <e' e''>2 <d' d''>4 |
@@ -788,6 +809,11 @@ piano_lower = {
   \key c \major
   \clef bass
 
+  <a, a >4 <g, g >4 <f, f >4 |
+  <e, e >4 <d, d >4 <c, c >4 |
+  <d, d >2 <c, c >4 |
+  <c, c >4 <e, e >4 <g, g >4 |
+
   <e, e>2 <g, g>4 |
   <f, f>2 <e, e>4 |
   <d, d>2 <f, f>4 |
@@ -913,6 +939,8 @@ first_violin = {
   \key c \major
   \time 3/4
 
+  R2.*4
+
   \relative c'' {
     e2_\f g4 |
     f2 e4 |
@@ -1030,6 +1058,8 @@ second_violin = {
   \time 3/4
   \key c \major
   \clef treble
+
+  R2.*4
 
   \relative c' {
     e2_\f g4 |
@@ -1149,6 +1179,8 @@ viola = {
   \key c \major
   \clef alto
 
+  R2.*4
+
   \relative c {
     e2_\f g4 |
     f2 e4 |
@@ -1267,6 +1299,8 @@ cello = {
   \key c \major
   \clef bass
 
+  R2.*4
+
   \relative c, {
     e2_\f g4 |
     f2 e4 |
@@ -1384,6 +1418,8 @@ contrabass = \transpose c c' {
   \time 3/4
   \key c \major
   \clef bass
+
+  R2.*4
 
   \relative c, {
     e2_\f g4 |
