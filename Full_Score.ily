@@ -13,15 +13,6 @@
   ragged-bottom = ##f
   tocItemMarkup = \tocItemWithDotsMarkup
 
-  #(ly:font-config-add-directory "../Fonts")
-  #(define fonts
-     (set-global-fonts
-      #:roman "Cardo"
-      #:music "Cadence"
-      #:brace "Emmentaler"
-      #:factor (/ staff-height pt 20)
-      ))
-
   %%{
   bookTitleMarkup = \markup {
     \override #'(baseline-skip . 3.5)
