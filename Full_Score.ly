@@ -167,6 +167,7 @@ tocGroup =
   }
 
   \bookpart { \blank_page }
+  \bookpart { \blank_page }
   
   \bookpart {
     \paper {

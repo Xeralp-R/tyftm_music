@@ -25,7 +25,7 @@
   \header {
     tagline = ##f
   }
-  
+
   \bookpart {
     \paper {
       print-page-number = ##f
@@ -69,6 +69,17 @@
       
       \layout {}
       %\midi { \tempo 4 = 184 }
+    }
+  }
+
+  \bookpart {
+    \header {
+      \humayot_ihayag_header
+    }
+    \score {
+      \keepWithTag #'(piano) \humayot_ihayag
+
+      \layout {}
     }
   }
 }
