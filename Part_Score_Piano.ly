@@ -19,7 +19,13 @@
 
 \include "./sources/Humayo't_Ihayag.ly"
 
+\pointAndClickOff
+
 \book {
+  \header {
+    tagline = ##f
+  }
+  
   \bookpart {
     \paper {
       print-page-number = ##f
@@ -48,6 +54,21 @@
       \keepWithTag #'(piano) \come_to_the_table
 
       \layout {}
+      %\midi { \tempo 4 = 168 }
+    }
+  }
+
+  \bookpart { \blank_page }
+
+  \bookpart {
+    \header {
+      \glory_to_god_header
+    }
+    \score {
+      \keepWithTag #'(piano) \glory_to_god
+      
+      \layout {}
+      %\midi { \tempo 4 = 184 }
     }
   }
 }

@@ -6,10 +6,10 @@ part-Pone-one = {
   \key c \major
   \time 3/4
   \clef treble
-  \tempo "Vivace"
+  \tempo "Vivace" 4 = 184
 
+  R2.*2 |
 
-  R2. |
   g'4\f g'4 g'4 |
   g'4 f'4 e'4 |
   d'4 e'2~ |
@@ -28,9 +28,9 @@ part-Pone-one = {
   f'4 e'4 d'4 |
   % 15
   c'2.~ |
-  c'2 r4 |
+  c'2 r4 | \mark \default \bar "||"
 
-  R2.*16
+  R2.*16 \mark \default \bar "||"
 
   g'2. |
   g'2. |
@@ -50,9 +50,9 @@ part-Pone-one = {
   a'2 a'4 |
   a'2 a'4 |
   a'4 g'2~ |
-  g'2. |
+  g'2. | \mark \default \bar "||"
 
-  R2.*16
+  R2.*16 \mark \default \bar "||"
 
   % 65
   g'2.~ |
@@ -99,11 +99,11 @@ part-Pone-one = {
   % 100
   g'2.~ |
   g'2.~ |
-  g'2. |
+  g'2. | \mark \default \bar "||"
 
-  R2.*16
+  R2.*15 
+  r4 r4 c'4 | \mark \default \bar "||"
 
-  r4 r4 c'4 |
   g'2 g'4 |
   % 120
   g'4 g'4 g'4 |
@@ -134,10 +134,11 @@ part-Pone-one = {
   g'2.~ |
   g'2.~ |
   g'2.~ |
-  g'2. |
+  g'2. | \mark \default \bar "||"
   % 145
 
-  R2.*31 R2. \fermata \bar "|." |
+  R2.*16 \mark \default \bar "||"
+  R2.*15 R2. \fermata \bar "|." |
 }
 
 PartPOneVoiceOneLyricsOne =  \lyricmode {
@@ -167,10 +168,11 @@ part-Ptwo-one = {
   \key c \major
   \time 3/4
   \clef treble
+  \tempo "Vivace" 4 = 184
 
-  R2. |
+  R2.*2 |
 
-  R2.*16
+  R2.*16 | \mark \default \bar "||"
 
   g'4^\f g'4 g'4 |
   g'4 f'4 e'4 |
@@ -190,9 +192,9 @@ part-Ptwo-one = {
   % 30
   f'4 e'4 d'4 |
   c'2.~ |
-  c'2 r4 |
+  c'2 r4 | \mark \default \bar "||"
 
-  R2.*16
+  R2.*16 \mark \default \bar "||"
 
   g'4^\f g'4 g'4 |
   % 50
@@ -212,10 +214,10 @@ part-Ptwo-one = {
   f'4. f'8 f'4 |
   f'4 e'4 d'4 |
   c'2.~ |
-  c'2 r4 |
+  c'2 r4 | \mark \default \bar "||"
   % 65
 
-  R2.*38
+  R2.*38 \mark \default \bar "||"
 
   g'4^\f g'4 g'4 |
   g'4 f'4 e'4 |
@@ -235,9 +237,9 @@ part-Ptwo-one = {
   f'4. f'8 f'4 |
   f'4 e'4 d'4 |
   c'2.~ |
-  c'2 r4 |
+  c'2 r4 | \mark \default \bar "||"
 
-  R2.*26
+  R2.*26 \mark \default \bar "||"
 
   % 145
   g'4^\f g'4 g'4 |
@@ -258,7 +260,7 @@ part-Ptwo-one = {
   f'4 e'4 d'4 |
   c'2.~ |
   % 160
-  c'2 r4 |
+  c'2 r4 | \mark \default \bar "||"
 
   R2. |
   R2. |
@@ -285,10 +287,11 @@ part-Pthree-one = {
   \key c \major
   \time 3/4
   \clef treble
+  \tempo "Vivace" 4 = 184
 
-  R2. |
+  R2.*2 |
 
-  R2.*16
+  R2.*16 \mark \default \bar "||"
 
   g'4^\f g'4 g'4 |
   g'4 f'4 e'4 |
@@ -308,9 +311,9 @@ part-Pthree-one = {
   % 30
   f'4 e'4 d'4 |
   c'2.~ |
-  c'2 r4 |
+  c'2 r4 | \mark \default \bar "||"
 
-  R2.*16
+  R2.*16 \mark \default \bar "||"
 
   g'4^\f g'4 g'4 |
   % 50
@@ -330,10 +333,10 @@ part-Pthree-one = {
   f'4. f'8 f'4 |
   f'4 e'4 d'4 |
   c'2.~ |
-  c'2 r4 |
+  c'2 r4 | \mark \default \bar "||"
   % 65
 
-  R2.*38
+  R2.*38 \mark \default \bar "||"
 
   g'4^\f g'4 g'4 |
   g'4 f'4 e'4 |
@@ -353,9 +356,9 @@ part-Pthree-one = {
   f'4. f'8 f'4 |
   f'4 e'4 d'4 |
   c'2.~ |
-  c'2 r4 |
+  c'2 r4 | \mark \default \bar "||"
 
-  R2.*26
+  R2.*26 \mark \default \bar "||"
 
   % 145
   g'4^\f g'4 g'4 |
@@ -376,7 +379,7 @@ part-Pthree-one = {
   f'4 e'4 d'4 |
   c'2.~ |
   % 160
-  c'2 r4 |
+  c'2 r4 | \mark \default \bar "||"
 
   g'4^\ff g'4 g'4 |
   g'4 f'4 e'4 |
@@ -403,10 +406,11 @@ part-Pfour-one = {
   \key c \major
   \time 3/4
   \clef "treble_8"
+  \tempo "Vivace" 4 = 184
 
-  R2. |
+  R2.*2 |
 
-  R2.*16 |
+  R2.*16 | \mark \default \bar "||"
 
   g4^\f g4 g4 |
   g4 f4 e4 |
@@ -426,9 +430,9 @@ part-Pfour-one = {
   % 30
   f4 e4 d4 |
   c2.~ |
-  c2 r4 |
+  c2 r4 | \mark \default \bar "||"
 
-  R2.*16
+  R2.*16 \mark \default \bar "||"
 
   g4^\f g4 g4 |
   % 50
@@ -448,10 +452,10 @@ part-Pfour-one = {
   f4. f8 f4 |
   f4 e4 d4 |
   c2.~ |
-  c2 r4 |
+  c2 r4 | \mark \default \bar "||"
   % 65
 
-  R2.*38
+  R2.*38 \mark \default \bar "||"
 
   g4^\f g4 g4 |
   g4 f4 e4 |
@@ -471,9 +475,9 @@ part-Pfour-one = {
   f4. f8 f4 |
   f4 e4 d4 |
   c2.~ |
-  c2 r4 |
+  c2 r4 | \mark \default \bar "||"
 
-  R2.*26
+  R2.*26 \mark \default \bar "||"
 
   % 145
   g4^\f g4 g4 |
@@ -494,7 +498,7 @@ part-Pfour-one = {
   f4 e4 d4 |
   c2.~ |
   % 160
-  c2 r4 |
+  c2 r4 | \mark \default \bar "||"
 
   R2. |
   R2. |
@@ -521,10 +525,11 @@ part-Pfive-one = {
   \key c \major
   \time 3/4
   \clef bass
+  \tempo "Vivace" 4 = 184
 
-  R2.
+  R2.*2 |
 
-  R2.*16 |
+  R2.*16 | \mark \default \bar "||"
 
   g4^\f g4 g4 |
   g4 f4 e4 |
@@ -544,9 +549,9 @@ part-Pfive-one = {
   % 30
   f4 e4 d4 |
   c2.~ |
-  c2 r4 |
+  c2 r4 | \mark \default \bar "||"
 
-  R2.*16
+  R2.*16 \mark \default \bar "||"
 
   g4^\f g4 g4 |
   % 50
@@ -566,11 +571,11 @@ part-Pfive-one = {
   f4. f8 f4 |
   f4 e4 d4 |
   c2.~ |
-  c2 r4 |
+  c2 r4 | \mark \default \bar "||"
   % 65
 
 
-  R2.*38
+  R2.*38 \mark \default \bar "||"
 
   g4^\f g4 g4 |
   g4 f4 e4 |
@@ -590,9 +595,9 @@ part-Pfive-one = {
   f4. f8 f4 |
   f4 e4 d4 |
   c2.~ |
-  c2 r4 |
+  c2 r4 | \mark \default \bar "||"
 
-  R2.*26
+  R2.*26 \mark \default \bar "||"
 
   % 145
   g4^\f g4 g4 |
@@ -613,7 +618,7 @@ part-Pfive-one = {
   f4 e4 d4 |
   c2.~ |
   % 160
-  c2 r4 |
+  c2 r4 | \mark \default \bar "||"
 
   g4^\ff g4 g4 |
   g4 f4 e4 |
@@ -694,8 +699,11 @@ part-Psix-one = {
   \key a \major
   \time 3/4
   \clef treble
+  \tempo "Vivace" 4 = 184
 
-  R2.*134
+  R2.*120 | \mark #6 \bar "||"
+
+  R2.*15 |
 
   r4 a''4-\markup { \italic "omit ad lib." } a''4 |
   % 135
@@ -709,7 +717,7 @@ part-Psix-one = {
   e''2.~ |
   e''2.~ |
   e''2.~ |
-  e''2. |
+  e''2. | \mark \default \bar "||"
   % 145
 
   a''2.\f |
@@ -730,7 +738,7 @@ part-Psix-one = {
   e''2. |
   a''2.~ |
   % 160
-  a''2. |
+  a''2. | \mark \default \bar "||"
 
   a''2.\ff |
   gis''2. |
@@ -750,16 +758,18 @@ part-Psix-one = {
   e''2. |
   % 175
   a''2.~ |
-  a''2. |
+  a''2.\fermata | \bar "|."
 }
 
 part-Pseven-one = {
   \key c \major
   \time 3/4
   \clef treble
+  \tempo "Vivace" 4 = 184
 
   \ottava #1
-  <g''' b''' d'''' f'''' g'''' >2. \sf\arpeggio |
+  R2.  |
+  <g''' b''' d'''' f'''' g'''' >2.\sf\arpeggio |
   \ottava #0
 
   <g' g'' >4\f <g' g'' >4 <g' g'' >4 |
@@ -781,7 +791,7 @@ part-Pseven-one = {
   % 15
   <c' c'' >2. |
   \tuplet 3/2 { c''8\< d''8 e''8 } f''16 g''16 a''16 b''16 c'''16 d'''16
-  e'''16 f'''16 |
+  e'''16 f'''16 | \mark \default \bar "||"
 
   <g'' g''' >4\f <g'' g''' >4 <g'' g''' >4 |
   <g'' g''' >4 <f'' f''' >4 <e'' e''' >4 |
@@ -801,7 +811,7 @@ part-Pseven-one = {
   % 30
   <f'' f''' >4 <e'' e''' >4 <d'' d''' >4 |
   <c'' c''' >2. |
-  e'4 g'4 c''4 |
+  e'4 g'4 c''4 | \mark \default \bar "||"
 
   <g' c'' e'' g'' >2.\arpeggio |
   <g' b' d'' g'' >2.\arpeggio |
@@ -821,7 +831,7 @@ part-Pseven-one = {
   <a' d'' f'' a'' >2. |
   <a' c'' f'' a'' >2. |
   <g' b' d'' g'' >2. |
-  g'2. |
+  g'2. | \mark \default \bar "||"
 
   <g'' g''' >4\f <g'' g''' >4 <g'' g''' >4 |
   % 50
@@ -841,7 +851,7 @@ part-Pseven-one = {
   <f'' f''' >4. <f'' f''' >8 <f'' f''' >4 |
   <f'' f''' >4 <e'' e''' >4 <d'' d''' >4 |
   <c'' c''' >2. |
-  e'4 g'4 c''4 |
+  e'4 g'4 c''4 | \mark \default \bar "||"
 
   % 65
   <g' c'' e'' g'' >2.\arpeggio |
@@ -909,7 +919,7 @@ part-Pseven-one = {
   % 100
   <g' b' d'' g'' >2.~ |
   <g' b' d'' g'' >2.~ |
-  <g' b' d'' g'' >2.\stopTrillSpan |
+  <g' b' d'' g'' >2.\stopTrillSpan | \mark \default \bar "||"
 
   <g'' g''' >4\f <g'' g''' >4 <g'' g''' >4 |
   <g'' g''' >4 <f'' f''' >4 <e'' e''' >4 |
@@ -929,7 +939,7 @@ part-Pseven-one = {
   <f'' f''' >4. <f'' f''' >8 <f'' f''' >4 |
   <f'' f''' >4 <e'' e''' >4 <d'' d''' >4 |
   <c'' c''' >2. |
-  e'4 g'4 c''4 |
+  e'4 g'4 c''4 | \mark \default \bar "||"
 
   <g' c'' e'' g'' >2.\arpeggio |
   % 120
@@ -961,7 +971,7 @@ part-Pseven-one = {
   <g' b' d'' g'' >2.\arpeggio-\markup { \italic "cadenza ad libitum (in 4 bars)" } |
   R2. |
   R2. |
-  R2. |
+  R2. | \mark \default \bar "||"
 
   % 145
   <g'' g''' >4\f <g'' g''' >4 <g'' g''' >4 |
@@ -983,7 +993,7 @@ part-Pseven-one = {
   <c'' c''' >2. |
   % 160
   \tuplet 3/2 { c''8\< d''8 e''8 } f''16 g''16 a''16 b''16 c'''16 d'''16
-  e'''16 f'''16 |
+  e'''16 f'''16 | \mark \default \bar "||"
 
   \ottava #1
   <g''' g'''' >4\ff <g''' g'''' >4 <g''' g'''' >4 |
@@ -1012,7 +1022,9 @@ part-Pseven-two = {
   \key c \major
   \time 3/4
   \clef bass
-  <g,, b,, d, g, >2.\arpeggio |
+
+  <g,, b,, d, g, >2.~\arpeggio |
+  <g,, b,, d, g, >2. |
 
   <c, c >4_\markup{\italic "staccato ad lib."} <e, e >4 <g, g >4 |
   <b,, b, >4 <d, d >4 <g, g >4 |
@@ -1239,10 +1251,11 @@ part-Peight-one = {
   \key c \major
   \time 3/4
   \clef treble
+  \tempo "Vivace" 4 = 184
 
-  R2. |
+  R2.*2 |
 
-  R2.*16
+  R2.*16 | \mark \default \bar "||"
 
   c''2. |
   d''2. |
@@ -1262,9 +1275,9 @@ part-Peight-one = {
   % 30
   b'2. |
   c''2.~ |
-  c''2. |
+  c''2. | \mark \default \bar "||"
 
-  R2.*16
+  R2.*16 | \mark \default \bar "||"
 
   c''2. |
   % 50
@@ -1284,10 +1297,10 @@ part-Peight-one = {
   c''2. |
   b'2. |
   c''2.~ |
-  c''2. |
+  c''2. | \mark \default \bar "||"
   % 65
 
-  R2.*38 |
+  R2.*38 | \mark \default \bar "||"
 
   c''2. |
   d''2. |
@@ -1307,9 +1320,9 @@ part-Peight-one = {
   c''2. |
   b'2. |
   c''2.~ |
-  c''2. |
+  c''2. | \mark \default \bar "||"
 
-  R2.*26 |
+  R2.*26 |  \mark \default \bar "||"
 
   % 145
   c''2.\f |
@@ -1330,7 +1343,7 @@ part-Peight-one = {
   b'2. |
   c''2.~ |
   % 160
-  c''2. |
+  c''2. | \mark \default \bar "||"
 
   r4 e''4(\ff g''4) |
   r4 d''4( g''4) |
@@ -1357,10 +1370,11 @@ part-Pnine-one = {
   \key c \major
   \time 3/4
   \clef treble
+  \tempo "Vivace" 4 = 184
 
-  R2. |
+  R2.*2 |
 
-  R2.*16 |
+  R2.*16 | \mark \default \bar "||"
 
   g'2. |
   f'2. |
@@ -1380,9 +1394,9 @@ part-Pnine-one = {
   % 30
   f'2. |
   g'2.~ |
-  g'2. |
+  g'2. | \mark \default \bar "||"
 
-  R2.*16 |
+  R2.*16 | \mark \default \bar "||"
 
   g'2. |
   % 50
@@ -1402,10 +1416,10 @@ part-Pnine-one = {
   a'2. |
   f'2. |
   g'2.~ |
-  g'2. |
+  g'2. | \mark \default \bar "||"
 
   % 65
-  R2.*38
+  R2.*38 | \mark \default \bar "||"
 
   g'2. |
   f'2. |
@@ -1425,9 +1439,9 @@ part-Pnine-one = {
   a'2. |
   f'2. |
   g'2.~ |
-  g'2. |
+  g'2. | \mark \default \bar "||"
 
-  R2.*26
+  R2.*26 | \mark \default \bar "||"
 
   % 145
   g'2.\f |
@@ -1448,7 +1462,7 @@ part-Pnine-one = {
   f'2. |
   g'2.~ |
   % 160
-  g'2. |
+  g'2. | \mark \default \bar "||"
 
   r4 c''4(\ff e''4) |
   r4 b'4( d''4) |
@@ -1475,10 +1489,11 @@ part-Ponezero-one = {
   \key c \major
   \time 3/4
   \clef alto
+  \tempo "Vivace" 4 = 184
 
-  R2. |
+  R2.*2 |
 
-  R2.*16 |
+  R2.*16 | \mark \default \bar "||"
 
   e'2. |
   d'2. |
@@ -1498,9 +1513,9 @@ part-Ponezero-one = {
   % 30
   d'2. |
   c'2.~ |
-  c'2. |
+  c'2. | \mark \default \bar "||"
 
-  R2.*16 |
+  R2.*16 | \mark \default \bar "||"
 
   e'2. |
   % 50
@@ -1520,10 +1535,10 @@ part-Ponezero-one = {
   f'2. |
   d'2. |
   c'2.~ |
-  c'2. |
+  c'2. | \mark \default \bar "||"
 
   % 65
-  R2.*38 |
+  R2.*38 | \mark \default \bar "||"
 
   e'2. |
   d'2. |
@@ -1543,9 +1558,9 @@ part-Ponezero-one = {
   f'2. |
   d'2. |
   c'2.~ |
-  c'2. |
+  c'2. | \mark \default \bar "||"
 
-  R2.*26 |
+  R2.*26 | \mark \default \bar "||"
 
   % 145
   e'2.\f |
@@ -1566,7 +1581,8 @@ part-Ponezero-one = {
   d'2. |
   c'2.~ |
   % 160
-  c'2. |
+  c'2. | \mark \default \bar "||"
+
   c'2.\ff |
   b2. |
   a2. |
@@ -1592,10 +1608,11 @@ part-Poneone-one = {
   \key c \major
   \time 3/4
   \clef bass
+  \tempo "Vivace" 4 = 184
 
-  R2. |
+  R2.*2 |
 
-  R2.*16 |
+  R2.*16 | \mark \default \bar "||"
 
   c2. |
   b,2. |
@@ -1615,9 +1632,9 @@ part-Poneone-one = {
   % 30
   g,2. |
   c2.~ |
-  c2. |
+  c2. | \mark \default \bar "||"
 
-  R2.*16 |
+  R2.*16 | \mark \default \bar "||"
 
   c2. |
   % 50
@@ -1637,10 +1654,10 @@ part-Poneone-one = {
   f,2. |
   g,2. |
   c2.~ |
-  c2. |
+  c2. | \mark \default \bar "||"
 
   % 65
-  R2.*38 |
+  R2.*38 | \mark \default \bar "||"
 
   c2. |
   b,2. |
@@ -1660,9 +1677,9 @@ part-Poneone-one = {
   f,2. |
   g,2. |
   c2.~ |
-  c2. |
+  c2. | \mark \default \bar "||"
 
-  R2.*26 |
+  R2.*26 | \mark \default \bar "||"
 
   % 145
   c2.\f |
@@ -1683,7 +1700,7 @@ part-Poneone-one = {
   g,2. |
   c2.~ |
   % 160
-  c2. |
+  c2. | \mark \default \bar "||"
 
   c2.\ff |
   b,2. |
@@ -1710,10 +1727,11 @@ part-Ponetwo-one = {
   \key c \major
   \time 3/4
   \clef bass
+  \tempo "Vivace" 4 = 184
 
-  R2. |
+  R2.*2 |
 
-  R2.*16 |
+  R2.*16 | \mark \default \bar "||"
 
   c2. |
   b,2. |
@@ -1733,9 +1751,9 @@ part-Ponetwo-one = {
   % 30
   g,2. |
   c2.~ |
-  c2. |
+  c2. | \mark \default \bar "||"
 
-  R2.*16 |
+  R2.*16 | \mark \default \bar "||"
 
   c2. |
   % 50
@@ -1755,10 +1773,10 @@ part-Ponetwo-one = {
   f,2. |
   g,2. |
   c2.~ |
-  c2. |
+  c2. | \mark \default \bar "||"
 
   % 65
-  R2.*38
+  R2.*38 | \mark \default \bar "||"
 
   c2. |
   b,2. |
@@ -1778,9 +1796,9 @@ part-Ponetwo-one = {
   f,2. |
   g,2. |
   c2.~ |
-  c2. |
+  c2. | \mark \default \bar "||"
 
-  R2.*26 |
+  R2.*26 | \mark \default \bar "||"
 
   % 145
   c2.\f |
@@ -1801,7 +1819,7 @@ part-Ponetwo-one = {
   g,2. |
   c2.~ |
   % 160
-  c2. |
+  c2. | \mark \default \bar "||"
 
   c'2.\ff |
   b2. |
