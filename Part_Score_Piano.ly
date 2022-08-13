@@ -74,6 +74,30 @@
 
   \bookpart {
     \header {
+      \alleluia-simplified_header
+    }
+    \score {
+      \keepWithTag #'(piano) \alleluia-simplified
+      
+      \layout {}
+      %  \midi {\tempo 4 = 100 }
+    }
+  }
+
+  \bookpart {
+    \header {
+      \alleluia-elaborated_header
+    }
+    \score {
+      \keepWithTag #'(piano) \alleluia-elaborated
+      
+      \layout {}
+      %  \midi {\tempo 4 = 100 }
+    }
+  }
+
+  \bookpart {
+    \header {
       \humayot_ihayag_header
     }
     \score {
