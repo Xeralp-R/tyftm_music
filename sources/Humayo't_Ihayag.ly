@@ -42,9 +42,11 @@ part-Pone-one = {
       r4 r8 b8
     }
     {
-      R1 |
+      r2
     }
   }
+
+  r2 |
   R1 |
   R1 |
   R1 |
@@ -139,6 +141,7 @@ part-Ptwo-one = {
   \key e \major
   \time 4/4
   \clef bass
+  \tempo "Allegro Giocoso" 4 = 120
 
   \override DynamicLineSpanner.direction = #UP
 
@@ -146,29 +149,39 @@ part-Ptwo-one = {
   R1 |
   R1 |
   r4 r8 b,8\f
-  cis8 e8 e8 cis8 |
-  % 5
-  e4 r4 r2 |
-  r4 r8 b,8 cis8 e8 e8 cis8 |
-  e4 r4 r2 |
-  r4 r8 b,8 cis8 e8 e8 cis8 |
-  e8 e8 e8 fis8~ fis8 e8 dis8 e8~ |
-  % 10
-  e4 r8 e8 gis8 b8 gis8 b8~ |
-  b2~ b8 a8 gis8 fis8~ |
-  fis8-\markup { \italic "second note only 2da volta" } e8 r4 gis8 b8 gis8
-  b8~ |
-  b8 b4. b8 a8 gis8 fis8~ |
-  fis8 e4 r8 gis8 b8 gis8 b8~ |
-  % 15
-  b8 b4. b8 a8 gis8 fis8~( |
-  fis8 gis8) e2 r4 |
-  cis8 e8 cis8 b,8~ b,8 e8 b,8 a,8~ |
-  a,8 e8 e8 gis8~ gis8 b8 gis16( fis16 e8) |
-  e8 r8 r4 r2 |
-  % 20
-  r4 r8 b,8 |
-  R1 |
+  \repeat volta 2 {
+    cis8 e8 e8 cis8 |
+    % 5
+    e4 r4 r2 |
+    r4 r8 b,8 cis8 e8 e8 cis8 |
+    e4 r4 r2 |
+    r4 r8 b,8 cis8 e8 e8 cis8 |
+    e8 e8 e8 fis8~ fis8 e8 dis8 e8~ |
+    % 10
+    e4 r8 e8 gis8 b8 gis8 b8~ |
+    b2~ b8 a8 gis8 fis8~ |
+    fis8-\markup { \italic "second note only 2da volta" } e8 r4 gis8 b8 gis8
+    b8~ |
+    b8 b4. b8 a8 gis8 fis8~ |
+    fis8 e4 r8 gis8 b8 gis8 b8~ |
+    % 15
+    b8 b4. b8 a8 gis8 fis8~( |
+    fis8 gis8) e2 r4 |
+    cis8 e8 cis8 b,8~ b,8 e8 b,8 a,8~ |
+    a,8 e8 e8 gis8~ gis8 b8 gis16( fis16 e8) |
+    e8 r8 r4 r2 |
+  }
+  \alternative {
+    {
+      % 20
+      r4 r8 b,8 |
+    }
+    {
+      r2 |
+    }
+  }
+
+  r2 |
   R1 |
   R1 |
   R1 |
@@ -270,30 +283,39 @@ part-Pthree-one = {
   R1 |
   R1 |
   r2
-  r2 |
-  % 5
-  r4 gis'4\f a'8 a'4 gis'8~ |
-  gis'4 r8 r8 r2 |
-  r4 gis'4 a'8 a'4 gis'8~ |
-  gis'4 r8 r8 r2 |
-  gis'4.^\markup { \dynamic "p" \italic "play second time only" } fis'8~ fis'4. e'8~ |
-  % 10
-  e'1 |
-  gis'2.. cis''8~ |
-  cis''4 r4 gis'8\mf b'8 gis'8 b'8~ |
-  b'8 b'4.~ b'2 |
-  r2 gis'8 b'8 gis'8 b'8~ |
-  % 15
-  b'8 b'4.~ b'2 |
-  R1 |
-  cis'8^\markup {\italic "play second time only" } e'8 cis'8 b8~ b8 e'8 b8
-  a8~ |
-  a8 e'8 e'8 gis'8~ gis'8 fis'8 e'8 e'8~ |
-  e'8 r8 gis'4\f a'8 a'4 gis'8~ |
-  % 20
-  gis'4 r4 |
+  \repeat volta 2 {
+    r2 |
+    % 5
+    r4 gis'4\f a'8 a'4 gis'8~ |
+    gis'4 r8 r8 r2 |
+    r4 gis'4 a'8 a'4 gis'8~ |
+    gis'4 r8 r8 r2 |
+    gis'4.^\markup { \dynamic "p" \italic "play second time only" } fis'8~ fis'4. e'8~ |
+    % 10
+    e'1 |
+    gis'2.. cis''8~ |
+    cis''4 r4 gis'8\mf b'8 gis'8 b'8~ |
+    b'8 b'4.~ b'2 |
+    r2 gis'8 b'8 gis'8 b'8~ |
+    % 15
+    b'8 b'4.~ b'2 |
+    R1 |
+    cis'8^\markup {\italic "play second time only" } e'8 cis'8 b8~ b8 e'8 b8
+    a8~ |
+    a8 e'8 e'8 gis'8~ gis'8 fis'8 e'8 e'8~ |
+    e'8 r8 gis'4\f a'8 a'4 gis'8~ |
+  }
+  \alternative {
+    {
+      % 20
+      gis'4 r4 |
+    }
+    {
+      r2
+    }
+  }
 
-  r2 e'8 gis'8 b'8 cis''8~ |
+  e'8 gis'8 b'8 cis''8~ |
   cis''2~ cis''8 cis''8 dis''8 b'8~ |
   b'4 r8 e'8 e'8( fis'8) gis'8 a'8~ |
   a'2. b'8 gis'8~ |
@@ -417,30 +439,40 @@ part-Pfour-one = {
   R1 |
   R1 |
   r2
-  r2 |
-  % 5
-  r4 e'4\f fis'8 fis'4 e'8~ |
-  e'4 r8 r8 r2 |
-  r4 e'4 fis'8 fis'4 e'8~ |
-  e'4 r8 r8 r2 |
-  e'4.^\markup {\dynamic "p" \italic "play second time only" } cis'8~ cis'4. cis'8~ |
-  % 10
-  cis'1 |
-  e'2.. e'8~ |
-  e'4 r4 gis'8\mf b'8 gis'8 b'8~ |
-  b'8 b'4.~ b'2 |
-  r2 gis'8 b'8 gis'8 b'8~ |
-  % 15
-  b'8 b'4.~ b'2 |
-  R1 |
-  cis'8^\markup {\italic "play second time only" } e'8 cis'8 b8~ b8 e'8 b8
-  a8~ |
-  a8 e'8 e'8 gis'8~ gis'8 fis'8 e'8 e'8~ |
-  e'8 r8 e'4\f fis'8 fis'4 e'8~ |
-  % 20
-  e'4 r4 |
+  \repeat volta 2 {
+    r2 |
+    % 5
+    r4 e'4\f fis'8 fis'4 e'8~ |
+    e'4 r8 r8 r2 |
+    r4 e'4 fis'8 fis'4 e'8~ |
+    e'4 r8 r8 r2 |
+    e'4.^\markup {\dynamic "p" \italic "play second time only" } cis'8~ cis'4. cis'8~ |
+    % 10
+    cis'1 |
+    e'2.. e'8~ |
+    e'4 r4 gis'8\mf b'8 gis'8 b'8~ |
+    b'8 b'4.~ b'2 |
+    r2 gis'8 b'8 gis'8 b'8~ |
+    % 15
+    b'8 b'4.~ b'2 |
+    R1 |
+    cis'8^\markup {\italic "play second time only" } e'8 cis'8 b8~ b8 e'8 b8
+    a8~ |
+    a8 e'8 e'8 gis'8~ gis'8 fis'8 e'8 e'8~ |
+    e'8 r8 e'4\f fis'8 fis'4 e'8~ |
+  }
+  \alternative {
+    {
+      % 20
+      e'4 r4 |
+    }
 
-  r2 e'8 gis'8 b'8 cis''8~ |
+    {
+      r2
+    }
+  }
+
+  e'8 gis'8 b'8 cis''8~ |
   cis''2~ cis''8 cis''8 dis''8 b'8~ |
   b'4 r8 e'8 e'8( fis'8) gis'8 a'8~ |
   a'2. b'8 gis'8~ |
@@ -514,30 +546,39 @@ part-Pfive-one = {
   R1 |
   R1 |
   r2
-  r2 |
-  % 5
-  r4 b4\f cis'8 cis'4 b8~ |
-  b4 r8 r8 r2 |
-  r4 b4 cis'8 cis'4 b8~ |
-  b4 r8 r8 r2 |
-  b4.^\markup {\dynamic "p" \italic "play second time only" } b8~ b4. gis8~ |
-  % 10
-  gis1 |
-  cis'2.. cis'8~ |
-  cis'4 r4 gis8\mf b8 gis8 b8~ |
-  b8 b4.~ b2 |
-  r2 gis8 b8 gis8 b8~ |
-  % 15
-  b8 b4.~ b2 |
-  R1 |
-  cis8^\markup {\italic "play second time only" } e8 cis8 b,8~ b,8 e8 b,8
-  a,8~ |
-  a,8 e8 e8 gis8~ gis8 fis8 e8 e8~ |
-  e8 r8 b4\f cis'8 cis'4 b8~ |
-  % 20
-  b4 r4 |
+  \repeat volta 2 {
+    r2 |
+    % 5
+    r4 b4\f cis'8 cis'4 b8~ |
+    b4 r8 r8 r2 |
+    r4 b4 cis'8 cis'4 b8~ |
+    b4 r8 r8 r2 |
+    b4.^\markup {\dynamic "p" \italic "play second time only" } b8~ b4. gis8~ |
+    % 10
+    gis1 |
+    cis'2.. cis'8~ |
+    cis'4 r4 gis8\mf b8 gis8 b8~ |
+    b8 b4.~ b2 |
+    r2 gis8 b8 gis8 b8~ |
+    % 15
+    b8 b4.~ b2 |
+    R1 |
+    cis8^\markup {\italic "play second time only" } e8 cis8 b,8~ b,8 e8 b,8
+    a,8~ |
+    a,8 e8 e8 gis8~ gis8 fis8 e8 e8~ |
+    e8 r8 b4\f cis'8 cis'4 b8~ |
+  }
+  \alternative {
+    {
+      % 20
+      b4 r4 |
+    }
+    {
+      r2
+    }
+  }
 
-  r2 e8 gis8 b8 cis'8~ |
+  e8 gis8 b8 cis'8~ |
   cis'2~ cis'8 cis'8 dis'8 b8~ |
   b4 r8 e8 e8( fis8) gis8 a8~ |
   a2. b8 gis8~ |
@@ -611,30 +652,40 @@ part-Psix-one = {
   R1 |
   R1 |
   r2
-  r2 |
-  % 5
-  r4 e4\f e8 e4 e8~ |
-  e4 r8 r8 r2 |
-  r4 e4 e8 e4 e8~ |
-  e4 r8 r8 r2 |
-  e4.^\markup {\dynamic "p" \italic "play second time only" } dis8~ dis4. cis8~( |
-  % 10
-  cis2 b,2) |
-  a2.. b8~ |
-  b4 r4 gis8\mf b8 gis8 b8~ |
-  b8 b4.~ b2 |
-  r2 gis8 b8 gis8 b8~ |
-  % 15
-  b8 b4.~ b2 |
-  R1 |
-  cis8^\markup { \italic "play second time only" } e8 cis8 b,8~ b,8 e8 b,8
-  a,8~ |
-  a,8 e8 e8 gis8~ gis8 fis8 e8 e8~ |
-  e8 r8 e4\f e8 e4 e8~ |
-  % 20
-  e4 r4 |
+  \repeat volta 2 {
+    r2 |
+    % 5
+    r4 e4\f e8 e4 e8~ |
+    e4 r8 r8 r2 |
+    r4 e4 e8 e4 e8~ |
+    e4 r8 r8 r2 |
+    e4.^\markup {\dynamic "p" \italic "play second time only" } dis8~ dis4. cis8~( |
+    % 10
+    cis2 b,2) |
+    a2.. b8~ |
+    b4 r4 gis8\mf b8 gis8 b8~ |
+    b8 b4.~ b2 |
+    r2 gis8 b8 gis8 b8~ |
+    % 15
+    b8 b4.~ b2 |
+    R1 |
+    cis8^\markup { \italic "play second time only" } e8 cis8 b,8~ b,8 e8 b,8
+    a,8~ |
+    a,8 e8 e8 gis8~ gis8 fis8 e8 e8~ |
+    e8 r8 e4\f e8 e4 e8~ |
+  }
+  \alternative {
+    {
+      % 20
+      e4 r4 |
+    }
 
-  r2 e8 gis8 b8 cis'8~ |
+    {
+      r2
+    }
+  }
+
+  e8 gis8 b8 cis'8~ |
   cis'2~ cis'8 cis'8 dis'8 b8~ |
   b4 r8 e8 e8( fis8) gis8 a8~ |
   a2. b8 gis8~ |
@@ -701,41 +752,8 @@ part-Pseven-one = {
   \key cis \major
   \time 4/4
   \clef treble
-  R1 |
-  R1 |
-  R1 |
-  r2
-  r2 |
-  % 5
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 10
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 15
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 20
-  r2 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 25
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
+  R1*57/2 |
+
   % 30
   \key d \major
   r4 r8 a'8\f b'8 d''8 d''8 b'8 |
@@ -812,60 +830,70 @@ part-Peight-one = {
       <gis' b' e'' >2
     }
   >>
-  r8 <a' a'' >4 <b' b'' >8~ |
-  % 5
-  <b' b'' >8 r8 <b' e'' gis'' >4 <cis'' fis'' a'' >8 <cis'' fis'' a'' >4 <b'
-  e'' gis'' >8~ |
-  <b' e'' gis'' >4 r4 r8 <a' a'' >4 <b' b'' >8~ |
-  <b' b'' >8 r8 <b' e'' gis'' >4 <cis'' fis'' a'' >8 <cis'' fis'' a'' >4 <b'
-  e'' gis'' >8~ |
-  <b' e'' gis'' >4 r4 r8 <a' a'' >4 <b' b'' >8 |
-  <e' gis' b' e'' >4.\arpeggio <fis' b' dis'' fis'' >2\arpeggio
-  <<
-    \context Voice = "voiceone" {
-      s8 | \voiceOne % 10
-      r8 <e'' e''' >8 <e'' e''' >8 <fis' fis'' >8
-      r8 <gis' gis'' >8 r8 <a' a'' >8
+
+  \repeat volta 2 {
+    r8 <a' a'' >4 <b' b'' >8~ |
+    % 5
+    <b' b'' >8 r8 <b' e'' gis'' >4 <cis'' fis'' a'' >8 <cis'' fis'' a'' >4 <b'
+    e'' gis'' >8~ |
+    <b' e'' gis'' >4 r4 r8 <a' a'' >4 <b' b'' >8~ |
+    <b' b'' >8 r8 <b' e'' gis'' >4 <cis'' fis'' a'' >8 <cis'' fis'' a'' >4 <b'
+    e'' gis'' >8~ |
+    <b' e'' gis'' >4 r4 r8 <a' a'' >4 <b' b'' >8 |
+    <e' gis' b' e'' >4.\arpeggio <fis' b' dis'' fis'' >2\arpeggio
+    <<
+      \context Voice = "voiceone" {
+        s8 | \voiceOne % 10
+        r8 <e'' e''' >8 <e'' e''' >8 <fis' fis'' >8
+        r8 <gis' gis'' >8 r8 <a' a'' >8
+      }
+      \context Voice = "voicetwo" {
+        \oneVoice
+        <e' gis' cis'' e''>8~\arpeggio | \voiceTwo % 10
+        <e' gis' cis'' e'' >2
+      }
+    >> |
+    <b' b'' >4-. <b' b'' >4-. <b' b'' >8-. <a' a'' >8( <gis' gis'' >8 <fis'
+    fis'' >8~)~ |
+    <fis' fis'' >8 b''16 fis''16 dis''16 b'16 fis'16 dis'16 b8 <b b' >4 <bis
+    bis' >8 |
+    r4 <cis'' e'' a'' cis''' >2\arpeggio <a' cis''
+    fis'' a'' >8\arpeggio r8 |
+    r8 b''16 fis''16 dis''16 b'16 fis'16 dis'16 b8 <b b' >4 <bis bis' >8 |
+    % 15
+    r4 <cis'' e'' a'' cis''' >2\arpeggio <gis' b'
+    e'' gis'' >8 <fis' a' cis'' fis'' >8~ |
+    <fis' a' cis'' fis'' >8 <gis' gis'' >8(-. <fis' fis'' >8-. <e' e'' >8)-.
+    r8 cis'''16 a''16 e''16 cis''8. |
+    <<
+      \context Voice = "voiceone" {
+        \voiceOne
+        cis''8\arpeggio e''8 cis''8 b'8~\arpeggio b'8 e''8 b'8
+        a'8~\arpeggio |
+        a'8 e''8 e''8 gis''8~\arpeggio gis''8 b''8 gis''16 fis''16 e''8 |
+      }
+      \context Voice = "voicetwo" {
+        \voiceTwo
+        <cis' e' a' >4.\arpeggio <b e' gis'
+        >8~\arpeggio~ <b e' gis' >4. <a cis' fis'
+        >8~\arpeggio |
+        <a cis' fis' >4. <gis' b' e'' >8~\arpeggio~
+        <gis' b' e'' >2 |
+      }
+    >>
+    <e' gis' b' e'' >4 <gis' e'' gis'' >4 <a' fis'' a'' >8 <a' fis'' a'' >4
+    <gis' e'' gis'' >8~ |
+  }
+  \alternative {
+    {
+      % 20
+      <gis' e'' gis'' >8 <e'' e''' >8 <e'' e''' >8 r8 |
     }
-    \context Voice = "voicetwo" {
-      \oneVoice
-      <e' gis' cis'' e''>8~\arpeggio | \voiceTwo % 10
-      <e' gis' cis'' e'' >2
+    {
+      r8 <e'' e''' >8 <e'' e''' >8 r8
     }
-  >> |
-  <b' b'' >4-. <b' b'' >4-. <b' b'' >8-. <a' a'' >8( <gis' gis'' >8 <fis'
-  fis'' >8~)~ |
-  <fis' fis'' >8 b''16 fis''16 dis''16 b'16 fis'16 dis'16 b8 <b b' >4 <bis
-  bis' >8 |
-  r4 <cis'' e'' a'' cis''' >2\arpeggio <a' cis''
-  fis'' a'' >8\arpeggio r8 |
-  r8 b''16 fis''16 dis''16 b'16 fis'16 dis'16 b8 <b b' >4 <bis bis' >8 |
-  % 15
-  r4 <cis'' e'' a'' cis''' >2\arpeggio <gis' b'
-  e'' gis'' >8 <fis' a' cis'' fis'' >8~ |
-  <fis' a' cis'' fis'' >8 <gis' gis'' >8(-. <fis' fis'' >8-. <e' e'' >8)-.
-  r8 cis'''16 a''16 e''16 cis''8. |
-  <<
-    \context Voice = "voiceone" {
-      \voiceOne
-      cis''8\arpeggio e''8 cis''8 b'8~\arpeggio b'8 e''8 b'8
-      a'8~\arpeggio |
-      a'8 e''8 e''8 gis''8~\arpeggio gis''8 b''8 gis''16 fis''16 e''8 |
-    }
-    \context Voice = "voicetwo" {
-      \voiceTwo
-      <cis' e' a' >4.\arpeggio <b e' gis'
-      >8~\arpeggio~ <b e' gis' >4. <a cis' fis'
-      >8~\arpeggio |
-      <a cis' fis' >4. <gis' b' e'' >8~\arpeggio~
-      <gis' b' e'' >2 |
-    }
-  >>
-  <e' gis' b' e'' >4 <gis' e'' gis'' >4 <a' fis'' a'' >8 <a' fis'' a'' >4
-  <gis' e'' gis'' >8~ |
-  % 20
-  <gis' e'' gis'' >8 <e'' e''' >8 <e'' e''' >8 r8 |
-  r8 <e'' e''' >8 <e'' e''' >8 r8
+  }
+
   <<
     \context Voice = "voiceone" {
       e''8 gis''8 b''8 cis'''8~ |
@@ -1040,31 +1068,42 @@ part-Peight-two = {
   <fis, fis >4. <b, e b >8~\arpeggio <b, e b >2 |
   <e, e >2\arpeggio <b, e a >8 <b, e a >4 <b, e gis >8~ |
   <b, e gis >2
-  <a,, a, >4 <b,, b, >4 |
-  % 5
-  <e, e >4 b4 <a, a >4 e'4 |
-  <e, e >4 b4 <a,, a, >4 <b,, b, >4 |
-  <e, e >4 b4 <a, a >4 e'4 |
-  <e, e >4 b4 <a,, a, >4 <b,, b, >4 |
-  <e, gis, b, e >4.\arpeggio <dis, fis, b, dis
-  >2\arpeggio <gis, cis e gis
-  >8~\arpeggio|
-  % 10
-  <gis, cis e gis >2 <gis, gis >8 r8 <a, a >8 r8 |
-  <b, b >4-. <b, b >4-. <b, b >8-. <a, a >8( <gis, gis >8 <fis, fis >8~)~ |
-  <fis, fis >8 r8 r16 b16 fis16 dis16 b,4 <bes,, bes, >4 |
-  <a,, a, >2 <cis, cis >4 <e, e >8 <gis, gis >8~ |
-  <gis, gis >4 r16 b16 fis16 dis16 b,4 <bes,, bes, >4 |
-  % 15
-  <a,, a, >2 <b,, b, >4 <bis,, bis, >8 <cis, cis >8~ |
-  <cis, cis >2 r4 r16 a16 e16 cis16 |
-  <a,, a, >4.\arpeggio <gis,, gis, >8~\arpeggio <gis,,
-  gis, >4. <fis,, fis, >8~\arpeggio |
-  <fis,, fis, >4. <b,, b, >8~\arpeggio <b,, b, >2 |
-  <e, e >4 <e b >4 <e cis' >8 <e cis' >4 <e b >8~ |
-  % 20
-  <e b >4 r4 |
-  R1 |
+
+  \repeat volta 2 {
+    <a,, a, >4 <b,, b, >4 |
+    % 5
+    <e, e >4 b4 <a, a >4 e'4 |
+    <e, e >4 b4 <a,, a, >4 <b,, b, >4 |
+    <e, e >4 b4 <a, a >4 e'4 |
+    <e, e >4 b4 <a,, a, >4 <b,, b, >4 |
+    <e, gis, b, e >4.\arpeggio <dis, fis, b, dis
+    >2\arpeggio <gis, cis e gis
+    >8~\arpeggio|
+    % 10
+    <gis, cis e gis >2 <gis, gis >8 r8 <a, a >8 r8 |
+    <b, b >4-. <b, b >4-. <b, b >8-. <a, a >8( <gis, gis >8 <fis, fis >8~)~ |
+    <fis, fis >8 r8 r16 b16 fis16 dis16 b,4 <bes,, bes, >4 |
+    <a,, a, >2 <cis, cis >4 <e, e >8 <gis, gis >8~ |
+    <gis, gis >4 r16 b16 fis16 dis16 b,4 <bes,, bes, >4 |
+    % 15
+    <a,, a, >2 <b,, b, >4 <bis,, bis, >8 <cis, cis >8~ |
+    <cis, cis >2 r4 r16 a16 e16 cis16 |
+    <a,, a, >4.\arpeggio <gis,, gis, >8~\arpeggio <gis,,
+    gis, >4. <fis,, fis, >8~\arpeggio |
+    <fis,, fis, >4. <b,, b, >8~\arpeggio <b,, b, >2 |
+    <e, e >4 <e b >4 <e cis' >8 <e cis' >4 <e b >8~ |
+  }
+  \alternative {
+    {
+      % 20
+      <e b >4 r4 |
+    }
+    {
+      r2
+    }
+  }
+
+  r2 |
   <cis, cis >4 r4 <cis, cis >4 r4 |
   <b,, b, >4 r4 <b,, b, >4 r4 |
   <a,, a, >4 r4 <a,, a, >4 r4 |
@@ -1152,28 +1191,38 @@ part-Pnine-one = \drummode {
   R1 |
   R1 |
   r8 tamb8\f tamb8 r8
-  r8 tamb8 r8 tamb8 |
-  % 5
-  r4 tamb4 r4 tamb4 |
-  r4 tamb4 r4 tamb4 |
-  r4 tamb4 r4 tamb4 |
-  r4 tamb4 r4 tamb4 |
-  tamb4. tamb8~ tamb4. tamb8~ |
-  % 10
-  tamb8 tamb8 tamb8 r8 r8 tamb8 r8 tamb8 |
-  tamb8 r8 tamb8 r8 tamb8 r8 tamb8 tamb8 |
-  r8 tamb4.:32 r8 tamb8 r8 tamb8 |
-  r4 tamb4 r4 tamb4 |
-  r4 tamb4 r4 tamb4 |
-  % 15
-  r4 tamb4 r4 tamb4 |
-  r4 tamb4 r4 tamb4 |
-  tamb4. tamb8~ tamb4. tamb8~ |
-  tamb4. tamb8~ tamb2 |
-  tamb4 tamb4 tamb8 tamb4 tamb8~ |
-  % 20
-  tamb8 tamb8 tamb8 r8 |
-  R1 |
+  \repeat volta 2 {
+    r8 tamb8 r8 tamb8 |
+    % 5
+    r4 tamb4 r4 tamb4 |
+    r4 tamb4 r4 tamb4 |
+    r4 tamb4 r4 tamb4 |
+    r4 tamb4 r4 tamb4 |
+    tamb4. tamb8~ tamb4. tamb8~ |
+    % 10
+    tamb8 tamb8 tamb8 r8 r8 tamb8 r8 tamb8 |
+    tamb8 r8 tamb8 r8 tamb8 r8 tamb8 tamb8 |
+    r8 tamb4.:32 r8 tamb8 r8 tamb8 |
+    r4 tamb4 r4 tamb4 |
+    r4 tamb4 r4 tamb4 |
+    % 15
+    r4 tamb4 r4 tamb4 |
+    r4 tamb4 r4 tamb4 |
+    tamb4. tamb8~ tamb4. tamb8~ |
+    tamb4. tamb8~ tamb2 |
+    tamb4 tamb4 tamb8 tamb4 tamb8~ |
+  }
+  \alternative {
+    {
+      % 20
+      tamb8 tamb8 tamb8 r8 |
+    }
+    {
+      r2
+    }
+  }
+
+  r2 |
   r4 tamb4 r4 tamb4 |
   r4 tamb4 r4 tamb4 |
   r4 tamb4 r4 tamb4 |
@@ -1240,28 +1289,38 @@ part-Ponezero-one = {
   R1 |
   R1 |
   r2
-  r2 |
-  % 5
-  r4 gis'4\f a'8 a'4 gis'8~ |
-  gis'4 r8 r8 r2 |
-  r4 gis'4 a'8 a'4 gis'8 |
-  gis'4 r8 r8 r2 |
-  gis'4.\mf fis'8~ fis'4. e'8~ |
-  % 10
-  e'1 |
-  gis'2.. cis''8~ |
-  cis''2 gis'8 b'8 gis'8 b'8~ |
-  b'8 b'4.~ b'2 |
-  r2 gis'8 b'8 gis'8 b'8~ |
-  % 15
-  b'8 b'4.~ b'2 |
-  R1 |
-  cis'8\mf e'8 cis'8 b8~ b8 e'8 b8 a8~ |
-  a8 e'8 e'8 gis'8~ gis'8 fis'8 e'8 e'8~ |
-  e'8 r8 gis'4\f a'8 a'4 gis'8~ |
-  % 20
-  gis'4 r4 |
-  r2 e'8 gis'8 b'8 cis''8~ |
+  \repeat volta 2 {
+    r2 |
+    % 5
+    r4 gis'4\f a'8 a'4 gis'8~ |
+    gis'4 r8 r8 r2 |
+    r4 gis'4 a'8 a'4 gis'8 |
+    gis'4 r8 r8 r2 |
+    gis'4.\mf fis'8~ fis'4. e'8~ |
+    % 10
+    e'1 |
+    gis'2.. cis''8~ |
+    cis''2 gis'8 b'8 gis'8 b'8~ |
+    b'8 b'4.~ b'2 |
+    r2 gis'8 b'8 gis'8 b'8~ |
+    % 15
+    b'8 b'4.~ b'2 |
+    R1 |
+    cis'8\mf e'8 cis'8 b8~ b8 e'8 b8 a8~ |
+    a8 e'8 e'8 gis'8~ gis'8 fis'8 e'8 e'8~ |
+    e'8 r8 gis'4\f a'8 a'4 gis'8~ |
+  }
+  \alternative {
+    {
+      % 20
+      gis'4 r4 |
+    }
+    {
+      r2
+    }
+  }
+
+  e'8 gis'8 b'8 cis''8~ |
   cis''2~ cis''8 cis''8 dis''8 b'8~ |
   b'4 r8 e'8 e'8 fis'8 gis'8 a'8~ |
   a'2. b'8 gis'8~ |
@@ -1330,28 +1389,38 @@ part-Poneone-one = {
   R1 |
   R1 |
   r2
-  r2 |
-  % 5
-  r4 e'4\f fis'8 fis'4 e'8~ |
-  e'4 r8 r8 r2 |
-  r4 e'4 fis'8 fis'4 e'8~ |
-  e'4 r8 r8 r2 |
-  e'4.\mf cis'8~ cis'4. cis'8~ |
-  % 10
-  cis'1 |
-  e'2.. e'8~ |
-  e'2 gis'8 b'8 gis'8 b'8~ |
-  b'8 b'4.~ b'2 |
-  r2 gis'8 b'8 gis'8 b'8~ |
-  % 15
-  b'8 b'4.~ b'2 |
-  R1 |
-  cis'8\mf e'8 cis'8 b8~ b8 e'8 b8 a8~ |
-  a8 e'8 e'8 gis'8~ gis'8 fis'8 e'8 e'8~ |
-  e'8 r8 e'4\f fis'8 fis'4 e'8~ |
-  % 20
-  e'4 r4 |
-  r2 e'8 gis'8 b'8 cis''8~ |
+  \repeat volta 2 {
+    r2 |
+    % 5
+    r4 e'4\f fis'8 fis'4 e'8~ |
+    e'4 r8 r8 r2 |
+    r4 e'4 fis'8 fis'4 e'8~ |
+    e'4 r8 r8 r2 |
+    e'4.\mf cis'8~ cis'4. cis'8~ |
+    % 10
+    cis'1 |
+    e'2.. e'8~ |
+    e'2 gis'8 b'8 gis'8 b'8~ |
+    b'8 b'4.~ b'2 |
+    r2 gis'8 b'8 gis'8 b'8~ |
+    % 15
+    b'8 b'4.~ b'2 |
+    R1 |
+    cis'8\mf e'8 cis'8 b8~ b8 e'8 b8 a8~ |
+    a8 e'8 e'8 gis'8~ gis'8 fis'8 e'8 e'8~ |
+    e'8 r8 e'4\f fis'8 fis'4 e'8~ |
+  }
+  \alternative {
+    {
+      % 20
+      e'4 r4 |
+    }
+    {
+      r2
+    }
+  }
+
+  e'8 gis'8 b'8 cis''8~ |
   cis''2~ cis''8 cis''8 dis''8 b'8~ |
   b'4 r8 e'8 e'8 fis'8 gis'8 a'8~ |
   a'2. b'8 gis'8~ |
@@ -1420,28 +1489,38 @@ part-Ponetwo-one = {
   R1 |
   R1 |
   r2
-  r2 |
-  % 5
-  r4 b4\f cis'8 cis'4 b8~ |
-  b4 r8 r8 r2 |
-  r4 b4 cis'8 cis'4 b8 |
-  b4 r8 r8 r2 |
-  b4.\mf b8~ b4. gis8~ |
-  % 10
-  gis1 |
-  cis'2.. cis'8~ |
-  cis'2 gis8 b8 gis8 b8~ |
-  b8 b4.~ b2 |
-  r2 gis8 b8 gis8 b8~ |
-  % 15
-  b8 b4.~ b2 |
-  R1 |
-  cis'8\mf e'8 cis'8 b8~ b8 e'8 b8 a8~ |
-  a8 e'8 e'8 gis'8~ gis'8 fis'8 e'8 e'8~ |
-  e'8 r8 b4\f cis'8 cis'4 b8~ |
-  % 20
-  b4 r4 |
-  r2 e8 gis8 b8 cis'8~ |
+  \repeat volta 2 {
+    r2 |
+    % 5
+    r4 b4\f cis'8 cis'4 b8~ |
+    b4 r8 r8 r2 |
+    r4 b4 cis'8 cis'4 b8 |
+    b4 r8 r8 r2 |
+    b4.\mf b8~ b4. gis8~ |
+    % 10
+    gis1 |
+    cis'2.. cis'8~ |
+    cis'2 gis8 b8 gis8 b8~ |
+    b8 b4.~ b2 |
+    r2 gis8 b8 gis8 b8~ |
+    % 15
+    b8 b4.~ b2 |
+    R1 |
+    cis'8\mf e'8 cis'8 b8~ b8 e'8 b8 a8~ |
+    a8 e'8 e'8 gis'8~ gis'8 fis'8 e'8 e'8~ |
+    e'8 r8 b4\f cis'8 cis'4 b8~ |
+  }
+  \alternative {
+    {
+      % 20
+      b4 r4 |
+    }
+    {
+      r2
+    }
+  }
+
+  e8 gis8 b8 cis'8~ |
   cis'2~ cis'8 cis'8 dis'8 b8~ |
   b4 r8 e8 e8 fis8 gis8 a8~ |
   a2. b8 gis8~ |
@@ -1510,28 +1589,38 @@ part-Ponethree-one = {
   R1 |
   R1 |
   r2
-  r2 |
-  % 5
-  r4 e4\f e8 e4 e8~ |
-  e4 r8 r8 r2 |
-  r4 e4 e8 e4 e8~ |
-  e4 r8 r8 r2 |
-  e4.\mf dis8~ dis4. cis8~ |
-  % 10
-  cis2 b,2 |
-  a2.. b8~ |
-  b2 gis8 b8 gis8 b8~ |
-  b8 b4.~ b2 |
-  r2 gis8 b8 gis8 b8~ |
-  % 15
-  b8 b4.~ b2 |
-  R1 |
-  cis8\mf e8 cis8 b,8~ b,8 e8 b,8 a,8~ |
-  a,8 e8 e8 gis8~ gis8 fis8 e8 e8~ |
-  e8 r8 e4\f e8 e4 e8~ |
-  % 20
-  e4 r4 |
-  r2 e8 gis8 b8 cis'8~ |
+  \repeat volta 2 {
+    r2 |
+    % 5
+    r4 e4\f e8 e4 e8~ |
+    e4 r8 r8 r2 |
+    r4 e4 e8 e4 e8~ |
+    e4 r8 r8 r2 |
+    e4.\mf dis8~ dis4. cis8~ |
+    % 10
+    cis2 b,2 |
+    a2.. b8~ |
+    b2 gis8 b8 gis8 b8~ |
+    b8 b4.~ b2 |
+    r2 gis8 b8 gis8 b8~ |
+    % 15
+    b8 b4.~ b2 |
+    R1 |
+    cis8\mf e8 cis8 b,8~ b,8 e8 b,8 a,8~ |
+    a,8 e8 e8 gis8~ gis8 fis8 e8 e8~ |
+    e8 r8 e4\f e8 e4 e8~ |
+  }
+  \alternative {
+    {
+      % 20
+      e4 r4 |
+    }
+    {
+      r2
+    }
+  }
+
+  e8 gis8 b8 cis'8~ |
   cis'2~ cis'8 cis'8 dis'8 b8~ |
   b4 r8 e8 e8 fis8 gis8 a8~ |
   a2. b8 gis8~ |
@@ -1600,28 +1689,38 @@ part-Ponefour-one = {
   R1 |
   R1 |
   r2
-  r2 |
-  % 5
-  r4 e4\f e8 e4 e8~ |
-  e4 r8 r8 r2 |
-  r4 e4 e8 e4 e8~ |
-  e4 r8 r8 r2 |
-  e4.\mf dis8~ dis4. cis8~ |
-  % 10
-  cis2 b,2 |
-  a2.. b8~ |
-  b2 gis8 b8 gis8 b8~ |
-  b8 b4.~ b2 |
-  r2 gis8 b8 gis8 b8~ |
-  % 15
-  b8 b4.~ b2 |
-  R1 |
-  cis8\mf e8 cis8 b,8~ b,8 e8 b,8 a,8~ |
-  a,8 e8 e8 gis8~ gis8 fis8 e8 e8~ |
-  e8 r8 e4\f e8 e4 e8~ |
-  % 20
-  e4 r4 |
-  r2 e8 gis8 b8 cis'8~ |
+  \repeat volta 2 {
+    r2 |
+    % 5
+    r4 e4\f e8 e4 e8~ |
+    e4 r8 r8 r2 |
+    r4 e4 e8 e4 e8~ |
+    e4 r8 r8 r2 |
+    e4.\mf dis8~ dis4. cis8~ |
+    % 10
+    cis2 b,2 |
+    a2.. b8~ |
+    b2 gis8 b8 gis8 b8~ |
+    b8 b4.~ b2 |
+    r2 gis8 b8 gis8 b8~ |
+    % 15
+    b8 b4.~ b2 |
+    R1 |
+    cis8\mf e8 cis8 b,8~ b,8 e8 b,8 a,8~ |
+    a,8 e8 e8 gis8~ gis8 fis8 e8 e8~ |
+    e8 r8 e4\f e8 e4 e8~ |
+  }
+  \alternative {
+    {
+      % 20
+      e4 r4 |
+    }
+    {
+      r2
+    }
+  }
+
+  e8 gis8 b8 cis'8~ |
   cis'2~ cis'8 cis'8 dis'8 b8~ |
   b4 r8 e8 e8 fis8 gis8 a8~ |
   a2. b8 gis8~ |
