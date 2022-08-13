@@ -41,7 +41,7 @@ soprano = {
   % 30
   g'4( fis'4) |
   g'2~ |
-  g'4 r4 |
+  g'4 r4 | \mark \default \bar "||"
 
   d'4 d'8 d'8 |
   d'4 d'4 |
@@ -83,6 +83,7 @@ alto = {
   \key g \major
   \time 2/4
   \clef treble
+  \tempo "Allegro"
 
   R2*8 |
 
@@ -117,7 +118,7 @@ alto = {
   % 30
   g'4( fis'4) |
   d'2~ |
-  d'4 r4 |
+  d'4 r4 | \mark \default \bar "||"
 
   d'4 d'8 d'8 |
   d'4 d'4 |
@@ -160,6 +161,7 @@ tenor = {
   \key g \major
   \time 2/4
   \clef "treble_8"
+  \tempo "Allegro"
 
   R2*8 |
 
@@ -194,7 +196,7 @@ tenor = {
   % 30
   e'4( d'4) |
   c'4( b4~ |
-  b4) r4 |
+  b4) r4 | \mark \default \bar "||"
 
   b4 b8 b8 |
   a4 a4 |
@@ -236,6 +238,7 @@ bass = {
   \key g \major
   \time 2/4
   \clef bass
+  \tempo "Allegro"
 
   R2*8
 
@@ -270,7 +273,7 @@ bass = {
   % 30
   c'4( a4) |
   g2~ |
-  g4 r4 |
+  g4 r4 | \mark \default \bar "||"
 
   g4 g8 g8 |
   fis4 fis4 |
@@ -309,23 +312,24 @@ bass = {
 }
 
 chor_lyr = \lyricmode {
-  Ho -- ly, ho -- ly, ho -- ly, Lord God of Hosts; __ 
-  Hea -- ven and Earth are full of Your glo -- ry, 
+  Ho -- ly, ho -- ly, ho -- ly, Lord God of Hosts; __
+  Hea -- ven and Earth are full of Your glo -- ry,
   full of your glo -- ry; __
-  Ho -- sa -- na in the high -- est, 
-  Ho -- sa -- nah in the high -- est! __ 
-  
-  Bles -- sed is He who comes in the name of the LORD! __ 
-  Ho -- sa -- na in the high -- est, 
-  Ho -- sa -- nah in the high -- est! __ 
-  Ho -- sa -- na in the high -- est, 
-  Ho -- sa -- nah in the high -- est! __  
+  Ho -- sa -- na in the high -- est,
+  Ho -- sa -- nah in the high -- est! __
+
+  Bles -- sed is He who comes in the name of the LORD! __
+  Ho -- sa -- na in the high -- est,
+  Ho -- sa -- nah in the high -- est! __
+  Ho -- sa -- na in the high -- est,
+  Ho -- sa -- nah in the high -- est! __
 }
 
 piano_rh = {
   \key g \major
-      \time 2/4
-      \clef treble
+  \time 2/4
+  \clef treble
+  \tempo "Allegro"
 
   <<
     \context Voice = "voiceone" {
@@ -415,7 +419,7 @@ piano_rh = {
   % 30
   <e'' c'''>4 <fis'' d''' >4 |
   << { d'''8 c'''8 b''8 a''8 | } \\ { g''4 d''8 c''8 | } >>
-  <d'' b'' >8 a''8 <b' g'' >8 <a' fis'' >8 |
+  <d'' b'' >8 a''8 <b' g'' >8 <a' fis'' >8 | \mark \default \bar "||"
 
   <b' g'' >2 |
   <a' d'' >2 |
@@ -547,6 +551,216 @@ piano_lh = {
   <g,, g, >2\fermata \bar "|." |
 }
 
+first_violin = {
+  \clef treble
+  \key g \major
+  \time 2/4
+  \tempo "Allegro"
+
+  R2*8
+
+  R2*8
+  R2*7
+  r4 g'8 fis'8 |
+
+  e'4. fis'8 |
+  % 25
+  d'4 g'8 d''8 |
+  d''4. c''8 |
+  b'4 g'8 fis'8 |
+  e'4. fis'8 |
+  d'4 d'8 g'8 |
+  % 30
+  g'4 fis'4 |
+  g'2~ |
+  g'4 r4 | \mark \default \bar "||"
+
+  R2*7
+  r4 g'8 fis'8 |
+
+  e'4. fis'8 |
+  d'4 g'8 d''8 |
+  d''4. c''8 |
+  b'4 g'8 fis'8 |
+  % 45
+  e'4. fis'8 |
+  d'4 d'8 g'8 |
+  g'4 fis'4 |
+  g'8 r8 g'8 fis'8 |
+
+  e'4. fis'8 |
+  % 50
+  d'4 g'8 d''8 |
+  \tuplet 3/2 { d''8 e''8 d''8 } \tuplet 3/2 { c''8 d''8 c''8 } |
+  b'4 g'8 fis'8 |
+  e'4. fis'8 |
+  d'4 d'8 g'8 |
+  % 55
+  g'2 |
+  fis'2 |
+  g'2~ |
+  g'2~ |
+  g'2\fermata \bar "|." |
+}
+
+second_violin = {
+  \time 2/4
+  \key g \major
+  \clef treble
+  \tempo "Allegro"
+
+  R2*8
+
+  R2*8
+  R2*7
+  r4 g'8 fis'8 |
+
+  e'4. fis'8 |
+  % 25
+  d'4 d'8 g'8 |
+  e'8 c'8 d'8 fis'8 |
+  g'8 a'8 g'8 fis'8 |
+  e'4. fis'8 |
+  d'4 d'8 g'8 |
+  % 30
+  g'4 fis'4 |
+  d'2~ |
+  d'4 r4 | \mark \default \bar "||"
+
+  R2*7
+  r4 g'8 fis'8 |
+
+  e'4. fis'8 |
+  d'4 d'8 g'8 |
+  e'8 c'8 d'8 fis'8 |
+  g'8 a'8 g'8 fis'8 |
+  % 45
+  e'4. fis'8 |
+  d'4 d'8 g'8 |
+  g'4 fis'4 |
+  d'8 r8 g'8 fis'8 |
+
+  e'4. fis'8 |
+  % 50
+  d'4 d'8 g'8 |
+  e'8 c'8 d'8 fis'8 |
+  g'8 a'8 g'8 fis'8 |
+  e'4. fis'8 |
+  d'4 d'8 g'8 |
+  % 55
+  g'2( |
+  fis'2) |
+  d'2~ |
+  d'2~ |
+  d'2\fermata \bar "|." |
+}
+
+viola = {
+  \time 2/4
+  \key g \major
+  \clef alto
+  \tempo "Allegro"
+
+  R2*8
+
+  R2*8
+  R2*7
+  r4 b4 |
+
+  c'8 b8 g8 a8 |
+  % 25
+  a8 b8 b4 |
+  c'4 d'4 |
+  d'4 b4 |
+  c'8 b8 g8 a8 |
+  a8 b8 b4 |
+  % 30
+  e'4 d'4 |
+  c'4( b4~ |
+  b4) r4 | \mark \default \bar "||"
+
+  R2*7
+  r4 b4 |
+
+  c'8 b8 g8 a8 |
+  a8 b8 b4 |
+  c'4 d'4 |
+  d'4 b4 |
+  % 45
+  c'8 b8 g8 a8 |
+  a8 b8 b4 |
+  e'4 d'4 |
+  b8 r8 b4 |
+
+  c'8 b8 g8 a8 |
+  % 50
+  a8 b8 b4 |
+  c'4 d'4 |
+  d'4 b4 |
+  c'8 b8 g8 a8 |
+  a8 b8 b4 |
+  % 55
+  e'2( |
+  d'2) |
+  c'2( |
+  b2~ |
+  b2)\fermata \bar "|." |
+}
+
+cello = {
+  \time 2/4
+  \key g \major
+  \clef bass
+  \tempo "Allegro"
+
+  R2*8
+
+  R2*8
+  R2*7
+  r4 g8 d'8 |
+
+  c'4. d'8 |
+  % 25
+  b4 b8 g8 |
+  g8 e8 fis8 a8 |
+  b4 g8 d'8 |
+  c'4. d'8 |
+  b4 g8 b8 |
+  % 30
+  c'4 a4 |
+  g2~ |
+  g4 r4 | \mark \default \bar "||"
+
+  R2*7
+  r4 g8 d'8 |
+
+  c'4. d'8 |
+  b4 b8 g8 |
+  g8 e8 fis8 a8 |
+  b4 g8 d'8 |
+  % 45
+  c'4. d'8 |
+  b4 g8 b8 |
+  c'4 a4 |
+  g8 r8 g8 d'8 |
+
+  c'4. d'8 |
+  % 50
+  b4 b8 g8 |
+  g8 e8 fis8 a8 |
+  b4 g8 d'8 |
+  c'4. d'8 |
+  b4 g8 b8 |
+  % 55
+  c'2( |
+  a2) |
+  g2~ |
+  g2~ |
+  g2\fermata \bar "|." |
+}
+
+contrabass = \transpose c c, { \cello }
+
 holy_holy_holy_header = \header {
   composer = "Fr. Manoling Francisco, SJ"
   lyricist = "Palan Reyes"
@@ -609,6 +823,50 @@ holy_holy_holy = {
     } <<
       \new Staff \piano_rh
       \new Staff \piano_lh
+    >>
+
+    \new StaffGroup <<
+      \new StaffGroup \with {
+        systemStartDelimiter = #'SystemStartSquare
+        midiInstrument = "violin"
+      } <<
+        \tag #'(accompaniment tutti violins violin_i)
+        \new Staff \with {
+          instrumentName = "Violin 1"
+          shortInstrumentName = "Vl. 1"
+        } \first_violin
+
+        \tag #'(accompaniment tutti violins violin_ii)
+        \new Staff \with {
+          instrumentName = "Violin 2"
+          shortInstrumentName = "Vl. 2"
+        } \second_violin
+      >>
+
+      \tag #'(accompaniment tutti viola)
+      \new Staff \with {
+        instrumentName = "Viola"
+        shortInstrumentName = "Vla."
+        midiInstrument = "viola"
+      } \viola
+
+      \new StaffGroup \with {
+        systemStartDelimiter = #'SystemStartSquare
+      } <<
+        \tag #'(accompaniment tutti cello)
+        \new Staff \with {
+          instrumentName = "Violoncello"
+          shortInstrumentName = "Vcl."
+          midiInstrument = "cello"
+        } \cello
+
+        \tag #'(accompaniment tutti cbass)
+        \new Staff \with {
+          instrumentName = "Contrabass"
+          shortInstrumentName = "Cb."
+          midiInstrument = "contrabass"
+        } \contrabass
+      >>
     >>
   >>
 }
