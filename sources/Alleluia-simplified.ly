@@ -8,15 +8,19 @@ part-Pone-one = {
   \clef treble
 
   \tempo "Chor. Vivace"
+  R4.*4 |
+
   R4.*15 R4. \fermata \bar "||"
 
-  \newline
+
   \omit \time 25/4 \tempo "Recit. Adagio"
   g'4 g'2 g'4 c''2 g'4 f'4 g'4 a'4 g'1\fermata \bar "'"
   g'4 g'4 g'4 g'4 d''4 c''4 b'4 c''1\fermata | \bar "||"
-  \newline 
+
 
   \time 3/8 \tempo "Chor. Vivace"
+  R4.*4 |
+
   R4.*15 R4. \fermata \bar "|."
 }
 
@@ -29,6 +33,10 @@ part-Ptwo-one = {
   \key c \major
   \time 3/8
   \clef treble
+  \tempo "Chor. Vivace"
+
+  R4.*4 |
+
   c'8.\f c'16 c'8 |
   g'4 g'8 |
   f'8.( g'16) a'8 |
@@ -49,11 +57,14 @@ part-Ptwo-one = {
   % 15
   c'4. |
 
-  \newline \omit \time 25/4
+  \omit \time 25/4 \tempo "Recit. Adagio"
   R1*25/4-\fermata
-  \bar "||" \newline
+  \bar "||"
 
   \time 3/8
+  \tempo "Chor. Vivace"
+  R4.*4 |
+
   c'8.\f c'16 c'8 |
   g'4 g'8 |
   f'8.( g'16) a'8 |
@@ -91,6 +102,10 @@ part-Pthree-one = {
   \key c \major
   \time 3/8
   \clef treble
+  \tempo "Chor. Vivace"
+
+  R4.*4 |
+
   c'8.\f c'16 c'8 |
   g'4 g'8 |
   f'8.( g'16) a'8 |
@@ -111,11 +126,14 @@ part-Pthree-one = {
   % 15
   c'4. |
 
-  \newline \omit \time 25/4
+  \omit \time 25/4 \tempo "Recit. Adagio"
   R1*25/4-\fermata
-  \bar "||" \newline
+  \bar "||"
 
   \time 3/8
+  \tempo "Chor. Vivace"
+  R4.*4 |
+
   c'8.\f c'16 c'8 |
   g'4 g'8 |
   f'8.( g'16) a'8 |
@@ -153,6 +171,9 @@ part-Pfour-one = {
   \key c \major
   \time 3/8
   \clef "treble_8"
+  \tempo "Chor. Vivace"
+
+  R4.*4 |
 
   c8.^\f c16 c8 |
   g4 g8 |
@@ -174,11 +195,14 @@ part-Pfour-one = {
   % 15
   c4. |
 
-  \newline \omit \time 25/4
+  \omit \time 25/4 \tempo "Recit. Adagio"
   R1*25/4-\fermata
-  \bar "||" \newline
+  \bar "||"
 
   \time 3/8
+  \tempo "Chor. Vivace"
+  R4.*4 |
+
   c8.^\f c16 c8 |
   g4 g8 |
   f8.( g16) a8 |
@@ -216,6 +240,9 @@ part-Pfive-one = {
   \key c \major
   \time 3/8
   \clef bass
+  \tempo "Chor. Vivace"
+
+  R4.*4 |
 
   c8.^\f c16 c8 |
   g4 g8 |
@@ -237,11 +264,14 @@ part-Pfive-one = {
   % 15
   c4. |
 
-  \newline \omit \time 25/4
+  \omit \time 25/4 \tempo "Recit. Adagio"
   R1*25/4-\fermata
-  \bar "||" \newline
+  \bar "||"
 
   \time 3/8
+  \tempo "Chor. Vivace"
+  R4.*4 |
+
   c8.\f c16 c8 |
   g4 g8 |
   f8.( g16) a8 |
@@ -279,6 +309,12 @@ part-Psix-one = {
   \key c \major
   \time 3/8
   \clef treble
+  \tempo "Chor. Vivace"
+
+  c'8. c'16 c'8 |
+  <b c' g' >4 <b c' g' >8 |
+  <f' c'' >8. <f' c'' >16 <f' c'' >8 |
+  <g' b' d'' >4. |
 
   c'4. |
   <g' g'' >4. |
@@ -300,14 +336,20 @@ part-Psix-one = {
   % 15
   <e' c'' >4. |
 
-  \omit \time 25/4
-  r4 <c'' e'' g'' >1.\arpeggio <b' d'' f'' >4 <c'' e'' g'' >4 <c'' f'' a'' >4 
+  \omit \time 25/4 \tempo "Recit. Adagio"
+  r4 <c'' e'' g'' >1.\arpeggio <b' d'' f'' >4 <c'' e'' g'' >4 <c'' f'' a'' >4
   <c'' e'' g'' >1 \arpeggio \fermata \bar "'"
 
-  r4 <c'' e'' g'' >2.\arpeggio  <f'' a'' d''' >4 <d'' g'' c''' >4 
+  r4 <c'' e'' g'' >2.\arpeggio  <f'' a'' d''' >4 <d'' g'' c''' >4
   <d'' g'' b'' >4 <e'' g'' c''' >1\arpeggio \fermata \bar "||" |
 
   \time 3/8
+  \tempo "Chor. Vivace"
+  c'8. c'16 c'8 |
+  <b c' g' >4 <b c' g' >8 |
+  <f' c'' >8. <f' c'' >16 <f' c'' >8 |
+  <g' b' d'' >4. |
+
   c'4. |
   <g' g'' >4. |
   <g' c'' >4. |
@@ -333,6 +375,12 @@ part-Psix-two = {
   \key c \major
   \time 3/8
   \clef bass
+
+  c4.~ |
+  c4. |
+  <a c' >4. |
+  f8 e8 d8 |
+
   c4. |
   <b c' e' >4. |
   <a c' f' >4. |
@@ -356,13 +404,18 @@ part-Psix-two = {
   <c g >4. |
 
   \omit \time 25/4
-  r4 <c e g c' >1.\arpeggio <b, d f b >4 <c e g c' >4 <c f a c' >4 
+  r4 <c e g c' >1.\arpeggio <b, d f b >4 <c e g c' >4 <c f a c' >4
   <c e g c' >1 \arpeggio \fermata \bar "'"
 
   r4 <c e g c' >2. <d f a d' >4 <d f b d' >4 <b, d f b >4
   <c e g c' >1\arpeggio \fermata \bar "||" |
 
   \time 3/8
+  c4.~ |
+  c4. |
+  <a c' >4. |
+  f8 e8 d8 |
+
   c4. |
   <b c' e' >4. |
   <a c' f' >4. |
@@ -384,6 +437,329 @@ part-Psix-two = {
   <f, d >4. |
   <g, d >4. |
   <c g >4. |
+}
+
+part-Pseven-one = {
+  \key c \major
+  \time 3/8
+  \clef treble
+  \tempo "Chor. Vivace"
+
+  c'8. c'16 c'8 |
+  g'4 g'8 |
+  c''8. c''16 c''8 |
+  d''4. |
+
+  c'4. |
+  % 5
+  g''4. |
+  c''4. |
+  g''8. c''16 d''8 |
+  e''4. |
+  c'''4. |
+  % 10
+  b''4 e''8 |
+  a''4. |
+  a''4. |
+  c'''4. |
+  b''4. |
+  % 15
+  g''4 d''8 |
+  g''4. |
+  d''4. |
+  f''4 d''8 |
+  c''4. |
+
+  % 20
+  \omit \time 25/4 \tempo "Recit. Adagio"
+  R1*25/4-\fermata
+  \bar "||"
+
+  \time 3/8 
+  \tempo "Chor. Vivace"
+  c'8. c'16 c'8 |
+  g'4 g'8 |
+  c''8. c''16 c''8 |
+  d''4. |
+
+  % 25
+  c'4. |
+  g''4. |
+  c''4. |
+  g''8. c''16 d''8 |
+  e''4. |
+  % 30
+  c'''4. |
+  b''4 e''8 |
+  a''4. |
+  a''4. |
+  c'''4. |
+  % 35
+  b''4. |
+  g''4 d''8 |
+  g''4. |
+  d''4. |
+  f''4 d''8 |
+  % 40
+  c''4. |
+}
+
+part-Peight-one = {
+  \key c \major
+  \time 3/8
+  \clef treble
+  \tempo "Chor. Vivace"
+
+  c'8. c'16 c'8 |
+  c'4 c'8 |
+  f'8. f'16 f'8 |
+  b'4. |
+
+  c'4. |
+  % 5
+  g'4. |
+  g'4. |
+  g'4 g'8 |
+  g'4. |
+  e''4. |
+  % 10
+  e''4 b'8 |
+  c''4. |
+  c''4. |
+  f''4. |
+  d''4. |
+  % 15
+  b'4 g'8 |
+  g'4. |
+  a'4. |
+  f'4. |
+  e'4. |
+
+  % 20
+  \omit \time 25/4 \tempo "Recit. Adagio"
+  R1*25/4-\fermata
+  \bar "||"
+
+  c'8. c'16 c'8 |
+  c'4 c'8 |
+  f'8. f'16 f'8 |
+  b'4. |
+
+  % 25
+  c'4. |
+  g'4. |
+  g'4. |
+  g'4 g'8 |
+  g'4. |
+  % 30
+  e''4. |
+  e''4 b'8 |
+  c''4. |
+  c''4. |
+  f''4. |
+  % 35
+  d''4. |
+  b'4 g'8 |
+  g'4. |
+  a'4. |
+  f'4. |
+  % 40
+  e'4. |
+}
+
+part-Pnine-one = {
+  \key c \major
+  \time 3/8
+  \clef alto
+  \tempo "Chor. Vivace"
+
+  c4. |
+  b4 b8 |
+  c'4. |
+  g'4. |
+
+  c'4. |
+  % 5
+  e'4. |
+  f'4. |
+  e'4 g8 |
+  g4. |
+  e4. |
+  % 10
+  e4. |
+  f4. |
+  c'4. |
+  f'4. |
+  g'4. |
+  % 15
+  f'8. e'16 d'8 |
+  c'4. |
+  d4. |
+  d4. |
+  g4. |
+
+  % 20
+  \omit \time 25/4 \tempo "Recit. Adagio"
+  R1*25/4-\fermata
+  \bar "||"
+
+  \time 3/8 
+  \tempo "Chor. Vivace"
+  c4. |
+  b4 b8 |
+  c'4. |
+  g'4. |
+
+  % 25
+  c'4. |
+  e'4. |
+  f'4. |
+  e'4 g8 |
+  g4. |
+  % 30
+  e4. |
+  e4. |
+  f4. |
+  c'4. |
+  f'4. |
+  % 35
+  g'4. |
+  f'8. e'16 d'8 |
+  c'4. |
+  d4. |
+  d4. |
+  % 40
+  g4. |
+}
+
+part-Ponezero-one = {
+  \key c \major
+  \time 3/8
+  \clef bass
+  \tempo "Chor. Vivace"
+
+  c4.~ |
+  c4. |
+  a4. |
+  f8 e8 d8 |
+
+  c4. |
+  % 5
+  c'4. |
+  a4. |
+  g4 b,8 |
+  c4. |
+  a,4. |
+  % 10
+  g,4. |
+  f,4. |
+  f4. |
+  a4. |
+  b4. |
+  % 15
+  g4 f8 |
+  e4. |
+  f,4. |
+  g,4. |
+  c4. |
+
+  % 20
+  \omit \time 25/4 \tempo "Recit. Adagio"
+  R1*25/4-\fermata
+  \bar "||"
+
+  \time 3/8 
+  \tempo "Chor. Vivace"
+  c4.~ |
+  c4. |
+  a4. |
+  f8 e8 d8 |
+
+  % 25
+  c4. |
+  c'4. |
+  a4. |
+  g4 b,8 |
+  c4. |
+  % 30
+  a,4. |
+  g,4. |
+  f,4. |
+  f4. |
+  a4. |
+  % 35
+  b4. |
+  g4 f8 |
+  e4. |
+  f,4. |
+  g,4. |
+  % 40
+  c4. |
+}
+
+part-Poneone-one = {
+  \key c \major
+  \time 3/8
+  \clef bass
+  \tempo "Chor. Vivace"
+
+  c4.~ |
+  c4. |
+  a4. |
+  f8 e8 d8 |
+
+  c4. |
+  % 5
+  c'4. |
+  a4. |
+  g4 b,8 |
+  c4. |
+  a,4. |
+  % 10
+  g,4. |
+  f,4. |
+  f4. |
+  a4. |
+  b4. |
+  % 15
+  g4 f8 |
+  e4. |
+  f,4. |
+  g,4. |
+  c4. |
+
+  % 20
+  \omit \time 25/4 \tempo "Recit. Adagio"
+  R1*25/4-\fermata
+  \bar "||"
+
+  \time 3/8
+  \tempo "Chor. Vivace"
+  c4.~ |
+  c4. |
+  a4. |
+  f8 e8 d8 |
+
+  % 25
+  c4. |
+  c'4. |
+  a4. |
+  g4 b,8 |
+  c4. |
+  % 30
+  a,4. |
+  g,4. |
+  f,4. |
+  f4. |
+  a4. |
+  % 35
+  b4. |
+  g4 f8 |
+  e4. |
+  f,4. |
+  g,4. |
+  % 40
+  c4. |
 }
 
 alleluia-simplified_header = \header {
@@ -457,6 +833,61 @@ alleluia-simplified = {
     <<
       \new Staff = "1" { \part-Psix-one }
       \new Staff = "2" { \part-Psix-two }
+    >>
+
+    \new StaffGroup <<
+      \new StaffGroup \with {
+        systemStartDelimiter = #'SystemStartSquare
+        midiInstrument = "violin"
+      } <<
+
+        \tag #'(accompaniment tutti violins violin_i)
+        \new Staff \with {
+          instrumentName = "Violin 1"
+          shortInstrumentName = "Vl. 1"
+        } <<
+          \new Voice = "PartPFiveVoiceOne" { \part-Pseven-one }
+        >>
+
+        \tag #'(accompaniment tutti violins violin_ii)
+        \new Staff \with {
+          instrumentName = "Violin 2"
+          shortInstrumentName = "Vl. 2"
+        } <<
+          \new Voice = "PartPSixVoiceOne" { \part-Peight-one }
+        >>
+      >>
+
+      \tag #'(accompaniment tutti viola)
+      \new Staff \with {
+        instrumentName = "Viola"
+        shortInstrumentName = "Vla."
+        midiInstrument = "viola"
+      } <<
+        \new Voice = "PartPSevenVoiceOne" { \part-Pnine-one }
+      >>
+
+      \new StaffGroup \with {
+        systemStartDelimiter = #'SystemStartSquare
+      } <<
+        \tag #'(accompaniment tutti cello)
+        \new Staff \with {
+          instrumentName = "Violoncello"
+          shortInstrumentName = "Vcl."
+          midiInstrument = "cello"
+        } <<
+          \new Voice = "PartPEightVoiceOne" { \part-Ponezero-one }
+        >>
+
+        \tag #'(accompaniment tutti contrabass)
+        \new Staff \with {
+          instrumentName = "Contrabass"
+          shortInstrumentName = "Cb."
+          midiInstrument = "contrabass"
+        } <<
+          \new Voice = "PartPNineVoiceOne" { \part-Poneone-one }
+        >>
+      >>
     >>
   >>
 }
