@@ -46,38 +46,15 @@ part-Pone-one = {
     }
   }
 
-  r2 |
-  R1 |
-  R1 |
-  R1 |
-  % 25
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
+  r2 \mark \default \bar "||" |
+  R1*8
+
   % 30
   \key f \major
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 35
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 40
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 45
-  R1 |
-  r4 r8 d''8\ff e''8 g''8 g''8 e''8 |
+  R1 \mark \default \bar "||" |
+  R1*15 |
+
+  r4 r8 d''8\ff e''8 g''8 g''8 e''8 \mark \default \bar "||" |
   \key g \major
   g''16( e''16 d''8~ d''2.~) |
   d''4 r8 d''8 e''8 g''8 bes''16( a''8.) |
@@ -181,38 +158,15 @@ part-Ptwo-one = {
     }
   }
 
-  r2 |
-  R1 |
-  R1 |
-  R1 |
-  % 25
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
+  r2 \mark \default \bar "||" |
+  R1*8
+
   % 30
   \key f \major
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 35
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 40
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 45
-  R1 |
-  r4 r8 d8\ff e8 g8 g8 e8 |
+  R1 \mark \default \bar "||" |
+  R1*15 |
+
+  r4 r8 d8\ff e8 g8 g8 e8 \mark \default \bar "||" |
   \key g \major
   g16( e16 d8~ d2.~) |
   d4 r8 d8 e8 g8 bes16( a8.) |
@@ -315,7 +269,7 @@ part-Pthree-one = {
     }
   }
 
-  e'8 gis'8 b'8 cis''8~ |
+  e'8 gis'8 b'8 cis''8~ \mark \default \bar "||" |
   cis''2~ cis''8 cis''8 dis''8 b'8~ |
   b'4 r8 e'8 e'8( fis'8) gis'8 a'8~ |
   a'2. b'8 gis'8~ |
@@ -328,7 +282,7 @@ part-Pthree-one = {
   % 30
 
   \key f \major
-  c''4) r8 c'8\f d'8 f'8 f'8 d'8 |
+  c''4) r8 c'8\f d'8 f'8 f'8 d'8 \mark \default \bar "||" |
   f'4 a'4 bes'8 bes'8( c''8) a'8~( |
   a'16 g'16 f'8) r8 c'8 d'8 f'8 f'8 d'8 |
   f'4 c''4 ees''8 d''4 c''8~( |
@@ -347,7 +301,7 @@ part-Pthree-one = {
   bes8 f'8 f'8 a'8~ a'8 g'8 f'8 f'8~ |
   % 45
   f'8 r8 c''4 ees''8 d''4 c''8~ |
-  c''4 r8 d'8\ff e'8 g'8 g'8 e'8 |
+  c''4 r8 d'8\ff e'8 g'8 g'8 e'8 \mark \default \bar "||" |
 
   \key g \major
   g'4 b'4 c''8 c''8( d''8) b'8~( |
@@ -472,7 +426,7 @@ part-Pfour-one = {
     }
   }
 
-  e'8 gis'8 b'8 cis''8~ |
+  e'8 gis'8 b'8 cis''8~ \mark \default \bar "||" |
   cis''2~ cis''8 cis''8 dis''8 b'8~ |
   b'4 r8 e'8 e'8( fis'8) gis'8 a'8~ |
   a'2. b'8 gis'8~ |
@@ -485,7 +439,7 @@ part-Pfour-one = {
   % 30
 
   \key f \major
-  c''4) r8 c'8\f d'8 f'8 f'8 d'8 |
+  c''4) r8 c'8\f d'8 f'8 f'8 d'8 \mark \default \bar "||" |
   f'4 f'4 aes'8 aes'8( a'8) f'8~( |
   f'16 d'16 c'8) r8 c'8 d'8 f'8 f'8 d'8 |
   f'4 a'4 f'8 f'4 a'8~( |
@@ -504,7 +458,7 @@ part-Pfour-one = {
   bes8 f'8 f'8 a'8~ a'8 g'8 f'8 f'8~ |
   % 45
   f'8 r8 a'4 f'8 f'4 a'8~ |
-  a'4 r8 d'8\ff e'8 g'8 g'8 e'8 |
+  a'4 r8 d'8\ff e'8 g'8 g'8 e'8 \mark \default \bar "||" |
 
   \key g \major
   g'4 g'4 bes'8 bes'8( b'8) g'8~( |
@@ -578,7 +532,7 @@ part-Pfive-one = {
     }
   }
 
-  e8 gis8 b8 cis'8~ |
+  e8 gis8 b8 cis'8~ \mark \default \bar "||" |
   cis'2~ cis'8 cis'8 dis'8 b8~ |
   b4 r8 e8 e8( fis8) gis8 a8~ |
   a2. b8 gis8~ |
@@ -591,7 +545,7 @@ part-Pfive-one = {
 
   % 30
   \key f \major
-  c'4) r8 c8\f d8 f8 f8 d8 |
+  c'4) r8 c8\f d8 f8 f8 d8 \mark \default \bar "||" |
   f4 c'4 d'8 d'8( ees'8) c'8~( |
   c'16 bes16 a8) r8 c8 d8 f8 f8 d8 |
   f4 c'4 c'8 d'4 ees'8~( |
@@ -610,7 +564,7 @@ part-Pfive-one = {
   bes,8 f8 f8 a8~ a8 g8 f8 f8~ |
   % 45
   f8 r8 c'4 c'8 d'4 ees'8~ |
-  ees'4 r8 d8\ff e8 g8 g8 e8 |
+  ees'4 r8 d8\ff e8 g8 g8 e8 \mark \default \bar "||" |
 
   \key g \major
   g4 d'4 e'8 e'8( f'8) d'8~( |
@@ -685,7 +639,7 @@ part-Psix-one = {
     }
   }
 
-  e8 gis8 b8 cis'8~ |
+  e8 gis8 b8 cis'8~ \mark \default \bar "||" |
   cis'2~ cis'8 cis'8 dis'8 b8~ |
   b4 r8 e8 e8( fis8) gis8 a8~ |
   a2. b8 gis8~ |
@@ -698,7 +652,7 @@ part-Psix-one = {
 
   % 30
   \key f \major
-  c'4) r8 c8\f d8 f8 f8 d8 |
+  c'4) r8 c8\f d8 f8 f8 d8 \mark \default \bar "||" |
   f4 f4 c'8 c'4 f8~ |
   f4 r8 c8 d8 f8 f8 d8 |
   f4 f4 a8 bes4 f8~ |
@@ -717,7 +671,7 @@ part-Psix-one = {
   bes,8 f8 f8 a8~ a8 g8 f8 f8~ |
   % 45
   f8 r8 f4 a8 bes4 f8~ |
-  f4 r8 d8\ff e8 g8 g8 e8 |
+  f4 r8 d8\ff e8 g8 g8 e8 \mark \default \bar "||" |
 
   \key g \major
   g4 g4 d'8 d'4 g8~ |
@@ -756,7 +710,7 @@ part-Pseven-one = {
 
   % 30
   \key d \major
-  r4 r8 a'8\f b'8 d''8 d''8 b'8 |
+  r4 r8 a'8\f b'8 d''8 d''8 b'8 | \mark #2 \bar "||"
   d''4 fis''4 g''8 g''8 a''8 fis''8~ |
   fis''16 e''16 d''8 r8 a'8 b'8 d''8 d''8 b'8 |
   d''4 a''4 c'''8 b''4 a''8~ |
@@ -775,7 +729,8 @@ part-Pseven-one = {
   g'8 d''8 d''8 fis''8~ fis''8 e''8 d''8 d''8~ |
   % 45
   d''8 r8 a''4 c'''8 b''4 a''8~ |
-  a''4 r8 b''8\ff cis'''8 e'''8 e'''8 cis'''8 |
+  a''4 r8 b''8\ff cis'''8 e'''8 e'''8 cis'''8 \mark \default \bar "||" |
+
   \key e \major
   e'''16( cis'''16 b''8~ b''2.~) |
   b''4 r8 b''8 cis'''8 e'''8 g'''16( fis'''8.) |
@@ -896,7 +851,7 @@ part-Peight-one = {
 
   <<
     \context Voice = "voiceone" {
-      e''8 gis''8 b''8 cis'''8~ |
+      e''8 gis''8 b''8 cis'''8~ \mark \default \bar "||" |
       \voiceOne
       cis'''2~ cis'''8 cis'''8 dis'''8 b''8~ |
       b''4 r8 e''8 e''8 fis''8 gis''8 a''8~ |
@@ -907,7 +862,7 @@ part-Peight-one = {
       b''2 r8 e''8 fis''8 g''8 |
     }
     \context Voice = "voicetwo" {
-      s2 |
+      s2 \mark \default \bar "||" |
       \voiceTwo
       r4 <cis'' e'' a'' >4 r4 <e'' a'' >4 |
       r4 <fis' b' dis'' >4 r4 <b' dis'' >4 |
@@ -924,9 +879,10 @@ part-Peight-one = {
   <b' dis'' fis'' b'' >2 b'8 dis''8 fis''8 <c'' e'' g'' c'''
   >8~\arpeggio |
   % 30
+
   \key f \major
   <c'' e'' g'' c''' >8 <c''' c'''' >8 <c''' c'''' >8 r8 r8\f <bes' bes'' >4
-  <c'' c''' >8~ |
+  <c'' c''' >8~ \mark \default \bar "||" |
   <c'' c''' >8 r8 <c'' f'' a'' >4 <d'' g'' bes'' >8 <d'' g'' bes'' >4 <c''
   f'' a'' >8~ |
   <c'' f'' a'' >4 r4 r8 <bes' bes'' >4 <c'' c''' >8~~ |
@@ -980,7 +936,8 @@ part-Peight-one = {
   <f' a' c'' f'' >4 <c' a' c'' >4 <f' c'' ees'' >8 <d' f' d'' >4 <ees' a'
   c'' >8~ |
   <ees' a' c'' >8 <f'' f''' >8 f'''16\ff c'''16 a''16 f''16 c''16 g'16 e'16
-  c'16 <a' d'' fis'' a'' >4 |
+  c'16 <a' d'' fis'' a'' >4 \mark \default \bar "||" |
+
   \key g \major
   <b' d'' g'' b'' >8 r8 <d'' g'' b'' >4 <e'' bes'' c''' >8 <e'' bes'' c'''
   >8 <f'' b'' d''' >8 <d'' g'' b'' >8~ |
@@ -1222,7 +1179,7 @@ part-Pnine-one = \drummode {
     }
   }
 
-  r2 |
+  r2 \mark \default \bar "||" |
   r4 tamb4 r4 tamb4 |
   r4 tamb4 r4 tamb4 |
   r4 tamb4 r4 tamb4 |
@@ -1232,8 +1189,9 @@ part-Pnine-one = \drummode {
   r4 tamb4 r4 tamb4 |
   tamb4. tamb8~ tamb4. tamb8~ |
   tamb2..:32 tamb8 |
+
   % 30
-  r8 tamb8 tamb8 r8 r8 tamb8 r8 tamb8 |
+  r8 tamb8 tamb8 r8 r8 tamb8 r8 tamb8 \mark \default \bar "||" |
   r4 tamb4 r4 tamb4 |
   r4 tamb4 r4 tamb4 |
   r4 tamb4 r4 tamb4 |
@@ -1252,7 +1210,8 @@ part-Pnine-one = \drummode {
   tamb4. tamb8~ tamb2 |
   % 45
   tamb4 tamb4 tamb8 tamb4 tamb8~ |
-  tamb8 tamb8 tamb8 r8 r8 tamb8\ff r8 tamb8 |
+  tamb8 tamb8 tamb8 r8 r8 tamb8\ff r8 tamb8 \mark \default \bar "||" |
+
   tamb1:32 |
   r2 r8 tamb8 r8 tamb8 |
   tamb1:32 |
@@ -1320,7 +1279,7 @@ part-Ponezero-one = {
     }
   }
 
-  e'8 gis'8 b'8 cis''8~ |
+  e'8 gis'8 b'8 cis''8~ \mark \default \bar "||" |
   cis''2~ cis''8 cis''8 dis''8 b'8~ |
   b'4 r8 e'8 e'8 fis'8 gis'8 a'8~ |
   a'2. b'8 gis'8~ |
@@ -1331,8 +1290,9 @@ part-Ponezero-one = {
   a'8 g'8 a'8 ais'8~ ais'8 gis'8 ais'8 b'8~ |
   b'2~ b'4. c''8~-> |
   % 30
+
   \key f \major
-  c''4 r8 c'8\f d'8 f'8 f'8 d'8 |
+  c''4 r8 c'8\f d'8 f'8 f'8 d'8 \mark \default \bar "||" |
   f'4 a'4 bes'8 bes'8( c''8) a'8~( |
   a'16 g'16 f'8) r8 c'8 d'8 f'8 f'8 d'8 |
   f'4 c''4 ees''8 d''4 c''8~( |
@@ -1351,7 +1311,8 @@ part-Ponezero-one = {
   bes8 f'8 f'8 a'8~ a'8 g'8 f'8 f'8~ |
   % 45
   f'8 r8 c''4 ees''8 d''4 c''8~ |
-  c''4 r8 d'8\ff e'8 g'8 g'8 e'8 |
+  c''4 r8 d'8\ff e'8 g'8 g'8 e'8 \mark \default \bar "||" |
+
   \key g \major
   g'4 b'4 c''8 c''8( d''8) b'8~( |
   b'16 a'16 g'8) r8 d'8 e'8 g'8 g'8 e'8 |
@@ -1420,7 +1381,7 @@ part-Poneone-one = {
     }
   }
 
-  e'8 gis'8 b'8 cis''8~ |
+  e'8 gis'8 b'8 cis''8~ \mark \default \bar "||" |
   cis''2~ cis''8 cis''8 dis''8 b'8~ |
   b'4 r8 e'8 e'8 fis'8 gis'8 a'8~ |
   a'2. b'8 gis'8~ |
@@ -1430,9 +1391,10 @@ part-Poneone-one = {
   b'2 r8 e'8 fis'8 g'8 |
   a'8 g'8 a'8 ais'8~ ais'8 gis'8 ais'8 b'8~ |
   b'2~ b'4. c''8~-> |
+
   % 30
   \key f \major
-  c''4 r8 c'8\f d'8 f'8 f'8 d'8 |
+  c''4 r8 c'8\f d'8 f'8 f'8 d'8 \mark \default \bar "||" |
   f'4 f'4 aes'8 aes'8( a'8) f'8~( |
   f'16 d'16 c'8) r8 c'8 d'8 f'8 f'8 d'8 |
   f'4 a'4 f'8 f'4 a'8~( |
@@ -1451,7 +1413,8 @@ part-Poneone-one = {
   bes8 f'8 f'8 a'8~ a'8 g'8 f'8 f'8~ |
   % 45
   f'8 r8 a'4 f'8 f'4 a'8~ |
-  a'4 r8 d'8\ff e'8 g'8 g'8 e'8 |
+  a'4 r8 d'8\ff e'8 g'8 g'8 e'8 \mark \default \bar "||" |
+
   \key g \major
   g'4 g'4 bes'8 bes'8( b'8) g'8~( |
   g'16 e'16 d'8) r8 d'8 e'8 g'8 g'8 e'8 |
@@ -1520,7 +1483,7 @@ part-Ponetwo-one = {
     }
   }
 
-  e8 gis8 b8 cis'8~ |
+  e8 gis8 b8 cis'8~ \mark \default \bar "||" |
   cis'2~ cis'8 cis'8 dis'8 b8~ |
   b4 r8 e8 e8 fis8 gis8 a8~ |
   a2. b8 gis8~ |
@@ -1530,9 +1493,10 @@ part-Ponetwo-one = {
   b2 r8 e8 fis8 g8 |
   a8 g8 a8 ais8~ ais8 gis8 ais8 b8~ |
   b2~ b4. c'8~-> |
+
   % 30
   \key f \major
-  c'4 r8 c8\f d8 f8 f8 d8 |
+  c'4 r8 c8\f d8 f8 f8 d8 \mark \default \bar "||" |
   f4 c'4 d'8 d'8 ees'8 c'8~( |
   c'16 bes16 a8) r8 c8 d8 f8 f8 d8 |
   f4 c'4 c'8 d'4 ees'8~( |
@@ -1551,7 +1515,8 @@ part-Ponetwo-one = {
   bes8 f'8 f'8 a'8~ a'8 g'8 f'8 f'8~ |
   % 45
   f'8 r8 c'4 c'8 d'4 ees'8~ |
-  ees'4 r8 d8\ff e8 g8 g8 e8 |
+  ees'4 r8 d8\ff e8 g8 g8 e8 \mark \default \bar "||" |
+
   \key g \major
   g4 d'4 e'8 e'8 f'8 d'8~( |
   d'16 c'16 b8) r8 d8 e8 g8 g8 e8 |
@@ -1620,7 +1585,7 @@ part-Ponethree-one = {
     }
   }
 
-  e8 gis8 b8 cis'8~ |
+  e8 gis8 b8 cis'8~ \mark \default \bar "||" |
   cis'2~ cis'8 cis'8 dis'8 b8~ |
   b4 r8 e8 e8 fis8 gis8 a8~ |
   a2. b8 gis8~ |
@@ -1630,9 +1595,10 @@ part-Ponethree-one = {
   b2 r8 e8 fis8 g8 |
   a8 g8 a8 ais8~ ais8 gis8 ais8 b8~ |
   b2~ b4. c'8~-> |
+
   % 30
   \key f \major
-  c'4 r8 c8\f d8 f8 f8 d8 |
+  c'4 r8 c8\f d8 f8 f8 d8 \mark \default \bar "||" |
   f4 f4 c'8 c'4 f8~ |
   f4 r8 c8 d8 f8 f8 d8 |
   f4 f4 a8 bes4 f8~ |
@@ -1651,7 +1617,8 @@ part-Ponethree-one = {
   bes,8 f8 f8 a8~ a8 g8 f8 f8~ |
   % 45
   f8 r8 f4 a8 bes4 f8~ |
-  f4 r8 d8\ff e8 g8 g8 e8 |
+  f4 r8 d8\ff e8 g8 g8 e8 \mark \default \bar "||" |
+
   \key g \major
   g4 g4 d'8 d'4 g8~ |
   g4 r8 d8 e8 g8 g8 e8 |
@@ -1720,7 +1687,7 @@ part-Ponefour-one = {
     }
   }
 
-  e8 gis8 b8 cis'8~ |
+  e8 gis8 b8 cis'8~ \mark \default \bar "||" |
   cis'2~ cis'8 cis'8 dis'8 b8~ |
   b4 r8 e8 e8 fis8 gis8 a8~ |
   a2. b8 gis8~ |
@@ -1730,9 +1697,10 @@ part-Ponefour-one = {
   b2 r8 e8 fis8 g8 |
   a8 g8 a8 ais8~ ais8 gis8 ais8 b8~ |
   b2~ b4. c'8~-> |
+
   % 30
   \key f \major
-  c'4 r8 c8\f d8 f8 f8 d8 |
+  c'4 r8 c8\f d8 f8 f8 d8 \mark \default \bar "||" |
   f4 f4 c'8 c'4 f8~ |
   f4 r8 c8 d8 f8 f8 d8 |
   f4 f4 a8 bes4 f8~ |
@@ -1751,7 +1719,8 @@ part-Ponefour-one = {
   bes,8 f8 f8 a8~ a8 g8 f8 f8~ |
   % 45
   f8 r8 f4 a8 bes4 f8~ |
-  f4 r8 d8\ff e8 g8 g8 e8 |
+  f4 r8 d8\ff e8 g8 g8 e8 \mark \default \bar "||" |
+
   \key g \major
   g4 g4 d'8 d'4 g8~ |
   g4 r8 d8 e8 g8 g8 e8 |
