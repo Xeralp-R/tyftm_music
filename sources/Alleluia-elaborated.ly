@@ -24,6 +24,7 @@ part-Ptwo-one = {
   \key c \major
   \time 3/8
   \clef treble
+  \tempo "Chor. Vivace"
 
   R4. |
   R4. |
@@ -66,6 +67,7 @@ part-Pthree-one = {
   \key c \major
   \time 3/8
   \clef treble
+  \tempo "Chor. Vivace"
 
   R4. |
   R4. |
@@ -108,6 +110,8 @@ part-Pfour-one = {
   \key c \major
   \time 3/8
   \clef treble
+  \tempo "Chor. Vivace"
+
   R4. |
   c'8.^\mf d'16 e'8 |
   f'4 c'8 |
@@ -149,6 +153,8 @@ part-Pfive-one = {
   \key c \major
   \time 3/8
   \clef bass
+  \tempo "Chor. Vivace"
+
   c8.^\f c16 c8 |
   g4 g8 |
   f8.( g16) a8 |
@@ -190,6 +196,7 @@ part-Psix-one = {
   \key c \major
   \time 3/8
   \clef treble
+  \tempo "Chor. Vivace"
 
   R4. |
   R4. |
@@ -212,10 +219,10 @@ part-Psix-one = {
   <c'' c''' >4.\fermata \bar "||" |
 
   \omit \time 25/4
-  r4 <c'' e'' g'' >1.\arpeggio <b' d'' f'' >4 <c'' e'' g'' >4 <c'' f'' a'' >4 
+  r4 <c'' e'' g'' >1.\arpeggio <b' d'' f'' >4 <c'' e'' g'' >4 <c'' f'' a'' >4
   <c'' e'' g'' >1 \arpeggio \fermata \bar "'"
 
-  r4 <c'' e'' g'' >2.\arpeggio  <f'' a'' d''' >4 <d'' g'' c''' >4 
+  r4 <c'' e'' g'' >2.\arpeggio  <f'' a'' d''' >4 <d'' g'' c''' >4
   <d'' g'' b'' >4 <e'' g'' c''' >1\arpeggio \fermata \bar "||" \mark "Da Capo" |
 }
 
@@ -223,6 +230,8 @@ part-Psix-two = {
   \key c \major
   \time 3/8
   \clef bass
+  \tempo "Chor. Vivace"
+
   <c, c >8. <c, c >16 <c, c >8 |
   <g, g >4 <g, g >8 |
   <f, f >8. <g, g >16 <a, a >8 |
@@ -244,7 +253,7 @@ part-Psix-two = {
   <c, c >4.\fermata \bar "||" |
 
   \omit \time 25/4
-  r4 <c e g c' >1.\arpeggio <b, d f b >4 <c e g c' >4 <c f a c' >4 
+  r4 <c e g c' >1.\arpeggio <b, d f b >4 <c e g c' >4 <c f a c' >4
   <c e g c' >1 \arpeggio \fermata \bar "'"
 
   r4 <c e g c' >2. <d f a d' >4 <d f b d' >4 <b, d f b >4
@@ -255,6 +264,8 @@ part-Pseven-one = {
   \key c \major
   \time 3/8
   \clef treble
+  \tempo "Chor. Vivace"
+
   R4. |
   R4. |
   a'8.\mf b'16 c''8 |
@@ -284,6 +295,8 @@ part-Peight-one = {
   \key c \major
   \time 3/8
   \clef treble
+  \tempo "Chor. Vivace"
+
   R4. |
   R4. |
   R4. |
@@ -313,6 +326,8 @@ part-Pnine-one = {
   \key c \major
   \time 3/8
   \clef alto
+  \tempo "Chor. Vivace"
+
   R4. |
   c'8.\mf d'16 e'8 |
   f'4 c'8 |
@@ -342,6 +357,8 @@ part-Ponezero-one = {
   \key c \major
   \time 3/8
   \clef bass
+  \tempo "Chor. Vivace"
+
   c8.\f c16 c8 |
   g4 g8 |
   f8. g16 a8 |
@@ -371,6 +388,8 @@ part-Poneone-one = {
   \key c \major
   \time 3/8
   \clef bass
+  \tempo "Chor. Vivace"
+
   c8.\f c16 c8 |
   g4 g8 |
   f8. g16 a8 |
