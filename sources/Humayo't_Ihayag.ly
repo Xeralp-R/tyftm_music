@@ -154,7 +154,7 @@ part-Ptwo-one = {
       r4 r8 b,8 |
     }
     {
-      r2 |
+      r2
     }
   }
 
@@ -712,11 +712,13 @@ part-Pseven-one = {
   \clef treble
   \tempo "Allegro Giocoso" 4 = 120
 
-  R1*57/2 |
+  R1*41/2 | \mark \default \bar "||"
+
+  R1*8 |
 
   % 30
   \key d \major
-  r4 r8 a'8\f b'8 d''8 d''8 b'8 \mark #2 \bar "||" |
+  r4 r8 a'8\f b'8 d''8 d''8 b'8 \mark \default \bar "||" |
   d''4 fis''4 g''8 g''8 a''8 fis''8~ |
   fis''16 e''16 d''8 r8 a'8 b'8 d''8 d''8 b'8 |
   d''4 a''4 c'''8 b''4 a''8~ |
