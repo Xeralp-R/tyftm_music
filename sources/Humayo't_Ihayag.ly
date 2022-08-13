@@ -230,6 +230,7 @@ part-Pthree-one = {
   \key e \major
   \time 4/4
   \clef treble
+  \tempo "Allegro Giocoso" 4 = 120
 
   \override DynamicLineSpanner.direction = #UP
 
@@ -386,6 +387,7 @@ part-Pfour-one = {
   \key e \major
   \time 4/4
   \clef treble
+  \tempo "Allegro Giocoso" 4 = 120
 
   \override DynamicLineSpanner.direction = #UP
 
@@ -493,6 +495,7 @@ part-Pfive-one = {
   \key e \major
   \time 4/4
   \clef "treble_8"
+  \tempo "Allegro Giocoso" 4 = 120
 
   \override DynamicLineSpanner.direction = #UP
 
@@ -599,6 +602,7 @@ part-Psix-one = {
   \key e \major
   \time 4/4
   \clef bass
+  \tempo "Allegro Giocoso" 4 = 120
 
   \override DynamicLineSpanner.direction = #UP
 
@@ -706,6 +710,8 @@ part-Pseven-one = {
   \key cis \major
   \time 4/4
   \clef treble
+  \tempo "Allegro Giocoso" 4 = 120
+
   R1*57/2 |
 
   % 30
@@ -761,12 +767,14 @@ part-Pseven-one = {
 }
 
 part-Peight-one = {
+  \key e \major
+  \time 4/4
+  \clef treble
+  \tempo "Allegro Giocoso" 4 = 120
+
   <<
     \context Voice = "voiceone" {
       \voiceOne
-      \key e \major
-      \time 4/4
-      \clef treble
       cis''8\arpeggio\f-\markup { \italic "arpeggios like grace notes" }
       e''8 cis''8 b'8~\arpeggio b'8 e''8 cis''16 b'16 a'8~\arpeggio |
       a'8 e''8 e''8 gis''8~\arpeggio gis''8 b''8 gis''16 fis''16 e''8 |
@@ -1020,6 +1028,8 @@ part-Peight-two = {
   \key e \major
   \time 4/4
   \clef bass
+  \tempo "Allegro Giocoso" 4 = 120
+
   <a, a >4\arpeggio cis8 <e, e >8~\arpeggio <e, e >4 b,8
   <fis, fis >8~\arpeggio |
   <fis, fis >4. <b, e b >8~\arpeggio <b, e b >2 |
@@ -1143,6 +1153,7 @@ part-Peight-two = {
 part-Pnine-one = \drummode {
   \time 4/4
   \clef percussion
+  \tempo "Allegro Giocoso" 4 = 120
 
   R1 |
   R1 |
@@ -1244,6 +1255,8 @@ part-Ponezero-one = {
   \key e \major
   \time 4/4
   \clef treble
+  \tempo "Allegro Giocoso" 4 = 120
+
   R1 |
   R1 |
   R1 |
@@ -1346,6 +1359,8 @@ part-Poneone-one = {
   \key e \major
   \time 4/4
   \clef treble
+  \tempo "Allegro Giocoso" 4 = 120
+
   R1 |
   R1 |
   R1 |
@@ -1448,6 +1463,8 @@ part-Ponetwo-one = {
   \key e \major
   \time 4/4
   \clef alto
+  \tempo "Allegro Giocoso" 4 = 120
+
   R1 |
   R1 |
   R1 |
@@ -1550,6 +1567,8 @@ part-Ponethree-one = {
   \key e \major
   \time 4/4
   \clef bass
+  \tempo "Allegro Giocoso" 4 = 120
+
   R1 |
   R1 |
   R1 |
@@ -1652,6 +1671,8 @@ part-Ponefour-one = {
   \key e \major
   \time 4/4
   \clef bass
+  \tempo "Allegro Giocoso" 4 = 120
+  
   R1 |
   R1 |
   R1 |
