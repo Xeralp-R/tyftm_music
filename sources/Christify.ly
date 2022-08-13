@@ -6,8 +6,9 @@ soprano = {
   \key d \major
   \time 4/4
   \clef treble
+  \tempo "Moderato"
 
-  R1*8
+  R1*8 \bar "||"
 
   a'4 d''4 e''4 fis''4 |
   g''4 fis''4 e''4 d''4 |
@@ -28,9 +29,9 @@ soprano = {
   g''4 fis''4 e''4 d''4 |
   d''4 cis''4 b'4 cis''4 |
   d''1~ |
-  d''2. r4 |
+  d''2. r4 | \bar "||" \mark \default
 
-  R1*16
+  R1*16 \bar "||" \mark \default
 
   % 40
   a'4 d''4 e''4 fis''4 |
@@ -52,7 +53,7 @@ soprano = {
   d''4 cis''4 b'4 cis''4 |
   d''1~ |
   % 55
-  d''2. r4 |
+  d''2. r4 | \bar "||" \mark \default
 
   R1 |
   R1 |
@@ -99,8 +100,9 @@ alto = {
   \key d \major
   \time 4/4
   \clef treble
+  \tempo "Moderato"
 
-  R1*8
+  R1*8 \bar "||"
 
   a4 d'4 e'4 fis'4 |
   g'4 fis'4 e'4 d'4 |
@@ -121,9 +123,9 @@ alto = {
   g'4 fis'4 e'4 d'4 |
   d'4 cis'4 b4 cis'4 |
   d'1~ |
-  d'2. r4 |
+  d'2. r4 |\bar "||" \mark \default
 
-  R1*16
+  R1*16\bar "||" \mark \default
 
   % 40
   a4 d'4 e'4 fis'4 |
@@ -145,7 +147,7 @@ alto = {
   d'4 cis'4 b4 cis'4 |
   d'1~ |
   % 55
-  d'2. r4 |
+  d'2. r4 |\bar "||" \mark \default
 
   a4 d'4 e'4 fis'4 |
   g'4 fis'4 e'4 d'4 |
@@ -192,10 +194,11 @@ tenor = {
   \key d \major
   \time 4/4
   \clef "treble_8"
+  \tempo "Moderato"
 
-  R1*8
+  R1*8 \bar "||"
 
-  R1*16
+  R1*16\bar "||" \mark \default
 
   a4 d'4 e'4 fis'4 |
   % 25
@@ -216,7 +219,7 @@ tenor = {
   g'4 fis'4 e'4 d'4 |
   d'4 cis'4 b4 cis'4 |
   d'1~ |
-  d'2. r4 |
+  d'2. r4 |\bar "||" \mark \default
   % 40
 
   R1 |
@@ -238,7 +241,7 @@ tenor = {
   a4 a4 a4 g4 |
   a1~ |
   % 55
-  a2. r4 |
+  a2. r4 |\bar "||" \mark \default
 
   R1 |
   R1 |
@@ -285,10 +288,11 @@ bass = {
   \key d \major
   \time 4/4
   \clef bass
+  \tempo "Moderato"
 
-  R1*8
+  R1*8 \bar "||"
 
-  R1*16
+  R1*16\bar "||" \mark \default
 
   a,4 d4 e4 fis4 |
   % 25
@@ -309,7 +313,7 @@ bass = {
   g4 fis4 e4 d4 |
   d4 cis4 b,4 cis4 |
   d1~ |
-  d2. r4 |
+  d2. r4 |\bar "||" \mark \default
   % 40
 
   R1 |
@@ -331,7 +335,7 @@ bass = {
   a,4 a,4 a,4 g,4 |
   a,1~ |
   % 55
-  a,2. r4 |
+  a,2. r4 |\bar "||" \mark \default
 
   a,4 d4 e4 fis4 |
   g4 fis4 e4 d4 |
@@ -378,6 +382,7 @@ part-Pthree-one = {
   \key d \major
   \time 4/4
   \clef treble
+  \tempo "Moderato"
 
   fis''8 a'8 d''8 e''8 fis''8 a'8 d''8 fis''8 |
   g''8 a'8 d''8 fis''8 g''8 a'8 d''8 g''8 |
@@ -387,7 +392,7 @@ part-Pthree-one = {
   % 5
   g''8 a'8 d''8 fis''8 g''8 a'8 d''8 g''8 |
   a''8 a'8 d''8 g''8 a''8 a'8 d''8 a''8 |
-  g''1 |
+  g''1 | \bar "||"
 
   <fis' a' >4 d''4 <g' e'' >4 <a' fis'' >4 |
   <g' g'' >4 <a' fis'' >4 <g' e'' >4 <b' d'' >4 |
@@ -408,7 +413,7 @@ part-Pthree-one = {
   <b' g'' >4 <a' fis'' >4 <g' e'' >4 <fis' d'' >4 |
   <fis' d'' >4 <e' cis'' >4 <d' b' >4 <e' cis'' >4 |
   <fis' d'' >4 a'4 <a' d'' >4 <cis'' e'' >4 |
-  <d'' fis'' >1 |
+  <d'' fis'' >1 |\bar "||" \mark \default
 
   <d'' a'' >1 |
   % 25
@@ -429,7 +434,7 @@ part-Pthree-one = {
   <e'' g'' >2. <b' g'' >4 |
   <a' g'' >1 |
   a''1 |
-  <a' a'' >4 g''4 fis''4 e''4 |
+  <a' a'' >4 g''4 fis''4 e''4 |\bar "||" \mark \default
 
   % 40
   <fis' a' d'' >4 d''4 <g' e'' >4 <a' fis'' >4 |
@@ -451,7 +456,7 @@ part-Pthree-one = {
   <fis' d'' >4 <e' cis'' >4 <d' b' >4 <e' cis'' >4 |
   <fis' d'' >4 a'4 <a' d'' >4 <cis'' e'' >4 |
   % 55
-  <d'' fis'' >1 |
+  <d'' fis'' >1 |\bar "||" \mark \default
 
   <d'' a'' >1 |
   <b' g'' >1 |
@@ -481,6 +486,7 @@ part-Pthree-two = {
   \key d \major
   \time 4/4
   \clef bass
+  \tempo "Moderato"
 
   <a, d fis a >1\arpeggio |
   <g, b, d g >1\arpeggio |
@@ -490,7 +496,7 @@ part-Pthree-two = {
   % 5
   <g, b, d g >1\arpeggio |
   <a, d fis a >1\arpeggio |
-  <g, b, d g >1\arpeggio |
+  <g, b, d g >1\arpeggio | \bar "||"
 
   <d a >1 |
   <b, g >1 |
@@ -511,7 +517,7 @@ part-Pthree-two = {
   <e g >2. <b, g >4 |
   <a, g >1 |
   <a, a >1 |
-  <a, a >4 g,4 fis,4 e,4 |
+  <a, a >4 g,4 fis,4 e,4 |\bar "||" \mark \default
 
   <fis, a, >4 d4 <g, e >4 <a, fis >4 |
   % 25
@@ -532,7 +538,7 @@ part-Pthree-two = {
   <b, g >4 <a, fis >4 <g, e >4 <fis, d >4 |
   <fis, d >4 <e, cis >4 <d, b, >4 <e, cis >4 |
   <fis, d >4 a,4 <a, d >4 <cis e >4 |
-  <d fis >1 |
+  <d fis >1 |\bar "||" \mark \default
 
   % 40
   <d a >1 |
@@ -554,7 +560,7 @@ part-Pthree-two = {
   <a, g >1 |
   <a, a >1 |
   % 55
-  <a, a >4 g,4 fis,4 e,4 |
+  <a, a >4 g,4 fis,4 e,4 |\bar "||" \mark \default
 
   <fis, a, >4 d4 <g, e >4 <a, fis >4 |
   <g, g >4 <a, fis >4 <g, e >4 <b, d >4 |

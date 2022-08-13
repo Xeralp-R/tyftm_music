@@ -98,6 +98,18 @@
 
   \bookpart {
     \header {
+      \christify_header
+    }
+    \score {
+      \keepWithTag #'(piano) \christify
+
+      \layout {}
+      %  \midi {\tempo 4 = 100 }
+    }
+  }
+
+  \bookpart {
+    \header {
       \humayot_ihayag_header
     }
     \score {
