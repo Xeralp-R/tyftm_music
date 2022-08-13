@@ -12,11 +12,7 @@ part-Pone-one = {
 
   \omit \time 25/4 \tempo "Recit. Adagio"
   g'4 g'2 g'4 c''2 g'4 f'4 g'4 a'4 g'1\fermata \bar "'"
-  g'4 g'4 g'4 g'4 d''4 c''4 b'4 c''1\fermata | \bar "||"
-
-
-  \time 3/8 \tempo "Chor. Vivace"
-  R4.*15 R4. \fermata \bar "|."
+  g'4 g'4 g'4 g'4 d''4 c''4 b'4 c''1\fermata | \bar "||" \mark "Da Capo"
 }
 
 PartPOneVoiceOneLyricsOne =  \lyricmode {
@@ -28,6 +24,7 @@ part-Ptwo-one = {
   \key c \major
   \time 3/8
   \clef treble
+
   R4. |
   R4. |
   a'8.^\mf b'16 c''8 |
@@ -48,30 +45,9 @@ part-Ptwo-one = {
   % 15
   c''4.\fermata | \bar "||"
 
-  \newline \omit \time 25/4
+  \omit \time 25/4 \tempo "Recit. Adagio"
   R1*25/4-\fermata
-  \bar "||" \newline
-
-  \time 3/8
-  R4. |
-  R4. |
-  a'8.^\mf b'16 c''8 |
-  % 20
-  d''4. |
-  e''8. f''16 g''8 |
-  a''4 g''8 |
-  f''8.( e''16) d''8 |
-  e''4. |
-  % 25
-  a''8. g''16 f''8 |
-  f''4 f''8 |
-  e''8.( f''16) g''8 |
-  f''4. |
-  f''8. g''16 a''8 |
-  % 30
-  g''4 e''8 |
-  d''8.( c''16) b'8 |
-  c''4. | \bar "|."
+  \bar "||" \mark "Da Capo"
 }
 
 soprano_lyr = \lyricmode {
@@ -109,32 +85,11 @@ part-Pthree-one = {
   e''8. d''16 c''8 |
   b'8. a'16 g'8 |
   % 15
-  g'4. |
+  g'4.\fermata \bar "||" |
 
-  \newline \omit \time 25/4
+  \omit \time 25/4 \tempo "Recit. Adagio"
   R1*25/4-\fermata
-  \bar "||" \newline
-
-  \time 3/8
-  R4. |
-  R4. |
-  R4. |
-  % 20
-  b'8.^\mf c''16 d''8 |
-  c''4. |
-  f''8. e''16 d''8 |
-  d''4 g'8 |
-  a'8.( b'16) c''8 |
-  % 25
-  c''4. |
-  c''8. b'16 a'8 |
-  b'4 f'8 |
-  a'8.( b'16) c''8 |
-  d''4. |
-  % 30
-  e''8. d''16 c''8 |
-  b'8. a'16 g'8 |
-  g'4. |
+  \bar "||" \mark "Da Capo"
 }
 
 alto_lyr = \lyricmode {
@@ -171,32 +126,11 @@ part-Pfour-one = {
   c'8. d'16 e'8 |
   f'8. e'16 d'8 |
   % 15
-  e'4. |
+  e'4.\fermata \bar "||" |
 
-  \newline \omit \time 25/4
+  \omit \time 25/4 \tempo "Recit. Adagio"
   R1*25/4-\fermata
-  \bar "||" \newline
-  
-  \time 3/8
-  R4. |
-  c'8.^\mf d'16 e'8 |
-  f'4 c'8 |
-  % 20
-  d'8.( e'16) f'8 |
-  e'4. |
-  a'8. g'16 f'8 |
-  f'4 b8 |
-  c'8.( d'16) e'8 |
-  % 25
-  f'4. |
-  a'8. g'16 f'8 |
-  e'4 d'8 |
-  f'8.( g'16) a'8 |
-  g'4. |
-  % 30
-  c'8. d'16 e'8 |
-  f'8. e'16 d'8 |
-  e'4. |
+  \bar "||" \mark "Da Capo"
 }
 
 tenor_lyr = \lyricmode {
@@ -233,32 +167,11 @@ part-Pfive-one = {
   d4 e8 |
   f8.( e16) d8 |
   % 15
-  c4. |
+  c4.\fermata \bar "||" |
 
-  \newline \omit \time 25/4
+  \omit \time 25/4 \tempo "Recit. Adagio"
   R1*25/4-\fermata
-  \bar "||" \newline
-  
-  \time 3/8
-  c8.^\f c16 c8 |
-  g4 g8 |
-  f8.( g16) a8 |
-  % 20
-  g4. |
-  e8. e16 e8 |
-  c'4 c'8 |
-  b8.( g16) e8 |
-  a4. |
-  % 25
-  a8. b16 c'8 |
-  c'4 c'8 |
-  b8.( a16) g8 |
-  a4. |
-  g8. e16 c8 |
-  % 30
-  d4 e8 |
-  f8.( e16) d8 |
-  c4. |
+  \bar "||" \mark "Da Capo"
 }
 
 bass_lyr = \lyricmode {
@@ -296,35 +209,14 @@ part-Psix-one = {
   <g'' g''' >4 <e'' e''' >8 |
   <d'' d''' >8. <c'' c''' >16 <b' b'' >8 |
   % 15
-  <c'' c''' >4. |
+  <c'' c''' >4.\fermata \bar "||" |
 
   \omit \time 25/4
   r4 <c'' e'' g'' >1.\arpeggio <b' d'' f'' >4 <c'' e'' g'' >4 <c'' f'' a'' >4 
   <c'' e'' g'' >1 \arpeggio \fermata \bar "'"
 
   r4 <c'' e'' g'' >2.\arpeggio  <f'' a'' d''' >4 <d'' g'' c''' >4 
-  <d'' g'' b'' >4 <e'' g'' c''' >1\arpeggio \fermata \bar "||" |
-
-  \time 3/8
-  R4.
-  R4. |
-  <a' a'' >8.\mf <b' b'' >16 <c'' c''' >8 |
-  % 20
-  <d'' d''' >4. |
-  <e'' e''' >8. <f'' f''' >16 <g'' g''' >8 |
-  <a'' a''' >4 <g'' g''' >8 |
-  <f'' f''' >8. <e'' e''' >16 <d'' d''' >8 |
-  <e'' e''' >4. |
-  % 25
-  <a'' a''' >8. <g'' g''' >16 <f'' f''' >8 |
-  <f'' f''' >4 <f'' f''' >8 |
-  <e'' e''' >8. <f'' f''' >16 <g'' g''' >8 |
-  <f'' f''' >4. |
-  <f'' f''' >8. <g'' g''' >16 <a'' a''' >8 |
-  % 30
-  <g'' g''' >4 <e'' e''' >8 |
-  <d'' d''' >8. <c'' c''' >16 <b' b'' >8 |
-  <c'' c''' >4. |
+  <d'' g'' b'' >4 <e'' g'' c''' >1\arpeggio \fermata \bar "||" \mark "Da Capo" |
 }
 
 part-Psix-two = {
@@ -349,7 +241,7 @@ part-Psix-two = {
   <d, d >4 <e, e >8 |
   <f, f >8. <e, e >16 <d, d >8 |
   % 15
-  <c, c >4. |
+  <c, c >4.\fermata \bar "||" |
 
   \omit \time 25/4
   r4 <c e g c' >1.\arpeggio <b, d f b >4 <c e g c' >4 <c f a c' >4 
@@ -357,27 +249,6 @@ part-Psix-two = {
 
   r4 <c e g c' >2. <d f a d' >4 <d f b d' >4 <b, d f b >4
   <c e g c' >1\arpeggio \fermata \bar "||" |
-
-  \time 3/8
-  <c, c >8. <c, c >16 <c, c >8 |
-  <g, g >4 <g, g >8 |
-  <f, f >8. <g, g >16 <a, a >8 |
-  % 20
-  <g, g >4. |
-  <e, e >8. <e, e >16 <e, e >8 |
-  <c c' >4 <c c' >8 |
-  <b, b >8. <g, g >16 <e, e >8 |
-  <a, a >4. |
-  % 25
-  <a, a >8. <b, b >16 <c c' >8 |
-  <c c' >4 <c c' >8 |
-  <b, b >8. <a, a >16 <g, g >8 |
-  <a, a >4. |
-  <g, g >8. <e, e >16 <c, c >8 |
-  % 30
-  <d, d >4 <e, e >8 |
-  <f, f >8. <e, e >16 <d, d >8 |
-  <c, c >4. |
 }
 
 part-Pseven-one = {
@@ -402,32 +273,11 @@ part-Pseven-one = {
   g''4 e''8 |
   d''8. c''16 b'8 |
   % 15
-  c''4. |
+  c''4.\fermata \bar "||" |
 
-  \newline \omit \time 25/4
+  \omit \time 25/4 \tempo "Recit. Adagio"
   R1*25/4-\fermata
-  \bar "||" \newline
-  
-  \time 3/8
-  R4. |
-  R4. |
-  a'8.\mf b'16 c''8 |
-  % 20
-  d''4. |
-  e''8. f''16 g''8 |
-  a''4 g''8 |
-  f''8. e''16 d''8 |
-  e''4. |
-  % 25
-  a''8. g''16 f''8 |
-  f''4 f''8 |
-  e''8. f''16 g''8 |
-  f''4. |
-  f''8. g''16 a''8 |
-  % 30
-  g''4 e''8 |
-  d''8. c''16 b'8 |
-  c''4. |
+  \bar "||" \mark "Da Capo"
 }
 
 part-Peight-one = {
@@ -452,32 +302,11 @@ part-Peight-one = {
   e''8. d''16 c''8 |
   b'8. a'16 g'8 |
   % 15
-  g'4. |
+  g'4.\fermata \bar "||" |
 
-  \newline \omit \time 25/4
+  \omit \time 25/4 \tempo "Recit. Adagio"
   R1*25/4-\fermata
-  \bar "||" \newline
-
-  \time 3/8
-  R4. |
-  R4. |
-  R4. |
-  % 20
-  b'8.\mf c''16 d''8 |
-  c''4. |
-  f''8. e''16 d''8 |
-  d''4 g'8 |
-  a'8. b'16 c''8 |
-  % 25
-  c''4. |
-  c''8. b'16 a'8 |
-  b'4 f'8 |
-  a'8. b'16 c''8 |
-  d''4. |
-  % 30
-  e''8. d''16 c''8 |
-  b'8. a'16 g'8 |
-  g'4. |
+  \bar "||" \mark "Da Capo"
 }
 
 part-Pnine-one = {
@@ -502,32 +331,11 @@ part-Pnine-one = {
   c'8. d'16 e'8 |
   f'8. e'16 d'8 |
   % 15
-  e'4. |
+  e'4.\fermata \bar "||" |
 
-  \newline \omit \time 25/4
+  \omit \time 25/4 \tempo "Recit. Adagio"
   R1*25/4-\fermata
-  \bar "||" \newline
-  
-  \time 3/8
-  R4. |
-  c'8.\mf d'16 e'8 |
-  f'4 c'8 |
-  % 20
-  d'8. e'16 f'8 |
-  e'4. |
-  a'8. g'16 f'8 |
-  f'4 b8 |
-  c'8. d'16 e'8 |
-  % 25
-  f'4. |
-  a'8. g'16 f'8 |
-  e'4 d'8 |
-  f'8. g'16 a'8 |
-  g'4. |
-  % 30
-  c'8. d'16 e'8 |
-  f'8. e'16 d'8 |
-  e'4. |
+  \bar "||" \mark "Da Capo"
 }
 
 part-Ponezero-one = {
@@ -552,32 +360,11 @@ part-Ponezero-one = {
   d4 e8 |
   f8. e16 d8 |
   % 15
-  c4. |
+  c4.\fermata \bar "||" |
 
-  \newline \omit \time 25/4
+  \omit \time 25/4 \tempo "Recit. Adagio"
   R1*25/4-\fermata
-  \bar "||" \newline
-  
-  \time 3/8
-  c8.\f c16 c8 |
-  g4 g8 |
-  f8. g16 a8 |
-  % 20
-  g4. |
-  e8. e16 e8 |
-  c'4 c'8 |
-  b8. g16 e8 |
-  a4. |
-  % 25
-  a8. b16 c'8 |
-  c'4 c'8 |
-  b8. a16 g8 |
-  a4. |
-  g8. e16 c8 |
-  % 30
-  d4 e8 |
-  f8. e16 d8 |
-  c4. |
+  \bar "||" \mark "Da Capo"
 }
 
 part-Poneone-one = {
@@ -602,32 +389,11 @@ part-Poneone-one = {
   d4 e8 |
   f8. e16 d8 |
   % 15
-  c4. |
+  c4.\fermata \bar "||" |
 
-  \newline \omit \time 25/4
+  \omit \time 25/4 \tempo "Recit. Adagio"
   R1*25/4-\fermata
-  \bar "||" \newline
-  
-  \time 3/8
-  c8.\f c16 c8 |
-  g4 g8 |
-  f8. g16 a8 |
-  % 20
-  g4. |
-  e8. e16 e8 |
-  c'4 c'8 |
-  b8. g16 e8 |
-  a4. |
-  % 25
-  a8. b16 c'8 |
-  c'4 c'8 |
-  b8. a16 g8 |
-  a4. |
-  g8. e16 c8 |
-  % 30
-  d4 e8 |
-  f8. e16 d8 |
-  c4. |
+  \bar "||" \mark "Da Capo"
 }
 
 alleluia-elaborated_header = \header {
