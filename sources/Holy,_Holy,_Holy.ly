@@ -331,7 +331,7 @@ piano_rh = {
   \clef treble
   \tempo "Allegro"
 
-  <g' b' d''>2_\markup{"Using organ stop"} ~
+  <g' b' d''>2 ~
   <g' b' d''>2 |
 
   <g' b' d'' >2 |
@@ -778,8 +778,8 @@ holy_holy_holy = {
 
     \tag #'(accompaniment solo piano)
     \new PianoStaff \with {
-      instrumentName = "Keyboard"
-      shortInstrumentName = "Kbd."
+      instrumentName = "Piano"
+      shortInstrumentName = "Pf."
       midiInstrument = "church organ"
       connectArpeggios = ##t
       \mergeDifferentlyDottedOn

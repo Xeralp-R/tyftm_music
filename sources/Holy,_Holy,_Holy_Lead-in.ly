@@ -25,7 +25,7 @@ piano_rh = {
   <<
     \context Voice = "voiceone" {
       \voiceOne
-      d''4_\markup{"Using organ stop"} d''4 |
+      d''4 d''4 |
       d''4 d''4 |
       <b' g'' >4 <c'' a'' >4 |
     }
@@ -94,8 +94,8 @@ holy_holy_holy_lead-in = {
 
     \tag #'(accompaniment solo piano)
     \new PianoStaff \with {
-      instrumentName = "Keyboard"
-      shortInstrumentName = "Kbd."
+      instrumentName = "Piano"
+      shortInstrumentName = "Pf."
       midiInstrument = "church organ"
     } <<
       \new Staff \piano_rh
