@@ -11,6 +11,7 @@
 \include "./sources/Christify.ly"
 \include "./sources/When_We_Eat_This_Bread.ly"
 \include "./sources/Holy,_Holy,_Holy.ly"
+\include "./sources/Holy,_Holy,_Holy_Lead-in.ly"
 \include "./sources/Amen_WYD.ly"
 \include "./sources/Ama_Namin-simplified.ly"
 \include "./sources/Ama_Namin-elaborated.ly"
@@ -23,11 +24,11 @@
 
 tocSection =
 #(define-music-function (label text) (symbol-list-or-symbol? markup?)
-  (add-toc-item! 'tocSectionMarkup text label))
+   (add-toc-item! 'tocSectionMarkup text label))
 
-tocGroup = 
+tocGroup =
 #(define-music-function (label text) (symbol-list-or-symbol? markup?)
-  (add-toc-item! 'tocGroupMarkup text label))
+   (add-toc-item! 'tocGroupMarkup text label))
 
 \book {
   \header {
@@ -168,7 +169,7 @@ tocGroup =
 
   \bookpart { \blank_page }
   \bookpart { \blank_page }
-  
+
   \bookpart {
     \paper {
       print-page-number = ##f
@@ -263,9 +264,28 @@ tocGroup =
       \holy_holy_holy_header
     }
     \score {
-      \holy_holy_holy 
+      \holy_holy_holy
       \layout {}
       %  \midi {\tempo 4 = 132 }
+    }
+  }
+
+  \bookpart {
+    \tocItem eucharist.sanctus.holy_lead-in \markup { "Holy, Holy, Holy (alternative lead-in)" }
+
+    \header {
+      \holy_holy_holy_lead-in_header
+    }
+    \score {
+      \holy_holy_holy_lead-in
+      \layout {}
+      %  \midi {\tempo 4 = 132 }
+    }
+    \markup {
+      \null \footnote \null \left-column {
+        "N.B. This is the lead-in provided by Bukas Palad to the previous piece, Holy, Holy, Holy, for keyboard."
+        "It has been replaced to retain the triptych nature of the eucharistic prayer."
+      }
     }
   }
 
