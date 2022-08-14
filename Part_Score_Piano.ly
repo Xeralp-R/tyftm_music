@@ -140,6 +140,18 @@
 
   \bookpart {
     \header {
+      \amen_wyd_header
+    }
+    \score {
+      \keepWithTag #'(piano) \amen_wyd
+
+      \layout {}
+      %  \midi {\tempo 4 = 92 }
+    }
+  }
+
+  \bookpart {
+    \header {
       \humayot_ihayag_header
     }
     \score {

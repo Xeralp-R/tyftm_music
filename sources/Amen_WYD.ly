@@ -8,6 +8,8 @@ part-Pone-one = {
   \clef treble
   \tempo "Andante ma non troppo"
 
+  R2*2 |
+
   d'4( b8 d'8) |
   e'2 |
   e'4( c'8 e'8) |
@@ -42,6 +44,10 @@ part-Ptwo-one = {
   \key g \major
   \time 2/4
   \clef treble
+  \tempo "Andante ma non troppo"
+
+  R2*2 |
+
   r2 |
   g'8( a'8 b'8 g'8) |
   e'2 |
@@ -76,6 +82,10 @@ part-Pthree-one = {
   \key g \major
   \time 2/4
   \clef "treble_8"
+  \tempo "Andante ma non troppo"
+
+  R2*2 |
+
   b2 |
   b2 |
   g2 |
@@ -110,6 +120,10 @@ part-Pfour-one = {
   \key g \major
   \time 2/4
   \clef bass
+  \tempo "Andante ma non troppo"
+
+  R2*2 |
+
   g4( fis4) |
   e4( d4) |
   c4( a,4) |
@@ -144,6 +158,11 @@ part-Pfive-one = {
   \key g \major
   \time 2/4
   \clef treble
+  \tempo "Andante ma non troppo"
+
+  <b d' g'>2 ~ |
+  <b d' g'>4 r4
+
   d'4 b8 d'8 |
   <<
     \context Voice = "voiceone" {
@@ -194,12 +213,17 @@ part-Pfive-one = {
 }
 
 part-Pfive-two = {
+  \key g \major
+  \time 2/4
+  \clef bass
+  \tempo "Andante ma non troppo"
+
+  <g, g>2~ |
+  <g, g>4 r4 |
+
   <<
     \context Voice = "voiceone" {
       \voiceOne
-      \key g \major
-      \time 2/4
-      \clef bass
       b2 |
       b2 |
       g2 |
@@ -260,8 +284,12 @@ amen_wyd = {
     } <<
 
       \tag #'(full_chorus tutti chorus soprano)
+      \tag #'(accompaniment tutti violins violin_i)
       \new Staff \with {
-        instrumentName = "Soprano"
+        instrumentName = \markup \right-column  {
+          "Soprano"
+          "Opt. Violin 1"
+        }
         shortInstrumentName = "S."
       } <<
         \new Voice = "soprano" { \part-Pone-one }
@@ -269,8 +297,12 @@ amen_wyd = {
       >>
 
       \tag #'(full_chorus tutti chorus alto)
+      \tag #'(accompaniment tutti violins violin_ii)
       \new Staff \with {
-        instrumentName = "Alto"
+        instrumentName = \markup \right-column  {
+          "Alto"
+          "Opt. Violin 2"
+        }
         shortInstrumentName = "A."
       } <<
         \new Voice = "alto" { \part-Ptwo-one }
@@ -278,8 +310,12 @@ amen_wyd = {
       >>
 
       \tag #'(full_chorus tutti chorus tenor)
+      \tag #'(accompaniment tutti viola)
       \new Staff \with {
-        instrumentName = "Tenor"
+        instrumentName = \markup \right-column  {
+          "Tenor"
+          "Opt. Viola"
+        }
         shortInstrumentName = "T."
       } <<
         \new Voice = "tenor" { \part-Pthree-one }
@@ -287,8 +323,12 @@ amen_wyd = {
       >>
 
       \tag #'(full_chorus tutti chorus bass)
+      \tag #'(full_chorus chorus tutti bass)
       \new Staff \with {
-        instrumentName = "Bass"
+        instrumentName = \markup \right-column  {
+          "Bass"
+          "Opt. Bassi"
+        }
         shortInstrumentName = "B."
       } <<
         \new Voice = "bass" { \part-Pfour-one }
@@ -306,61 +346,6 @@ amen_wyd = {
     <<
       \new Staff = "1" { \part-Pfive-one }
       \new Staff = "2" { \part-Pfive-two }
-    >>
-
-    \new StaffGroup <<
-      \new StaffGroup \with {
-        systemStartDelimiter = #'SystemStartSquare
-        midiInstrument = "violin"
-      } <<
-
-        \tag #'(accompaniment tutti violins violin_i)
-        \new Staff \with {
-          instrumentName = "Violin 1"
-          shortInstrumentName = "Vl. 1"
-        } <<
-          \new Voice = "PartPFiveVoiceOne" { \part-Pone-one }
-        >>
-
-        \tag #'(accompaniment tutti violins violin_ii)
-        \new Staff \with {
-          instrumentName = "Violin 2"
-          shortInstrumentName = "Vl. 2"
-        } <<
-          \new Voice = "PartPSixVoiceOne" { \part-Ptwo-one }
-        >>
-      >>
-
-      \tag #'(accompaniment tutti viola)
-      \new Staff \with {
-        instrumentName = "Viola"
-        shortInstrumentName = "Vla."
-        midiInstrument = "viola"
-      } <<
-        \new Voice = "PartPSevenVoiceOne" { \part-Pthree-one }
-      >>
-
-      \new StaffGroup \with {
-        systemStartDelimiter = #'SystemStartSquare
-      } <<
-        \tag #'(accompaniment tutti cello)
-        \new Staff \with {
-          instrumentName = "Violoncello"
-          shortInstrumentName = "Vcl."
-          midiInstrument = "cello"
-        } <<
-          \new Voice = "PartPEightVoiceOne" { \part-Pfour-one }
-        >>
-
-        \tag #'(accompaniment tutti contrabass)
-        \new Staff \with {
-          instrumentName = "Contrabass"
-          shortInstrumentName = "Cb."
-          midiInstrument = "contrabass"
-        } <<
-          \new Voice = "PartPNineVoiceOne" { \part-Pfour-one }
-        >>
-      >>
     >>
   >>
 }
