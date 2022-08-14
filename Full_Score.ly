@@ -268,6 +268,12 @@ tocGroup =
       \layout {}
       %  \midi {\tempo 4 = 132 }
     }
+    \markup {
+      \null \footnote \null \left-column {
+        "N.B. The piano part for the entire eucharistic prayer (consisting of the Sanctus, the Mystery of Faith,"
+        " and the Great Amen) may be replaced with a church organ in performance."
+      }
+    }
   }
 
   \bookpart {

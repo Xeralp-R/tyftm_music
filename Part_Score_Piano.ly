@@ -118,6 +118,24 @@
       \layout {}
       %  \midi {\tempo 4 = 132 }
     }
+    \markup {
+      \null \footnote \null \left-column {
+        "N.B. The piano part for the entire eucharistic prayer (consisting of the Sanctus, the Mystery of Faith,"
+        " and the Great Amen) may be replaced with a church organ in performance."
+      }
+    }
+  }
+
+  \bookpart {
+    \header {
+      \when_we_eat_this_bread_header
+    }
+    \score {
+      \keepWithTag #'(piano) \when_we_eat_this_bread
+
+      \layout {}
+      %  \midi {\tempo 4 = 60 }
+    }
   }
 
   \bookpart {
