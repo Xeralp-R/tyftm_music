@@ -110,6 +110,18 @@
 
   \bookpart {
     \header {
+      \holy_holy_holy_header
+    }
+    \score {
+      \keepWithTag #'(piano) \holy_holy_holy
+
+      \layout {}
+      %  \midi {\tempo 4 = 132 }
+    }
+  }
+
+  \bookpart {
+    \header {
       \humayot_ihayag_header
     }
     \score {

@@ -820,6 +820,8 @@ holy_holy_holy = {
       shortInstrumentName = "Pf."
       midiInstrument = "acoustic grand"
       connectArpeggios = ##t
+      \mergeDifferentlyDottedOn
+      \mergeDifferentlyHeadedOn
     } <<
       \new Staff \piano_rh
       \new Staff \piano_lh
