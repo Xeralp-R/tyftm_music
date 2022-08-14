@@ -701,7 +701,19 @@ part-Psix-one = {
   \clef treble
   \tempo "Vivace" 4 = 184
 
-  R2.*120 \mark #6 \bar "||" |
+  R2.*2
+
+  R2.*16 \mark \default \bar "||" |
+
+  R2.*16 \mark \default \bar "||" |
+
+  R2.*16 \mark \default \bar "||" |
+
+  R2.*16 \mark \default \bar "||" |
+
+  R2.*38 \mark \default \bar "||" |
+
+  R2.*16 \mark \default \bar "||" |
 
   R2.*15 |
 
