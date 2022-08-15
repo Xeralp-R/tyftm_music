@@ -712,7 +712,18 @@ part-Pseven-one = {
   \clef treble
   \tempo "Allegro Giocoso" 4 = 120
 
-  R1*41/2 | \mark \default \bar "||"
+  R1*3
+  r2
+
+  \repeat volta 2 {
+    r2
+    R1*16
+  }
+  \alternative {
+    { r2 }
+    { r2 }
+  }
+  r2 | \mark \default \bar "||"
 
   R1*8 |
 
