@@ -25,7 +25,7 @@ part-Pone-one = {
   b'4 d''4 |
   \time 4/4
   d''1~ |
-  d''4 r4 d''4 a''4 |
+  d''4 r4 d''4 a''4 | \mark \default
   fis''4 d''2. |
   % 15
   a''8 g''8 fis''8 e''8 d''8 a'8 b'8 d''8 |
@@ -40,7 +40,7 @@ part-Pone-one = {
   e''2. r8. e''16 |
   e''8 d''8~ d''2. |
   % 25
-  r2 d''4 a''4 |
+  r2 d''4 a''4 | \mark \default
   fis''4 d''2. |
   a''8 g''8 fis''8 e''8 d''8 a'8 b'8 d''8 |
   fis''4 g''4 e''4 d''4 |
@@ -64,24 +64,24 @@ part-Pone-one = {
 }
 
 sop_solo_lyr = \lyricmode {
-  Soul -- of Christ,  __ sanc -- ti -- fy  __ me, 
-  Bo -- dy of Christ, save me, 
-  Wa -- ter from the side __ of Christ, wash me, 
-  Pas -- sion of Christ, give me strength.  
-  
-  Hear me Je -- sus, 
-  Hide me in Thy wounds that I may ne -- ver leave Thy side,     
-  From all the e -- vil that sur -- rounds me, de -- fend me,  
-  And when the call of death ar -- rives,  __ 
-  Bid me come to Thee that I may praise Thee 
-  with thy saints for -- ev -- er.  
-  
-  Hear me Je -- sus, 
+  Soul -- of Christ,  __ sanc -- ti -- fy  __ me,
+  Bo -- dy of Christ, save me,
+  Wa -- ter from the side __ of Christ, wash me,
+  Pas -- sion of Christ, give me strength.
+
+  Hear me Je -- sus,
+  Hide me in Thy wounds that I may ne -- ver leave Thy side,
+  From all the e -- vil that sur -- rounds me, de -- fend me,
+  And when the call of death ar -- rives,  __
+  Bid me come to Thee that I may praise Thee
+  with thy saints for -- ev -- er.
+
+  Hear me Je -- sus,
   hide me in Thy wounds that I may nev -- er leave Thy side,  __
   From all the e -- vil that sur -- rounds
   me de -- fend me,  __ And when the call
   __ of death ar -- rives,  Bid me come to Thee
-  that I may praise Thee with Thy saints 
+  that I may praise Thee with Thy saints
   For -- e -- ever. __
 }
 
@@ -89,6 +89,8 @@ part-Ptwo-one = {
   \key d \major
   \time 4/4
   \clef bass
+  \tempo "Andante"
+
   R1 |
   R1 |
   R1 |
@@ -106,7 +108,7 @@ part-Ptwo-one = {
   b,4 d4 |
   \time 4/4
   d1~ |
-  d4 r4 r2 |
+  d4 r4 r2 | \mark \default
   r2 a4 fis4 |
   % 15
   a8 g8 fis8 e8 d8 a,8 b,8 d8 |
@@ -121,7 +123,7 @@ part-Ptwo-one = {
   e2. r8. e16 |
   e8 d8~ d2. |
   % 25
-  R1 |
+  R1 | \mark \default
   r4 r8 a,8 d8 e8 fis8 g8 |
   a4. g8 fis4. g8 |
   fis4 g4 a4 a4 |
@@ -145,34 +147,36 @@ part-Ptwo-one = {
 }
 
 bass_solo_lyr = \lyricmode {
-  Soul -- of Christ,  __ sanc -- ti -- fy  __ me, 
-  Bo -- dy of Christ, save me, 
-  Wa -- ter from the side __ of Christ, wash me, 
-  Pas -- sion of Christ, give me strength.  
-  
-  Je -- sus, 
-  Hide me in Thy wounds that I may ne -- ver leave Thy side,     
-  From all the e -- vil that sur -- rounds me, de -- fend me,  
-  And when the call of death ar -- rives,  __ 
-  Bid me come to Thee that I may praise Thee 
-  with thy saints for -- ev -- er.  
-  
-  And this I beg of Thee, 
+  Soul -- of Christ,  __ sanc -- ti -- fy  __ me,
+  Bo -- dy of Christ, save me,
+  Wa -- ter from the side __ of Christ, wash me,
+  Pas -- sion of Christ, give me strength.
+
+  Je -- sus,
+  Hide me in Thy wounds that I may ne -- ver leave Thy side,
+  From all the e -- vil that sur -- rounds me, de -- fend me,
+  And when the call of death ar -- rives,  __
+  Bid me come to Thee that I may praise Thee
+  with thy saints for -- ev -- er.
+
+  And this I beg of Thee,
   Thy wounds may nev -- er leave my side,  __
   From all the e -- vil that sur -- rounds
   me de -- fend me,  __ And when the call
   __ of death ar -- rives,  Bid me come to Thee
-  that I may praise Thee with Thy saints 
+  that I may praise Thee with Thy saints
   For -- e -- ever. __
 }
 
 part-Pthree-one = {
+  \key d \major
+  \time 4/4
+  \clef treble
+  \tempo "Andante"
+
   <<
     \context Voice = "voiceone" {
       \voiceOne
-      \key d \major
-      \time 4/4
-      \clef treble
       <d'' a'' >8. a''16 g''8. g''16 fis''8. fis''16 e''8 d''8 |
       e''8 fis''8 d''8 e''8~ e''8 fis''8 d''4 |
       <d'' a'' >8. a''16 g''8. g''16 fis''8. fis''16 e''8 d''8 |
@@ -222,7 +226,7 @@ part-Pthree-one = {
       fis''16 g'8 fis'8 |
       g'4. g'8~ g'4 fis'8 cis'8 |
     }
-  >>
+  >> \mark \default
   <b fis' >4 d'4 <a d' fis' >4 <b d' g' >4 |
   % 15
   <cis' e' a' >4 <d' b' >8 <e' cis'' >8 <fis' d'' >8 d'8 <cis' e' >8 <d'
@@ -254,7 +258,7 @@ part-Pthree-one = {
       % 25
       g'4. g'8~ g'4 fis'8 cis'8 |
     }
-  >>
+  >> \mark \default
   <b fis' >4 d'4 <a d' fis' >4 <b d' g' >4 |
   <cis' e' a' >4 <d' b' >8 <e' cis'' >8 <fis' d'' >8 d'8 <cis' e' >8 <d'
   fis' >8 |
@@ -388,8 +392,8 @@ anima_christi = {
       \tag #'(full_chorus solo bass)
       \new Staff \with {
         midiInstrument = "voice oohs"
-        instrumentName = "Bass Solo"
-        shortInstrumentName = "B-solo"
+        instrumentName = "Baritone Solo"
+        shortInstrumentName = "Bar-solo"
       } <<
         \new Voice = "bass_solo" \part-Ptwo-one
         \new Lyrics \lyricsto "bass_solo" \bass_solo_lyr

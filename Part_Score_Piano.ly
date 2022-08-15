@@ -152,6 +152,18 @@
 
   \bookpart {
     \header {
+      \anima_christi_header
+    }
+    \score {
+      \keepWithTag #'(piano) \anima_christi
+
+      \layout {}
+      %  \midi {\tempo 4 = 84 }
+    }
+  }
+
+  \bookpart {
+    \header {
       \humayot_ihayag_header
     }
     \score {
