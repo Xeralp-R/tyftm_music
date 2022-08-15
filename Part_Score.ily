@@ -7,7 +7,7 @@
   %system-system-spacing = #'((basic-distance . 0.1) (padding . 0))
   top-margin = 15\mm
   bottom-margin = 15\mm
-  left-margin = 20\mm
+  left-margin = 15\mm
   right-margin = 15\mm
   ragged-last-bottom = ##f
   ragged-bottom = ##f
@@ -71,6 +71,7 @@
     \Staff
     \override BreathingSign.text = \markup { \musicglyph #"scripts.caesura.curved" }
     \override Glissando.style = #'trill
+    \remove "Instrument_name_engraver"
   }
   \context{
     \Lyrics
