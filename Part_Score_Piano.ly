@@ -58,6 +58,18 @@
     }
   }
 
+  \bookpart {
+    \header {
+      \kyrie_eleison_header
+    }
+    \score {
+      \keepWithTag #'(piano) \kyrie_eleison
+
+      \layout {}
+      %\midi { \tempo 4 = 68 }
+    }
+  }
+
   \bookpart { \blank_page }
 
   \bookpart {
