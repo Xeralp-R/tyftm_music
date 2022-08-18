@@ -68,6 +68,10 @@
     skipBars = ##t
   }
   \context {
+    \PianoStaff
+    \remove "Instrument_name_engraver"
+  }
+  \context {
     \Staff
     \override BreathingSign.text = \markup { \musicglyph #"scripts.caesura.curved" }
     \override Glissando.style = #'trill

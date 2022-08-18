@@ -11,9 +11,11 @@
 \include "./sources/Christify.ly"
 \include "./sources/When_We_Eat_This_Bread.ly"
 \include "./sources/Holy,_Holy,_Holy.ly"
+\include "./sources/Holy,_Holy,_Holy_Lead-in.ly"
 \include "./sources/Amen_WYD.ly"
 \include "./sources/Ama_Namin-simplified.ly"
-\include "./sources/Ama_Namin-elaborated.ly"
+\include "./sources/Sapagkat-simplified_Lead-in.ly"
+\include "./sources/Sapagkat-simplified.ly"
 \include "./sources/Lamb_of_God.ly"
 \include "./sources/Anima_Christi.ly"
 
@@ -159,6 +161,37 @@
 
       \layout {}
       %  \midi {\tempo 4 = 92 }
+    }
+  }
+
+  \bookpart {
+    \tocItem eucharist.lords.ama_simple \markup { "Ama Namin (Simplified)" }
+
+    \header {
+      \ama_namin-simplified_header
+    }
+    \score {
+      \keepWithTag #'(piano) \ama_namin-simplified
+      \layout {}
+    }
+    \markup {
+      \null \footnote \null \left-column {
+        "N.B. This piece may be continued in two ways:"
+        "1. After the conclusion of the Ama Namin, a single eigth-note rest is taken, and then the choir moves on to the doxology."
+        "2. The priest will recite the embolism before the doxology, as outlined in the alternate lead-in."
+      }
+    }
+  }
+
+  \bookpart {
+    \tocItem eucharist.lords.sapagkat \markup { "Sapagkat sa 'Yo ang Kaharian" }
+
+    \header {
+      \sapagkat-simplified_header
+    }
+    \score {
+      \keepWithTag #'(piano) \sapagkat-simplified
+      \layout {}
     }
   }
 
