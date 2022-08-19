@@ -717,7 +717,7 @@ part-Pseven-one = {
 
   \repeat volta 2 {
     r2
-    R1*16
+    R1*15
   }
   \alternative {
     { r2 }
