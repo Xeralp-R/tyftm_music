@@ -24,13 +24,13 @@ soprano = {
 
   e'2. e'8 d'16 cis'16 |
   d'1 |
-  fis'1 ~ |
+  fis'1^\> ~ |
 
   \omit \time 8/4
-  fis'\breve ~
+  fis'\breve^\pp ~
   \omit \time 4/4
 
-  fis'2 r4 d''8 cis''8 | \bar "||" \mark "etc"
+  fis'2^\f r4 d''8 cis''8 | \bar "||" \mark "etc"
 }
 
 alto = {
@@ -41,13 +41,13 @@ alto = {
 
   b2( a4) a8 a16 a16 |
   b2( a2) |
-  a1~ |
+  a1^\> ~ |
 
   \omit \time 8/4
-  a\breve ~
+  a\breve^\pp ~
   \omit \time 4/4
 
-  a2 r4 d''8 cis''8 | \bar "||" \mark "etc"
+  a2^\f r4 d''8 cis''8 | \bar "||" \mark "etc"
 }
 
 tenor = {
@@ -58,13 +58,13 @@ tenor = {
 
   d'2( cis'4) cis'8 cis'16 cis'16 |
   a4( g2 fis8 e8) |
-  fis1~ |
+  fis1^\> ~ |
 
   \omit \time 8/4
-  fis\breve ~
+  fis\breve^\pp ~
   \omit \time 4/4
 
-  fis2 r4 d'8 cis'8 | \bar "||" \mark "etc"
+  fis2^\f r4 d'8 cis'8 | \bar "||" \mark "etc"
 }
 
 bass = {
@@ -75,13 +75,13 @@ bass = {
 
   a2. a8 a16 a16 |
   g2( d2) |
-  d1~ |
+  d1^\> ~ |
 
   \omit \time 8/4
-  d\breve ~
+  d\breve^\pp ~
   \omit \time 4/4
 
-  d2 r4 d'8 cis'8 | \bar "||" \mark "etc"
+  d2^\f r4 d'8 cis'8 | \bar "||" \mark "etc"
 }
 
 chor_lyr = \lyricmode {
@@ -98,13 +98,13 @@ piano_rh = {
 
   e''2. e''8 d''16 cis''16 |
   d''1 |
-  fis''1~ |
+  fis''1\>~ |
 
   \omit \time 8/4
-  fis'\breve ~
+  fis''\breve\pp ~
   \omit \time 4/4
 
-  fis'2 r4 d''8 cis''8 | \bar "||" \mark "etc"
+  fis''2 r4 d''8\f cis''8 | \bar "||" \mark "etc"
 }
 
 piano_lh = {
