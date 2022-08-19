@@ -39,7 +39,7 @@ part-Pone-one = {
   % 15
   c''2. b'8 c''8 |
   d''4. e''8 e''2 |
-  r4 c''8\p c''8 c''4 b'8 a'8 |
+  r4 c''8^\markup{\italic "sub" \dynamic "p"} c''8 c''4 b'8 a'8 |
   g'4 g'4 c''4 b'4 |
   a'2. b'8 a'8 |
   % 20
@@ -102,7 +102,7 @@ part-Ptwo-one = {
   % 15
   a'2. f'8 f'8 |
   g'4. g'8 g'2 |
-  r4 a'8\p a'8 a'4 g'8 g'8 |
+  r4 a'8^\markup{\italic "sub" \dynamic "p"} a'8 a'4 g'8 g'8 |
   e'4 e'4 e'4 e'4 |
   f'2( d'4) d'8 d'8 |
   % 20
@@ -152,7 +152,7 @@ part-Pthree-one = {
   % 15
   f'2. a8 a8 |
   d'4. c'8 c'2 |
-  r4 e'8\p e'8 e'4 d'8 c'8 |
+  r4 e'8^\markup{\italic "sub" \dynamic "p"} e'8 e'4 d'8 c'8 |
   d'4 c'4 c'4 c'4 |
   c'2( b4) b8 b8 |
   % 20
@@ -202,7 +202,7 @@ part-Pfour-one = {
   % 15
   d2. d8 d8 |
   e4. e8 e2 |
-  r4 f8\p f8 f4 f8 f8 |
+  r4 f8^\markup{\italic "sub" \dynamic "p"} f8 f4 f8 f8 |
   g4 g4 g4 g4 |
   g2( f4) f8 f8 |
   % 20
@@ -250,7 +250,8 @@ part-Pfive-one = {
   % 15
   <c' f' a' c'' >4 <c' f' a' c'' >2 <c' f' a' b' >8 c''8 |
   <d' e' g' d'' >4 <d' e' g' d'' >2 <e' g' c'' e'' >4 |
-  <e' a' c'' e'' >4 <e' a' c'' >2\p <d' g' b' >8 <c' a' >8 |
+  <e' a' c'' e'' >4 <e' a' c'' >2-\markup{\italic "sub" \dynamic "p"} 
+  <d' g' b' >8 <c' a' >8 |
   <d' e' g' >4 <c' e' g' >2 <b e' g' >8 c'8 |
   <c' f' a' >4 <c' f' a' >2 <d' g' b' >4 |
   % 20

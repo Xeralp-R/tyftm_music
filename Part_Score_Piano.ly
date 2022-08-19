@@ -17,6 +17,7 @@
 \include "./sources/Sapagkat-simplified_Lead-in.ly"
 \include "./sources/Sapagkat-simplified.ly"
 \include "./sources/Lamb_of_God.ly"
+\include "./sources/Kordero_ng_Diyos_Cayabyab.ly"
 \include "./sources/Anima_Christi.ly"
 
 \include "./sources/Humayo't_Ihayag.ly"
@@ -26,6 +27,7 @@
 \book {
   \header {
     tagline = ##f
+    part_type = "Piano"
   }
 
   \bookpart {
@@ -192,6 +194,35 @@
     \score {
       \keepWithTag #'(piano) \sapagkat-simplified
       \layout {}
+    }
+  }
+
+  \bookpart {
+    %\tocGroup eucharist.agnus \markup { "Agnus Dei" }
+    \tocItem eucharist.agnus.lamb \markup { "Lamb of God" }
+
+    \header {
+      \lamb_of_god_header
+    }
+    \score {
+      \keepWithTag #'(piano) \lamb_of_god
+
+      \layout {}
+      %  \midi {\tempo 4 = 84 }
+    }
+  }
+
+  \bookpart {
+    \tocItem eucharist.agnus.kordero_cayabyab \markup { "Kordero ng Diyos (Cayabyab)" }
+
+    \header {
+      \kordero_ng_diyos_cayabyab_header
+    }
+    \score {
+      \keepWithTag #'(piano) \kordero_ng_diyos_cayabyab
+
+      \layout {}
+      %  \midi {}
     }
   }
 

@@ -56,6 +56,39 @@
   }%}
   %print-all-headers = ##t
   system-separator-markup = #f
+
+  oddHeaderMarkup = \markup {
+    \fill-line {
+      {
+        \on-the-fly \not-part-first-page
+        \fromproperty #'header:title
+      }
+      {
+        \on-the-fly \not-part-first-page
+        \fromproperty #'header:part_type
+      }
+      {
+        \on-the-fly \print-page-number-check-first
+        \fromproperty #'page:page-number-string
+      }
+    }
+  }
+  evenHeaderMarkup = \markup {
+    \fill-line {
+      {
+        \on-the-fly \print-page-number-check-first
+        \fromproperty #'page:page-number-string
+      }
+      {
+        \on-the-fly \not-part-first-page
+        \fromproperty #'header:part_type
+      }
+      {
+        \on-the-fly \not-part-first-page
+        \fromproperty #'header:title
+      }
+    }
+  }
 }
 
 \layout {
