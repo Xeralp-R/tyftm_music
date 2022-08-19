@@ -17,6 +17,7 @@
 \include "./sources/Sapagkat-simplified_Lead-in.ly"
 \include "./sources/Sapagkat-simplified.ly"
 \include "./sources/Lamb_of_God.ly"
+\include "./sources/Kordero_ng_Diyos_Cayabyab.ly"
 \include "./sources/Anima_Christi.ly"
 
 \include "./sources/Humayo't_Ihayag.ly"
@@ -384,6 +385,19 @@ tocGroup =
   }
 
   \bookpart {
+    \tocItem eucharist.agnus.kordero_cayabyab \markup { "Kordero ng Diyos (Cayabyab)" }
+
+    \header {
+      \kordero_ng_diyos_cayabyab_header
+    }
+    \score {
+      \kordero_ng_diyos_cayabyab
+      \layout {}
+      %  \midi {}
+    }
+  }
+
+  \bookpart {
     \tocGroup eucharist.communion \markup { "Communion" }
     \tocItem eucharist.agnus.lamb \markup { "Anima Christi" }
 
@@ -393,7 +407,7 @@ tocGroup =
     \score {
       \anima_christi
       \layout {}
-        \midi {\tempo 4 = 84 }
+      %  \midi {\tempo 4 = 84 }
     }
   }
 
