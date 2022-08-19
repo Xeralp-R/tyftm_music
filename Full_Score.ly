@@ -61,12 +61,19 @@ tocGroup =
 
         \vspace #10
 
-        \fill-line {
-          \italic
-          \center-column {
-            "Dedicated to my wonderful piano teacher,"
-            "Without whom this mass would never have been completed."
+        \center-column \huge \larger \larger {
+          \fill-line {
+            \bold \fontsize #3
+            "Bravura Arrangers' Committee, Summer of 2022"
           }
+          \vspace #2
+          "Rex Alphonse Reventar"
+          \vspace #0.5
+          "Aydan Ables"
+          \vspace #0.5
+          "Mico Javier"
+          \vspace #0.5
+          "Sir Anthony Ryan Cruz"
         }
       }
     }
@@ -101,6 +108,24 @@ tocGroup =
       }
     }
     \markuplist \table-of-contents
+  }
+
+  \bookpart { \blank_page }
+
+  \bookpart {
+    \markup {
+      \center-column {
+        \vspace #10
+
+        \fill-line {
+          \center-column \italic {
+            "Dedicated to my piano teacher,"
+            "Ma'am Belinda Salazar:"
+            "without whom this mass would never have been arranged."
+          }
+        }
+      }
+    }
   }
 
   \bookpart { \blank_page }
@@ -368,7 +393,7 @@ tocGroup =
       \layout {}
     }
   }
-  
+
 
   \bookpart {
     \tocGroup eucharist.agnus \markup { "Agnus Dei" }
