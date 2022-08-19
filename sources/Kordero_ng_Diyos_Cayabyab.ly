@@ -254,7 +254,7 @@ part-Pfive-one = {
   <d' e' g' >4 <c' e' g' >2 <b e' g' >8 c'8 |
   <c' f' a' >4 <c' f' a' >2 <d' g' b' >4 |
   % 20
-  << { <g d' g' >4 <g g' >2 <c' g' b' >4 } \\ { d'4 c'4 } >> |
+  << { <g d' g' >4 <g g' >2 <c' g' b' >4 } \\ { s4 d'4 c'4 } >> |
   <c' g' a' >4 <c' f' a' >2 <a d' f' >4 |
   <d' e' g' >4 <c' e' g' >2 <b e' g' >8 c'8 |
   <f a c' d' >2 <g b g' >2 |
@@ -288,7 +288,7 @@ part-Pfive-two = {
     }
     {
       <g, e >4 <g, e >2 <g, e >4 |
-      <g, d >4 <g, d >2 <gis, e b >4 |
+      <g, d >4 <g, d >2 <gis, e>4 |
     }
   }
 
@@ -300,7 +300,7 @@ part-Pfive-two = {
   <g, e >4 <g, e >2 <g, e >4 |
   <g, f >2 <f, d >4 <f, d >4 |
   % 20
-  << { <e, b, >4 b,4 c4 <e, c g >4 } \\ { e,2 } >> |
+  << { <e, b, >4 b,4 c4 <e, c>4 } \\ { s4 e,2 } >> |
   <f, f >4 <f, f >2 <f, d >4 |
   <g, g >4 <g, g >2 <g, g >4 |
   <g, d >2 <g, f >2 |
