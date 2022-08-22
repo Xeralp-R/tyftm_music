@@ -7,7 +7,7 @@ part-Pone-one = {
   \key d \major
   \time 2/4
   \clef treble
-  \tempo "Andante con moto" 4 = 65
+  \tempo "Andante con moto" 4 = 72
 
   \override DynamicLineSpanner.direction = #UP
 
@@ -56,7 +56,7 @@ part-Ptwo-one = {
   \key d \major
   \time 2/4
   \clef treble
-  \tempo "Andante con moto" 4 = 65
+  \tempo "Andante con moto" 4 = 72
 
   \override DynamicLineSpanner.direction = #UP
 
@@ -93,7 +93,7 @@ part-Pthree-one = {
   \key d \major
   \time 2/4
   \clef "treble_8"
-  \tempo "Andante con moto" 4 = 65
+  \tempo "Andante con moto" 4 = 72
 
   \override DynamicLineSpanner.direction = #UP
 
@@ -130,7 +130,7 @@ part-Pfour-one = {
   \key d \major
   \time 2/4
   \clef bass
-  \tempo "Andante con moto" 4 = 65
+  \tempo "Andante con moto" 4 = 72
 
   \override DynamicLineSpanner.direction = #UP
 
@@ -167,7 +167,7 @@ part-Pfive-one = {
   \key d \major
   \time 2/4
   \clef treble
-  \tempo "Andante con moto" 4 = 65
+  \tempo "Andante con moto" 4 = 72
 
   <d' fis' a' >2 |
   <cis' e' a' >2 |
