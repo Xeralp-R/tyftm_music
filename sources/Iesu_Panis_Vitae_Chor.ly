@@ -429,7 +429,7 @@ iesu_panis_vitae_header = \header {
 
 iesu_panis_vitae_chor =  {
   <<
-    \tag #'(full_chorus solo cantor)
+    \tag #'(full_chorus solo soprano)
     \new Staff \with {
       instrumentName = "Soprano Solo"
       shortInstrumentName = "S-solo"
