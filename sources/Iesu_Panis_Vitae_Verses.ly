@@ -1,4 +1,5 @@
 \version "2.22.1"
+\include "../Global.ily"
 
 verse_one = {
   \key d \major
@@ -294,7 +295,9 @@ iesu_panis_vitae_verse_one = {
       shortInstrumentName = "S-solo"
     } <<
       \new Voice = "sop_solo" {
-        \verse_one \bar "||" \mark "To Chor."
+        \mark "Verse One" 
+        \verse_one 
+        \bar "||" \mark "To Chor."
       }
       \new Lyrics \lyricsto "sop_solo" \verse_one_lyr
     >>
@@ -309,8 +312,16 @@ iesu_panis_vitae_verse_one = {
       \mergeDifferentlyHeadedOn
     }
     <<
-      \new Staff = "1" { \piano_rh \bar "||" \mark "To Chor." }
-      \new Staff = "2" { \piano_lh \bar "||" \mark "To Chor." }
+      \new Staff = "1" { 
+        \mark "Verse One" 
+        \piano_rh 
+        \bar "||" \mark "To Chor." 
+      }
+      \new Staff = "2" { 
+        \mark "Verse One"
+        \piano_lh 
+        \bar "||" \mark "To Chor." 
+      }
     >>
   >>
 }
@@ -323,7 +334,11 @@ iesu_panis_vitae_verse_two = {
       instrumentName = "Soprano Solo"
       shortInstrumentName = "S-solo"
     } <<
-      \new Voice = "sop_solo" { \verse_two \bar "||" \mark "To Chor." }
+      \new Voice = "sop_solo" { 
+        \mark "Verse Two"
+        \verse_two 
+        \bar "||" \mark "To Chor." 
+      }
       \new Lyrics \lyricsto "sop_solo" \verse_two_lyr
     >>
 
@@ -337,8 +352,16 @@ iesu_panis_vitae_verse_two = {
       \mergeDifferentlyHeadedOn
     }
     <<
-      \new Staff = "1" { \piano_rh \bar "||" \mark "To Chor." }
-      \new Staff = "2" { \piano_lh \bar "||" \mark "To Chor." }
+      \new Staff = "1" { 
+        \mark "Verse Two"
+        \piano_rh \bar "||" 
+        \mark "To Chor." 
+      }
+      \new Staff = "2" { 
+        \mark "Verse Two"
+        \piano_lh 
+        \bar "||"  \mark "To Chor." 
+      }
     >>
   >>
 }
@@ -351,7 +374,11 @@ iesu_panis_vitae_verse_three = {
       instrumentName = "Soprano Solo"
       shortInstrumentName = "S-solo"
     } <<
-      \new Voice = "sop_solo" { \verse_three \bar "||" \mark "To Chor." }
+      \new Voice = "sop_solo" { 
+        \mark "Verse Three"
+        \verse_three 
+        \bar "||" \mark "To Chor." 
+      }
       \new Lyrics \lyricsto "sop_solo" \verse_three_lyr
     >>
 
@@ -365,8 +392,16 @@ iesu_panis_vitae_verse_three = {
       \mergeDifferentlyHeadedOn
     }
     <<
-      \new Staff = "1" { \piano_rh \bar "||" \mark "To Chor." }
-      \new Staff = "2" { \piano_lh \bar "||" \mark "To Chor." }
+      \new Staff = "1" { 
+        \mark "Verse Three"
+        \piano_rh 
+        \bar "||" \mark "To Chor." 
+      }
+      \new Staff = "2" { 
+        \mark "Verse Three"
+        \piano_lh 
+        \bar "||" \mark "To Chor." 
+      }
     >>
   >>
 }
@@ -379,7 +414,11 @@ iesu_panis_vitae_verse_four = {
       instrumentName = "Soprano Solo"
       shortInstrumentName = "S-solo"
     } <<
-      \new Voice = "sop_solo" { \verse_four \bar "||" \mark "To Chor." }
+      \new Voice = "sop_solo" { 
+        \mark "Verse Four"
+        \verse_four 
+        \bar "||" \mark "To Chor." 
+      }
       \new Lyrics \lyricsto "sop_solo" \verse_four_lyr
     >>
 
@@ -393,8 +432,16 @@ iesu_panis_vitae_verse_four = {
       \mergeDifferentlyHeadedOn
     }
     <<
-      \new Staff = "1" { \piano_rh \bar "||" \mark "To Chor." }
-      \new Staff = "2" { \piano_lh \bar "||" \mark "To Chor." }
+      \new Staff = "1" { 
+        \mark "Verse Four"
+        \piano_rh 
+        \bar "||" \mark "To Chor." 
+      }
+      \new Staff = "2" { 
+        \mark "Verse Four"
+        \piano_lh 
+        \bar "||" \mark "To Chor." 
+      }
     >>
   >>
 }
@@ -407,7 +454,11 @@ iesu_panis_vitae_verse_five = {
       instrumentName = "Soprano Solo"
       shortInstrumentName = "S-solo"
     } <<
-      \new Voice = "sop_solo" { \verse_five \bar "||" \mark "To Chor." }
+      \new Voice = "sop_solo" { 
+        \mark "Verse Five"
+        \verse_five 
+        \bar "||" \mark "To Chor." 
+      }
       \new Lyrics \lyricsto "sop_solo" \verse_five_lyr
     >>
 
@@ -421,8 +472,16 @@ iesu_panis_vitae_verse_five = {
       \mergeDifferentlyHeadedOn
     }
     <<
-      \new Staff = "1" { \piano_rh \bar "||" \mark "To Chor." }
-      \new Staff = "2" { \piano_lh \bar "||" \mark "To Chor." }
+      \new Staff = "1" { 
+        \mark "Verse Five"
+        \piano_rh 
+        \bar "||" \mark "To Chor." 
+      }
+      \new Staff = "2" { 
+        \mark "Verse Five"
+        \piano_lh 
+        \bar "||" \mark "To Chor." 
+      }
     >>
   >>
 }
@@ -435,7 +494,11 @@ iesu_panis_vitae_verse_six = {
       instrumentName = "Soprano Solo"
       shortInstrumentName = "S-solo"
     } <<
-      \new Voice = "sop_solo" { \verse_six \bar "||" \mark "To Coda" }
+      \new Voice = "sop_solo" { 
+        \mark "Verse Six"
+        \verse_six 
+        \bar "||" \mark "To Coda" 
+      }
       \new Lyrics \lyricsto "sop_solo" \verse_six_lyr
     >>
 
@@ -449,8 +512,16 @@ iesu_panis_vitae_verse_six = {
       \mergeDifferentlyHeadedOn
     }
     <<
-      \new Staff = "1" { \piano_rh \bar "||" \mark "To Coda" }
-      \new Staff = "2" { \piano_lh \bar "||" \mark "To Coda" }
+      \new Staff = "1" { 
+        \mark "Verse Six"
+        \piano_rh 
+        \bar "||" \mark "To Coda" 
+      }
+      \new Staff = "2" { 
+        \mark "Verse Six"
+        \piano_lh 
+        \bar "||" \mark "To Coda" 
+      }
     >>
   >>
 }

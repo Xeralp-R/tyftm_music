@@ -19,6 +19,9 @@
 \include "./sources/Lamb_of_God.ly"
 \include "./sources/Kordero_ng_Diyos_Cayabyab.ly"
 \include "./sources/Anima_Christi.ly"
+\include "./sources/Iesu_Panis_Vitae_Chor.ly"
+\include "./sources/Iesu_Panis_Vitae_Verses.ly"
+\include "./sources/Iesu_Panis_Vitae_Coda.ly"
 
 \include "./sources/Humayo't_Ihayag.ly"
 
@@ -424,7 +427,7 @@ tocGroup =
 
   \bookpart {
     \tocGroup eucharist.communion \markup { "Communion" }
-    \tocItem eucharist.agnus.lamb \markup { "Anima Christi" }
+    \tocItem eucharist.communion.anima \markup { "Anima Christi" }
 
     \header {
       \anima_christi_header
@@ -433,6 +436,38 @@ tocGroup =
       \anima_christi
       \layout {}
       %  \midi {\tempo 4 = 84 }
+    }
+  }
+
+  \bookpart {
+    \tocItem eucharist.communion.iesu \markup { "Iesu Panis Vitae" }
+
+    \header {
+      \iesu_panis_vitae_header
+    }
+    \score {
+      \iesu_panis_vitae_chor
+    }
+    \score {
+      \iesu_panis_vitae_verse_one
+    }
+    \score {
+      \iesu_panis_vitae_verse_two
+    }
+    \score {
+      \iesu_panis_vitae_verse_three
+    }
+    \score {
+      \iesu_panis_vitae_verse_four
+    }
+    \score {
+      \iesu_panis_vitae_verse_five
+    }
+    \score {
+      \iesu_panis_vitae_verse_six
+    }
+    \score {
+      \iesu_panis_vitae_coda
     }
   }
 
