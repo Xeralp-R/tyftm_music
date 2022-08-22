@@ -4,6 +4,7 @@
 
 \include "./sources/Come_to_the_Table.ly"
 \include "./sources/Kyrie_Eleison.ly"
+\include "./sources/Kyrie_Eleison_Papal.ly"
 \include "./sources/Glory_to_God.ly"
 \include "./sources/Alleluia-simplified.ly"
 \include "./sources/Alleluia-elaborated.ly"
@@ -185,6 +186,25 @@ tocGroup =
   }
 
   \bookpart {
+    \tocItem eucharist.agnus.lamb \markup { "Kyrie Eleison (Papal Mass)" }
+
+    \markup {
+      \null \footnote \null \left-column {
+        "N.B. The symbol, °, has been used to indicate 'niente', or 'nothing'"
+        "When placed at the end of the hairpins, it indicates a dynamic that seems to emerge from / recess to nothing."
+      }
+    }
+    \header {
+      \kyrie_eleison_papal_header
+    }
+    \score {
+      \kyrie_eleison_papal
+
+      \layout {}
+    }
+  }
+
+  \bookpart {
     \tocGroup intro.gloria \markup { "Gloria" }
     \tocItem intro.gloria.glory_to_god \markup { "Glory to God" }
     \header {
@@ -290,6 +310,12 @@ tocGroup =
     \tocGroup eucharist.sanctus \markup { "Sanctus" }
     \tocItem eucharist.sanctus.holy \markup { "Holy, Holy, Holy" }
 
+    \markup {
+      \null \footnote \null \left-column {
+        "N.B. The piano part for the entire eucharistic prayer (consisting of the Sanctus, the Mystery of Faith,"
+        " and the Great Amen) may be replaced with a church organ in performance."
+      }
+    }
     \header {
       \holy_holy_holy_header
     }
@@ -298,17 +324,17 @@ tocGroup =
       \layout {}
       %  \midi {\tempo 4 = 132 }
     }
-    \markup {
-      \null \footnote \null \left-column {
-        "N.B. The piano part for the entire eucharistic prayer (consisting of the Sanctus, the Mystery of Faith,"
-        " and the Great Amen) may be replaced with a church organ in performance."
-      }
-    }
   }
 
   \bookpart {
     \tocItem eucharist.sanctus.holy_lead-in \markup { "Holy, Holy, Holy (alternative lead-in)" }
 
+    \markup {
+      \null \footnote \null \left-column {
+        "N.B. This is the lead-in provided by Bukas Palad to the previous piece, Holy, Holy, Holy, for keyboard."
+        "It has been replaced to retain the triptych nature of the eucharistic prayer."
+      }
+    }
     \header {
       \holy_holy_holy_lead-in_header
     }
@@ -316,12 +342,6 @@ tocGroup =
       \holy_holy_holy_lead-in
       \layout {}
       %  \midi {\tempo 4 = 132 }
-    }
-    \markup {
-      \null \footnote \null \left-column {
-        "N.B. This is the lead-in provided by Bukas Palad to the previous piece, Holy, Holy, Holy, for keyboard."
-        "It has been replaced to retain the triptych nature of the eucharistic prayer."
-      }
     }
   }
 
