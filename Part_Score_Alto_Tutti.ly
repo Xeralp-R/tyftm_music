@@ -29,7 +29,7 @@
 \book {
   \header {
     tagline = ##f
-    part = "Soprano (Tutti)"
+    part = "Alto (Tutti)"
   }
 
   \paper {
@@ -67,7 +67,7 @@
         \vspace #2
 
         \fill-line \huge \larger \larger {
-          "Soprano (Tutti) Part Score"
+          "Alto (Tutti) Part Score"
         }
       }
     }
@@ -77,15 +77,15 @@
   \bookpart { \markuplist \table-of-contents }
 
   \bookpart {
-    \tocSection sop_tutti \markup { "Soprano (Tutti) Part Score" }
-    \tocGroup sop_tutti.intro \markup { "Introductory Rite" }
-    \tocItem sop_tutti.intro.come \markup { "Come to the Table" }
+    \tocSection alt_tutti \markup { "Alto (Tutti) Part Score" }
+    \tocGroup alt_tutti.intro \markup { "Introductory Rite" }
+    \tocItem alt_tutti.intro.come \markup { "Come to the Table" }
 
     \header {
       \come_to_the_table_header
     }
     \score {
-      \keepWithTag #'(soprano) \keepWithTag #'(tutti) \come_to_the_table
+      \keepWithTag #'(alto) \keepWithTag #'(tutti) \come_to_the_table
 
       \layout {}
       %\midi { \tempo 4 = 168 }
@@ -93,7 +93,7 @@
   }
 
   \bookpart {
-    \tocItem sop_tutti.intro.papal \markup { "Kyrie Eleison, Papal Mass" }
+    \tocItem alt_tutti.intro.papal \markup { "Kyrie Eleison, Papal Mass" }
 
     \header {
       \kyrie_eleison_papal_header
@@ -105,7 +105,7 @@
       }
     }
     \score {
-      \keepWithTag #'(soprano) \keepWithTag #'(tutti) \kyrie_eleison_papal
+      \keepWithTag #'(alto) \keepWithTag #'(tutti) \kyrie_eleison_papal
 
       \layout {}
       %\midi { \tempo 4 = 68 }
@@ -113,13 +113,13 @@
   }
 
   \bookpart {
-    \tocItem sop_tutti.intro.glory \markup { "Glory to God" }
+    \tocItem alt_tutti.intro.glory \markup { "Glory to God" }
 
     \header {
       \glory_to_god_header
     }
     \score {
-      \keepWithTag #'(soprano) \keepWithTag #'(tutti) \glory_to_god
+      \keepWithTag #'(alto) \keepWithTag #'(tutti) \glory_to_god
 
       \layout {}
       %\midi { \tempo 4 = 184 }
@@ -127,14 +127,14 @@
   }
 
   \bookpart {
-    \tocGroup sop_tutti.word \markup { "Liturgy of the Word" }
-    \tocItem sop_tutti.word.alleluia \markup { "Alleluia (Simplified)" }
+    \tocGroup alt_tutti.word \markup { "Liturgy of the Word" }
+    \tocItem alt_tutti.word.alleluia \markup { "Alleluia (Simplified)" }
 
     \header {
       \alleluia-simplified_header
     }
     \score {
-      \keepWithTag #'(soprano) \keepWithTag #'(tutti) \alleluia-simplified
+      \keepWithTag #'(alto) \keepWithTag #'(tutti) \alleluia-simplified
 
       \layout {}
       %  \midi {\tempo 4 = 100 }
@@ -142,14 +142,14 @@
   }
 
   \bookpart {
-    \tocGroup sop_tutti.eucharist \markup { "Liturgy of the Eucharist" }
-    \tocItem sop_tutti.eucharist.christify \markup { "Christify" }
+    \tocGroup alt_tutti.eucharist \markup { "Liturgy of the Eucharist" }
+    \tocItem alt_tutti.eucharist.christify \markup { "Christify" }
 
     \header {
       \christify_header
     }
     \score {
-      \keepWithTag #'(soprano) \keepWithTag #'(tutti) \christify
+      \keepWithTag #'(alto) \keepWithTag #'(tutti) \christify
 
       \layout {}
       %  \midi {\tempo 4 = 100 }
@@ -157,13 +157,13 @@
   }
 
   \bookpart {
-    \tocItem sop_tutti.eucharist.holy \markup { "Holy, Holy, Holy" }
+    \tocItem alt_tutti.eucharist.holy \markup { "Holy, Holy, Holy" }
 
     \header {
       \holy_holy_holy_header
     }
     \score {
-      \keepWithTag #'(soprano) \keepWithTag #'(tutti) \holy_holy_holy
+      \keepWithTag #'(alto) \keepWithTag #'(tutti) \holy_holy_holy
 
       \layout {}
       %  \midi {\tempo 4 = 132 }
@@ -171,13 +171,13 @@
   }
 
   \bookpart {
-    \tocItem sop_tutti.eucharist.when \markup { "When We Eat This Bread" }
+    \tocItem alt_tutti.eucharist.when \markup { "When We Eat This Bread" }
 
     \header {
       \when_we_eat_this_bread_header
     }
     \score {
-      \keepWithTag #'(soprano) \keepWithTag #'(tutti) \when_we_eat_this_bread
+      \keepWithTag #'(alto) \keepWithTag #'(tutti) \when_we_eat_this_bread
 
       \layout {}
       %  \midi {\tempo 4 = 60 }
@@ -185,13 +185,13 @@
   }
 
   \bookpart {
-    \tocItem sop_tutti.eucharist.amen \markup { "Great Amen, WYD" }
+    \tocItem alt_tutti.eucharist.amen \markup { "Great Amen, WYD" }
 
     \header {
       \amen_wyd_header
     }
     \score {
-      \keepWithTag #'(soprano) \keepWithTag #'(tutti) \amen_wyd
+      \keepWithTag #'(alto) \keepWithTag #'(tutti) \amen_wyd
 
       \layout {}
       %  \midi {\tempo 4 = 92 }
@@ -199,37 +199,37 @@
   }
 
   \bookpart {
-    \tocItem sop_tutti.eucharist.ama_simple \markup { "Ama Namin (Simplified)" }
+    \tocItem alt_tutti.eucharist.ama_simple \markup { "Ama Namin (Simplified)" }
 
     \header {
       \ama_namin-simplified_header
     }
     \score {
-      \keepWithTag #'(soprano) \keepWithTag #'(tutti) \ama_namin-simplified
+      \keepWithTag #'(alto) \keepWithTag #'(tutti) \ama_namin-simplified
       \layout {}
     }
   }
 
   \bookpart {
-    \tocItem sop_tutti.eucharist.sapagkat \markup { "Sapagkat sa 'Yo ang Kaharian" }
+    \tocItem alt_tutti.eucharist.sapagkat \markup { "Sapagkat sa 'Yo ang Kaharian" }
 
     \header {
       \sapagkat-simplified_header
     }
     \score {
-      \keepWithTag #'(soprano) \keepWithTag #'(tutti) \sapagkat-simplified
+      \keepWithTag #'(alto) \keepWithTag #'(tutti) \sapagkat-simplified
       \layout {}
     }
   }
 
   \bookpart {
-    \tocItem sop_tutti.eucharist.kordero_cayabyab \markup { "Kordero ng Diyos (Cayabyab)" }
+    \tocItem alt_tutti.eucharist.kordero_cayabyab \markup { "Kordero ng Diyos (Cayabyab)" }
 
     \header {
       \kordero_ng_diyos_cayabyab_header
     }
     \score {
-      \keepWithTag #'(soprano) \keepWithTag #'(tutti) \kordero_ng_diyos_cayabyab
+      \keepWithTag #'(alto) \keepWithTag #'(tutti) \kordero_ng_diyos_cayabyab
 
       \layout {}
       %  \midi {}
@@ -237,13 +237,13 @@
   }
 
   \bookpart {
-    \tocItem sop_tutti.eucharist.iesu \markup { "Iesu Panis Vitae" }
+    \tocItem alt_tutti.eucharist.iesu \markup { "Iesu Panis Vitae" }
 
     \header {
       \iesu_panis_vitae_header
     }
     \score {
-      \keepWithTag #'(soprano) \keepWithTag #'(tutti) \iesu_panis_vitae_chor
+      \keepWithTag #'(alto) \keepWithTag #'(tutti) \iesu_panis_vitae_chor
     }
     \markup {
       \fill-line \italic {
@@ -251,19 +251,19 @@
       }
     }
     \score {
-      \keepWithTag #'(soprano) \keepWithTag #'(tutti) \iesu_panis_vitae_coda
+      \keepWithTag #'(alto) \keepWithTag #'(tutti) \iesu_panis_vitae_coda
     }
   }
 
   \bookpart {
-    \tocGroup sop_tutti.conc \markup { "Concluding Rite" }
-    \tocItem sop_tutti.conc.humayot \markup { "Humayo't Ihayag" }
+    \tocGroup alt_tutti.conc \markup { "Concluding Rite" }
+    \tocItem alt_tutti.conc.humayot \markup { "Humayo't Ihayag" }
 
     \header {
       \humayot_ihayag_header
     }
     \score {
-      \keepWithTag #'(soprano) \keepWithTag #'(tutti) \humayot_ihayag
+      \keepWithTag #'(alto) \keepWithTag #'(tutti) \humayot_ihayag
 
       \layout {}
     }
