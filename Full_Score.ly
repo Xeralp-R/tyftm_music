@@ -91,35 +91,7 @@
   }
 
   \bookpart { \blank_page }
-
-  % table of incipits
-  \bookpart {
-    \paper {
-      tocFormatMarkup = #markup %% Cancelling the default bold setting.
-      tocSectionMarkup = \markup \large \column {
-        \hspace #1
-        \fill-line { \null \italic \fromproperty #'toc:text \null }
-        \hspace #1
-      }
-      tocGroupMarkup = \markup \column {
-        \line {
-          \hspace #-4 %% Cancelling the first level's tocIndentMarkup
-          \fromproperty #'toc:indent \fromproperty #'toc:text
-          \hspace #2
-        }
-      }
-      tocItemMarkup = \markup \fill-line {
-        \fill-with-pattern #1.5 #CENTER .
-        \line {
-          \hspace #-4 %% Cancelling the first level's tocIndentMarkup
-          \fromproperty #'toc:indent \fromproperty #'toc:text
-          \hspace #2
-        }
-        \fromproperty #'toc:page
-      }
-    }
-    \markuplist \table-of-contents
-  }
+  \bookpart { \markuplist \table-of-contents }
 
   \bookpart { \blank_page }
 
