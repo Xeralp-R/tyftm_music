@@ -41,7 +41,7 @@ soprano_solo = {
     a2.
     r4 fis4 e4 |
     fis4 fis2~ |
-    fis2. |
+    fis2.~ |
     fis2. |
     e4 fis g |
 
@@ -122,7 +122,7 @@ bass_solo = {
     a2.
     r4 fis4 e4 |
     fis4 fis2~ |
-    fis2. |
+    fis2.~ |
     fis2. |
     e4 fis g |
 
