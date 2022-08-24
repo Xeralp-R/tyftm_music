@@ -50,7 +50,7 @@
         \vspace #2
 
         \fill-line \huge \larger \larger {
-          "Bravura Arranger's Committee"
+          "Bravura Arrangers' Committee"
         }
 
         \vspace #2
@@ -88,6 +88,12 @@
 
     \header {
       \kyrie_eleison_papal_header
+    }
+    \markup {
+      \null \footnote \null \left-column {
+        "N.B. The symbol, °, has been used to indicate 'niente', or 'nothing'"
+        "At the end of the hairpins, it indicates an emergence from / recession to nothing."
+      }
     }
     \score {
       \keepWithTag #'(piano) \kyrie_eleison_papal

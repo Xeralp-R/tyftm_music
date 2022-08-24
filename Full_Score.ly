@@ -158,7 +158,7 @@
     \markup {
       \null \footnote \null \left-column {
         "N.B. The symbol, °, has been used to indicate 'niente', or 'nothing'"
-        "When placed at the end of the hairpins, it indicates a dynamic that seems to emerge from / recess to nothing."
+        "At the end of the hairpins, it indicates an emergence from / recession to nothing."
       }
     }
     \header {
