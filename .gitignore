@@ -3,6 +3,7 @@
 !*.ly
 !*.ily
 !sources/
+!scores/
 
 !.gitignore
 

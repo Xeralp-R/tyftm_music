@@ -153,12 +153,6 @@
     \header {
       \holy_holy_holy_header
     }
-    \markup {
-      \null \footnote \null \left-column {
-        "N.B. The f_chor part for the entire eucharistic prayer (consisting of the Sanctus, the Mystery of Faith,"
-        " and the Great Amen) may be replaced with a church organ in performance."
-      }
-    }
     \score {
       \keepWithTag #'(full_chorus) \holy_holy_holy
 
