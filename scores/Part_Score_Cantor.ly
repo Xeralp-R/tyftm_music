@@ -1,10 +1,10 @@
 \version "2.22.1"
-\include "./Global.ily"
-\include "./Part_Score.ily"
+\include "../Global.ily"
+\include "../Part_Score.ily"
 
-\include "./sources/Kyrie_Eleison_Papal.ly"
-\include "./sources/Glory_to_God.ly"
-\include "./sources/Alleluia-simplified.ly"
+\include "../sources/Kyrie_Eleison_Papal.ly"
+\include "../sources/Glory_to_God.ly"
+\include "../sources/Alleluia-simplified.ly"
 
 \pointAndClickOff
 

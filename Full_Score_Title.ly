@@ -1,6 +1,6 @@
 \version "2.22.1"
-\include "./Global.ily"
-\include "./Full_Score.ily"
+\include "../Global.ily"
+\include "../Full_Score.ily"
 
 \pointAndClickOff
 

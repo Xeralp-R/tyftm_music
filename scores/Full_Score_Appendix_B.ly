@@ -1,11 +1,11 @@
 \version "2.22.1"
-\include "./Global.ily"
-\include "./Full_Score.ily"
+\include "../Global.ily"
+\include "../Full_Score.ily"
 
-\include "./sources/Kyrie_Eleison.ly"
-\include "./sources/Ama_Namin-elaborated.ly"
-\include "./sources/Alleluia-elaborated.ly"
-\include "./sources/Lamb_of_God.ly"
+\include "../sources/Kyrie_Eleison.ly"
+\include "../sources/Ama_Namin-elaborated.ly"
+\include "../sources/Alleluia-elaborated.ly"
+\include "../sources/Lamb_of_God.ly"
 
 \book {
   \header {
