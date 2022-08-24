@@ -60,12 +60,12 @@
   oddHeaderMarkup = \markup {
     \fill-line {
       {
-        \on-the-fly \not-part-first-page
-        \fromproperty #'header:title
+        \on-the-fly \print-page-number-check-first
+        \fromproperty #'header:part
       }
       {
         \on-the-fly \not-part-first-page
-        \fromproperty #'header:part_type
+        \fromproperty #'header:title
       }
       {
         \on-the-fly \print-page-number-check-first
@@ -81,13 +81,36 @@
       }
       {
         \on-the-fly \not-part-first-page
-        \fromproperty #'header:part_type
-      }
-      {
-        \on-the-fly \not-part-first-page
         \fromproperty #'header:title
       }
+      {
+        \on-the-fly \print-page-number-check-first
+        \fromproperty #'header:part
+      }
     }
+  }
+
+  tocFormatMarkup = #markup %% Cancelling the default bold setting.
+  tocSectionMarkup = \markup \large \column {
+    \hspace #1
+    \fill-line { \null \italic \fromproperty #'toc:text \null }
+    \hspace #1
+  }
+  tocGroupMarkup = \markup \column {
+    \line {
+      \hspace #-4 %% Cancelling the first level's tocIndentMarkup
+      \fromproperty #'toc:indent \fromproperty #'toc:text
+      \hspace #2
+    }
+  }
+  tocItemMarkup = \markup \fill-line {
+    \fill-with-pattern #1.5 #CENTER .
+    \line {
+      \hspace #-4 %% Cancelling the first level's tocIndentMarkup
+      \fromproperty #'toc:indent \fromproperty #'toc:text
+      \hspace #2
+    }
+    \fromproperty #'toc:page
   }
 }
 
