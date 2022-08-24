@@ -10,10 +10,8 @@
 \include "./sources/Christify.ly"
 \include "./sources/When_We_Eat_This_Bread.ly"
 \include "./sources/Holy,_Holy,_Holy.ly"
-\include "./sources/Holy,_Holy,_Holy_Lead-in.ly"
 \include "./sources/Amen_WYD.ly"
 \include "./sources/Ama_Namin-simplified.ly"
-\include "./sources/Sapagkat-simplified_Lead-in.ly"
 \include "./sources/Sapagkat-simplified.ly"
 \include "./sources/Kordero_ng_Diyos_Cayabyab.ly"
 \include "./sources/Anima_Christi.ly"
@@ -22,6 +20,9 @@
 \include "./sources/Iesu_Panis_Vitae_Coda.ly"
 
 \include "./sources/Humayo't_Ihayag.ly"
+
+\include "./sources/Holy,_Holy,_Holy_Lead-in.ly"
+\include "./sources/Sapagkat-simplified_Lead-in.ly"
 
 \pointAndClickOff
 
