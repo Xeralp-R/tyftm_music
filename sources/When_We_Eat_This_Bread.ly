@@ -26,7 +26,7 @@ part-Pone-one = {
   \tuplet 3/2 { d''8( e''8 d''8 } \tuplet 3/2 { c''8 d''8) c''8 } |
   b'8 r8^\markup { \italic "G.P." } g'8 b'8 |
   e'4. e'8 |
-  fis'4. g'8 |
+  fis'4. fis'8 |
   g'2~ |
   % 15
   g'2 \fermata | \bar "|."
@@ -86,7 +86,7 @@ part-Pthree-one = {
   c'8( b8 a8) g8 |
   b8 r8^\markup { \italic "G.P." } b8 a8 |
   g4. g8 |
-  fis4. b8 |
+  fis4. a8 |
   c'4( a4 |
   % 15
   b2) \fermata | \bar "|."
