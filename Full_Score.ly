@@ -3,11 +3,9 @@
 \include "./Full_Score.ily"
 
 \include "./sources/Come_to_the_Table.ly"
-\include "./sources/Kyrie_Eleison.ly"
 \include "./sources/Kyrie_Eleison_Papal.ly"
 \include "./sources/Glory_to_God.ly"
 \include "./sources/Alleluia-simplified.ly"
-\include "./sources/Alleluia-elaborated.ly"
 
 \include "./sources/Christify.ly"
 \include "./sources/When_We_Eat_This_Bread.ly"
@@ -17,7 +15,6 @@
 \include "./sources/Ama_Namin-simplified.ly"
 \include "./sources/Sapagkat-simplified_Lead-in.ly"
 \include "./sources/Sapagkat-simplified.ly"
-\include "./sources/Lamb_of_God.ly"
 \include "./sources/Kordero_ng_Diyos_Cayabyab.ly"
 \include "./sources/Anima_Christi.ly"
 \include "./sources/Iesu_Panis_Vitae_Chor.ly"
@@ -27,14 +24,6 @@
 \include "./sources/Humayo't_Ihayag.ly"
 
 \pointAndClickOff
-
-tocSection =
-#(define-music-function (label text) (symbol-list-or-symbol? markup?)
-   (add-toc-item! 'tocSectionMarkup text label))
-
-tocGroup =
-#(define-music-function (label text) (symbol-list-or-symbol? markup?)
-   (add-toc-item! 'tocGroupMarkup text label))
 
 \book {
   \header {
@@ -63,12 +52,12 @@ tocGroup =
           }
         }
 
-        \vspace #10
+        \vspace #8
 
         \center-column \huge \larger \larger {
           \fill-line {
             \bold \fontsize #3
-            "Bravura Arrangers' Committee, Summer of 2022"
+            "Bravura Arrangers' Committee"
           }
           \vspace #2
           "Rex Alphonse Reventar"
@@ -78,6 +67,24 @@ tocGroup =
           "Mico Javier"
           \vspace #0.5
           "Sir Anthony Ryan Cruz"
+        }
+
+        \vspace #4
+
+        \fill-line \huge \larger \larger {
+          \center-column {
+            "First Revision"
+            \vspace #0.5
+            "End of Summer 2022"
+          }
+        }
+
+        \vspace #4
+        
+        \fill-line \huge \larger \larger {
+          \center-column {
+            "Full Score"
+          }
         }
       }
     }
@@ -173,20 +180,8 @@ tocGroup =
   }
 
   \bookpart {
-    \tocGroup intro.penitential \markup { "Penitential Act" }
-    \tocItem intro.penitential.kyrie \markup { "Kyrie Eleison" }
-    \header {
-      \kyrie_eleison_header
-    }
-    \score {
-      \kyrie_eleison
-      \layout {}
-      %\midi { \tempo 4 = 68 }
-    }
-  }
-
-  \bookpart {
-    \tocItem eucharist.agnus.lamb \markup { "Kyrie Eleison (Papal Mass)" }
+    \tocGroup intro.processional \markup { "Kyrie Eleison" }
+    \tocItem intro.penitential.papal \markup { "Papal Mass" }
 
     \markup {
       \null \footnote \null \left-column {
@@ -201,6 +196,7 @@ tocGroup =
       \kyrie_eleison_papal
 
       \layout {}
+      % \midi {}
     }
   }
 
@@ -250,18 +246,6 @@ tocGroup =
     }
     \score {
       \alleluia-simplified
-      \layout {}
-      %  \midi {\tempo 4 = 100 }
-    }
-  }
-
-  \bookpart {
-    \tocItem word.alleluia.elaborated \markup { "Elaborated Form" }
-    \header {
-      \alleluia-elaborated_header
-    }
-    \score {
-      \alleluia-elaborated
       \layout {}
       %  \midi {\tempo 4 = 100 }
     }
@@ -327,25 +311,6 @@ tocGroup =
   }
 
   \bookpart {
-    \tocItem eucharist.sanctus.holy_lead-in \markup { "Holy, Holy, Holy (alternative lead-in)" }
-
-    \markup {
-      \null \footnote \null \left-column {
-        "N.B. This is the lead-in provided by Bukas Palad to the previous piece, Holy, Holy, Holy, for keyboard."
-        "It has been replaced to retain the triptych nature of the eucharistic prayer."
-      }
-    }
-    \header {
-      \holy_holy_holy_lead-in_header
-    }
-    \score {
-      \holy_holy_holy_lead-in
-      \layout {}
-      %  \midi {\tempo 4 = 132 }
-    }
-  }
-
-  \bookpart {
     \tocGroup eucharist.mystery \markup { "The Mystery of Faith" }
     \tocItem eucharist.mystery.when \markup { "When We Eat This Bread" }
 
@@ -394,18 +359,6 @@ tocGroup =
   }
 
   \bookpart {
-    \tocItem eucharist.lords.lead-in \markup { "Lead-in" }
-
-    \header {
-      \sapagkat-simplified_lead-in_header
-    }
-    \score {
-      \sapagkat-simplified_lead-in
-      \layout {}
-    }
-  }
-
-  \bookpart {
     \tocItem eucharist.lords.sapagkat \markup { "Sapagkat sa 'Yo ang Kaharian" }
 
     \header {
@@ -417,22 +370,8 @@ tocGroup =
     }
   }
 
-
   \bookpart {
     \tocGroup eucharist.agnus \markup { "Agnus Dei" }
-    \tocItem eucharist.agnus.lamb \markup { "Lamb of God" }
-
-    \header {
-      \lamb_of_god_header
-    }
-    \score {
-      \lamb_of_god
-      \layout {}
-      %  \midi {\tempo 4 = 84 }
-    }
-  }
-
-  \bookpart {
     \tocItem eucharist.agnus.kordero_cayabyab \markup { "Kordero ng Diyos (Cayabyab)" }
 
     \header {
@@ -492,6 +431,7 @@ tocGroup =
   }
 
   \bookpart { \blank_page }
+  \bookpart { \blank_page }
 
   \bookpart {
     \paper {
@@ -524,6 +464,67 @@ tocGroup =
     }
     \score {
       \humayot_ihayag
+      \layout {}
+    }
+  }
+
+  \bookpart { \blank_page }
+
+  \bookpart {
+    \paper {
+      print-page-number = ##f
+    }
+
+    \markup {
+      \center-column {
+        \vspace #15
+
+        \fill-line {
+          \huge \larger \larger
+          \fontsize #4 \bold
+          \center-column {
+            "Appendix A"
+          }
+        }
+
+        \vspace #5
+
+        \italic \center-column {
+          "Various alternative lead-ins and cadenzas."
+        }
+      }
+    }
+
+    \tocSection appendix_a \markup { "Appendix A. Lead-ins and Cadenzas" }
+  }
+
+  \bookpart {
+    \tocItem appendix_a.holy_lead-in \markup { "Holy, Holy, Holy (alternative lead-in)" }
+
+    \markup {
+      \null \footnote \null \left-column {
+        "N.B. This is the lead-in provided by Bukas Palad to the previous piece, Holy, Holy, Holy, for keyboard."
+        "It has been replaced to retain the triptych nature of the eucharistic prayer."
+      }
+    }
+    \header {
+      \holy_holy_holy_lead-in_header
+    }
+    \score {
+      \holy_holy_holy_lead-in
+      \layout {}
+      %  \midi {\tempo 4 = 132 }
+    }
+  }
+
+  \bookpart {
+    \tocItem appendix_a.sapagkat_lead-in \markup { "Sapagkat (alternative lead-in)" }
+
+    \header {
+      \sapagkat-simplified_lead-in_header
+    }
+    \score {
+      \sapagkat-simplified_lead-in
       \layout {}
     }
   }

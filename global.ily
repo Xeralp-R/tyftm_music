@@ -66,3 +66,11 @@ blank_page = \bookpart {
     }
   }
 }
+
+tocSection =
+#(define-music-function (label text) (symbol-list-or-symbol? markup?)
+   (add-toc-item! 'tocSectionMarkup text label))
+
+tocGroup =
+#(define-music-function (label text) (symbol-list-or-symbol? markup?)
+   (add-toc-item! 'tocGroupMarkup text label))
