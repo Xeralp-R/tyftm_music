@@ -532,7 +532,7 @@ alleluia-elaborated = {
           \new Voice = "PartPEightVoiceOne" { \part-Ponezero-one }
         >>
 
-        \tag #'(accompaniment tutti contrabass)
+        \tag #'(accompaniment tutti cbass)
         \new Staff \with {
           instrumentName = "Contrabass"
           shortInstrumentName = "Cb."

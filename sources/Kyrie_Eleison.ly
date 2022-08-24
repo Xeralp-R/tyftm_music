@@ -601,7 +601,7 @@ kyrie_eleison = {
         \new Lyrics \lyricsto "tenor" { \PartPTwoVoiceOneLyricsOne }
       >>
 
-      \tag #'(full_chorus chorus tutti bass)
+      \tag #'(accompaniment tutti cello cbass)
       \new Staff \with {
         instrumentName = "Bass"
         shortInstrumentName = "B."

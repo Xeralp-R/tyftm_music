@@ -2,8 +2,10 @@
 
 !*.ly
 !*.ily
+!*.sh
 !sources/
 !scores/
+!exports/
 
 !.gitignore
 

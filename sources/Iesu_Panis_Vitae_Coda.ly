@@ -54,7 +54,7 @@ sop_solo_lyr = \lyricmode {
   ci -- bus et po -- tus nos -- ter,
   in i -- ti -- ne -- re,
   in i -- ti -- ne -- re,
-  ad do -- mus Dei.
+  ad do -- mus De -- i.
 
   (ooh)
 }
@@ -90,10 +90,10 @@ part-Pone-one = {
   g'2 |
   % 20
   fis'8( e'8) d'8 e'8 |
-  e'2( |
-  e'2) |
-  e'2( |
-  dis'2) |
+  e'2 |
+  e'2 |
+  e'2 |
+  dis'2 |
   % 25
 
   \bar "||" \key e \major
@@ -139,7 +139,7 @@ chor_lyr =  \lyricmode {
   ci -- bus et po -- tus nos -- ter,
   in i -- ti -- ne -- re,
   in i -- ti -- ne -- re,
-  ad do -- mus Dei. Dei!
+  ad do -- mus De -- i. De -- i!
 
   Ie -- su, pa -- nis vi -- tae,
   do -- num pa -- tris.
@@ -149,9 +149,7 @@ chor_lyr =  \lyricmode {
   ci -- bus et po -- tus nos -- ter,
   in i -- ti -- ne -- re,
   in i -- ti -- ne -- re,
-  ad do -- mus Dei.
-
-  (ooh)
+  ad do -- mus De -- i.
 }
 
 part-Ptwo-one = {
@@ -256,10 +254,10 @@ part-Pthree-one = {
   b2 |
   % 20
   b4 b8 g8 |
-  b2( |
-  a2) |
-  b2( |
-  b2) |
+  b2 |
+  a2 |
+  b2 |
+  b2 |
   % 25
 
   \bar "||" \key e \major
@@ -327,10 +325,10 @@ part-Pfour-one = {
   e2 |
   % 20
   d4 d8 b,8 |
-  a,2( |
-  a,2) |
-  e2( |
-  fis2) |
+  a,2 |
+  a,2 |
+  e2 |
+  fis2 |
   % 25
   
   \bar "||" \key e \major
@@ -627,7 +625,7 @@ iesu_panis_vitae_coda =  {
       >>
 
       \tag #'(full_chorus tutti chorus bass)
-      \tag #'(full_chorus chorus tutti bass)
+      \tag #'(accompaniment tutti cello cbass)
       \new Staff \with {
         instrumentName = \markup \right-column  {
           "Bass"

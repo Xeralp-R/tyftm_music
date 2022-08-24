@@ -53,7 +53,7 @@ sop_solo_lyr = \lyricmode {
   ci -- bus et po -- tus nos -- ter,
   in i -- ti -- ne -- re,
   in i -- ti -- ne -- re,
-  ad do -- mus Dei.
+  ad do -- mus De -- i.
 }
 
 part-Pone-one = {
@@ -105,7 +105,7 @@ chor_lyr =  \lyricmode {
   ci -- bus et po -- tus nos -- ter,
   in i -- ti -- ne -- re,
   in i -- ti -- ne -- re,
-  ad do -- mus Dei.
+  ad do -- mus De -- i.
 }
 
 part-Ptwo-one = {
@@ -487,7 +487,7 @@ iesu_panis_vitae_chor =  {
       >>
 
       \tag #'(full_chorus tutti chorus bass)
-      \tag #'(full_chorus chorus tutti bass)
+      \tag #'(accompaniment tutti cello cbass)
       \new Staff \with {
         instrumentName = \markup \right-column  {
           "Bass"

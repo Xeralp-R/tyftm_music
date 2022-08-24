@@ -362,7 +362,7 @@ kordero_ng_diyos_cayabyab = {
       >>
 
       \tag #'(full_chorus tutti chorus bass)
-      \tag #'(full_chorus chorus tutti bass)
+      \tag #'(accompaniment tutti cello cbass)
       \new Staff \with {
         instrumentName = \markup \right-column  {
           "Bass"

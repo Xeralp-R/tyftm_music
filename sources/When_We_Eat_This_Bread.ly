@@ -305,7 +305,7 @@ when_we_eat_this_bread = {
       >>
 
       \tag #'(accompaniment tutti cello cbass)
-      \tag #'(full_chorus chorus tutti bass)
+      \tag #'(accompaniment tutti cello cbass)
       \new Staff \with {
         instrumentName = \markup \right-column  {
           "Bass"
