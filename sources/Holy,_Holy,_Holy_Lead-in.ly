@@ -1,5 +1,5 @@
 \version "2.22.1"
-\include "../Global.ily"
+\include "../styles/Global.ily"
 
 voices = {
   \key g \major

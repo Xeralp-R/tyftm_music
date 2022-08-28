@@ -1,6 +1,6 @@
 % Automatically generated from a musicxml file.
 \version "2.22.1"
-\include "../Global.ily"
+\include "../styles/Global.ily"
 
 part-Pone-one = {
   \key c \major

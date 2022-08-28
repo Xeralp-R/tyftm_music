@@ -1,6 +1,6 @@
 \version "2.22.1"
-\include "../Global.ily"
-\include "../Full_Score.ily"
+\include "../styles/Global.ily"
+\include "../styles/Full_Score.ily"
 
 \include "../sources/Kyrie_Eleison.ly"
 \include "../sources/Ama_Namin-elaborated.ly"

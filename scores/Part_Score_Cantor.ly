@@ -1,6 +1,6 @@
 \version "2.22.1"
-\include "../Global.ily"
-\include "../Part_Score.ily"
+\include "../styles/Global.ily"
+\include "../styles/Part_Score.ily"
 
 \include "../sources/Kyrie_Eleison_Papal.ly"
 \include "../sources/Glory_to_God.ly"

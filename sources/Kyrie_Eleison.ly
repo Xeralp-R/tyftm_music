@@ -1,6 +1,6 @@
 % automatically converted by musicxml2ly from Kyrie_Eleison.musicxml
 \version "2.22.1"
-\include "../Global.ily"
+\include "../styles/Global.ily"
 
 PartPOneVoiceOne =  {
   \clef "treble"

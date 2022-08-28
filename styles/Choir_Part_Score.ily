@@ -1,7 +1,7 @@
 \version "2.22.1"
 
-#(set-global-staff-size 20)
-#(set-default-paper-size "a4")
+#(set-global-staff-size 17.82)
+#(set-default-paper-size "a5")
 
 \paper {
   %system-system-spacing = #'((basic-distance . 0.1) (padding . 0))
@@ -13,7 +13,7 @@
   ragged-bottom = ##f
   tocItemMarkup = \tocItemWithDotsMarkup
 
-  #(ly:font-config-add-directory "../Fonts")
+  #(ly:font-config-add-directory "../../Fonts")
   #(define fonts
      (set-global-fonts
       #:roman "Cardo"
