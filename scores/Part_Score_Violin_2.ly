@@ -1,6 +1,6 @@
 \version "2.22.1"
 \include "../styles/Global.ily"
-\include "../styles/Part_Score.ily"
+\include "../styles/Instrument_Part_Score.ily"
 
 \include "../sources/Come_to_the_Table.ly"
 \include "../sources/Kyrie_Eleison_Papal.ly"

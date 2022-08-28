@@ -1905,7 +1905,7 @@ glory_to_god = {
         \new Lyrics \lyricsto "tenor" { \chor_alt_lyr }
       >>
 
-      \tag #'(accompaniment tutti cello cbass)
+      \tag #'(full_chorus chorus tutti bass)
       \new Staff \with {
         instrumentName = "Bass"
         shortInstrumentName = "B."

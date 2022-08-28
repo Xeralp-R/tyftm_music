@@ -1,6 +1,6 @@
 \version "2.22.1"
 \include "../styles/Global.ily"
-\include "../styles/Part_Score.ily"
+\include "../styles/Choir_Part_Score.ily"
 
 \include "../sources/Come_to_the_Table.ly"
 \include "../sources/Kyrie_Eleison_Papal.ly"
@@ -24,19 +24,10 @@
 
 \pointAndClickOff
 
-#(set-default-paper-size "a5")
-
 \book {
   \header {
     tagline = ##f
     part = "Bass (Solo)"
-  }
-
-  \paper {
-    top-margin = 10\mm
-    bottom-margin = 10\mm
-    left-margin = 15\mm
-    right-margin = 15\mm
   }
 
   \bookpart {
