@@ -5,7 +5,7 @@
 !*.sh
 !sources/
 !scores/
-!exports/
+!build/
 
 !.gitignore
 
