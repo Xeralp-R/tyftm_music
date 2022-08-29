@@ -208,8 +208,10 @@
     \markup {
       \null \footnote \null \left-column {
         "N.B. This piece may be continued in two ways:"
-        "1. After the conclusion of the Ama Namin, a single eigth-note rest is taken, and then the choir moves on to the doxology."
-        "2. The priest will recite the embolism before the doxology, as outlined in the alternate lead-in."
+        "1. After the conclusion of the Ama Namin, take a single eighth-note rest,"
+        "and move on to the doxology; or,"
+        "2. Have the priest recite the embolism before the doxology, " 
+        "as outlined in the alternate lead-in."
       }
     }
   }
