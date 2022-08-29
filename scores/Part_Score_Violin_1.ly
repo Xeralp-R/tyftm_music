@@ -193,37 +193,35 @@
   }
 
   \bookpart {
-    \tocItem vln_i.eucharist.ama_simple \markup { "Ama Namin (Simplified) (Tacet)" }
+    \tocItem vln_i.eucharist.ama_simple \markup { "Ama Namin (Simplified)" }
 
     \header {
       \ama_namin-simplified_header
     }
-    \markup {
-      \vspace #8
+    \score {
+      \keepWithTag #'(violin_i) \ama_namin-simplified
 
-      \fill-line {
-        "Tacet"
-      }
+      \layout {}
+      %  \midi {}
     }
   }
 
   \bookpart {
-    \tocItem vln_i.eucharist.sapagkat \markup { "Sapagkat sa 'Yo ang Kaharian (Tacet)" }
+    \tocItem vln_i.eucharist.sapagkat \markup { "Sapagkat sa 'Yo ang Kaharian" }
 
     \header {
       \sapagkat-simplified_header
     }
-    \markup {
-      \vspace #8
+    \score {
+      \keepWithTag #'(violin_i) \sapagkat-simplified
 
-      \fill-line {
-        "Tacet"
-      }
+      \layout {}
+      %  \midi {}
     }
   }
 
   \bookpart {
-    \tocItem vln_i.eucharist.kordero_cayabyab \markup { "Kordero ng Diyos (Cayabyab) (doubling soprano)" }
+    \tocItem vln_i.eucharist.kordero_cayabyab \markup { "Kordero ng Diyos (Cayabyab)" }
 
     \header {
       \kordero_ng_diyos_cayabyab_header
@@ -252,7 +250,13 @@
   }
 
   \bookpart {
-    \tocItem vln_i.eucharist.iesu \markup { "Iesu Panis Vitae (doubling soprano)" }
+    \tocItem vln_i.eucharist.iesu \markup { "Iesu Panis Vitae" }
+
+    \markup {
+      \null \footnote \null \left-column {
+        "N.B. All bowing marks are suggestions by the composer."
+      }
+    }
 
     \header {
       \iesu_panis_vitae_header
@@ -260,10 +264,23 @@
     \score {
       \keepWithTag #'(violin_i) \iesu_panis_vitae_chor
     }
-    \markup {
-      \fill-line \italic {
-        "Tacet all verses"
-      }
+    \score {
+      \keepWithTag #'(violin_i) \iesu_panis_vitae_verse_one
+    }
+    \score {
+      \keepWithTag #'(violin_i) \iesu_panis_vitae_verse_two
+    }
+    \score {
+      \keepWithTag #'(violin_i) \iesu_panis_vitae_verse_three
+    }
+    \score {
+      \keepWithTag #'(violin_i) \iesu_panis_vitae_verse_four
+    }
+    \score {
+      \keepWithTag #'(violin_i) \iesu_panis_vitae_verse_five
+    }
+    \score {
+      \keepWithTag #'(violin_i) \iesu_panis_vitae_verse_six
     }
     \score {
       \keepWithTag #'(violin_i) \iesu_panis_vitae_coda

@@ -3,29 +3,6 @@
 \include "../styles/Instrument_Part_Score.ily"
 
 \include "../sources/Come_to_the_Table.ly"
-\include "../sources/Kyrie_Eleison.ly"
-\include "../sources/Glory_to_God.ly"
-\include "../sources/Alleluia-simplified.ly"
-\include "../sources/Alleluia-elaborated.ly"
-
-\include "../sources/Christify.ly"
-\include "../sources/When_We_Eat_This_Bread.ly"
-\include "../sources/Holy,_Holy,_Holy.ly"
-\include "../sources/Amen_WYD.ly"
-\include "../sources/Ama_Namin-simplified.ly"
-\include "../sources/Ama_Namin-elaborated.ly"
-\include "../sources/Lamb_of_God.ly"
-\include "../sources/Anima_Christi.ly"
-
-\include "../sources/Humayo't_Ihayag.ly"
-
-\pointAndClickOff
-
-\version "2.22.1"
-\include "../styles/Global.ily"
-\include "../styles/Part_Score.ily"
-
-\include "../sources/Come_to_the_Table.ly"
 \include "../sources/Kyrie_Eleison_Papal.ly"
 \include "../sources/Glory_to_God.ly"
 \include "../sources/Alleluia-simplified.ly"
@@ -216,37 +193,35 @@
   }
 
   \bookpart {
-    \tocItem vla.eucharist.ama_simple \markup { "Ama Namin (Simplified) (Tacet)" }
+    \tocItem vla.eucharist.ama_simple \markup { "Ama Namin (Simplified)" }
 
     \header {
       \ama_namin-simplified_header
     }
-    \markup {
-      \vspace #8
+    \score {
+      \keepWithTag #'(viola) \ama_namin-simplified
 
-      \fill-line {
-        "Tacet"
-      }
+      \layout {}
+      %  \midi {}
     }
   }
 
   \bookpart {
-    \tocItem vla.eucharist.sapagkat \markup { "Sapagkat sa 'Yo ang Kaharian (Tacet)" }
+    \tocItem vla.eucharist.sapagkat \markup { "Sapagkat sa 'Yo ang Kaharian" }
 
     \header {
       \sapagkat-simplified_header
     }
-    \markup {
-      \vspace #8
+    \score {
+      \keepWithTag #'(viola) \sapagkat-simplified
 
-      \fill-line {
-        "Tacet"
-      }
+      \layout {}
+      %  \midi {}
     }
   }
 
   \bookpart {
-    \tocItem vla.eucharist.kordero_cayabyab \markup { "Kordero ng Diyos (Cayabyab) (doubling tenor)" }
+    \tocItem vla.eucharist.kordero_cayabyab \markup { "Kordero ng Diyos (Cayabyab)" }
 
     \header {
       \kordero_ng_diyos_cayabyab_header
@@ -275,7 +250,13 @@
   }
 
   \bookpart {
-    \tocItem vla.eucharist.iesu \markup { "Iesu Panis Vitae (doubling tenor)" }
+    \tocItem vla.eucharist.iesu \markup { "Iesu Panis Vitae" }
+
+    \markup {
+      \null \footnote \null \left-column {
+        "N.B. All bowing marks are suggestions by the composer."
+      }
+    }
 
     \header {
       \iesu_panis_vitae_header
@@ -283,10 +264,23 @@
     \score {
       \keepWithTag #'(viola) \iesu_panis_vitae_chor
     }
-    \markup {
-      \fill-line \italic {
-        "Tacet all verses"
-      }
+    \score {
+      \keepWithTag #'(viola) \iesu_panis_vitae_verse_one
+    }
+    \score {
+      \keepWithTag #'(viola) \iesu_panis_vitae_verse_two
+    }
+    \score {
+      \keepWithTag #'(viola) \iesu_panis_vitae_verse_three
+    }
+    \score {
+      \keepWithTag #'(viola) \iesu_panis_vitae_verse_four
+    }
+    \score {
+      \keepWithTag #'(viola) \iesu_panis_vitae_verse_five
+    }
+    \score {
+      \keepWithTag #'(viola) \iesu_panis_vitae_verse_six
     }
     \score {
       \keepWithTag #'(viola) \iesu_panis_vitae_coda

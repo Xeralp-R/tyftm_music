@@ -376,6 +376,12 @@
   \bookpart {
     \tocItem eucharist.communion.iesu \markup { "Iesu Panis Vitae" }
 
+    \markup {
+      \null \footnote \null \left-column {
+        "N.B. All bowing marks are suggestions by the composer."
+      }
+    }
+
     \header {
       \iesu_panis_vitae_header
     }
@@ -405,7 +411,6 @@
     }
   }
 
-  \bookpart { \blank_page }
   \bookpart { \blank_page }
 
   \bookpart {
