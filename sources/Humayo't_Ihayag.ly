@@ -25,7 +25,7 @@ part-Pone-one = {
     % 10
     e'4 r8 e'8 gis'8 b'8 gis'8 b'8~ |
     b'2~ b'8 a'8 gis'8 fis'8~ |
-    fis'8-\markup { \italic "second note only 2da volta" } e'8 r4 gis'8 b'8
+    fis'8-\markup { "second note only 2da volta" } e'8 r4 gis'8 b'8
     gis'8 b'8~ |
     b'8 b'4. b'8 a'8 gis'8 fis'8~ |
     fis'8 e'4 r8 gis'8 b'8 gis'8 b'8~ |
@@ -137,7 +137,7 @@ part-Ptwo-one = {
     % 10
     e4 r8 e8 gis8 b8 gis8 b8~ |
     b2~ b8 a8 gis8 fis8~ |
-    fis8-\markup { \italic "second note only 2da volta" } e8 r4 gis8 b8 gis8
+    fis8-\markup { "second note only 2da volta" } e8 r4 gis8 b8 gis8
     b8~ |
     b8 b4. b8 a8 gis8 fis8~ |
     fis8 e4 r8 gis8 b8 gis8 b8~ |
@@ -245,7 +245,7 @@ part-Pthree-one = {
     gis'4 r8 r8 r2 |
     r4 gis'4 a'8 a'4 gis'8~ |
     gis'4 r8 r8 r2 |
-    gis'4.^\markup { \dynamic "p" \italic "play second time only" } fis'8~ fis'4. e'8~ |
+    gis'4.^\markup { \dynamic "p" "play second time only" } fis'8~ fis'4. e'8~ |
     % 10
     e'1 |
     gis'2.. cis''8~ |
@@ -255,7 +255,7 @@ part-Pthree-one = {
     % 15
     b'8 b'4.~ b'2 |
     R1 |
-    cis'8^\markup {\italic "play second time only" } e'8 cis'8 b8~ b8 e'8 b8
+    cis'8^\markup { "play second time only" } e'8 cis'8 b8~ b8 e'8 b8
     a8~ |
     a8 e'8 e'8 gis'8~ gis'8 fis'8 e'8 e'8~ |
     e'8 r8 gis'4\f a'8 a'4 gis'8~ |
@@ -402,7 +402,7 @@ part-Pfour-one = {
     e'4 r8 r8 r2 |
     r4 e'4 fis'8 fis'4 e'8~ |
     e'4 r8 r8 r2 |
-    e'4.^\markup {\dynamic "p" \italic "play second time only" } cis'8~ cis'4. cis'8~ |
+    e'4.^\markup {\dynamic "p" "play second time only" } cis'8~ cis'4. cis'8~ |
     % 10
     cis'1 |
     e'2.. e'8~ |
@@ -412,7 +412,7 @@ part-Pfour-one = {
     % 15
     b'8 b'4.~ b'2 |
     R1 |
-    cis'8^\markup {\italic "play second time only" } e'8 cis'8 b8~ b8 e'8 b8
+    cis'8^\markup {"play second time only" } e'8 cis'8 b8~ b8 e'8 b8
     a8~ |
     a8 e'8 e'8 gis'8~ gis'8 fis'8 e'8 e'8~ |
     e'8 r8 e'4\f fis'8 fis'4 e'8~ |
@@ -510,7 +510,7 @@ part-Pfive-one = {
     b4 r8 r8 r2 |
     r4 b4 cis'8 cis'4 b8~ |
     b4 r8 r8 r2 |
-    b4.^\markup {\dynamic "p" \italic "play second time only" } b8~ b4. gis8~ |
+    b4.^\markup {\dynamic "p" "play second time only" } b8~ b4. gis8~ |
     % 10
     gis1 |
     cis'2.. cis'8~ |
@@ -520,7 +520,7 @@ part-Pfive-one = {
     % 15
     b8 b4.~ b2 |
     R1 |
-    cis8^\markup {\italic "play second time only" } e8 cis8 b,8~ b,8 e8 b,8
+    cis8^\markup {"play second time only" } e8 cis8 b,8~ b,8 e8 b,8
     a,8~ |
     a,8 e8 e8 gis8~ gis8 fis8 e8 e8~ |
     e8 r8 b4\f cis'8 cis'4 b8~ |
@@ -617,7 +617,7 @@ part-Psix-one = {
     e4 r8 r8 r2 |
     r4 e4 e8 e4 e8~ |
     e4 r8 r8 r2 |
-    e4.^\markup {\dynamic "p" \italic "play second time only" } dis8~ dis4. cis8~( |
+    e4.^\markup {\dynamic "p" "play second time only" } dis8~ dis4. cis8~( |
     % 10
     cis2 b,2) |
     a2.. b8~ |
@@ -627,7 +627,7 @@ part-Psix-one = {
     % 15
     b8 b4.~ b2 |
     R1 |
-    cis8^\markup { \italic "play second time only" } e8 cis8 b,8~ b,8 e8 b,8
+    cis8^\markup { "play second time only" } e8 cis8 b,8~ b,8 e8 b,8
     a,8~ |
     a,8 e8 e8 gis8~ gis8 fis8 e8 e8~ |
     e8 r8 e4\f e8 e4 e8~ |
@@ -788,7 +788,7 @@ part-Peight-one = {
   <<
     \context Voice = "voiceone" {
       \voiceOne
-      cis''8\arpeggio\f-\markup { \italic "arpeggios like grace notes" }
+      cis''8\arpeggio\f-\markup { "arpeggios like grace notes" }
       e''8 cis''8 b'8~\arpeggio b'8 e''8 cis''16 b'16 a'8~\arpeggio |
       a'8 e''8 e''8 gis''8~\arpeggio gis''8 b''8 gis''16 fis''16 e''8 |
       e''4\arpeggio gis''4 a''8 a''4 gis''8 |
