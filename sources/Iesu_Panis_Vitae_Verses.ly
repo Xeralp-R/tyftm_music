@@ -286,6 +286,151 @@ piano_lh = {
   <a, a >2 |
 }
 
+part-Peight-one = {
+  \key d \major
+  \time 2/4
+  \clef treble
+
+  \partial 8
+  r8 |
+  d''4(\mp\upbow a'4) |
+  fis'4( a'4) |
+  b'4( d''4) |
+  % 5
+  e''8 d''8 d''8 d''16( cis''16) |
+  b'4( d''4) |
+  a'4( d''4) |
+  e''4\downbow e''4->\downbow |
+  e''2\upbow |
+  % 10
+  R2 |
+  R2 |
+  R2 |
+  R2 |
+  d''2\downbow |
+  % 15
+  d''2 |
+  b'2 |
+  e''2~ |
+  e''2 |
+}
+
+part-Pnine-one = {
+  \key d \major
+  \time 2/4
+  \clef treble
+
+  \partial 8
+  r8 |
+  R2 |
+  R2 |
+  R2 |
+  % 5
+  R2 |
+  g'4(\downbow b'4) |
+  fis'4( a'4) |
+  g'2 |
+  a'2\mp |
+  % 10
+  R2 |
+  R2 |
+  ais'2\downbow |
+  b'2 |
+  b'2 |
+  % 15
+  a'2 |
+  g'2 |
+  a'2~ |
+  a'2 |
+}
+
+part-Ponezero-one = {
+  \key d \major
+  \time 2/4
+  \clef alto
+
+  \partial 8
+  r8 |
+  fis'4^\markup { "pizz." }\mp a'4 |
+  fis'4 a'4 |
+  d'4 fis'4 |
+  % 5
+  d'4 fis'4 |
+  b4 d'4 |
+  a4 d'4 |
+  g4 b4 |
+  a4 r4 |
+  % 10
+  ais2^\markup { "arco" }\downbow |
+  b2 |
+  ais2 |
+  b2 |
+  b2 |
+  % 15
+  a2 |
+  g2 |
+  d2 |
+  cis2 |
+}
+
+part-Poneone-one = {
+  \key d \major
+  \time 2/4
+  \clef bass
+
+  \partial 8
+  r8 |
+  d4^\markup { "pizz." }\mp a4 |
+  d4 a4 |
+  b,4 fis4 |
+  % 5
+  b,4 fis4 |
+  g,4 d4 |
+  a,4 d4 |
+  b,4 e4 |
+  e4 r4 |
+  % 10
+  cis2^\markup { "arco" }\downbow |
+  d2 |
+  cis2 |
+  d2 |
+  g2 |
+  % 15
+  fis2 |
+  e2 |
+  d2 |
+  cis2 |
+}
+
+part-Ponetwo-one = {
+  \key d \major
+  \time 2/4
+  \clef bass
+
+  \partial 8
+  r8 |
+  d4^\markup { "pizz." }\mp a4 |
+  d4 a4 |
+  b,4 fis4 |
+  % 5
+  b,4 fis4 |
+  g,4 d4 |
+  a,4 d4 |
+  b,4 e4 |
+  e4 r4 |
+  % 10
+  cis2^\markup { "arco" }\downbow |
+  d2 |
+  cis2 |
+  d2 |
+  g2 |
+  % 15
+  fis2 |
+  e2 |
+  d2 |
+  cis2 |
+}
+
 iesu_panis_vitae_verse_one = {
   <<
     \tag #'(full_chorus solo soprano)
@@ -295,8 +440,8 @@ iesu_panis_vitae_verse_one = {
       shortInstrumentName = "S-solo"
     } <<
       \new Voice = "sop_solo" {
-        \mark "Verse One" 
-        \verse_one 
+        \mark "Verse One"
+        \verse_one
         \bar "||" \mark "To Chor."
       }
       \new Lyrics \lyricsto "sop_solo" \verse_one_lyr
@@ -312,16 +457,91 @@ iesu_panis_vitae_verse_one = {
       \mergeDifferentlyHeadedOn
     }
     <<
-      \new Staff = "1" { 
-        \mark "Verse One" 
-        \piano_rh 
-        \bar "||" \mark "To Chor." 
-      }
-      \new Staff = "2" { 
+      \new Staff = "1" {
         \mark "Verse One"
-        \piano_lh 
-        \bar "||" \mark "To Chor." 
+        \piano_rh
+        \bar "||" \mark "To Chor."
       }
+      \new Staff = "2" {
+        \mark "Verse One"
+        \piano_lh
+        \bar "||" \mark "To Chor."
+      }
+    >>
+
+    \new StaffGroup <<
+      \new StaffGroup \with {
+        systemStartDelimiter = #'SystemStartSquare
+        midiInstrument = "violin"
+      } <<
+
+        \tag #'(accompaniment tutti violins violin_i)
+        \new Staff \with {
+          instrumentName = "Violin 1"
+          shortInstrumentName = "Vl. 1"
+        } <<
+          \new Voice = "PartPFiveVoiceOne" {
+            \mark "Verse One"
+            \part-Peight-one
+            \bar "||" \mark "To Chor."
+          }
+        >>
+
+        \tag #'(accompaniment tutti violins violin_ii)
+        \new Staff \with {
+          instrumentName = "Violin 2"
+          shortInstrumentName = "Vl. 2"
+        } <<
+          \new Voice = "PartPSixVoiceOne" {
+            \mark "Verse One"
+            \part-Pnine-one
+            \bar "||" \mark "To Chor."
+          }
+        >>
+      >>
+
+      \tag #'(accompaniment tutti viola)
+      \new Staff \with {
+        instrumentName = "Viola"
+        shortInstrumentName = "Vla."
+        midiInstrument = "viola"
+      } <<
+        \new Voice = "PartPSevenVoiceOne" {
+          \mark "Verse One"
+          \part-Ponezero-one
+          \bar "||" \mark "To Chor."
+        }
+      >>
+
+      \new StaffGroup \with {
+        systemStartDelimiter = #'SystemStartSquare
+      } <<
+        \tag #'(accompaniment tutti cello)
+        \new Staff \with {
+          instrumentName = "Violoncello"
+          shortInstrumentName = "Vcl."
+          midiInstrument = "cello"
+        } <<
+          \new Voice = "PartPEightVoiceOne" {
+            \mark "Verse One"
+            \part-Poneone-one
+            \bar "||" \mark "To Chor."
+          }
+        >>
+
+        \tag #'(accompaniment tutti cbass)
+        \new Staff \with {
+          instrumentName = "Contrabass"
+          shortInstrumentName = "Cb."
+          midiInstrument = "contrabass"
+        } <<
+          \new Voice = "PartPNineVoiceOne" {
+            \mark "Verse One"
+            \part-Ponetwo-one
+            \bar "||" \mark "To Chor."
+          }
+        >>
+      >>
     >>
   >>
 }
@@ -334,10 +554,10 @@ iesu_panis_vitae_verse_two = {
       instrumentName = "Soprano Solo"
       shortInstrumentName = "S-solo"
     } <<
-      \new Voice = "sop_solo" { 
+      \new Voice = "sop_solo" {
         \mark "Verse Two"
-        \verse_two 
-        \bar "||" \mark "To Chor." 
+        \verse_two
+        \bar "||" \mark "To Chor."
       }
       \new Lyrics \lyricsto "sop_solo" \verse_two_lyr
     >>
@@ -352,16 +572,91 @@ iesu_panis_vitae_verse_two = {
       \mergeDifferentlyHeadedOn
     }
     <<
-      \new Staff = "1" { 
+      \new Staff = "1" {
         \mark "Verse Two"
-        \piano_rh \bar "||" 
-        \mark "To Chor." 
+        \piano_rh \bar "||"
+        \mark "To Chor."
       }
-      \new Staff = "2" { 
+      \new Staff = "2" {
         \mark "Verse Two"
-        \piano_lh 
-        \bar "||"  \mark "To Chor." 
+        \piano_lh
+        \bar "||"  \mark "To Chor."
       }
+    >>
+
+    \new StaffGroup <<
+      \new StaffGroup \with {
+        systemStartDelimiter = #'SystemStartSquare
+        midiInstrument = "violin"
+      } <<
+
+        \tag #'(accompaniment tutti violins violin_i)
+        \new Staff \with {
+          instrumentName = "Violin 1"
+          shortInstrumentName = "Vl. 1"
+        } <<
+          \new Voice = "PartPFiveVoiceOne" {
+            \mark "Verse Two"
+            \part-Peight-one
+            \bar "||" \mark "To Chor."
+          }
+        >>
+
+        \tag #'(accompaniment tutti violins violin_ii)
+        \new Staff \with {
+          instrumentName = "Violin 2"
+          shortInstrumentName = "Vl. 2"
+        } <<
+          \new Voice = "PartPSixVoiceOne" {
+            \mark "Verse Two"
+            \part-Pnine-one
+            \bar "||" \mark "To Chor."
+          }
+        >>
+      >>
+
+      \tag #'(accompaniment tutti viola)
+      \new Staff \with {
+        instrumentName = "Viola"
+        shortInstrumentName = "Vla."
+        midiInstrument = "viola"
+      } <<
+        \new Voice = "PartPSevenVoiceOne" {
+          \mark "Verse Two"
+          \part-Ponezero-one
+          \bar "||" \mark "To Chor."
+        }
+      >>
+
+      \new StaffGroup \with {
+        systemStartDelimiter = #'SystemStartSquare
+      } <<
+        \tag #'(accompaniment tutti cello)
+        \new Staff \with {
+          instrumentName = "Violoncello"
+          shortInstrumentName = "Vcl."
+          midiInstrument = "cello"
+        } <<
+          \new Voice = "PartPEightVoiceOne" {
+            \mark "Verse Two"
+            \part-Poneone-one
+            \bar "||" \mark "To Chor."
+          }
+        >>
+
+        \tag #'(accompaniment tutti cbass)
+        \new Staff \with {
+          instrumentName = "Contrabass"
+          shortInstrumentName = "Cb."
+          midiInstrument = "contrabass"
+        } <<
+          \new Voice = "PartPNineVoiceOne" {
+            \mark "Verse Two"
+            \part-Ponetwo-one
+            \bar "||" \mark "To Chor."
+          }
+        >>
+      >>
     >>
   >>
 }
@@ -374,10 +669,10 @@ iesu_panis_vitae_verse_three = {
       instrumentName = "Soprano Solo"
       shortInstrumentName = "S-solo"
     } <<
-      \new Voice = "sop_solo" { 
+      \new Voice = "sop_solo" {
         \mark "Verse Three"
-        \verse_three 
-        \bar "||" \mark "To Chor." 
+        \verse_three
+        \bar "||" \mark "To Chor."
       }
       \new Lyrics \lyricsto "sop_solo" \verse_three_lyr
     >>
@@ -392,16 +687,91 @@ iesu_panis_vitae_verse_three = {
       \mergeDifferentlyHeadedOn
     }
     <<
-      \new Staff = "1" { 
+      \new Staff = "1" {
         \mark "Verse Three"
-        \piano_rh 
-        \bar "||" \mark "To Chor." 
+        \piano_rh
+        \bar "||" \mark "To Chor."
       }
-      \new Staff = "2" { 
+      \new Staff = "2" {
         \mark "Verse Three"
-        \piano_lh 
-        \bar "||" \mark "To Chor." 
+        \piano_lh
+        \bar "||" \mark "To Chor."
       }
+    >>
+
+    \new StaffGroup <<
+      \new StaffGroup \with {
+        systemStartDelimiter = #'SystemStartSquare
+        midiInstrument = "violin"
+      } <<
+
+        \tag #'(accompaniment tutti violins violin_i)
+        \new Staff \with {
+          instrumentName = "Violin 1"
+          shortInstrumentName = "Vl. 1"
+        } <<
+          \new Voice = "PartPFiveVoiceOne" {
+            \mark "Verse Three"
+            \part-Peight-one
+            \bar "||" \mark "To Chor."
+          }
+        >>
+
+        \tag #'(accompaniment tutti violins violin_ii)
+        \new Staff \with {
+          instrumentName = "Violin 2"
+          shortInstrumentName = "Vl. 2"
+        } <<
+          \new Voice = "PartPSixVoiceOne" {
+            \mark "Verse Three"
+            \part-Pnine-one
+            \bar "||" \mark "To Chor."
+          }
+        >>
+      >>
+
+      \tag #'(accompaniment tutti viola)
+      \new Staff \with {
+        instrumentName = "Viola"
+        shortInstrumentName = "Vla."
+        midiInstrument = "viola"
+      } <<
+        \new Voice = "PartPSevenVoiceOne" {
+          \mark "Verse Three"
+          \part-Ponezero-one
+          \bar "||" \mark "To Chor."
+        }
+      >>
+
+      \new StaffGroup \with {
+        systemStartDelimiter = #'SystemStartSquare
+      } <<
+        \tag #'(accompaniment tutti cello)
+        \new Staff \with {
+          instrumentName = "Violoncello"
+          shortInstrumentName = "Vcl."
+          midiInstrument = "cello"
+        } <<
+          \new Voice = "PartPEightVoiceOne" {
+            \mark "Verse Three"
+            \part-Poneone-one
+            \bar "||" \mark "To Chor."
+          }
+        >>
+
+        \tag #'(accompaniment tutti cbass)
+        \new Staff \with {
+          instrumentName = "Contrabass"
+          shortInstrumentName = "Cb."
+          midiInstrument = "contrabass"
+        } <<
+          \new Voice = "PartPNineVoiceOne" {
+            \mark "Verse Three"
+            \part-Ponetwo-one
+            \bar "||" \mark "To Chor."
+          }
+        >>
+      >>
     >>
   >>
 }
@@ -414,10 +784,10 @@ iesu_panis_vitae_verse_four = {
       instrumentName = "Soprano Solo"
       shortInstrumentName = "S-solo"
     } <<
-      \new Voice = "sop_solo" { 
+      \new Voice = "sop_solo" {
         \mark "Verse Four"
-        \verse_four 
-        \bar "||" \mark "To Chor." 
+        \verse_four
+        \bar "||" \mark "To Chor."
       }
       \new Lyrics \lyricsto "sop_solo" \verse_four_lyr
     >>
@@ -432,16 +802,91 @@ iesu_panis_vitae_verse_four = {
       \mergeDifferentlyHeadedOn
     }
     <<
-      \new Staff = "1" { 
+      \new Staff = "1" {
         \mark "Verse Four"
-        \piano_rh 
-        \bar "||" \mark "To Chor." 
+        \piano_rh
+        \bar "||" \mark "To Chor."
       }
-      \new Staff = "2" { 
+      \new Staff = "2" {
         \mark "Verse Four"
-        \piano_lh 
-        \bar "||" \mark "To Chor." 
+        \piano_lh
+        \bar "||" \mark "To Chor."
       }
+    >>
+
+    \new StaffGroup <<
+      \new StaffGroup \with {
+        systemStartDelimiter = #'SystemStartSquare
+        midiInstrument = "violin"
+      } <<
+
+        \tag #'(accompaniment tutti violins violin_i)
+        \new Staff \with {
+          instrumentName = "Violin 1"
+          shortInstrumentName = "Vl. 1"
+        } <<
+          \new Voice = "PartPFiveVoiceOne" {
+            \mark "Verse Four"
+            \part-Peight-one
+            \bar "||" \mark "To Chor."
+          }
+        >>
+
+        \tag #'(accompaniment tutti violins violin_ii)
+        \new Staff \with {
+          instrumentName = "Violin 2"
+          shortInstrumentName = "Vl. 2"
+        } <<
+          \new Voice = "PartPSixVoiceOne" {
+            \mark "Verse Four"
+            \part-Pnine-one
+            \bar "||" \mark "To Chor."
+          }
+        >>
+      >>
+
+      \tag #'(accompaniment tutti viola)
+      \new Staff \with {
+        instrumentName = "Viola"
+        shortInstrumentName = "Vla."
+        midiInstrument = "viola"
+      } <<
+        \new Voice = "PartPSevenVoiceOne" {
+          \mark "Verse Four"
+          \part-Ponezero-one
+          \bar "||" \mark "To Chor."
+        }
+      >>
+
+      \new StaffGroup \with {
+        systemStartDelimiter = #'SystemStartSquare
+      } <<
+        \tag #'(accompaniment tutti cello)
+        \new Staff \with {
+          instrumentName = "Violoncello"
+          shortInstrumentName = "Vcl."
+          midiInstrument = "cello"
+        } <<
+          \new Voice = "PartPEightVoiceOne" {
+            \mark "Verse Four"
+            \part-Poneone-one
+            \bar "||" \mark "To Chor."
+          }
+        >>
+
+        \tag #'(accompaniment tutti cbass)
+        \new Staff \with {
+          instrumentName = "Contrabass"
+          shortInstrumentName = "Cb."
+          midiInstrument = "contrabass"
+        } <<
+          \new Voice = "PartPNineVoiceOne" {
+            \mark "Verse Four"
+            \part-Ponetwo-one
+            \bar "||" \mark "To Chor."
+          }
+        >>
+      >>
     >>
   >>
 }
@@ -454,10 +899,10 @@ iesu_panis_vitae_verse_five = {
       instrumentName = "Soprano Solo"
       shortInstrumentName = "S-solo"
     } <<
-      \new Voice = "sop_solo" { 
+      \new Voice = "sop_solo" {
         \mark "Verse Five"
-        \verse_five 
-        \bar "||" \mark "To Chor." 
+        \verse_five
+        \bar "||" \mark "To Chor."
       }
       \new Lyrics \lyricsto "sop_solo" \verse_five_lyr
     >>
@@ -472,16 +917,91 @@ iesu_panis_vitae_verse_five = {
       \mergeDifferentlyHeadedOn
     }
     <<
-      \new Staff = "1" { 
+      \new Staff = "1" {
         \mark "Verse Five"
-        \piano_rh 
-        \bar "||" \mark "To Chor." 
+        \piano_rh
+        \bar "||" \mark "To Chor."
       }
-      \new Staff = "2" { 
+      \new Staff = "2" {
         \mark "Verse Five"
-        \piano_lh 
-        \bar "||" \mark "To Chor." 
+        \piano_lh
+        \bar "||" \mark "To Chor."
       }
+    >>
+
+    \new StaffGroup <<
+      \new StaffGroup \with {
+        systemStartDelimiter = #'SystemStartSquare
+        midiInstrument = "violin"
+      } <<
+
+        \tag #'(accompaniment tutti violins violin_i)
+        \new Staff \with {
+          instrumentName = "Violin 1"
+          shortInstrumentName = "Vl. 1"
+        } <<
+          \new Voice = "PartPFiveVoiceOne" {
+            \mark "Verse Five"
+            \part-Peight-one
+            \bar "||" \mark "To Chor."
+          }
+        >>
+
+        \tag #'(accompaniment tutti violins violin_ii)
+        \new Staff \with {
+          instrumentName = "Violin 2"
+          shortInstrumentName = "Vl. 2"
+        } <<
+          \new Voice = "PartPSixVoiceOne" {
+            \mark "Verse Five"
+            \part-Pnine-one
+            \bar "||" \mark "To Chor."
+          }
+        >>
+      >>
+
+      \tag #'(accompaniment tutti viola)
+      \new Staff \with {
+        instrumentName = "Viola"
+        shortInstrumentName = "Vla."
+        midiInstrument = "viola"
+      } <<
+        \new Voice = "PartPSevenVoiceOne" {
+          \mark "Verse Five"
+          \part-Ponezero-one
+          \bar "||" \mark "To Chor."
+        }
+      >>
+
+      \new StaffGroup \with {
+        systemStartDelimiter = #'SystemStartSquare
+      } <<
+        \tag #'(accompaniment tutti cello)
+        \new Staff \with {
+          instrumentName = "Violoncello"
+          shortInstrumentName = "Vcl."
+          midiInstrument = "cello"
+        } <<
+          \new Voice = "PartPEightVoiceOne" {
+            \mark "Verse Five"
+            \part-Poneone-one
+            \bar "||" \mark "To Chor."
+          }
+        >>
+
+        \tag #'(accompaniment tutti cbass)
+        \new Staff \with {
+          instrumentName = "Contrabass"
+          shortInstrumentName = "Cb."
+          midiInstrument = "contrabass"
+        } <<
+          \new Voice = "PartPNineVoiceOne" {
+            \mark "Verse Five"
+            \part-Ponetwo-one
+            \bar "||" \mark "To Chor."
+          }
+        >>
+      >>
     >>
   >>
 }
@@ -494,10 +1014,10 @@ iesu_panis_vitae_verse_six = {
       instrumentName = "Soprano Solo"
       shortInstrumentName = "S-solo"
     } <<
-      \new Voice = "sop_solo" { 
+      \new Voice = "sop_solo" {
         \mark "Verse Six"
-        \verse_six 
-        \bar "||" \mark "To Coda" 
+        \verse_six
+        \bar "||" \mark "To Coda"
       }
       \new Lyrics \lyricsto "sop_solo" \verse_six_lyr
     >>
@@ -512,16 +1032,91 @@ iesu_panis_vitae_verse_six = {
       \mergeDifferentlyHeadedOn
     }
     <<
-      \new Staff = "1" { 
+      \new Staff = "1" {
         \mark "Verse Six"
-        \piano_rh 
-        \bar "||" \mark "To Coda" 
+        \piano_rh
+        \bar "||" \mark "To Coda"
       }
-      \new Staff = "2" { 
+      \new Staff = "2" {
         \mark "Verse Six"
-        \piano_lh 
-        \bar "||" \mark "To Coda" 
+        \piano_lh
+        \bar "||" \mark "To Coda"
       }
+    >>
+
+    \new StaffGroup <<
+      \new StaffGroup \with {
+        systemStartDelimiter = #'SystemStartSquare
+        midiInstrument = "violin"
+      } <<
+
+        \tag #'(accompaniment tutti violins violin_i)
+        \new Staff \with {
+          instrumentName = "Violin 1"
+          shortInstrumentName = "Vl. 1"
+        } <<
+          \new Voice = "PartPFiveVoiceOne" {
+            \mark "Verse Six"
+            \part-Peight-one
+            \bar "||" \mark "To Coda"
+          }
+        >>
+
+        \tag #'(accompaniment tutti violins violin_ii)
+        \new Staff \with {
+          instrumentName = "Violin 2"
+          shortInstrumentName = "Vl. 2"
+        } <<
+          \new Voice = "PartPSixVoiceOne" {
+            \mark "Verse Six"
+            \part-Pnine-one
+            \bar "||" \mark "To Coda"
+          }
+        >>
+      >>
+
+      \tag #'(accompaniment tutti viola)
+      \new Staff \with {
+        instrumentName = "Viola"
+        shortInstrumentName = "Vla."
+        midiInstrument = "viola"
+      } <<
+        \new Voice = "PartPSevenVoiceOne" {
+          \mark "Verse Six"
+          \part-Ponezero-one
+          \bar "||" \mark "To Coda"
+        }
+      >>
+
+      \new StaffGroup \with {
+        systemStartDelimiter = #'SystemStartSquare
+      } <<
+        \tag #'(accompaniment tutti cello)
+        \new Staff \with {
+          instrumentName = "Violoncello"
+          shortInstrumentName = "Vcl."
+          midiInstrument = "cello"
+        } <<
+          \new Voice = "PartPEightVoiceOne" {
+            \mark "Verse Six"
+            \part-Poneone-one
+            \bar "||" \mark "To Coda"
+          }
+        >>
+
+        \tag #'(accompaniment tutti cbass)
+        \new Staff \with {
+          instrumentName = "Contrabass"
+          shortInstrumentName = "Cb."
+          midiInstrument = "contrabass"
+        } <<
+          \new Voice = "PartPNineVoiceOne" {
+            \mark "Verse Six"
+            \part-Ponetwo-one
+            \bar "||" \mark "To Coda"
+          }
+        >>
+      >>
     >>
   >>
 }

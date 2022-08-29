@@ -234,7 +234,7 @@ part-Pfive-one = {
   \clef treble
   \tempo "Andante con moto" 4 = 72
 
-  cis''8 a'8 fis'8 a'8 |
+  cis''8\mp a'8 fis'8 a'8 |
   b'4 b'4 |
   a'8 d''8 a'8 fis'8 |
   g'4 g'4 |
@@ -243,7 +243,7 @@ part-Pfive-one = {
   e'2 |
   a''2 |
 
-  <d'' fis'' a'' >2 |
+  <d'' fis'' a'' >2\p |
   <cis'' e'' a'' >2 |
   << { <d'' fis'' a'' >4 <d'' fis'' b'' >4 } \\ { b'4 a'4 } >> |
   % 10
@@ -283,7 +283,7 @@ part-Pfive-one = {
     }
   >> \bar "||" \mark "Chor."
 
-  <d' fis' a' >2 |
+  <d' fis' a' >2\f |
   <cis' e' a' >2 |
   <d' fis' a' >4 <d' fis' b' >4 |
   <d' g' b' >2 |
@@ -317,7 +317,7 @@ part-Pfive-one = {
     }
     \context Voice = "voicetwo" {
       \voiceTwo
-      <e' a' >2~~ |
+      <e' a' >2~ |
       \partial 4.
       <e' a' >4.
     }
@@ -329,7 +329,7 @@ part-Pfive-two = {
   \time 2/4
   \clef bass
 
-  r2 |
+  R2 |
   <b, d fis b >2\arpeggio |
   <a, cis e a >2\arpeggio |
   <g, b, d g >2\arpeggio |
@@ -419,6 +419,218 @@ part-Pfive-two = {
   >> \bar "||" \mark "To Verses"
 }
 
+part-Pseven-one = {
+  \key d \major
+  \time 2/4
+  \clef treble
+  \tempo "Andante con moto" 4 = 72
+
+  R2*7 |
+
+  R2*23 \bar "||" \mark "Chor."
+
+  R2 |
+  R2 |
+  R2 |
+  R2 |
+  R2 |
+  % 35
+  R2 |
+  R2 |
+  cis''2~\f\downbow |
+  cis''2 |
+  a'2 |
+  % 40
+  a'4 b'4 |
+  g'2 |
+  g'4 e'4 |
+  r4. e'8\downbow |
+  fis'8(-\markup { \italic "cresc." } gis'8) ais'8( cis''8) |
+  % 45
+  d''4 b'4 |
+  cis''8 a'8 fis'8 a'8 |
+  d''2 |
+  a'8 d''8 a'8 fis'8 |
+  b'2 |
+  % 50
+  fis''8( e''8) d''8 e''8 |
+  fis''2 |
+  e''4. \bar "||" \mark "To Verses"
+}
+
+part-Peight-one = {
+  \key d \major
+  \time 2/4
+  \clef treble
+  \tempo "Andante con moto" 4 = 72
+
+  R2*7 |
+
+  R2*23 \bar "||" \mark "Chor."
+
+  R2 |
+  R2 |
+  R2 |
+  g'2\f\downbow |
+  g'4( a'4) |
+  % 35
+  a'2 |
+  b'2 |
+  a'2~ |
+  a'2 |
+  e'2 |
+  % 40
+  fis'4 g'4 |
+  r4 g'4(\downbow |
+  fis'4 e'4) |
+  fis'4 gis'4 |
+  fis'8(-\markup { \italic "cresc." } gis'8) ais'8( cis''8) |
+  % 45
+  b'2 |
+  a'4 cis''8 a'8 |
+  fis'8 a'8 b'4 |
+  a'4 a'8 d''8 |
+  a'8 fis'8 b'4 |
+  % 50
+  fis'8( e'8) d'8 e'8 |
+  d'2 |
+  cis'4. \bar "||" \mark "To Verses"
+}
+
+part-Pnine-one = {
+  \key d \major
+  \time 2/4
+  \clef alto
+  \tempo "Andante con moto" 4 = 72
+
+  R2*7 |
+
+  R2*23 \bar "||" \mark "Chor."
+
+  % 30
+  d'2\f\upbow |
+  cis'2 |
+  d'2 |
+  d'2 |
+  d'2 |
+  % 35
+  d'2 |
+  e'2 |
+  e'2~ |
+  e'2 |
+  e2 |
+  % 40
+  fis2 |
+  g2 |
+  g4 e4 |
+  fis4 gis4 |
+  fis4 ais4 |
+  % 45
+  d'4 b4 |
+  cis'8 a8 fis8 a8 |
+  d'2 |
+  a8 d'8 a8 fis8 |
+  b2 |
+  % 50
+  b2 |
+  e2~ |
+  e4. \bar "||" \mark "To Verses"
+}
+
+part-Ponezero-one = {
+  \key d \major
+  \time 2/4
+  \clef bass
+  \tempo "Andante con moto" 4 = 72
+
+  R2 |
+  b2\mp\downbow |
+  a2 |
+  g2 |
+  fis2 |
+  % 5
+  e2~ |
+  e2 |
+
+  R2*23 | \bar "||" \mark "Chor."
+
+  % 30
+  R2 |
+  R2 |
+  R2 |
+  R2 |
+  R2 |
+  % 35
+  R2 |
+  R2 |
+  R2 |
+  a,2\f\downbow |
+  cis2 |
+  % 40
+  d2 |
+  r4 g4(\downbow |
+  fis4 e4) |
+  cis2 |
+  fis2 |
+  % 45
+  b2 |
+  a4 cis'8 a8 |
+  fis8 a8 b4 |
+  a4 a8 d'8 |
+  a8 fis8 b4 |
+  % 50
+  fis8( e8) d8 e8 |
+  d2~ |
+  d4. \bar "||" \mark "To Verses"
+}
+
+part-Poneone-one = {
+  \key d \major
+  \time 2/4
+  \clef bass
+  \tempo "Andante con moto" 4 = 72
+
+  R2 |
+  b2\mp\downbow |
+  a2 |
+  g2 |
+  fis2 |
+  % 5
+  e2~ |
+  e2 |
+
+  R2*23 | \bar "||" \mark "Chor."
+
+  % 30
+  R2 |
+  R2 |
+  R2 |
+  R2 |
+  R2 |
+  % 35
+  R2 |
+  R2 |
+  R2 |
+  a,2\f\downbow |
+  cis2 |
+  % 40
+  d2 |
+  r4 g4(\downbow |
+  fis4 e4) |
+  cis2 |
+  fis2 |
+  % 45
+  b2 |
+  a4 cis'8 a8 |
+  fis8 a8 b4 |
+  a4 a8 d'8 |
+  a8 fis8 b4 |
+  % 50
+  fis8( e8) d8 e8 |
+  d2~ |
+  d4. \bar "||" \mark "To Verses"
+}
+
 iesu_panis_vitae_header = \header {
   composer = "Fr. Manoling Fransisco, SJ"
   lyricist = "Louie Angelo Oca, Ferdinand Bautista"
@@ -445,12 +657,8 @@ iesu_panis_vitae_chor =  {
     } <<
 
       \tag #'(full_chorus tutti chorus soprano)
-      \tag #'(accompaniment tutti violins violin_i)
       \new Staff \with {
-        instrumentName = \markup \right-column  {
-          "Soprano"
-          "Opt. Violin 1"
-        }
+        instrumentName = "Soprano"
         shortInstrumentName = "S."
         \override DynamicLineSpanner.direction = #UP
       } <<
@@ -459,12 +667,8 @@ iesu_panis_vitae_chor =  {
       >>
 
       \tag #'(full_chorus tutti chorus alto)
-      \tag #'(accompaniment tutti violins violin_ii)
       \new Staff \with {
-        instrumentName = \markup \right-column  {
-          "Alto"
-          "Opt. Violin 2"
-        }
+        instrumentName = "Alto"
         shortInstrumentName = "A."
         \override DynamicLineSpanner.direction = #UP
       } <<
@@ -473,12 +677,8 @@ iesu_panis_vitae_chor =  {
       >>
 
       \tag #'(full_chorus tutti chorus tenor)
-      \tag #'(accompaniment tutti viola)
       \new Staff \with {
-        instrumentName = \markup \right-column  {
-          "Tenor"
-          "Opt. Viola"
-        }
+        instrumentName = "Tenor"
         shortInstrumentName = "T."
         \override DynamicLineSpanner.direction = #UP
       } <<
@@ -487,12 +687,8 @@ iesu_panis_vitae_chor =  {
       >>
 
       \tag #'(full_chorus tutti chorus bass)
-      \tag #'(accompaniment tutti cello cbass)
       \new Staff \with {
-        instrumentName = \markup \right-column  {
-          "Bass"
-          "Opt. Bassi"
-        }
+        instrumentName = "Bass"
         shortInstrumentName = "B."
         \override DynamicLineSpanner.direction = #UP
       } <<
@@ -511,6 +707,61 @@ iesu_panis_vitae_chor =  {
     <<
       \new Staff = "1" { \part-Pfive-one }
       \new Staff = "2" { \part-Pfive-two }
+    >>
+
+    \new StaffGroup <<
+      \new StaffGroup \with {
+        systemStartDelimiter = #'SystemStartSquare
+        midiInstrument = "violin"
+      } <<
+
+        \tag #'(accompaniment tutti violins violin_i)
+        \new Staff \with {
+          instrumentName = "Violin 1"
+          shortInstrumentName = "Vl. 1"
+        } <<
+          \new Voice = "PartPFiveVoiceOne" { \part-Pseven-one }
+        >>
+
+        \tag #'(accompaniment tutti violins violin_ii)
+        \new Staff \with {
+          instrumentName = "Violin 2"
+          shortInstrumentName = "Vl. 2"
+        } <<
+          \new Voice = "PartPSixVoiceOne" { \part-Peight-one }
+        >>
+      >>
+
+      \tag #'(accompaniment tutti viola)
+      \new Staff \with {
+        instrumentName = "Viola"
+        shortInstrumentName = "Vla."
+        midiInstrument = "viola"
+      } <<
+        \new Voice = "PartPSevenVoiceOne" { \part-Pnine-one }
+      >>
+
+      \new StaffGroup \with {
+        systemStartDelimiter = #'SystemStartSquare
+      } <<
+        \tag #'(accompaniment tutti cello)
+        \new Staff \with {
+          instrumentName = "Violoncello"
+          shortInstrumentName = "Vcl."
+          midiInstrument = "cello"
+        } <<
+          \new Voice = "PartPEightVoiceOne" { \part-Ponezero-one }
+        >>
+
+        \tag #'(accompaniment tutti cbass)
+        \new Staff \with {
+          instrumentName = "Contrabass"
+          shortInstrumentName = "Cb."
+          midiInstrument = "contrabass"
+        } <<
+          \new Voice = "PartPNineVoiceOne" { \part-Poneone-one }
+        >>
+      >>
     >>
   >>
 }

@@ -250,7 +250,7 @@ part-Pfive-one = {
   % 15
   <c' f' a' c'' >4 <c' f' a' c'' >2 <c' f' a' b' >8 c''8 |
   <d' e' g' d'' >4 <d' e' g' d'' >2 <e' g' c'' e'' >4 |
-  <e' a' c'' e'' >4 <e' a' c'' >2-\markup{\italic "sub" \dynamic "p"} 
+  <e' a' c'' e'' >4 <e' a' c'' >2-\markup{\italic "sub" \dynamic "p"}
   <d' g' b' >8 <c' a' >8 |
   <d' e' g' >4 <c' e' g' >2 <b e' g' >8 c'8 |
   <c' f' a' >4 <c' f' a' >2 <d' g' b' >4 |
@@ -310,6 +310,246 @@ part-Pfive-two = {
   <c, g, >1\fermata \bar "|." |
 }
 
+part-Psix-one = {
+  \key c \major
+  \time 2/2
+  \clef treble
+  \tempo "Moderato penserioso" 4 = 96
+
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  \repeat volta 2 {
+    c'1\p |
+    % 5
+    d'1 |
+    c'1 |
+    d'1 |
+    e'1 |
+    d'1 |
+    % 10
+  }
+  \alternative {
+    {
+      e'1 |
+      d'1 |
+    }
+    {
+      e'1 |
+      d'1\< |
+    }
+  }
+
+  r4 e''4(\f d''4 c''4) |
+  % 15
+  b'1~ |
+  b'4 b'4( c''4 d''4) |
+  e''4 ~ e''2.~ -\markup{\italic "sub" \dynamic "p"} |
+  e''4 c'4( d'4 a'4) |
+  g'1~ |
+  % 20
+  g'4 c'4( d'4 c''4) |
+  g'1~ |
+  g'4 c'4( d'4 c''4 |
+  d''4)-. r4 g''2 |
+  r4 b'4( c''4 d''4) |
+  % 25
+  e''1\fermata \bar "|." |
+}
+
+part-Pseven-one = {
+  \key c \major
+  \time 2/2
+  \clef treble
+  \tempo "Moderato penserioso" 4 = 96
+
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  \repeat volta 2 {
+    r4 f'4(\p^\markup { "first bar second time only" } e'4 d'4) |
+    % 5
+    c'1~ |
+    c'4 c'4( d'4 f'4) |
+    e'1~ |
+    e'4 e'4( f'4 a'4) |
+    g'2. f'4( |
+    % 10
+  }
+  \alternative {
+    {
+      e'2.) f'4( |
+      d'1) |
+    }
+    {
+      e'2. f'4( |
+      g'2.)\< b'4( |
+    }
+  }
+
+  c''1)\f |
+  % 15
+  a'1 |
+  f'1 |
+  e'4 ~ e'2.-\markup{\italic "sub" \dynamic "p"} |
+  g'1 |
+  c''1 |
+  % 20
+  g''1 |
+  e''1 |
+  c''1 |
+  d''4-. r4 d''2 |
+  r4 b'4( c''4 b'4) |
+  % 25
+  c''1\fermata \bar "|." |
+}
+
+part-Peight-one = {
+  \key c \major
+  \time 2/2
+  \clef alto
+  \tempo "Moderato penserioso" 4 = 96
+
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  \repeat volta 2 {
+    c1~\p |
+    % 5
+    c4 c4( d4 f4) |
+    e1~ |
+    e4 e4( f4 a4) |
+    g2. f4( |
+    e2.) f4( |
+    % 10
+  }
+  \alternative {
+    {
+      d1) |
+      r4 f4( e4 d4) |
+    }
+    {
+      g2. b4( |
+      c'1)\< |
+    }
+  }
+
+  a1\f |
+  % 15
+  f1 |
+  e1 |
+  g4 ~ g2.-\markup{\italic "sub" \dynamic "p"} |
+  c'1 |
+  g'1 |
+  % 20
+  e'1 |
+  c'1 |
+  e'1 |
+  g'4-. r4 g'2 |
+  g'1 |
+  % 25
+  g'1\fermata \bar "|." |
+}
+
+part-Pnine-one = {
+  \key c \major
+  \time 2/2
+  \clef bass
+  \tempo "Moderato penserioso" 4 = 96
+
+  c,1\p |
+  d,1 |
+  c,1 |
+  d,1 |
+  \repeat volta 2 {
+    c,1 |
+    % 5
+    d,1 |
+    c,1 |
+    d,1 |
+    e,1 |
+    d,1 |
+    % 10
+  }
+  \alternative {
+    {
+      e,1 |
+      d,1 |
+    }
+    {
+      e,1 |
+      d,1\< |
+    }
+  }
+
+  R1 |
+  % 15
+  r4 e4(\f d4 c4) |
+  b,1~ |
+  b,4 b,4(-\markup{\italic "sub" \dynamic "p"} c4 d4) |
+  e1~ |
+  e4 c4( d4 a4) |
+  % 20
+  g1~ |
+  g4 c4( d4 c'4) |
+  g1 |
+  g4-. r4 g2 |
+  c1 |
+  % 25
+  c1\fermata \bar "|." |
+}
+
+part-Ponezero-one = {
+  \key c \major
+  \time 2/2
+  \clef bass
+  \tempo "Moderato penserioso" 4 = 96
+
+  c1\p |
+  d1 |
+  c1 |
+  d1 |
+  \repeat volta 2 {
+    c1 |
+    % 5
+    d1 |
+    c1 |
+    d1 |
+    e1 |
+    d1 |
+    % 10
+  }
+  \alternative {
+    {
+      e1 |
+      d1 |
+    }
+    {
+      e1 |
+      d1\< |
+    }
+  }
+
+  R1 |
+  % 15
+  r4 e4(\f d4 c4) |
+  b,1~ |
+  b,4 b,4(-\markup{\italic "sub" \dynamic "p"} c4 d4) |
+  e1~ |
+  e4 c4( d4 a4) |
+  % 20
+  g1~ |
+  g4 c4( d4 c'4) |
+  g1 |
+  g4-. r4 g2 |
+  c1 |
+  % 25
+  c1\fermata \bar "|." |
+}
+
 kordero_ng_diyos_cayabyab_header = \header {
   composer = "Ryan Cayabyab"
   subtitle = "Agnus Dei"
@@ -323,12 +563,8 @@ kordero_ng_diyos_cayabyab = {
     } <<
 
       \tag #'(full_chorus tutti chorus soprano)
-      \tag #'(accompaniment tutti violins violin_i)
       \new Staff \with {
-        instrumentName = \markup \right-column  {
-          "Soprano"
-          "Opt. Violin 1"
-        }
+        instrumentName = "Soprano"
         shortInstrumentName = "S."
       } <<
         \new Voice = "soprano" { \part-Pone-one }
@@ -336,12 +572,8 @@ kordero_ng_diyos_cayabyab = {
       >>
 
       \tag #'(full_chorus tutti chorus alto)
-      \tag #'(accompaniment tutti violins violin_ii)
       \new Staff \with {
-        instrumentName = \markup \right-column  {
-          "Alto"
-          "Opt. Violin 2"
-        }
+        instrumentName = "Alto"
         shortInstrumentName = "A."
       } <<
         \new Voice = "alto" { \part-Ptwo-one }
@@ -349,12 +581,8 @@ kordero_ng_diyos_cayabyab = {
       >>
 
       \tag #'(full_chorus tutti chorus tenor)
-      \tag #'(accompaniment tutti viola)
       \new Staff \with {
-        instrumentName = \markup \right-column  {
-          "Tenor"
-          "Opt. Viola"
-        }
+        instrumentName = "Tenor"
         shortInstrumentName = "T."
       } <<
         \new Voice = "tenor" { \part-Pthree-one }
@@ -362,12 +590,8 @@ kordero_ng_diyos_cayabyab = {
       >>
 
       \tag #'(full_chorus tutti chorus bass)
-      \tag #'(accompaniment tutti cello cbass)
       \new Staff \with {
-        instrumentName = \markup \right-column  {
-          "Bass"
-          "Opt. Bassi"
-        }
+        instrumentName = "Bass"
         shortInstrumentName = "B."
       } <<
         \new Voice = "bass" { \part-Pfour-one }
@@ -385,6 +609,61 @@ kordero_ng_diyos_cayabyab = {
     <<
       \new Staff = "1" { \part-Pfive-one }
       \new Staff = "2" { \part-Pfive-two }
+    >>
+
+    \new StaffGroup <<
+      \new StaffGroup \with {
+        systemStartDelimiter = #'SystemStartSquare
+        midiInstrument = "violin"
+      } <<
+
+        \tag #'(accompaniment tutti violins violin_i)
+        \new Staff \with {
+          instrumentName = "Violin 1"
+          shortInstrumentName = "Vl. 1"
+        } <<
+          \new Voice = "PartPFiveVoiceOne" { \part-Psix-one }
+        >>
+
+        \tag #'(accompaniment tutti violins violin_ii)
+        \new Staff \with {
+          instrumentName = "Violin 2"
+          shortInstrumentName = "Vl. 2"
+        } <<
+          \new Voice = "PartPSixVoiceOne" { \part-Pseven-one }
+        >>
+      >>
+
+      \tag #'(accompaniment tutti viola)
+      \new Staff \with {
+        instrumentName = "Viola"
+        shortInstrumentName = "Vla."
+        midiInstrument = "viola"
+      } <<
+        \new Voice = "PartPSevenVoiceOne" { \part-Peight-one }
+      >>
+
+      \new StaffGroup \with {
+        systemStartDelimiter = #'SystemStartSquare
+      } <<
+        \tag #'(accompaniment tutti cello)
+        \new Staff \with {
+          instrumentName = "Violoncello"
+          shortInstrumentName = "Vcl."
+          midiInstrument = "cello"
+        } <<
+          \new Voice = "PartPEightVoiceOne" { \part-Pnine-one }
+        >>
+
+        \tag #'(accompaniment tutti cbass)
+        \new Staff \with {
+          instrumentName = "Contrabass"
+          shortInstrumentName = "Cb."
+          midiInstrument = "contrabass"
+        } <<
+          \new Voice = "PartPNineVoiceOne" { \part-Ponezero-one }
+        >>
+      >>
     >>
   >>
 }
