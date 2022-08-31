@@ -6,7 +6,7 @@ part-Pone-one = {
   \key g \major
   \time 4/4
   \clef treble
-  \tempo "Andante dolente" 4 = 72
+  \tempo "Adagio Mesto" 4 = 72
 
   r4 r2 fis'8\mf g'8 |
   \omit \time 7/2 \bar "||" \mark "Recit."
@@ -53,7 +53,7 @@ part-Ptwo-one = {
   \key g \major
   \time 4/4
   \clef treble
-  \tempo "Andante dolente" 4 = 72
+  \tempo "Adagio Mesto" 4 = 72
 
   R1 |
   \omit \time 7/2 \bar "||" \mark "Recit."
@@ -127,7 +127,7 @@ part-Pthree-one = {
   \key g \major
   \time 4/4
   \clef treble
-  \tempo "Andante dolente" 4 = 72
+  \tempo "Adagio Mesto" 4 = 72
 
   R1 |
   \omit \time 7/2 \bar "||" \mark "Recit."
@@ -182,7 +182,7 @@ part-Pfour-one = {
   \key g \major
   \time 4/4
   \clef "treble_8"
-  \tempo "Andante dolente" 4 = 72
+  \tempo "Adagio Mesto" 4 = 72
 
   R1 |
   \omit \time 7/2 \bar "||" \mark "Recit."
@@ -237,7 +237,7 @@ part-Pfive-one = {
   \key g \major
   \time 4/4
   \clef bass
-  \tempo "Andante dolente" 4 = 72
+  \tempo "Adagio Mesto" 4 = 72
 
   R1 |
   \omit \time 7/2 \bar "||" \mark "Recit."
@@ -430,7 +430,7 @@ part-Psix-two = {
   \key g \major
   \time 4/4
   \clef bass
-  \tempo "Andante dolente" 4 = 72
+  \tempo "Adagio Mesto" 4 = 72
 
   <e, g, b, e >1\arpeggio |
   \omit \time 7/2 \bar "||" \mark "Recit."
@@ -520,7 +520,7 @@ part-Pseven-one = {
   \key g \major
   \time 4/4
   \clef treble
-  \tempo "Andante dolente" 4 = 72
+  \tempo "Adagio Mesto" 4 = 72
 
   R1 |
   \omit \time 7/2 \bar "||" \mark "Recit."
@@ -575,7 +575,7 @@ part-Peight-one = {
   \key g \major
   \time 4/4
   \clef treble
-  \tempo "Andante dolente" 4 = 72
+  \tempo "Adagio Mesto" 4 = 72
 
   R1 |
   \omit \time 7/2 \bar "||" \mark "Recit."
@@ -630,7 +630,7 @@ part-Pnine-one = {
   \key g \major
   \time 4/4
   \clef alto
-  \tempo "Andante dolente" 4 = 72
+  \tempo "Adagio Mesto" 4 = 72
 
   R1 |
   \omit \time 7/2 \bar "||" \mark "Recit."
@@ -685,7 +685,7 @@ part-Ponezero-one = {
   \key g \major
   \time 4/4
   \clef bass
-  \tempo "Andante dolente" 4 = 72
+  \tempo "Adagio Mesto" 4 = 72
 
   R1 |
   \omit \time 7/2 \bar "||" \mark "Recit."
@@ -740,7 +740,7 @@ part-Poneone-one = {
   \key g \major
   \time 4/4
   \clef bass
-  \tempo "Andante dolente" 4 = 72
+  \tempo "Adagio Mesto" 4 = 72
 
   R1 |
   \omit \time 7/2 \bar "||" \mark "Recit."
