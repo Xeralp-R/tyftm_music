@@ -1,6 +1,6 @@
 \version "2.22.1"
 
-\include "../global.ily"
+\include "../styles/global.ily"
 
 \include "Bohemian_Rhapsody.ly"
 \include "All_I_Want_For_Christmas.ly"

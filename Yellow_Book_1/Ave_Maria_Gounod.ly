@@ -1,6 +1,6 @@
 \version "2.22.0"
 
-\include "../global.ily"
+\include "../styles/global.ily"
 
 to_staff = #(define-music-function (arg) (string?) (_i "Go to staff with name arg")
               #{

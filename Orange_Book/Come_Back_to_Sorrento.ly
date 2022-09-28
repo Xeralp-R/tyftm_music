@@ -1,7 +1,7 @@
 % automatically converted by musicxml2ly from Come_Back_to_Sorrento.musicxml
 \version "2.22.1"
 
-\include "../global.ily"
+\include "../styles/global.ily"
 
 PartPOneVoiceOne =  {
   \clef "treble"

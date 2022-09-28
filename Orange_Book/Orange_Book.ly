@@ -1,6 +1,6 @@
 \version "2.22.1"
 
-\include "../global.ily"
+\include "../styles/final.ily"
 
 \include "Can_Can.ly"
 \include "Sacro_Monte.ly"

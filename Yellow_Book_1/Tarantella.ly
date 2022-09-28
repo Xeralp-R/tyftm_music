@@ -1,7 +1,7 @@
 \version "2.22.1"
 % automatically converted by musicxml2ly from Tarantella.musicxml
 
-\include "../global.ily"
+\include "../styles/global.ily"
 
 %% additional definitions required by the score:
 fz = #(make-dynamic-script "fz")

@@ -1,6 +1,6 @@
 \version "2.22.0"
 
-\include "../global.ily"
+\include "../styles/global.ily"
 
 % Make the test smaller, as necessary
 #(define-markup-command

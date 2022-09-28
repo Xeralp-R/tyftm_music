@@ -1,6 +1,6 @@
 \version "2.22.1"
 
-\include "../global.ily"
+\include "../styles/global.ily"
 
 \include "Ave_Maria_Gounod.ly"
 \include "Game_of_Thrones.ly"

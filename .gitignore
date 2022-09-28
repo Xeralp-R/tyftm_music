@@ -1,0 +1,17 @@
+#ignore everything
+*
+#except ly files
+!*.ly
+!*.ily
+!.gitignore
+
+# Don't ignore the books
+!Orange_Book/
+!Yellow_Book_1/
+!Yellow_Book_2/
+!Red_Book_1/
+!Red_Book_2/
+!Blue_Book/
+
+# don't ignore other folders
+!styles/

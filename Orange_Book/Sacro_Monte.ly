@@ -1,6 +1,6 @@
 \version "2.22.0"
 
-\include "../global.ily"
+\include "../styles/global.ily"
 
 right = {
   \clef "treble"

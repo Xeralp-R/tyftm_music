@@ -1,7 +1,7 @@
 % Automatically generated from a musicxml file.
 \version "2.22.1"
 
-\include "../global.ily"
+\include "../styles/global.ily"
 
 part-Pone-one = {
     \key aes \major

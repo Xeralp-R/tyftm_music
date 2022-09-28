@@ -3,7 +3,7 @@
 
 \version "2.22.1"
 
-\include "../global.ily"
+\include "../styles/global.ily"
 
 CanCanRightHand =  {
   \clef "treble"
