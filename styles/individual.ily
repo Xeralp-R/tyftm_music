@@ -6,7 +6,7 @@
     ragged-last-bottom = ##f
     ragged-bottom = ##f
 
-    #(ly:font-config-add-directory "./Fonts")
+    #(ly:font-config-add-directory "./fonts")
     #(define fonts
         (set-global-fonts
             #:roman "Bodoni Moda 9pt"

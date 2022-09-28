@@ -1,9 +1,6 @@
-%% The first piece in the white book:
-%% Can Can, by Jacques Offenbach
-
 \version "2.22.1"
 
-\include "../styles/global.ily"
+\include "../../styles/global.ily"
 
 CanCanRightHand =  {
   \clef "treble"

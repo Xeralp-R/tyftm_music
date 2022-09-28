@@ -1,6 +1,6 @@
 \version "2.22.1"
 
-\include "global.ily"
+\include "../styles/global.ily"
 
 \include "Orange_Book/Can_Can.ly"
 \include "Orange_Book/Sacro_Monte.ly"

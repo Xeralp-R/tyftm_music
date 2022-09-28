@@ -7,7 +7,7 @@ newline = { \break }
 newpage = { \pageBreak }
 
 \paper {
-    #(ly:font-config-add-directory "./Fonts")
+    #(ly:font-config-add-directory "./fonts")
     #(define fonts
         (set-global-fonts
             #:roman "Cardo"

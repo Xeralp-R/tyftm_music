@@ -13,7 +13,7 @@
   ragged-bottom = ##f
   tocItemMarkup = \tocItemWithDotsMarkup
 
-  #(ly:font-config-add-directory "./Fonts")
+  #(ly:font-config-add-directory "./fonts")
   #(define fonts
      (set-global-fonts
       #:roman "Libre Bodoni"

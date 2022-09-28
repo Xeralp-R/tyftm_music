@@ -1,17 +1,8 @@
-#ignore everything
-*
-#except ly files
-!*.ly
-!*.ily
-!.gitignore
+#ignore exports & imports
+exports/
+imports/
+.vscode/
 
-# Don't ignore the books
-!Orange_Book/
-!Yellow_Book_1/
-!Yellow_Book_2/
-!Red_Book_1/
-!Red_Book_2/
-!Blue_Book/
-
-# don't ignore other folders
-!styles/
+# i don't know if this should be out or not
+.uuid
+.DS_Store
