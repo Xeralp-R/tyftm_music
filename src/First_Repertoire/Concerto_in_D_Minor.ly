@@ -1,23 +1,7 @@
 % Automatically generated from a musicxml file.
 \version "2.22.1"
+
 \include "../../styles/global.ily"
-
-#(set! paper-alist
-       (cons '("new_size" . (cons (* 210.058 mm) (* 296.925 mm))) paper-alist))
-\paper {
-  #(set-paper-size "new_size")
-  top-margin = 15\mm
-  bottom-margin = 15\mm
-  left-margin = 15\mm
-  right-margin = 15\mm
-  ragged-last-bottom = ##f
-}
-
-\header {
-  composer = "J. S. Bach"
-  subtitle = "1st Movement"
-  title = "Concerto in D Minor"
-}
 
 part-Pone-one = {
   \key f \major
@@ -1204,14 +1188,33 @@ part-Ptwo-two = {
   % 190
 }
 
-\score {
-  \new GrandStaff <<
-    \new Staff \part-Pone-one
-    \new Staff \part-Pone-two
+concerto_in_d_minor_header = \header {
+  composer = "J. S. Bach"
+  subtitle = "1st Movement"
+  title = "Concerto in D Minor"
+}
+
+concerto_in_d_minor =  {
+  <<
+    \new PianoStaff \with {
+      instrumentName = \markup \center-column {
+        \larger "Piano I"
+        "(Solo)"
+      }
+      shortInstrumentName = "I"
+    } <<
+      \new Staff \part-Pone-one
+      \new Staff \part-Pone-two
+    >>
+    \new PianoStaff \with {
+      instrumentName = \markup \center-column {
+        \larger "Piano II"
+        "(Orchestra)"
+      }
+      shortInstrumentName = "II"
+    } <<
+      \new Staff \part-Ptwo-one
+      \new Staff \part-Ptwo-two
+    >>
   >>
-  \new GrandStaff <<
-    \new Staff \part-Ptwo-one
-    \new Staff \part-Ptwo-two
-  >>
-  \layout {}
 }
