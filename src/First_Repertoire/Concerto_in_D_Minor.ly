@@ -356,10 +356,10 @@ part-Pone-one = {
   % 160
   <aes d' >16 r16 <aes d' >16 r16 <g ees' >16 r16 <g ees' >16 r16 <g cis'
   >16 r16 <g cis' >16 r16 <f d' >16 r16 <f d' >16 r16 |
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
   % 165
   gis32 d'32 e'32 f'32 b'32 f'32 e'32 d'32 gis32 d'32 e'32 f'32 b'32 f'32
   e'32 d'32 gis32 d'32 b32 e'32 b'32 e'32 b32 d'32 gis32 d'32 b32 e'32 b'32
@@ -382,8 +382,8 @@ part-Pone-one = {
   a'32 cis''32 a'32 e'32 a32 |
   d'16-\markup { "Tutti" } e'16 f'8-. e'8 d'8 a'8 d''4 a'8 |
   bes'8 g'16 e'16 a'8 f'16 d'16 g'8 e'16 cis'16 a8 bes'8 |
-  << { r1 } \\ { } >> |
-  r1 |
+  << { R1 } \\ { } >> |
+  R1 |
   % 175
   r16 ees'16 a'16 g'16 a'16 ees'16 d'16 c'16 r16 ees'16 a'16 g'16 a'16
   ees'16 d'16 c'16 |
@@ -508,40 +508,40 @@ part-Pone-two = {
   <d e b >8. e16 fis16 gis16 a16 b16 cis'16 d'16 e'8-. e'16 f'16 g'8-. |
   % 60
   <g bes >8-. <f a >8-. <f b >8-. <e c' >8-. dis8-. r8 e8-. r8 |
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
   % 65
-  r1 |
-  r1 |
-  r1 |
+  R1 |
+  R1 |
+  R1 |
   r8 a16 b16 a8 g8 fis8 b16 a16 b8 b,8 |
   e16 e'16 r8 r4 r2 |
   % 70
-  r1 |
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
   % 75
-  r1 |
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
   % 80
-  r1 |
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
   % 85
-  r1 |
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
   % 90
   c8 r8 r4 e16( f16 g16 f16) a16 g16 f16 e16 |
   d16( e16 f16 e16) f16 e16 d16 c16 b,16 c16 b,16 a,16 g,16 f,16 e,16 d,16 |
@@ -572,7 +572,7 @@ part-Pone-two = {
   c'16 c16 c'16 bes16 c'8 r8 r16 ces16 ees'16 d'16 ees'16 r16 r8 |
   r16 bes16 a16 g16 fis16 ees16 d16 c16 b,16 c16 d16 ees16 d16 ees16 f16 g16 |
   f16 d'16 ees16 d16 ees16 c'16 d16 bes16 <cis e g >4 r4 |
-  r1 |
+  R1 |
   % 110
   a8(\mordent a32) b32 cis'32 d'32 r4 r2 |
   r2 r8 ees8-. c8-. d8-. |
@@ -663,13 +663,13 @@ part-Pone-two = {
   <a, f >16 e16 f16 a16 d'16 a16 bes16 g16 <a, f >16 e16 f16 a16 d'16 a16
   f'16 d'16 |
   % 165
-  r1 |
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
   % 170
-  r1 |
+  R1 |
   d16 e16 f8-. e8 d8 a8 d'4 a8 |
   bes8 g16 e16 a8 f16 d16 g8 e16 cis16 a,16 f16 e16 d16 |
   cis16 bes16 e'16 d'16 e'16 bes16 a16 g16 cis16 bes16 e'16 d'16 e'16 bes16
@@ -718,7 +718,7 @@ part-Ptwo-one = {
   r4 g'8( <cis' e' >8) r4 f'8( <cis' e' >8) |
   % 10
   r4 f'8( <cis' e' >8) <d' f' >4 r4 |
-  r1 |
+  R1 |
   <<
     \context Voice = "voiceone" {
       \voiceOne
@@ -732,8 +732,8 @@ part-Ptwo-one = {
       s2 f'16 g'16 a'8-. g'8 f'8 |
       s2 s4 s8 e'16 cis'16 |
       \change Staff = "lower" \voiceOne
-      g8 bes8 \change Staff = "upper" \voiceTwo s8 g'16 e'16 
-      \change Staff = "lower" \voiceOne f8 cis'8 
+      g8 bes8 \change Staff = "upper" \voiceTwo s8 g'16 e'16
+      \change Staff = "lower" \voiceOne f8 cis'8
       \change Staff = "upper" \voiceTwo s8 cis''16 g'16 |
       % 15
     }
@@ -754,216 +754,221 @@ part-Ptwo-one = {
   r4 d'8( <gis b >8) r4 <b d' >8( <gis b >8) |
   % 25
   e'8 r8 r4 r2 |
-  r1 |
+  R1 |
+
+  a'16\p b'16 c''8-. <b' e'' >8 a'8 <cis'' e'' >8
+  << {a''4} \\ {r8 <g' a' >8} >> cis''8 |
+  d'16 e'16 f'8-. e'8 d'8
+  << { d''8 d''4 } \\ { a'8 r8 <fis' a' >8 }>> a'8 |
+  g'16 a'16 bes'8-.
+  << { d''8 r8 b'8 g''4 } \\ { a'8 g'8 d''8 r8 <f' g' >8 } >> b'8 |
+  c'16 d'16 e'8-. d'8 c'8
+  << { c''8 c''4 } \\ {g'8 r8 <e' g' >8} >> g'8 |
+  << { f'16 g'16 a'8 c''8 r8 a'8 f''4 } \\ { c'8 r8 g'8 f'8 c''8 r8 <ees' f' >8}>> a'8 |
+  b16 c'16 d'8-. c'8 bes8
+  << { bes'8 bes'4 } \\ { f'8 r8 <d' f'>8 } >> f'8 |
+
   <<
-    \context Voice = "voiceone" {
+    \context Voice = "voiceone" \relative c' {
       \voiceOne
-      a'16\p b'16 c''8-. <b' e'' >8 a'8 <cis'' e'' >8 a''4 cis''8 |
-      d'16 e'16 f'8-. e'8 d'8 d''8 d''4 a'8 |
-      g'16 a'16 bes'8-. d''8 r8 b'8 g''4 b'8 |
-      % 30
-      c'16 d'16 e'8-. d'8 c'8 c''8 c''4 g'8 |
-      f'16 g'16 a'8 c''8 r8 a'8 f''4 a'8 |
+      e8 b4 g8 a8 a8 c8 c8 |
+      fis,8 a4 fis8 g8 g8 bes8 bes8 |
+      e,8 g4 e8 f!8 f8 a8 a8 |
+      b8 b4 g8 e8 a4 f8 |
+      d8 g4 e8 
     }
-    \context Voice = "voicetwo" {
+    \context Voice = "voicetwo" \relative c' {
       \voiceTwo
-      s2 s8 r8 <g' a' >8 s8 |
-      s2 a'8 r8 <fis' a' >8 s8 |
-      s4 a'8 g'8 d''8 r8 <f' g' >8 s8 |
-      % 30
-      s2 g'8 r8 <e' g' >8 s8 |
-      c'8 r8 g'8 f'8 c''8 r8 <ees' f' >8 s8 |
+      b8 e8 <b gis'>8 e8~ <c e>8 c8 e8 r8 |
+      d8 d <a fis'> d~ <b d> b d r |
+      c8 c <g e'> c~ <a c> r c r |
+      d8 r e r a r d, r |
+      g8 r a r 
     }
-  >>
-  r1 |
-  r1 |
-  r1 |
-  % 35
-  r1 |
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  >> <c' f'>4 r8 <c' g' c''>8
+  R1 |
+  R1 |
+  R1 |
   % 40
-  r1 |
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
   % 45
-  r1 |
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
   % 50
-  r1 |
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
   % 55
-  r1 |
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
   % 60
-  r1 |
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
   % 65
-  r1 |
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
   % 70
-  r1 |
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
   % 75
-  r1 |
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
   % 80
-  r1 |
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
   % 85
-  r1 |
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
   % 90
-  r1 |
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
   % 95
-  r1 |
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
   % 100
-  r1 |
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
   % 105
-  r1 |
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
   % 110
-  r1 |
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
   % 115
-  r1 |
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
   % 120
-  r1 |
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
   % 125
-  r1 |
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
   % 130
-  r1 |
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
   % 135
-  r1 |
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
   % 140
-  r1 |
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
   % 145
-  r1 |
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
   % 150
-  r1 |
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
   % 155
-  r1 |
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
   % 160
-  r1 |
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
   % 165
-  r1 |
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
   % 170
-  r1 |
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
   % 175
-  r1 |
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
   % 180
-  r1 |
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
   % 185
-  r1 |
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
   % 190
 }
 
@@ -1012,194 +1017,194 @@ part-Ptwo-two = {
   e8( e8 e8 e8) e8( e8 e8 e8) |
   f8 f8 f8 f8 ees8 ees8 ees8 ees8 |
   d8( d8 d8 d8) d8( d8 d8 d8) |
-  r1 |
-  r1 |
+  R1 |
+  R1 |
   % 35
-  r1 |
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
   % 40
-  r1 |
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
   % 45
-  r1 |
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
   % 50
-  r1 |
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
   % 55
-  r1 |
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
   % 60
-  r1 |
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
   % 65
-  r1 |
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
   % 70
-  r1 |
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
   % 75
-  r1 |
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
   % 80
-  r1 |
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
   % 85
-  r1 |
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
   % 90
-  r1 |
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
   % 95
-  r1 |
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
   % 100
-  r1 |
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
   % 105
-  r1 |
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
   % 110
-  r1 |
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
   % 115
-  r1 |
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
   % 120
-  r1 |
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
   % 125
-  r1 |
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
   % 130
-  r1 |
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
   % 135
-  r1 |
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
   % 140
-  r1 |
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
   % 145
-  r1 |
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
   % 150
-  r1 |
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
   % 155
-  r1 |
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
   % 160
-  r1 |
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
   % 165
-  r1 |
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
   % 170
-  r1 |
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
   % 175
-  r1 |
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
   % 180
-  r1 |
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
   % 185
-  r1 |
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
   % 190
 }
 
