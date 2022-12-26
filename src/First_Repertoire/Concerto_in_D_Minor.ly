@@ -11,15 +11,16 @@ part-Pone-one = {
   \tempo "Allegro"
 
   % a
-  d'16 e'16 f'8-. e'8 d'8 a'8 d''4 a'8 |
-  bes'8 g'16 e'16 a'8 f'16 d'16 g'8 e'16 cis'16 a8 bes'8~ |
-  bes'8 g'16 e'16 a8 cis''8~ cis''8 bes'16 g'16 a8 e''8~ |
-  e''8 cis''16 a'16 bes'16 g'16 a'16 f'16 g'16 e'16 f'16 d'16 e'16 cis'16
+  d'16-1 e'16 f'8-. e'8\prall d'8 a'8-2 d''4 a'8 |
+  bes'8-5 g'16-3 e'16-2 a'8-5 f'16 d'16 g'8-5 e'16 cis'16 a8-1 bes'8-5~ |
+  bes'8 g'16-3 e'16-2 a8-1 cis''8-5~ cis''8 bes'16 g'16 a8 e''8-5~ |
+  e''8 cis''16-3 a'16-1 bes'16-4 g'16-2 a'16-3 f'16-1 
+  g'16-4 e'16 f'16 d'16 e'16-4 cis'16
   d'16 b16 |
-  cis'16 a16 b16 cis'16 d'16 e'16 f'16 g'16 a'16 bes'16 c''8-. c''16 d''16
-  ees''8-. |
+  cis'16-3 a16-1 b16 cis'16-3 d'16-1 e'16 f'16-3 g'16-1 a'16 bes'16 c''8-.-4 c''16-2 d''16
+  ees''8-.-4 |
   % 5
-  fis'8-. g'8-. cis'8-. d'8-. gis8-. r8 a8-. r8 |
+  fis'8-.-2 g'8-.-3 cis'8-.-2 d'8-.-3 gis8-.-2 r8 a8-.-3 r8 |
 
   % b
   d'32( e'32 f'32 g'32 a'16) e'16 f'16 d'16 e'16 cis'16 d'16 a16 bes16 g16
@@ -419,13 +420,16 @@ part-Pone-two = {
   \time 4/4
   \clef bass
 
-  d16 e16 f8-. e8 d8 a8 d'4 a8 |
-  bes8 g16 e16 a8 f16 d16 g8 e16 cis16 a,8 bes8~ |
-  bes8 g16 e16 a,8 cis'8~ cis'8 bes16 g16 a,8 e'8~ |
-  e'8 cis'16 a16 bes16 g16 a16 f16 g16 e16 f16 d16 e16 cis16 d16 b,16 |
-  cis16 a,16 b,16 cis16 d16 e16 f16 g16 a16 bes16 c'8-. c'16 d'16 ees'8-. |
+  d16-4 e16 f8-. e8\prall d8 a8-2 d'4 a8 |
+  bes8-1 g16-2 e16-3 a8-1 f16 d16 g8-1 e16 cis16 a,8-5 bes8-1~ |
+  bes8 g16-2 e16-3 a,8-5 cis'8-1~ cis'8 bes16 g16 a,8 e'8-1~ |
+  e'8 cis'16-2 a16-4 bes16-2 g16-4 a16-1 f16-3 g16-1 e16-3 
+  f16-2 d16-4 e16-1 cis16-3 d16-2 b,16-4 |
+  cis16-3 a,16-5 b,16 cis16 d16 e16-1 f16-3 g16 a16-1 bes16-3 c'8-.-2 
+  c'16-4 d'16 ees'8-.-2 |
   % 5
-  fis8-. g8-. cis8-. d8-. gis,8-. r8 a,8-. r8 |
+  fis8-.-3 g8-.-2 cis8-.-3 d8-.-2 gis,8-.-3 r8 a,8-.-2 r8 |
+
   <d, d >4 r4 <d, d >4 r4 |
   <d, d >4 r4 d32( e32 f32 g32 a16) e16 f16 d16 g16 e16 |
   f16 d16 e16 cis16 d16 f16 g16 e16 \clef treble
@@ -713,7 +717,9 @@ concerto_in_d_minor =  {
       shortInstrumentName = "I"
     } <<
       \new Staff = "upper" \part-Pone-one
-      \new Staff = "lower" \part-Pone-two
+      \new Staff = "lower" \with {
+        \override Fingering.direction = #DOWN
+      } \part-Pone-two
     >>
   >>
 }
