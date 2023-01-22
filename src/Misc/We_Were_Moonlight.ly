@@ -141,15 +141,16 @@ right-hand = {
   \change Staff = "lower" e''16[ fis''16 g''16 
   b''16
   \change Staff = "upper"
-  \once \override PianoStaff.OttavaBracket.staff-padding = #'3
+  \once \override PianoStaff.OttavaBracket.staff-padding = #'3.5
   
   \ottava #1
   \footnote #'(-1 . 1) \markup {
     Ottava not in orginal.
   } d'''16 e'''16 fis'''16 g'''16] |
+  \once \override PianoStaff.Script.staff-padding = #'4.5
   a'''2) \fermata | \ottava #0
 
-  <fis'' a''>4\p <d'' fis''>4~ |
+  <fis'' a''>4\parenthesize\p <d'' fis''>4~ |
   % 20
   <d'' fis''>4 \tuplet 3/2 { <c'' e''>8 <d'' fis''>8 <e'' g''>8} |
   <fis'' a''>4 <d'' fis''>4~ |
@@ -249,11 +250,11 @@ right-hand = {
       \change Staff = "upper" \oneVoice
       g'16 b'16 e'16]) g'16[ \bar ""
       \change Staff = "lower" \voiceOne
-      cis'16( e'16 b16] d'16 [
+      cis'16_( e'16 b16] d'16 [
       \change Staff = "upper" \oneVoice
       \clef bass g16 b16 e16]) g16[
       \change Staff = "lower" \voiceOne
-      \clef bass cis16 e16 b,16] d16 [ (
+      \clef bass cis16 e16 b,16] d16 [ _(
       \change Staff = "upper" \oneVoice
       \clef bass g,16 b,16 e,16] g,16[
       \change Staff = "lower" \voiceOne
@@ -271,11 +272,11 @@ right-hand = {
       b,4^\mp g,8[ e,8] 
       e16[( d b, g,
       \change Staff = "upper" b16 g e d])
-      \change Staff = "lower" e'16-[( d' b g
+      \change Staff = "lower" e'16-[_( d' b g
       \change Staff = "upper" \clef treble b'16 g' e' d'])
-      \change Staff = "lower" \clef treble e''16-[( d'' b' g'
+      \change Staff = "lower" \clef treble e''16-[_( d'' b' g'
       \change Staff = "upper" b''16 g'' e'' d''])
-      \change Staff = "lower" \ottava #1 e'''16-[( d''' b'' g'' \ottava #0
+      \change Staff = "lower" \ottava #1 e'''16-[_( d''' b'' g'' \ottava #0
       \change Staff = "upper" \ottava #1 b'''16 g''' e''' d''']) \ottava #0
       \cadenzaMeasure
       \cadenzaOff
@@ -541,8 +542,8 @@ left-hand = {
   <<
     \context Voice = "upper" {
       \voiceOne e'8 fis' g' a' |
-      g'( a' b' g') |
-      b'4( a'4~) |
+      g'( a' b' g' |
+      b'4)( a'4~) |
       a'4
     }
     \context Voice = "lower" {
@@ -624,5 +625,45 @@ We_Were_Moonlight = \bookpart {
 
   \bookpart {
     \We_Were_Moonlight
+  }
+
+  \bookpart {
+    \paper {
+      print-page-number = ##f
+    }
+
+    \header {
+      tagline =  ##f
+    }
+
+    \markup {
+      \center-column {
+        \vspace #10
+        \fill-line {
+          \huge \larger \larger
+          \fontsize #4
+          \bold
+          "Note on the Edition:"
+        }
+        \vspace #3
+        \justify {
+          \fontsize #1
+          This edition is based on the scan of \italic{We Were Moonlight} 
+          originating in St. Scholastica's College Music Library in Manila. The 
+          original beamings of the composer have been retained, for example in 
+          the fully beamed arpeggios in bars 17 and 18 and the alternating beaming 
+          in the cadenza. Notation for tuplets has been changed to beam-attached 
+          notation rather than the bracket notation throughout the piece. 
+          Dynamics have been standardized as little as possible, leaving certain 
+          idiosyncracies in: e.g. the delayed \dynamic{ff} in bar 84; additional 
+          dynamics have been supplied in parentheses. Cross-staff chords have 
+          been converted into single-staff chords without comment. Lastly, 
+          the positioning of the lyrics has not been standardized throughout the 
+          two A sections, due to the significantly different placement of lyrics 
+          in both sections: they have simply been attached to the closest note 
+          possible.
+        }
+      }
+    }
   }
 }
