@@ -1,7 +1,9 @@
 \version "2.22.1"
 
 #(set-global-staff-size 20)
-#(set-default-paper-size "arch a")
+#(set-default-paper-size "ansi a")
+
+\include "lyricstuff.ily"
 
 \paper {
   %system-system-spacing = #'((basic-distance . 0.1) (padding . 0))
@@ -55,7 +57,7 @@
     }
   }%}
 
-  tocFormatMarkup = #markup %% Cancelling the default bold setting.
+  tocFormatMarkup = #'markup %% Cancelling the default bold setting.
   tocSectionMarkup = \markup \large \column {
     \hspace #1
     \fill-line { \null \italic \fromproperty #'toc:text \null }
@@ -93,16 +95,25 @@
     \override BreathingSign.text = \markup { \musicglyph #"scripts.caesura.curved" }
     \override Glissando.style = #'trill
   }
-  \context{
+  \context {
     \Lyrics
-    \override LyricText.font-size = #-1
+    \override LyricText.font-size = #0
+    \override LyricHyphen.font-size = #-0.5
+    \override LyricHyphen.padding = #0.15
+    \override LyricHyphen.length = #0.6  %#0.4
+    \override LyricHyphen.minimum-length = #0.66
+    \override LyricHyphen.minimum-distance = #1 %0.15
+    \override LyricHyphen.thickness = 2.0
+    \override LyricHyphen.dash-period = 8.0
+    \override LyricExtender.minimum-length = #0
+    \override LyricExtender.right-padding = #0.5
+    \override LyricSpace.minimum-distance = #1
+    \override VerticalAxisGroup.nonstaff-relatedstaff-spacing.padding = #1
   }
   \context {
     \Voice
     \override DynamicTextSpanner.font-size = #'1
     \override TextScript.font-size = #'1
-    \remove "Fingering_engraver"
-    \remove "New_fingering_engraver"
   }
   \context {
     \FretBoards

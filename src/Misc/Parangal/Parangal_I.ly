@@ -26,12 +26,42 @@ parangal_i_solo_rh = {
   r2 
   \relative c' {
     \change Staff = "lower"
-    aes16( ces ees 
+    aes16(_[ ces ees 
     \change Staff = "upper" 
-    f aes ces ees f |
-    <ces ees>2 )
+    f] aes ces ees f |
+    <ces' ees>2 )
     <ces,, f ces'>2\fermata \bar "||"
   }
+  
+  \mark "A"
+  \time 2/2 <b! b'!>4\f <g g'>2 <aes aes'>8 <c' c''>8 | 
+  <b! b'!>2. r4 | 
+  <ees' ees''>4 <b! b'!>2 <c' c''>8 <fes' fes''>8 | 
+  <ees' ees''>2~ <ees' ees''>8\noBeam bes'8-.\mf ces''8-. ees''8-. |
+  \voiceOne f''4.( aes''8 f''4 ees''4 |
+  f''2~) f''8\noBeam bes'8 ces''8 ees''8 ||
+  f''4( bes''8 aes''8 f''4 ees''4 
+  \time 4/4 f''2) 
+  <<
+    \context Voice = "voiceOne" {
+      \voiceOne
+      ees'''2\arpeggio^\markup {"l.h."}
+    }
+    \context Voice = "voiceThree" {
+      \voiceThree
+      <ces'' ees'' f'' ces'''>2\arpeggio
+    }
+  >> \oneVoice 
+
+  \mark "B"
+  \time 2/2 
+  R1
+  \time 3/2
+  R1.
+  \time 2/2 
+  R1
+  \time 3/2 
+  R1.
 }
 
 parangal_i_solo_lh = {
@@ -55,6 +85,29 @@ parangal_i_solo_lh = {
   r2 
   s2
   r2 <aes ees>2\fermata \bar "||"
+
+  \mark "A"
+  <b,,! b,!>4 <g,, g,>2 <aes,, aes,>8 <c, c>8 |
+  <b,,! b,>2. r4 |
+  <ees, ees>4 <b,,! b,!>2 <c, c>8 <fes, fes>8 |
+  <ees, ees>2~ <ees, ees>8 r8 r4
+
+  \change Staff = "upper"
+  \voiceTwo <ces' ees'>4( <bes d'>4 <ces' ees'>2) | 
+  <ces' ees'>4-. <des' f'>8-. <des' f'>8-. <ces' ees'>4-. r4 | 
+  <ces' ees'>4( <ees' ges'>4 <des' f'>2) |
+  \time 4/4 <ces' ees'>2 <aes ees' aes'>2\arpeggio |
+  \change Staff = "lower" \oneVoice
+
+  \mark "B"
+  \time 2/2 
+  R1
+  \time 3/2
+  R1.
+  \time 2/2 
+  R1
+  \time 3/2 
+  R1.
 }
 
 parangal_i_band_rh = {
@@ -131,6 +184,7 @@ parangal_i_solo = <<
         "(Solo)"
       }
       shortInstrumentName = "I"
+      connectArpeggios = ##t
     } <<
       \new Staff = "upper" \parangal_i_solo_rh
       \new Staff = "lower" \with {
@@ -143,6 +197,7 @@ parangal_i_solo = <<
         "(Orchestra)"
       }
       shortInstrumentName = "II"
+      connectArpeggios = ##t
     } <<
       \new Staff = "upper" \parangal_i_band_rh
       \new Staff = "lower" \parangal_i_band_lh
