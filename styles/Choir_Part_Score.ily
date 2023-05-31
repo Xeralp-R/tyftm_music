@@ -60,15 +60,15 @@
   oddHeaderMarkup = \markup {
     \fill-line {
       {
-        \on-the-fly \print-page-number-check-first
+        \if \should-print-page-number
         \fromproperty #'header:part
       }
       {
-        \on-the-fly \not-part-first-page
+        \unless \on-first-page-of-part
         \fromproperty #'header:title
       }
       {
-        \on-the-fly \print-page-number-check-first
+        \if \should-print-page-number
         \fromproperty #'page:page-number-string
       }
     }
@@ -76,21 +76,21 @@
   evenHeaderMarkup = \markup {
     \fill-line {
       {
-        \on-the-fly \print-page-number-check-first
+        \if \should-print-page-number
         \fromproperty #'page:page-number-string
       }
       {
-        \on-the-fly \not-part-first-page
+        \unless \on-first-page-of-part
         \fromproperty #'header:title
       }
       {
-        \on-the-fly \print-page-number-check-first
+        \if \should-print-page-number
         \fromproperty #'header:part
       }
     }
   }
 
-  tocFormatMarkup = #markup %% Cancelling the default bold setting.
+  tocFormatMarkup = \markup {} %% Cancelling the default bold setting.
   tocSectionMarkup = \markup \large \column {
     \hspace #1
     \fill-line { \null \italic \fromproperty #'toc:text \null }

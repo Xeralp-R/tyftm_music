@@ -1,5 +1,5 @@
 % Automatically generated from a musicxml file.
-\version "2.22.1"
+\version "2.24.0"
 \include "../styles/Global.ily"
 
 sop_solo = {

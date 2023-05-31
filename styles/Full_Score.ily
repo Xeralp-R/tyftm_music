@@ -55,7 +55,7 @@
     }
   }%}
 
-  tocFormatMarkup = #markup %% Cancelling the default bold setting.
+  tocFormatMarkup = \markup {} %% Cancelling the default bold setting.
   tocSectionMarkup = \markup \large \column {
     \hspace #1
     \fill-line { \null \italic \fromproperty #'toc:text \null }
@@ -85,7 +85,7 @@
 }
 
 \layout {
-  \RemoveEmptyStaffContext
+  %\RemoveEmptyStaffContext
 
   \context {
     \Score
