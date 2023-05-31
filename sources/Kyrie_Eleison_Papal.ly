@@ -57,7 +57,7 @@ part-Ptwo-one = {
 
   R1 |
   \omit \time 7/2 \bar "||" \mark "Recit."
-  R1*7/2
+  R1*7/2\fermata
 
   \time 4/4 \bar "||" \mark "Chor."
   b4\< e'4 fis'4 g'4 |
@@ -72,7 +72,7 @@ part-Ptwo-one = {
   % 10
 
   \omit \time 6/2 \bar "||" \mark "Recit."
-  R1*6/2\!
+  R1*6/2\!\fermata
 
   \time 4/4 \bar "||" \mark "Chor."
   b4(\< e'4) fis'4 g'4 |
@@ -86,7 +86,7 @@ part-Ptwo-one = {
   fis'1\> |
 
   \omit \time 9/2 \bar "||" \mark "Recit."
-  R1*9/2\!
+  R1*9/2\!\fermata
 
   % 20
   \time 4/4 \bar "||" \mark "Chor."
@@ -131,7 +131,7 @@ part-Pthree-one = {
 
   R1 |
   \omit \time 7/2 \bar "||" \mark "Recit."
-  R1*7/2
+  R1*7/2\fermata
 
   \time 4/4 \bar "||" \mark "Chor."
   b4\< e'4 fis'4 g'4 |
@@ -146,7 +146,7 @@ part-Pthree-one = {
   % 10
 
   \omit \time 6/2 \bar "||" \mark "Recit."
-  R1*6/2\!
+  R1*6/2\!\fermata
 
   \time 4/4 \bar "||" \mark "Chor."
   b4(\< e'4) fis'4 g'4 |
@@ -160,7 +160,7 @@ part-Pthree-one = {
   e'2(\> dis'2) |
 
   \omit \time 9/2 \bar "||" \mark "Recit."
-  R1*9/2\!
+  R1*9/2\!\fermata
 
   % 20
   \time 4/4 \bar "||" \mark "Chor."
@@ -186,7 +186,7 @@ part-Pfour-one = {
 
   R1 |
   \omit \time 7/2 \bar "||" \mark "Recit."
-  R1*7/2
+  R1*7/2\fermata
 
   \time 4/4 \bar "||" \mark "Chor."
   b,4\< e4 fis4 g4 |
@@ -201,7 +201,7 @@ part-Pfour-one = {
   % 10
 
   \omit \time 6/2 \bar "||" \mark "Recit."
-  R1*6/2\!
+  R1*6/2\!\fermata
 
   \time 4/4 \bar "||" \mark "Chor."
   b,4(\< e4) fis4 g4 |
@@ -215,7 +215,7 @@ part-Pfour-one = {
   b1\> |
 
   \omit \time 9/2 \bar "||" \mark "Recit."
-  R1*9/2\!
+  R1*9/2\!\fermata
 
   % 20
   \time 4/4 \bar "||" \mark "Chor."
@@ -241,7 +241,7 @@ part-Pfive-one = {
 
   R1 |
   \omit \time 7/2 \bar "||" \mark "Recit."
-  R1*7/2
+  R1*7/2\fermata
 
   \time 4/4 \bar "||" \mark "Chor."
   b,4\< e4 fis4 g4 |
@@ -256,7 +256,7 @@ part-Pfive-one = {
   % 10
 
   \omit \time 6/2 \bar "||" \mark "Recit."
-  R1*6/2\!
+  R1*6/2\!\fermata
 
   \time 4/4 \bar "||" \mark "Chor."
   b,4(\< e4) fis4 g4 |
@@ -270,11 +270,11 @@ part-Pfive-one = {
   dis1\> |
 
   \omit \time 9/2 \bar "||" \mark "Recit."
-  R1*9/2\! \bar "||" \mark "Chor."
+  R1*9/2\!\fermata \bar "||" \mark "Chor."
 
   % 20
   \time 4/4
-  b,4(\< e4) fis4 g4 |
+  b,4\< e4 fis4 g4 |
   b4 c'4 a2 |
   d'4(\mf c'4 b4) a4 |
   a2 b2 |
@@ -524,7 +524,7 @@ part-Pseven-one = {
 
   R1 |
   \omit \time 7/2 \bar "||" \mark "Recit."
-  R1*7/2
+  R1*7/2\fermata
 
   \time 4/4 \bar "||" \mark "Chor."
   e''2\< fis''2 |
@@ -539,7 +539,7 @@ part-Pseven-one = {
   % 10
 
   \omit \time 6/2 \bar "||" \mark "Recit."
-  R1*6/2\!
+  R1*6/2\!\fermata
 
   \time 4/4 \bar "||" \mark "Chor."
   e''2\< fis''2 |
@@ -553,7 +553,7 @@ part-Pseven-one = {
   dis''1\> |
 
   \omit \time 9/2 \bar "||" \mark "Recit."
-  R1*9/2\!
+  R1*9/2\!\fermata
 
   % 20
   \time 4/4 \bar "||" \mark "Chor."
@@ -579,7 +579,7 @@ part-Peight-one = {
 
   R1 |
   \omit \time 7/2 \bar "||" \mark "Recit."
-  R1*7/2
+  R1*7/2\fermata
 
   \time 4/4 \bar "||" \mark "Chor."
   b'2\< c''2 |
@@ -594,7 +594,7 @@ part-Peight-one = {
   % 10
 
   \omit \time 6/2 \bar "||" \mark "Recit."
-  R1*6/2\!
+  R1*6/2\!\fermata
 
   \time 4/4 \bar "||" \mark "Chor."
   b'2\< c''2 |
@@ -608,7 +608,7 @@ part-Peight-one = {
   b'1\> |
 
   \omit \time 9/2 \bar "||" \mark "Recit."
-  R1*9/2\!
+  R1*9/2\!\fermata
 
   % 20
   \time 4/4 \bar "||" \mark "Chor."
@@ -634,7 +634,7 @@ part-Pnine-one = {
 
   R1 |
   \omit \time 7/2 \bar "||" \mark "Recit."
-  R1*7/2
+  R1*7/2\fermata
 
   \time 4/4 \bar "||" \mark "Chor."
   g2\< a2 |
@@ -649,7 +649,7 @@ part-Pnine-one = {
   % 10
 
   \omit \time 6/2 \bar "||" \mark "Recit."
-  R1*6/2\!
+  R1*6/2\!\fermata
 
   \time 4/4
   g2\< a2 |
@@ -663,7 +663,7 @@ part-Pnine-one = {
   fis1\> |
 
   \omit \time 9/2 \bar "||" \mark "Recit."
-  R1*9/2\!
+  R1*9/2\!\fermata
 
   % 20
   \time 4/4 \bar "||" \mark "Chor."
@@ -689,7 +689,7 @@ part-Ponezero-one = {
 
   R1 |
   \omit \time 7/2 \bar "||" \mark "Recit."
-  R1*7/2
+  R1*7/2\fermata
 
   \time 4/4 \bar "||" \mark "Chor."
   e,2\< fis,2 |
@@ -704,7 +704,7 @@ part-Ponezero-one = {
   % 10
 
   \omit \time 6/2 \bar "||" \mark "Recit."
-  R1*6/2\!
+  R1*6/2\!\fermata
 
   \time 4/4 \bar "||" \mark "Chor."
   e,2\< fis,2 |
@@ -718,7 +718,7 @@ part-Ponezero-one = {
   dis,1\> |
 
   \omit \time 9/2 \bar "||" \mark "Recit."
-  R1*9/2\!
+  R1*9/2\!\fermata
 
   % 20
   \time 4/4 \bar "||" \mark "Chor."
@@ -744,7 +744,7 @@ part-Poneone-one = {
 
   R1 |
   \omit \time 7/2 \bar "||" \mark "Recit."
-  R1*7/2
+  R1*7/2\fermata
 
   \time 4/4 \bar "||" \mark "Chor."
   e2\< fis2 |
@@ -759,7 +759,7 @@ part-Poneone-one = {
   % 10
 
   \omit \time 6/2 \bar "||" \mark "Recit."
-  R1*6/2\!
+  R1*6/2\!\fermata
 
   \time 4/4 \bar "||" \mark "Chor."
   e2\< fis2 |
@@ -773,7 +773,7 @@ part-Poneone-one = {
   dis1\> |
 
   \omit \time 9/2 \bar "||" \mark "Recit."
-  R1*9/2\!
+  R1*9/2\!\fermata
 
   % 20
   \time 4/4 \bar "||" \mark "Chor."

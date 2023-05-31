@@ -143,9 +143,9 @@ part-Pone-one = {
 
 PartPOneVoiceOneLyricsOne =  \lyricmode {
   Glo -- ry to God in the high -- est, __
-  And peace to all peo -- ple on earth! __
+  And peace to God's peo -- ple on earth! __
   Glo -- ry to God in the high -- est, __
-  nd peace to all peo -- ple on earth! __
+  And peace to God's peo -- ple on earth! __
 
   Lord God, Hea -- ven -- ly King,
   Al -- migh -- ty God and Fa -- ther, __
@@ -643,56 +643,56 @@ part-Pfive-one = {
 
 chor_lyr =  \lyricmode {
   Glo -- ry to God in the high -- est, __
-  And peace to all peo -- ple on earth! __
+  And peace to God's peo -- ple on earth! __
   Glo -- ry to God in the high -- est, __
-  And peace to all peo -- ple on earth! __
+  And peace to God's peo -- ple on earth! __
 
   Glo -- ry to God in the high -- est, __
-  And peace to all peo -- ple on earth! __
+  And peace to God's peo -- ple on earth! __
   Glo -- ry to God in the high -- est, __
-  And peace to all peo -- ple on earth! __
+  And peace to God's peo -- ple on earth! __
 
   Glo -- ry to God in the high -- est, __
-  And peace to all peo -- ple on earth! __
+  And peace to God's peo -- ple on earth! __
   Glo -- ry to God in the high -- est, __
-  And peace to all peo -- ple on earth! __
+  And peace to God's peo -- ple on earth! __
 
   Glo -- ry to God in the high -- est, __
-  And peace to all peo -- ple on earth! __
+  And peace to God's peo -- ple on earth! __
   Glo -- ry to God in the high -- est, __
-  And peace to all peo -- ple on earth! __
+  And peace to God's peo -- ple on earth! __
 
   Glo -- ry to God in the high -- est, __
-  And peace to all peo -- ple on earth! __
+  And peace to God's peo -- ple on earth! __
   Glo -- ry to God in the high -- est, __
-  And peace to all peo -- ple on earth! __
+  And peace to God's peo -- ple on earth! __
 }
 
 chor_alt_lyr =  \lyricmode {
   Glo -- ry to God in the high -- est, __
-  And peace to all peo -- ple on earth! __
+  And peace to God's peo -- ple on earth! __
   Glo -- ry to God in the high -- est, __
-  And peace to all peo -- ple on earth! __
+  And peace to God's peo -- ple on earth! __
 
   Glo -- ry to God in the high -- est, __
-  And peace to all peo -- ple on earth! __
+  And peace to God's peo -- ple on earth! __
   Glo -- ry to God in the high -- est, __
-  And peace to all peo -- ple on earth! __
+  And peace to God's peo -- ple on earth! __
 
   Glo -- ry to God in the high -- est, __
-  And peace to all peo -- ple on earth! __
+  And peace to God's peo -- ple on earth! __
   Glo -- ry to God in the high -- est, __
-  And peace to all peo -- ple on earth! __
+  And peace to God's peo -- ple on earth! __
 
   Glo -- ry to God in the high -- est, __
-  And peace to all peo -- ple on earth! __
+  And peace to God's peo -- ple on earth! __
   Glo -- ry to God in the high -- est, __
-  And peace to all peo -- ple on earth! __
+  And peace to God's peo -- ple on earth! __
 
   Glo -- ry to God in the high -- est, __
-  And peace to all peo -- ple on earth! __
+  And peace to God's peo -- ple on earth! __
   Glo -- ry to God!
-  And peace to all peo -- ple on earth! __
+  And peace to God's peo -- ple on earth! __
 }
 
 part-Psix-one = {

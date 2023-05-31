@@ -134,7 +134,7 @@ verse_four = {
   cis''8( b'8) a'8 g'8 |
   % 15
   a'8 b'4 d'8 |
-  g'8( fis'8) e'8 d'8 |
+  g'8( fis'8) e'8( d'8) |
   e'8 e'4.~ |
   e'2 |
 }
@@ -142,7 +142,7 @@ verse_four = {
 verse_four_lyr = \lyricmode {
   Da -- lon na -- mong I -- mong ba -- la -- ang pu -- long,
   M -- ga la -- gay kag -- tud -- lo Mong ma -- ta -- rong.
-  Ka -- ha -- yag sang Es --pi -- ri -- tu sang ka -- ma -- tu -- o -- ran,
+  Ka -- ha -- yag sang Es -- pi -- ri -- tu sang ka -- ma -- tu -- o -- ran,
   Su -- ga -- nga ma -- pa -- wa -- sa a -- mong da -- lan.
 }
 
@@ -160,7 +160,7 @@ verse_five = {
   d'8 d'8 r8 d'16 d'16 |
   b'8 a'4 g'16( fis'16) |
   a'8 g'4 fis'8 |
-  g'8 fis'8 e'8 d'8 |
+  g'8 fis'8 e'8( d'8) |
   e'2 |
   % 10
   fis'8 cis''4 fis'8 |
@@ -176,10 +176,10 @@ verse_five = {
 }
 
 verse_five_lyr = \lyricmode {
-  En la vi -- da Je -- sus, se a nues -- tro con -- suelo,
+  En la vi -- da Je -- sus, se a nues -- tro con -- sue -- lo,
   Se a nues -- tro a -- mi -- go y com -- pa -- ne -- ro.
   Siem -- pre po -- da -- mos res -- pon der a su lla -- ma -- da,
-  Siem -- pre dis pues to ha -- cer ty vo -- lun -- tad.
+  Siem -- pre dis -- pues -- to ha -- cer tu vo -- lun -- tad.
 }
 
 verse_six = {
@@ -196,7 +196,7 @@ verse_six = {
   d'4. d'8 |
   b'8 a'8 g'8( fis'8) |
   a'8 g'8 fis'8 e'8 |
-  g'8. fis'16 e'8 d'8 |
+  g'8. fis'16 e'8( d'8) |
   e'4. e'8 |
   % 10
   fis'8 cis''8 cis''8 fis'8 |
@@ -212,10 +212,10 @@ verse_six = {
 }
 
 verse_six_lyr = \lyricmode {
-  Pag -- ka -- in ng bu -- hay, han -- dog ng Ama,
+  Pag -- ka -- in ng bu -- hay, han -- dog ng A -- ma,
   Bu -- kal Ka ng bu -- hay, ba -- tis ng bi -- ya -- ya.
-  Ma -- ging pag --ka -- in sa -- min at i -- nu -- min ng ta -- nan,
-  sa pag -- la -- lak -- bay na -- min sa ta -- ha -- nan ng Ama.
+  Ma -- ging pag -- ka -- in sa -- min at i -- nu -- min ng ta -- nan,
+  sa pag -- la -- lak -- bay na -- min sa ta -- ha -- nan ng A -- ma.
 }
 
 piano_rh = {

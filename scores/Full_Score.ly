@@ -74,9 +74,9 @@
 
         \fill-line \huge \larger \larger {
           \center-column {
-            "First Revision"
+            "Second Revision"
             \vspace #0.5
-            "End of Summer 2022"
+            "Start of the S.Y. 2022"
           }
         }
 

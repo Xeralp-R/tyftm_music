@@ -81,8 +81,6 @@
     }
   }
 
-  \bookpart { \spacer_page }
-
   \bookpart {
     \tocItem f_chor.intro.papal \markup { "Kyrie Eleison, Papal Mass" }
 

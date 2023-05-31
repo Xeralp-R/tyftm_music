@@ -9,5 +9,6 @@
 !styles/
 
 !.gitignore
+!changelog.md
 
 testing.ly
