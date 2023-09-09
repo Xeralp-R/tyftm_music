@@ -22,6 +22,8 @@
 
 \include "../sources/Humayo't_Ihayag.ly"
 
+\include "../sources/Come_to_the_table_brass.ly"
+
 \pointAndClickOff
 
 \book {
@@ -297,6 +299,20 @@
     }
     \score {
       \keepWithTag #'(piano) \humayot_ihayag
+
+      \layout {}
+    }
+  }
+
+  \bookpart {
+    \tocGroup piano.conc \markup { "Appendix C. Brasswind Mass" }
+    \tocItem piano.conc.humayot \markup { "Come to the Table (Brass)" }
+
+    \header {
+      \come_to_the_table_brass_header
+    }
+    \score {
+      \keepWithTag #'(piano) \come_to_the_table_brass
 
       \layout {}
     }
