@@ -26,19 +26,31 @@ newpage = { \pageBreak }
 }
 
 \header {
-    poet = "Arr. Person of Hourai"
-    composer = "Takeru Kanazaki, Hiroki Morishita, Rei Kondoh"
+    poet = "Arr. Francesco Parrino"
+    composer = "Mariah Carey"
     title = \markup {
         \fontsize #1
-        \override #'(font-name . "Bodoni Moda 9pt, serif, Semibold")
-        "A Funeral of Flowers (Thunder)"
+        "All I Want for Christmas is You"
     }
     tagline = ##f
 }
 
-piano_upper = {}
+piano_upper = {
+    \clef treble
+    \key g \major 
+    \time 4/4 
+    \tempo "Liberamente"
 
-piano_lower = {}
+    g'''
+}
+
+piano_lower = {
+    \clef treble
+    \key g \major 
+    \time 4/4
+
+    r1 |
+}
 
 \score {
     \new GrandStaff \with {
