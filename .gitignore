@@ -6,6 +6,7 @@
 !*.ily
 !*.sh
 !sources/
+!sources/**/
 !scores/
 !build/
 !styles/
