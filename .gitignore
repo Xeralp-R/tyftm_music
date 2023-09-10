@@ -3,4 +3,14 @@
 
 #Except .ly files
 !*.ly
+!*.ily
+!*.sh
 !sources/
+!scores/
+!build/
+!styles/
+
+!.gitignore
+!changelog.md
+
+testing.ly
