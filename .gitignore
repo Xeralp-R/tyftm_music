@@ -1,17 +1,8 @@
-# Ignore everything
-*
+#ignore exports & imports
+exports/
+imports/
+.vscode/
 
-#Except .ly files
-!*.ly
-!*.ily
-!*.sh
-!sources/
-!sources/**/
-!scores/
-!build/
-!styles/
-
-!.gitignore
-!changelog.md
-
-testing.ly
+# i don't know if this should be out or not
+.uuid
+.DS_Store
