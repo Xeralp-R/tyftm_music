@@ -2,6 +2,8 @@
 exports/
 imports/
 .vscode/
+Musical_Experiments/
+other/
 
 # i don't know if this should be out or not
 .uuid
