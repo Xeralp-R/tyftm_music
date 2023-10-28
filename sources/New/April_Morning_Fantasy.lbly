@@ -1,0 +1,59 @@
+f> ps ps sp
+p> \\ctr \\k4f \\t4/4 sp
+
+---
+
+1> r; \\rel aes'' g fis; fis eis; np
+2> 1; 2 4 4; 2 2; np
+3> $2 \( ( \mf; $4 ); $6 ~; nv
+
+1> s s s \\rel aes c ees f c' ees f; aes s; \\nx1; np
+2> 2 4 32r8; 2 2; np
+3> $4 (; $9 \<; \hideNotes $11 \! ) \unhideNotes; ns 
+
+1> \\rel <aes, ees'> <aes ees'>; r <c' ees aes> q <b d aes'> q;
+    <b d aes'> <bes des aes'> q <bes des g> q; np
+2> 2 2; 8 4 4 4 8; r1m; np
+3> $1 ^\> --; $2 -- \!; \\ctr $3; $7 ~; ny
+
+---
+
+1> \\rel eis'' ees c' g bes aes g fis; f! e; ees! d; np
+2> 8r8; 2 2; 2. 4; np
+3> $1 \); $2 \( \<; $6 \!; $9 \>; $10 \! \); $11 \( \p; nv 
+
+1> \\nx2; rel ees'' aes, bes c bes aes aes; np
+2> 8; 8; 8; 8; 8; 4; 8; np
+3> $9 ~; ns
+
+1> <aes, ees> \\rel <c' ees aes> q <ees c aes> q; 
+    <ees c aes> <d aes' ces> <d aes' ces> <des g bes> <des g bes>;
+    r <aes c f> q q q; np
+2> 8 4 4 4 8; 8 4 4 4 8; 8 4 4 4 4 8; np
+3> \clef treble $2; $5 ~; \clef bass $11; nv
+
+1> \\nx2; f; np
+2> 1; np
+3> ny
+
+---
+
+1> \\rel des'' r; c ces; bes r; np
+2> 2. 4; 2. 4; 2. 4;
+3> $1 \); $3 \( \dim ; $5 \); nv
+
+1> \\rel aes' g aes; aes f g aes g f f; f fes f; np
+2> 4; 2; 4; 8r4 8 4 8; 4 2 4; np
+3> $3 ~; $10 ~; ns
+
+1> r \\rel <bes des fes> q q q; r <aes c ees> q q q; r <fes bes des> q q <f bes des>; np
+2> 8 4 4 4 8; 8 4 4 4 8; 8 4 4 4 4 8; np
+3> nv
+
+1> e; ees; d; np
+2> 1; 1; 1; np
+3> ny
+
+---
+
+1> \\rel bes'' <bes, des> <c ees>
