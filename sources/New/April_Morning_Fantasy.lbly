@@ -1,4 +1,4 @@
-f> ps ps sp
+f> ps"upper" ps"lower" sp
 p> \\ctr \\k4f \\t4/4 sp
 
 ---
@@ -9,7 +9,8 @@ p> \\ctr \\k4f \\t4/4 sp
 
 1> s s s \\rel aes c ees f c' ees f; aes s; \\nx1; np
 2> 2 4 32r8; 2 2; np
-3> $4 (; $9 \<; \hideNotes $11 \! ) \unhideNotes; ns 
+3> \change Staff = "lower" $4 (;\change Staff = "upper" $9 \<; 
+    \hideNotes $11 \! ) \unhideNotes; ns 
 
 1> \\rel <aes, ees'> <aes ees'>; r <c' ees aes> q <b d aes'> q;
     <b d aes'> <bes des aes'> q <bes des g> q; np
@@ -46,7 +47,8 @@ p> \\ctr \\k4f \\t4/4 sp
 2> 4; 2; 4; 8r4 8 4 8; 4 2 4; np
 3> $3 ~; $10 ~; ns
 
-1> r \\rel <bes des fes> q q q; r <aes c ees> q q q; r <fes bes des> q q <f bes des>; np
+1> r \\rel <bes des fes> q q q; r <aes c ees> q q q; 
+    r <fes bes des> q q <f bes des>; np
 2> 8 4 4 4 8; 8 4 4 4 8; 8 4 4 4 4 8; np
 3> nv
 
@@ -56,4 +58,20 @@ p> \\ctr \\k4f \\t4/4 sp
 
 ---
 
-1> \\rel bes'' <bes, des> <c ees>
+1> \\rel bes'' <bes, des> <c ees> <des f> <ees g> <f aes> <g bes> <aes c>;
+    d <des, f> <ees g> <f aes> <g bes> <aes c> <bes des> <c ees>;
+    <des fes> <g, ees'> <des' fes> <g, ees'> <des' fes> <g, ees'> 
+    <des' fes> <g, ees'>; np
+2> 8r8; 8r8; 8r8;
+3> $1 \mp; $2 (; $9 ) \cresc ; $10 (; $17 ); $18 ( ; $24 ); ns 
+
+1> r \\rel <bes des g> q q q; r <aes d f> q q q; 
+    r \\rel ees, bes' ees g bes ees g; np
+2> 8 4 4 4 8; 8 4 4 4 8; 8r8; np
+3> $12 (; $18 ); nv 
+
+1> bes,; aes,; \\nx1; np
+2> 1; 1; np
+3 ny
+
+---
