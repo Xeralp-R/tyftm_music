@@ -1,24 +1,10 @@
 % Automatically generated from a musicxml file.
-\version "2.22.1"
-
-#(set-global-staff-size 19.8425)
-
-
-
-#(set! paper-alist 
-(cons '("new_size" . (cons (* 215.9 mm) (* 330.199 mm))) paper-alist))
-\paper {
-    #(set-paper-size "new_size")
-    top-margin = 15\mm
-    bottom-margin = 15\mm
-    left-margin = 15\mm
-    right-margin = 15\mm
-    ragged-last-bottom = ##f
-}
+\version "2.24.0"
+\include "../../styles/global.ily"
+\include "../../styles/Full_Score.ily"
 
 \header {
-    composer = "Christopher Larkin
-    "
+    composer = "Christopher Larkin"
     subtitle = "For Bravura Orchestra"
     title = "Greenpath"
 }
@@ -27,49 +13,52 @@ part-Pone-one = {
     \key d \major
     \time 3/4
     \clef treble
-    e'''2~-\markup { \bold "Andante " }\pp\> |
+    \tempo "Andante"
+
+    \partial 2
+    e'''2~\pp\> |
 % 0
     e'''2.\ppp |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 5
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 10
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 15
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 20
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 25
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
     fis'''16(\mf b''16 cis'''16 a''16 b''8)-. r8 r4 |
 % 30
-    r1 |
+    R2. |
     b''16( e''16 fis''16 d''16 e''8)-. r8 r4 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
 % 35
     fis'''16 b''16 cis'''16 a''16 b''16 g''16 a''16 e''16 fis''16 r16 r8 |
     << { b''2\pp cis'''8 d'''8 } \\ { } >> |
@@ -81,16 +70,16 @@ part-Pone-one = {
     e''2 fis''8 g''8 |
     fis''2 d''4 |
     e''2. |
-    r1 |
+    R2. |
 % 45
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 50
-    r1 |
-    r1 |
+    R2. |
+    R2. |
     << { b''8-!\mf r8 b''8-! r8 b''8-! r8 } \\ { } >> |
     b''8-! r8 b''8-! r8 b''8-! e'''8-! |
     b''8-! r8 b''8-! r8 b''8-! r8 |
@@ -111,27 +100,27 @@ part-Pone-one = {
     b''8-! r8 b''8-! r8 b''8-! r8 |
     b''8-! r8 b''8-! a'''8-! g'''8-! fis'''8-! |
     \time 6/8
-    r1 |
-    r1 |
+    R2. |
+    R2. |
 % 70
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 75
-    r1 |
-    << { r1 } \\ { } >> |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    << { R2. } \\ { } >> |
+    R2. |
+    R2. |
+    R2. |
 % 80
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
     <<
         \context Voice = "voiceone" { \voiceOne 
-            r1 |
+            R2. |
             b''2.\ff |
         % 85
         }
@@ -148,57 +137,59 @@ part-Pone-one = {
     d'''4. b''4. |
 % 90
     a''2. |
-    << { g''4.\< e''4. } \\ { } >> |
-    r1 |
+    g''4.\< e''4. |
+    R2.\! |
 }
 
 part-Pone-two = {
     \key d \major
     \time 3/4
     \clef treble
+
+    \partial 2
     r4 r4 |
 % 0
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 5
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 10
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 15
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 20
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 25
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
     r4 r8 fis'''16(-\markup { \italic "echo" }\p b''16 cis'''16 a''16 b''8)-. |
 % 30
-    r1 |
+    R2. |
     r4 r8 b''16( e''16 fis''16 d''16 e''8)-. |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
 % 35
     r4 r4 fis''16 b'16 cis''16 dis''16 |
     e''2 fis''8 g''8 |
@@ -210,16 +201,16 @@ part-Pone-two = {
     a'2 b'8 c''8 |
     b'2 g'4 |
     a'2. |
-    r1 |
+    R2. |
 % 45
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 50
-    r1 |
-    r1 |
+    R2. |
+    R2. |
     b'8-! r8 b'8-! r8 b'8-! r8 |
     b'8-! r8 b'8-! r8 b'8-! e''8-! |
     b'8-! r8 b'8-! r8 b'8-! r8 |
@@ -240,16 +231,16 @@ part-Pone-two = {
     b'8-! r8 b'8-! r8 b'8-! r8 |
     b'8-! r8 b'8-! a''8-! g''8-! fis''8-! |
     \time 6/8
-    r1 |
-    r1 |
+    R2. |
+    R2. |
 % 70
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 75
-    r1 |
+    R2. |
     fis''2.~ |
     fis''4. g''8. a''8. |
     fis''2 b'4 |
@@ -269,13 +260,15 @@ part-Pone-two = {
 % 90
     e''2. |
     a'4. c''4. |
-    r1 |
+    R2. |
 }
 
 part-Ptwo-one = {
     \key d \major
     \time 3/4
     \clef treble
+
+    \partial 2
     r4 r4 |
 % 0
     <<
@@ -371,62 +364,62 @@ part-Ptwo-one = {
             fis''8 fis''16 e''16 fis''4~ fis''4 |
         }
     >>
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 40
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 45
     fis16-.\p b16-. cis'16-. fis'16-. e'16-. fis'16-. cis''16-. b'16-. 
     cis''16-. fis''16-. e''16-. fis''16-. |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
     fis16-.\mp b16-. cis'16-. fis'16-. e'16-. fis'16-. cis''16-. b'16-. 
     cis''16-. fis''16-. e''16-. fis''16-. |
 % 50
-    r1 |
+    R2. |
     e'16-. fis'16-. r16 fis'16-. b'16-. cis''16-. fis'16-. b'16-. cis''16-. 
     b'16-. cis''16-. fis''16-. |
-    r1 |
+    R2. |
     fis16-.\mp b16-. cis'16-. fis'16-. e'16-. fis'16-. cis''16-. b'16-. 
     cis''16-. fis''16-. e''16-. fis''16-. |
-    r1 |
+    R2. |
 % 55
-    r1 |
-    r1 |
+    R2. |
+    R2. |
     fis16-.\mp b16-. cis'16-. fis'16-. e'16-. fis'16-. cis''16-. b'16-. 
     cis''16-. fis''16-. e''16-. fis''16-. |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
 % 60
-    r1 |
+    R2. |
     fis16-.\p b16-. cis'16-. fis'16-. e'16-. fis'16-. cis''16-. b'16-. 
     cis''16-. fis''16-. e''16-. fis''16-. |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
 % 65
     fis16-.\mp b16-. cis'16-. fis'16-. e'16-. fis'16-. cis''16-. b'16-. 
     cis''16-. fis''16-. e''16-. fis''16-. |
-    r1 |
+    R2. |
     c'4. d'4. |
     << { \time 6/8
-    r1 } \\ { } >> |
-    r1 |
+    R2. } \\ { } >> |
+    R2. |
 % 70
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 75
-    << { r1 } \\ { } >> |
+    << { R2. } \\ { } >> |
     \clef bass
     e16-.-> e16 r16 e16-. r16 e16-. e8-.-> e16-. e16-. e8-. |
     b16-.-> b16 r16 b16-. r16 b16-. b8-.-> b16-. b16-. b8-. |
@@ -454,15 +447,17 @@ part-Ptwo-one = {
 % 90
     <a a' >16-.-> <a a' >16 r16 <a a' >16-. r16 <a a' >16-. <a a' >8-.-> <a a' 
     >16-. <a a' >16-. <a a' >8-. |
-    << { <c c' >16-.->\< <c c' >16 r16 <c c' >16-. r16 <c c' >16-. <c c' 
-    >8-.-> <c c' >16-. <c c' >16-. <c c' >8-. } \\ { } >> |
-    r1 |
+    <c c' >16-.->\< <c c' >16 r16 <c c' >16-. r16 <c c' >16-. <c c' 
+    >8-.-> <c c' >16-. <c c' >16-. <c c' >8-. |
+    R2.\! |
 }
 
 part-Ptwo-two = {
     \key d \major
     \time 3/4
     \clef treble
+
+    \partial 2
     r4 r4 |
 % 0
     <<
@@ -558,50 +553,50 @@ part-Ptwo-two = {
         }
     >>
     \clef bass
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 40
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 45
     fis,16-. b,16-. cis16-. fis16-. e16-. fis16-. cis'16-. b16-. cis'16-. 
     fis'16-. e'16-. fis'16-. |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
     fis,16-. b,16-. cis16-. fis16-. e16-. fis16-. cis'16-. b16-. cis'16-. 
     fis'16-. e'16-. fis'16-. |
 % 50
-    r1 |
+    R2. |
     e,16-. fis,16-. r16 fis,16-. b,16-. cis16-. fis,16-. b,16-. cis16-. b,16-. 
     cis16-. fis16-. |
-    r1 |
+    R2. |
     fis,16-. b,16-. cis16-. fis16-. e16-. fis16-. cis'16-. b16-. cis'16-. 
     fis'16-. e'16-. fis'16-. |
-    r1 |
+    R2. |
 % 55
-    r1 |
-    r1 |
+    R2. |
+    R2. |
     fis,16-. b,16-. cis16-. fis16-. e16-. fis16-. cis'16-. b16-. cis'16-. 
     fis'16-. e'16-. fis'16-. |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
 % 60
-    r1 |
+    R2. |
     fis,16-. b,16-. cis16-. fis16-. e16-. fis16-. cis'16-. b16-. cis'16-. 
     fis'16-. e'16-. fis'16-. |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
 % 65
     fis,16-. b,16-. cis16-. fis16-. e16-. fis16-. cis'16-. b16-. cis'16-. 
     fis'16-. e'16-. fis'16-. |
-    r1 |
+    R2. |
     <c, c >4. <d, d >4. |
     \time 6/8
     <e,, e, >16-.-> <e,, e, >16 r16 <e,, e, >16-. r16 <e,, e, >16-. <e,, e, 
@@ -657,13 +652,15 @@ part-Ptwo-two = {
     >8-.-> <a,, a, >16-. <a,, a, >16-. <a,, a, >8-. |
     <c,, c, >16-.-> <c,, c, >16 r16 <c,, c, >16-. r16 <c,, c, >16-. <c,, c, 
     >8-.-> <c,, c, >16-. <c,, c, >16-. <c,, c, >8-. |
-    r1 |
+    R2. |
 }
 
 part-Pthree-one = {
     \key d \major
     \time 3/4
     \clef treble
+
+    \partial 2
     e'''2~\pp\> |
 % 0
     e'''2.~\ppp |
@@ -680,33 +677,33 @@ part-Pthree-one = {
 % 10
     e'''2.~-\markup { \italic "dim. al niente" } |
     e'''2. |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
 % 15
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 20
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 25
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
     fis''16(\mf b'16 cis''16 a'16 b'8)-. fis''16( b'16 cis''16 a'16 b'8)-. |
 % 30
-    r1 |
+    R2. |
     b'16( e'16 fis'16 d'16 e'8)-. b'16( e'16 fis'16 d'16 e'8)-. |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
 % 35
     fis''16 b'16 cis''16 a'16 b'16 g'16 a'16 e'16 fis'16 b16 cis'16 dis'16 |
     e'2\mp fis'8 g'8 |
@@ -721,38 +718,38 @@ part-Pthree-one = {
     fis'''16(\p b''16 cis'''16 a''16 b''8)-. fis'''16( b''16 cis'''16 a''16 
     b''8)-. |
 % 45
-    r1 |
+    R2. |
     b''16( e''16 fis''16 d''16 e''8)-. b''16( e''16 fis''16 d''16 e''8)-. |
-    r1 |
+    R2. |
     fis'''16( b''16 cis'''16 a''16 b''8)-. fis'''16( b''16 cis'''16 a''16 
     b''8)-. |
-    r1 |
+    R2. |
 % 50
     b''16( e''16 fis''16 d''16 e''8)-. b''16( e''16 fis''16 d''16 e''8)-. |
-    r1 |
+    R2. |
     fis'''16(\mf b''16 cis'''16 a''16 b''8)-. fis'''16( b''16 cis'''16 a''16 
     b''8)-. |
-    r1 |
+    R2. |
     b''16( e''16 fis''16 d''16 e''8)-. b''16( e''16 fis''16 d''16 e''8)-. |
 % 55
-    r1 |
+    R2. |
     fis'''16( b''16 cis'''16 a''16 b''8)-. fis'''16( b''16 cis'''16 a''16 
     b''8)-. |
-    r1 |
+    R2. |
     b''16( e''16 fis''16 d''16 e''8)-. b''16( e''16 fis''16 d''16 e''8)-. |
-    r1 |
+    R2. |
 % 60
     fis'''16(\p b''16 cis'''16 a''16 b''8)-. fis'''16( b''16 cis'''16 a''16 
     b''8)-. |
-    r1 |
+    R2. |
     b''16( e''16 fis''16 d''16 e''8)-. b''16( e''16 fis''16 d''16 e''8)-. |
-    r1 |
+    R2. |
     fis'''16( b''16 cis'''16 a''16 b''8)-. fis'''16( b''16 cis'''16 a''16 
     b''8)-. |
 % 65
-    r1 |
+    R2. |
     b''16( e''16 fis''16 d''16 e''8)-. b''16( e''16 fis''16 d''16 e''8)-. |
-    r1 |
+    R2. |
     \time 6/8
     e''16-.->\f b'16-. a'16-. e''16-.-> r16 e''16-. r16 e''16-. r16 e''16-. r8 |
     e''16-.-> b'16-. a'16-. e''16-.-> r16 fis''16-. r16 fis''16-. r16 
@@ -800,107 +797,109 @@ part-Pthree-one = {
 % 90
     b'16-.-> b'16-. r16 b'16-. r16 b'16-. b'8-.-> b'16-. b'16-. b'8-. |
     e'''2.~\< |
-    e'''2.\> |
+    e'''2.\!^\markup "edit" |
 }
 
 part-Pthree-two = {
     \key d \major
     \time 3/4
     \clef treble
+
+    \partial 2
     r4 r4 |
 % 0
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 5
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 10
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 15
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 20
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 25
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 30
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 35
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 40
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
     fis''16( b'16 cis''16 a'16 b'8)-. fis''16( b'16 cis''16 a'16 b'8)-. |
 % 45
-    r1 |
+    R2. |
     b'16( e'16 fis'16 d'16 e'8)-. b'16( e'16 fis'16 d'16 e'8)-. |
-    r1 |
+    R2. |
     fis''16( b'16 cis''16 a'16 b'8)-. fis''16( b'16 cis''16 a'16 b'8)-. |
-    r1 |
+    R2. |
 % 50
     b'16( e'16 fis'16 d'16 e'8)-. b'16( e'16 fis'16 d'16 e'8)-. |
-    r1 |
+    R2. |
     fis''16( b'16 cis''16 a'16 b'8)-. fis''16( b'16 cis''16 a'16 b'8)-. |
-    r1 |
+    R2. |
     b'16( e'16 fis'16 d'16 e'8)-. b'16( e'16 fis'16 d'16 e'8)-. |
 % 55
-    r1 |
+    R2. |
     fis''16( b'16 cis''16 a'16 b'8)-. fis''16( b'16 cis''16 a'16 b'8)-. |
-    r1 |
+    R2. |
     b'16( e'16 fis'16 d'16 e'8)-. b'16( e'16 fis'16 d'16 e'8)-. |
-    r1 |
+    R2. |
 % 60
     fis''16( b'16 cis''16 a'16 b'8)-. fis''16( b'16 cis''16 a'16 b'8)-. |
-    r1 |
+    R2. |
     b'16( e'16 fis'16 d'16 e'8)-. b'16( e'16 fis'16 d'16 e'8)-. |
-    r1 |
+    R2. |
     fis''16( b'16 cis''16 a'16 b'8)-. fis''16( b'16 cis''16 a'16 b'8)-. |
 % 65
-    r1 |
+    R2. |
     b'16( e'16 fis'16 d'16 e'8)-. b'16( e'16 fis'16 d'16 e'8)-. |
-    r1 |
+    R2. |
     \time 6/8
-    r1 |
-    r1 |
+    R2. |
+    R2. |
 % 70
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 75
-    r1 |
+    R2. |
     \clef bass
     e'16-. c'16-. b16-. c'16-. b16-. a16-. b16-. a16-. g16-. a16-. g16-. e16-. |
     e'16-. c'16-. b16-. c'16-. b16-. a16-. b16-. a16-. g16-. a16-. g16-. e16-. |
@@ -931,137 +930,143 @@ part-Pthree-two = {
     b16-.-> b16-. r16 b16-. r16 b16-. b8-.-> b16-. b16-. b8-. |
     <fis' fis'' >16-.-> <fis' fis'' >16-. r16 <fis' fis'' >16-. r16 <fis' 
     fis'' >16-. <g' g'' >8-.-> <g' g'' >16-. <a' a'' >16-. <a' a'' >8-. |
-    r1 |
+    R2. |
 }
-
+%{
 part-Pfour-one = {
     \key c \major
     \time 3/4
-    \clef percussionr4 r4 |
+    \clef percussion
+    
+    \partial 2
+    r4 r4 |
 % 0
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 5
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 10
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 15
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 20
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 25
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 30
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 35
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 40
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
     r4 r8-\markup { \italic "swish, large to small" } r4.\p\< |
     r4\sf r4 r4 |
 % 45
-    r1 |
-    r1 |
+    R2. |
+    R2. |
     r4.-\markup { \italic "continuous, low-high-low" } r4. |
     r4. r8 r4 |
-    r1 |
+    R2. |
 % 50
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 55
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
     r4. r4.\< |
 % 60
     r4\sf r4 r4 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
     r4.-\markup { \italic "continuous, low-high-low" } r4. |
     r4. r8 r4 |
 % 65
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
     \time 6/8
-    r1 |
-    r1 |
+    R2. |
+    R2. |
 % 70
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 75
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 80
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
     r1\ff |
 % 85
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 90
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
 }
 
 part-Pfive-one = {
     \key c \major
     \time 3/4
-    \clef percussionr4 r4 |
+    \clef percussion
+    
+    \partial 2
+    r4 r4 |
 % 0
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
     r8(\ppp r8 r4) r4 |
 % 5
     r8(\ppp r8 r4) r4 |
@@ -1091,54 +1096,54 @@ part-Pfive-one = {
     r8( r8 r4) r4 |
     r8( r8 r4) r4 |
     r8( r8 r4) r4 |
-    r1 |
+    R2. |
     r16( r16 r16 r16 r8)-. r16( r16 r16 r16 r8)-. |
 % 30
-    r1 |
+    R2. |
     r16( r16 r16 r16 r8)-. r16( r16 r16 r16 r8)-. |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
 % 35
     r16 r16 r16 r16 r16 r16 r16 r16 r16 r16 r16 r16 |
     r8 r8 r4 r4 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
 % 40
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
     r4 r2\tremolo\p\< |
     r4\sf r4 r4 |
 % 45
     r16-. r16-. r16-. r16-. r16-. r16-. r16-. r16-. r16-. r16-. r16-. r16-. |
     r8 r8 r4 r4 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
     r16-. r16-. r16-. r16-. r16-. r16-. r16-. r16-. r16-. r16-. r16-. r16-. |
 % 50
     r8 r8 r4 r4 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 55
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 60
-    r1 |
+    R2. |
     r16-. r16-. r16-. r16-. r16-. r16-. r16-. r16-. r16-. r16-. r16-. r16-. |
     r8 r8 r4 r4 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
 % 65
     r16-. r16-. r16-. r16-. r16-. r16-. r16-. r16-. r16-. r16-. r16-. r16-. |
     r8 r8 r4 r4 |
-    r1 |
+    R2. |
     \time 6/8
     r8.\f r8 r16 r16 r16 r16 r16 r16 r16 |
     r8.\f r8 r16 r16 r16 r16 r16 r16 r16 |
@@ -1169,115 +1174,118 @@ part-Pfive-one = {
 % 90
     r16->\ff r16-> r16 r16-> r16 r16-> r8-> r16-> r16-> r8-> |
     r16->\ff r16-> r16 r16-> r16 r16-> r8-> r16-> r16-> r8-> |
-    r1 |
+    R2. |
 }
 
 part-Psix-one = {
     \key c \major
     \time 3/4
-    \clef percussionr4 r4 |
+    \clef percussion
+    
+    \partial 2
+    r4 r4 |
 % 0
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 5
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 10
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 15
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 20
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 25
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 30
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 35
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 40
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
     r4 r8 r4.\tremolo\p\< |
     r4\sf r4 r4 |
 % 45
-    r1 |
-    r1 |
+    R2. |
+    R2. |
     r4.~\tremolo\< r4.~\tremolo\!\> |
     r4. r8 r4 |
-    r1 |
+    R2. |
 % 50
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 55
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
     r2.\tremolo\< |
 % 60
     r4\sf r4 r4 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
     r4.~\tremolo\< r4.~\tremolo\!\> |
     r4. r8 r4 |
 % 65
-    r1 |
-    r1 |
+    R2. |
+    R2. |
     r4. r4.\tremolo\p\< |
     \time 6/8
     r4.\sf r4 r8 |
-    r1 |
+    R2. |
 % 70
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 75
     r4 r8 r4.\tremolo\< |
     r4.\sf r4 r8 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
 % 80
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
     r16->\ff r16-> r16 r16-> r16 r16-> r8-> r16-> r16-> r8-> |
 % 85
     r16->\ff r16-> r16 r16-> r16 r16-> r8-> r16-> r16-> r8-> |
@@ -1294,79 +1302,82 @@ part-Psix-one = {
 part-Pseven-one = {
     \key c \major
     \time 3/4
-    \clef percussionr4 r4 |
+    \clef percussion
+    
+    \partial 2
+    r4 r4 |
 % 0
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 5
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 10
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 15
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 20
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 25
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 30
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 35
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 40
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 45
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 50
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 55
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 60
     r8\p-\markup { "mute" } r8 r8 r8 r8 r8 |
     r8 r8 r8 r8 r8 r8 |
@@ -1407,95 +1418,98 @@ part-Pseven-one = {
 % 90
     r8.-> r8-> r16-> r8-> r16-> r16-> r8-> |
     r8.-> r8-> r16-> r8-> r16-> r16-> r8-> |
-    r1 |
+    R2. |
 }
 
 part-Peight-one = {
     \key c \major
     \time 3/4
-    \clef percussionr4 r4 |
+    \clef percussion
+    
+    \partial 2
+    r4 r4 |
 % 0
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 5
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 10
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 15
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 20
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 25
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 30
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 35
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 40
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 45
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 50
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 55
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 60
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 65
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
     \time 6/8
     r4\f r8 r4 r8 |
     r4\f r8 r4 r8 |
@@ -1526,48 +1540,50 @@ part-Peight-one = {
 % 90
     r8.-> r8.-> r8-> r8-> r8-> |
     r8.-> r8.-> r8-> r8-> r8-> |
-    r1 |
+    R2. |
 }
-
+%}
 part-Pnine-one = {
     \key d \major
     \time 3/4
     \clef treble
+
+    \partial 2
     r4 r4 |
 % 0
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 5
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 10
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 15
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 20
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 25
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
     << { b''2.~\ppp } \\ { } >> |
     b''2.~ |
 % 30
@@ -1589,14 +1605,14 @@ part-Pnine-one = {
     fis''4~ fis''8 fis''16 e''16 b''4 |
     e'8-!\mp-\markup { \italic "secco molto" } b'8-! fis''8-! e'8-! r8 r8 |
 % 45
-    r1 |
+    R2. |
     e'8-! b'8-! fis''8-! e'8-! r8 r8 |
-    r1 |
+    R2. |
     e'8-! b'8-! fis''8-! e'8-! r8 r8 |
-    r1 |
+    R2. |
 % 50
     d'8-! a'8-! e''8-! d'8-! r8 r8 |
-    r1 |
+    R2. |
     b''8-!\mf r8 b''8-! r8 b''8-! r8 |
     b''8-! r8 b''8-! r8 b''8-! e'''8-! |
     b''8-! r8 b''8-! r8 b''8-! r8 |
@@ -1607,15 +1623,15 @@ part-Pnine-one = {
     b''8-! r8 b''8-! r8 b''8-! r8 |
     b''8-! r8 b''8-! a'''8-! g'''8-! fis'''8-! |
 % 60
-    << { e'''2.~\tremolo\p } \\ { } >> |
-    e'''2.\tremolo |
-    e'''2.~\tremolo |
-    e'''2.\tremolo |
-    e'''2.~\tremolo |
+    e'''2.:32~\p |
+    e'''2.:32~ |
+    e'''2.:32~ |
+    e'''2.:32~ |
+    e'''2.:32~ |
 % 65
-    e'''2.\tremolo |
-    e'''2.~\tremolo |
-    e'''2.\tremolo |
+    e'''2.:32~ |
+    e'''2.:32~ |
+    e'''2.:32 |
     << { \time 6/8
     e''16-.->\f b'16-. a'16-. e''16-.-> r16 e''16-. r16 e''16-. r16 e''16-. r8 
     } \\ { } >> |
@@ -1672,50 +1688,52 @@ part-Pnine-one = {
     g'16-. e'16-. |
 % 90
     b16-.-> b16-. r16 b16-. r16 b16-. b8-.-> b16-. b16-. b8-. |
-    << { fis'16-.->\< fis'16-. r16 fis'16-. r16 fis'16-. g'8-.-> g'16-. a'16-. 
-    a'8-. } \\ { } >> |
-    r1 |
+    fis'16-.->\< fis'16-. r16 fis'16-. r16 fis'16-. g'8-.-> g'16-. a'16-. 
+    a'8-.\! |
+    R2. |
 }
 
 part-Pnine-two = {
     \key d \major
     \time 3/4
     \clef treble
+
+    \partial 2
     r4 r4 |
 % 0
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 5
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 10
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 15
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 20
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 25
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
     fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
     fis''4~ fis''8 fis''16 e''16 b''4 |
 % 30
@@ -1810,36 +1828,38 @@ part-Pnine-two = {
 % 90
     b16-.-> b16-. r16 b16-. r16 b16-. b8-.-> b16-. b16-. b8-. |
     fis'16-.-> fis'16-. r16 fis'16-. r16 fis'16-. g'8-.-> g'16-. a'16-. a'8-. |
-    r1 |
+    R2. |
 }
 
 part-Ponezero-one = {
     \key d \major
     \time 3/4
     \clef treble
+
+    \partial 2
     r4 r4 |
 % 0
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 5
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 10
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 15
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
     r2 g'4( |
     a'4. c''4.) |
 % 20
@@ -1873,53 +1893,53 @@ part-Ponezero-one = {
     fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
     e'8-!\mp-\markup { \italic "secco molto" } b'8-! fis''8-! e'8-! r8 r8 |
 % 45
-    r1 |
+    R2. |
     e'8-! b'8-! fis''8-! e'8-! r8 r8 |
-    r1 |
+    R2. |
     e'8-! b'8-! fis''8-! e'8-! r8 r8 |
-    r1 |
+    R2. |
 % 50
     d'8-! a'8-! e''8-! d'8-! r8 r8 |
-    r1 |
+    R2. |
     e'8-! b'8-! fis''8-! e'8-! r8 r8 |
-    r1 |
+    R2. |
     e'8-! b'8-! fis''8-! e'8-! r8 r8 |
 % 55
-    r1 |
+    R2. |
     e'8-! b'8-! fis''8-! e'8-! r8 r8 |
-    r1 |
+    R2. |
     d'8-! a'8-! e''8-! d'8-! r8 r8 |
-    r1 |
+    R2. |
 % 60
     e'8-! b'8-! fis''8-! e'8-! r8 r8 |
-    r1 |
+    R2. |
     e'8-! b'8-! fis''8-! e'8-! r8 r8 |
-    r1 |
+    R2. |
     e'8-! b'8-! fis''8-! e'8-! r8 r8 |
 % 65
-    r1 |
+    R2. |
     d'8-! a'8-! e''8-! d'8-! r8 r8 |
     c'4. d'4. |
     \time 6/8
-    r1 |
-    r1 |
+    R2. |
+    R2. |
 % 70
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 75
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 80
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
     << { b''2.\ff } \\ { } >> |
 % 85
     g''8. a''8. b''4. |
@@ -1929,39 +1949,41 @@ part-Ponezero-one = {
     d'''4. b''4. |
 % 90
     a''2. |
-    << { g''4.\< e''4. } \\ { } >> |
-    r1 |
+    g''4.\< e''4.\! |
+    R2. |
 }
 
 part-Ponezero-two = {
     \key d \major
     \time 3/4
     \clef treble
+
+    \partial 2
     r4 r4 |
 % 0
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 5
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 10
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 15
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
     r2 r4 |
-    r1 |
+    R2. |
 % 20
     b'2.~ |
     b'2.~ |
@@ -1971,7 +1993,7 @@ part-Ponezero-two = {
 % 25
     d''4. b'4. |
     a'2. |
-    r1 |
+    R2. |
     fis''4~ fis''8 fis''16 e''16 fis''4~ |
     fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
 % 30
@@ -2021,25 +2043,25 @@ part-Ponezero-two = {
     fis''8 fis''16 e''16 fis''8 fis''16 e''16 fis''8 fis''16 e''16 |
     fis''8 fis''16 e''16 fis''8 fis''16 e''16 b''8 fis''16 e''16 |
     \time 6/8
-    r1 |
-    r1 |
+    R2. |
+    R2. |
 % 70
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 75
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 80
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
     b'2. |
 % 85
     g'8. a'8. b'4. |
@@ -2050,29 +2072,31 @@ part-Ponezero-two = {
 % 90
     a'2. |
     g'4. e'4. |
-    r1 |
+    R2. |
 }
 
 part-Poneone-one = {
     \key d \major
     \time 3/4
     \clef alto
+
+    \partial 2
     r4 r4 |
 % 0
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 5
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 10
-    r1 |
-    r1 |
+    R2. |
+    R2. |
     fis'2.~\mp |
     fis'4. g'8.( a'8. |
     fis'2) b4( |
@@ -2141,16 +2165,16 @@ part-Poneone-one = {
     e8-! r8 b8-! e8-! r8 b8-! |
     e8-! r8 b8-! e8-! r8 b8-! |
     \time 6/8
-    r1 |
-    r1 |
+    R2. |
+    R2. |
 % 70
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 75
-    r1 |
+    R2. |
     << { fis'2.~\f } \\ { } >> |
     fis'4. g'8. a'8. |
     fis'2 b4 |
@@ -2178,49 +2202,51 @@ part-Poneone-one = {
     e'4. fis'8. g'8. |
 % 90
     e'2. |
-    << { a'4.\< c''4. } \\ { } >> |
-    r1 |
+    a'4.\< c''4.\! |
+    R2. |
 }
 
 part-Poneone-two = {
     \key d \major
     \time 3/4
     \clef alto
+
+    \partial 2
     r4 r4 |
 % 0
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 5
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 10
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 15
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 20
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 25
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
     r4 e8\p b8 b4~ |
     b8 b8 b4~ b8 b8 |
 % 30
@@ -2270,16 +2296,16 @@ part-Poneone-two = {
     b4 e8 b8 b4~ |
     b8 b8 b4~ b8 b8 |
     \time 6/8
-    r1 |
-    r1 |
+    R2. |
+    R2. |
 % 70
-    r1 |
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
 % 75
-    r1 |
+    R2. |
     fis2.~ |
     fis4. g8. a8. |
     fis2 g4 |
@@ -2299,19 +2325,21 @@ part-Poneone-two = {
 % 90
     e2. |
     a4. c'4. |
-    r1 |
+    R2. |
 }
 
 part-Ponetwo-one = {
     \key d \major
     \time 3/4
     \clef bass
+
+    \partial 2
     r4 r4 |
 % 0
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
     e8(\p-\markup { "pizz." } b8 fis'8) r4 r8 |
 % 5
     b,8( fis8 cis'8) r4 r8 |
@@ -2418,20 +2446,22 @@ part-Ponetwo-one = {
     g,16-.-> g,16 r16 g,16-. r16 g,16-. g,8-.-> g,16-. g,16-. g,8-. |
 % 90
     a,16-.-> a,16 r16 a,16-. r16 a,16-. a,8-.-> a,16-. a,16-. a,8-. |
-    c,16-.->\< c,16 r16 c,16-. r16 c,16-. c,8-.-> c,16-. c,16-. c,8-. |
-    r1 |
+    c,16-.->\< c,16 r16 c,16-. r16 c,16-. c,8-.-> c,16-. c,16-. c,8-.\! |
+    R2. |
 }
 
 part-Ponethree-one = {
     \key d \major
     \time 3/4
     \clef bass
+
+    \partial 2
     r4 r4 |
 % 0
-    r1 |
-    r1 |
-    r1 |
-    r1 |
+    R2. |
+    R2. |
+    R2. |
+    R2. |
     e8(\p-\markup { "pizz." } b8 fis'8) r4 r8 |
 % 5
     b,8( fis8 cis'8) r4 r8 |
@@ -2538,11 +2568,12 @@ part-Ponethree-one = {
     g16-.-> g16 r16 g16-. r16 g16-. g8-.-> g16-. g16-. g8-. |
 % 90
     a16-.-> a16 r16 a16-. r16 a16-. a8-.-> a16-. a16-. a8-. |
-    c16-.->\< c16 r16 c16-. r16 c16-. c8-.-> c16-. c16-. c8-. |
-    r1 |
+    c16-.->\< c16 r16 c16-. r16 c16-. c8-.-> c16-. c16-. c8-.\! |
+    R2. |
 }
 
 \score {
+    <<
     \new GrandStaff <<
         \new Staff \part-Pone-one
         \new Staff \part-Pone-two
@@ -2555,11 +2586,13 @@ part-Ponethree-one = {
         \new Staff \part-Pthree-one
         \new Staff \part-Pthree-two
     >>
+    %{
     \new Staff \part-Pfour-one
     \new Staff \part-Pfive-one
     \new Staff \part-Psix-one
     \new Staff \part-Pseven-one
     \new Staff \part-Peight-one
+    %}
     \new GrandStaff <<
         \new Staff \part-Pnine-one
         \new Staff \part-Pnine-two
@@ -2574,4 +2607,5 @@ part-Ponethree-one = {
     >>
     \new Staff \part-Ponetwo-one
     \new Staff \part-Ponethree-one
+    >>
 }
