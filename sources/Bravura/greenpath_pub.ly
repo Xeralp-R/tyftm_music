@@ -1,274 +1,188 @@
 % Automatically generated from a musicxml file.
 \version "2.24.0"
 \include "../../styles/global.ily"
-\include "../../styles/Full_Score.ily"
+\include "../../styles/Instrument_Part_Score.ily"
 
 \header {
   composer = "Christopher Larkin"
   subtitle = "For Bravura Orchestra"
   title = "Greenpath"
+  tagline = #'false
 }
 
 part-Pone-one = {
   \key d \major
   \time 3/4
   \clef treble
-  \tempo "Andante"
+  \tempo "Andante con moto" 4 = 86
 
   \partial 2
-  e'''2~\pp\> |
+  e'''2~ ^\markup{\small "1."}\pp\> | \mark \default
   % 0
   e'''2.\ppp |
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  % 5
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  % 10
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  % 15
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  % 20
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  % 25
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  fis'''16(\mf b''16 cis'''16 a''16 b''8)-. r8 r4 |
+  R2.*3 | \mark \default
+  R2.*8 | \mark \default
+  R2.*8 | \mark \default
+  R2.*7 |
+  <>_\markup \tiny { "violin 2" }
+  \cueDuring "markE" #DOWN {
+    R2. |  \mark \default
+    R2.
+  }
+
+  \voiceOne fis'''16(\mf^"1." [ b''16 cis'''16 a''16 b''8)-. ]
+  \voiceTwo fis'''16(^\markup {"2. echo" }_\p [ b''16 cis'''16 a''16 b''8)-. ] |
   % 30
+  \oneVoice
   R2. |
-  b''16( e''16 fis''16 d''16 e''8)-. r8 r4 |
+  \voiceOne b''16(\mf^"1." [ e''16 fis''16 d''16 e''8)-. ]
+  \voiceTwo b''16(\p^\markup {"2. echo" } [ e''16 fis''16 d''16 e''8)-. ] |
+  \oneVoice
   R2. |
   R2. |
   R2. |
   % 35
-  fis'''16 b''16 cis'''16 a''16 b''16 g''16 a''16 e''16 fis''16 r16 r8 |
-  << { b''2\pp cis'''8 d'''8 } \\ { } >> |
-  cis'''2. |
-  b''2 fis''4 |
-  gis''2. |
-  % 40
-  a''2 fis''4 |
-  e''2 fis''8 g''8 |
-  fis''2 d''4 |
-  e''2. |
-  R2. |
-  % 45
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  % 50
-  R2. |
-  R2. |
-  << { b''8-!\mf r8 b''8-! r8 b''8-! r8 } \\ { } >> |
-  b''8-! r8 b''8-! r8 b''8-! e'''8-! |
-  b''8-! r8 b''8-! r8 b''8-! r8 |
-  % 55
-  b''8-! r8 b''8-! r8 b''8-! e'''8-! |
-  b''8-! r8 b''8-! r8 b''8-! r8 |
-  b''8-! r8 b''8-! r8 b''8-! g'''8-! |
-  b''8-! r8 b''8-! r8 b''8-! r8 |
-  b''8-! r8 b''8-! a'''8-! g'''8-! fis'''8-! |
-  % 60
-  b''8-! r8 b''8-! r8 b''8-! r8 |
-  b''8-! r8 b''8-! r8 b''8-! e'''8-! |
-  b''8-! r8 b''8-! r8 b''8-! r8 |
-  b''8-! r8 b''8-! r8 b''8-! e'''8-! |
-  b''8-! r8 b''8-! r8 b''8-! r8 |
-  % 65
-  b''8-! r8 b''8-! r8 b''8-! g'''8-! |
-  b''8-! r8 b''8-! r8 b''8-! r8 |
-  b''8-! r8 b''8-! a'''8-! g'''8-! fis'''8-! |
-  \time 6/8
-  R2. |
-  R2. |
-  % 70
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  % 75
-  R2. |
-  << { R2. } \\ { } >> |
-  R2. |
-  R2. |
-  R2. |
-  % 80
-  R2. |
-  R2. |
-  R2. |
   <<
-    \context Voice = "voiceone" {
+    { fis'''16 b''16 cis'''16 a''16 b''16 g''16 a''16 e''16 fis''16 r16 r8 } \\
+    { r4 r4 fis''16 b'16 cis''16 dis''16 }
+  >> | \mark \default
+
+  <<
+    \new Voice {
       \voiceOne
-      R2. |
-      b''2.\ff |
-      % 85
+      b''2\p cis'''8 d'''8 |
+      cis'''2. |
+      b''2 fis''4 |
+      gis''2. |
+      % 40
+      a''2 fis''4 |
+      e''2 fis''8 g''8 |
+      fis''2 d''4 |
+      e''2. |
     }
-    \context Voice = "voicetwo" {
+    \new Voice {
       \voiceTwo
-      |
-      |
-      % 85
+      e''2 fis''8 g''8 |
+      fis''2. |
+      e''2 b'4 |
+      cis''2. |
+      % 40
+      d''2 b'4 |
+      a'2 b'8 c''8 |
+      b'2 g'4 |
+      a'2. |
+    }
+  >> | \mark \default
+  R2.*7
+  <>_\markup \tiny { "piano" }
+  \cueDuring "markH" #DOWN {
+    R2.
+  } | \mark \default
+  <<
+    \new Voice {
+      \voiceOne
+      b''8-!\mf r8 b''8-! r8 b''8-! r8  |
+      b''8-! r8 b''8-! r8 b''8-! e'''8-! |
+      \omit Staff.Script
+      b''8-!^\markup "staccatissimo al J" r8 b''8-! r8 b''8-! r8 |
+      % 55
+      b''8-! r8 b''8-! r8 b''8-! e'''8-! |
+      b''8-! r8 b''8-! r8 b''8-! r8 |
+      b''8-! r8 b''8-! r8 b''8-! g'''8-! |
+      b''8-! r8 b''8-! r8 b''8-! r8 |
+      b''8-! r8 b''8-! a'''8-! g'''8-! fis'''8-! | \mark \default
+      % 60
+      b''8-! r8 b''8-! r8 b''8-! r8 |
+      b''8-! r8 b''8-! r8 b''8-! e'''8-! |
+      b''8-! r8 b''8-! r8 b''8-! r8 |
+      b''8-! r8 b''8-! r8 b''8-! e'''8-! |
+      b''8-! r8 b''8-! r8 b''8-! r8 |
+      % 65
+      b''8-! r8 b''8-! r8 b''8-! g'''8-! |
+      b''8-! r8 b''8-! r8 b''8-! r8 |
+      b''8-! r8 b''8-! a'''8-! g'''8-! fis'''8-! |
+      \undo \omit Staff.Script
+    }
+    \new Voice {
+      \voiceTwo
+      b'8-! r8 b'8-! r8 b'8-! r8 |
+      b'8-! r8 b'8-! r8 b'8-! e''8-! |
+      b'8-! r8 b'8-! r8 b'8-! r8 |
+      % 55
+      b'8-! r8 b'8-! r8 b'8-! e''8-! |
+      b'8-! r8 b'8-! r8 b'8-! r8 |
+      b'8-! r8 b'8-! r8 b'8-! g''8-! |
+      b'8-! r8 b'8-! r8 b'8-! r8 |
+      b'8-! r8 b'8-! a''8-! g''8-! fis''8-! | \mark \default
+      % 60
+      b'8-! r8 b'8-! r8 b'8-! r8 |
+      b'8-! r8 b'8-! r8 b'8-! e''8-! |
+      b'8-! r8 b'8-! r8 b'8-! r8 |
+      b'8-! r8 b'8-! r8 b'8-! e''8-! |
+      b'8-! r8 b'8-! r8 b'8-! r8 |
+      % 65
+      b'8-! r8 b'8-! r8 b'8-! g''8-! |
+      b'8-! r8 b'8-! r8 b'8-! r8 |
+      b'8-! r8 b'8-! a''8-!\< g''8-! fis''8-!\! |
     }
   >>
-  g''8. a''8. b''4. |
-  b''2. |
-  cis'''4 b''2 |
-  d'''4. cis'''4. |
-  d'''4. b''4. |
-  % 90
-  a''2. |
-  g''4.\< e''4. |
-  R2.\! |
-}
-
-part-Pone-two = {
-  \key d \major
-  \time 3/4
-  \clef treble
-
-  \partial 2
-  r4 r4 |
-  % 0
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  % 5
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  % 10
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  % 15
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  % 20
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  % 25
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  r4 r8 fis'''16(-\markup { \italic "echo" }\p b''16 cis'''16 a''16 b''8)-. |
-  % 30
-  R2. |
-  r4 r8 b''16( e''16 fis''16 d''16 e''8)-. |
-  R2. |
-  R2. |
-  R2. |
-  % 35
-  r4 r4 fis''16 b'16 cis''16 dis''16 |
-  e''2 fis''8 g''8 |
-  fis''2. |
-  e''2 b'4 |
-  cis''2. |
-  % 40
-  d''2 b'4 |
-  a'2 b'8 c''8 |
-  b'2 g'4 |
-  a'2. |
-  R2. |
-  % 45
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  % 50
-  R2. |
-  R2. |
-  b'8-! r8 b'8-! r8 b'8-! r8 |
-  b'8-! r8 b'8-! r8 b'8-! e''8-! |
-  b'8-! r8 b'8-! r8 b'8-! r8 |
-  % 55
-  b'8-! r8 b'8-! r8 b'8-! e''8-! |
-  b'8-! r8 b'8-! r8 b'8-! r8 |
-  b'8-! r8 b'8-! r8 b'8-! g''8-! |
-  b'8-! r8 b'8-! r8 b'8-! r8 |
-  b'8-! r8 b'8-! a''8-! g''8-! fis''8-! |
-  % 60
-  b'8-! r8 b'8-! r8 b'8-! r8 |
-  b'8-! r8 b'8-! r8 b'8-! e''8-! |
-  b'8-! r8 b'8-! r8 b'8-! r8 |
-  b'8-! r8 b'8-! r8 b'8-! e''8-! |
-  b'8-! r8 b'8-! r8 b'8-! r8 |
-  % 65
-  b'8-! r8 b'8-! r8 b'8-! g''8-! |
-  b'8-! r8 b'8-! r8 b'8-! r8 |
-  b'8-! r8 b'8-! a''8-! g''8-! fis''8-! |
+  \mark \default
+  \bar "||"
   \time 6/8
-  R2. |
-  R2. |
-  % 70
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  % 75
-  R2. |
-  fis''2.~ |
-  fis''4. g''8. a''8. |
-  fis''2 b'4 |
-  cis''2. |
-  % 80
-  e''2.~ |
-  e''4. fis''8. g''8. |
-  e''2. |
-  a''4. c'''4. |
-  fis''2.~ |
-  % 85
-  fis''4. g''8. a''8. |
-  fis''2 b''4 |
-  cis'''2. |
-  e''2.~ |
-  e''4. fis''8. g''8. |
-  % 90
-  e''2. |
-  a'4. c''4. |
-  R2. |
+  \oneVoice
+  R2.*4 | \mark \default
+  R2.*3
+  <>_\markup \tiny { "violin 1" }
+  \cueDuring "markL" #UP {
+    R2.
+  } | \mark \default
+  <<
+    \new Voice {
+      \voiceOne
+      s2.*8 | \mark \default
+      b''2.\ff |
+      % 85
+      g''8. a''8. b''4. |
+      b''2. |
+      cis'''4 b''2 |
+      d'''4. cis'''4. |
+      d'''4. b''4. |
+      % 90
+      a''2. |
+      g''4.\< e''4. | \mark \default \oneVoice
+      R2.\!\fermata | \bar "|."
+    }
+    \new Voice {
+      fis''2.~^\markup{"2."} |
+      fis''4. g''8. a''8. |
+      fis''2 b'4 |
+      cis''2. |
+      % 80
+      e''2.~ |
+      e''4. fis''8. g''8. |
+      e''2. |
+      a''4. c'''4. |
+      \voiceTwo
+      fis''2.~ |
+      % 85
+      fis''4. g''8. a''8. |
+      fis''2 b''4 |
+      cis'''2. |
+      e''2.~ |
+      e''4. fis''8. g''8. |
+      % 90
+      e''2. |
+      a'4. c''4. |
+      s2. |
+    }
+  >>
 }
 
 part-Ptwo-one = {
   \key d \major
   \time 3/4
   \clef treble
+  \tempo "Andante con moto" 4 = 86
 
   \partial 2
   r4 r4 |
@@ -671,6 +585,7 @@ part-Pthree-one = {
   \key d \major
   \time 3/4
   \clef treble
+  \tempo "Andante con moto" 4 = 86
 
   \partial 2
   e'''2~\pp\> |
@@ -2591,16 +2506,28 @@ part-Ponethree-one = {
   R2. |
 }
 
+\addQuote "markE" { \part-Ponezero-one } % violin 2
+\addQuote "markH" { \part-Ptwo-one } % piano
+\addQuote "markL" { \part-Pnine-one } % violin 1
+
 \score {
   <<
-    \new GrandStaff <<
-      \new Staff \part-Pone-one
-      \new Staff \part-Pone-two
-    >>
-    \new GrandStaff <<
+    %{
+    \new Staff \with {
+      instrumentName = "2 Flutes"
+      shortInstrumentName = "Fl."
+      midiInstrument = "flute"
+    } \part-Pone-one
+    %}  
+    \new PianoStaff \with {
+      instrumentName = "Piano"
+      shortInstrumentName = "Pf."
+      midiInstrument = "grand piano"
+    } <<
       \new Staff \part-Ptwo-one
       \new Staff \part-Ptwo-two
     >>
+    %{
     \new GrandStaff <<
       \new Staff \part-Pthree-one
       \new Staff \part-Pthree-two
@@ -2611,7 +2538,7 @@ part-Ponethree-one = {
     \new Staff \part-Psix-one
     \new Staff \part-Pseven-one
     \new Staff \part-Peight-one
-    %}
+    % }
     \new GrandStaff <<
       \new Staff \part-Pnine-one
       \new Staff \part-Pnine-two
@@ -2626,5 +2553,6 @@ part-Ponethree-one = {
     >>
     \new Staff \part-Ponetwo-one
     \new Staff \part-Ponethree-one
+    %}
   >>
 }
