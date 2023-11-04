@@ -68,3 +68,12 @@ blank_page = \bookpart {
     }
   }
 }
+
+\layout {
+  \context {
+    \Score {
+      \set rehearsalMarkFormatter = #format-mark-box-alphabet
+      \set countPercentRepeats = ##t
+    }
+  }
+}

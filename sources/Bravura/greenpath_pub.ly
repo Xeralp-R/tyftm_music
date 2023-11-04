@@ -5,8 +5,10 @@
 
 \header {
   composer = "Christopher Larkin"
+  arranger = "Mico Javier & Rex Reventar"
   subtitle = "For Bravura Orchestra"
   title = "Greenpath"
+  part = "Piano"
   tagline = #'false
 }
 
@@ -185,56 +187,17 @@ part-Ptwo-one = {
   \tempo "Andante con moto" 4 = 86
 
   \partial 2
-  r4 r4 |
+  r4 r4 | \mark \default
+
   % 0
   <<
     \context Voice = "voiceone" {
       \voiceOne
       fis''8\pp-\markup {
-        \italic "first voice always louder than the 
-            second"
+        \small "first voice always louder than the second"
       } fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
       fis''4~ fis''8 fis''16 e''16 b''4 |
       fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
-      fis''4~ fis''8 fis''16 e''16 b''4 |
-      fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
-      % 5
-      fis''4~ fis''8 fis''16 e''16 b''4 |
-      fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
-      fis''4~ fis''8 fis''16 e''16 b''4 |
-      fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
-      fis''4~ fis''8 fis''16 e''16 b''4 |
-      % 10
-      fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
-      fis''8 e''8 d''8 e''8 b'8 a'8 |
-      fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
-      fis''4~ fis''8 fis''16 e''16 b''4 |
-      fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
-      % 15
-      fis''4~ fis''8 fis''16 e''16 b''4 |
-      fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
-      fis''4~ fis''8 fis''16 e''16 b''4 |
-      fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
-      fis''8 e''8 d''8 e''8 b'8 a'8 |
-      % 20
-      fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
-      fis''4~ fis''8 fis''16 e''16 b''4 |
-      fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
-      fis''4~ fis''8 fis''16 e''16 b''4 |
-      fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
-      % 25
-      fis''4~ fis''8 fis''16 e''16 b''4 |
-      fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
-      fis''4~ fis''8 fis''16 e''16 b''4 |
-      fis''8\p fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
-      fis''4~ fis''8 fis''16 e''16 b''4 |
-      % 30
-      fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
-      fis''4~ fis''8 fis''16 e''16 b''4 |
-      fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
-      fis''4~ fis''8 fis''16 e''16 b''4 |
-      fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
-      % 35
       fis''4~ fis''8 fis''16 e''16 b''4 |
     }
     \context Voice = "voicetwo" {
@@ -243,107 +206,182 @@ part-Ptwo-one = {
       fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
       fis''4~ fis''8 fis''16 e''16 fis''4~ |
       fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
-      fis''4~ fis''8 fis''16 e''16 fis''4~ |
-      % 5
+    }
+  >>
+  \mark \default
+
+  \repeat percent 3 {
+    <<
+      \context Voice = "voiceone" {
+        \voiceOne
+        fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
+        % 5
+        fis''4~ fis''8 fis''16 e''16 b''4 |
+      }
+      \context Voice = "voicetwo" {
+        \voiceTwo
+        fis''4~ fis''8 fis''16 e''16 fis''4~ |
+        % 5
+        fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
+      }
+    >>
+  }
+  <<
+    \context Voice = "voiceone" {
+      \voiceOne
+      % 10
       fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
-      fis''4~ fis''8 fis''16 e''16 fis''4~ |
-      fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
-      fis''4~ fis''8 fis''16 e''16 fis''4~ |
-      fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
+      fis''8 e''8 d''8 e''8 b'8 a'8 |
+    }
+    \context Voice = "voicetwo" {
+      \voiceTwo
       % 10
       fis''4~ fis''8 fis''16 e''16 fis''4~ |
       fis''2. |
-      fis''4~ fis''8 fis''16 e''16 fis''4~ |
+    }
+  >> \mark \default %C
+
+  \repeat percent 3 {
+    <<
+      \context Voice = "voiceone" {
+        \voiceOne
+        fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
+        fis''4~ fis''8 fis''16 e''16 b''4 |
+      }
+      \context Voice = "voicetwo" {
+        \voiceTwo
+        fis''4~ fis''8 fis''16 e''16 fis''4~ |
+        fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
+      }
+    >>
+  }
+  <<
+    \context Voice = "voiceone" {
+      \voiceOne
       fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
-      fis''4~ fis''8 fis''16 e''16 fis''4~ |
-      % 15
-      fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
-      fis''4~ fis''8 fis''16 e''16 fis''4~ |
-      fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
+      fis''8 e''8 d''8 e''8 b'8 a'8 |
+    }
+    \context Voice = "voicetwo" {
+      \voiceTwo
       fis''4~ fis''8 fis''16 e''16 fis''4~ |
       fis''2. |
-      % 20
-      fis''4~ fis''8 fis''16 e''16 fis''4~ |
+    }
+  >> \mark \default %D
+
+  \repeat percent 4 {
+    <<
+      \context Voice = "voiceone" {
+        \voiceOne
+        fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
+        fis''4~ fis''8 fis''16 e''16 b''4 |
+      }
+      \context Voice = "voicetwo" {
+        \voiceTwo
+        fis''4~ fis''8 fis''16 e''16 fis''4~ |
+        fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
+      }
+    >>
+  } \mark \default %E
+
+  \repeat percent 3 {
+    <<
+      \context Voice = "voiceone" {
+        \voiceOne
+        fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
+        fis''4~ fis''8 fis''16 e''16 b''4 |
+      }
+      \context Voice = "voicetwo" {
+        \voiceTwo
+        fis''4~ fis''8 fis''16 e''16 fis''4~ |
+        fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
+      }
+    >>
+  }
+  <<
+    \context Voice = "voiceone" {
+      \voiceOne
       fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
+      fis''4~ fis''8 fis''16 e''16 b''4 |
+    }
+    \context Voice = "voicetwo" {
+      \voiceTwo
       fis''4~ fis''8 fis''16 e''16 fis''4~ |
-      fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
-      fis''4~ fis''8 fis''16 e''16 fis''4~ |
-      % 25
-      fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
-      fis''4~ fis''8 fis''16 e''16 fis''4~ |
-      fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
-      fis''4~ fis''8 fis''16 e''16 fis''4~ |
-      fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
-      % 30
-      fis''4~ fis''8 fis''16 e''16 fis''4~ |
-      fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
-      fis''4~ fis''8 fis''16 e''16 fis''4~ |
-      fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
-      fis''4~ fis''8 fis''16 e''16 fis''4~ |
-      % 35
       fis''8 fis''16 e''16 fis''4~ fis''4 |
     }
-  >>
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  % 40
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  R2. |
+  >> \mark \default %F
+
+  R2.*8 \mark \default
+
+  <>_\markup \tiny { "organ" }
+  \cueDuring "orgG" #UP {
+    R2.
+  } |
   % 45
   fis16-.\p b16-. cis'16-. fis'16-. e'16-. fis'16-. cis''16-. b'16-.
   cis''16-. fis''16-. e''16-. fis''16-. |
+  \cueDuring "orgG" #UP {
+    R2.
+  } |
   R2. |
-  R2. |
-  R2. |
+  \cueDuring "orgG" #UP {
+    R2.
+  } |
   fis16-.\mp b16-. cis'16-. fis'16-. e'16-. fis'16-. cis''16-. b'16-.
   cis''16-. fis''16-. e''16-. fis''16-. |
   % 50
-  R2. |
+  \cueDuring "orgG" #UP {
+    R2.
+  } |
   e'16-. fis'16-. r16 fis'16-. b'16-. cis''16-. fis'16-. b'16-. cis''16-.
-  b'16-. cis''16-. fis''16-. |
-  R2. |
+  b'16-. cis''16-. fis''16-. | \mark \default
+
+  \cueDuring "orgG" #UP {
+    R2.
+  } |
   fis16-.\mp b16-. cis'16-. fis'16-. e'16-. fis'16-. cis''16-. b'16-.
   cis''16-. fis''16-. e''16-. fis''16-. |
-  R2. |
+  \cueDuring "orgG" #UP {
+    R2.
+  } |
   % 55
   R2. |
-  R2. |
+  \cueDuring "orgG" #UP {
+    R2.
+  } |
   fis16-.\mp b16-. cis'16-. fis'16-. e'16-. fis'16-. cis''16-. b'16-.
   cis''16-. fis''16-. e''16-. fis''16-. |
-  R2. |
-  R2. |
+  \cueDuring "orgG" #UP {
+    R2.
+  } |
+  R2. | \mark \default
   % 60
-  R2. |
+  \cueDuring "orgG" #UP {
+    R2.
+  } |
   fis16-.\p b16-. cis'16-. fis'16-. e'16-. fis'16-. cis''16-. b'16-.
   cis''16-. fis''16-. e''16-. fis''16-. |
+  \cueDuring "orgG" #UP {
+    R2.
+  } |
   R2. |
-  R2. |
-  R2. |
+  \cueDuring "orgG" #UP {
+    R2.
+  } |
   % 65
   fis16-.\mp b16-. cis'16-. fis'16-. e'16-. fis'16-. cis''16-. b'16-.
   cis''16-. fis''16-. e''16-. fis''16-. |
-  R2. |
+  \cueDuring "orgG" #UP {
+    R2.
+  } |
   c'4. d'4. |
-  <<
-    {
-      \time 6/8
-      R2.
-    } \\ { }
-  >> |
-  R2. |
-  % 70
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  % 75
-  << { R2. } \\ { } >> |
+
+  \mark \default 
+  \bar "||"
+  \time 6/8
+      
+  R2.*4 | \mark \default
+  R2.*4 | \mark \default 
+
   \clef bass
   e16-.-> e16 r16 e16-. r16 e16-. e8-.-> e16-. e16-. e8-. |
   b16-.-> b16 r16 b16-. r16 b16-. b8-.-> b16-. b16-. b8-. |
@@ -354,6 +392,8 @@ part-Ptwo-one = {
   g16-.-> g16 r16 g16-. r16 g16-. g8-.-> g16-. g16-. g8-. |
   a16-.-> a16 r16 a16-. r16 a16-. a8-.-> a16-. a16-. a8-. |
   c16-.->\< c16 r16 c16-. r16 c16-. c8-.-> c16-. c16-. c8-. |
+  \mark \default 
+
   \clef treble
   <e e' >16-.->\ff <e e' >16 r16 <e e' >16-. r16 <e e' >16-. <e e' >8-.-> <e
   e' >16-. <e e' >16-. <e e' >8-. |
@@ -372,8 +412,8 @@ part-Ptwo-one = {
   <a a' >16-.-> <a a' >16 r16 <a a' >16-. r16 <a a' >16-. <a a' >8-.-> <a a'
   >16-. <a a' >16-. <a a' >8-. |
   <c c' >16-.->\< <c c' >16 r16 <c c' >16-. r16 <c c' >16-. <c c'
-  >8-.-> <c c' >16-. <c c' >16-. <c c' >8-. |
-  R2.\! |
+  >8-.-> <c c' >16-. <c c' >16-. <c c' >8-. | \mark \default
+  R2.\!\fermata | \bar "|."
 }
 
 part-Ptwo-two = {
@@ -382,8 +422,9 @@ part-Ptwo-two = {
   \clef treble
 
   \partial 2
-  r4 r4 |
+  r4 r4 | \mark \default
   % 0
+
   <<
     \context Voice = "voiceone" {
       \voiceOne
@@ -391,45 +432,6 @@ part-Ptwo-two = {
       b'8 b'8 b'4~ b'8 b'8 |
       b'4 e'8 b'8 b'4~ |
       b'8 b'8 b'4~ b'8 b'8 |
-      b'4 e'8 b'8 b'4~ |
-      % 5
-      b'8 b'8 b'4~ b'8 b'8 |
-      b'4 e'8 b'8 b'4~ |
-      b'8 b'8 b'4~ b'8 b'8 |
-      b'4 e'8 b'8 b'4~ |
-      b'8 b'8 b'4~ b'8 b'8 |
-      % 10
-      b'4 e'8 b'8 b'4~ |
-      b'8 b'8 b'4~ b'8 b'8 |
-      b'4 e'8 b'8 b'4~ |
-      b'8 b'8 b'4~ b'8 b'8 |
-      b'4 e'8 b'8 b'4~ |
-      % 15
-      b'8 b'8 b'4~ b'8 b'8 |
-      b'4 e'8 b'8 b'4~ |
-      b'8 b'8 b'4~ b'8 b'8 |
-      b'4 e'8 b'8 b'4~ |
-      b'8 b'8 b'4~ b'8 b'8 |
-      % 20
-      b'4 e'8 b'8 b'4~ |
-      b'8 b'8 b'4~ b'8 b'8 |
-      b'4 e'8 b'8 b'4~ |
-      b'8 b'8 b'4~ b'8 b'8 |
-      b'4 e'8 b'8 b'4~ |
-      % 25
-      b'8 b'8 b'4~ b'8 b'8 |
-      b'4 e'8 b'8 b'4~ |
-      b'8 b'8 b'4~ b'8 b'8 |
-      b'4 e'8 b'8 b'4~ |
-      b'8 b'8 b'4~ b'8 b'8 |
-      % 30
-      b'4 e'8 b'8 b'4~ |
-      b'8 b'8 b'4~ b'8 b'8 |
-      b'4 e'8 b'8 b'4~ |
-      b'8 b'8 b'4~ b'8 b'8 |
-      b'4 e'8 b'8 b'4~ |
-      % 35
-      b'8 b'8 b'4~ b'4 |
     }
     \context Voice = "voicetwo" {
       \voiceTwo
@@ -437,57 +439,125 @@ part-Ptwo-two = {
       b4~ b8 b8 b4~ |
       b8 b8 b4~ b8 b8 |
       b4~ b8 b8 b4~ |
+    }
+  >> \mark \default %B
+
+  \repeat percent 3 {
+    <<
+      \context Voice = "voiceone" {
+        \voiceOne
+        b'4 e'8 b'8 b'4~ |
+        % 5
+        b'8 b'8 b'4~ b'8 b'8 |
+      }
+      \context Voice = "voicetwo" {
+        \voiceTwo
+        b8 b8 b4~ b8 b8 |
+        % 5
+        b4~ b8 b8 b4~ |
+      }
+    >>
+  }
+
+  <<
+    \context Voice = "voiceone" {
+      \voiceOne
+      b'4 e'8 b'8 b'4~ |
+      % 5
+      b'8 b'8 b'4~ b'8 b'8 |
+    }
+    \context Voice = "voicetwo" {
+      \voiceTwo
       b8 b8 b4~ b8 b8 |
       % 5
       b4~ b8 b8 b4~ |
+    }
+  >> \mark \default
+
+  \repeat percent 3 {
+    <<
+      \context Voice = "voiceone" {
+        \voiceOne
+        b'4 e'8 b'8 b'4~ |
+        % 5
+        b'8 b'8 b'4~ b'8 b'8 |
+      }
+      \context Voice = "voicetwo" {
+        \voiceTwo
+        b8 b8 b4~ b8 b8 |
+        % 5
+        b4~ b8 b8 b4~ |
+      }
+    >>
+  }
+
+  <<
+    \context Voice = "voiceone" {
+      \voiceOne
+      b'4 e'8 b'8 b'4~ |
+      % 5
+      b'8 b'8 b'4~ b'8 b'8 |
+    }
+    \context Voice = "voicetwo" {
+      \voiceTwo
       b8 b8 b4~ b8 b8 |
+      % 5
       b4~ b8 b8 b4~ |
-      b8 b8 b4~ b8 b8 |
-      b4~ b8 b8 b4~ |
-      % 10
-      b8 b8 b4~ b8 b8 |
-      b4~ b8 b8 b4~ |
-      b8 b8 b4~ b8 b8 |
-      b4~ b8 b8 b4~ |
-      b8 b8 b4~ b8 b8 |
-      % 15
-      b4~ b8 b8 b4~ |
-      b8 b8 b4~ b8 b8 |
-      b4~ b8 b8 b4~ |
-      b8 b8 b4~ b8 b8 |
-      b4~ b8 b8 b4~ |
-      % 20
-      b8 b8 b4~ b8 b8 |
-      b4~ b8 b8 b4~ |
-      b8 b8 b4~ b8 b8 |
-      b4~ b8 b8 b4~ |
-      b8 b8 b4~ b8 b8 |
-      % 25
-      b4~ b8 b8 b4~ |
-      b8 b8 b4~ b8 b8 |
-      b4~ b8 b8 b4~ |
-      b8 b8 b4~ b8 b8 |
-      b4~ b8 b8 b4~ |
-      % 30
-      b8 b8 b4~ b8 b8 |
-      b4~ b8 b8 b4~ |
-      b8 b8 b4~ b8 b8 |
-      b4~ b8 b8 b4~ |
+    }
+  >> \mark \default
+
+  \repeat percent 4 {
+    <<
+      \context Voice = "voiceone" {
+        \voiceOne
+        b'4 e'8 b'8 b'4~ |
+        % 5
+        b'8 b'8 b'4~ b'8 b'8 |
+      }
+      \context Voice = "voicetwo" {
+        \voiceTwo
+        b8 b8 b4~ b8 b8 |
+        % 5
+        b4~ b8 b8 b4~ |
+      }
+    >>
+  }
+
+  \repeat percent 3 {
+    <<
+      \context Voice = "voiceone" {
+        \voiceOne
+        b'4 e'8 b'8 b'4~ |
+        % 5
+        b'8 b'8 b'4~ b'8 b'8 |
+      }
+      \context Voice = "voicetwo" {
+        \voiceTwo
+        b8 b8 b4~ b8 b8 |
+        % 5
+        b4~ b8 b8 b4~ |
+      }
+    >>
+  }
+
+  <<
+    \context Voice = "voiceone" {
+      \voiceOne
+      b'4 e'8 b'8 b'4~ |
+      % 35
+      b'8 b'8 b'4~ b'4 |
+    }
+    \context Voice = "voicetwo" {
+      \voiceTwo
       b8 b8 b4~ b8 b8 |
       % 35
       b4~ b8 b8 b4 |
     }
-  >>
+  >> \mark \default
+
+  R2.*8 | \mark \default
+
   \clef bass
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  % 40
-  R2. |
-  R2. |
-  R2. |
-  R2. |
   R2. |
   % 45
   fis,16-. b,16-. cis16-. fis16-. e16-. fis16-. cis'16-. b16-. cis'16-.
@@ -578,7 +648,7 @@ part-Ptwo-two = {
   >8-.-> <a,, a, >16-. <a,, a, >16-. <a,, a, >8-. |
   <c,, c, >16-.-> <c,, c, >16 r16 <c,, c, >16-. r16 <c,, c, >16-. <c,, c,
   >8-.-> <c,, c, >16-. <c,, c, >16-. <c,, c, >8-. |
-  R2. |
+  R2.\fermata | \bar "|."
 }
 
 part-Pthree-one = {
@@ -642,40 +712,40 @@ part-Pthree-one = {
   a2 b8 c'8 |
   b2 g4 |
   a2. |
-  fis'''16(\p b''16 cis'''16 a''16 b''8)-. fis'''16( b''16 cis'''16 a''16
-  b''8)-. |
+  fis'''16(\p[ b''16 cis'''16 a''16 b''8)-.] fis'''16([ b''16 cis'''16 a''16
+  b''8)-.] |
   % 45
   R2. |
-  b''16( e''16 fis''16 d''16 e''8)-. b''16( e''16 fis''16 d''16 e''8)-. |
+  b''16([ e''16 fis''16 d''16 e''8)-.] b''16([ e''16 fis''16 d''16 e''8)-.] |
   R2. |
-  fis'''16( b''16 cis'''16 a''16 b''8)-. fis'''16( b''16 cis'''16 a''16
-  b''8)-. |
+  fis'''16([ b''16 cis'''16 a''16 b''8)-.] fis'''16([ b''16 cis'''16 a''16
+  b''8)-.] |
   R2. |
   % 50
-  b''16( e''16 fis''16 d''16 e''8)-. b''16( e''16 fis''16 d''16 e''8)-. |
+  b''16([ e''16 fis''16 d''16 e''8)-.] b''16([ e''16 fis''16 d''16 e''8)-.] |
   R2. |
-  fis'''16(\mf b''16 cis'''16 a''16 b''8)-. fis'''16( b''16 cis'''16 a''16
-  b''8)-. |
+  fis'''16(\mf[ b''16 cis'''16 a''16 b''8)-.] fis'''16([ b''16 cis'''16 a''16
+  b''8)-.] |
   R2. |
-  b''16( e''16 fis''16 d''16 e''8)-. b''16( e''16 fis''16 d''16 e''8)-. |
+  b''16([ e''16 fis''16 d''16 e''8)-.] b''16([ e''16 fis''16 d''16 e''8)-.] |
   % 55
   R2. |
-  fis'''16( b''16 cis'''16 a''16 b''8)-. fis'''16( b''16 cis'''16 a''16
-  b''8)-. |
+  fis'''16([ b''16 cis'''16 a''16 b''8)-.] fis'''16([ b''16 cis'''16 a''16
+  b''8)-.] |
   R2. |
-  b''16( e''16 fis''16 d''16 e''8)-. b''16( e''16 fis''16 d''16 e''8)-. |
+  b''16([ e''16 fis''16 d''16 e''8)-.] b''16([ e''16 fis''16 d''16 e''8)-.] |
   R2. |
   % 60
-  fis'''16(\p b''16 cis'''16 a''16 b''8)-. fis'''16( b''16 cis'''16 a''16
-  b''8)-. |
+  fis'''16(\p[ b''16 cis'''16 a''16 b''8)-.] fis'''16([ b''16 cis'''16 a''16
+  b''8)-.] |
   R2. |
-  b''16( e''16 fis''16 d''16 e''8)-. b''16( e''16 fis''16 d''16 e''8)-. |
+  b''16([ e''16 fis''16 d''16 e''8)-.] b''16([ e''16 fis''16 d''16 e''8)-.] |
   R2. |
-  fis'''16( b''16 cis'''16 a''16 b''8)-. fis'''16( b''16 cis'''16 a''16
-  b''8)-. |
+  fis'''16([ b''16 cis'''16 a''16 b''8)-.] fis'''16([ b''16 cis'''16 a''16
+  b''8)-.] |
   % 65
   R2. |
-  b''16( e''16 fis''16 d''16 e''8)-. b''16( e''16 fis''16 d''16 e''8)-. |
+  b''16([ e''16 fis''16 d''16 e''8)-.] b''16([ e''16 fis''16 d''16 e''8)-.] |
   R2. |
   \time 6/8
   e''16-.->\f b'16-. a'16-. e''16-.-> r16 e''16-. r16 e''16-. r16 e''16-. r8 |
@@ -2507,6 +2577,7 @@ part-Ponethree-one = {
 }
 
 \addQuote "markE" { \part-Ponezero-one } % violin 2
+\addQuote "orgG" { \part-Pthree-one } % organ
 \addQuote "markH" { \part-Ptwo-one } % piano
 \addQuote "markL" { \part-Pnine-one } % violin 1
 
@@ -2518,7 +2589,7 @@ part-Ponethree-one = {
       shortInstrumentName = "Fl."
       midiInstrument = "flute"
     } \part-Pone-one
-    %}  
+    %}
     \new PianoStaff \with {
       instrumentName = "Piano"
       shortInstrumentName = "Pf."

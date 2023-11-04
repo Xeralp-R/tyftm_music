@@ -30,9 +30,17 @@
       \override #'(baseline-skip . 3.5)
       \column {
         \fill-line {
-          \huge \larger \larger
-          \fontsize #1
-          \fromproperty #'header:title
+          {
+            \huge \larger \fontsize #1 \fromproperty #'header:part
+          }
+          {
+            \huge \larger \larger
+            \fontsize #1
+            \fromproperty #'header:title
+          }
+          {
+            \fromproperty #'header:altpart
+          }
         }
         \fill-line {
           \large
@@ -44,7 +52,7 @@
         }
         \fill-line {
           \fromproperty #'header:arranger
-          { \large \fromproperty #'header:instrument }
+          {}
           \fontsize #0 \fromproperty #'header:composer
         }
         \fill-line {
