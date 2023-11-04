@@ -8,7 +8,7 @@
   arranger = "Mico Javier & Rex Reventar"
   subtitle = "For Bravura Orchestra"
   title = "Greenpath"
-  part = "Piano"
+  part = "Organ"
   tagline = #'false
 }
 
@@ -659,11 +659,13 @@ part-Pthree-one = {
 
   \partial 2
   e'''2~\pp\> |
+  \mark \default 
+
   % 0
   e'''2.~\ppp |
   e'''2.~ |
   e'''2.~ |
-  e'''2.~ |
+  e'''2.~ | \mark \default
   e'''2.~ |
   % 5
   e'''2.~ |
@@ -672,37 +674,25 @@ part-Pthree-one = {
   e'''2.~ |
   e'''2.~ |
   % 10
-  e'''2.~-\markup { \italic "dim. al niente" } |
-  e'''2. |
-  R2. |
-  R2. |
-  R2. |
-  % 15
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  R2. |
+  e'''2.~\dim |
+  e'''2. | \mark \default
+  R2.*8\! | \mark \default
   % 20
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  % 25
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  fis''16(\mf b'16 cis''16 a'16 b'8)-. fis''16( b'16 cis''16 a'16 b'8)-. |
+  R2.*7 |
+  <>_\markup \tiny { "violin 2" }
+  \cueDuring "markE" #DOWN {
+    R2. |  \mark \default
+    R2.
+  }
+  fis''16(\mf [ b'16 cis''16 a'16 b'8)-. ] fis''16( [ b'16 cis''16 a'16 b'8)-. ] |
   % 30
   R2. |
-  b'16( e'16 fis'16 d'16 e'8)-. b'16( e'16 fis'16 d'16 e'8)-. |
+  b'16( [ e'16 fis'16 d'16 e'8)-. ] b'16( [ e'16 fis'16 d'16 e'8)-. ] |
   R2. |
   R2. |
   R2. |
   % 35
-  fis''16 b'16 cis''16 a'16 b'16 g'16 a'16 e'16 fis'16 b16 cis'16 dis'16 |
+  fis''16( b'16 cis''16 a'16 b'16 g'16 a'16 e'16 fis'16 b16 cis'16 dis'16) | \mark \default
   e'2\mp fis'8 g'8 |
   fis'2. |
   e'2 b4 |
@@ -711,43 +701,64 @@ part-Pthree-one = {
   d'2 b4 |
   a2 b8 c'8 |
   b2 g4 |
-  a2. |
+  a2. | \mark \default
   fis'''16(\p[ b''16 cis'''16 a''16 b''8)-.] fis'''16([ b''16 cis'''16 a''16
   b''8)-.] |
   % 45
-  R2. |
+  <>_\markup \tiny { "piano" }
+  \cueDuring "pnoG" #DOWN {
+    R2.
+  } |
   b''16([ e''16 fis''16 d''16 e''8)-.] b''16([ e''16 fis''16 d''16 e''8)-.] |
   R2. |
   fis'''16([ b''16 cis'''16 a''16 b''8)-.] fis'''16([ b''16 cis'''16 a''16
   b''8)-.] |
-  R2. |
+  \cueDuring "pnoG" #DOWN {
+    R2.
+  } |
   % 50
   b''16([ e''16 fis''16 d''16 e''8)-.] b''16([ e''16 fis''16 d''16 e''8)-.] |
-  R2. |
+  \cueDuring "pnoG" #DOWN {
+    R2.
+  } | \mark \default
   fis'''16(\mf[ b''16 cis'''16 a''16 b''8)-.] fis'''16([ b''16 cis'''16 a''16
   b''8)-.] |
-  R2. |
+  \cueDuring "pnoG" #DOWN {
+    R2.
+  } |
   b''16([ e''16 fis''16 d''16 e''8)-.] b''16([ e''16 fis''16 d''16 e''8)-.] |
   % 55
   R2. |
   fis'''16([ b''16 cis'''16 a''16 b''8)-.] fis'''16([ b''16 cis'''16 a''16
   b''8)-.] |
-  R2. |
+  \cueDuring "pnoG" #DOWN {
+    R2.
+  } |
   b''16([ e''16 fis''16 d''16 e''8)-.] b''16([ e''16 fis''16 d''16 e''8)-.] |
-  R2. |
+  R2. | \mark \default
   % 60
   fis'''16(\p[ b''16 cis'''16 a''16 b''8)-.] fis'''16([ b''16 cis'''16 a''16
   b''8)-.] |
-  R2. |
+  \cueDuring "pnoG" #DOWN {
+    R2.
+  } |
   b''16([ e''16 fis''16 d''16 e''8)-.] b''16([ e''16 fis''16 d''16 e''8)-.] |
   R2. |
   fis'''16([ b''16 cis'''16 a''16 b''8)-.] fis'''16([ b''16 cis'''16 a''16
   b''8)-.] |
   % 65
-  R2. |
+  \cueDuring "pnoG" #DOWN {
+    R2.
+  } |
   b''16([ e''16 fis''16 d''16 e''8)-.] b''16([ e''16 fis''16 d''16 e''8)-.] |
-  R2. |
+  \cueDuring "pnoG" #DOWN {
+    R2.
+  } |
+
+  \bar "||"
+  \mark \default
   \time 6/8
+
   e''16-.->\f b'16-. a'16-. e''16-.-> r16 e''16-. r16 e''16-. r16 e''16-. r8 |
   e''16-.-> b'16-. a'16-. e''16-.-> r16 fis''16-. r16 fis''16-. r16
   fis''16-. r8 |
@@ -755,13 +766,13 @@ part-Pthree-one = {
   e''16-.-> b'16-. a'16-. e''16-.-> r16 e''16-. r16 e''16-. r16 e''16-.
   fis''16-. r16 |
   e''16-.-> b'16-. a'16-. e''16-.-> r16 e''16-. r16 e''16-. r16 e''16-.
-  d''16-. r16 |
+  d''16-. r16 | \mark \default
   e''16-. b'16-. a'16-. b'16-. a'16-. g'16-. e'8-> r8 r8 |
   e''16-. b'16-. a'16-. b'16-. a'16-. g'16-. e''8-> r8 r8 |
   e''16-. b'16-. a'16-. b'16-. a'16-. g'16-. e'8-> r8 r8 |
   % 75
   e''16-. b'16-. a'16-. e''16-. b'16-. a'16-. e''16-. b'16-. a'16-. e''16-.
-  b'16-. a'16-. |
+  b'16-. a'16-. | \mark \default
   e''16-. c''16-. b'16-. c''16-. b'16-. a'16-. b'16-. a'16-. g'16-. a'16-.
   g'16-. e'16-. |
   e''16-. c''16-. b'16-. c''16-. b'16-. a'16-. b'16-. a'16-. g'16-. a'16-.
@@ -777,7 +788,7 @@ part-Pthree-one = {
   g'16-. e'16-. |
   b16-.-> b16-. r16 b16-. r16 b16-. b8-.-> b16-. b16-. b8-. |
   fis'16-.->\< fis'16-. r16 fis'16-. r16 fis'16-. g'8-.-> g'16-. a'16-.
-  a'8-. |
+  a'8-. | \mark \default
   e'''16-.\ff c'''16-. b''16-. c'''16-. b''16-. a''16-. b''16-. a''16-.
   g''16-. a''16-. g''16-. e''16-. |
   % 85
@@ -793,8 +804,8 @@ part-Pthree-one = {
   a''16-. g''16-. e''16-. |
   % 90
   b'16-.-> b'16-. r16 b'16-. r16 b'16-. b'8-.-> b'16-. b'16-. b'8-. |
-  e'''2.~\< |
-  e'''2.\!^\markup "edit" |
+  e'''2.~\< | \mark \default
+  e'''2.\>\fermata <>\! | \bar "|."
 }
 
 part-Pthree-two = {
@@ -805,87 +816,43 @@ part-Pthree-two = {
   \partial 2
   r4 r4 |
   % 0
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  % 5
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  % 10
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  % 15
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  R2. |
+  R2.*4 |
+  R2.*8 |
+  R2.*8 |
   % 20
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  % 25
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  % 30
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  % 35
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  % 40
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  fis''16( b'16 cis''16 a'16 b'8)-. fis''16( b'16 cis''16 a'16 b'8)-. |
+  R2.*8 |
+  R2.*8 |
+  R2.*8 |
+  fis''16([ b'16 cis''16 a'16 b'8)-.] fis''16([ b'16 cis''16 a'16 b'8)-.] |
   % 45
   R2. |
-  b'16( e'16 fis'16 d'16 e'8)-. b'16( e'16 fis'16 d'16 e'8)-. |
+  b'16([ e'16 fis'16 d'16 e'8)-.] b'16([ e'16 fis'16 d'16 e'8)-.] |
   R2. |
-  fis''16( b'16 cis''16 a'16 b'8)-. fis''16( b'16 cis''16 a'16 b'8)-. |
+  fis''16([ b'16 cis''16 a'16 b'8)-.] fis''16([ b'16 cis''16 a'16 b'8)-.] |
   R2. |
   % 50
-  b'16( e'16 fis'16 d'16 e'8)-. b'16( e'16 fis'16 d'16 e'8)-. |
+  b'16([ e'16 fis'16 d'16 e'8)-.] b'16([ e'16 fis'16 d'16 e'8)-.] |
   R2. |
-  fis''16( b'16 cis''16 a'16 b'8)-. fis''16( b'16 cis''16 a'16 b'8)-. |
+  fis''16([ b'16 cis''16 a'16 b'8)-.] fis''16([ b'16 cis''16 a'16 b'8)-.] |
   R2. |
-  b'16( e'16 fis'16 d'16 e'8)-. b'16( e'16 fis'16 d'16 e'8)-. |
+  b'16([ e'16 fis'16 d'16 e'8)-.] b'16([ e'16 fis'16 d'16 e'8)-.] |
   % 55
   R2. |
-  fis''16( b'16 cis''16 a'16 b'8)-. fis''16( b'16 cis''16 a'16 b'8)-. |
+  fis''16([ b'16 cis''16 a'16 b'8)-.] fis''16([ b'16 cis''16 a'16 b'8)-.] |
   R2. |
-  b'16( e'16 fis'16 d'16 e'8)-. b'16( e'16 fis'16 d'16 e'8)-. |
+  b'16([ e'16 fis'16 d'16 e'8)-.] b'16([ e'16 fis'16 d'16 e'8)-.] |
   R2. |
   % 60
-  fis''16( b'16 cis''16 a'16 b'8)-. fis''16( b'16 cis''16 a'16 b'8)-. |
+  fis''16([ b'16 cis''16 a'16 b'8)-.] fis''16([ b'16 cis''16 a'16 b'8)-.] |
   R2. |
-  b'16( e'16 fis'16 d'16 e'8)-. b'16( e'16 fis'16 d'16 e'8)-. |
+  b'16([ e'16 fis'16 d'16 e'8)-.] b'16([ e'16 fis'16 d'16 e'8)-.] |
   R2. |
-  fis''16( b'16 cis''16 a'16 b'8)-. fis''16( b'16 cis''16 a'16 b'8)-. |
+  fis''16([ b'16 cis''16 a'16 b'8)-.] fis''16([ b'16 cis''16 a'16 b'8)-.] |
   % 65
   R2. |
-  b'16( e'16 fis'16 d'16 e'8)-. b'16( e'16 fis'16 d'16 e'8)-. |
+  b'16([ e'16 fis'16 d'16 e'8)-.] b'16([ e'16 fis'16 d'16 e'8)-.] |
   R2. |
+  \bar "||"
   \time 6/8
   R2. |
   R2. |
@@ -927,7 +894,7 @@ part-Pthree-two = {
   b16-.-> b16-. r16 b16-. r16 b16-. b8-.-> b16-. b16-. b8-. |
   <fis' fis'' >16-.-> <fis' fis'' >16-. r16 <fis' fis'' >16-. r16 <fis'
   fis'' >16-. <g' g'' >8-.-> <g' g'' >16-. <a' a'' >16-. <a' a'' >8-. |
-  R2. |
+  R2.\fermata \bar "|." |
 }
 %{
 part-Pfour-one = {
@@ -2578,6 +2545,7 @@ part-Ponethree-one = {
 
 \addQuote "markE" { \part-Ponezero-one } % violin 2
 \addQuote "orgG" { \part-Pthree-one } % organ
+\addQuote "pnoG" { \part-Ptwo-one } % piano
 \addQuote "markH" { \part-Ptwo-one } % piano
 \addQuote "markL" { \part-Pnine-one } % violin 1
 
@@ -2589,7 +2557,6 @@ part-Ponethree-one = {
       shortInstrumentName = "Fl."
       midiInstrument = "flute"
     } \part-Pone-one
-    %}
     \new PianoStaff \with {
       instrumentName = "Piano"
       shortInstrumentName = "Pf."
@@ -2598,8 +2565,12 @@ part-Ponethree-one = {
       \new Staff \part-Ptwo-one
       \new Staff \part-Ptwo-two
     >>
-    %{
-    \new GrandStaff <<
+    %}
+    \new PianoStaff \with {
+      instrumentName = "Organ"
+      shortInstrumentName = "Org."
+      midiInstrument = "organ"
+    } <<
       \new Staff \part-Pthree-one
       \new Staff \part-Pthree-two
     >>
