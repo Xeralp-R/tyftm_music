@@ -8,7 +8,7 @@
   arranger = "Mico Javier & Rex Reventar"
   subtitle = "For Bravura Orchestra"
   title = "Greenpath"
-  part = "Organ"
+  part = "Drums"
   tagline = #'false
 }
 
@@ -375,12 +375,12 @@ part-Ptwo-one = {
   } |
   c'4. d'4. |
 
-  \mark \default 
+  \mark \default
   \bar "||"
   \time 6/8
-      
+
   R2.*4 | \mark \default
-  R2.*4 | \mark \default 
+  R2.*4 | \mark \default
 
   \clef bass
   e16-.-> e16 r16 e16-. r16 e16-. e8-.-> e16-. e16-. e8-. |
@@ -392,7 +392,7 @@ part-Ptwo-one = {
   g16-.-> g16 r16 g16-. r16 g16-. g8-.-> g16-. g16-. g8-. |
   a16-.-> a16 r16 a16-. r16 a16-. a8-.-> a16-. a16-. a8-. |
   c16-.->\< c16 r16 c16-. r16 c16-. c8-.-> c16-. c16-. c8-. |
-  \mark \default 
+  \mark \default
 
   \clef treble
   <e e' >16-.->\ff <e e' >16 r16 <e e' >16-. r16 <e e' >16-. <e e' >8-.-> <e
@@ -659,7 +659,7 @@ part-Pthree-one = {
 
   \partial 2
   e'''2~\pp\> |
-  \mark \default 
+  \mark \default
 
   % 0
   e'''2.~\ppp |
@@ -896,617 +896,311 @@ part-Pthree-two = {
   fis'' >16-. <g' g'' >8-.-> <g' g'' >16-. <a' a'' >16-. <a' a'' >8-. |
   R2.\fermata \bar "|." |
 }
-%{
+
 part-Pfour-one = {
-    \key c \major
-    \time 3/4
-    \clef percussion
+  \key c \major
+  \time 3/4
+  \clef percussion
 
+  \partial 2
+  r4 r4 |
+  \mark \default
+  % 0
+  R2.*4 | \mark \default
+  R2.*8 | \mark \default
+  R2.*8 | \mark \default
+  % 20
+  R2.*8 | \mark \default
+  R2.*8 | \mark \default
+  <>^\markup{\small "organ cue"}
+  \stopStaff
+  \override Staff.StaffSymbol.line-positions = #'(-4 -2 0 2 4)
+  \startStaff
+  \cueDuring "orgG" #UP {
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    % 40
+    R2. |
+    R2. |
+    R2. |
+    r4 r8
+  }
+  \stopStaff
+  \override Staff.StaffSymbol.line-positions = #'(-2 2)
+  \startStaff
+  a4.\p \< ^\markup {\small "swish, large to small" } \glissando | \mark \default
+  e'4\sf r4 r4 |
+  % 45
+  R2. |
+  R2. |
+  a4.\glissando e'4.\glissando |
+  a4. r8 r4 |
+  R2. |
+  % 50
+  R2. |
+  R2. | \mark \default
+  <>^\markup{\small "violin cue"}
+  \stopStaff
+  \override Staff.StaffSymbol.line-positions = #'(-4 -2 0 2 4)
+  \startStaff
+  \cueDuringWithClef "vlnH" #UP "treble" {
+    R2. |
+    R2. |
+    R2. |
+    % 55
+    R2. |
+    R2. |
+    R2. |
+    R2. |
+    r4. 
+  }
+  \stopStaff
+  \override Staff.StaffSymbol.line-positions = #'(-2 2)
+  \startStaff
+  a4.\<\glissando | \mark \default
+  % 60
+  e'4\sf r4 r4 |
+  R2. |
+  R2. |
+  a4.\glissando e'4.\glissando |
+  a4. r8 r4 |
+  % 65
+  R2. |
+  R2. |
+  R2. |
+
+  \mark \default
+  \bar "||"
+  \time 6/8
+  R2.*8 | \mark \default
+  R2.*8 | \mark \default
+  R2.*8 | \mark \default
+  R2.\fermata \bar "|." |
+}
+
+part-Pfive-one = \drummode {
     \partial 2
-    r4 r4 |
+    r4 r4 | \mark \default
 % 0
-    R2. |
-    R2. |
-    R2. |
-    R2. |
-    R2. |
-% 5
-    R2. |
-    R2. |
-    R2. |
-    R2. |
-    R2. |
-% 10
-    R2. |
-    R2. |
-    R2. |
-    R2. |
-    R2. |
-% 15
-    R2. |
-    R2. |
-    R2. |
-    R2. |
-    R2. |
+    R2.*4 | \mark \default
+    \repeat percent 8 { tamb8(-.\ppp tamb8-. tamb4-.) r4 | } \mark \default
+    \repeat percent 8 { tamb8(-.\pp tamb8-. tamb4-.) r4 | } \mark \default
 % 20
+    \repeat percent 8 { tamb8(-. tamb8-. tamb4-.) r4 | } \mark \default
     R2. |
-    R2. |
-    R2. |
-    R2. |
-    R2. |
-% 25
-    R2. |
-    R2. |
-    R2. |
-    R2. |
-    R2. |
+    tamb16([\p tamb16 tamb16 tamb16 tamb8)-.] tamb16([ tamb16 tamb16 tamb16 tamb8)-.] |
 % 30
     R2. |
-    R2. |
+    tamb16([ tamb16 tamb16 tamb16 tamb8)-.] tamb16([ tamb16 tamb16 tamb16 tamb8)-.] |
     R2. |
     R2. |
     R2. |
 % 35
+    tamb16( tamb16 tamb16 tamb16 tamb16 tamb16 tamb16 tamb16 tamb16 tamb16 tamb16 tamb16 | \mark \default
+    tamb8) r8 r4 r4 |
+    R2.*6
+    r4 tamb2:32\p\< | \mark \default
+    tamb4\sf r4 r4 |
+% 45
+    tamb16-. 16-. 16-. 16-. 16-. 16-. 16-. 16-. 16-. 16-. 16-. 16-. |
+    tamb8 r8 r4 r4 |
     R2. |
     R2. |
+    tamb16-. 16-. 16-. 16-. 16-. 16-. 16-. 16-. 16-. 16-. 16-. 16-. |
+% 50
+    tamb8 r8 r4 r4 |
+    R2. | \mark \default
+    R2.*8 | \mark \default
+% 60
+    R2. |
+    tamb16-. 16-. 16-. 16-. 16-. 16-. 16-. 16-. 16-. 16-. 16-. 16-. |
+    tamb8 r8 r4 r4 |
     R2. |
     R2. |
+% 65
+    tamb16-. 16-. 16-. 16-. 16-. 16-. 16-. 16-. 16-. 16-. 16-. 16-. |
+    tamb8 r8 r4 r4 |
     R2. |
-% 40
-    R2. |
-    R2. |
-    R2. |
-    r4 r8-\markup { \italic "swish, large to small" } r4.\p\< |
-    r4\sf r4 r4 |
+    
+    \mark \default
+    \bar "||"
+    \time 6/8
+    \repeat percent 4 {
+      tamb8.\f 8 16 16 16 16 16 16 16 |
+    } \mark \default
+    \repeat percent 3 {
+      tamb8. 8 16 8 16-> 16-> 8-> |
+    }
+% 75
+    tamb8. 8 16 8-> 8-> 8-> | \mark \default
+    \repeat percent 8 {
+      tamb8.-> 8-> 16-> 8-> 16-> 16-> 8-> |
+    } \mark \default
+    \repeat percent 8 {
+      tamb16->\ff 16-> 16 16-> 16 16-> 8-> 16-> 16-> 8-> |
+    } \mark \default
+    R2.\fermata | \bar "|."
+}
+
+part-Psix-one = \drummode {
+  \clef percussion
+  
+    \partial 2
+    r4 r4 | \mark \default
+% 0
+    R2.*4 | \mark \default
+    R2.*8 | \mark \default
+    R2.*8 | \mark \default
+% 20
+    R2.*8 | \mark \default
+    R2.*8 | \mark \default
+    R2.*7 |
+    r4 r8 tri4.:32\p\< | \mark \default
+    tri4\sf r4 r4 |
 % 45
     R2. |
     R2. |
-    r4.-\markup { \italic "continuous, low-high-low" } r4. |
-    r4. r8 r4 |
+    tri4.:32~\< tri4.:32~\!\> |
+    tri4.\! r8 r4 |
     R2. |
 % 50
     R2. |
-    R2. |
-    R2. |
-    R2. |
-    R2. |
-% 55
-    R2. |
-    R2. |
-    R2. |
-    R2. |
-    r4. r4.\< |
+    R2. | \mark \default
+    R2.*7 |
+    tri2.:32\p\< | \mark \default
 % 60
-    r4\sf r4 r4 |
+    tri4\sf r4 r4 |
     R2. |
     R2. |
-    r4.-\markup { \italic "continuous, low-high-low" } r4. |
-    r4. r8 r4 |
+    tri4.:32~\< tri4.:32~\> |
+    tri4.\! r8 r4 |
 % 65
     R2. |
     R2. |
-    R2. |
+    r4. tri4.:32\p\< |
+
+    \mark \default 
+    \bar "||"
     \time 6/8
-    R2. |
-    R2. |
-% 70
-    R2. |
-    R2. |
-    R2. |
-    R2. |
-    R2. |
+
+    tri4.\sf r4 r8 |
+    R2.*3 |\mark \default
+    R2.*3 |
 % 75
-    R2. |
-    R2. |
-    R2. |
-    R2. |
-    R2. |
-% 80
-    R2. |
-    R2. |
-    R2. |
-    R2. |
-    r1\ff |
-% 85
-    R2. |
-    R2. |
-    R2. |
-    R2. |
-    R2. |
-% 90
-    R2. |
-    R2. |
-    R2. |
+    r4 r8 tri4.:32\p\< | \mark \default
+    tri4.\sf r4 r8 |
+    R2.*7 | \mark \default
+    \repeat percent 7 {
+      tri16->\ff 16-> 16 16-> 16 16-> 8-> 16-> 16-> 8-> |
+    }
+    tri2.:32\ppp\<
+    tri2.:32\>\fermata <>\! \bar "|."
 }
 
-part-Pfive-one = {
-    \key c \major
-    \time 3/4
+part-Pseven-one = \drummode {
     \clef percussion
+    \time 3/4
 
     \partial 2
     r4 r4 |
+    \mark \default
 % 0
-    R2. |
-    R2. |
-    R2. |
-    R2. |
-    r8(\ppp r8 r4) r4 |
-% 5
-    r8(\ppp r8 r4) r4 |
-    r8(\ppp r8 r4) r4 |
-    r8(\ppp r8 r4) r4 |
-    r8(\ppp r8 r4) r4 |
-    r8(\ppp r8 r4) r4 |
-% 10
-    r8(\ppp r8 r4) r4 |
-    r8(\ppp r8 r4) r4 |
-    r8( r8 r4) r4 |
-    r8( r8 r4) r4 |
-    r8( r8 r4) r4 |
-% 15
-    r8( r8 r4) r4 |
-    r8( r8 r4) r4 |
-    r8( r8 r4) r4 |
-    r8( r8 r4) r4 |
-    r8( r8 r4) r4 |
+    R2.*4 |
+    \mark \default
+    R2.*8 |
+    \mark \default
+    R2.*8 |
+    \mark \default
 % 20
-    r8( r8 r4) r4 |
-    r8( r8 r4) r4 |
-    r8( r8 r4) r4 |
-    r8( r8 r4) r4 |
-    r8( r8 r4) r4 |
-% 25
-    r8( r8 r4) r4 |
-    r8( r8 r4) r4 |
-    r8( r8 r4) r4 |
-    R2. |
-    r16( r16 r16 r16 r8)-. r16( r16 r16 r16 r8)-. |
-% 30
-    R2. |
-    r16( r16 r16 r16 r8)-. r16( r16 r16 r16 r8)-. |
-    R2. |
-    R2. |
-    R2. |
-% 35
-    r16 r16 r16 r16 r16 r16 r16 r16 r16 r16 r16 r16 |
-    r8 r8 r4 r4 |
-    R2. |
-    R2. |
-    R2. |
-% 40
-    R2. |
-    R2. |
-    R2. |
-    r4 r2\tremolo\p\< |
-    r4\sf r4 r4 |
-% 45
-    r16-. r16-. r16-. r16-. r16-. r16-. r16-. r16-. r16-. r16-. r16-. r16-. |
-    r8 r8 r4 r4 |
-    R2. |
-    R2. |
-    r16-. r16-. r16-. r16-. r16-. r16-. r16-. r16-. r16-. r16-. r16-. r16-. |
-% 50
-    r8 r8 r4 r4 |
-    R2. |
-    R2. |
-    R2. |
-    R2. |
-% 55
-    R2. |
-    R2. |
-    R2. |
-    R2. |
-    R2. |
+    R2.*8 | 
+    \mark \default
+    R2.*8 |
+    \mark \default
+    R2.*8 |
+    \mark \default
+    R2.*8 |
+    \mark \default
+    <>^\markup{\small "violin cue"}
+  \stopStaff
+  \override Staff.StaffSymbol.line-positions = #'(-4 -2 0 2 4)
+  \startStaff
+  \cueDuringWithClef "vlnH" #UP "treble^8" { R2.*8 }
+  \stopStaff
+  \override Staff.StaffSymbol.line-positions = #'(-2 2)
+  \startStaff \mark \default
 % 60
-    R2. |
-    r16-. r16-. r16-. r16-. r16-. r16-. r16-. r16-. r16-. r16-. r16-. r16-. |
-    r8 r8 r4 r4 |
-    R2. |
-    R2. |
+    \stemUp
+    tommh8\p^\markup { "mute tenor" } r8 r8 tommh8 r8 r8 |
+    tommh8 r8 tommh8 r8 tommh8 r8 |
+    tommh8 r8 r8 tommh8 r8 r8 |
+    tommh8 r8 tommh8 r8 tommh8 r8 |
+    tommh8 r8 r8 tommh8 r8 r8 |
 % 65
-    r16-. r16-. r16-. r16-. r16-. r16-. r16-. r16-. r16-. r16-. r16-. r16-. |
-    r8 r8 r4 r4 |
-    R2. |
+    tommh8 r8 tommh8 r8 tommh8 r8 |
+    tommh8 r8 r8 tommh8 r8 r8 |
+    tommh8 r8 r8 tommh8\< 8 8\! |
+
+    \bar "||"
+    \mark \default
     \time 6/8
-    r8.\f r8 r16 r16 r16 r16 r16 r16 r16 |
-    r8.\f r8 r16 r16 r16 r16 r16 r16 r16 |
-% 70
-    r8.\f r8 r16 r16 r16 r16 r16 r16 r16 |
-    r8.\f r8 r16 r16 r16 r16 r16 r16 r16 |
-    r8. r8 r16 r8 r16-> r16-> r8-> |
-    r8. r8 r16 r8 r16-> r16-> r8-> |
-    r8. r8 r16 r8 r16-> r16-> r8-> |
-% 75
-    r8. r8 r16 r8-> r8-> r8-> |
-    r8.-> r8-> r16-> r8-> r16-> r16-> r8-> |
-    r8.-> r8-> r16-> r8-> r16-> r16-> r8-> |
-    r8.-> r8-> r16-> r8-> r16-> r16-> r8-> |
-    r8.-> r8-> r16-> r8-> r16-> r16-> r8-> |
-% 80
-    r8.-> r8-> r16-> r8-> r16-> r16-> r8-> |
-    r8.-> r8-> r16-> r8-> r16-> r16-> r8-> |
-    r8.-> r8-> r16-> r8-> r16-> r16-> r8-> |
-    r8.-> r8-> r16-> r8-> r16-> r16-> r8-> |
-    r16->\ff r16-> r16 r16-> r16 r16-> r8-> r16-> r16-> r8-> |
-% 85
-    r16->\ff r16-> r16 r16-> r16 r16-> r8-> r16-> r16-> r8-> |
-    r16->\ff r16-> r16 r16-> r16 r16-> r8-> r16-> r16-> r8-> |
-    r16->\ff r16-> r16 r16-> r16 r16-> r8-> r16-> r16-> r8-> |
-    r16->\ff r16-> r16 r16-> r16 r16-> r8-> r16-> r16-> r8-> |
-    r16->\ff r16-> r16 r16-> r16 r16-> r8-> r16-> r16-> r8-> |
-% 90
-    r16->\ff r16-> r16 r16-> r16 r16-> r8-> r16-> r16-> r8-> |
-    r16->\ff r16-> r16 r16-> r16 r16-> r8-> r16-> r16-> r8-> |
-    R2. |
+    \stemNeutral 
+
+    <<
+    \new DrumVoice = "voiceone" { \voiceOne
+      tommh8.-.^\markup { \dynamic f "unmute" } 8.-. 8-. 8-. 8-. |
+      tommh8.-. 8.-. 8-. 8-. 8-. |
+      tommh8.-. 8.-. 8-. 8-. 8-. |
+      tommh8.-. 8.-. 8-. 8-. 8-. |
+    }
+    \new DrumVoice = "voicetwo" { \voiceTwo
+      tomfh4_\f r8 tomfh4 r8 |
+      tomfh4 r8 tomfh4 r8 | 
+      tomfh4 r8 tomfh4 r8 | 
+      tomfh4 r8 tomfh4 r8 |  
+    }
+    >>
+    \mark \default
+
+    \repeat percent 4 {
+      <<
+      \new DrumVoice = "voiceone" { \voiceOne
+        tommh8.-. 8.-. 8-. 8-. 8-. |
+      }
+      \new DrumVoice = "voicetwo" { \voiceTwo
+        tomfh4 r8 tomfh4 r8 | 
+      }
+      >>
+    }
+    \mark \default
+
+    \repeat percent 8 {
+      <<
+      \new DrumVoice = "voiceone" { \voiceOne
+        tommh8.-> 8-> 16-> 8-> 16-> 16-> 8-> |
+      }
+      \new DrumVoice = "voicetwo" { \voiceTwo
+        tomfh8.-> 8.-> 8-> 8-> 8-> |
+      }
+      >>
+    }
+    \mark \default
+    
+    \repeat percent 8 {
+      <<
+      \new DrumVoice = "voiceone" { \voiceOne
+        tommh8.->^\ff 8-> 16-> 8-> 16-> 16-> 8-> |
+      }
+      \new DrumVoice = "voicetwo" { \voiceTwo
+        tomfh8.->_\ff 8.-> 8-> 8-> 8-> |
+      }
+      >>
+    }
+    \mark \default
+    R2. \fermata | \bar "|."
 }
 
-part-Psix-one = {
-    \key c \major
-    \time 3/4
-    \clef percussion
-
-    \partial 2
-    r4 r4 |
-% 0
-    R2. |
-    R2. |
-    R2. |
-    R2. |
-    R2. |
-% 5
-    R2. |
-    R2. |
-    R2. |
-    R2. |
-    R2. |
-% 10
-    R2. |
-    R2. |
-    R2. |
-    R2. |
-    R2. |
-% 15
-    R2. |
-    R2. |
-    R2. |
-    R2. |
-    R2. |
-% 20
-    R2. |
-    R2. |
-    R2. |
-    R2. |
-    R2. |
-% 25
-    R2. |
-    R2. |
-    R2. |
-    R2. |
-    R2. |
-% 30
-    R2. |
-    R2. |
-    R2. |
-    R2. |
-    R2. |
-% 35
-    R2. |
-    R2. |
-    R2. |
-    R2. |
-    R2. |
-% 40
-    R2. |
-    R2. |
-    R2. |
-    r4 r8 r4.\tremolo\p\< |
-    r4\sf r4 r4 |
-% 45
-    R2. |
-    R2. |
-    r4.~\tremolo\< r4.~\tremolo\!\> |
-    r4. r8 r4 |
-    R2. |
-% 50
-    R2. |
-    R2. |
-    R2. |
-    R2. |
-    R2. |
-% 55
-    R2. |
-    R2. |
-    R2. |
-    R2. |
-    r2.\tremolo\< |
-% 60
-    r4\sf r4 r4 |
-    R2. |
-    R2. |
-    r4.~\tremolo\< r4.~\tremolo\!\> |
-    r4. r8 r4 |
-% 65
-    R2. |
-    R2. |
-    r4. r4.\tremolo\p\< |
-    \time 6/8
-    r4.\sf r4 r8 |
-    R2. |
-% 70
-    R2. |
-    R2. |
-    R2. |
-    R2. |
-    R2. |
-% 75
-    r4 r8 r4.\tremolo\< |
-    r4.\sf r4 r8 |
-    R2. |
-    R2. |
-    R2. |
-% 80
-    R2. |
-    R2. |
-    R2. |
-    R2. |
-    r16->\ff r16-> r16 r16-> r16 r16-> r8-> r16-> r16-> r8-> |
-% 85
-    r16->\ff r16-> r16 r16-> r16 r16-> r8-> r16-> r16-> r8-> |
-    r16->\ff r16-> r16 r16-> r16 r16-> r8-> r16-> r16-> r8-> |
-    r16->\ff r16-> r16 r16-> r16 r16-> r8-> r16-> r16-> r8-> |
-    r16->\ff r16-> r16 r16-> r16 r16-> r8-> r16-> r16-> r8-> |
-    r16->\ff r16-> r16 r16-> r16 r16-> r8-> r16-> r16-> r8-> |
-% 90
-    r16->\ff r16-> r16 r16-> r16 r16-> r8-> r16-> r16-> r8-> |
-    r16->\ff r16-> r16 r16-> r16 r16-> r8-> r16-> r16-> r8-> |
-    r2.\tremolo\ppp |
-}
-
-part-Pseven-one = {
-    \key c \major
-    \time 3/4
-    \clef percussion
-
-    \partial 2
-    r4 r4 |
-% 0
-    R2. |
-    R2. |
-    R2. |
-    R2. |
-    R2. |
-% 5
-    R2. |
-    R2. |
-    R2. |
-    R2. |
-    R2. |
-% 10
-    R2. |
-    R2. |
-    R2. |
-    R2. |
-    R2. |
-% 15
-    R2. |
-    R2. |
-    R2. |
-    R2. |
-    R2. |
-% 20
-    R2. |
-    R2. |
-    R2. |
-    R2. |
-    R2. |
-% 25
-    R2. |
-    R2. |
-    R2. |
-    R2. |
-    R2. |
-% 30
-    R2. |
-    R2. |
-    R2. |
-    R2. |
-    R2. |
-% 35
-    R2. |
-    R2. |
-    R2. |
-    R2. |
-    R2. |
-% 40
-    R2. |
-    R2. |
-    R2. |
-    R2. |
-    R2. |
-% 45
-    R2. |
-    R2. |
-    R2. |
-    R2. |
-    R2. |
-% 50
-    R2. |
-    R2. |
-    R2. |
-    R2. |
-    R2. |
-% 55
-    R2. |
-    R2. |
-    R2. |
-    R2. |
-    R2. |
-% 60
-    r8\p-\markup { "mute" } r8 r8 r8 r8 r8 |
-    r8 r8 r8 r8 r8 r8 |
-    r8\p-\markup { "mute" } r8 r8 r8 r8 r8 |
-    r8 r8 r8 r8 r8 r8 |
-    r8\p-\markup { "mute" } r8 r8 r8 r8 r8 |
-% 65
-    r8 r8 r8 r8 r8 r8 |
-    r8 r8 r8 r8 r8 r8 |
-    r8 r8 r8 r8\< r8 r8 |
-    \time 6/8
-    r8.-.\f r8.-. r8-. r8-. r8-. |
-    r8.-.\f r8.-. r8-. r8-. r8-. |
-% 70
-    r8.-.\f r8.-. r8-. r8-. r8-. |
-    r8.-.\f r8.-. r8-. r8-. r8-. |
-    r8.-.\f r8.-. r8-. r8-. r8-. |
-    r8.-.\f r8.-. r8-. r8-. r8-. |
-    r8.-.\f r8.-. r8-. r8-. r8-. |
-% 75
-    r8.-.\f r8.-. r8-. r8-. r8-. |
-    r8.-> r8-> r16-> r8-> r16-> r16-> r8-> |
-    r8.-> r8-> r16-> r8-> r16-> r16-> r8-> |
-    r8.-> r8-> r16-> r8-> r16-> r16-> r8-> |
-    r8.-> r8-> r16-> r8-> r16-> r16-> r8-> |
-% 80
-    r8.-> r8-> r16-> r8-> r16-> r16-> r8-> |
-    r8.-> r8-> r16-> r8-> r16-> r16-> r8-> |
-    r8.-> r8-> r16-> r8-> r16-> r16-> r8-> |
-    r8.-> r8-> r16-> r8-> r16-> r16-> r8-> |
-    r8.-> r8-> r16-> r8-> r16-> r16-> r8-> |
-% 85
-    r8.-> r8-> r16-> r8-> r16-> r16-> r8-> |
-    r8.-> r8-> r16-> r8-> r16-> r16-> r8-> |
-    r8.-> r8-> r16-> r8-> r16-> r16-> r8-> |
-    r8.-> r8-> r16-> r8-> r16-> r16-> r8-> |
-    r8.-> r8-> r16-> r8-> r16-> r16-> r8-> |
-% 90
-    r8.-> r8-> r16-> r8-> r16-> r16-> r8-> |
-    r8.-> r8-> r16-> r8-> r16-> r16-> r8-> |
-    R2. |
-}
-
-part-Peight-one = {
-    \key c \major
-    \time 3/4
-    \clef percussion
-
-    \partial 2
-    r4 r4 |
-% 0
-    R2. |
-    R2. |
-    R2. |
-    R2. |
-    R2. |
-% 5
-    R2. |
-    R2. |
-    R2. |
-    R2. |
-    R2. |
-% 10
-    R2. |
-    R2. |
-    R2. |
-    R2. |
-    R2. |
-% 15
-    R2. |
-    R2. |
-    R2. |
-    R2. |
-    R2. |
-% 20
-    R2. |
-    R2. |
-    R2. |
-    R2. |
-    R2. |
-% 25
-    R2. |
-    R2. |
-    R2. |
-    R2. |
-    R2. |
-% 30
-    R2. |
-    R2. |
-    R2. |
-    R2. |
-    R2. |
-% 35
-    R2. |
-    R2. |
-    R2. |
-    R2. |
-    R2. |
-% 40
-    R2. |
-    R2. |
-    R2. |
-    R2. |
-    R2. |
-% 45
-    R2. |
-    R2. |
-    R2. |
-    R2. |
-    R2. |
-% 50
-    R2. |
-    R2. |
-    R2. |
-    R2. |
-    R2. |
-% 55
-    R2. |
-    R2. |
-    R2. |
-    R2. |
-    R2. |
-% 60
-    R2. |
-    R2. |
-    R2. |
-    R2. |
-    R2. |
-% 65
-    R2. |
-    R2. |
-    R2. |
-    \time 6/8
-    r4\f r8 r4 r8 |
-    r4\f r8 r4 r8 |
-% 70
-    r4\f r8 r4 r8 |
-    r4\f r8 r4 r8 |
-    r4\f r8 r4 r8 |
-    r4\f r8 r4 r8 |
-    r4\f r8 r4 r8 |
-% 75
-    r4\f r8 r4 r8 |
-    r8.-> r8.-> r8-> r8-> r8-> |
-    r8.-> r8.-> r8-> r8-> r8-> |
-    r8.-> r8.-> r8-> r8-> r8-> |
-    r8.-> r8.-> r8-> r8-> r8-> |
-% 80
-    r8.-> r8.-> r8-> r8-> r8-> |
-    r8.-> r8.-> r8-> r8-> r8-> |
-    r8.-> r8.-> r8-> r8-> r8-> |
-    r8.-> r8.-> r8-> r8-> r8-> |
-    r8.-> r8.-> r8-> r8-> r8-> |
-% 85
-    r8.-> r8.-> r8-> r8-> r8-> |
-    r8.-> r8.-> r8-> r8-> r8-> |
-    r8.-> r8.-> r8-> r8-> r8-> |
-    r8.-> r8.-> r8-> r8-> r8-> |
-    r8.-> r8.-> r8-> r8-> r8-> |
-% 90
-    r8.-> r8.-> r8-> r8-> r8-> |
-    r8.-> r8.-> r8-> r8-> r8-> |
-    R2. |
-}
-%}
 part-Pnine-one = {
   \key d \major
   \time 3/4
@@ -2547,6 +2241,7 @@ part-Ponethree-one = {
 \addQuote "orgG" { \part-Pthree-one } % organ
 \addQuote "pnoG" { \part-Ptwo-one } % piano
 \addQuote "markH" { \part-Ptwo-one } % piano
+\addQuote "vlnH" { \part-Pnine-one } % violin 1
 \addQuote "markL" { \part-Pnine-one } % violin 1
 
 \score {
@@ -2565,7 +2260,6 @@ part-Ponethree-one = {
       \new Staff \part-Ptwo-one
       \new Staff \part-Ptwo-two
     >>
-    %}
     \new PianoStaff \with {
       instrumentName = "Organ"
       shortInstrumentName = "Org."
@@ -2574,13 +2268,41 @@ part-Ponethree-one = {
       \new Staff \part-Pthree-one
       \new Staff \part-Pthree-two
     >>
+    
+    \new StaffGroup <<
+      \new Staff = "wind_chimes" \with {
+        instrumentName = "Wind Chimes"
+        shortInstrumentName = "Ch."
+        \override StaffSymbol.line-positions = #'(-2 2)
+      } \part-Pfour-one
+
+      \new DrumStaff \with {
+        instrumentName = "Tambourine"
+        shortInstrumentName = "Tamb."
+        drumStyleTable = #percussion-style
+        \override StaffSymbol.line-count = #1
+      } { \part-Pfive-one }
+
+      \new Staff \with {
+        instrumentName = "Suspended Cymbal"
+        shortInstrumentName = "Cymb."
+        drumStyleTable = #percussion-style
+        \override StaffSymbol.line-count = #1
+      } \part-Psix-one
+      %}
+      \new DrumStaff \with {
+        instrumentName = \markup \center-column {
+          "Tenor Drum"
+          "&"
+          "Bass Drum"
+        }
+        shortInstrumentName = "Dr."
+        \override StaffSymbol.line-positions = #'(-2 2)
+        drumStyleTable = #drums-style
+      } \part-Pseven-one
+      %{
+    >>
     %{
-    \new Staff \part-Pfour-one
-    \new Staff \part-Pfive-one
-    \new Staff \part-Psix-one
-    \new Staff \part-Pseven-one
-    \new Staff \part-Peight-one
-    % }
     \new GrandStaff <<
       \new Staff \part-Pnine-one
       \new Staff \part-Pnine-two
