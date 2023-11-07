@@ -8,7 +8,7 @@
   arranger = "Mico Javier & Rex Reventar"
   subtitle = "For Bravura Orchestra"
   title = "Greenpath"
-  part = "Violoncello"
+  part = "Contrabass"
   tagline = #'false
 }
 
@@ -420,6 +420,7 @@ part-Ptwo-two = {
   \key d \major
   \time 3/4
   \clef treble
+  \tempo "Andante con moto" 4 = 86
 
   \partial 2
   r4 r4 | \mark \default
@@ -812,6 +813,7 @@ part-Pthree-two = {
   \key d \major
   \time 3/4
   \clef treble
+  \tempo "Andante con moto" 4 = 86
 
   \partial 2
   r4 r4 |
@@ -2052,15 +2054,14 @@ part-Ponethree-one = {
   \key d \major
   \time 3/4
   \clef bass
+  \tempo "Andante con moto" 4 = 86
 
   \partial 2
   r4 r4 |
+  \mark \default
   % 0
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  e8(\p-\markup { "pizz." } b8 fis'8) r4 r8 |
+  R2.*4 | \mark \default
+  e8(\p^\markup { "pizz." } b8 fis'8) r4 r8 |
   % 5
   b,8( fis8 cis'8) r4 r8 |
   c8( g8 d'8) r4 r8 |
@@ -2070,6 +2071,7 @@ part-Ponethree-one = {
   % 10
   a,8( e8 b8) r4 r8 |
   c8( f8 e'8) r8 r4 |
+  \mark \default
   e8( b8 fis'8) r4 r8 |
   b,8( fis8 cis'8) r4 r8 |
   c8( g8 d'8) r4 r8 |
@@ -2079,6 +2081,7 @@ part-Ponethree-one = {
   g,8( d8 a8) r4 r8 |
   a,8( e8 b8) r4 r8 |
   c8( f8 e'8) r8 r4 |
+  \mark \default
   % 20
   e8( b8 fis'8) r4 r8 |
   b,8( fis8 cis'8) r4 r8 |
@@ -2089,7 +2092,8 @@ part-Ponethree-one = {
   g,8( d8 a8) r4 r8 |
   a,8( e8 b8) r4 r8 |
   c8( f8 e'8) r8 r4 |
-  e8(\mp-\markup { \italic "melody (hauptstimme)" } b8 fis'8) e8 r8 r8 |
+  \mark \default
+  e8(\mp^\markup { \small "melody (hauptstimme)" } b8 fis'8) e8 r8 r8 |
   b,8( fis8 cis'8) b,8 r8 r8 |
   % 30
   c8( g8 d'8) c8 r8 r8 |
@@ -2099,6 +2103,7 @@ part-Ponethree-one = {
   a,8( e8 b8) a,8 r8 r8 |
   % 35
   c8( f8 e'8) c8 r4 |
+  \mark \default
   e8( b8 fis'8) e8 r8 r8 |
   b,8( fis8 cis'8) b,8 r8 r8 |
   c8( g8 d'8) c8 r8 r8 |
@@ -2108,7 +2113,8 @@ part-Ponethree-one = {
   g,8( d8 a8) g,8 r8 r8 |
   a,8( e8 b8) a,8 r8 r8 |
   c8( f8 e'8) c8 r4 |
-  e4. e4. |
+  \mark \default
+  e4._\mf ^\markup{\small "slowly in the foreground, pizz sempre"} e4. |
   % 45
   fis4. e4. |
   e4. e4. |
@@ -2118,56 +2124,68 @@ part-Ponethree-one = {
   % 50
   e4. e4. |
   g4. a4. |
-  e2.-\markup { "arco" }\mf |
-  fis2. |
-  g2. |
+  \mark \default
+  e4. e4. |
+  fis4. e4. |
+  e4. e4. |
   % 55
-  c2. |
-  a,2.~ |
-  a,2 b,4 |
-  c2. |
-  d2. |
+  fis4. g4. |
+  e4. e4. |
+  fis4. e4. |
+  e4. e4. |
+  g4. a4. |
+  \mark \default
   % 60
   c8-!\f r8 g8-! c8-! r8 g8-! |
   d8-! r8 a8-! r8 b8-! r8 |
-  e8-! r8 b8-! e8-! r8 b8-! |
+  \omit Script
+  e8-!_\markup{\italic "secco"} r8 b8-! e8-! r8 b8-! |
   a8-! r8 b8-! r8 cis'8-! r8 |
   g8-! r8 g8-! c8-! r8 g8-! |
   % 65
   d8-! r8 a8-! r8 b8-! r8 |
   e8-! r8 b8-! e8-! r8 b8-! |
   e8-! r8 b8-! e8-! r8 b8-! |
+  \undo \omit Script
+
+  \mark \default 
+  \bar "||"
   \time 6/8
-  e16-.->\f e16 r16 e16-. r16 e16-. e8-.-> e16-. e16-. e8-. |
-  b16-.-> b16 r16 b16-. r16 b16-. b8-.-> b16-. b16-. b8-. |
+  \tempo "L'istesso tempo" 8 = 172
+  e,4-.->\f^\markup{\small "comm'una grancassa"}  r8 e,4-.-> r8 |
+  b,4-.-> r8 b,4-.-> r8 |
   % 70
-  c16-.-> c16 r16 c16-. r16 c16-. c8-.-> c16-. c16-. c8-. |
-  a16-.-> a16 r16 a16-. r16 a16-. a8-.-> a16-. a16-. a8-. |
-  b16-.-> b16 r16 b16-. r16 b16-. b8-.-> b16-. b16-. b8-. |
-  g16-.-> g16 r16 g16-. r16 g16-. g8-.-> g16-. g16-. g8-. |
-  a16-.-> a16 r16 a16-. r16 a16-. a8-.-> a16-. a16-. a8-. |
+  c4_\markup{"sim. al fin."} r8 c4 r8 |
+  a,4 r8 a,4 r8 |
+  \mark \default
+  b,4 r8 b,4 r8 |
+  g,4 r8 g,4 r8 |
+  a,4 r8 a,4 r8 |
   % 75
-  c16-.-> c16 r16 c16-. r16 c16-. c8-.-> c16-. c16-. c8-. |
-  e16-.-> e16 r16 e16-. r16 e16-. e8-.-> e16-. e16-. e8-. |
-  b16-.-> b16 r16 b16-. r16 b16-. b8-.-> b16-. b16-. b8-. |
-  c16-.-> c16 r16 c16-. r16 c16-. c8-.-> c16-. c16-. c8-. |
-  a16-.-> a16 r16 a16-. r16 a16-. a8-.-> a16-. a16-. a8-. |
+  a,4 r8 a,4 r8 |
+  \mark \default
+  e,4  r8 e,4 r8 |
+  b,4 r8 b,4 r8 |
+  c4 r8 c4 r8 |
+  a,4 r8 a,4 r8 |
   % 80
-  b16-.-> b16 r16 b16-. r16 b16-. b8-.-> b16-. b16-. b8-. |
-  g16-.-> g16 r16 g16-. r16 g16-. g8-.-> g16-. g16-. g8-. |
-  a16-.-> a16 r16 a16-. r16 a16-. a8-.-> a16-. a16-. a8-. |
-  c16-.->\< c16 r16 c16-. r16 c16-. c8-.-> c16-. c16-. c8-. |
-  e16-.->\ff e16 r16 e16-. r16 e16-. e8-.-> e16-. e16-. e8-. |
+  b,4 r8 b,4 r8 |
+  g,4 r8 g,4 r8 |
+  a,4 r8 a,4 r8 |
+  a,4\< r8 a,4 r8 |
+  \mark \default
+  e,4\ff r8 e,4 r8 |
   % 85
-  b16-.-> b16 r16 b16-. r16 b16-. b8-.-> b16-. b16-. b8-. |
-  c16-.-> c16 r16 c16-. r16 c16-. c8-.-> c16-. c16-. c8-. |
-  a16-.-> a16 r16 a16-. r16 a16-. a8-.-> a16-. a16-. a8-. |
-  b16-.-> b16 r16 b16-. r16 b16-. b8-.-> b16-. b16-. b8-. |
-  g16-.-> g16 r16 g16-. r16 g16-. g8-.-> g16-. g16-. g8-. |
+  b,4 r8 b,4 r8 |
+  c4 r8 c4 r8 |
+  a,4 r8 a,4 r8 |
+  b,4 r8 b,4 r8 |
+  g,4 r8 g,4 r8 |
   % 90
-  a16-.-> a16 r16 a16-. r16 a16-. a8-.-> a16-. a16-. a8-. |
-  c16-.->\< c16 r16 c16-. r16 c16-. c8-.-> c16-. c16-. c8-.\! |
-  R2. |
+  a,4 r8 a,4 r8 |
+  a,4\< r8 a,4 r8\! |
+  \mark \default
+  R2.\fermata | \bar "|."
 }
 
 \addQuote "markE" { \part-Ponezero-one } % violin 2
@@ -2249,14 +2267,18 @@ part-Ponethree-one = {
       shortInstrumentName = "Va."
       midiInstrument = "viola"
     } \part-Poneone-one
-    %}
+
     \new Staff \with {
       instrumentName = "Violoncello"
       shortInstrumentName = "Vc."
       midiInstrument = "cello"
     } \part-Ponetwo-one
-    %{
-    \new Staff \part-Ponethree-one
+    %}
+    \new Staff \with {
+      instrumentName = "Contrabass"
+      shortInstrumentName = "Cb."
+      midiInstrument = "double bass"
+    } \part-Ponethree-one
     %}
   >>
 }
