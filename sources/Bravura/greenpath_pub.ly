@@ -11,6 +11,18 @@
   tagline = #'false
 }
 
+vlnHcue = { \voiceOne
+  b'8-! r8 b'8-! r8 b'8-! r8 |
+      b'8-! r8 b'8-! r8 b'8-! e''8-! |
+      b'8-! r8 b'8-! r8 b'8-! r8 |
+      % 55
+      b'8-! r8 b'8-! r8 b'8-! e''8-! |
+      b'8-! r8 b'8-! r8 b'8-! r8 |
+      b'8-! r8 b'8-! r8 b'8-! g''8-! |
+      b'8-! r8 b'8-! r8 b'8-! r8 |
+      b'8-! r8 b'8-! a''8-! g''8-! fis''8-! |
+}
+
 part-Pone-one = {
   \key d \major
   \time 3/4
@@ -946,21 +958,16 @@ part-Pfour-one = {
   \stopStaff
   \override Staff.StaffSymbol.line-positions = #'(-4 -2 0 2 4)
   \startStaff
-  \cueDuringWithClef "vlnH" #UP "treble" {
-    R2. |
-    R2. |
-    R2. |
-    % 55
-    R2. |
-    R2. |
-    R2. |
-    R2. |
-    r4. 
-  }
+  <<
+    { 
+      \voiceTwo R2.*7 r4.
+      a4.\<\glissando | \mark \default 
+    }
+    \new CueVoice \vlnHcue
+  >>
   \stopStaff
   \override Staff.StaffSymbol.line-positions = #'(-2 2)
   \startStaff
-  a4.\<\glissando | \mark \default
   % 60
   e'4\sf r4 r4 |
   R2. |
@@ -1127,7 +1134,10 @@ part-Pseven-one = \drummode {
   \stopStaff
   \override Staff.StaffSymbol.line-positions = #'(-4 -2 0 2 4)
   \startStaff
-  \cueDuringWithClef "vlnH" #UP "treble^8" { R2.*8 }
+  <<
+    { \voiceTwo R2.*8 }
+    \new CueVoice \vlnHcue
+  >>
   \stopStaff
   \override Staff.StaffSymbol.line-positions = #'(-2 2)
   \startStaff \mark \default
@@ -1314,7 +1324,7 @@ part-Pnine-one = {
   % 60
   <<
     \new Voice { \voiceOne
-      e'''2.:32~\p^"1." |
+      e'''2.:32~^\p |
       e'''2.:32~ |
       e'''2.:32~ |
       e'''2.:32~ |
@@ -1325,7 +1335,7 @@ part-Pnine-one = {
       e'''2.:32 |
     }
     \new Voice { \voiceTwo
-      b''8-!^"2." r8 b''8-! r8 b''8-! r8 |
+      b''8-! r8 b''8-! r8 b''8-! r8 |
       b''8-! r8 b''8-! r8 b''8-! e'''8-! |
       b''8-! r8 b''8-! r8 b''8-! r8 |
       b''8-! r8 b''8-! r8 b''8-! e'''8-! |
@@ -1357,42 +1367,42 @@ part-Pnine-one = {
   e''16-. b'16-. a'16-. e''16-. b'16-. a'16-. e''16-. b'16-. a'16-. e''16-.
   b'16-. a'16-. |
   \mark \default
-  e''16-.^\markup{\small "1"} c''16-. b'16-. c''16-. b'16-. a'16-. b'16-. a'16-. g'16-. a'16-.
+  e''16-.^\markup{\small \box "1"} c''16-. b'16-. c''16-. b'16-. a'16-. b'16-. a'16-. g'16-. a'16-.
   g'16-. e'16-. |
-  e''16-.^\markup{\small "2"} c''16-. b'16-. c''16-. b'16-. a'16-. b'16-. a'16-. g'16-. a'16-.
+  e''16-.^\markup{\small \box "2"} c''16-. b'16-. c''16-. b'16-. a'16-. b'16-. a'16-. g'16-. a'16-.
   g'16-. e'16-. |
-  e''16-.^\markup{\small "3"} c''16-. b'16-. c''16-. b'16-. a'16-. b'16-. a'16-. g'16-. a'16-.
+  e''16-.^\markup{\small \box "3"} c''16-. b'16-. c''16-. b'16-. a'16-. b'16-. a'16-. g'16-. a'16-.
   g'16-. e'16-. |
-  e''16-.^\markup{\small "4*"} cis''!16-. b'16-. cis''!16-. b'16-. a'16-. b'16-. a'16-. g'16-.
+  e''16-.^\markup{\small \box "4*"} cis''!16-. b'16-. cis''!16-. b'16-. a'16-. b'16-. a'16-. g'16-.
   a'16-. g'16-. e'16-. |
   % 80
-  e''16-.^\markup{\small "5"} c''16-. b'16-. c''16-. b'16-. a'16-. b'16-. a'16-. g'16-.
+  e''16-.^\markup{\small \box "5"} c''16-. b'16-. c''16-. b'16-. a'16-. b'16-. a'16-. g'16-.
   a'16-. g'16-. e'16-. |
-  e''16-.^\markup{\small "6"} c''16-. b'16-. c''16-. b'16-. a'16-. b'16-. a'16-. g'16-. a'16-.
+  e''16-.^\markup{\small \box "6"} c''16-. b'16-. c''16-. b'16-. a'16-. b'16-. a'16-. g'16-. a'16-.
   g'16-. e'16-. |
   b16-.-> b16-. r16 b16-. r16 b16-. b8-.-> b16-. b16-. b8-. |
   fis'16-.->\< fis'16-. r16 fis'16-. r16 fis'16-. g'8-.-> g'16-.
   a'16-. a'8-. |
   \mark \default
-  e''16-.\ff^\markup{\small "1"} c''16-. b'16-. c''16-. b'16-. a'16-. b'16-. a'16-.
+  e''16-.\ff^\markup{\small \box "1"} c''16-. b'16-. c''16-. b'16-. a'16-. b'16-. a'16-.
   g'16-. a'16-. g'16-. e'16-. |
   % 85
-  e''16-.^\markup{\small "2"} c''16-. b'16-. c''16-. b'16-. a'16-. b'16-. a'16-. g'16-. a'16-.
+  e''16-.^\markup{\small \box "2"} c''16-. b'16-. c''16-. b'16-. a'16-. b'16-. a'16-. g'16-. a'16-.
   g'16-. e'16-. |
-  e''16-.^\markup{\small "3"} c''16-. b'16-. c''16-. b'16-. a'16-. b'16-. a'16-. g'16-. a'16-.
+  e''16-.^\markup{\small \box "3"} c''16-. b'16-. c''16-. b'16-. a'16-. b'16-. a'16-. g'16-. a'16-.
   g'16-. e'16-. |
-  e''16-.^\markup{\small "4*"} cis''!16-. b'16-. cis''!16-. b'16-. a'16-. b'16-. a'16-. g'16-.
+  e''16-.^\markup{\small \box "4*"} cis''!16-. b'16-. cis''!16-. b'16-. a'16-. b'16-. a'16-. g'16-.
   a'16-. g'16-. e'16-. |
-  e''16-.^\markup{\small "5"} c''16-. b'16-. c''16-. b'16-. a'16-. b'16-. a'16-. g'16-.
+  e''16-.^\markup{\small \box "5"} c''16-. b'16-. c''16-. b'16-. a'16-. b'16-. a'16-. g'16-.
   a'16-. g'16-. e'16-. |
-  e''16-.^\markup{\small "6"} c''16-. b'16-. c''16-. b'16-. a'16-. b'16-. a'16-. g'16-. a'16-.
+  e''16-.^\markup{\small \box "6"} c''16-. b'16-. c''16-. b'16-. a'16-. b'16-. a'16-. g'16-. a'16-.
   g'16-. e'16-. |
   % 90
   b16-.-> b16-. r16 b16-. r16 b16-. b8-.-> b16-. b16-. b8-. |
   fis'16-.->\< fis'16-. r16 fis'16-. r16 fis'16-. g'8-.-> g'16-. a'16-.
-  a'8-.\! |
+  a'8-. |
   \mark \default
-  R2.\fermata | \bar "|."
+  R2.\!\fermata | \bar "|."
 }
 
 part-Ponezero-one = {
@@ -1543,131 +1553,9 @@ part-Ponezero-one = {
   <d'' d'''>4. <b' b''>4. |
   % 90
   <a' a''>2. |
-  <g' g''>4.\< <e' e''>4.\! |
+  <g' g''>4.\< <e' e''>4. |
   \mark \default
-  R2.\fermata | \bar "|."
-}
-
-part-Ponezero-two = {
-  \key d \major
-  \time 3/4
-  \clef treble
-
-  \partial 2
-  r4 r4 |
-  % 0
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  % 5
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  % 10
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  % 15
-  R2. |
-  R2. |
-  R2. |
-  r2 r4 |
-  R2. |
-  % 20
-  b'2.~ |
-  b'2.~ |
-  b'2.~ |
-  b'2. |
-  d''4. cis''4. |
-  % 25
-  d''4. b'4. |
-  a'2. |
-  R2. |
-  fis''4~ fis''8 fis''16 e''16 fis''4~ |
-  fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
-  % 30
-  fis''4~ fis''8 fis''16 e''16 fis''4~ |
-  fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
-  fis''4~ fis''8 fis''16 e''16 fis''4~ |
-  fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
-  fis''4~ fis''8 fis''16 e''16 fis''4~ |
-  % 35
-  fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
-  fis''4~ fis''8 fis''16 e''16 fis''4~ |
-  fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
-  fis''4~ fis''8 fis''16 e''16 fis''4~ |
-  fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
-  % 40
-  fis''4~ fis''8 fis''16 e''16 fis''4~ |
-  fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
-  fis''4~ fis''8 fis''16 e''16 fis''4~ |
-  fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
-  fis''4~ fis''8 fis''16 e''16 fis''4~ |
-  % 45
-  fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
-  fis''4~ fis''8 fis''16 e''16 fis''4~ |
-  fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
-  fis''4~ fis''8 fis''16 e''16 fis''4~ |
-  fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
-  % 50
-  fis''4~ fis''8 fis''16 e''16 fis''4~ |
-  fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
-  fis''4~ fis''8 fis''16 e''16 fis''4~ |
-  fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
-  fis''4~ fis''8 fis''16 e''16 fis''4~ |
-  % 55
-  fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
-  fis''4~ fis''8 fis''16 e''16 fis''4~ |
-  fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
-  fis''4~ fis''8 fis''16 e''16 fis''4~ |
-  fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
-  % 60
-  fis''8 fis''16 e''16 fis''8 fis''16 e''16 fis''8 fis''16 e''16 |
-  fis''8 fis''16 e''16 fis''8 fis''16 e''16 b''8 fis''16 e''16 |
-  fis''8 fis''16 e''16 fis''8 fis''16 e''16 fis''8 fis''16 e''16 |
-  fis''8 fis''16 e''16 fis''8 fis''16 e''16 b''8 fis''16 e''16 |
-  fis''8 fis''16 e''16 fis''8 fis''16 e''16 fis''8 fis''16 e''16 |
-  % 65
-  fis''8 fis''16 e''16 fis''8 fis''16 e''16 b''8 fis''16 e''16 |
-  fis''8 fis''16 e''16 fis''8 fis''16 e''16 fis''8 fis''16 e''16 |
-  fis''8 fis''16 e''16 fis''8 fis''16 e''16 b''8 fis''16 e''16 |
-  \time 6/8
-  R2. |
-  R2. |
-  % 70
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  % 75
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  % 80
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  b'2. |
-  % 85
-  g'8. a'8. b'4. |
-  b'2. |
-  cis''4 b'2 |
-  d''4. cis''4. |
-  d''4. b'4. |
-  % 90
-  a'2. |
-  g'4. e'4. |
-  R2. |
+  R2.\fermata\! | \bar "|."
 }
 
 part-Poneone-one = {
@@ -1836,9 +1724,9 @@ part-Poneone-one = {
   <e e'>4. <fis fis'>8. <g g'>8. |
   % 90
   <e e'>2. |
-  <a a'>4.\< <c' c''>4.\! |
+  <a a'>4.\< <c' c''>4. |
   \mark \default
-  R2.\fermata | \bar "|."
+  R2.\!\fermata | \bar "|."
 }
 
 part-Ponetwo-one = {
@@ -1975,9 +1863,9 @@ part-Ponetwo-one = {
   g,16-.-> g,16 r16 g,16-. r16 g,16-. g,8-.-> g,16-. g,16-. g,8-. |
   % 90
   a,16-.-> a,16 r16 a,16-. r16 a,16-. a,8-.-> a,16-. a,16-. a,8-. |
-  c,16-.->\< c,16 r16 c,16-. r16 c,16-. c,8-.-> c,16-. c,16-. c,8-.\! |
+  c,16-.->\< c,16 r16 c,16-. r16 c,16-. c,8-.-> c,16-. c,16-. c,8-. |
   \mark \default
-  R2.\fermata  | \bar "|."
+  R2.\!\fermata  | \bar "|."
 }
 
 part-Ponethree-one = {
@@ -2085,7 +1973,7 @@ part-Ponethree-one = {
   e,4-.->\f^\markup{\small "comm'una grancassa"}  r8 e,4-.-> r8 |
   b,4-.-> r8 b,4-.-> r8 |
   % 70
-  c4_\markup{"sim. al fin."} r8 c4 r8 |
+  c4_\markup{\italic "sim. al fin."} r8 c4 r8 |
   a,4 r8 a,4 r8 |
   \mark \default
   b,4 r8 b,4 r8 |
@@ -2113,9 +2001,9 @@ part-Ponethree-one = {
   g,4 r8 g,4 r8 |
   % 90
   a,4 r8 a,4 r8 |
-  a,4\< r8 a,4 r8\! |
+  a,4\< r8 a,4 r8 |
   \mark \default
-  R2.\fermata | \bar "|."
+  R2.\!\fermata | \bar "|."
 }
 
 \addQuote "markE" { \part-Ponezero-one } % violin 2
@@ -2127,12 +2015,12 @@ part-Ponethree-one = {
 
 \score {
   <<
-    %{
     \new Staff \with {
       instrumentName = "2 Flutes"
       shortInstrumentName = "Fl."
       midiInstrument = "flute"
     } \part-Pone-one
+
     \new PianoStaff \with {
       instrumentName = "Piano"
       shortInstrumentName = "Pf."
@@ -2165,7 +2053,10 @@ part-Ponethree-one = {
       } { \part-Pfive-one }
 
       \new Staff \with {
-        instrumentName = "Suspended Cymbal"
+        instrumentName = \markup \center-column {
+          "Suspended"
+          "Cymbal"
+        }
         shortInstrumentName = "Cymb."
         drumStyleTable = #percussion-style
         \override StaffSymbol.line-count = #1
@@ -2182,38 +2073,41 @@ part-Ponethree-one = {
         drumStyleTable = #drums-style
       } \part-Pseven-one
     >>
-    %}
-    \new GrandStaff <<
-      \new Staff \with {
-        instrumentName = "Violin 1"
-        shortInstrumentName = "Vl. 1"
-        midiInstrument = "violin"
-      } \part-Pnine-one
+
+    \new StaffGroup <<
+      \new GrandStaff <<
+        \new Staff \with {
+          instrumentName = "Violin 1"
+          shortInstrumentName = "Vl. 1"
+          midiInstrument = "violin"
+        } \part-Pnine-one
+
+        \new Staff \with {
+          instrumentName = "Violin 2"
+          shortInstrumentName = "Vl. 2"
+          midiInstrument = "violin"
+        } \part-Ponezero-one
+      >>
 
       \new Staff \with {
-        instrumentName = "Violin 2"
-        shortInstrumentName = "Vl. 2"
-        midiInstrument = "violin"
-      } \part-Ponezero-one
+        instrumentName = "Viola"
+        shortInstrumentName = "Va."
+        midiInstrument = "viola"
+      } \part-Poneone-one
+
+      \new GrandStaff <<
+        \new Staff \with {
+          instrumentName = "Violoncello"
+          shortInstrumentName = "Vc."
+          midiInstrument = "cello"
+        } \part-Ponetwo-one
+
+        \new Staff \with {
+          instrumentName = "Contrabass"
+          shortInstrumentName = "Cb."
+          midiInstrument = "double bass"
+        } \part-Ponethree-one
+      >>
     >>
-    %{
-    \new Staff \with {
-      instrumentName = "Viola"
-      shortInstrumentName = "Va."
-      midiInstrument = "viola"
-    } \part-Poneone-one
-
-    \new Staff \with {
-      instrumentName = "Violoncello"
-      shortInstrumentName = "Vc."
-      midiInstrument = "cello"
-    } \part-Ponetwo-one
-
-    \new Staff \with {
-      instrumentName = "Contrabass"
-      shortInstrumentName = "Cb."
-      midiInstrument = "double bass"
-    } \part-Ponethree-one
-    %}
   >>
 }
