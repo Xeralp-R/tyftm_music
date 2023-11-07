@@ -1,14 +1,13 @@
 % Automatically generated from a musicxml file.
 \version "2.24.0"
 \include "../../styles/global.ily"
-\include "../../styles/Instrument_Part_Score.ily"
+\include "../../styles/Full_Score.ily"
 
 \header {
   composer = "Christopher Larkin"
   arranger = "Mico Javier & Rex Reventar"
   subtitle = "For Bravura Orchestra"
   title = "Greenpath"
-  part = "Contrabass"
   tagline = #'false
 }
 
@@ -1210,51 +1209,45 @@ part-Pnine-one = {
 
   \partial 2
   r4 r4 |
+  \mark \default
   % 0
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  % 5
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  % 10
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  % 15
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  R2. |
+  R2.*4 |
+  \mark \default
+  R2.*8 |
+  \mark \default
+  R2.*8 |
+  \mark \default
   % 20
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  % 25
-  R2. |
-  R2. |
-  R2. |
-  << { b''2.~\ppp } \\ { } >> |
-  b''2.~ |
-  % 30
-  b''2.~ |
-  b''2.~ |
-  b''2.~ |
-  b''2.~ |
-  b''2.~ |
-  % 35
-  b''2. |
-  fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
+  R2.*8 |
+  \mark \default
+  <<
+    \new Voice { \voiceOne
+      b''2.~^\markup{\dynamic ppp "div."} |
+      b''2.~ |
+      % 30
+      b''2.~ |
+      b''2.~ |
+      b''2.~ |
+      b''2.~ |
+      b''2.~ |
+      % 35
+      b''2. |
+    }
+    \new Voice { \voiceTwo
+      fis''8_\p fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
+      fis''4~ fis''8 fis''16 e''16 b''4 |
+      % 30
+      fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
+      fis''4~ fis''8 fis''16 e''16 b''4 |
+      fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
+      fis''4~ fis''8 fis''16 e''16 b''4 |
+      fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
+      % 35
+      fis''4~ fis''8 fis''16 e''16 b''4 |
+    }
+  >>
+  \mark \default
+  fis''8^"unis." fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
   fis''4~ fis''8 fis''16 e''16 b''4 |
   fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
   fis''4~ fis''8 fis''16 e''16 b''4 |
@@ -1263,41 +1256,92 @@ part-Pnine-one = {
   fis''4~ fis''8 fis''16 e''16 b''4 |
   fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
   fis''4~ fis''8 fis''16 e''16 b''4 |
-  e'8-!\mp-\markup { \italic "secco molto" } b'8-! fis''8-! e'8-! r8 r8 |
-  % 45
-  R2. |
-  e'8-! b'8-! fis''8-! e'8-! r8 r8 |
-  R2. |
-  e'8-! b'8-! fis''8-! e'8-! r8 r8 |
-  R2. |
-  % 50
-  d'8-! a'8-! e''8-! d'8-! r8 r8 |
-  R2. |
-  b''8-!\mf r8 b''8-! r8 b''8-! r8 |
-  b''8-! r8 b''8-! r8 b''8-! e'''8-! |
-  b''8-! r8 b''8-! r8 b''8-! r8 |
-  % 55
-  b''8-! r8 b''8-! r8 b''8-! e'''8-! |
-  b''8-! r8 b''8-! r8 b''8-! r8 |
-  b''8-! r8 b''8-! r8 b''8-! g'''8-! |
-  b''8-! r8 b''8-! r8 b''8-! r8 |
-  b''8-! r8 b''8-! a'''8-! g'''8-! fis'''8-! |
-  % 60
-  e'''2.:32~\p |
-  e'''2.:32~ |
-  e'''2.:32~ |
-  e'''2.:32~ |
-  e'''2.:32~ |
-  % 65
-  e'''2.:32~ |
-  e'''2.:32~ |
-  e'''2.:32 |
+  \mark \default 
   <<
-    {
-      \time 6/8
-      e''16-.->\f b'16-. a'16-. e''16-.-> r16 e''16-. r16 e''16-. r16 e''16-. r8
-    } \\ { }
-  >> |
+  \new Voice { \voiceOne
+    fis''8^"div." fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
+    % 45
+    fis''4~ fis''8 fis''16 e''16 b''4 |
+    fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
+    fis''4~ fis''8 fis''16 e''16 b''4 |
+    fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
+    fis''4~ fis''8 fis''16 e''16 b''4 |
+    % 50
+    fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
+    fis''4~ fis''8 fis''16 e''16 b''4 |
+  }
+  \new Voice { \voiceTwo
+    e'8-!_\markup { \dynamic mp \italic "secco molto" } b'8-! fis''8-! e'8-! r8 r8 |
+    % 45
+    R2. |
+    e'8-! b'8-! fis''8-! e'8-! r8 r8 |
+    R2. |
+    e'8-! b'8-! fis''8-! e'8-! r8 r8 |
+    R2. |
+    % 50
+    d'8-! a'8-! e''8-! d'8-! r8 r8 |
+    R2. |
+  }
+  >>
+  \mark \default 
+
+  <<
+    \new Voice { \voiceOne
+      b''8-!^\mf r8 b''8-! r8 b''8-! r8 |
+      b''8-! r8 b''8-! r8 b''8-! e'''8-! |
+      \omit Script
+      b''8-!^\markup{\italic "secco"} r8 b''8-! r8 b''8-! r8 |
+      % 55
+      b''8-! r8 b''8-! r8 b''8-! e'''8-! |
+      b''8-! r8 b''8-! r8 b''8-! r8 |
+      b''8-! r8 b''8-! r8 b''8-! g'''8-! |
+      b''8-! r8 b''8-! r8 b''8-! r8 |
+      b''8-! r8 b''8-! a'''8-! g'''8-! fis'''8-! |
+    }
+    \new Voice { \voiceTwo
+      fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
+      fis''4~ fis''8 fis''16 e''16 b''4 |
+      fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
+      % 55
+      fis''4~ fis''8 fis''16 e''16 b''4 |
+      fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
+      fis''4~ fis''8 fis''16 e''16 b''4 |
+      fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
+      fis''4~ fis''8 fis''16 e''16 b''4 |
+    }
+  >>
+  \mark \default
+  % 60
+  <<
+    \new Voice { \voiceOne
+      e'''2.:32~\p^"1." |
+      e'''2.:32~ |
+      e'''2.:32~ |
+      e'''2.:32~ |
+      e'''2.:32~ |
+      % 65
+      e'''2.:32~ |
+      e'''2.:32~ |
+      e'''2.:32 |
+    }
+    \new Voice { \voiceTwo
+      b''8-!^"2." r8 b''8-! r8 b''8-! r8 |
+      b''8-! r8 b''8-! r8 b''8-! e'''8-! |
+      b''8-! r8 b''8-! r8 b''8-! r8 |
+      b''8-! r8 b''8-! r8 b''8-! e'''8-! |
+      b''8-! r8 b''8-! r8 b''8-! r8 |
+      % 65
+      b''8-! r8 b''8-! r8 b''8-! g'''8-! |
+      b''8-! r8 b''8-! r8 b''8-! r8 |
+      b''8-! r8 b''8-! a'''8-! g'''8-! fis'''8-! |
+    }
+  >>
+
+  \time 6/8
+  \mark \default 
+  \bar "||"
+
+  e''16-.->\f^"unis." b'16-. a'16-. e''16-.-> r16 e''16-. r16 e''16-. r16 e''16-. r8 |
   e''16-.-> b'16-. a'16-. e''16-.-> r16 fis''16-. r16 fis''16-. r16
   fis''16-. r8 |
   % 70
@@ -1305,195 +1349,50 @@ part-Pnine-one = {
   fis''16-. r16 |
   e''16-.-> b'16-. a'16-. e''16-.-> r16 e''16-. r16 e''16-. r16 e''16-.
   d''16-. r16 |
+  \mark \default
   e''16-. b'16-. a'16-. b'16-. a'16-. g'16-. e'8-> r8 r8 |
   e''16-. b'16-. a'16-. b'16-. a'16-. g'16-. e''8-> r8 r8 |
   e''16-. b'16-. a'16-. b'16-. a'16-. g'16-. e'8-> r8 r8 |
   % 75
   e''16-. b'16-. a'16-. e''16-. b'16-. a'16-. e''16-. b'16-. a'16-. e''16-.
   b'16-. a'16-. |
-  e''16-. c''16-. b'16-. c''16-. b'16-. a'16-. b'16-. a'16-. g'16-. a'16-.
+  \mark \default
+  e''16-.^\markup{\small "1"} c''16-. b'16-. c''16-. b'16-. a'16-. b'16-. a'16-. g'16-. a'16-.
   g'16-. e'16-. |
-  e''16-. c''16-. b'16-. c''16-. b'16-. a'16-. b'16-. a'16-. g'16-. a'16-.
+  e''16-.^\markup{\small "2"} c''16-. b'16-. c''16-. b'16-. a'16-. b'16-. a'16-. g'16-. a'16-.
   g'16-. e'16-. |
-  e''16-. c''16-. b'16-. c''16-. b'16-. a'16-. b'16-. a'16-. g'16-. a'16-.
+  e''16-.^\markup{\small "3"} c''16-. b'16-. c''16-. b'16-. a'16-. b'16-. a'16-. g'16-. a'16-.
   g'16-. e'16-. |
-  e''16-. cis''16-. b'16-. cis''16-. b'16-. a'16-. b'16-. a'16-. g'16-.
+  e''16-.^\markup{\small "4*"} cis''!16-. b'16-. cis''!16-. b'16-. a'16-. b'16-. a'16-. g'16-.
   a'16-. g'16-. e'16-. |
   % 80
-  e''16-. cis''16-. b'16-. cis''16-. b'16-. a'16-. b'16-. a'16-. g'16-.
+  e''16-.^\markup{\small "5"} c''16-. b'16-. c''16-. b'16-. a'16-. b'16-. a'16-. g'16-.
   a'16-. g'16-. e'16-. |
-  e''16-. c''16-. b'16-. c''16-. b'16-. a'16-. b'16-. a'16-. g'16-. a'16-.
+  e''16-.^\markup{\small "6"} c''16-. b'16-. c''16-. b'16-. a'16-. b'16-. a'16-. g'16-. a'16-.
   g'16-. e'16-. |
   b16-.-> b16-. r16 b16-. r16 b16-. b8-.-> b16-. b16-. b8-. |
-  <<
-    \context Voice = "voiceone" {
-      \voiceOne
-      fis'16-.->\< fis'16-. r16 fis'16-. r16 fis'16-. g'8-.-> g'16-.
-      a'16-. a'8-. |
-      e''16-.\ff c''16-. b'16-. c''16-. b'16-. a'16-. b'16-. a'16-.
-      g'16-. a'16-. g'16-. e'16-. |
-      % 85
-    }
-    \context Voice = "voicetwo" {
-      \voiceTwo
-      |
-      |
-      % 85
-    }
-  >>
-  e''16-. c''16-. b'16-. c''16-. b'16-. a'16-. b'16-. a'16-. g'16-. a'16-.
+  fis'16-.->\< fis'16-. r16 fis'16-. r16 fis'16-. g'8-.-> g'16-.
+  a'16-. a'8-. |
+  \mark \default
+  e''16-.\ff^\markup{\small "1"} c''16-. b'16-. c''16-. b'16-. a'16-. b'16-. a'16-.
+  g'16-. a'16-. g'16-. e'16-. |
+  % 85
+  e''16-.^\markup{\small "2"} c''16-. b'16-. c''16-. b'16-. a'16-. b'16-. a'16-. g'16-. a'16-.
   g'16-. e'16-. |
-  e''16-. c''16-. b'16-. c''16-. b'16-. a'16-. b'16-. a'16-. g'16-. a'16-.
+  e''16-.^\markup{\small "3"} c''16-. b'16-. c''16-. b'16-. a'16-. b'16-. a'16-. g'16-. a'16-.
   g'16-. e'16-. |
-  e''16-. cis''16-. b'16-. cis''16-. b'16-. a'16-. b'16-. a'16-. g'16-.
+  e''16-.^\markup{\small "4*"} cis''!16-. b'16-. cis''!16-. b'16-. a'16-. b'16-. a'16-. g'16-.
   a'16-. g'16-. e'16-. |
-  e''16-. cis''16-. b'16-. cis''16-. b'16-. a'16-. b'16-. a'16-. g'16-.
+  e''16-.^\markup{\small "5"} c''16-. b'16-. c''16-. b'16-. a'16-. b'16-. a'16-. g'16-.
   a'16-. g'16-. e'16-. |
-  e''16-. c''16-. b'16-. c''16-. b'16-. a'16-. b'16-. a'16-. g'16-. a'16-.
+  e''16-.^\markup{\small "6"} c''16-. b'16-. c''16-. b'16-. a'16-. b'16-. a'16-. g'16-. a'16-.
   g'16-. e'16-. |
   % 90
   b16-.-> b16-. r16 b16-. r16 b16-. b8-.-> b16-. b16-. b8-. |
   fis'16-.->\< fis'16-. r16 fis'16-. r16 fis'16-. g'8-.-> g'16-. a'16-.
   a'8-.\! |
-  R2. |
-}
-
-part-Pnine-two = {
-  \key d \major
-  \time 3/4
-  \clef treble
-
-  \partial 2
-  r4 r4 |
-  % 0
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  % 5
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  % 10
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  % 15
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  % 20
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  % 25
-  R2. |
-  R2. |
-  R2. |
-  fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
-  fis''4~ fis''8 fis''16 e''16 b''4 |
-  % 30
-  fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
-  fis''4~ fis''8 fis''16 e''16 b''4 |
-  fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
-  fis''4~ fis''8 fis''16 e''16 b''4 |
-  fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
-  % 35
-  fis''4~ fis''8 fis''16 e''16 b''4 |
-  fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
-  fis''4~ fis''8 fis''16 e''16 b''4 |
-  fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
-  fis''4~ fis''8 fis''16 e''16 b''4 |
-  % 40
-  fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
-  fis''4~ fis''8 fis''16 e''16 b''4 |
-  fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
-  fis''4~ fis''8 fis''16 e''16 b''4 |
-  fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
-  % 45
-  fis''4~ fis''8 fis''16 e''16 b''4 |
-  fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
-  fis''4~ fis''8 fis''16 e''16 b''4 |
-  fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
-  fis''4~ fis''8 fis''16 e''16 b''4 |
-  % 50
-  fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
-  fis''4~ fis''8 fis''16 e''16 b''4 |
-  fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
-  fis''4~ fis''8 fis''16 e''16 b''4 |
-  fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
-  % 55
-  fis''4~ fis''8 fis''16 e''16 b''4 |
-  fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
-  fis''4~ fis''8 fis''16 e''16 b''4 |
-  fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
-  fis''4~ fis''8 fis''16 e''16 b''4 |
-  % 60
-  b''8-! r8 b''8-! r8 b''8-! r8 |
-  b''8-! r8 b''8-! r8 b''8-! e'''8-! |
-  b''8-! r8 b''8-! r8 b''8-! r8 |
-  b''8-! r8 b''8-! r8 b''8-! e'''8-! |
-  b''8-! r8 b''8-! r8 b''8-! r8 |
-  % 65
-  b''8-! r8 b''8-! r8 b''8-! g'''8-! |
-  b''8-! r8 b''8-! r8 b''8-! r8 |
-  b''8-! r8 b''8-! a'''8-! g'''8-! fis'''8-! |
-  \time 6/8
-  e''16-.-> b'16-. a'16-. e''16-.-> r16 e''16-. r16 e''16-. r16 e''16-. r8 |
-  e''16-.-> b'16-. a'16-. e''16-.-> r16 fis''16-. r16 fis''16-. r16
-  fis''16-. r8 |
-  % 70
-  e''16-.-> b'16-. a'16-. e''16-.-> r16 e''16-. r16 e''16-. r16 e''16-.
-  fis''16-. r16 |
-  e''16-.-> b'16-. a'16-. e''16-.-> r16 e''16-. r16 e''16-. r16 e''16-.
-  d''16-. r16 |
-  e''16-. b'16-. a'16-. b'16-. a'16-. g'16-. e'8-> r8 r8 |
-  e''16-. b'16-. a'16-. b'16-. a'16-. g'16-. e''8-> r8 r8 |
-  e''16-. b'16-. a'16-. b'16-. a'16-. g'16-. e'8-> r8 r8 |
-  % 75
-  e''16-. b'16-. a'16-. e''16-. b'16-. a'16-. e''16-. b'16-. a'16-. e''16-.
-  b'16-. a'16-. |
-  e''16-. c''16-. b'16-. c''16-. b'16-. a'16-. b'16-. a'16-. g'16-. a'16-.
-  g'16-. e'16-. |
-  e''16-. c''16-. b'16-. c''16-. b'16-. a'16-. b'16-. a'16-. g'16-. a'16-.
-  g'16-. e'16-. |
-  e''16-. c''16-. b'16-. c''16-. b'16-. a'16-. b'16-. a'16-. g'16-. a'16-.
-  g'16-. e'16-. |
-  e''16-. cis''16-. b'16-. cis''16-. b'16-. a'16-. b'16-. a'16-. g'16-.
-  a'16-. g'16-. e'16-. |
-  % 80
-  e''16-. cis''16-. b'16-. cis''16-. b'16-. a'16-. b'16-. a'16-. g'16-.
-  a'16-. g'16-. e'16-. |
-  e''16-. c''16-. b'16-. c''16-. b'16-. a'16-. b'16-. a'16-. g'16-. a'16-.
-  g'16-. e'16-. |
-  b16-.-> b16-. r16 b16-. r16 b16-. b8-.-> b16-. b16-. b8-. |
-  fis'16-.-> fis'16-. r16 fis'16-. r16 fis'16-. g'8-.-> g'16-. a'16-. a'8-. |
-  e''16-. c''16-. b'16-. c''16-. b'16-. a'16-. b'16-. a'16-. g'16-. a'16-.
-  g'16-. e'16-. |
-  % 85
-  e''16-. c''16-. b'16-. c''16-. b'16-. a'16-. b'16-. a'16-. g'16-. a'16-.
-  g'16-. e'16-. |
-  e''16-. c''16-. b'16-. c''16-. b'16-. a'16-. b'16-. a'16-. g'16-. a'16-.
-  g'16-. e'16-. |
-  e''16-. cis''16-. b'16-. cis''16-. b'16-. a'16-. b'16-. a'16-. g'16-.
-  a'16-. g'16-. e'16-. |
-  e''16-. cis''16-. b'16-. cis''16-. b'16-. a'16-. b'16-. a'16-. g'16-.
-  a'16-. g'16-. e'16-. |
-  e''16-. c''16-. b'16-. c''16-. b'16-. a'16-. b'16-. a'16-. g'16-. a'16-.
-  g'16-. e'16-. |
-  % 90
-  b16-.-> b16-. r16 b16-. r16 b16-. b8-.-> b16-. b16-. b8-. |
-  fis'16-.-> fis'16-. r16 fis'16-. r16 fis'16-. g'8-.-> g'16-. a'16-. a'8-. |
-  R2. |
+  \mark \default
+  R2.\fermata | \bar "|."
 }
 
 part-Ponezero-one = {
@@ -1503,30 +1402,18 @@ part-Ponezero-one = {
 
   \partial 2
   r4 r4 |
+  \mark \default
   % 0
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  % 5
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  % 10
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  % 15
-  R2. |
+  R2.*4 | 
+  \mark \default
+  R2.*8 |
+  \mark \default
+  R2.*4 |
   R2. |
   R2. |
   r2 g'4( |
   a'4. c''4.) |
+  \mark \default
   % 20
   b'2.~ |
   b'2.~ |
@@ -1536,9 +1423,10 @@ part-Ponezero-one = {
   % 25
   d''4. b'4. |
   a'2. |
-  g'4. e'4. |
-  << { fis'2. } \\ { } >> |
-  r8 fis''16\p e''16 fis''4~ fis''8 fis''16 e''16 |
+  g'4.( e'4. |
+  \mark \default
+  fis'4~\p) fis'8 fis''16 e''16 fis''4~ |
+  fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
   % 30
   fis''4~ fis''8 fis''16 e''16 fis''4~ |
   fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
@@ -1547,6 +1435,7 @@ part-Ponezero-one = {
   fis''4~ fis''8 fis''16 e''16 fis''4~ |
   % 35
   fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
+  \mark \default
   fis''4~ fis''8 fis''16 e''16 fis''4~ |
   fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
   fis''4~ fis''8 fis''16 e''16 fis''4~ |
@@ -1556,17 +1445,48 @@ part-Ponezero-one = {
   fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
   fis''4~ fis''8 fis''16 e''16 fis''4~ |
   fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
-  e'8-!\mp-\markup { \italic "secco molto" } b'8-! fis''8-! e'8-! r8 r8 |
+  \mark \default
+  <<
+    \new Voice { \voiceOne
+      fis''4~^"div." fis''8 fis''16 e''16 fis''4~ |
   % 45
-  R2. |
-  e'8-! b'8-! fis''8-! e'8-! r8 r8 |
-  R2. |
-  e'8-! b'8-! fis''8-! e'8-! r8 r8 |
-  R2. |
+  fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
+  fis''4~ fis''8 fis''16 e''16 fis''4~ |
+  fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
+  fis''4~ fis''8 fis''16 e''16 fis''4~ |
+  fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
   % 50
-  d'8-! a'8-! e''8-! d'8-! r8 r8 |
+  fis''4~ fis''8 fis''16 e''16 fis''4~ |
+  fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
+    }
+    \new Voice { \voiceTwo 
+      e'8-!\mp-\markup { \italic "secco molto" } b'8-! fis''8-! e'8-! r8 r8 |
+      % 45
+      R2. |
+      e'8-! b'8-! fis''8-! e'8-! r8 r8 |
+      R2. |
+      e'8-! b'8-! fis''8-! e'8-! r8 r8 |
+      R2. |
+      % 50
+      d'8-! a'8-! e''8-! d'8-! r8 r8 |
   R2. |
-  e'8-! b'8-! fis''8-! e'8-! r8 r8 |
+    }
+  >>
+  \mark \default
+  <<
+  \new Voice { \voiceOne
+    fis''4~ fis''8 fis''16 e''16 fis''4~ |
+  fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
+  fis''4~ fis''8 fis''16 e''16 fis''4~ |
+  % 55
+  fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
+  fis''4~ fis''8 fis''16 e''16 fis''4~ |
+  fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
+  fis''4~ fis''8 fis''16 e''16 fis''4~ |
+  fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
+  }
+    \new Voice { \voiceTwo 
+      e'8-! b'8-! fis''8-! e'8-! r8 r8 |
   R2. |
   e'8-! b'8-! fis''8-! e'8-! r8 r8 |
   % 55
@@ -1575,7 +1495,24 @@ part-Ponezero-one = {
   R2. |
   d'8-! a'8-! e''8-! d'8-! r8 r8 |
   R2. |
-  % 60
+    }
+  >>
+  \mark \default
+  <<
+  \new Voice { \voiceOne
+    % 60
+  fis''8 fis''16 e''16 fis''8 fis''16 e''16 fis''8 fis''16 e''16 |
+  fis''8 fis''16 e''16 fis''8 fis''16 e''16 b''8 fis''16 e''16 |
+  fis''8 fis''16 e''16 fis''8 fis''16 e''16 fis''8 fis''16 e''16 |
+  fis''8 fis''16 e''16 fis''8 fis''16 e''16 b''8 fis''16 e''16 |
+  fis''8 fis''16 e''16 fis''8 fis''16 e''16 fis''8 fis''16 e''16 |
+  % 65
+  fis''8 fis''16 e''16 fis''8 fis''16 e''16 b''8 fis''16 e''16 |
+  fis''8 fis''16 e''16 fis''8 fis''16 e''16 fis''8 fis''16 e''16 |
+  fis''8 fis''16 e''16 fis''8 fis''16 e''16 b''8 fis''16 e''16 |
+  }
+    \new Voice { \voiceTwo
+      % 60
   e'8-! b'8-! fis''8-! e'8-! r8 r8 |
   R2. |
   e'8-! b'8-! fis''8-! e'8-! r8 r8 |
@@ -1585,37 +1522,30 @@ part-Ponezero-one = {
   R2. |
   d'8-! a'8-! e''8-! d'8-! r8 r8 |
   c'4. d'4. |
+    }
+  >>
+
+  \mark \default 
+  \bar "||"
   \time 6/8
-  R2. |
-  R2. |
-  % 70
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  % 75
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  % 80
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  << { b''2.\ff } \\ { } >> |
+  R2.*4 |
+  \mark \default
+  R2.*4 |
+  \mark \default
+  R2.*8 |
+  \mark \default
+  <b' b''>2.\ff |
   % 85
-  g''8. a''8. b''4. |
-  b''2. |
-  cis'''4 b''2 |
-  d'''4. cis'''4. |
-  d'''4. b''4. |
+  <g' g''>8. <a' a''>8. <b' b''>4. |
+  <b' b''>2. |
+  <cis'' cis'''>4 <b' b''>2 |
+  <d'' d'''>4. <cis'' cis'''>4. |
+  <d'' d'''>4. <b' b''>4. |
   % 90
-  a''2. |
-  g''4.\< e''4.\! |
-  R2. |
+  <a' a''>2. |
+  <g' g''>4.\< <e' e''>4.\! |
+  \mark \default
+  R2.\fermata | \bar "|."
 }
 
 part-Ponezero-two = {
@@ -2252,16 +2182,21 @@ part-Ponethree-one = {
         drumStyleTable = #drums-style
       } \part-Pseven-one
     >>
+    %}
+    \new GrandStaff <<
+      \new Staff \with {
+        instrumentName = "Violin 1"
+        shortInstrumentName = "Vl. 1"
+        midiInstrument = "violin"
+      } \part-Pnine-one
 
-    \new GrandStaff <<
-      \new Staff \part-Pnine-one
-      \new Staff \part-Pnine-two
+      \new Staff \with {
+        instrumentName = "Violin 2"
+        shortInstrumentName = "Vl. 2"
+        midiInstrument = "violin"
+      } \part-Ponezero-one
     >>
-    \new GrandStaff <<
-      \new Staff \part-Ponezero-one
-      \new Staff \part-Ponezero-two
-    >>
-    
+    %{
     \new Staff \with {
       instrumentName = "Viola"
       shortInstrumentName = "Va."
@@ -2273,7 +2208,7 @@ part-Ponethree-one = {
       shortInstrumentName = "Vc."
       midiInstrument = "cello"
     } \part-Ponetwo-one
-    %}
+
     \new Staff \with {
       instrumentName = "Contrabass"
       shortInstrumentName = "Cb."
