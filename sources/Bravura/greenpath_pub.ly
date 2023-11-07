@@ -8,7 +8,7 @@
   arranger = "Mico Javier & Rex Reventar"
   subtitle = "For Bravura Orchestra"
   title = "Greenpath"
-  part = "Drums"
+  part = "Viola"
   tagline = #'false
 }
 
@@ -1745,22 +1745,14 @@ part-Poneone-one = {
 
   \partial 2
   r4 r4 |
+  \mark \default
   % 0
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  % 5
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  % 10
-  R2. |
-  R2. |
-  fis'2.~\mp |
+  R2.*4 |
+  \mark \default
+  R2.*8 
+  \mark \default
+
+  fis'2.~\p |
   fis'4. g'8.( a'8. |
   fis'2) b4( |
   % 15
@@ -1768,7 +1760,7 @@ part-Poneone-one = {
   e'2.~ |
   e'4. fis'8.( g'8. |
   e'2.~) |
-  e'2. |
+  e'2. | \mark \default
   % 20
   fis'2.~ |
   fis'4. g'8.( a'8. |
@@ -1778,219 +1770,143 @@ part-Poneone-one = {
   % 25
   e'4. fis'8.( g'8. |
   e'2.~) |
-  e'2. |
-  r4 b4~\p b8 b8 |
-  b4~ b8 b8 b4~ |
-  % 30
-  b8 b8 b4~ b8 b8 |
-  b4~ b8 b8 b4~ |
-  b8 b8 b4~ b8 b8 |
-  b4~ b8 b8 b4~ |
-  b8 b8 b4~ b8 b8 |
-  % 35
-  b4~ b8 b8 b4~ |
-  b8 b8 b4~ b8 b8 |
-  b4~ b8 b8 b4~ |
-  b8 b8 b4~ b8 b8 |
-  b4~ b8 b8 b4~ |
-  % 40
-  b8 b8 b4~ b8 b8 |
-  b4~ b8 b8 b4~ |
-  b8 b8 b4~ b8 b8 |
-  b4~ b8 b8 b4~ |
-  b8 b8 b4~ b8 b8 |
-  % 45
-  b4~ b8 b8 b4~ |
-  b8 b8 b4~ b8 b8 |
-  b4~ b8 b8 b4~ |
-  b8 b8 b4~ b8 b8 |
-  b4~ b8 b8 b4~ |
-  % 50
-  b8 b8 b4~ b8 b8 |
-  b4~ b8 b8 b4~ |
-  b8 b8 b4~ b8 b8 |
-  b4~ b8 b8 b4~ |
-  b8 b8 b4~ b8 b8 |
-  % 55
-  b4~ b8 b8 b4~ |
-  b8 b8 b4~ b8 b8 |
-  b4~ b8 b8 b4~ |
-  b8 b8 b4~ b8 b8 |
-  b4~ b8 b8 b4 |
-  % 60
-  c8-! r8 g8-! c8-! r8 g8-! |
-  d8-! r8 a8-! r8 b8-! r8 |
-  e8-! r8 b8-! e8-! r8 b8-! |
-  a8-! r8 b8-! r8 cis'8-! r8 |
-  g8-! r8 g8-! c8-! r8 g8-! |
-  % 65
-  d8-! r8 a8-! r8 b8-! r8 |
-  e8-! r8 b8-! e8-! r8 b8-! |
-  e8-! r8 b8-! e8-! r8 b8-! |
-  \time 6/8
-  R2. |
-  R2. |
-  % 70
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  % 75
-  R2. |
-  << { fis'2.~\f } \\ { } >> |
-  fis'4. g'8. a'8. |
-  fis'2 b4 |
-  cis'2. |
-  % 80
-  e'2.~ |
-  e'4. fis'8. g'8. |
-  e'2. |
+  e'2. | \mark \default
+
   <<
-    \context Voice = "voiceone" {
-      \voiceOne
-      a'4.\< c''4. |
-      fis'2.~\ff |
-      % 85
+  \new Voice \transpose c c' { \voiceOne
+    r4 e8^\p^\markup{"div."} b8 b4~ |
+    b8 b8 b4~ b8 b8 |
+  }
+  \new Voice { \voiceTwo
+    r4 b4~\p b8 b8 |
+    b4~ b8 b8 b4~ |
+  }
+  >>
+  % 30
+  \repeat percent 3 {
+    <<
+    \new Voice \transpose c c' { \voiceOne
+      b4 e8 b8 b4~ |
+      b8 b8 b4~ b8 b8 |
     }
-    \context Voice = "voicetwo" {
-      \voiceTwo
-      |
-      |
-      % 85
+    \new Voice { \voiceTwo
+      b8 b8 b4~ b8 b8 |
+      b4~ b8 b8 b4~ |
+    }
+    >>
+  }
+  \mark \default 
+
+  \repeat percent 4 {
+    <<
+    \new Voice \transpose c c' { \voiceOne
+      b4 e8 b8 b4~ |
+      b8 b8 b4~ b8 b8 |
+    }
+    \new Voice { \voiceTwo
+      b8 b8 b4~ b8 b8 |
+      b4~ b8 b8 b4~ |
+    }
+    >>
+  }
+  \mark \default 
+  
+  \repeat percent 4 {
+    <<
+    \new Voice \transpose c c' { \voiceOne
+      b4 e8 b8 b4~ |
+      b8 b8 b4~ b8 b8 |
+    }
+    \new Voice { \voiceTwo
+      b8 b8 b4~ b8 b8 |
+      b4~ b8 b8 b4~ |
+    }
+    >>
+  }
+  \mark \default 
+  
+  \repeat percent 3 {
+    <<
+    \new Voice \transpose c c' { \voiceOne
+      b4 e8 b8 b4~ |
+      b8 b8 b4~ b8 b8 |
+    }
+    \new Voice { \voiceTwo
+      b8 b8 b4~ b8 b8 |
+      b4~ b8 b8 b4~ |
+    }
+    >>
+  }
+
+  <<
+    \new Voice \transpose c c' { \voiceOne
+      b4\< e8 b8 b4~ |
+      b8 b8 b4~ b8 b8\! |
+    }
+    \new Voice { \voiceTwo
+      b8 b8 b4~ b8 b8 |
+      b4~ b8 b8 b4~ |
     }
   >>
-  fis'4. g'8. a'8. |
-  fis'2 b'4 |
-  cis''2. |
-  e'2.~ |
-  e'4. fis'8. g'8. |
-  % 90
-  e'2. |
-  a'4.\< c''4.\! |
-  R2. |
-}
-
-part-Poneone-two = {
-  \key d \major
-  \time 3/4
-  \clef alto
-
-  \partial 2
-  r4 r4 |
-  % 0
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  % 5
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  % 10
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  % 15
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  % 20
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  % 25
-  R2. |
-  R2. |
-  R2. |
-  r4 e8\p b8 b4~ |
-  b8 b8 b4~ b8 b8 |
-  % 30
-  b4 e8 b8 b4~ |
-  b8 b8 b4~ b8 b8 |
-  b4 e8 b8 b4~ |
-  b8 b8 b4~ b8 b8 |
-  b4 e8 b8 b4~ |
-  % 35
-  b8 b8 b4~ b8 b8 |
-  b4 e8 b8 b4~ |
-  b8 b8 b4~ b8 b8 |
-  b4 e8 b8 b4~ |
-  b8 b8 b4~ b8 b8 |
-  % 40
-  b4 e8 b8 b4~ |
-  b8 b8 b4~ b8 b8 |
-  b4 e8 b8 b4~ |
-  b8 b8 b4~ b8 b8 |
-  b4 e8 b8 b4~ |
-  % 45
-  b8 b8 b4~ b8 b8 |
-  b4 e8 b8 b4~ |
-  b8 b8 b4~ b8 b8 |
-  b4 e8 b8 b4~ |
-  b8 b8 b4~ b8 b8 |
-  % 50
-  b4 e8 b8 b4~ |
-  b8 b8 b4~ b8 b8 |
-  b4 e8 b8 b4~ |
-  b8 b8 b4~ b8 b8 |
-  b4 e8 b8 b4~ |
-  % 55
-  b8 b8 b4~ b8 b8 |
-  b4 e8 b8 b4~ |
-  b8 b8 b4~ b8 b8 |
-  b4 e8 b8 b4~ |
-  b8 b8 b4~ b8 b8 |
+  \mark \default 
   % 60
-  b4 e8 b8 b4~ |
-  b8 b8 b4~ b8 b8 |
-  b4 e8 b8 b4~ |
-  b8 b8 b4~ b8 b8 |
-  b4 e8 b8 b4~ |
-  % 65
-  b8 b8 b4~ b8 b8 |
-  b4 e8 b8 b4~ |
-  b8 b8 b4~ b8 b8 |
+  
+  <<
+    \new Voice { \voiceOne
+      b'8 b( b--) b'( b'--) b( |
+      b8--) b'( b'--) b( b--) b'( |
+      b'8--)^\markup{\italic "sim."} b b b' b' b |
+      b8 b' b' b b b' |
+      b'8 b b b' b' b |
+      b8 b' b' b b b' |
+      b'8 b b b' b' b |
+      b8 b' b' b b <b b'> |
+    }
+    \new Voice { \voiceTwo
+      c8-! r8 g8-! c8-! r8 g8-! |
+      d8-! r8 a8-! r8 b8-! r8 |
+      \omit Script
+      e8-!_\markup {\italic "secco"} r8 b8-! e8-! r8 b8-! |
+      a8-! r8 b8-! r8 cis'8-! r8 |
+      g8-! r8 g8-! c8-! r8 g8-! |
+      % 65
+      d8-! r8 a8-! r8 b8-! r8 |
+      e8-! r8 b8-! e8-! r8 b8-! |
+      e8-! r8 b8-! e8-! r8 b8-! |
+      \undo \omit Script
+    }
+  >>
+  \mark \default
+  \bar "||"
   \time 6/8
-  R2. |
-  R2. |
-  % 70
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  % 75
-  R2. |
-  fis2.~ |
-  fis4. g8. a8. |
-  fis2 g4 |
-  cis2. |
+  R2.*4 |
+  \mark \default
+  R2.*4 |
+  \mark \default
+
+  <fis fis'>2.~\f^\markup {"div."} |
+  <fis fis'>4. <g g'>8. <a a'>8. |
+  <fis fis'>2 <g b>4 |
+  <cis cis'>2. |
   % 80
-  e2.~ |
-  e4. fis8. g8. |
-  e2. |
-  a4. c'4. |
-  fis2.~ |
+  <e e'>2.~ |
+  <e e'>4. <fis fis'>8. <g g'>8. |
+  <e e'>2. |
+  <a a'>4.\< <c' c''>4. |
+  \mark \default
+
+  <fis fis'>2.~\ff |
   % 85
-  fis4. g8. a8. |
-  fis2 b4 |
-  cis'2. |
-  e2.~ |
-  e4. fis8. g8. |
+  <fis fis'>4. <g g'>8. <a a'>8. |
+  <fis fis'>2 <b b'>4 |
+  <cis' cis''>2. |
+  <e e'>2.~ |
+  <e e'>4. <fis fis'>8. <g g'>8. |
   % 90
-  e2. |
-  a4. c'4. |
-  R2. |
+  <e e'>2. |
+  <a a'>4.\< <c' c''>4.\! |
+  \mark \default
+  R2.\fermata | \bar "|."
 }
 
 part-Ponetwo-one = {
@@ -2289,7 +2205,7 @@ part-Ponethree-one = {
         drumStyleTable = #percussion-style
         \override StaffSymbol.line-count = #1
       } \part-Psix-one
-      %}
+
       \new DrumStaff \with {
         instrumentName = \markup \center-column {
           "Tenor Drum"
@@ -2300,9 +2216,8 @@ part-Ponethree-one = {
         \override StaffSymbol.line-positions = #'(-2 2)
         drumStyleTable = #drums-style
       } \part-Pseven-one
-      %{
     >>
-    %{
+
     \new GrandStaff <<
       \new Staff \part-Pnine-one
       \new Staff \part-Pnine-two
@@ -2311,10 +2226,13 @@ part-Ponethree-one = {
       \new Staff \part-Ponezero-one
       \new Staff \part-Ponezero-two
     >>
-    \new GrandStaff <<
-      \new Staff \part-Poneone-one
-      \new Staff \part-Poneone-two
-    >>
+    %}
+    \new Staff \with {
+      instrumentName = "Viola"
+      shortInstrumentName = "Va."
+      midiInstrument = "viola"
+    } \part-Poneone-one
+    %{
     \new Staff \part-Ponetwo-one
     \new Staff \part-Ponethree-one
     %}
