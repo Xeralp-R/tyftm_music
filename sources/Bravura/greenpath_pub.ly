@@ -8,7 +8,7 @@
   arranger = "Mico Javier & Rex Reventar"
   subtitle = "For Bravura Orchestra"
   title = "Greenpath"
-  part = "Viola"
+  part = "Violoncello"
   tagline = #'false
 }
 
@@ -1916,12 +1916,12 @@ part-Ponetwo-one = {
 
   \partial 2
   r4 r4 |
+  \mark \default
   % 0
-  R2. |
-  R2. |
-  R2. |
-  R2. |
-  e8(\p-\markup { "pizz." } b8 fis'8) r4 r8 |
+  R2.*4 |
+  \mark \default
+
+  e8(\p^\markup { "pizz." } b8 fis'8) r4 r8 |
   % 5
   b,8( fis8 cis'8) r4 r8 |
   c8( g8 d'8) r4 r8 |
@@ -1931,6 +1931,7 @@ part-Ponetwo-one = {
   % 10
   a,8( e8 b8) r4 r8 |
   c8( f8 e'8) r8 r4 |
+  \mark \default
   e8( b8 fis'8) r4 r8 |
   b,8( fis8 cis'8) r4 r8 |
   c8( g8 d'8) r4 r8 |
@@ -1940,6 +1941,7 @@ part-Ponetwo-one = {
   g,8( d8 a8) r4 r8 |
   a,8( e8 b8) r4 r8 |
   c8( f8 e'8) r8 r4 |
+  \mark \default
   % 20
   e8( b8 fis'8) r4 r8 |
   b,8( fis8 cis'8) r4 r8 |
@@ -1950,7 +1952,8 @@ part-Ponetwo-one = {
   g,8( d8 a8) r4 r8 |
   a,8( e8 b8) r4 r8 |
   c8( f8 e'8) r8 r4 |
-  e8(\mp-\markup { \italic "melody (hauptstimme)" } b8 fis'8) e8 r8 r8 |
+  \mark \default
+  e8(_\mf ^\markup { \small "melody (hauptstimme)" } b8 fis'8) e8 r8 r8 |
   b,8( fis8 cis'8) b,8 r8 r8 |
   % 30
   c8( g8 d'8) c8 r8 r8 |
@@ -1959,8 +1962,9 @@ part-Ponetwo-one = {
   g,8( d8 a8) g,8 r8 r8 |
   a,8( e8 b8) a,8 r8 r8 |
   % 35
-  c8( f8 e'8) c8 r4 |
-  e8( b8 fis'8) e8 r8 r8 |
+  c8( f8 e'8) c8 r8 r8 |
+  \mark \default
+  e8(\p b8 fis'8) e8 r8 r8 |
   b,8( fis8 cis'8) b,8 r8 r8 |
   c8( g8 d'8) c8 r8 r8 |
   a,8( e8 b8) a,8 r8 r8 |
@@ -1969,7 +1973,8 @@ part-Ponetwo-one = {
   g,8( d8 a8) g,8 r8 r8 |
   a,8( e8 b8) a,8 r8 r8 |
   c8( f8 e'8) c8 r4 |
-  e4. e4. |
+  \mark \default
+  e4._\mp^\markup{\small "slowly in the foreground"} e4. |
   % 45
   fis4. e4. |
   e4. e4. |
@@ -1979,7 +1984,8 @@ part-Ponetwo-one = {
   % 50
   e4. e4. |
   g4. a4. |
-  e2.-\markup { "arco" }\mf |
+  \mark \default
+  e2._\mf ^\markup { "arco" \small "2nd voice, nebenstimme" } |
   fis2. |
   g2. |
   % 55
@@ -1987,28 +1993,37 @@ part-Ponetwo-one = {
   a,2.~ |
   a,2 b,4 |
   c2. |
-  d2. |
+  d2. | \mark \default
+
   % 60
-  c8-!\f r8 g8-! c8-! r8 g8-! |
+  c8-!_\f ^\markup{ \small "hauptstimme"} r8 g8-! c8-! r8 g8-! |
   d8-! r8 a8-! r8 b8-! r8 |
-  e8-! r8 b8-! e8-! r8 b8-! |
+  \omit Script
+  e8-!_\markup{\italic "secco"} r8 b8-! e8-! r8 b8-! |
   a8-! r8 b8-! r8 cis'8-! r8 |
   g8-! r8 g8-! c8-! r8 g8-! |
   % 65
   d8-! r8 a8-! r8 b8-! r8 |
   e8-! r8 b8-! e8-! r8 b8-! |
   e8-! r8 b8-! e8-! r8 b8-! |
+  \undo \omit Script
+
+  \mark \default 
+  \bar "||"
   \time 6/8
   e,16-.->\f e,16 r16 e,16-. r16 e,16-. e,8-.-> e,16-. e,16-. e,8-. |
   b,16-.-> b,16 r16 b,16-. r16 b,16-. b,8-.-> b,16-. b,16-. b,8-. |
   % 70
-  c,16-.-> c,16 r16 c,16-. r16 c,16-. c,8-.-> c,16-. c,16-. c,8-. |
+  \omit Script
+  c,16-.->_\markup{\italic "sim. al fin"} c,16 r16 c,16-. r16 c,16-. c,8-.-> c,16-. c,16-. c,8-. |
   a,16-.-> a,16 r16 a,16-. r16 a,16-. a,8-.-> a,16-. a,16-. a,8-. |
+  \mark \default
   b,16-.-> b,16 r16 b,16-. r16 b,16-. b,8-.-> b,16-. b,16-. b,8-. |
   g,16-.-> g,16 r16 g,16-. r16 g,16-. g,8-.-> g,16-. g,16-. g,8-. |
   a,16-.-> a,16 r16 a,16-. r16 a,16-. a,8-.-> a,16-. a,16-. a,8-. |
   % 75
   c,16-.-> c,16 r16 c,16-. r16 c,16-. c,8-.-> c,16-. c,16-. c,8-. |
+  \mark \default
   e,16-.-> e,16 r16 e,16-. r16 e,16-. e,8-.-> e,16-. e,16-. e,8-. |
   b,16-.-> b,16 r16 b,16-. r16 b,16-. b,8-.-> b,16-. b,16-. b,8-. |
   c,16-.-> c,16 r16 c,16-. r16 c,16-. c,8-.-> c,16-. c,16-. c,8-. |
@@ -2018,6 +2033,7 @@ part-Ponetwo-one = {
   g,16-.-> g,16 r16 g,16-. r16 g,16-. g,8-.-> g,16-. g,16-. g,8-. |
   a,16-.-> a,16 r16 a,16-. r16 a,16-. a,8-.-> a,16-. a,16-. a,8-. |
   c,16-.->\< c,16 r16 c,16-. r16 c,16-. c,8-.-> c,16-. c,16-. c,8-. |
+  \mark \default
   e,16-.->\ff e,16 r16 e,16-. r16 e,16-. e,8-.-> e,16-. e,16-. e,8-. |
   % 85
   b,16-.-> b,16 r16 b,16-. r16 b,16-. b,8-.-> b,16-. b,16-. b,8-. |
@@ -2028,7 +2044,8 @@ part-Ponetwo-one = {
   % 90
   a,16-.-> a,16 r16 a,16-. r16 a,16-. a,8-.-> a,16-. a,16-. a,8-. |
   c,16-.->\< c,16 r16 c,16-. r16 c,16-. c,8-.-> c,16-. c,16-. c,8-.\! |
-  R2. |
+  \mark \default
+  R2.\fermata  | \bar "|."
 }
 
 part-Ponethree-one = {
@@ -2226,14 +2243,19 @@ part-Ponethree-one = {
       \new Staff \part-Ponezero-one
       \new Staff \part-Ponezero-two
     >>
-    %}
+    
     \new Staff \with {
       instrumentName = "Viola"
       shortInstrumentName = "Va."
       midiInstrument = "viola"
     } \part-Poneone-one
+    %}
+    \new Staff \with {
+      instrumentName = "Violoncello"
+      shortInstrumentName = "Vc."
+      midiInstrument = "cello"
+    } \part-Ponetwo-one
     %{
-    \new Staff \part-Ponetwo-one
     \new Staff \part-Ponethree-one
     %}
   >>
