@@ -1,26 +1,18 @@
 % Automatically generated from a musicxml file.
 \version "2.24.0"
 \include "../../styles/global.ily"
-\include "../../styles/Full_Score.ily"
 
-\header {
-  composer = "Christopher Larkin"
-  arranger = "Mico Javier & Rex Reventar"
-  subtitle = "For Bravura Orchestra"
-  title = "Greenpath"
-  tagline = #'false
-}
-
-vlnHcue = { \voiceOne
+vlnHcue = {
+  \voiceOne
   b'8-! r8 b'8-! r8 b'8-! r8 |
-      b'8-! r8 b'8-! r8 b'8-! e''8-! |
-      b'8-! r8 b'8-! r8 b'8-! r8 |
-      % 55
-      b'8-! r8 b'8-! r8 b'8-! e''8-! |
-      b'8-! r8 b'8-! r8 b'8-! r8 |
-      b'8-! r8 b'8-! r8 b'8-! g''8-! |
-      b'8-! r8 b'8-! r8 b'8-! r8 |
-      b'8-! r8 b'8-! a''8-! g''8-! fis''8-! |
+  b'8-! r8 b'8-! r8 b'8-! e''8-! |
+  b'8-! r8 b'8-! r8 b'8-! r8 |
+  % 55
+  b'8-! r8 b'8-! r8 b'8-! e''8-! |
+  b'8-! r8 b'8-! r8 b'8-! r8 |
+  b'8-! r8 b'8-! r8 b'8-! g''8-! |
+  b'8-! r8 b'8-! r8 b'8-! r8 |
+  b'8-! r8 b'8-! a''8-! g''8-! fis''8-! |
 }
 
 part-Pone-one = {
@@ -142,6 +134,7 @@ part-Pone-one = {
   \mark \default
   \bar "||"
   \time 6/8
+  \tempo "L'istesso tempo" 8 = 172
   \oneVoice
   R2.*4 | \mark \default
   R2.*3
@@ -389,6 +382,7 @@ part-Ptwo-one = {
   \mark \default
   \bar "||"
   \time 6/8
+  \tempo "L'istesso tempo" 8 = 172
 
   R2.*4 | \mark \default
   R2.*4 | \mark \default
@@ -607,6 +601,7 @@ part-Ptwo-two = {
   R2. |
   <c, c >4. <d, d >4. |
   \time 6/8
+  \tempo "L'istesso tempo" 8 = 172
   <e,, e, >16-.-> <e,, e, >16 r16 <e,, e, >16-. r16 <e,, e, >16-. <e,, e,
   >8-.-> <e,, e, >16-. <e,, e, >16-. <e,, e, >8-. |
   <b,, b, >16-.-> <b,, b, >16 r16 <b,, b, >16-. r16 <b,, b, >16-. <b,, b,
@@ -770,6 +765,7 @@ part-Pthree-one = {
   \bar "||"
   \mark \default
   \time 6/8
+  \tempo "L'istesso tempo" 8 = 172
 
   e''16-.->\f b'16-. a'16-. e''16-.-> r16 e''16-. r16 e''16-. r16 e''16-. r8 |
   e''16-.-> b'16-. a'16-. e''16-.-> r16 fis''16-. r16 fis''16-. r16
@@ -867,6 +863,7 @@ part-Pthree-two = {
   R2. |
   \bar "||"
   \time 6/8
+  \tempo "L'istesso tempo" 8 = 172
   R2. |
   R2. |
   % 70
@@ -914,6 +911,7 @@ part-Pfour-one = {
   \key c \major
   \time 3/4
   \clef percussion
+  \tempo "Andante con moto" 4 = 86
 
   \partial 2
   r4 r4 |
@@ -959,9 +957,9 @@ part-Pfour-one = {
   \override Staff.StaffSymbol.line-positions = #'(-4 -2 0 2 4)
   \startStaff
   <<
-    { 
+    {
       \voiceTwo R2.*7 r4.
-      a4.\<\glissando | \mark \default 
+      a4.\<\glissando | \mark \default
     }
     \new CueVoice \vlnHcue
   >>
@@ -982,6 +980,7 @@ part-Pfour-one = {
   \mark \default
   \bar "||"
   \time 6/8
+  \tempo "L'istesso tempo" 8 = 172
   R2.*8 | \mark \default
   R2.*8 | \mark \default
   R2.*8 | \mark \default
@@ -989,148 +988,154 @@ part-Pfour-one = {
 }
 
 part-Pfive-one = \drummode {
-    \partial 2
-    r4 r4 | \mark \default
-% 0
-    R2.*4 | \mark \default
-    \repeat percent 8 { tamb8(-.\ppp tamb8-. tamb4-.) r4 | } \mark \default
-    \repeat percent 8 { tamb8(-.\pp tamb8-. tamb4-.) r4 | } \mark \default
-% 20
-    \repeat percent 8 { tamb8(-. tamb8-. tamb4-.) r4 | } \mark \default
-    R2. |
-    tamb16([\p tamb16 tamb16 tamb16 tamb8)-.] tamb16([ tamb16 tamb16 tamb16 tamb8)-.] |
-% 30
-    R2. |
-    tamb16([ tamb16 tamb16 tamb16 tamb8)-.] tamb16([ tamb16 tamb16 tamb16 tamb8)-.] |
-    R2. |
-    R2. |
-    R2. |
-% 35
-    tamb16( tamb16 tamb16 tamb16 tamb16 tamb16 tamb16 tamb16 tamb16 tamb16 tamb16 tamb16 | \mark \default
-    tamb8) r8 r4 r4 |
-    R2.*6
-    r4 tamb2:32\p\< | \mark \default
-    tamb4\sf r4 r4 |
-% 45
-    tamb16-. 16-. 16-. 16-. 16-. 16-. 16-. 16-. 16-. 16-. 16-. 16-. |
-    tamb8 r8 r4 r4 |
-    R2. |
-    R2. |
-    tamb16-. 16-. 16-. 16-. 16-. 16-. 16-. 16-. 16-. 16-. 16-. 16-. |
-% 50
-    tamb8 r8 r4 r4 |
-    R2. | \mark \default
-    R2.*8 | \mark \default
-% 60
-    R2. |
-    tamb16-. 16-. 16-. 16-. 16-. 16-. 16-. 16-. 16-. 16-. 16-. 16-. |
-    tamb8 r8 r4 r4 |
-    R2. |
-    R2. |
-% 65
-    tamb16-. 16-. 16-. 16-. 16-. 16-. 16-. 16-. 16-. 16-. 16-. 16-. |
-    tamb8 r8 r4 r4 |
-    R2. |
-    
-    \mark \default
-    \bar "||"
-    \time 6/8
-    \repeat percent 4 {
-      tamb8.\f 8 16 16 16 16 16 16 16 |
-    } \mark \default
-    \repeat percent 3 {
-      tamb8. 8 16 8 16-> 16-> 8-> |
-    }
-% 75
-    tamb8. 8 16 8-> 8-> 8-> | \mark \default
-    \repeat percent 8 {
-      tamb8.-> 8-> 16-> 8-> 16-> 16-> 8-> |
-    } \mark \default
-    \repeat percent 8 {
-      tamb16->\ff 16-> 16 16-> 16 16-> 8-> 16-> 16-> 8-> |
-    } \mark \default
-    R2.\fermata | \bar "|."
+  \tempo "Andante con moto" 4 = 86
+
+  \partial 2
+  r4 r4 | \mark \default
+  % 0
+  R2.*4 | \mark \default
+  \repeat percent 8 { tamb8(-.\ppp tamb8-. tamb4-.) r4 | } \mark \default
+  \repeat percent 8 { tamb8(-.\pp tamb8-. tamb4-.) r4 | } \mark \default
+  % 20
+  \repeat percent 8 { tamb8(-. tamb8-. tamb4-.) r4 | } \mark \default
+  R2. |
+  tamb16([\p tamb16 tamb16 tamb16 tamb8)-.] tamb16([ tamb16 tamb16 tamb16 tamb8)-.] |
+  % 30
+  R2. |
+  tamb16([ tamb16 tamb16 tamb16 tamb8)-.] tamb16([ tamb16 tamb16 tamb16 tamb8)-.] |
+  R2. |
+  R2. |
+  R2. |
+  % 35
+  tamb16( tamb16 tamb16 tamb16 tamb16 tamb16 tamb16 tamb16 tamb16 tamb16 tamb16 tamb16 | \mark \default
+  tamb8) r8 r4 r4 |
+  R2.*6
+  r4 tamb2:32\p\< | \mark \default
+  tamb4\sf r4 r4 |
+  % 45
+  tamb16-. 16-. 16-. 16-. 16-. 16-. 16-. 16-. 16-. 16-. 16-. 16-. |
+  tamb8 r8 r4 r4 |
+  R2. |
+  R2. |
+  tamb16-. 16-. 16-. 16-. 16-. 16-. 16-. 16-. 16-. 16-. 16-. 16-. |
+  % 50
+  tamb8 r8 r4 r4 |
+  R2. | \mark \default
+  R2.*8 | \mark \default
+  % 60
+  R2. |
+  tamb16-. 16-. 16-. 16-. 16-. 16-. 16-. 16-. 16-. 16-. 16-. 16-. |
+  tamb8 r8 r4 r4 |
+  R2. |
+  R2. |
+  % 65
+  tamb16-. 16-. 16-. 16-. 16-. 16-. 16-. 16-. 16-. 16-. 16-. 16-. |
+  tamb8 r8 r4 r4 |
+  R2. |
+
+  \mark \default
+  \bar "||"
+  \time 6/8
+  \tempo "L'istesso tempo" 8 = 172
+  \repeat percent 4 {
+    tamb8.\f 8 16 16 16 16 16 16 16 |
+  } \mark \default
+  \repeat percent 3 {
+    tamb8. 8 16 8 16-> 16-> 8-> |
+  }
+  % 75
+  tamb8. 8 16 8-> 8-> 8-> | \mark \default
+  \repeat percent 8 {
+    tamb8.-> 8-> 16-> 8-> 16-> 16-> 8-> |
+  } \mark \default
+  \repeat percent 8 {
+    tamb16->\ff 16-> 16 16-> 16 16-> 8-> 16-> 16-> 8-> |
+  } \mark \default
+  R2.\fermata | \bar "|."
 }
 
 part-Psix-one = \drummode {
+  \tempo "Andante con moto" 4 = 86
   \clef percussion
-  
-    \partial 2
-    r4 r4 | \mark \default
-% 0
-    R2.*4 | \mark \default
-    R2.*8 | \mark \default
-    R2.*8 | \mark \default
-% 20
-    R2.*8 | \mark \default
-    R2.*8 | \mark \default
-    R2.*7 |
-    r4 r8 tri4.:32\p\< | \mark \default
-    tri4\sf r4 r4 |
-% 45
-    R2. |
-    R2. |
-    tri4.:32~\< tri4.:32~\!\> |
-    tri4.\! r8 r4 |
-    R2. |
-% 50
-    R2. |
-    R2. | \mark \default
-    R2.*7 |
-    tri2.:32\p\< | \mark \default
-% 60
-    tri4\sf r4 r4 |
-    R2. |
-    R2. |
-    tri4.:32~\< tri4.:32~\> |
-    tri4.\! r8 r4 |
-% 65
-    R2. |
-    R2. |
-    r4. tri4.:32\p\< |
 
-    \mark \default 
-    \bar "||"
-    \time 6/8
+  \partial 2
+  r4 r4 | \mark \default
+  % 0
+  R2.*4 | \mark \default
+  R2.*8 | \mark \default
+  R2.*8 | \mark \default
+  % 20
+  R2.*8 | \mark \default
+  R2.*8 | \mark \default
+  R2.*7 |
+  r4 r8 tri4.:32\p\< | \mark \default
+  tri4\sf r4 r4 |
+  % 45
+  R2. |
+  R2. |
+  tri4.:32~\< tri4.:32~\!\> |
+  tri4.\! r8 r4 |
+  R2. |
+  % 50
+  R2. |
+  R2. | \mark \default
+  R2.*7 |
+  tri2.:32\p\< | \mark \default
+  % 60
+  tri4\sf r4 r4 |
+  R2. |
+  R2. |
+  tri4.:32~\< tri4.:32~\> |
+  tri4.\! r8 r4 |
+  % 65
+  R2. |
+  R2. |
+  r4. tri4.:32\p\< |
 
-    tri4.\sf r4 r8 |
-    R2.*3 |\mark \default
-    R2.*3 |
-% 75
-    r4 r8 tri4.:32\p\< | \mark \default
-    tri4.\sf r4 r8 |
-    R2.*7 | \mark \default
-    \repeat percent 7 {
-      tri16->\ff 16-> 16 16-> 16 16-> 8-> 16-> 16-> 8-> |
-    }
-    tri2.:32\ppp\<
-    tri2.:32\>\fermata <>\! \bar "|."
+  \mark \default
+  \bar "||"
+  \time 6/8
+  \tempo "L'istesso tempo" 8 = 172
+
+  tri4.\sf r4 r8 |
+  R2.*3 |\mark \default
+  R2.*3 |
+  % 75
+  r4 r8 tri4.:32\p\< | \mark \default
+  tri4.\sf r4 r8 |
+  R2.*7 | \mark \default
+  \repeat percent 7 {
+    tri16->\ff 16-> 16 16-> 16 16-> 8-> 16-> 16-> 8-> |
+  }
+  tri2.:32\ppp\<
+  tri2.:32\>\fermata <>\! \bar "|."
 }
 
 part-Pseven-one = \drummode {
-    \clef percussion
-    \time 3/4
+  \clef percussion
+  \time 3/4
+  \tempo "Andante con moto" 4 = 86
 
-    \partial 2
-    r4 r4 |
-    \mark \default
-% 0
-    R2.*4 |
-    \mark \default
-    R2.*8 |
-    \mark \default
-    R2.*8 |
-    \mark \default
-% 20
-    R2.*8 | 
-    \mark \default
-    R2.*8 |
-    \mark \default
-    R2.*8 |
-    \mark \default
-    R2.*8 |
-    \mark \default
-    <>^\markup{\small "violin cue"}
+  \partial 2
+  r4 r4 |
+  \mark \default
+  % 0
+  R2.*4 |
+  \mark \default
+  R2.*8 |
+  \mark \default
+  R2.*8 |
+  \mark \default
+  % 20
+  R2.*8 |
+  \mark \default
+  R2.*8 |
+  \mark \default
+  R2.*8 |
+  \mark \default
+  R2.*8 |
+  \mark \default
+  <>^\markup{\small "violin cue"}
   \stopStaff
   \override Staff.StaffSymbol.line-positions = #'(-4 -2 0 2 4)
   \startStaff
@@ -1141,81 +1146,91 @@ part-Pseven-one = \drummode {
   \stopStaff
   \override Staff.StaffSymbol.line-positions = #'(-2 2)
   \startStaff \mark \default
-% 60
-    \stemUp
-    tommh8\p^\markup { "mute tenor" } r8 r8 tommh8 r8 r8 |
-    tommh8 r8 tommh8 r8 tommh8 r8 |
-    tommh8 r8 r8 tommh8 r8 r8 |
-    tommh8 r8 tommh8 r8 tommh8 r8 |
-    tommh8 r8 r8 tommh8 r8 r8 |
-% 65
-    tommh8 r8 tommh8 r8 tommh8 r8 |
-    tommh8 r8 r8 tommh8 r8 r8 |
-    tommh8 r8 r8 tommh8\< 8 8\! |
+  % 60
+  \stemUp
+  tommh8\p^\markup { "mute tenor" } r8 r8 tommh8 r8 r8 |
+  tommh8 r8 tommh8 r8 tommh8 r8 |
+  tommh8 r8 r8 tommh8 r8 r8 |
+  tommh8 r8 tommh8 r8 tommh8 r8 |
+  tommh8 r8 r8 tommh8 r8 r8 |
+  % 65
+  tommh8 r8 tommh8 r8 tommh8 r8 |
+  tommh8 r8 r8 tommh8 r8 r8 |
+  tommh8 r8 r8 tommh8\< 8 8\! |
 
-    \bar "||"
-    \mark \default
-    \time 6/8
-    \stemNeutral 
+  \bar "||"
+  \mark \default
+  \time 6/8
+  \tempo "L'istesso tempo" 8 = 172
+  \stemNeutral
 
-    <<
-    \new DrumVoice = "voiceone" { \voiceOne
+  <<
+    \new DrumVoice = "voiceone" {
+      \voiceOne
       tommh8.-.^\markup { \dynamic f "unmute" } 8.-. 8-. 8-. 8-. |
       tommh8.-. 8.-. 8-. 8-. 8-. |
       tommh8.-. 8.-. 8-. 8-. 8-. |
       tommh8.-. 8.-. 8-. 8-. 8-. |
     }
-    \new DrumVoice = "voicetwo" { \voiceTwo
+    \new DrumVoice = "voicetwo" {
+      \voiceTwo
       tomfh4_\f r8 tomfh4 r8 |
-      tomfh4 r8 tomfh4 r8 | 
-      tomfh4 r8 tomfh4 r8 | 
-      tomfh4 r8 tomfh4 r8 |  
+      tomfh4 r8 tomfh4 r8 |
+      tomfh4 r8 tomfh4 r8 |
+      tomfh4 r8 tomfh4 r8 |
     }
-    >>
-    \mark \default
+  >>
+  \mark \default
 
-    \repeat percent 4 {
-      <<
-      \new DrumVoice = "voiceone" { \voiceOne
+  \repeat percent 4 {
+    <<
+      \new DrumVoice = "voiceone" {
+        \voiceOne
         tommh8.-. 8.-. 8-. 8-. 8-. |
       }
-      \new DrumVoice = "voicetwo" { \voiceTwo
-        tomfh4 r8 tomfh4 r8 | 
+      \new DrumVoice = "voicetwo" {
+        \voiceTwo
+        tomfh4 r8 tomfh4 r8 |
       }
-      >>
-    }
-    \mark \default
+    >>
+  }
+  \mark \default
 
-    \repeat percent 8 {
-      <<
-      \new DrumVoice = "voiceone" { \voiceOne
+  \repeat percent 8 {
+    <<
+      \new DrumVoice = "voiceone" {
+        \voiceOne
         tommh8.-> 8-> 16-> 8-> 16-> 16-> 8-> |
       }
-      \new DrumVoice = "voicetwo" { \voiceTwo
+      \new DrumVoice = "voicetwo" {
+        \voiceTwo
         tomfh8.-> 8.-> 8-> 8-> 8-> |
       }
-      >>
-    }
-    \mark \default
-    
-    \repeat percent 8 {
-      <<
-      \new DrumVoice = "voiceone" { \voiceOne
+    >>
+  }
+  \mark \default
+
+  \repeat percent 8 {
+    <<
+      \new DrumVoice = "voiceone" {
+        \voiceOne
         tommh8.->^\ff 8-> 16-> 8-> 16-> 16-> 8-> |
       }
-      \new DrumVoice = "voicetwo" { \voiceTwo
+      \new DrumVoice = "voicetwo" {
+        \voiceTwo
         tomfh8.->_\ff 8.-> 8-> 8-> 8-> |
       }
-      >>
-    }
-    \mark \default
-    R2. \fermata | \bar "|."
+    >>
+  }
+  \mark \default
+  R2. \fermata | \bar "|."
 }
 
 part-Pnine-one = {
   \key d \major
   \time 3/4
   \clef treble
+  \tempo "Andante con moto" 4 = 86
 
   \partial 2
   r4 r4 |
@@ -1231,7 +1246,8 @@ part-Pnine-one = {
   R2.*8 |
   \mark \default
   <<
-    \new Voice { \voiceOne
+    \new Voice {
+      \voiceOne
       b''2.~^\markup{\dynamic ppp "div."} |
       b''2.~ |
       % 30
@@ -1243,7 +1259,8 @@ part-Pnine-one = {
       % 35
       b''2. |
     }
-    \new Voice { \voiceTwo
+    \new Voice {
+      \voiceTwo
       fis''8_\p fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
       fis''4~ fis''8 fis''16 e''16 b''4 |
       % 30
@@ -1266,37 +1283,40 @@ part-Pnine-one = {
   fis''4~ fis''8 fis''16 e''16 b''4 |
   fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
   fis''4~ fis''8 fis''16 e''16 b''4 |
-  \mark \default 
+  \mark \default
   <<
-  \new Voice { \voiceOne
-    fis''8^"div." fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
-    % 45
-    fis''4~ fis''8 fis''16 e''16 b''4 |
-    fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
-    fis''4~ fis''8 fis''16 e''16 b''4 |
-    fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
-    fis''4~ fis''8 fis''16 e''16 b''4 |
-    % 50
-    fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
-    fis''4~ fis''8 fis''16 e''16 b''4 |
-  }
-  \new Voice { \voiceTwo
-    e'8-!_\markup { \dynamic mp \italic "secco molto" } b'8-! fis''8-! e'8-! r8 r8 |
-    % 45
-    R2. |
-    e'8-! b'8-! fis''8-! e'8-! r8 r8 |
-    R2. |
-    e'8-! b'8-! fis''8-! e'8-! r8 r8 |
-    R2. |
-    % 50
-    d'8-! a'8-! e''8-! d'8-! r8 r8 |
-    R2. |
-  }
+    \new Voice {
+      \voiceOne
+      fis''8^"div." fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
+      % 45
+      fis''4~ fis''8 fis''16 e''16 b''4 |
+      fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
+      fis''4~ fis''8 fis''16 e''16 b''4 |
+      fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
+      fis''4~ fis''8 fis''16 e''16 b''4 |
+      % 50
+      fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
+      fis''4~ fis''8 fis''16 e''16 b''4 |
+    }
+    \new Voice {
+      \voiceTwo
+      e'8-!_\markup { \dynamic mp \italic "secco molto" } b'8-! fis''8-! e'8-! r8 r8 |
+      % 45
+      R2. |
+      e'8-! b'8-! fis''8-! e'8-! r8 r8 |
+      R2. |
+      e'8-! b'8-! fis''8-! e'8-! r8 r8 |
+      R2. |
+      % 50
+      d'8-! a'8-! e''8-! d'8-! r8 r8 |
+      R2. |
+    }
   >>
-  \mark \default 
+  \mark \default
 
   <<
-    \new Voice { \voiceOne
+    \new Voice {
+      \voiceOne
       b''8-!^\mf r8 b''8-! r8 b''8-! r8 |
       b''8-! r8 b''8-! r8 b''8-! e'''8-! |
       \omit Script
@@ -1308,7 +1328,8 @@ part-Pnine-one = {
       b''8-! r8 b''8-! r8 b''8-! r8 |
       b''8-! r8 b''8-! a'''8-! g'''8-! fis'''8-! |
     }
-    \new Voice { \voiceTwo
+    \new Voice {
+      \voiceTwo
       fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
       fis''4~ fis''8 fis''16 e''16 b''4 |
       fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
@@ -1323,7 +1344,8 @@ part-Pnine-one = {
   \mark \default
   % 60
   <<
-    \new Voice { \voiceOne
+    \new Voice {
+      \voiceOne
       e'''2.:32~^\p |
       e'''2.:32~ |
       e'''2.:32~ |
@@ -1334,7 +1356,8 @@ part-Pnine-one = {
       e'''2.:32~ |
       e'''2.:32 |
     }
-    \new Voice { \voiceTwo
+    \new Voice {
+      \voiceTwo
       b''8-! r8 b''8-! r8 b''8-! r8 |
       b''8-! r8 b''8-! r8 b''8-! e'''8-! |
       b''8-! r8 b''8-! r8 b''8-! r8 |
@@ -1348,7 +1371,8 @@ part-Pnine-one = {
   >>
 
   \time 6/8
-  \mark \default 
+  \tempo "L'istesso tempo" 8 = 172
+  \mark \default
   \bar "||"
 
   e''16-.->\f^"unis." b'16-. a'16-. e''16-.-> r16 e''16-. r16 e''16-. r16 e''16-. r8 |
@@ -1409,12 +1433,13 @@ part-Ponezero-one = {
   \key d \major
   \time 3/4
   \clef treble
+  \tempo "Andante con moto" 4 = 86
 
   \partial 2
   r4 r4 |
   \mark \default
   % 0
-  R2.*4 | 
+  R2.*4 |
   \mark \default
   R2.*8 |
   \mark \default
@@ -1457,19 +1482,21 @@ part-Ponezero-one = {
   fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
   \mark \default
   <<
-    \new Voice { \voiceOne
+    \new Voice {
+      \voiceOne
       fis''4~^"div." fis''8 fis''16 e''16 fis''4~ |
-  % 45
-  fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
-  fis''4~ fis''8 fis''16 e''16 fis''4~ |
-  fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
-  fis''4~ fis''8 fis''16 e''16 fis''4~ |
-  fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
-  % 50
-  fis''4~ fis''8 fis''16 e''16 fis''4~ |
-  fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
+      % 45
+      fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
+      fis''4~ fis''8 fis''16 e''16 fis''4~ |
+      fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
+      fis''4~ fis''8 fis''16 e''16 fis''4~ |
+      fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
+      % 50
+      fis''4~ fis''8 fis''16 e''16 fis''4~ |
+      fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
     }
-    \new Voice { \voiceTwo 
+    \new Voice {
+      \voiceTwo
       e'8-!\mp-\markup { \italic "secco molto" } b'8-! fis''8-! e'8-! r8 r8 |
       % 45
       R2. |
@@ -1479,65 +1506,70 @@ part-Ponezero-one = {
       R2. |
       % 50
       d'8-! a'8-! e''8-! d'8-! r8 r8 |
-  R2. |
+      R2. |
     }
   >>
   \mark \default
   <<
-  \new Voice { \voiceOne
-    fis''4~ fis''8 fis''16 e''16 fis''4~ |
-  fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
-  fis''4~ fis''8 fis''16 e''16 fis''4~ |
-  % 55
-  fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
-  fis''4~ fis''8 fis''16 e''16 fis''4~ |
-  fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
-  fis''4~ fis''8 fis''16 e''16 fis''4~ |
-  fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
-  }
-    \new Voice { \voiceTwo 
+    \new Voice {
+      \voiceOne
+      fis''4~ fis''8 fis''16 e''16 fis''4~ |
+      fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
+      fis''4~ fis''8 fis''16 e''16 fis''4~ |
+      % 55
+      fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
+      fis''4~ fis''8 fis''16 e''16 fis''4~ |
+      fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
+      fis''4~ fis''8 fis''16 e''16 fis''4~ |
+      fis''8 fis''16 e''16 fis''4~ fis''8 fis''16 e''16 |
+    }
+    \new Voice {
+      \voiceTwo
       e'8-! b'8-! fis''8-! e'8-! r8 r8 |
-  R2. |
-  e'8-! b'8-! fis''8-! e'8-! r8 r8 |
-  % 55
-  R2. |
-  e'8-! b'8-! fis''8-! e'8-! r8 r8 |
-  R2. |
-  d'8-! a'8-! e''8-! d'8-! r8 r8 |
-  R2. |
+      R2. |
+      e'8-! b'8-! fis''8-! e'8-! r8 r8 |
+      % 55
+      R2. |
+      e'8-! b'8-! fis''8-! e'8-! r8 r8 |
+      R2. |
+      d'8-! a'8-! e''8-! d'8-! r8 r8 |
+      R2. |
     }
   >>
   \mark \default
   <<
-  \new Voice { \voiceOne
-    % 60
-  fis''8 fis''16 e''16 fis''8 fis''16 e''16 fis''8 fis''16 e''16 |
-  fis''8 fis''16 e''16 fis''8 fis''16 e''16 b''8 fis''16 e''16 |
-  fis''8 fis''16 e''16 fis''8 fis''16 e''16 fis''8 fis''16 e''16 |
-  fis''8 fis''16 e''16 fis''8 fis''16 e''16 b''8 fis''16 e''16 |
-  fis''8 fis''16 e''16 fis''8 fis''16 e''16 fis''8 fis''16 e''16 |
-  % 65
-  fis''8 fis''16 e''16 fis''8 fis''16 e''16 b''8 fis''16 e''16 |
-  fis''8 fis''16 e''16 fis''8 fis''16 e''16 fis''8 fis''16 e''16 |
-  fis''8 fis''16 e''16 fis''8 fis''16 e''16 b''8 fis''16 e''16 |
-  }
-    \new Voice { \voiceTwo
+    \new Voice {
+      \voiceOne
       % 60
-  e'8-! b'8-! fis''8-! e'8-! r8 r8 |
-  R2. |
-  e'8-! b'8-! fis''8-! e'8-! r8 r8 |
-  R2. |
-  e'8-! b'8-! fis''8-! e'8-! r8 r8 |
-  % 65
-  R2. |
-  d'8-! a'8-! e''8-! d'8-! r8 r8 |
-  c'4. d'4. |
+      fis''8 fis''16 e''16 fis''8 fis''16 e''16 fis''8 fis''16 e''16 |
+      fis''8 fis''16 e''16 fis''8 fis''16 e''16 b''8 fis''16 e''16 |
+      fis''8 fis''16 e''16 fis''8 fis''16 e''16 fis''8 fis''16 e''16 |
+      fis''8 fis''16 e''16 fis''8 fis''16 e''16 b''8 fis''16 e''16 |
+      fis''8 fis''16 e''16 fis''8 fis''16 e''16 fis''8 fis''16 e''16 |
+      % 65
+      fis''8 fis''16 e''16 fis''8 fis''16 e''16 b''8 fis''16 e''16 |
+      fis''8 fis''16 e''16 fis''8 fis''16 e''16 fis''8 fis''16 e''16 |
+      fis''8 fis''16 e''16 fis''8 fis''16 e''16 b''8 fis''16 e''16 |
+    }
+    \new Voice {
+      \voiceTwo
+      % 60
+      e'8-! b'8-! fis''8-! e'8-! r8 r8 |
+      R2. |
+      e'8-! b'8-! fis''8-! e'8-! r8 r8 |
+      R2. |
+      e'8-! b'8-! fis''8-! e'8-! r8 r8 |
+      % 65
+      R2. |
+      d'8-! a'8-! e''8-! d'8-! r8 r8 |
+      c'4. d'4. |
     }
   >>
 
-  \mark \default 
+  \mark \default
   \bar "||"
   \time 6/8
+  \tempo "L'istesso tempo" 8 = 172
   R2.*4 |
   \mark \default
   R2.*4 |
@@ -1562,6 +1594,7 @@ part-Poneone-one = {
   \key d \major
   \time 3/4
   \clef alto
+  \tempo "Andante con moto" 4 = 86
 
   \partial 2
   r4 r4 |
@@ -1569,7 +1602,7 @@ part-Poneone-one = {
   % 0
   R2.*4 |
   \mark \default
-  R2.*8 
+  R2.*8
   \mark \default
 
   fis'2.~\p |
@@ -1593,86 +1626,99 @@ part-Poneone-one = {
   e'2. | \mark \default
 
   <<
-  \new Voice \transpose c c' { \voiceOne
-    r4 e8^\p^\markup{"div."} b8 b4~ |
-    b8 b8 b4~ b8 b8 |
-  }
-  \new Voice { \voiceTwo
-    r4 b4~\p b8 b8 |
-    b4~ b8 b8 b4~ |
-  }
+    \new Voice \transpose c c' {
+      \voiceOne
+      r4 e8^\p^\markup{"div."} b8 b4~ |
+      b8 b8 b4~ b8 b8 |
+    }
+    \new Voice {
+      \voiceTwo
+      r4 b4~\p b8 b8 |
+      b4~ b8 b8 b4~ |
+    }
   >>
   % 30
   \repeat percent 3 {
     <<
-    \new Voice \transpose c c' { \voiceOne
-      b4 e8 b8 b4~ |
-      b8 b8 b4~ b8 b8 |
-    }
-    \new Voice { \voiceTwo
-      b8 b8 b4~ b8 b8 |
-      b4~ b8 b8 b4~ |
-    }
+      \new Voice \transpose c c' {
+        \voiceOne
+        b4 e8 b8 b4~ |
+        b8 b8 b4~ b8 b8 |
+      }
+      \new Voice {
+        \voiceTwo
+        b8 b8 b4~ b8 b8 |
+        b4~ b8 b8 b4~ |
+      }
     >>
   }
-  \mark \default 
+  \mark \default
 
   \repeat percent 4 {
     <<
-    \new Voice \transpose c c' { \voiceOne
-      b4 e8 b8 b4~ |
-      b8 b8 b4~ b8 b8 |
-    }
-    \new Voice { \voiceTwo
-      b8 b8 b4~ b8 b8 |
-      b4~ b8 b8 b4~ |
-    }
+      \new Voice \transpose c c' {
+        \voiceOne
+        b4 e8 b8 b4~ |
+        b8 b8 b4~ b8 b8 |
+      }
+      \new Voice {
+        \voiceTwo
+        b8 b8 b4~ b8 b8 |
+        b4~ b8 b8 b4~ |
+      }
     >>
   }
-  \mark \default 
-  
+  \mark \default
+
   \repeat percent 4 {
     <<
-    \new Voice \transpose c c' { \voiceOne
-      b4 e8 b8 b4~ |
-      b8 b8 b4~ b8 b8 |
-    }
-    \new Voice { \voiceTwo
-      b8 b8 b4~ b8 b8 |
-      b4~ b8 b8 b4~ |
-    }
+      \new Voice \transpose c c' {
+        \voiceOne
+        b4 e8 b8 b4~ |
+        b8 b8 b4~ b8 b8 |
+      }
+      \new Voice {
+        \voiceTwo
+        b8 b8 b4~ b8 b8 |
+        b4~ b8 b8 b4~ |
+      }
     >>
   }
-  \mark \default 
-  
+  \mark \default
+
   \repeat percent 3 {
     <<
-    \new Voice \transpose c c' { \voiceOne
-      b4 e8 b8 b4~ |
-      b8 b8 b4~ b8 b8 |
-    }
-    \new Voice { \voiceTwo
-      b8 b8 b4~ b8 b8 |
-      b4~ b8 b8 b4~ |
-    }
+      \new Voice \transpose c c' {
+        \voiceOne
+        b4 e8 b8 b4~ |
+        b8 b8 b4~ b8 b8 |
+      }
+      \new Voice {
+        \voiceTwo
+        b8 b8 b4~ b8 b8 |
+        b4~ b8 b8 b4~ |
+      }
     >>
   }
 
   <<
-    \new Voice \transpose c c' { \voiceOne
+    \new Voice \transpose c c' {
+      \voiceOne
       b4\< e8 b8 b4~ |
       b8 b8 b4~ b8 b8\! |
     }
-    \new Voice { \voiceTwo
+    \new Voice {
+      \voiceTwo
       b8 b8 b4~ b8 b8 |
       b4~ b8 b8 b4~ |
     }
   >>
-  \mark \default 
+  \mark \default
   % 60
-  
+
   <<
-    \new Voice { \voiceOne
+    \new Voice {
+      \voiceOne
       b'8 b( b--) b'( b'--) b( |
       b8--) b'( b'--) b( b--) b'( |
       b'8--)^\markup{\italic "sim."} b b b' b' b |
@@ -1682,7 +1728,8 @@ part-Poneone-one = {
       b'8 b b b' b' b |
       b8 b' b' b b <b b'> |
     }
-    \new Voice { \voiceTwo
+    \new Voice {
+      \voiceTwo
       c8-! r8 g8-! c8-! r8 g8-! |
       d8-! r8 a8-! r8 b8-! r8 |
       \omit Script
@@ -1699,6 +1746,7 @@ part-Poneone-one = {
   \mark \default
   \bar "||"
   \time 6/8
+  \tempo "L'istesso tempo" 8 = 172
   R2.*4 |
   \mark \default
   R2.*4 |
@@ -1733,6 +1781,7 @@ part-Ponetwo-one = {
   \key d \major
   \time 3/4
   \clef bass
+  \tempo "Andante con moto" 4 = 86
 
   \partial 2
   r4 r4 |
@@ -1828,9 +1877,10 @@ part-Ponetwo-one = {
   e8-! r8 b8-! e8-! r8 b8-! |
   \undo \omit Script
 
-  \mark \default 
+  \mark \default
   \bar "||"
   \time 6/8
+  \tempo "L'istesso tempo" 8 = 172
   e,16-.->\f e,16 r16 e,16-. r16 e,16-. e,8-.-> e,16-. e,16-. e,8-. |
   b,16-.-> b,16 r16 b,16-. r16 b,16-. b,8-.-> b,16-. b,16-. b,8-. |
   % 70
@@ -1966,7 +2016,7 @@ part-Ponethree-one = {
   e8-! r8 b8-! e8-! r8 b8-! |
   \undo \omit Script
 
-  \mark \default 
+  \mark \default
   \bar "||"
   \time 6/8
   \tempo "L'istesso tempo" 8 = 172
@@ -2013,15 +2063,23 @@ part-Ponethree-one = {
 \addQuote "vlnH" { \part-Pnine-one } % violin 1
 \addQuote "markL" { \part-Pnine-one } % violin 1
 
-\score {
+greenpath_header = \header {
+  composer = "Christopher Larkin"
+  arranger = "Mico Javier & Rex Reventar"
+  subtitle = "For Bravura Orchestra"
+  title = "Greenpath"
+  tagline = #'false
+}
+
+greenpath_score = {
   <<
-    \new Staff \with {
+    \tag #'(flute) \new Staff \with {
       instrumentName = "2 Flutes"
       shortInstrumentName = "Fl."
       midiInstrument = "flute"
     } \part-Pone-one
 
-    \new PianoStaff \with {
+    \tag #'(piano) \new PianoStaff \with {
       instrumentName = "Piano"
       shortInstrumentName = "Pf."
       midiInstrument = "grand piano"
@@ -2029,7 +2087,8 @@ part-Ponethree-one = {
       \new Staff \part-Ptwo-one
       \new Staff \part-Ptwo-two
     >>
-    \new PianoStaff \with {
+
+    \tag #'(organ) \new PianoStaff \with {
       instrumentName = "Organ"
       shortInstrumentName = "Org."
       midiInstrument = "organ"
@@ -2037,8 +2096,8 @@ part-Ponethree-one = {
       \new Staff \part-Pthree-one
       \new Staff \part-Pthree-two
     >>
-    
-    \new StaffGroup <<
+
+    \tag #'(percussion) \new StaffGroup <<
       \new Staff = "wind_chimes" \with {
         instrumentName = "Wind Chimes"
         shortInstrumentName = "Ch."
@@ -2076,33 +2135,33 @@ part-Ponethree-one = {
 
     \new StaffGroup <<
       \new GrandStaff <<
-        \new Staff \with {
+        \tag #'(archi violin_i) \new Staff \with {
           instrumentName = "Violin 1"
           shortInstrumentName = "Vl. 1"
           midiInstrument = "violin"
         } \part-Pnine-one
 
-        \new Staff \with {
+        \tag #'(archi violin_ii) \new Staff \with {
           instrumentName = "Violin 2"
           shortInstrumentName = "Vl. 2"
           midiInstrument = "violin"
         } \part-Ponezero-one
       >>
 
-      \new Staff \with {
+      \tag #'(archi viola) \new Staff \with {
         instrumentName = "Viola"
         shortInstrumentName = "Va."
         midiInstrument = "viola"
       } \part-Poneone-one
 
       \new GrandStaff <<
-        \new Staff \with {
+        \tag #'(archi cello) \new Staff \with {
           instrumentName = "Violoncello"
           shortInstrumentName = "Vc."
           midiInstrument = "cello"
         } \part-Ponetwo-one
 
-        \new Staff \with {
+        \tag #'(archi contrabass) \new Staff \with {
           instrumentName = "Contrabass"
           shortInstrumentName = "Cb."
           midiInstrument = "double bass"
