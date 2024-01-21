@@ -29,7 +29,7 @@ upper = {
     <g c d g>8\fermata r8 r4 r4 
     <<
       \context Voice = "uvoiceOne" \relative c' { \voiceOne
-        d!8\( e8 |
+        d!8\( e8 | \bar "||"
         g4--\) <a b>-- <g a>-- d8( \( e |
         g8) a bes a bes a g e | \time 2/4 
         g4\) d8( e | \time 4/4
@@ -39,16 +39,23 @@ upper = {
         \oneVoice 
         <d g c>4\)
       }
-      \context Voice = "uvoiceTwo" { \voiceTwo
-
+      \context Voice = "uvoiceTwo" \relative c' { \voiceTwo
+        b!8 a | \bar "||"
+        g'8 <a, d> r <b c e> r <a d> \bracket-rest r4 
+        g'8 <a, d e>4 <bes d e>4 <c d f>4 <bes d>8 | \time 2/4 
+        \bracket-rest r4 b!8 g |
+        g'8 <a, d> r <a d> r <g c> c4 |
+      % 15
+        a'8 <a, d e>4 <bes d e> <c f g> <bes ees f>8 |
+        s4 
       }
     >>
     %%%%%%%%% TODO: Cross-staff slurs %%%%%%%%%
     <d g>8-- <e a>-- <e f c' d>4-> \voiceOne <d' g>8 -- <e a>-- | \time 2/4
     <e f c' d>4 -> \oneVoice <gis, gis'>8 <a a'>8 | \time 4/4
-    r16 <d d'> r <e e'> r <a, a'> r <bes bes'> 
-    r <e,! e'!> r <bes' bes'> r <aes aes'> r <d, d'> |
-    r16 <c c'> r <d d'> r <ges, ges'> r <bes bes'> r <d d'>4
+    r16 <d d'>[ r <e e'> r <a, a'> r <bes bes'>]
+    r <e,! e'!>[ r <bes' bes'> r <aes aes'> r <d, d'>] |
+    r16 <c c'>[ r <d d'> r <ges, ges'> r <bes bes'>] <d d'>4
   }
 }
 
@@ -93,6 +100,20 @@ lower = {
     <des,, aes' des>4 <c g' c>2 ~ |
   % 10
     <c g' c>8\fermata r8 r4 r4 
+    <e! d'!>4 | \bar "||"
+    <a e'>2. <e b'>4 |
+    <d a'>2. r4 | \time 2/4 
+    <d a'>4 <e b'>4 | \time 4/4 
+    <f c'>2. <bes f'>4( |
+  % 15
+    <a e'>2) <g d'>4 <f c'> |
+    <ees bes'>4 r16 <e' f>[ r <g a> ]
+    <d g c>4-> \change Staff = "upper" \voiceTwo r16 <e' f>[ r <g a>] | \time 2/4
+    <d g c>4-> \change Staff = "lower" \oneVoice gis,8 a8 | \time 4/4
+    d8 e a, bes e, bes' aes ees |
+    c8 d ges, bes d4 <e, d'>4 |
+  % 20
+
   }
 }
 
@@ -117,5 +138,6 @@ lower = {
     Bar 4,5,6: Regularized slur
     Bar 11: added slur to right hand
     Bar 16, rh: regularized slur to go over both
+    Bar 13
   %}
 }
