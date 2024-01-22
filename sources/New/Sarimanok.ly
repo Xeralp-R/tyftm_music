@@ -56,6 +56,59 @@ upper = {
     r16 <d d'>[ r <e e'> r <a, a'> r <bes bes'>]
     r <e,! e'!>[ r <bes' bes'> r <aes aes'> r <d, d'>] |
     r16 <c c'>[ r <d d'> r <ges, ges'> r <bes bes'>] <d d'>4
+    <<
+      \context Voice = "uvoiceOne" \relative c' { \voiceOne
+        d!8\( e8 |
+      % 20
+        g4--\) <a b!>-- <g a>-- d8( \( e |
+        g8) a bes a bes a g e | \time 2/4 
+        g4\) d8( e | \time 4/4
+        g4--) <a d>-- <e a>-- d8( \( g |
+        a8) bes c d ees d a g | \time 2/4
+      % 25
+        \oneVoice 
+        <d g a>4\)
+      }
+      \context Voice = "uvoiceTwo" \relative c' { \voiceTwo
+        b!8 a |
+      % 20
+        g'8 <a, d> r <b! c e> r <a d!> \bracket-rest r4 
+        g'8 <a, d e>4 <bes d e>4 <c d f>4 <bes d>8 | \time 2/4 
+        \bracket-rest r4 b!8 g |
+        g'8 <a, d> r <a d> r <g c> c4 |
+        a'8 <a, d e>4 <bes d e> <c f g> <bes ees f>8 | \time 2/4
+      % 25
+        s4 
+      }
+    >>
+    f8( g | \time 4/4
+    <c, f c'>4--) <c' f c'>-- <d g d'>-- g,8( aes |
+    <d, g d'>4 --) <d' g d'> -- <e a! e'>--
+    <<
+      \context Voice = "uvoiceOne" \relative c''' { \voiceOne
+        b!8-- c-- |
+        d8-- ees-- ces'-- g-- f-- ees-- f-- c-- |
+        \voiceTwo
+        <d, g d'>8
+      }
+      \context Voice = "uvoiceTwo" \relative c''' { \voiceTwo
+        b16 b, c' c, |
+        d'16 d, ees' ees, ces'' ces, g' g, f' f, ees' ees, f' f, c' c, |
+        s8
+      }
+    >>
+    r8 <bes, f'>4( <a d>8) r8 r4 |
+  % 30
+    r4 <d a' d>4 <a e' a>4 d8 e8 | \time 2/4
+    g8 g <d d'> <e e'> | \time 4/4 
+    <g g'>8 <a a'> <d d'> a' <e a e'>4 r4 |
+    r4 <f, c' f>4 <c g' c>4 f8 g8  | \time 2/4 
+    c8 d <f, f'> <g g'> | \time 4/4
+  % 35
+    <c c'>8 <d d'> <f f'> <d d'> <a' e' a>4-> 
+    <ces,, ces'>8 <ees ees'> |
+    <bes' f' bes>4 <c,! c'!>8 <e! e'!> <b' fis' b>4 <des, des'>8 <f f'> |
+    <c' g' c>4 <d,! d'!>8 <fis fis'>8 <cis' gis' cis>4 <a a'>8 <ais ais'>8 |
   }
 }
 
@@ -113,7 +166,29 @@ lower = {
     d8 e a, bes e, bes' aes ees |
     c8 d ges, bes d4 <e, d'>4 |
   % 20
-
+    <a e'>2. <e b'>4 |
+    <d a'>2. r4 | \time 2/4 
+    <d a'>4 <e b'>4 | \time 4/4 
+    <f c'>2. <bes f'>4( |
+    <a e'>2) <g d'>4 <f c'> | \time 2/4
+  % 25
+    <ees bes'>4 f'8( g | \time 4/4
+    <aes, ees' aes>4-- ) <ees bes' ees>-- <d a' d>-- g'8( aes |
+    bes4--) <f, c' f>-- <e! b' e!>-- r4 |
+    <c' ees aes c>4\arpeggio <des f aes ees'>\arpeggio <ees g bes f'>\arpeggio 
+    <ges c f>\arpeggio | 
+    <g! b! d!>8 r8 <ees, c'>4( <g d'>8) r8 d'8-> e?-> | 
+  % 30
+    g4-> <fis g> <e g> <g c>8 <fis b> | \time 2/4 
+    <e a>8 <d g> <c f> <b e> | \time 4/4
+    <a d a'>8 <g c g'> <f b f'> <e a e'> <d g d'>4 f'8-> g-> |
+    bes4-> <a bes> <g bes> <bes? ees>8 <a d>8 | \time 2/4
+    <g c>8 <f bes> <ees aes> <d g> | \time 4/4
+  % 35
+    <c f c'> <bes ees bes'> <a d a'> <g c g'> <f bes f'>4 b!8 <g g'> |
+    <ces, ges' ces>4 c'!8 <aes aes'> <c,! g'? c!>4 des'8 <beses beses'> |
+    <des, aes' des>4 d'!8 <b! b'!>8 <dis, ais' dis>4 \clef treble
+    <cis'' e?>8 <d f!> |  
   }
 }
 
@@ -138,6 +213,11 @@ lower = {
     Bar 4,5,6: Regularized slur
     Bar 11: added slur to right hand
     Bar 16, rh: regularized slur to go over both
-    Bar 13
+    Bar 13: Regularized right hand 2nd voice things
+    Bar 25: regularized notes
+    Bar 26, 27: regularized slurs in both hands
+    Bar 27: regularized first chord to have a 4-5 interval
+    Bar 27, lh: added --
+    Bar 28, lh: abberation chord
   %}
 }
