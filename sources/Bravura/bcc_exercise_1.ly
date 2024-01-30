@@ -72,26 +72,21 @@ part-Ptwo-one = {
   \clef treble
   \tempo "Allegro"
 
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 5
-  R1 |
-  R1 |
-  R1 |
-  g1 |
-  d'1 |
+  \mark \default
+  R1*8 \mark \default
+
+  g1\downbow |
+  d'1\upbow |
   % 10
-  a'1 |
-  e''1 |
-  e''1 |
-  a'1 |
-  d'1 |
+  a'1\downbow |
+  e''1\upbow |
+  e''1\downbow |
+  a'1\upbow |
+  d'1\downbow |
   % 15
-  g1 |
-  g1 |
+  g1\upbow | \mark \default
+
+  g1\downbow |
   d'1 |
   a'1-\markup { "bowings same as before (simile)" } |
   e''1 |
@@ -100,42 +95,34 @@ part-Ptwo-one = {
   a'1 |
   d'1 |
   g1 |
-  g1 |
+  g1\downbow \fermata \bar "|." | \mark \default \break
+
   % 25
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 30
-  R1 |
-  R1 |
-  R1 |
-  g2 g2 |
-  d'2 d'2 |
+  R1*4 \mark \default
+  R1*4 \mark \default
+  g2\downbow g2\upbow |
+  d'2\downbow d'2\upbow |
   % 35
-  a'2 a'2 |
-  e''2 e''2 |
+  a'2\downbow a'2\upbow |
+  e''2\downbow e''2\upbow | \mark \default
   e''2-\markup { "simile" } e''2 |
   a'2 a'2 |
   d'2 d'2 |
   % 40
-  g2 g2 |
+  g2 g2 | \mark \default
   R1 |
   R1 |
   g2 g2 |
   d'2 d'2 |
   % 45
-  d'1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
+  d'1\fermata \bar "|." | \break \mark \default
+
+  R1*4 | \mark \default
   % 50
-  g4 g4 g4 g4 |
-  d'4 d'4 d'4 d'4 |
+  g4\downbow g4\upbow g4\downbow g4\upbow |
+  d'4\downbow d'4\upbow d'4\downbow d'4\upbow |
   a'4-\markup { "simile" } a'4 a'4 a'4 |
-  e''4 e''4 e''4 e''4 |
+  e''4 e''4 e''4 e''4 | \mark \default
   e''4 e''4 e''4 e''4 |
   % 55
   a'4 a'4 a'4 a'4 |
@@ -144,7 +131,7 @@ part-Ptwo-one = {
   g4 g4 g4 g4 |
   d'4 d'4 d'4 d'4 |
   % 60
-  a'1 | \bar "|."
+  a'1\fermata | \bar "|."
 }
 
 part-Pthree-one = {
