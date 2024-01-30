@@ -139,28 +139,21 @@ part-Pthree-one = {
   \time 4/4
   \clef alto
   \tempo "Allegro"
+  \mark \default
 
-  c1 |
-  g1 |
-  d'1 |
-  a'1 |
-  a'1 |
+  c1\downbow |
+  g1\upbow |
+  d'1\downbow |
+  a'1\upbow |
+  a'1\downbow |
   % 5
-  d'1 |
-  g1 |
-  c1 |
-  R1 |
-  R1 |
-  % 10
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 15
-  R1 |
-  c1 |
-  g1 |
+  d'1\upbow |
+  g1\downbow |
+  c1\upbow | \mark \default
+  R1*8 | \mark \default
+
+  c1\downbow |
+  g1\upbow |
   d'1-\markup { "bowings same as before (simile)" } |
   a'1 |
   % 20
@@ -168,42 +161,37 @@ part-Pthree-one = {
   d'1 |
   g1 |
   c1 |
-  c1 |
+  c1\fermata \bar "|." | \break \mark \default
+
   % 25
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  c2 c2 |
+  R1*4 | \mark \default
+  c2\downbow c2\upbow |
   % 30
-  g2 g2 |
-  d'2 d'2 |
-  a'2 a'2 |
+  g2\downbow g2\upbow |
+  d'2\downbow d'2\upbow |
+  a'2\downbow a'2\upbow | \mark \default
   a'2-\markup { "simile" } a'2 |
   d'2 d'2 |
   % 35
   g2 g2 |
-  c2 c2 |
-  R1 |
-  R1 |
-  R1 |
-  % 40
-  R1 |
+  c2 c2 | \mark \default
+  R1* 4 | \mark \default
   R1 |
   c2 c2 |
   g2 g2 |
   d'2 d'2 |
   % 45
-  d'1 |
+  d'1\fermata \bar "|." | \break \mark \default
+
   R1 |
   R1 |
-  c4 c4 c4 c4 |
-  g4 g4 g4 g4 |
+  c4\downbow c4\upbow c4\downbow c4\upbow |
+  g4\downbow g4\upbow g4\downbow g4\upbow | \mark \default
   % 50
   d'4-\markup { "simile" } d'4 d'4 d'4 |
   a'4 a'4 a'4 a'4 |
   a'4 a'4 a'4 a'4 |
-  d'4 d'4 d'4 d'4 |
+  d'4 d'4 d'4 d'4 | \mark \default
   g4 g4 g4 g4 |
   % 55
   c4 c4 c4 c4 |
@@ -212,7 +200,7 @@ part-Pthree-one = {
   d'4 d'4 d'4 d'4 |
   a'4 a'4 a'4 a'4 |
   % 60
-  g1 | \bar "|."
+  g1\fermata | \bar "|."
 }
 
 part-Pfour-one = {
