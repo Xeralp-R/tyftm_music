@@ -55,9 +55,9 @@ part-Pone-one = {
   R1 |
   g4\downbow g4\upbow g4\downbow g4\upbow |
   d'4\downbow d'4\upbow d'4\downbow d'4\upbow |
-  a'4-\markup { "simile" } a'4 a'4 a'4 | \mark \default
+  a'4-\markup { "simile" } a'4 a'4 a'4 |
   % 55
-  e''4 e''4 e''4 e''4 |
+  e''4 e''4 e''4 e''4 | \mark \default
   e''4 e''4 e''4 e''4 |
   a'4 a'4 a'4 a'4 |
   d'4 d'4 d'4 d'4 |
@@ -208,28 +208,21 @@ part-Pfour-one = {
   \time 4/4
   \clef bass
   \tempo "Allegro"
+  \mark \default
 
-  c,1 |
-  g,1 |
-  d1 |
-  a1 |
-  a1 |
+  c,1\downbow |
+  g,1\upbow |
+  d1\downbow |
+  a1\upbow |
+  a1\downbow |
   % 5
-  d1 |
-  g,1 |
-  c,1 |
-  R1 |
-  R1 |
-  % 10
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 15
-  R1 |
-  c,1 |
-  g,1 |
+  d1\upbow |
+  g,1\downbow |
+  c,1\upbow | \mark \default
+  R1*8 | \mark \default 
+
+  c,1\downbow |
+  g,1\upbow |
   d1-\markup { "bowings same as before (simile)" } |
   a1 |
   % 20
@@ -237,42 +230,36 @@ part-Pfour-one = {
   d1 |
   g,1 |
   c,1 |
-  c,1 |
+  c,1\fermata \bar "|." | \break \mark \default
+
   % 25
-  c,2 c,2 |
-  g,2 g,2 |
-  d2 d2 |
-  a2 a2 |
+  c,2\downbow c,2\upbow |
+  g,2\downbow g,2\upbow |
+  d2\downbow d2\upbow |
+  a2\downbow a2\upbow | \mark \default
   a2-\markup { "simile" } a2 |
   % 30
   d2 d2 |
   g,2 g,2 |
-  c,2 c,2 |
-  R1 |
-  R1 |
-  % 35
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 40
-  R1 |
+  c,2 c,2 | \mark \default
+  R1*4 | \mark \default
+  R1*4 | \mark \default
   c,2 c,2 |
   g,2 g,2 |
   d2 d2 |
   a2 a2 |
   % 45
-  a1 |
-  c,4 c,4 c,4 c,4 |
-  g,4 g,4 g,4 g,4 |
+  a1 \fermata \bar "|." | \mark \default \break 
+
+  c,4\downbow c,4\upbow c,4\downbow c,4\upbow |
+  g,4\downbow g,4\upbow g,4\downbow g,4\upbow |
   d4-\markup { "simile" } d4 d4 d4 |
-  a4 a4 a4 a4 |
+  a4 a4 a4 a4 | \mark \default
   % 50
   a4 a4 a4 a4 |
   d4 d4 d4 d4 |
   g,4 g,4 g,4 g,4 |
-  c,4 c,4 c,4 c,4 |
+  c,4 c,4 c,4 c,4 | \mark \default
   c,4 c,4 c,4 c,4 |
   % 55
   g,4 g,4 g,4 g,4 |
@@ -281,7 +268,7 @@ part-Pfour-one = {
   a4 a4 a4 a4 |
   d4 d4 d4 d4 |
   % 60
-  c,1 | \bar "|."
+  c,1 \fermata | \bar "|."
 }
 
 ex_one_header = \header {
