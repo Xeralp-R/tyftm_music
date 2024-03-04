@@ -1,18 +1,7 @@
 % Automatically generated from a musicxml file.
 \version "2.24.0"
-
-#(set-global-staff-size 19.8425)
-
-#(set! paper-alist
-       (cons '("new_size" . (cons (* 215.9 mm) (* 355.601 mm))) paper-alist))
-\paper {
-  #(set-paper-size "new_size")
-  top-margin = 15\mm
-  bottom-margin = 15\mm
-  left-margin = 15\mm
-  right-margin = 15\mm
-  ragged-last-bottom = ##f
-}
+\include "../../styles/global.ily"
+\include "../../styles/Full_Score.ily"
 
 \header {
   composer = "Rex Alphonse Reventar"
@@ -24,53 +13,53 @@ part-Pone-one = {
   \key c \major
   \time 6/8
   \clef treble
-  r1 |
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R2. |
+  R2. |
+  R2. |
+  R2. |
+  R2. |
   % 5
-  r1 |
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R2. |
+  R2. |
+  R2. |
+  R2. |
+  R2. |
   % 10
-  r1 |
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R2. |
+  R2. |
+  R2. |
+  R2. |
+  R2. |
   % 15
-  r1 |
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R2. |
+  R2. |
+  R2. |
+  R2. |
+  R2. |
   % 20
-  r1 |
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R2. |
+  R2. |
+  R2. |
+  R2. |
+  R2. |
   % 25
-  r1 |
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R2. |
+  R2. |
+  R2. |
+  R2. |
+  R2. |
   % 30
-  r1 |
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R2. |
+  R2. |
+  R2. |
+  R2. |
+  R2. |
   % 35
-  r1 |
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R2. |
+  R2. |
+  R2. |
+  R2. |
+  R2. |
   % 40
   e''4.\mf d''4. |
   e''4. c''4. |
@@ -91,27 +80,27 @@ part-Pone-one = {
   a'4. c''4. |
   % 55
   a'4. r4 r8 |
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R2. |
+  R2. |
+  R2. |
+  R2. |
   % 60
-  r1 |
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R2. |
+  R2. |
+  R2. |
+  R2. |
+  R2. |
   % 65
-  r1 |
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R2. |
+  R2. |
+  R2. |
+  R2. |
+  R2. |
   % 70
   e''4. d''4. |
   e''4. a'4. |
-  r1 |
-  r1 |
+  R2. |
+  R2. |
   g''4.\< f''4. |
   % 75
   g''4. gis''4. |
@@ -145,12 +134,12 @@ part-Pone-one = {
   e''4. e''4. |
   % 100
   e''4\f r8 r4 r8 |
-  r1 |
+  R2. |
   b'4\f r8 r4 r8 |
-  r1 |
+  R2. |
   e''4\ff r8 r4 r8 |
   % 105
-  r1 |
+  R2. |
   a''4\sffz r8 r4 r8 |
 }
 
@@ -158,45 +147,45 @@ part-Ptwo-one = {
   \key c \major
   \time 6/8
   \clef treble
-  r1 |
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R2. |
+  R2. |
+  R2. |
+  R2. |
+  R2. |
   % 5
-  r1 |
-  r1 |
-  r1 |
-  r1\p |
-  r1 |
+  R2. |
+  R2. |
+  R2. |
+  R2.\p |
+  R2. |
   % 10
-  r1 |
-  r1 |
+  R2. |
+  R2. |
   a''16 b''16 a''16 g''16 fis''16 e''16 a''8-! b''8-! a''8~-- |
   a''8 b''8 a''8~ a''8 b''8 a''8 |
   f''8 g''8 a''8~ a''8 g''8 f''8 |
   % 15
   e''16 f''16 g''16 f''16 e''16 f''16 d''4. |
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R2. |
+  R2. |
+  R2. |
+  R2. |
   % 20
   a''16 b''16 a''16 b''16 a''16 b''16 a''8 b''8 c'''8~ |
   c'''8 b''8 a''8~ a''8 b''8 g''8~ |
   g''8 a''8 f''8~ f''8 g''8 a''8~ |
   a''8 g''16 a''16 b''16 a''16 g''16 a''16 f''4 |
-  r1 |
+  R2. |
   % 25
-  r1 |
-  r1 |
-  r1 |
+  R2. |
+  R2. |
+  R2. |
   a''16 b''16 a''16 g''16 fis''16 e''16 a''8-! b''8-! a''8~-- |
   a''8 b''8 c'''8~ c'''8 b''8 d'''8~ |
   % 30
   d'''8 e'''8 e'''8 e'''8 e'''8 e'''8 |
   e'''4 r8 r4 r8 |
-  r1 |
+  R2. |
   r4 r8 \tuplet 9/6 { g'16\f a'16 g'16 f'16 g'16 a'16 b'16 c''16 d''16 } |
   <f' b' e'' >4 r8 r4 r8 |
   % 35
@@ -209,25 +198,25 @@ part-Ptwo-one = {
   <b' e'' a'' >8 <c'' f'' b'' >8 <b' e'' a'' >8 <g' c'' f'' >8 <a' d'' g''
   >8 <g' c'' f'' >8 |
   <e' b' e'' >8 r8 r8 r4 r8 |
-  r1 |
+  R2. |
   % 40
-  r1 |
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R2. |
+  R2. |
+  R2. |
+  R2. |
+  R2. |
   % 45
-  r1 |
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R2. |
+  R2. |
+  R2. |
+  R2. |
+  R2. |
   % 50
-  r1 |
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R2. |
+  R2. |
+  R2. |
+  R2. |
+  R2. |
   % 55
   r4 r8 \tuplet 8/6 { a'16\< b'16 a'16 g'16 a'16 b'16 c''16 d''16 } |
   <fis' b' e'' >4.\ff <e' a' d'' >4. |
@@ -247,13 +236,13 @@ part-Ptwo-one = {
   <e' a' d'' >4. <d' g' c'' >4. |
   <e' a' d'' >4. <b e' a' >4. |
   % 70
-  r1 |
-  r1 |
+  R2. |
+  R2. |
   <g' c'' f'' >4.\ff <fis' b' e'' >4. |
   <g' c'' f'' >4. <e' a' d'' >4. |
-  r1 |
+  R2. |
   % 75
-  r1 |
+  R2. |
   d''16\f e''16 d''16 c''16 b'16 a'16 d''8-! e''8-! d''8~-- |
   d''8 e''8 d''8~ d''8 e''8 d''8 |
   b'8 c''8 d''8~ d''8 c''8 b'8 |
@@ -285,12 +274,12 @@ part-Ptwo-one = {
   <e'' a'' b'' e''' >8 <e'' a'' b'' e''' >8 |
   % 100
   <e'' a'' b'' e''' >4\f r8 r4 r8 |
-  r1 |
+  R2. |
   <e' a' b' e'' >4\f r8 r4 r8 |
-  r1 |
+  R2. |
   <e'' a'' b'' e''' >4\ff r8 r4 r8 |
   % 105
-  r1 |
+  R2. |
   <e'' g'' b'' e''' >4\sffz r8 r4 r8 |
 }
 
@@ -298,75 +287,75 @@ part-Ptwo-two = {
   \key c \major
   \time 6/8
   \clef bass
-  r1 |
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R2. |
+  R2. |
+  R2. |
+  R2. |
+  R2. |
   % 5
-  r1 |
-  r1 |
-  r1 |
+  R2. |
+  R2. |
+  R2. |
   \clef treble
   d''16 e''16 d''16 c''16 b'16 a'16 d''8-! e''8-! d''8~-- |
   d''8 e''8 d''8~ d''8 e''8 d''8 |
   % 10
   b'8 c''8 d''8~ d''8 c''8 b'8 |
   a'16 b'16 c''16 b'16 a'16 b'16 g'4. |
-  r1 |
-  r1 |
-  r1 |
+  R2. |
+  R2. |
+  R2. |
   % 15
-  r1 |
+  R2. |
   d''16 e''16 d''16 e''16 d''16 e''16 d''8 e''8 f''8~ |
   f''8 e''8 d''8~ d''8 e''8 c''8~ |
   c''8 d''8 b'8~ b'8 c''8 d''8~ |
   d''8 c''16 d''16 e''16 d''16 c''16 d''16 a'4 |
   % 20
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R2. |
+  R2. |
+  R2. |
+  R2. |
   d''16 e''16 d''16 c''16 b'16 a'16 d''8-! e''8-! d''8~-- |
   % 25
   d''8 e''8 d''8~ d''8 e''8 d''8 |
   b'8 c''8 d''8~ d''8 c''8 b'8 |
   a'16 b'16 c''16 b'16 a'16 b'16 g'4. |
-  r1 |
-  r1 |
+  R2. |
+  R2. |
   % 30
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R2. |
+  R2. |
+  R2. |
+  R2. |
   \clef bass
   <g, d a >4 r8 r4 r8 |
   % 35
   r4 r8 r4 r8 |
   <g d' a' >4 r8 r4 r8 |
-  r1 |
+  R2. |
   <g, d a >4 r8 r4 r8 |
-  r1 |
+  R2. |
   % 40
-  r1 |
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R2. |
+  R2. |
+  R2. |
+  R2. |
+  R2. |
   % 45
-  r1 |
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R2. |
+  R2. |
+  R2. |
+  R2. |
+  R2. |
   % 50
-  r1 |
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R2. |
+  R2. |
+  R2. |
+  R2. |
+  R2. |
   % 55
-  r1 |
+  R2. |
   <a, e b >4. <g, d a >4. |
   <a, e b >4. <f, c g >4. |
   <g, d a >4. <e, b, fis >4. |
@@ -384,13 +373,13 @@ part-Ptwo-two = {
   <g, d a >4. <f, c g >4. |
   <g, d a >4. <d, a, e >4. |
   % 70
-  r1 |
-  r1 |
+  R2. |
+  R2. |
   <bes, f c' >4. <a, e b >4. |
   <bes, f c' >4. <g, d a >4. |
-  r1 |
+  R2. |
   % 75
-  r1 |
+  R2. |
   <f b e' >4. <e a d' >4. |
   <fis b e' >4. <d g c' >4. |
   <e a d' >4. <cis fis b >4. |
@@ -421,12 +410,12 @@ part-Ptwo-two = {
   <fis b e' >4. <fis b e' >4. |
   % 100
   <e b e' >4 r8 r4 r8 |
-  r1 |
+  R2. |
   <e, b, e >4 r8 r4 r8 |
-  r1 |
+  R2. |
   <e b e' >4 r8 r4 r8 |
   % 105
-  r1 |
+  R2. |
   <c, g, c >4 r8 r4 r8 |
 }
 
@@ -436,37 +425,37 @@ part-Pthree-one = {
   \clef treble
   e''4\f e''8 a'4 a'8 |
   d'4 d'8 g4 g8 |
-  r1 |
-  r1 |
+  R2. |
+  R2. |
   e''4\ff e''8 a'4 a'8 |
   % 5
   d'4 d'8 g4 g8 |
   <g d' a' e'' >8\sffz r8 r8 r4 r8 |
-  r1 |
-  r1 |
-  r1 |
+  R2. |
+  R2. |
+  R2. |
   % 10
-  r1 |
-  r1 |
+  R2. |
+  R2. |
   e''8-!\p r8 r8 e''8-! r8 r8 |
   e''8-! r8 r8 e''8-! r8 r8 |
   e''8-! r8 r8 e''8-! r8 r8 |
   % 15
   e''8-! e''8-! r8 r4 r8 |
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R2. |
+  R2. |
+  R2. |
+  R2. |
   % 20
   <a' e'' >8-!\p r8 r8 <a' e'' >8-! r8 r8 |
   <a' e'' >8-! r8 r8 <a' e'' >8-! r8 r8 |
   <a' e'' >8-! r8 r8 <a' e'' >8-! r8 r8 |
   <a' e'' >8-! <a' e'' >8-! r8 r4 r8 |
-  r1 |
+  R2. |
   % 25
-  r1 |
-  r1 |
-  r1 |
+  R2. |
+  R2. |
+  R2. |
   <d' a' e'' >8-!\p\< r8 r8 <d' a' e'' >8-! r8 r8 |
   <d' a' e'' >8-! r8 r8 <d' a' e'' >8-! r8 r8 |
   % 30
@@ -475,31 +464,31 @@ part-Pthree-one = {
   r8 |
   e''4\f e''8 a'4 a'8 |
   d'4 d'8 g4 g8 |
-  r1 |
+  R2. |
   % 35
-  r1 |
+  R2. |
   e''4\ff e''8 a'4 a'8 |
   d'4 d'8 g4 g8 |
   g4\p g8 g4 g8 |
   g4 g8 g4 r8 |
   % 40
-  r1 |
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R2. |
+  R2. |
+  R2. |
+  R2. |
+  R2. |
   % 45
-  r1 |
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R2. |
+  R2. |
+  R2. |
+  R2. |
+  R2. |
   % 50
-  r1 |
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R2. |
+  R2. |
+  R2. |
+  R2. |
+  R2. |
   % 55
   e''8-!\< a'8-! d'8-! e''8-! a'8-! d'8-! |
   <a' e'' >8-!\ff <d' a' >8-! <a' e'' >8-! <d' a' >8-! <a' e'' >8-! <d' a'
@@ -520,12 +509,12 @@ part-Pthree-one = {
   <d' a' >8-! <a' e'' >8-! <d' a' >8-! <a' e'' >8-! <d' a' >8-! <a' e'' >8-! |
   <d' a' >8-! <a' e'' >8-! <d' a' >8-! <a' e'' >8-! <d' a' >8-! <a' e'' >8-! |
   % 70
-  r1 |
-  r1 |
+  R2. |
+  R2. |
   <d' a' >8-!\ff <a' e'' >8-! <d' a' >8-! <a' e'' >8-! <d' a' >8-! <a' e''
   >8-! |
   <d' a' >8-! <a' e'' >8-! <d' a' >8-! <a' e'' >8-! <d' a' >8-! <a' e'' >8-! |
-  r1 |
+  R2. |
   % 75
   e''8-!\p\< a'8-! d'8-! e''8-! a'8-! d'8-! |
   g8-!\f d'8-! g8-! e''8-! a'8-! e''8-! |
@@ -559,8 +548,8 @@ part-Pthree-one = {
   % 100
   e''4\f e''8 a'4 a'8 |
   d'4 d'8 g4 g8 |
-  r1 |
-  r1 |
+  R2. |
+  R2. |
   e''4\ff e''8 a'4 a'8 |
   % 105
   d'4 d'8 g4 g8 |
@@ -571,15 +560,15 @@ part-Pfour-one = {
   \key c \major
   \time 6/8
   \clef treble
-  r1 |
-  r1 |
+  R2. |
+  R2. |
   e''4\f e''8 a'4 a'8 |
   d'4 d'8 g4 g8 |
   e''4\ff e''8 a'4 a'8 |
   % 5
   d'4 d'8 g4 g8 |
   <g d' a' e'' >8\sffz r8 r8 r4 r8 |
-  r1 |
+  R2. |
   r4 r8 <d' a' >8-!\p r8 r8 |
   r4 r8 <d' a' >8-! r8 r8 |
   % 10
@@ -609,8 +598,8 @@ part-Pfour-one = {
   % 30
   r4 r8 <d' a' >8-! e''8-! g8-! |
   e''8-!\ff d'8-! g8-! e''8-! d'8-! g8-! |
-  r1 |
-  r1 |
+  R2. |
+  R2. |
   e''4\f e''8 a'4 a'8 |
   % 35
   d'4 d'8 g4 g8 |
@@ -664,30 +653,30 @@ part-Pfour-one = {
   g8-!\p d'8-! a'8-! e''8-! a'8-! d'8-! |
   % 75
   e''8-!\< a'8-! d'8-! e''8-! a'8-! d'8-! |
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R2. |
+  R2. |
+  R2. |
+  R2. |
   % 80
   <a' e'' >8\f <a' e'' >4 <a' e'' >8 <a' e'' >4 |
   <a' e'' >8 <a' e'' >4 <a' e'' >8 <a' e'' >4 |
   <a' e'' >8 <a' e'' >4 <a' e'' >8 <a' e'' >4 |
   <a' e'' >8 <a' e'' >4 <a' e'' >8 <a' e'' >8 r8 |
-  r1 |
+  R2. |
   % 85
-  r1 |
-  r1 |
-  r1 |
+  R2. |
+  R2. |
+  R2. |
   <a' e'' >8\f <a' e'' >4 <a' e'' >8 <a' e'' >4 |
   <a' e'' >8 <a' e'' >4 <a' e'' >8 <a' e'' >4 |
   % 90
   <a' e'' >8 <a' e'' >4 <a' e'' >8 <a' e'' >4 |
   <a' e'' >8 <a' e'' >4 <a' e'' >8 <a' e'' >8 r8 |
-  r1 |
-  r1 |
-  r1 |
+  R2. |
+  R2. |
+  R2. |
   % 95
-  r1 |
+  R2. |
   <a' e'' >8\f <a' e'' >4 <a' e'' >8 <a' e'' >4 |
   <a' e'' >8 <a' e'' >4 <a' e'' >8 <a' e'' >4 |
   <a' e'' >8 <a' e'' >4 <a' e'' >8 <a' e'' >4 |
@@ -695,8 +684,8 @@ part-Pfour-one = {
   % 100
   e''4\f e''8 a'4 a'8 |
   d'4 d'8 g4 g8 |
-  r1 |
-  r1 |
+  R2. |
+  R2. |
   e''4\ff e''8 a'4 a'8 |
   % 105
   d'4 d'8 g4 g8 |
@@ -709,13 +698,13 @@ part-Pfive-one = {
   \clef alto
   a'4\f a'8 d'4 d'8 |
   g4 g8 c4 c8 |
-  r1 |
-  r1 |
+  R2. |
+  R2. |
   a'4\ff a'8 d'4 d'8 |
   % 5
   g4 g8 c4 c8 |
   <c g d' a' >8\sffz r8 r8 r4 r8 |
-  r1 |
+  R2. |
   <c g >8-!\p r8 r8 r4 r8 |
   <c g >8-! r8 r8 r4 r8 |
   % 10
@@ -747,9 +736,9 @@ part-Pfive-one = {
   a'8-!\ff g8-! c8-! a'8-! g8-! c8-! |
   a'4\f a'8 d'4 d'8 |
   g4 g8 c4 c8 |
-  r1 |
+  R2. |
   % 35
-  r1 |
+  R2. |
   a'4\ff a'8 d'4 d'8 |
   g4 g8 c4 c8 |
   c4-!\p c8-! c4-! c8-! |
@@ -829,7 +818,7 @@ part-Pfive-one = {
   a'8-!\< d'8-! a'8-! a'8-! d'8-! a'8-! |
   % 100
   a'4.\sf r4 r8 |
-  r1 |
+  R2. |
   a'4\f a'8 d'4 d'8 |
   g4 g8 c4 c8 |
   a'4\ff a'8 d'4 d'8 |
@@ -842,8 +831,8 @@ part-Psix-one = {
   \key c \major
   \time 6/8
   \clef bass
-  r1 |
-  r1 |
+  R2. |
+  R2. |
   a4\f a8 d4 d8 |
   g,4 g,8 c,4 c,8 |
   a4\ff a8 d4 d8 |
@@ -880,8 +869,8 @@ part-Psix-one = {
   % 30
   c,8 g,8 c,8 a8 d8 a8 |
   a8\ff d8 a8 a8 d8 a8 |
-  r1 |
-  r1 |
+  R2. |
+  R2. |
   a4\f a8 d4 d8 |
   % 35
   g,4 g,8 c,4 c,8 |
@@ -890,23 +879,23 @@ part-Psix-one = {
   c,2.~\fp |
   c,4. r8 r8 r8 |
   % 40
-  r1 |
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R2. |
+  R2. |
+  R2. |
+  R2. |
+  R2. |
   % 45
-  r1 |
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R2. |
+  R2. |
+  R2. |
+  R2. |
+  R2. |
   % 50
-  r1 |
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R2. |
+  R2. |
+  R2. |
+  R2. |
+  R2. |
   % 55
   <c, g, >8\< <c, g, >8 <c, g, >8 <c, g, >8 <c, g, >8 <c, g, >8 |
   a4-!\ff a8-! a4-! a8-! |
@@ -926,11 +915,11 @@ part-Psix-one = {
   a4-! a8-! a4-! a8-! |
   a4-! a8-! a4-! a8-! |
   % 70
-  r1 |
-  r1 |
+  R2. |
+  R2. |
   a4-!\ff a8-! a4-! a8-! |
   a4-! a8-! a4-! a8-! |
-  r1 |
+  R2. |
   % 75
   c,4-!\p\< c,8-! c,4-! c,8-! |
   c,4.~\f c,8 c,8 c,8 |
@@ -963,7 +952,7 @@ part-Psix-one = {
   g,8\< g,8 g,8 g,8 g,8 g,8 |
   % 100
   g,4.\sf r4 r8 |
-  r1 |
+  R2. |
   a4\f a8 d4 d8 |
   g,4 g,8 c,4 c,8 |
   a4\ff a8 d4 d8 |
@@ -976,34 +965,34 @@ part-Pseven-one = {
   \key c \major
   \time 6/8
   \clef bass
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R2. |
+  R2. |
+  R2. |
+  R2. |
   a,4\ff a,8 a,4 a,8 |
   % 5
   a,4 a,8 a,4 a,8 |
   <a, d g >8\sffz r8 r8 r4 r8 |
-  r1 |
-  r1 |
-  r1 |
+  R2. |
+  R2. |
+  R2. |
   % 10
-  r1 |
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R2. |
+  R2. |
+  R2. |
+  R2. |
+  R2. |
   % 15
-  r1 |
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R2. |
+  R2. |
+  R2. |
+  R2. |
+  R2. |
   % 20
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R2. |
+  R2. |
+  R2. |
+  R2. |
   a,8-!\p a,8-! a,8-! a,8-! a,8-! a,8-! |
   % 25
   a,8-! a,8-! a,8-! a,8-! a,8-! a,8-! |
@@ -1014,33 +1003,33 @@ part-Pseven-one = {
   % 30
   g8-! g8-! g8-! g8-! g8-! g8-! |
   g8-!\ff g8-! g8-! g8-! g8-! g8-! |
-  r1 |
-  r1 |
-  r1 |
+  R2. |
+  R2. |
+  R2. |
   % 35
-  r1 |
+  R2. |
   a,4\ff a,8 a,4 a,8 |
   a,4 a,8 a,4 a,8 |
   g2.~\fp |
   g4. r8 r8 r8 |
   % 40
-  r1 |
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R2. |
+  R2. |
+  R2. |
+  R2. |
+  R2. |
   % 45
-  r1 |
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R2. |
+  R2. |
+  R2. |
+  R2. |
+  R2. |
   % 50
-  r1 |
-  r1 |
-  r1 |
-  r1 |
-  r1 |
+  R2. |
+  R2. |
+  R2. |
+  R2. |
+  R2. |
   % 55
   e,8\< e,8 e,8 e,8 e,8 e,8 |
   e,4-!\ff e,8-! e,4-! e,8-! |
@@ -1060,11 +1049,11 @@ part-Pseven-one = {
   e,4-! e,8-! e,4-! e,8-! |
   e,4-! e,8-! e,4-! e,8-! |
   % 70
-  r1 |
-  r1 |
+  R2. |
+  R2. |
   e,4-!\ff e,8-! e,4-! e,8-! |
   e,4-! e,8-! e,4-! e,8-! |
-  r1 |
+  R2. |
   % 75
   r4 r8 a4-!\p\< a8-! |
   a4.~\f a8 a8 a8 |
@@ -1097,9 +1086,9 @@ part-Pseven-one = {
   g,8\< g,8 g,8 g,8 g,8 g,8 |
   % 100
   g,4.\sf r4 r8 |
-  r1 |
-  r1 |
-  r1 |
+  R2. |
+  R2. |
+  R2. |
   e,4\ff e,8 e,4 e,8 |
   % 105
   e,4 e,8 e,4 e,8 |
@@ -1114,39 +1103,51 @@ part-Pseven-one = {
       midiInstrument = "flute"
     }\part-Pone-one
 
+    \tag #'(ilarchi piano) \new PianoStaff \with {
+      instrumentName = "Piano"
+      shortInstrumentName = "Pno."
+      midiInstrument = "acoustic grand"
+      connectArpeggios = ##t
+      \mergeDifferentlyDottedOn
+      \mergeDifferentlyHeadedOn
+    } <<
+      \new Staff = "1" \part-Ptwo-one
+      \new Staff = "2" \part-Ptwo-two
+    >>
+
     \new StaffGroup <<
       \new GrandStaff <<
         \tag #'(archi violin_i) \new Staff \with {
           instrumentName = "Violin 1"
           shortInstrumentName = "Vl. 1"
           midiInstrument = "violin"
-        } \part-Ptwo-one
+        } \part-Pthree-one
 
         \tag #'(archi violin_ii) \new Staff \with {
           instrumentName = "Violin 2"
           shortInstrumentName = "Vl. 2"
           midiInstrument = "violin"
-        } \part-Pthree-one
+        } \part-Pfour-one
       >>
 
       \tag #'(archi viola) \new Staff \with {
         instrumentName = "Viola"
         shortInstrumentName = "Va."
         midiInstrument = "viola"
-      } \part-Pfour-one
+      } \part-Pfive-one
 
       \new GrandStaff <<
         \tag #'(archi cello) \new Staff \with {
           instrumentName = "Violoncello"
           shortInstrumentName = "Vc."
           midiInstrument = "cello"
-        } \part-Pfive-one
+        } \part-Psix-one
 
         \tag #'(archi cbass) \new Staff \with {
           instrumentName = "Contrabass"
           shortInstrumentName = "Cb."
           midiInstrument = "contrabass"
-        } \part-Psix-one
+        } \part-Pseven-one
       >>
     >>
   >>
