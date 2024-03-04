@@ -1,13 +1,13 @@
 % Automatically generated from a musicxml file.
 \version "2.24.0"
 \include "../../styles/global.ily"
-\include "../../styles/Full_Score.ily"
 
-\header {
+p_one_header = \header {
   composer = "Rex Alphonse Reventar"
   lyricist = "Bravura Arcom"
   subtitle = "Bravura Curriculum 1"
   title = "Piece 1"
+  tagline = ##f
 }
 
 part-Pone-one = {
@@ -541,9 +541,9 @@ part-Psix-one = {
   c1 | \bar "|."
 }
 
-\score {
+p_one_score = {
   <<
-    \tag #'(flute) \new Staff \with {
+    \tag #'(ilarchi flute) \new Staff \with {
       instrumentName = "Flute"
       shortInstrumentName = "Fl."
       midiInstrument = "flute"

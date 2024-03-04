@@ -281,7 +281,7 @@ ex_one_header = \header {
 ex_one_score = {
   \new StaffGroup <<
     \new GrandStaff <<
-      \tag #'(archi violin_i) \new Staff \with {
+      \tag #'violin_i \new Staff \with {
         instrumentName = "Violin 1"
         shortInstrumentName = "Vl. 1"
         midiInstrument = "violin"
