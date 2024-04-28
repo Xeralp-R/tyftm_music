@@ -1,7 +1,7 @@
 \version "2.22.1"
 
 #(set-global-staff-size 20)
-#(set-default-paper-size "ansi a")
+#(set-default-paper-size "arch a")
 
 \include "lyricstuff.ily"
 
@@ -19,6 +19,7 @@
   #(define fonts
      (set-global-fonts
       #:roman "Libre Bodoni"
+      #:typewriter "Cardo"
       #:music "Beethoven"
       #:brace "Beethoven"
       #:factor (/ staff-height pt 20)

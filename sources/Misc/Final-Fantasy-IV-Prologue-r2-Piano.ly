@@ -95,7 +95,7 @@ part-Pone-one = {
         b''4-^ r4 r4 \tuplet 3/2 { b''8 b''8 b''8 } |
         c'''4-^ r4 r4 \tuplet 3/2 { c'''8 c'''8 c'''8 } |
         d'''2.-^ \tuplet 3/2 { d'''8 d'''8 d'''8 } |
-        ees'''4-^ r4 ees'4-^\sffz r4 |
+        ees'''4-^ r4 ees'4-^\markup{ \dynamic "sffz" } r4 |
         r1 |
     % 55
     }
@@ -169,7 +169,7 @@ part-Pone-one = {
         e''4-^ r4 r4 \tuplet 3/2 { e''8 e''8 e''8 } |
         f''4-^ r4 r4 \tuplet 3/2 { f''8 f''8 f''8 } |
         f''2.-^ \tuplet 3/2 { f''8 f''8 f''8 } |
-        g''4-^ r4 g4-^\sffz r4 |
+        g''4-^ r4 g4-^\markup{ \dynamic "sffz" } r4 |
         r1 |
     % 55
     }
@@ -243,7 +243,7 @@ part-Pone-one = {
         e'4-^ r4 r4 \tuplet 3/2 { e'8 e'8 e'8 } |
         f'4-^ r4 r4 \tuplet 3/2 { f'8 f'8 f'8 } |
         f'2.-^ \tuplet 3/2 { f'8 f'8 f'8 } |
-        g'4-^ r4 ees4-^\sffz r4 |
+        g'4-^ r4 ees4-^\markup{ \dynamic "sffz" } r4 |
         r1 |
     % 55
     }
@@ -317,7 +317,7 @@ part-Pone-one = {
         b,4-^ r4 r4 \tuplet 3/2 { b,8 b,8 b,8 } |
         c4-^ r4 r4 \tuplet 3/2 { c8 c8 c8 } |
         d2.-^ \tuplet 3/2 { d8 d8 d8 } |
-        ees4-^ r4 ees,4-^\sffz r4 |
+        ees4-^ r4 ees,4-^\markup{ \dynamic "sffz" } r4 |
         r1 |
     % 55
     }
@@ -391,7 +391,7 @@ part-Pone-one = {
         gis''4 \tuplet 3/2 { a''8 a''8 a''8 } a''2~ |
         a''4 \tuplet 3/2 { b''8 b''8 b''8 } b''4 \tuplet 3/2 { b''8 b''8 b''8 
         } |
-        c'''4-^ r4 c'4-^\sffz r4 |
+        c'''4-^ r4 c'4-^\markup{ \dynamic "sffz" } r4 |
         r1 |
     % 55
     }
@@ -545,7 +545,7 @@ part-Pone-one = {
         g'' c''' >8 } <c'' g'' c''' >2-^ |
         <bes'' d''' >2\tremolo f''2\tremolo <bes'' d''' >2\tremolo 
         f''2\tremolo |
-        <ees'' g'' bes'' ees''' >4-^ r4 ees'4-^\sffz r4 |
+        <ees'' g'' bes'' ees''' >4-^ r4 ees'4-^\markup{ \dynamic "sffz" } r4 |
         r1 |
     % 55
     }

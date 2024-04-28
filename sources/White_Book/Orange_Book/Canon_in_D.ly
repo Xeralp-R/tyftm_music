@@ -1,6 +1,6 @@
-\version "2.22.0"
+\version "2.24.0"
 
-\include "../../styles/global.ily"
+\include "../styles/global.ily"
 
 right = {
   \clef treble

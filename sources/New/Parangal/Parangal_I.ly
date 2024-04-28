@@ -1,5 +1,5 @@
 % Automatically generated from a musicxml file.
-\version "2.22.1"
+\version "2.24.0"
 
 \include "../../../styles/global.ily"
 \include "../../../styles/final.ily"
@@ -205,15 +205,21 @@ parangal_i_solo = <<
 >>
 
 \book {
-  \header {
-    title = "PARANGAL"
-    subtitle = "Concerto for Piano and Symphonic Band"
-    composer = "Antonino Buenaventura"
-    tagline = ##f
-  }
-  \score {
-    \parangal_i_solo
+  \bookpart {
+    \header {
+      title = "PARANGAL"
+      subtitle = "Concerto for Piano and Symphonic Band"
+      composer = "Antonino Buenaventura"
+      tagline = ##f
+    }
+    \score {
+      \parangal_i_solo
 
-    \layout {}
+      \layout {}
+    }
+  }
+
+  \bookpart {
+
   }
 }

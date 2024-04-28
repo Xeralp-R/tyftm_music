@@ -1,6 +1,6 @@
-\version "2.22.1"
+\version "2.24.0"
 
-\include "../../styles/global.ily"
+\include "../styles/global.ily"
 
 CanCanRightHand =  {
   \clef "treble"
@@ -234,12 +234,12 @@ CanCanLeftHand =  {
   }
   \alternative {
     {
-      \acciaccatura s8 e8  <gis d'>8  <gis d'>8  <gis d'>8  |
+      \grace {s8} e8  <gis d'>8  <gis d'>8  <gis d'>8  |
       a8  <cis' g'>8  <cis' g'>8  <cis' g'>8  |
     }
     % 25
     {
-      \acciaccatura s8 a,8  <g a cis'>8  <g a cis'>8  <g a cis'>8 |
+      \grace {s8} a,8  <g a cis'>8  <g a cis'>8  <g a cis'>8 |
     }
   }
   <d a>8 -.  <d a>8 -.  <d a>4 |

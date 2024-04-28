@@ -7,9 +7,7 @@
             "label": "Run lilypond",
             "type": "shell",
             "command": "lilypond",
-            "args": [
-                "${file}"
-            ],
+            "args": ["-o", "${workspaceFolder}/exports", "${file}"],
             "problemMatcher": [],
             "group": {
                 "kind": "build",

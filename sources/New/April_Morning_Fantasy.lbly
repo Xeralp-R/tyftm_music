@@ -13,7 +13,7 @@ p> \\ctr \\k4f \\t4/4 sp
     \hideNotes $11 \! ) \unhideNotes; ns 
 
 1> \\rel <aes, ees'> <aes ees'>; r <c' ees aes> q <b d aes'> q;
-    <b d aes'> <bes des aes'> q <bes des g> q; np
+1> <b d aes'> <bes des aes'> q <bes des g> q; np
 2> 2 2; 8 4 4 4 8; r1m; np
 3> $1 ^\> --; $2 -- \!; \\ctr $3; $7 ~; ny
 
@@ -28,8 +28,8 @@ p> \\ctr \\k4f \\t4/4 sp
 3> $9 ~; ns
 
 1> <aes, ees> \\rel <c' ees aes> q <ees c aes> q; 
-    <ees c aes> <d aes' ces> <d aes' ces> <des g bes> <des g bes>;
-    r <aes c f> q q q; np
+1> <ees c aes> <d aes' ces> <d aes' ces> <des g bes> <des g bes>;
+1> r <aes c f> q q q; np
 2> 8 4 4 4 8; 8 4 4 4 8; 8 4 4 4 4 8; np
 3> \clef treble $2; $5 ~; \clef bass $11; nv
 
@@ -48,7 +48,7 @@ p> \\ctr \\k4f \\t4/4 sp
 3> $3 ~; $10 ~; ns
 
 1> r \\rel <bes des fes> q q q; r <aes c ees> q q q; 
-    r <fes bes des> q q <f bes des>; np
+1> r <fes bes des> q q <f bes des>; np
 2> 8 4 4 4 8; 8 4 4 4 8; 8 4 4 4 4 8; np
 3> nv
 
@@ -59,14 +59,14 @@ p> \\ctr \\k4f \\t4/4 sp
 ---
 
 1> \\rel bes'' <bes, des> <c ees> <des f> <ees g> <f aes> <g bes> <aes c>;
-    d <des, f> <ees g> <f aes> <g bes> <aes c> <bes des> <c ees>;
-    <des fes> <g, ees'> <des' fes> <g, ees'> <des' fes> <g, ees'> 
-    <des' fes> <g, ees'>; np
+1> d <des, f> <ees g> <f aes> <g bes> <aes c> <bes des> <c ees>;
+1> <des fes> <g, ees'> <des' fes> <g, ees'> <des' fes> <g, ees'> 
+1> <des' fes> <g, ees'>; np
 2> 8r8; 8r8; 8r8;
 3> $1 \mp; $2 (; $9 ) \cresc ; $10 (; $17 ); $18 ( ; $24 ); ns 
 
 1> r \\rel <bes des g> q q q; r <aes d f> q q q; 
-    r \\rel ees, bes' ees g bes ees g; np
+1> r \\rel ees, bes' ees g bes ees g; np
 2> 8 4 4 4 8; 8 4 4 4 8; 8r8; np
 3> $12 (; $18 ); nv 
 
@@ -75,3 +75,29 @@ p> \\ctr \\k4f \\t4/4 sp
 3 ny
 
 ---
+
+1> \\rel <des'' f! > <g, ees'> <des' f> <g, ees'> <des' f> <g, ees'> <des' f> 
+1> <g, ees'>; f' <g, ees' g> <fis fis'>; fis' <eis, bes' eis>; np
+2> 8r8; 2 4 4; 2 2; np
+3> \voiceOne $1 (; $8 ); $9 \f \(; $13 ~; nv 
+
+1> \\nx1l r \\rel aes'' c ees s; r fis, b d s; np 
+2> 8r4 2; 8r4 2; np 
+3> $2 (; $4 ) ~; $7 (; $9 ); ns
+
+1> r \\rel ees ces ees f g ces' ees; 
+1> r r <c, ees aes c> q q q ;
+1> <c ees aes c> <ces d aes' ces> q <bes des g bes> q ; np
+2> 8r8; 8 4 4 4 8; 8 4 4 4 8; np
+3> $2 (; $8 ); $13 ~; nv
+
+1> \\nx1; r <aes,, aes,>  q; <aes,, aes,>; np
+2> 8 2. 8; 1; np
+3> $2 ~; $3 ~; ny 
+
+1> \\rel <eis'' eis'> <ees ees'> <c' c'> <g g'> <bes bes'> <aes aes'> <g g'> 
+1> <fis fis'>; <f! b! f'!> <e b' e>; aes; np 
+2> 8r8; 2 2; 1; np 
+3> $10 \); nv 
+
+--- 
