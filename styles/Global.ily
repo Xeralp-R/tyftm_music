@@ -1,3 +1,5 @@
+\version "2.22.1"
+
 newline = {}
 newpage = {}
 
@@ -16,9 +18,39 @@ scaleStaff = #(define-music-function (scaleFac) (number?)
      (list lp rp)))
 
 bracketify = #(define-music-function (arg) (ly:music?)
-                (_i "Tag @var{arg} to be parenthesized.")
+                (_i "Tag @var{arg} to be bracketized.")
                 #{
-                  \once \override ParenthesesItem.stencils = #bracket-stencils
+                  \once \override Parentheses.stencils = #bracket-stencils
+                  \parenthesize $arg
+                #})
+
+bracketify-alt = #(define-music-function (size padding bold arg) (number? number? boolean? ly:music?)
+                (_i "Tag @var{arg} to be bracketed with a given font size.")
+                #{
+                  \once \override Parentheses.padding = #padding
+                  \once \override Parentheses.stencils = #(lambda (grob)
+   (let ((lp (if bold 
+                (grob-interpret-markup grob (markup #:fontsize size #:translate (cons -0.3 -0.5) "[")) 
+                (grob-interpret-markup grob (markup #:fontsize size #:translate (cons -0.75 -1.3) #:typewriter "["))
+                )
+          )
+         (rp (if bold 
+                (grob-interpret-markup grob (markup #:fontsize size #:translate (cons -0.3 -0.5) "]")) 
+                (grob-interpret-markup grob (markup #:fontsize size #:translate (cons -0.75 -1.3) #:typewriter "]"))
+                ))
+         )
+     (list lp rp)))
+                  \parenthesize $arg 
+                #})
+
+bracket-rest =  #(define-music-function (arg) (ly:music?)
+                (_i "Special bracketing function just for rests. Tag @var{arg} to be bracketized.")
+                #{
+                  \once \override Parentheses.padding = #0.75
+                  \once \override Parentheses.stencils = #(lambda (grob)
+   (let ((lp (grob-interpret-markup grob (markup #:fontsize 11 #:translate (cons -0.75 -1.3) #:typewriter "[")))
+         (rp (grob-interpret-markup grob (markup #:fontsize 11 #:translate (cons -0.75 -1.3) #:typewriter "]"))))
+     (list lp rp)))
                   \parenthesize $arg
                 #})
 
@@ -67,10 +99,13 @@ blank_page = \bookpart {
   }
 }
 
-tocSection =
-#(define-music-function (label text) (symbol-list-or-symbol? markup?)
-   (add-toc-item! 'tocSectionMarkup text label))
+\layout {
+  \context {
+    \Score {
+      \set rehearsalMarkFormatter = #format-mark-box-alphabet
+      \set countPercentRepeats = ##t
+    }
+  }
+}
 
-tocGroup =
-#(define-music-function (label text) (symbol-list-or-symbol? markup?)
-   (add-toc-item! 'tocGroupMarkup text label))
+sffz = \markup { \dynamic "sffz" }
