@@ -6,6 +6,7 @@
 \include "Sacro_Monte.ly"
 \include "Canon_in_D.ly"
 \include "Come_Back_to_Sorrento.ly"
+\include "Game_of_Thrones.ly"
 
 \book {
   \bookpart {
@@ -26,4 +27,5 @@
   \bookpart { \Sacro_Monte            }
   \bookpart { \Canon_in_D             }
   \bookpart { \Come_Back_to_Sorrento  }
+  \bookpart { \Game_of_Thrones        }
 }
