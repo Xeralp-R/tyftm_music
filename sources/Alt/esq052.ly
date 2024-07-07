@@ -1,23 +1,13 @@
 % Automatically generated from a musicxml file.
 \version "2.24.0"
-
-#(set-global-staff-size 19.8425)
-
-#(set! paper-alist 
-(cons '("new_size" . (cons (* 215.9 mm) (* 279.4 mm))) paper-alist))
-\paper {
-    #(set-paper-size "new_size")
-    top-margin = 15\mm
-    bottom-margin = 15\mm
-    left-margin = 15\mm
-    right-margin = 15\mm
-    ragged-last-bottom = ##f
-}
+\include "../../styles/global.ily"
+\include "../../styles/Pocket_Score.ily"
 
 \header {
-    composer = "Composer / arranger"
-    subtitle = "Subtitle"
-    title = "esq052"
+    composer = "Rex Alphonse Reventar"
+    subtitle = "For 3 Trombones"
+    title = "Aequali"
+    tagline = ##f
 }
 
 part-Pone-one = {
@@ -81,7 +71,7 @@ part-Pone-one = {
     c''4 bes'4 a'4 g'4 |
     f'4 g'4 g'2 |
     f'4 g'4 g'2 |
-    g'1 |
+    g'1 | \bar "|."
 }
 
 part-Ptwo-one = {
@@ -145,7 +135,7 @@ part-Ptwo-one = {
     a4 f4 g2~ |
     g4 a4 g4 f4 |
     e4 a4 g4 f4 |
-    e1 |
+    e1 | \bar "|."
 }
 
 part-Pthree-one = {
@@ -209,12 +199,20 @@ part-Pthree-one = {
     c2 g,2~ |
     g,4 d4 a,4 c4 |
     g,4 d4 a,4 c4 |
-    g,1 |
+    g,1 | \bar "|."
 }
 
 \score {
-    \new Staff \part-Pone-one
-    \new Staff \part-Ptwo-one
-    \new Staff \part-Pthree-one
+    \new StaffGroup <<
+    \new Staff \with {
+        instrumentName = "Alto Trombone"
+    } \part-Pone-one
+    \new Staff \with {
+        instrumentName = "Tenor Trombone"
+    } \part-Ptwo-one
+    \new Staff \with {
+        instrumentName = "Bass Trombone"
+    } \part-Pthree-one
+    >>
     \layout {}
 }
