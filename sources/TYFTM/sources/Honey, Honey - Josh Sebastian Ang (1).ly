@@ -1,20 +1,8 @@
 % Automatically generated from a musicxml file.
 \version "2.24.0"
+\include "../styles/Global.ily"
 
-#(set-global-staff-size 10.206)
-
-#(set! paper-alist 
-(cons '("new_size" . (cons (* 296.926 mm) (* 210.058 mm))) paper-alist))
-\paper {
-    #(set-paper-size "new_size")
-    top-margin = 15\mm
-    bottom-margin = 40\mm
-    left-margin = 15\mm
-    right-margin = 15\mm
-    ragged-last-bottom = ##f
-}
-
-\header {
+honey_honey_header = \header {
     composer = "Benny Andersson, Björn Ulvaeus"
     title = "Honey, Honey"
 }
@@ -27,7 +15,7 @@ part-Pone-one = {
     e''4. e''4 fis''8 e''4 |
     a'1 |
     a'8-.\ff a'8-. a'8-. a'8-. a'4-! b'4-! |
-    gis'1~-\mark "A" \p |
+    gis'1~ \mark "A" \p |
 % 5
     gis'1 |
     cis''1~ |
@@ -48,7 +36,7 @@ part-Pone-one = {
     a'8-. a'8-. a'8-. a'8-. a'4-! b'4-! |
 % 20
     a'8-.\pp a'8-.\< a'8-. a'8-. a'4-! b'4-! |
-    e''1~-\mark "B" \mf |
+    e''1~ \mark "B" \mf |
     e''4. e''4 fis''8 e''4 |
     a'1 |
     cis''2 b'2 |
@@ -65,7 +53,7 @@ part-Pone-one = {
     e''1 |
     cis''1 |
 % 35
-    a'1-\mark "C" \> |
+    a'1 \mark "C" \> |
     b'1 |
     c''1 |
     cis''1 |
@@ -73,7 +61,7 @@ part-Pone-one = {
 % 40
     a'1 |
     b'1-\markup { "Vamp Till Ready" } |
-    a'1-\mark "D" |
+    a'1 \mark "D" |
     e''1 |
     cis''2 b'2 |
 % 45
@@ -89,7 +77,7 @@ part-Pone-one = {
     e''2 d''4 cis''4 |
     b'4 a'4 gis'4 fis''8 e''8 |
 % 55
-    g''8-\mark "E" g''8 fis''8 g''8 r8 fis''8 fis''8 g''8~ |
+    g''8 \mark "E" g''8 fis''8 g''8 r8 fis''8 fis''8 g''8~ |
     g''8 a''8~ a''4~ a''4 r8 g''8 |
     fis''8 fis''8 fis''8 e''8~ e''8 fis''4 d''8 |
     g''1 |
@@ -111,7 +99,7 @@ part-Pone-one = {
     r4 e''8 e''8 dis''8 e''4 gis''8 |
     gis''4 e''8 e''8 dis''8 e''4 gis''8 |
     e''4.-\markup { "Vamp Till Ready" } e''8 dis''4. dis''8 |
-    e''1~-\mark "F" |
+    e''1~ \mark "F" |
 % 75
     e''4. e''4 fis''8 e''4 |
     a'1 |
@@ -129,7 +117,7 @@ part-Pone-one = {
     e''1 |
     cis''1 |
     a'1\> |
-    b'1-\mark "G" |
+    b'1 \mark "G" |
 % 90
     cis''1~ |
     cis''1 |
@@ -150,7 +138,7 @@ part-Pone-one = {
     d''8 fis'8 g'8 gis'8~ gis'2 |
 % 105
     gis'4.-\markup { "Vamp Till Ready" } g'8~ g'2 |
-    gis'1~-\mark "H" \p |
+    gis'1~ \mark "H" \p |
     gis'1 |
     cis''1~ |
     cis''1 |
@@ -2603,7 +2591,7 @@ part-Ponefour-one = {
         \context Voice = "voiceone" { \voiceOne 
             \key c \major
             \time 4/4
-            \clef percussiong''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
+            \clef percussion g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
             g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
             g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
             c''8 c''8 c''8 c''8 c''4 c''4 |
@@ -2791,7 +2779,8 @@ part-Ponefour-one = {
     R1 |
 }
 
-\score {
+honey_honey = {
+  <<
     \new Staff \part-Pone-one
     \new Staff \part-Ptwo-one
     \new Staff \part-Pthree-one
@@ -2815,5 +2804,5 @@ part-Ponefour-one = {
     \new Staff \part-Ponetwo-one
     \new Staff \part-Ponethree-one
     \new Staff \part-Ponefour-one
-    \layout {}
+  >>
 }
