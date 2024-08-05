@@ -14,7 +14,8 @@ part-Pone-one = {
     \key f \major
     \time 2/2
     \clef alto
-    c'2 f'2 |
+    \tempo "(Moderato)"
+    c'2\f f'2 |
     c''2 g'2~ |
     g'4 c'4 f'4 c''4 |
     g'4 c'4 f'4 c''4 |
@@ -41,8 +42,9 @@ part-Pone-one = {
     f''4 e''4 d''2 |
     c''4 bes'4 a'4 g'4 |
     f'4 g'4 g'2 |
-    f'4 g'4 g'2 |
-    c'2 f'2 |
+    f'4 g'4 g'2 | 
+    \repeat volta 2 {
+    c'2\f^\markup{\italic "repeat ad lib."} f'2 |
 % 25
     c''2 g'2~ |
     g'4 c'4 f'4 c''4 |
@@ -71,7 +73,9 @@ part-Pone-one = {
     c''4 bes'4 a'4 g'4 |
     f'4 g'4 g'2 |
     f'4 g'4 g'2 |
-    g'1 | \bar "|."
+    }
+    
+    g'1\fermata | \bar "|."
 }
 
 part-Ptwo-one = {
@@ -87,7 +91,7 @@ part-Ptwo-one = {
     R1 |
     R1 |
     R1 |
-    c2 f2 |
+    c2\f f2 |
     c'2 g2~ |
 % 10
     g4 c4 f4 c'4 |
@@ -116,7 +120,7 @@ part-Ptwo-one = {
 % 30
     f4 g4 g2 |
     f4 g4 g2 |
-    c2 f2 |
+    c2\f f2 |
     c'2 g2~ |
     g4 c4 f4 c'4 |
 % 35
@@ -135,7 +139,7 @@ part-Ptwo-one = {
     a4 f4 g2~ |
     g4 a4 g4 f4 |
     e4 a4 g4 f4 |
-    e1 | \bar "|."
+    e1\fermata | \bar "|."
 }
 
 part-Pthree-one = {
@@ -161,7 +165,7 @@ part-Pthree-one = {
     R1 |
 % 15
     R1 |
-    c,2 f,2 |
+    c,2\f f,2 |
     c2 g,2~ |
     g,4 c,4 f,4 c4 |
     g,4 c,4 f,4 c4 |
@@ -190,7 +194,7 @@ part-Pthree-one = {
     f,4 g,4 g,2 |
     f,4 g,4 g,2 |
 % 40
-    c,2 f,2 |
+    c,2\f f,2 |
     c2 g,2~ |
     g,4 c,4 f,4 c4 |
     g,4 c,4 f,4 c4 |
@@ -199,7 +203,7 @@ part-Pthree-one = {
     c2 g,2~ |
     g,4 d4 a,4 c4 |
     g,4 d4 a,4 c4 |
-    g,1 | \bar "|."
+    g,1\fermata | \bar "|."
 }
 
 \score {
@@ -214,5 +218,7 @@ part-Pthree-one = {
         instrumentName = "Bass Trombone"
     } \part-Pthree-one
     >>
-    \layout {}
+    \layout {
+        indent = 3\cm
+    }
 }
