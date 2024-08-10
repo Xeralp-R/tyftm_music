@@ -1,6 +1,6 @@
 \version "2.22.1"
 
-#(set-global-staff-size 20)
+#(set-global-staff-size 17.82)
 #(set-default-paper-size "a4")
 
 \paper {

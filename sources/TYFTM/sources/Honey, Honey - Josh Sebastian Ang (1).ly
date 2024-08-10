@@ -11,11 +11,13 @@ part-Pone-one = {
     \key e \major
     \time 4/4
     \clef treble
-    e''1~-\markup { "Allegro Animato" } |
+    \tempo "Allegro Animato"
+
+    e''1~ |
     e''4. e''4 fis''8 e''4 |
     a'1 |
-    a'8-.\ff a'8-. a'8-. a'8-. a'4-! b'4-! |
-    gis'1~ \mark "A" \p |
+    a'8-.\ff a'8-. a'8-. a'8-. a'4-! b'4-! | \mark "A"
+    gis'1~ \p |
 % 5
     gis'1 |
     cis''1~ |
@@ -35,8 +37,8 @@ part-Pone-one = {
     e''1 |
     a'8-. a'8-. a'8-. a'8-. a'4-! b'4-! |
 % 20
-    a'8-.\pp a'8-.\< a'8-. a'8-. a'4-! b'4-! |
-    e''1~ \mark "B" \mf |
+    a'8-.\pp a'8-.\< a'8-. a'8-. a'4-! b'4-! | \mark "B"
+    e''1~  \mf |
     e''4. e''4 fis''8 e''4 |
     a'1 |
     cis''2 b'2 |
@@ -51,17 +53,17 @@ part-Pone-one = {
     e''1 |
     cis''1 |
     e''1 |
-    cis''1 |
+    cis''1 | \mark "C"
 % 35
-    a'1 \mark "C" \> |
+    a'1  \> |
     b'1 |
     c''1 |
     cis''1 |
     a'1~ |
 % 40
     a'1 |
-    b'1-\markup { "Vamp Till Ready" } |
-    a'1 \mark "D" |
+    b'1-\markup { "Vamp Till Ready" } | \mark "D"
+    a'1  |
     e''1 |
     cis''2 b'2 |
 % 45
@@ -75,9 +77,9 @@ part-Pone-one = {
     cis''2 d'''4 cis'''4 |
     b''4 a''4 gis''4 fis''4 |
     e''2 d''4 cis''4 |
-    b'4 a'4 gis'4 fis''8 e''8 |
+    b'4 a'4 gis'4 fis''8 e''8 | \mark "E"
 % 55
-    g''8 \mark "E" g''8 fis''8 g''8 r8 fis''8 fis''8 g''8~ |
+    g''8  g''8 fis''8 g''8 r8 fis''8 fis''8 g''8~ |
     g''8 a''8~ a''4~ a''4 r8 g''8 |
     fis''8 fis''8 fis''8 e''8~ e''8 fis''4 d''8 |
     g''1 |
@@ -98,8 +100,8 @@ part-Pone-one = {
     cis''1 |
     r4 e''8 e''8 dis''8 e''4 gis''8 |
     gis''4 e''8 e''8 dis''8 e''4 gis''8 |
-    e''4.-\markup { "Vamp Till Ready" } e''8 dis''4. dis''8 |
-    e''1~ \mark "F" |
+    e''4.-\markup { "Vamp Till Ready" } e''8 dis''4. dis''8 | \mark "F"
+    e''1~  |
 % 75
     e''4. e''4 fis''8 e''4 |
     a'1 |
@@ -116,8 +118,8 @@ part-Pone-one = {
     cis''1 |
     e''1 |
     cis''1 |
-    a'1\> |
-    b'1 \mark "G" |
+    a'1\> | \mark "G"
+    b'1  |
 % 90
     cis''1~ |
     cis''1 |
@@ -137,8 +139,8 @@ part-Pone-one = {
     b''4 e'''8 d'''8 cis'''4 b''8 g''8 |
     d''8 fis'8 g'8 gis'8~ gis'2 |
 % 105
-    gis'4.-\markup { "Vamp Till Ready" } g'8~ g'2 |
-    gis'1~ \mark "H" \p |
+    gis'4.-\markup { "Vamp Till Ready" } g'8~ g'2 | \mark "H"
+    gis'1~ \p |
     gis'1 |
     cis''1~ |
     cis''1 |
