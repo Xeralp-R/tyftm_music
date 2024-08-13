@@ -7,7 +7,7 @@ upper = {
   \clef treble \key a \minor \time 4/4
 
   \relative c' {
-    \bracket-rest r4 <d g d'>8-- <e a e'>-- <g d' g>4-- <a e' a>-- |
+    \partial 2. <d g d'>8-- <e a e'>-- <g d' g>4-- <a e' a>-- |
     <g d' g>1\laissezVibrer |
     \once \override LaissezVibrerTie.head-direction = #1
     <e' a>8->^\markup{\small "L. H."}\laissezVibrer 
@@ -109,6 +109,26 @@ upper = {
     <ces,, ces'>8 <ees ees'> |
     <bes' f' bes>4 <c,! c'!>8 <e! e'!> <b' fis' b>4 <des, des'>8 <f f'> |
     <c' g' c>4 <d,! d'!>8 <fis fis'>8 <cis' gis' cis>4 <a a'>8 <ais ais'>8 |
+    <<
+      \relative c''' {
+        <gis cis>8 <a d> <f! bes> <d g> <cis fis> <bes ees> <b e> <g c> |
+        % 40
+        <cis fis>8 <bes ees> <b e> <g c> <gis cis> <a d> <f! bes> <d g> |
+        <gis cis>8 <a d> <f! bes> <d g?> <cis fis> <bes ees> <b e> <g c> |
+        <cis fis> <bes ees> <b e> <g c> <cis fis> <bes ees> <b e> <g c> |
+      } \\ \relative c''' {
+        gis16 cis, a' d, f bes, d g, cis fis, bes ees, b' e, g c, |
+        % 40
+        cis'16 fis, bes ees, b' e, g c, gis' cis, a' d, f bes, d g, |
+        gis'16 cis, a' d, f bes, d g, cis fis, bes ees, b' e, g c, |
+        cis'16 fis, bes ees, b' e, g c, cis' fis, bes ees, b' e, g c, |
+      }
+    >>
+    <ees, aes des ees>1 |
+    <d! g! c! d!>1 | \bar "||"
+  % 45
+    R1 |
+    R1 |
   }
 }
 
@@ -116,8 +136,7 @@ lower = {
   \clef bass \key a \minor \time 4/4
 
   \relative c' {
-    \once \override Parentheses.padding = #0.4
-    \bracket-rest r4 c8-- <b d>8-- <a c e>4-- <g b d>4-- |
+    \partial 2. c8-- <b d>8-- <a c e>4-- <g b d>4-- |
     <<
       \context Voice = "voiceOne" \relative c' {\voiceOne
         <g a c f>1\laissezVibrer
@@ -187,8 +206,32 @@ lower = {
   % 35
     <c f c'> <bes ees bes'> <a d a'> <g c g'> <f bes f'>4 b!8 <g g'> |
     <ces, ges' ces>4 c'!8 <aes aes'> <c,! g'? c!>4 des'8 <beses beses'> |
-    <des, aes' des>4 d'!8 <b! b'!>8 <dis, ais' dis>4 \clef treble
+    <des, aes' des>4 dis'!8 <b! b'!>8 <dis, ais' dis>4 \clef treble
     <cis'' e?>8 <d f!> |  
+    <e gis>8 <f a> <d f> <bes d> \clef bass <a cis> <g bes> <gis b> <e gis?> |
+  % 40
+    <a cis>8 <g bes> <gis b> <e g> <eis gis> <fis a> <d f> <bes d> |
+    <eis gis>8 <fis a> <d f> <bes d> <a cis> <g bes> <gis b> <e g> |
+    <a cis>8 <g bes> <gis b> <e g> <a cis> <g bes> <gis b> <e g>|
+    <ges, des' ges>1 |
+    <g! d'! g!>1 | \bar "||" 
+  % 45
+    a8-5 <e' f>-1-2 <c' d>^1^2 <g' a>^4^5 <d' e>_2_3 <g, a>^4^5 <c, d>^1^2 <e, f>-1-2 |
+    a,8 <e' f> <c' d> <g' a> <d' e> <g, a> <c, d> <e, f> |
+    <a, e'>8-2-5 f'-1 <a e'>-2-5 f'-1 <a b>-2-3 e-1 <a, d>-2-5 f-1 |
+    \time 2/4 <a, e'>8 f' <a e'> f' |
+    \time 4/4 <a b> f <a, e'> f <c g'>8-2-5 d'-1 <g a>-2-3 <c, d>-1 |
+  % 50
+    <c, f>8_3_5 <c' d>_1 <d g>_2_5 <c' d>_1 <aes des>_2_4 <g c>_1_5 <c, d>_1 g_2 |
+    <c, g'>8_3_5 <a' d>_1_2 <c g'>_3_5 <a' d>_1_2 <a cis>_1_2 <d, a'>_2_5 <d a'>_1_2 <a d>_2_5 |
+    <c, g'>8_2_5 <e c' d>_1_4 <b' e>_2_5 g'_1 <a c>_1_2 <ees g>_3_4 <bes ees>_2_1 ees,_4 |
+    a,8_5 <e' f>_2_3 <c' d>_1 <g' a>_3_2 <d' e>_1 <g, a>_1_2 <c, d>_1 <g a>_2_3 |
+    f8_5 <b c>_2_3 <f' g>_1 <bes c>_2_3 d_1 <bes c>_2_3 <f g> <b, c> |
+  % 55
+    e,8_1 <a b>_2_3 <d e>_1 <g a>_2_3 e'_1 <g, a>_2_3 <d e>_1 <a b>_2_3 |
+    c8_5 <ees f>_2_3 <ees g bes>_2_3_5 <g bes c>_1_2_3 <g bes f'>_1_2_3 <g bes ees>_1_2_3 <ees g bes>_2_3_5 <c d g>_1_2_3 |
+    e,8_5 <b' cis>_2_3 <e fis>_1_2 <fis b>_3_5 <cis' e>_1_2 <fis, b>_3_5 <e fis>_1_2 <b cis>_3_4 |
+    <d, a>_1_2 <d' e>_1 <cis fis>_3_5 <e fis b>_1_3_4 <fis b cis>_1_2_3 <fis b d>_1_2_3 <fis a b>_1_2_3 <cis e fis>_3_4_5 |
   }
 }
 
@@ -202,7 +245,9 @@ lower = {
       connectArpeggios = ##t
     } <<
       \new Staff = "upper" \upper
-      \new Staff = "lower" \lower
+      \new Staff = "lower" \with {
+        \override Fingering.direction = #'-1
+      } \lower
     >>
   }
 
@@ -219,5 +264,9 @@ lower = {
     Bar 27: regularized first chord to have a 4-5 interval
     Bar 27, lh: added --
     Bar 28, lh: abberation chord
+
+    unusual things—
+    2 1 instead of 1 2?
+    1 2 on bottom in bar 
   %}
 }
