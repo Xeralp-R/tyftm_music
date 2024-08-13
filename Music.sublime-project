@@ -11,6 +11,16 @@
             "name": "Compile Lilypond",
             "file_patterns": ["*.ly"],
             "cmd": ["lilypond", "-o", "$project_path/exports", "$file"]
+        },
+        {
+        	"name": "TYFTM: Compile Conductor's Score",
+        	"file_patterns": ["*.ly"],
+            "cmd": ["lilypond", "-o", "$project_path/exports", "$project_path/sources/TYFTM/scores/Conductors_Score.ly"]
         }
-    ]
+    ],
+    "settings":
+    {
+    	"tab_size": 2,
+    	"translate_tabs_to_spaces": true,
+    }
 }

@@ -1,7 +1,7 @@
 \version "2.22.1"
 
 #(set-global-staff-size 17.82)
-#(set-default-paper-size "philippine-legal")
+#(set-default-paper-size "philippine-legallandscape")
 
 \paper {
   %system-system-spacing = #'((basic-distance . 0.1) (padding . 0))

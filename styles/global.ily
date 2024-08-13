@@ -109,3 +109,17 @@ blank_page = \bookpart {
 }
 
 sffz = \markup { \dynamic "sffz" }
+
+ed-f = #(make-dynamic-script (markup #:large #:normal-text "f"))
+ed-rf = #(make-dynamic-script (markup #:large #:normal-text "rf"))
+ed-p = #(make-dynamic-script (markup #:large #:normal-text "p"))
+
+ed-text = #(define-music-function (arg) (markup?)
+  #{
+     -\markup { \upright #arg }
+  #})
+
+once-ed-cresc = #(define-music-function () ()
+  #{
+     \once \override Staff.Hairpin.style = #'dashed-line
+  #})
