@@ -1,13 +1,13 @@
 \version "2.22.1"
 
-#(set-global-staff-size 17.82)
-#(set-default-paper-size "a4")
+#(set-global-staff-size 12.60)
+#(set-default-paper-size "philippine-legallandscape")
 
 \paper {
   %system-system-spacing = #'((basic-distance . 0.1) (padding . 0))
   top-margin = 15\mm
   bottom-margin = 15\mm
-  left-margin = 15\mm
+  left-margin = 20\mm
   right-margin = 15\mm
   ragged-last-bottom = ##f
   ragged-bottom = ##f
@@ -118,14 +118,6 @@
     \Voice
     \override DynamicTextSpanner.font-size = #'1
     \override TextScript.font-size = #'1
-  }
-  \context {
-    \FretBoards
-    \remove "Fretboard_engraver"
-  }
-  \context {
-    \ChordNames
-    \remove "Chord_name_engraver"
   }
 }
 

@@ -1,6 +1,6 @@
 \version "2.24.4"
 \include "../../../styles/Global.ily"
-\include "../../../styles/Full_Score.ily"
+\include "../../../styles/Pocket_Score.ily"
 
 \include "../sources/Honey, Honey - Josh Sebastian Ang (1).ly"
 

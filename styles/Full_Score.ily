@@ -1,7 +1,7 @@
 \version "2.22.1"
 
-#(set-global-staff-size 17.82)
-#(set-default-paper-size "philippine-legallandscape")
+#(set-global-staff-size 20)
+#(set-default-paper-size "philippine-legal")
 
 \paper {
   %system-system-spacing = #'((basic-distance . 0.1) (padding . 0))
@@ -118,14 +118,6 @@
     \Voice
     \override DynamicTextSpanner.font-size = #'1
     \override TextScript.font-size = #'1
-  }
-  \context {
-    \FretBoards
-    \remove "Fretboard_engraver"
-  }
-  \context {
-    \ChordNames
-    \remove "Chord_name_engraver"
   }
 }
 

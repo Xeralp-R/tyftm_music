@@ -123,3 +123,14 @@ once-ed-cresc = #(define-music-function () ()
   #{
      \once \override Staff.Hairpin.style = #'dashed-line
   #})
+
+linear-spanner = #(define-music-function (num_bars length) (integer? integer?)
+  #{
+    \override TrillSpanner.bound-details.left.text = ##f
+    \override TrillSpanner.extra-offset = #'(-0.66 . -3)
+    \repeat unfold #num_bars { 
+      \endSpanners { s1 *#length \startTrillSpan } 
+    }
+    \revert TrillSpanner.bound-details
+    \revert TrillSpanner.extra-offset
+  #})

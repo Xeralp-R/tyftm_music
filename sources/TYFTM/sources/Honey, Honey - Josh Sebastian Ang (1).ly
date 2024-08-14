@@ -2224,14 +2224,16 @@ part-Ponezero-two = {
 part-Poneone-one = {
   \key e \major
   \time 4/4
-  \clef treble
+  \clef "treble_8"
+
+  \override NoteHead.style = #'slash
   r4 b4 r4 b4 |
   r4 b4 r4 b4 |
   r4 b4 r4 b4 |
   b8-> b8-> b8-> b8-> b4-^ b4-^ |
   r4 b8 b8 r8 b8 b8 b8 |
   % 5
-  b4-\markup { "Rhythm Sim." } b4 b4 b4 |
+  b4-\markup { "Rhythm sim." } b4 b4 b4 |
   b4 b4 b4 b4 |
   b4 b4 b4 b4 |
   b4 b4 b4 b4 |
@@ -2251,7 +2253,7 @@ part-Poneone-one = {
   % 20
   b8->\ppp b8-> b8-> b8-> b4-^ b4-^ |
   r4 b8 b8 r8 b8 b8 b8 |
-  b4-\markup { "Rhythm Sim." } b4 b4 b4 |
+  b4-\markup { "Rhythm sim." } b4 b4 b4 |
   b4 b4 b4 b4 |
   b4 b4 b4 b4 |
   % 25
@@ -2315,7 +2317,7 @@ part-Poneone-one = {
   R1 |
   r4 b8 b8 r8 b8 b8 b8 |
   % 75
-  b4-\markup { "Rhythm Sim." } b4 b4 b4 |
+  b4-\markup { "Rhythm sim." } b4 b4 b4 |
   b4 b4 b4 b4 |
   b4 b4 b4 b4 |
   b4 b4 b4 b4 |
@@ -2324,7 +2326,7 @@ part-Poneone-one = {
   b4 b4 b4 b4 |
   b4 b4 b4 b4 |
   r4 b8 b8 r8 b8 b8 b8 |
-  b4-\markup { "Rhythm Sim." } b4 b4 b4 |
+  b4-\markup { "Rhythm sim." } b4 b4 b4 |
   b4 b4 b4 b4 |
   % 85
   b4 b4 b4 b4 |
@@ -2353,7 +2355,7 @@ part-Poneone-one = {
   % 105
   R1 |
   r4 b8\f b8 r8 b8 b8 b8 |
-  b4-\markup { "Rhythm Sim." } b4 b4 b4 |
+  b4-\markup { "Rhythm sim." } b4 b4 b4 |
   b4 b4 b4 b4 |
   b4 b4 b4 b4 |
   % 110
@@ -2376,34 +2378,22 @@ part-Poneone-one = {
 part-Ponetwo-one = {
   \key e \major
   \time 4/4
-  \clef treble
+  \clef "treble_8"
+
+  \override NoteHead.style = #'slash
   b8 b8 b8 b8 b8 b8 b8 b8 |
   b8 b8 b8 b8 b8 b8 b8 b8 |
   b8 b8 b8 b8 b8 b8 b8 b8 |
   b8-> b8-> b8-> b8-> b4-^ b4-^ |
   b8 b8 b8 b8 b8 b8 b8 b8 |
   % 5
-  b4-\markup { "Rhythm Sim." } b4 b4 b4 |
-  b4 b4 b4 b4 |
-  b4 b4 b4 b4 |
-  b4 b4 b4 b4 |
-  b4 b4 b4 b4 |
-  % 10
-  b4 b4 b4 b4 |
-  b4 b4 b4 b4 |
-  b4\arpeggio b4 b4 b4 |
-  b4\arpeggio b4 b4 b4 |
-  b4\arpeggio b4 b4 b4 |
-  % 15
-  b4\arpeggio b4 b4 b4 |
-  b4\arpeggio b4 b4 b4 |
-  b4\arpeggio b4 b4 b4 |
+  \linear-spanner 13 1
   b8 b8 b8 b8 b8 b8 b8 b8 |
   b8-> b8-> b8-> b8-> b4-^ b4-^ |
   % 20
   b8->\p b8->\< b8-> b8-> b4-^ b4-^ |
   b8 b8 b8 b8 b8 b8 b8 b8 |
-  b4-\markup { "Rhythm Sim." } b4 b4 b4 |
+  b4-\markup { "Rhythm sim." } b4 b4 b4 |
   b4 b4 b4 b4 |
   b4 b4 b4 b4 |
   % 25
@@ -2467,7 +2457,7 @@ part-Ponetwo-one = {
   b2 b2 |
   b8 b8 b8 b8 b8 b8 b8 b8 |
   % 75
-  b4-\markup { "Rhythm Sim." } b4 b4 b4 |
+  b4-\markup { "Rhythm sim." } b4 b4 b4 |
   b4 b4 b4 b4 |
   b4 b4 b4 b4 |
   b4 b4 b4 b4 |
@@ -2677,80 +2667,80 @@ part-Ponethree-one = {
   a,1 |
 }
 
-part-Ponefour-one = {
+part-Ponefour-one = \drummode {
+  \clef percussion
+  \time 4/4
   <<
-    \context Voice = "voiceone" {
+    \context DrumVoice = "voiceone" {
       \voiceOne
-      \key c \major
-      \time 4/4
-      \clef percussion g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      c''8 c''8 c''8 c''8 c''4 c''4 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
+      hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
+      hh8  hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
+      hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
+      sn8 sn8 sn8 sn8 sn4 sn4 |
+      hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
       % 5
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
+      hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
     }
-    \context Voice = "voicetwo" {
+    \context DrumVoice = "voicetwo" {
       \voiceTwo
-      f'4 c''4 f'8 f'8 c''8 f'8 |
-      f'4 c''4 f'8 f'8 c''8 f'8 |
-      f'4 c''4 f'8 f'8 c''8 f'8 |
-      a'4 |
-      f'4 c''4 f'8 f'8 c''8 f'8 |
+      bd4 sn4 bd8 bd8 sn8 bd8 |
+      bd4 sn4 bd8 bd8 sn8 bd8 |
+      bd4 sn4 bd8 bd8 sn8 bd8 |
+      s2. tomfl4 |
+      bd4 sn4 bd8 bd8 sn8 bd8 |
       % 5
-      f'4 c''4 f'8 f'8 c''8 f'8 |
+      bd4 sn4 bd8 bd8 sn8 bd8 |
     }
   >>
-  f'4-\markup { "Hi-Hat Sim." } c''4 f'4 c''8 f'8 |
-  f'4 c''4 f'8 f'8 c''8 f'8 |
-  f'4 c''4 f'8 f'8 c''8 f'8 |
-  f'4 c''4 f'8 f'8 c''8 f'8 |
+  bd4-\markup { "Hi-Hat sim." } sn4 bd4 sn8 bd8 |
+  bd4 sn4 bd8 bd8 sn8 bd8 |
+  bd4 sn4 bd8 bd8 sn8 bd8 |
+  bd4 sn4 bd8 bd8 sn8 bd8 |
   % 10
-  f'4 c''4 f'8 f'8 c''4 |
-  f'4 c''4 f'8 c''8 c''8 c''8 |
-  f'4 c''4 f'8 f'8 c''4 |
-  f'4 c''4 f'8 f'8 c''4 |
-  f'4 c''4 f'8 f'8 c''4 |
+  bd4 sn4 bd8 bd8 sn4 |
+  bd4 sn4 bd8 sn8 sn8 sn8 |
+  bd4 sn4 bd8 bd8 sn4 |
+  bd4 sn4 bd8 bd8 sn4 |
+  bd4 sn4 bd8 bd8 sn4 |
   % 15
-  f'4 c''4 f'8 f'8 c''8 f'8 |
-  f'4 c''4 f'8 f'8 c''8 f'8 |
-  f'4 c''4 f'8 f'8 c''8 f'8 |
-  f'4 c''4 f'8 f'8 c''4 |
+  bd4 sn4 bd8 bd8 sn8 bd8 |
+  bd4 sn4 bd8 bd8 sn8 bd8 |
+  bd4 sn4 bd8 bd8 sn8 bd8 |
+  bd4 sn4 bd8 bd8 sn4 |
   <<
-    \context Voice = "voiceone" {
+    \context DrumVoice = "voiceone" {
       \voiceOne
-      g''8 g''8 g''8 g''8 g''4 e''4->\> |
+      hh8 hh8 hh8 hh8 hh4 hho4->\> |
       % 20
-      g''8\pp g''8 g''8 g''8 g''4 e''4-> |
-      g''8\f g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
+      hh8\pp hh8 hh8 hh8 hh4 hho4-> |
+      hh8\f hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
     }
-    \context Voice = "voicetwo" {
+    \context DrumVoice = "voicetwo" {
       \voiceTwo
-      <f' c'' >8\! c''8 <f' c'' >8 c''8 <f' c'' >4 <f' c'' >4-> |
+      <bd sn >8\! sn8 <bd sn >8 sn8 <bd sn >4 <bd sn >4-> |
       % 20
-      <f' c'' >8 <f' c'' >8 c''8 <f' c'' >4 <f' c'' >4-> r8 |
-      f'4 c''4 f'8 f'8 c''4 |
+      <bd sn >8 <bd sn >8 sn8 <bd sn >4 <bd sn >4-> r8 |
+      bd4 sn4 bd8 bd8 sn4 |
     }
   >>
-  f'4-\markup { "Hi-Hat Sim." } c''4 f'8 f'8 c''8 f'8 |
-  f'4 c''4 f'8 f'8 c''4 |
-  f'4 c''4 f'8 f'8 c''8 f'8 |
+  bd4-\markup { "Hi-Hat sim." } sn4 bd8 bd8 sn8 bd8 |
+  bd4 sn4 bd8 bd8 sn4 |
+  bd4 sn4 bd8 bd8 sn8 bd8 |
   % 25
-  f'4 c''4 f'8 f'8 c''4 |
-  f'4 c''4 f'8 f'8 c''8 f'8 |
-  f'4 c''4 f'8 f'8 c''4 |
-  f'4 c''4 f'8 f'8 c''4 |
-  f'4 c''4 f'8 f'8 c''4 |
+  bd4 sn4 bd8 bd8 sn4 |
+  bd4 sn4 bd8 bd8 sn8 bd8 |
+  bd4 sn4 bd8 bd8 sn4 |
+  bd4 sn4 bd8 bd8 sn4 |
+  bd4 sn4 bd8 bd8 sn4 |
   % 30
-  f'4 c''4 f'8 f'8 c''4 |
-  f'4 c''4 f'8 f'8 c''4 |
-  f'4 c''4 f'8 f'8 c''8 f'8 |
-  f'4 c''4 f'8 f'8 c''8 f'8 |
-  f'4 c''4 f'8 f'8 c''8 f'8 |
+  bd4 sn4 bd8 bd8 sn4 |
+  bd4 sn4 bd8 bd8 sn4 |
+  bd4 sn4 bd8 bd8 sn8 bd8 |
+  bd4 sn4 bd8 bd8 sn8 bd8 |
+  bd4 sn4 bd8 bd8 sn8 bd8 |
   % 35
-  << { f'4 c''4\> f'8 f'8 c''8 f'8 } \\ { a''8~\! } >> |
-  a''4\p r4 r2 |
+  << { bd4 sn4\> bd8 bd8 sn8 bd8 } \\ { cymc8~\! } >> |
+  cymc4\p r4 r2 |
   R1 |
   R1 |
   R1 |
@@ -2794,38 +2784,40 @@ part-Ponefour-one = {
   R1 |
   R1 |
   R1 |
-  b'4\p-\markup { "Fill, Last Time Only" }\< b'4 b'4 b'4 |
+  \improvisationOn \omit Stem
+  4\p-\markup { "Fill, Last Time Only" }\< 4 4 4 |
+  \improvisationOff \undo \omit Stem
   <<
-    \context Voice = "voiceone" {
+    \context DrumVoice = "voiceone" {
       \voiceOne
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
+      hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
       % 75
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
+      hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
+      hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
     }
-    \context Voice = "voicetwo" {
+    \context DrumVoice = "voicetwo" {
       \voiceTwo
-      f'4 c''4 f'8 f'8 c''4 |
+      bd4 sn4 bd8 bd8 sn4 |
       % 75
-      f'4 c''4 f'8 f'8 c''4 |
-      f'4 c''4 f'8 f'8 c''4 |
+      bd4 sn4 bd8 bd8 sn4 |
+      bd4 sn4 bd8 bd8 sn4 |
     }
   >>
-  f'4 c''4 f'8 f'8 c''4 |
-  f'4 c''4 f'8 f'8 c''4 |
-  f'4 c''4 f'8 f'8 c''4 |
+  bd4 sn4 bd8 bd8 sn4 |
+  bd4 sn4 bd8 bd8 sn4 |
+  bd4 sn4 bd8 bd8 sn4 |
   % 80
-  f'4 c''4 f'8 f'8 c''4 |
-  f'4 c''4 f'8 f'8 c''8 f'8 |
-  f'4 c''4 f'8 f'8 c''4 |
-  f'4 c''4 f'8 f'8 c''8 f'8 |
-  f'4 c''4 f'8 f'8 c''4 |
+  bd4 sn4 bd8 bd8 sn4 |
+  bd4 sn4 bd8 bd8 sn8 bd8 |
+  bd4 sn4 bd8 bd8 sn4 |
+  bd4 sn4 bd8 bd8 sn8 bd8 |
+  bd4 sn4 bd8 bd8 sn4 |
   % 85
-  f'4 c''4 f'8 f'8 c''8 f'8 |
-  f'4 c''4 f'8 f'8 c''4 |
-  f'4 c''4 f'8 f'8 c''4 |
-  f'4\> c''4 f'8 f'8 c''4 |
-  e''1\p |
+  bd4 sn4 bd8 bd8 sn8 bd8 |
+  bd4 sn4 bd8 bd8 sn4 |
+  bd4 sn4 bd8 bd8 sn4 |
+  bd4\> sn4 bd8 bd8 sn4 |
+  hho1\p |
   % 90
   R1 |
   R1 |
@@ -2845,28 +2837,30 @@ part-Ponefour-one = {
   R1 |
   R1 |
   % 105
-  b'4-\markup { "Fill, Last Time Only" }\pp\< b'4 b'4 b'4 |
+  \improvisationOn \omit Stem
+  4-\markup { "Fill, Last Time Only" }\pp\< 4 4 4 |
+  \improvisationOff \undo \omit Stem
   <<
-    \context Voice = "voiceone" {
+    \context DrumVoice = "voiceone" {
       \voiceOne
-      f'4 c''4 f'8 f'8 c''4 |
-      f'4 c''4 f'8 f'8 c''4 |
-      f'4 c''4 f'8 f'8 c''4 |
+      bd4 sn4 bd8 bd8 sn4 |
+      bd4 sn4 bd8 bd8 sn4 |
+      bd4 sn4 bd8 bd8 sn4 |
     }
-    \context Voice = "voicetwo" {
+    \context DrumVoice = "voicetwo" {
       \voiceTwo
-      e''4 |
-      e''4 |
-      e''4 |
+      hho4 |
+      hho4 |
+      hho4 |
     }
   >>
-  f'8 f'8 c''4 f'8 f'8 c''8 f'8 |
+  bd8 bd8 sn4 bd8 bd8 sn8 bd8 |
   % 110
-  f'4 c''4 f'8 f'8 c''4 |
-  f'4 c''4 f'8 f'8 c''4 |
-  f'4 c''4 f'8 f'8 c''4 |
-  f'4 c''4 f'8 c''8 c''8 c''8 |
-  e''1->-\markup { "L.V." } |
+  bd4 sn4 bd8 bd8 sn4 |
+  bd4 sn4 bd8 bd8 sn4 |
+  bd4 sn4 bd8 bd8 sn4 |
+  bd4 sn4 bd8 sn8 sn8 sn8 |
+  hho1->-\markup { "L.V." } |
   % 115
   R1 |
   R1 |
@@ -2878,82 +2872,87 @@ part-Ponefour-one = {
   R1 |
 }
 
-akkordfolge = \chordmode {
-  | % 1
-  e4:5 s4 s4 s4 | % 2
-  s4 s4 s4 s4 | % 3
-  a4:5 s4 s4 s4 | % 4
-  a8:5 s8 s8 s8 a4:5 b4:5 \bar "||"
-  e4:5 s8 s8 s8 s8 s8 s8 | % 6
-  s4 s4 s4 s4 | % 7
-  a4:5 s4 s4 s4 | % 8
-  s4 s4 s4 s4 | % 9
-  e4:5 s4 s4 s4 | \barNumberCheck #10
-  s4 s4 s4 s4 | % 11
-  a4:5 s4 s4 s4 | % 12
-  s4 s4 s4 s4 | % 13
-  e4:5 s4 s4 s4 | % 14
-  cis4:m5 s4 s4 s4 | % 15
-  e4:5 s4 s4 s4 | % 16
-  cis4:m5 s4 s4 s4 | % 17
-  e4:5 s4 s4 s4 | % 18
-  cis4:m5 s4 s4 s4 | % 19
-  a4:5 s4 s4 s4 | \barNumberCheck #20
-  a8:5 s8 s8 s8 a4:5 b4:5 | % 21
-  a8:5 s8 s8 s8 a4:5 b4:5 \bar "||"
-  e4:5 s8 s8 s8 s8 s8 s8 | % 23
-  s4 s4 s4 s4 | % 24
-  a4:5 s4 s4 s4 | % 25
-  s4 s4 s4 s4 | % 26
-  e4:5 s4 s4 s4 | % 27
-  s4 s4 s4 s4 | % 28
-  a4:5 s4 s4 s4 | % 29
-  s4 s4 s4 s4 | \barNumberCheck #30
-  e4:5 s4 s4 s4 | % 31
-  cis4:m5 s4 s4 s4 | % 32
-  e4:5 s4 s4 s4 | % 33
-  cis4:m5 s4 s4 s4 | % 34
-  e4:5 s4 s4 s4 | % 35
-  cis4:m5 s4 s4 s4 | % 36
-  a4:5 s8 s8 s8 s4 b8:5/+a | % 37
+chord-sequence = \chordmode {
+  % 1
+  e1 | % 2
+  s1 | % 3
+  a1 | % 4
+  a2 a4 b4 \bar "||"
+  e1 | % 6
+  s1 | % 7
+  a1 | % 8
+  s1 | % 9
+  e1 | \barNumberCheck #10
+  s1 | % 11
+  a1 | % 12
+  s1| % 13
+  e1 | % 14
+  cis1:m | % 15
+  e1 | % 16
+  cis1:m | % 17
+  e1 | % 18
+  cis1:m | % 19
+  a1 \barNumberCheck #20
+  a2 a4 b4 | % 21
+  a2 a4 b4 \bar "||"
+  e1 | % 23
+  s1 % 24
+  a1 % 25
+  s1 % 26
+  e1 % 27
+  s1 % 28
+  a1 % 29
+  s1 \barNumberCheck #30
+  e1 % 31
+  cis1:m | % 32
+  e1 % 33
+  cis1:m| % 34
+  e1 % 35
+  cis1:m | % 36
+  a2.. b8/a | % 37
   s1 | % 38
-  s1 s1 s1 s1 \repeat volta 2 {
-      | % 42
-      s1 }
+  s1 |
+  s1 |
+  s1 |
+  s1 
+  \repeat volta 2 {
+    % 42
+    s1 
+  }
   | % 43
   s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1
   s1 s1 s1 s1 s1 s1 s1 s1 \repeat volta 2 {
       | % 74
       s1 }
   | % 75
-  e4:5 s8 s8 s8 s8 s8 s8 | % 76
-  s4 s4 s4 s4 | % 77
-  a4:5 s4 s4 s4 | % 78
-  s4 s4 s4 s4 | % 79
-  e4:5 s4 s4 s4 | \barNumberCheck #80
-  s4 s4 s4 s4 | % 81
-  a4:5 s4 s4 s4 | % 82
-  s4 s4 s4 s4 | % 83
-  e4:5 s8 s8 s8 s8 s8 s8 | % 84
-  cis4:m5 s4 s4 s4 | % 85
-  e4:5 s4 s4 s4 | % 86
-  cis4:m5 s4 s4 s4 | % 87
-  e4:5 s4 s4 s4 | % 88
-  cis4:m5 s4 s4 s4 | % 89
-  a4:5 s4 s4 s4 | \barNumberCheck #90
+  e1 | % 76
+  s1 % 77
+  a1 % 78
+  s1 % 79
+  e1 \barNumberCheck #80
+  s1 % 81
+  a1 % 82
+  s1 % 83
+  e4 s8 s8 s8 s8 s8 s8 | % 84
+  cis1:m | % 85
+  e1 % 86
+  cis1:m | % 87
+  e1 % 88
+  cis1:m | % 89
+  a1 \barNumberCheck #90
   s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 \repeat volta 2 {
       | % 106
       s1 }
   | % 107
-  e4:5 s8 s8 s8 s8 s8 s8 | % 108
-  s4 s4 s4 s4 | % 109
-  a4:5 s4 s4 s4 | \barNumberCheck #110
-  s4 s4 s4 s4 | % 111
-  e4:5 s4 s4 s4 | % 112
-  s4 s4 s4 s4 | % 113
-  a4:5 s4 s4 s4 | % 114
-  s4 s4 s4 s4 | % 115
-  e1:5 | % 116
+  e1 | % 108
+  s1 % 109
+  a1 \barNumberCheck #110
+  s1 % 111
+  e1 % 112
+  s1 % 113
+  a1 % 114
+  s1 % 115
+  e1 | % 116
   s1 s1 s1 s1 s1 s1 s1 \bar "|."
 }
 
@@ -2977,6 +2976,13 @@ honey_honey = {
         shortInstrumentName = "Vl. 4"
       } \part-Pfour-one
     >>
+    \new PianoStaff \with {
+      instrumentName = "Piano"
+      shortInstrumentName = "Pf."
+    } <<
+        \new Staff \part-Pnine-one
+        \new Staff \part-Pnine-two
+    >>
     \new Staff \with {
       instrumentName = "Sophie"
       shortInstrumentName = "S."
@@ -2999,19 +3005,31 @@ honey_honey = {
         \new Staff \part-Peight-one
         \new Staff \part-Peight-two
     >>
-    %{
-    \new GrandStaff <<
-        \new Staff \part-Pnine-one
-        \new Staff \part-Pnine-two
-    >>
-    \new GrandStaff <<
+    \new PianoStaff \with {
+      instrumentName = "Electric Keyboard"
+      shortInstrumentName = "Kbd."
+    } <<
         \new Staff \part-Ponezero-one
         \new Staff \part-Ponezero-two
     >>
-    \new Staff \part-Poneone-one
-    \new Staff \part-Ponetwo-one
-    \new Staff \part-Ponethree-one
-    \new Staff \part-Ponefour-one
-    %}
+    \new Staff \with {
+      instrumentName = "Lead Guitar"
+      shortInstrumentName = "L. Guit."
+    } \part-Poneone-one
+    <<
+      \new ChordNames \chord-sequence
+      \new Staff \with {
+        instrumentName = "Rhythm Guitar"
+        shortInstrumentName = "R. Guit"
+      } \part-Ponetwo-one
+    >>
+    \new Staff \with {
+      instrumentName = "Bass Guitar"
+      shortInstrumentName = "B. Guit"
+    } \part-Ponethree-one
+    \new DrumStaff \with {
+      instrumentName = "Drumkit"
+      shortInstrumentName = "Dr."
+    } \part-Ponefour-one
   >>
 }
