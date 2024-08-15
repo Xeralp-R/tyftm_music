@@ -39,6 +39,12 @@
           editorial suggestions are dashed. Original marks are one-letter; 
           editorial suggestions are composed of two letters. Orthography is 
           corrected without any remarks.
+
+
+          20, dr: removed extraneous decrescendo
+          35: moved mark C one bar later
+          74, dr: changed pp to p
+          106
         }
       }
       \hspace #2

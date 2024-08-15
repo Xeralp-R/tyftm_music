@@ -8,3 +8,4 @@ other/
 # i don't know if this should be out or not
 .uuid
 .DS_Store
+*.sublime-workspace

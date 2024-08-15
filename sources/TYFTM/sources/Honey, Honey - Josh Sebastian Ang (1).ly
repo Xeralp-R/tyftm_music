@@ -1,6 +1,7 @@
 % Automatically generated from a musicxml file.
 \version "2.24.4"
 \include "../../../styles/Global.ily"
+\include "../../../styles/Pocket_Score.ily"
 
 honey_honey_header = \header {
   composer = "Benny Andersson, Björn Ulvaeus"
@@ -53,9 +54,9 @@ part-Pone-one = {
   e''1 |
   cis''1 |
   e''1 |
-  cis''1 | \mark "C"
+  cis''1 |
   % 35
-  a'1  \> |
+  a'1  \> | \mark "C"
   b'1 \! |
   c''1 |
   cis''1 |
@@ -2677,9 +2678,13 @@ part-Ponefour-one = \drummode {
       hh8  hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
       hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
       sn8 sn8 sn8 sn8 sn4 sn4 |
+      \mark "A"
       hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
       % 5
       hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
+      \repeat unfold 13 {
+        hh2:8 hh2:8 |
+      }
     }
     \context DrumVoice = "voicetwo" {
       \voiceTwo
@@ -2690,30 +2695,38 @@ part-Ponefour-one = \drummode {
       bd4 sn4 bd8 bd8 sn8 bd8 |
       % 5
       bd4 sn4 bd8 bd8 sn8 bd8 |
+      bd4 sn4 bd4 sn8 bd8 |
+      bd4 sn4 bd8 bd8 sn8 bd8 |
+      bd4 sn4 bd8 bd8 sn8 bd8 |
+      bd4 sn4 bd8 bd8 sn8 bd8 |
+      % 10
+      bd4 sn4 bd8 bd8 sn4 |
+      bd4 sn4 bd8 sn8 sn8 sn8 |
+      \mark "AA"
+      bd4 sn4 bd8 bd8 sn4 |
+      bd4 sn4 bd8 bd8 sn4 |
+      bd4 sn4 bd8 bd8 sn4 |
+      % 15
+      bd4 sn4 bd8 bd8 sn8 bd8 |
+      bd4 sn4 bd8 bd8 sn8 bd8 |
+      bd4 sn4 bd8 bd8 sn8 bd8 |
+      bd4 sn4 bd8 bd8 sn4 |
     }
   >>
-  bd4-\markup { "Hi-Hat sim." } sn4 bd4 sn8 bd8 |
-  bd4 sn4 bd8 bd8 sn8 bd8 |
-  bd4 sn4 bd8 bd8 sn8 bd8 |
-  bd4 sn4 bd8 bd8 sn8 bd8 |
-  % 10
-  bd4 sn4 bd8 bd8 sn4 |
-  bd4 sn4 bd8 sn8 sn8 sn8 |
-  bd4 sn4 bd8 bd8 sn4 |
-  bd4 sn4 bd8 bd8 sn4 |
-  bd4 sn4 bd8 bd8 sn4 |
-  % 15
-  bd4 sn4 bd8 bd8 sn8 bd8 |
-  bd4 sn4 bd8 bd8 sn8 bd8 |
-  bd4 sn4 bd8 bd8 sn8 bd8 |
-  bd4 sn4 bd8 bd8 sn4 |
   <<
     \context DrumVoice = "voiceone" {
       \voiceOne
-      hh8 hh8 hh8 hh8 hh4 hho4->\> |
+      hh8 hh8 hh8 hh8 hh4 hho4-> |
       % 20
-      hh8\pp hh8 hh8 hh8 hh4 hho4-> |
+      hh8\pp\< hh8 hh8 hh8 hh4\ed-rf hho4-> |
       hh8\f hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
+      \repeat unfold 13 {
+        hh2:8 hh2:8 |
+      }
+      %35
+      hh2:8 hh8 hh8 hh8 cymc8~ |
+      \oneVoice
+      cymc4\p r4 r2 |
     }
     \context DrumVoice = "voicetwo" {
       \voiceTwo
@@ -2721,72 +2734,45 @@ part-Ponefour-one = \drummode {
       % 20
       <bd sn >8 <bd sn >8 sn8 <bd sn >4 <bd sn >4-> r8 |
       bd4 sn4 bd8 bd8 sn4 |
+      bd4 sn4 bd8 bd8 sn8 bd8 |
+      bd4 sn4 bd8 bd8 sn4 |
+      bd4 sn4 bd8 bd8 sn8 bd8 |
+      % 25
+      bd4 sn4 bd8 bd8 sn4 |
+      bd4 sn4 bd8 bd8 sn8 bd8 |
+      bd4 sn4 bd8 bd8 sn4 |
+      bd4 sn4 bd8 bd8 sn4 |
+      \mark "BA"
+      bd4 sn4 bd8 bd8 sn4 |
+      % 30
+      bd4 sn4 bd8 bd8 sn4 |
+      bd4 sn4 bd8 bd8 sn4 |
+      bd4 sn4 bd8 bd8 sn8 bd8 |
+      bd4 sn4 bd8 bd8 sn8 bd8 |
+      bd4 sn4 bd8 bd8 sn8 bd8 |
+      %35
+      bd4\> sn4 bd8 bd8 sn8 bd8
+      s1 |
     }
   >>
-  bd4-\markup { "Hi-Hat sim." } sn4 bd8 bd8 sn8 bd8 |
-  bd4 sn4 bd8 bd8 sn4 |
-  bd4 sn4 bd8 bd8 sn8 bd8 |
-  % 25
-  bd4 sn4 bd8 bd8 sn4 |
-  bd4 sn4 bd8 bd8 sn8 bd8 |
-  bd4 sn4 bd8 bd8 sn4 |
-  bd4 sn4 bd8 bd8 sn4 |
-  bd4 sn4 bd8 bd8 sn4 |
-  % 30
-  bd4 sn4 bd8 bd8 sn4 |
-  bd4 sn4 bd8 bd8 sn4 |
-  bd4 sn4 bd8 bd8 sn8 bd8 |
-  bd4 sn4 bd8 bd8 sn8 bd8 |
-  bd4 sn4 bd8 bd8 sn8 bd8 |
-  % 35
-  << { bd4 sn4\> bd8 bd8 sn8 bd8 } \\ { cymc8~\! } >> |
-  cymc4\p r4 r2 |
-  R1 |
-  R1 |
-  R1 |
-  % 40
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 45
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 50
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 55
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 60
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 65
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 70
-  R1 |
-  R1 |
-  R1 |
-  \improvisationOn \omit Stem
-  4\p-\markup { "Fill, Last Time Only" }\< 4 4 4 |
-  \improvisationOff \undo \omit Stem
+  R1*4
+  \repeat volta 2 {
+    \textMark "Vamp 'till ready" R1 |
+  }
+  \mark D
+  R1*7
+  \mark DA
+  R1*6
+  \mark E
+  R1*12
+  \mark EA
+  R1*6
+  \repeat volta 2 {
+    \once \override TrillSpanner.bound-details.left.text = ##f
+    \once \override TrillSpanner.extra-offset = #'(-0.66 . -3)
+    \endSpanners { s1 ^\markup{ \italic "Fill, last time only"}\ed-p \< \startTrillSpan } 
+  }
+  \mark "F"
   <<
     \context DrumVoice = "voiceone" {
       \voiceOne
@@ -2794,73 +2780,69 @@ part-Ponefour-one = \drummode {
       % 75
       hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
       hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
+      \repeat unfold 12 {
+        hh2:8 hh2:8
+      }
     }
     \context DrumVoice = "voicetwo" {
       \voiceTwo
-      bd4 sn4 bd8 bd8 sn4 |
+      bd4\ed-f sn4 bd8 bd8 sn4 |
       % 75
       bd4 sn4 bd8 bd8 sn4 |
       bd4 sn4 bd8 bd8 sn4 |
+      bd4 sn4 bd8 bd8 sn4 |
+      bd4 sn4 bd8 bd8 sn4 |
+      bd4 sn4 bd8 bd8 sn4 |
+      % 80
+      bd4 sn4 bd8 bd8 sn4 |
+      bd4 sn4 bd8 bd8 sn8 bd8 |
+      \mark "FA"
+      bd4 sn4 bd8 bd8 sn4 |
+      bd4 sn4 bd8 bd8 sn8 bd8 |
+      bd4 sn4 bd8 bd8 sn4 |
+      % 85
+      bd4 sn4 bd8 bd8 sn8 bd8 |
+      bd4 sn4 bd8 bd8 sn4 |
+      bd4 sn4 bd8 bd8 sn4 |
+      bd4\> sn4 bd8 bd8 sn4 \! |
     }
   >>
-  bd4 sn4 bd8 bd8 sn4 |
-  bd4 sn4 bd8 bd8 sn4 |
-  bd4 sn4 bd8 bd8 sn4 |
-  % 80
-  bd4 sn4 bd8 bd8 sn4 |
-  bd4 sn4 bd8 bd8 sn8 bd8 |
-  bd4 sn4 bd8 bd8 sn4 |
-  bd4 sn4 bd8 bd8 sn8 bd8 |
-  bd4 sn4 bd8 bd8 sn4 |
-  % 85
-  bd4 sn4 bd8 bd8 sn8 bd8 |
-  bd4 sn4 bd8 bd8 sn4 |
-  bd4 sn4 bd8 bd8 sn4 |
-  bd4\> sn4 bd8 bd8 sn4 |
+  
+  \mark "G"
   hho1\p |
   % 90
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 95
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 100
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
+  R1*7
+  \mark "GA"
+  R1*8
   % 105
-  \improvisationOn \omit Stem
-  4-\markup { "Fill, Last Time Only" }\pp\< 4 4 4 |
-  \improvisationOff \undo \omit Stem
+  \repeat volta 2 {
+    \once \override TrillSpanner.bound-details.left.text = ##f
+    \once \override TrillSpanner.extra-offset = #'(-0.66 . -3)
+    \endSpanners { s1 ^\markup{ \italic "Fill, last time only"}\ed-p \< \startTrillSpan } 
+  }
+  \mark "H"
   <<
     \context DrumVoice = "voiceone" {
       \voiceOne
-      bd4 sn4 bd8 bd8 sn4 |
-      bd4 sn4 bd8 bd8 sn4 |
-      bd4 sn4 bd8 bd8 sn4 |
+      \repeat unfold 8 {
+      hh2:8 hh2:8
+      }
     }
     \context DrumVoice = "voicetwo" {
       \voiceTwo
-      hho4 |
-      hho4 |
-      hho4 |
+      bd4\ed-f sn4 bd8 bd8 sn4 |
+      bd4 sn4 bd8 bd8 sn4 |
+      bd4 sn4 bd8 bd8 sn4 |
+      bd8 bd8 sn4 bd8 bd8 sn8 bd8 |
+      % 110
+      bd4 sn4 bd8 bd8 sn4 |
+      bd4 sn4 bd8 bd8 sn4 |
+      bd4 sn4 bd8 bd8 sn4 |
+      bd4\> sn4 bd8 sn8 sn8 sn8 |
     }
   >>
-  bd8 bd8 sn4 bd8 bd8 sn8 bd8 |
-  % 110
-  bd4 sn4 bd8 bd8 sn4 |
-  bd4 sn4 bd8 bd8 sn4 |
-  bd4 sn4 bd8 bd8 sn4 |
-  bd4 sn4 bd8 sn8 sn8 sn8 |
-  hho1->-\markup { "L.V." } |
+  \mark "HA"
+  hho1->^\markup { "L.V." }\ed-sf |
   % 115
   R1 |
   R1 |
@@ -2869,7 +2851,7 @@ part-Ponefour-one = \drummode {
   R1 |
   % 120
   R1 |
-  R1 |
+  R1 | \bar "|."
 }
 
 chord-sequence = \chordmode {
@@ -3032,4 +3014,11 @@ honey_honey = {
       shortInstrumentName = "Dr."
     } \part-Ponefour-one
   >>
+}
+
+\header {
+      \honey_honey_header
+    }
+\score {
+  \honey_honey
 }

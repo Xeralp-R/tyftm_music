@@ -99,11 +99,29 @@ blank_page = \bookpart {
   }
 }
 
+#(define normal-drum-style '(
+         (bassdrum        default   #f          -3)
+         (snare           default   #f          1)
+         (hihat           cross     #f          5)
+         (openhihat       cross     open        5)
+         (pedalhihat      cross     #f          -6)
+         (ridecymbal      cross     #f          4)
+         (crashcymbal     cross     #f          6)
+         (midhightom      default   #f          3)
+         (midlowtom       default   #f          2)
+         (lowtom          default   #f          -1)
+         (floortom        default   #f          -1)))
+
 \layout {
   \context {
     \Score {
       \set rehearsalMarkFormatter = #format-mark-box-alphabet
       \set countPercentRepeats = ##t
+    }
+  }
+  \context {
+    \DrumStaff {
+      \set drumStyleTable = #(alist->hash-table normal-drum-style)
     }
   }
 }
@@ -112,6 +130,7 @@ sffz = \markup { \dynamic "sffz" }
 
 ed-f = #(make-dynamic-script (markup #:large #:normal-text "f"))
 ed-rf = #(make-dynamic-script (markup #:large #:normal-text "rf"))
+ed-sf = #(make-dynamic-script (markup #:large #:normal-text "sf"))
 ed-p = #(make-dynamic-script (markup #:large #:normal-text "p"))
 
 ed-text = #(define-music-function (arg) (markup?)
