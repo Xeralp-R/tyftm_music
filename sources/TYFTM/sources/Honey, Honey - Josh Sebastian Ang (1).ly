@@ -2516,24 +2516,28 @@ part-Ponetwo-one = {
   R1 |
 }
 
-part-Ponethree-one = {
+part-Ponethree-one = \transpose c c, {
   \key e \major
   \time 4/4
-  \clef bass
-  e,4 gis,8 b,8 e,4 gis,8 b,8 |
-  e,4 gis,8 b,8 e,4 gis,8 b,8 |
-  a,4 cis8 e8 a,4 cis8 e8 |
-  a,4 cis8 e8 a,4-. b,4-> |
-  e,4 gis,8 b,8 e,4 gis,8 b,8 |
+  \clef "bass_8"
+
+  \slurDashed
+  e,4\ed-f gis,8( b,8) e,4 gis,8( b,8) |
+  e,4 gis,8( b,8) e,4 gis,8( b,8) |
+  a,4^\ed-text "articulation sim."  cis8 e8 a,4 cis8 e8 |
+  \once-ed-cresc
+  a,4\< cis8 e8 a,4-.\!\ed-rf b,4-> | \mark "A"
+  e,4\ed-f gis,8( b,8) e,4 gis,8( b,8) |
   % 5
-  e,4 gis,8 b,8 e,4 gis,8 b,8 |
+  e,4 gis,8( b,8) e,4 gis,8( b,8) |
   a,4 cis8 e8 a,4 cis8 e8 |
-  a,4 cis8 e8 a,4 cis8 e8 |
+  a,4^\ed-text "sim." cis8 e8 a,4 cis8 e8 |
   e,4 gis,8 b,8 e,4 gis,8 b,8 |
   e,4 gis,8 b,8 e,4 gis,8 b,8 |
   % 10
   a,4 cis8 e8 a,4 cis8 e8 |
   a,4 cis8 e8 a,4 cis8 e8 |
+  \mark "AA"
   e,4 gis,8 b,8 e,4 b,8 c8 |
   cis4 gis,8 b,8 cis8 gis,8 cis4 |
   e,4 gis,8 b,8 e,4 b,8 c8 |
@@ -2542,11 +2546,12 @@ part-Ponethree-one = {
   e,4 gis,8 b,8 e,4 b,8 c8 |
   cis4 gis,8 b,8 cis8 gis,8 cis4 |
   a,4 cis8 e8 a,4 cis8 e8 |
-  a,4 cis8 e8 a,4-. b,4-> |
+  a,4\< cis8 e8 a,4-.\ed-rf b,4-> |
   % 20
-  a,8->\p a,8-> a,8-> a,8-> a,4-^ b,4-^ |
-  e,4\f gis,8 b,8 e,4 gis,8 b,8 |
-  e,4 gis,8 b,8 e,4 gis,8 b,8 |
+  a,8->\ed-pp\< a,8-> a,8-> a,8-> a,4-^ \ed-rf b,4-^ |
+  \bar "||" \mark "B"
+  e,4\f gis,8( b,8) e,4 gis,8( b,8) |
+  e,4 gis,8( b,8) e,4 gis,8( b,8) |
   a,4 cis8 e8 a,4 cis8 e8 |
   a,4 cis8 e8 a,4 cis8 e8 |
   % 25
@@ -2554,6 +2559,7 @@ part-Ponethree-one = {
   e,4 gis,8 b,8 e,4 gis,8 b,8 |
   a,4 cis8 e8 a,4 cis8 e8 |
   a,4 cis8 e8 a,4 cis8 e8 |
+  \mark "BA"
   e,4 gis,8 b,8 e,4 b,8 c8 |
   % 30
   cis4 gis,8 b,8 cis8 gis,8 cis4 |
@@ -2563,13 +2569,18 @@ part-Ponethree-one = {
   cis4 gis,8 b,8 cis4 b,4 |
   % 35
   a,2\> cis8 e8 r8 a,8~ |
+  \mark "C"
   a,2\p cis8 a,8 r8 gis,8~ |
   gis,2 gis8 gis,8 r8 cis8~ |
   cis2 e8 cis8 r8 fis,8~ |
   fis,4. fis,8 fis4. fis8 |
   % 40
   fis,2 fis,2 |
-  b,2 b,4 b,4 |
+  \textMark "Vamp 'till ready"
+  \repeat volta 2 {
+    b,2 b,4 b,4 |
+  }
+  \mark D
   b,4. b8~ b8 fis4 b,8 |
   e,4. b,8 e4 e,4 |
   a,4. a,8 gis,4. gis,8 |
@@ -2578,6 +2589,7 @@ part-Ponethree-one = {
   fis,4. cis8 fis2 |
   fis,4. cis8~ cis8 cis4 cis8 |
   fis,4. cis8 fis,2 |
+  \mark DA
   b,4. fis8~ fis8 fis,4 fis8 |
   % 50
   e4. b,8~ b,8 e4 e,8 |
@@ -2586,6 +2598,7 @@ part-Ponethree-one = {
   a,4. e8~ e8 e,4 e8 |
   a,4. a,8 a,4 a,4 |
   % 55
+  \mark E
   e,4. e,8 e,4 e,8 e,8 |
   a,4. a,8 a,4 a,8 a,8 |
   d4. d8 cis4. cis8 |
@@ -2600,6 +2613,7 @@ part-Ponethree-one = {
   % 65
   g,4. g,8 g,4. g,8 |
   c4. c8 c4 c4 |
+  \mark EA
   fis,4. fis,8 b,4. b,8 |
   gis,4. gis,8 cis4. cis8 |
   a,4. a,8 d4. d8 |
@@ -2607,17 +2621,23 @@ part-Ponethree-one = {
   gis,4. gis,8 cis4. cis8 |
   fis,1~ |
   fis,1 |
-  b,1 |
-  e,4\f gis,8 b,8 e,4 gis,8 b,8 |
+  \repeat volta 2 {
+  \textMark "Vamp 'till ready"
+    \once-ed-cresc
+    b,1\ed-p \< |
+  }
+  \mark F
+  e,4\f gis,8( b,8) e,4 gis,8( b,8) |
   % 75
-  e,4\f gis,8 b,8 e,4 gis,8 b,8 |
+  e,4 gis,8( b,8) e,4 gis,8( b,8) |
   a,4 cis8 e8 a,4 cis8 e8 |
   a,4 cis8 e8 a,4 cis8 e8 |
-  e,4\f gis,8 b,8 e,4 gis,8 b,8 |
-  e,4\f gis,8 b,8 e,4 gis,8 b,8 |
+  e,4 gis,8 b,8 e,4 gis,8 b,8 |
+  e,4 gis,8 b,8 e,4 gis,8 b,8 |
   % 80
   a,4 cis8 e8 a,4 cis8 e8 |
   a,4 cis8 e8 a,4 cis8 e8 |
+  \mark FA
   e,4 gis,8 b,8 e,4 b,8 c8 |
   cis4 gis,8 b,8 cis8 gis,8 cis8 gis,8 |
   e,4 gis,8 b,8 e,4 b,8 c8 |
@@ -2626,6 +2646,7 @@ part-Ponethree-one = {
   e,4 gis,8 b,8 e,4 b,8 c8 |
   cis4 gis,8 b,8 cis8 gis,8 cis8 gis,8 |
   a,4\> cis8 e8 a,4 cis8 e8 |
+  \mark "G"
   a,4.\p a,8 a,4. a,8 |
   % 90
   fis,4. fis,8 fis,4. fis,8 |
@@ -2636,6 +2657,7 @@ part-Ponethree-one = {
   % 95
   a,2. r4 |
   r2 r8 d8 dis8 e8~ |
+  \mark "GA"
   e4. fis,16 g,16 gis,2 |
   a,8 a8 b,8 b8 cis4 a,4 |
   e,4. fis,16 g,16 gis,2 |
@@ -2646,8 +2668,12 @@ part-Ponethree-one = {
   b,4 r4 r2 |
   r8 d8 dis8 e8~ e2 |
   % 105
-  e,8 g,8 gis,8 a,8~ a,8 a,8 cis8 e8 |
-  e,4 gis,8 b,8 e,4 gis,8 b,8 |
+  \repeat volta 2 {
+    \once-ed-cresc
+    e,8\< g,8 gis,8 a,8~ a,8 a,8 cis8 e8 |
+  }
+  \mark H
+  e,4\ed-f gis,8 b,8 e,4 gis,8 b,8 |
   e,4 gis,8 b,8 e,4 gis,8 b,8 |
   a,4 cis8 e8 a,4 cis8 e8 |
   a,4 cis8 e8 a,4 cis8 e8 |
@@ -2655,8 +2681,12 @@ part-Ponethree-one = {
   e,4 gis,8 b,8 e,4 gis,8 b,8 |
   e,4 gis,8 b,8 e,4 gis,8 b,8 |
   a,4 cis8 e8 a,4 cis8 e8 |
-  a,4 cis8 e8 a,4 cis8 e8 |
-  e1-\markup { \italic "dim." } |
+  \once-ed-cresc
+  a,4\> cis8 e8 a,4 cis8 e8 |
+  \mark HA
+  \once \override DynamicText.X-offset = #0
+  e1_#(make-dynamic-script (markup #:line (#:large #:normal-text "pp," 
+                                           #:normal-text #:italic "colla voce")))  |
   % 115
   cis1 |
   e1 |
@@ -2677,9 +2707,10 @@ part-Ponefour-one = \drummode {
       hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
       hh8  hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
       hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
-      sn8 sn8 sn8 sn8 sn4 sn4 |
+      \once \override Hairpin.style = #'dashed-line
+      sn8\< sn8 sn8 sn8 sn4\ed-rf sn4 |
       \mark "A"
-      hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
+      hh8\ed-f hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
       % 5
       hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
       \repeat unfold 13 {
@@ -2688,7 +2719,7 @@ part-Ponefour-one = \drummode {
     }
     \context DrumVoice = "voicetwo" {
       \voiceTwo
-      bd4 sn4 bd8 bd8 sn8 bd8 |
+      bd4\ed-f sn4 bd8 bd8 sn8 bd8 |
       bd4 sn4 bd8 bd8 sn8 bd8 |
       bd4 sn4 bd8 bd8 sn8 bd8 |
       s2. tomfl4 |
@@ -2716,7 +2747,7 @@ part-Ponefour-one = \drummode {
   <<
     \context DrumVoice = "voiceone" {
       \voiceOne
-      hh8 hh8 hh8 hh8 hh4 hho4-> |
+      hh8\ed-rf hh8 hh8 hh8 hh4 hho4-> |
       % 20
       hh8\pp\< hh8 hh8 hh8 hh4\ed-rf hho4-> |
       hh8\f hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
@@ -2724,7 +2755,7 @@ part-Ponefour-one = \drummode {
         hh2:8 hh2:8 |
       }
       %35
-      hh2:8 hh8 hh8 hh8 cymc8~ |
+      hh2:8\> hh8 hh8 hh8 cymc8~ |
       \oneVoice
       cymc4\p r4 r2 |
     }
@@ -2751,13 +2782,14 @@ part-Ponefour-one = \drummode {
       bd4 sn4 bd8 bd8 sn8 bd8 |
       bd4 sn4 bd8 bd8 sn8 bd8 |
       %35
-      bd4\> sn4 bd8 bd8 sn8 bd8
+      bd4 sn4 bd8 bd8 sn8 bd8
       s1 |
     }
   >>
   R1*4
+  \textMark "Vamp 'till ready"
   \repeat volta 2 {
-    \textMark "Vamp 'till ready" R1 |
+    R1 |
   }
   \mark D
   R1*7
@@ -2770,6 +2802,7 @@ part-Ponefour-one = \drummode {
   \repeat volta 2 {
     \once \override TrillSpanner.bound-details.left.text = ##f
     \once \override TrillSpanner.extra-offset = #'(-0.66 . -3)
+    \once-ed-cresc
     \endSpanners { s1 ^\markup{ \italic "Fill, last time only"}\ed-p \< \startTrillSpan } 
   }
   \mark "F"
@@ -2818,6 +2851,7 @@ part-Ponefour-one = \drummode {
   \repeat volta 2 {
     \once \override TrillSpanner.bound-details.left.text = ##f
     \once \override TrillSpanner.extra-offset = #'(-0.66 . -3)
+    \once-ed-cresc
     \endSpanners { s1 ^\markup{ \italic "Fill, last time only"}\ed-p \< \startTrillSpan } 
   }
   \mark "H"
@@ -2827,6 +2861,7 @@ part-Ponefour-one = \drummode {
       \repeat unfold 8 {
       hh2:8 hh2:8
       }
+      s1
     }
     \context DrumVoice = "voicetwo" {
       \voiceTwo
@@ -2839,19 +2874,13 @@ part-Ponefour-one = \drummode {
       bd4 sn4 bd8 bd8 sn4 |
       bd4 sn4 bd8 bd8 sn4 |
       bd4\> sn4 bd8 sn8 sn8 sn8 |
+      \oneVoice
+      \mark "HA"
+      hho1->^\markup { "L.V." }\ed-sf |
     }
   >>
-  \mark "HA"
-  hho1->^\markup { "L.V." }\ed-sf |
   % 115
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 120
-  R1 |
-  R1 | \bar "|."
+  R1*7 \bar "|."
 }
 
 chord-sequence = \chordmode {
@@ -2940,6 +2969,7 @@ chord-sequence = \chordmode {
 
 honey_honey = {
   <<
+  %%{
     \new StaffGroup <<
       \new Staff \with {
         instrumentName = "Violin 1"
@@ -3005,10 +3035,16 @@ honey_honey = {
         shortInstrumentName = "R. Guit"
       } \part-Ponetwo-one
     >>
-    \new Staff \with {
+    \new StaffGroup \with {
+      systemStartDelimiter = #'SystemStartSquare
       instrumentName = "Bass Guitar"
       shortInstrumentName = "B. Guit"
-    } \part-Ponethree-one
+    } <<
+      \new Staff \part-Ponethree-one
+      \new TabStaff \with {
+        stringTunings = #bass-tuning
+      } \part-Ponethree-one
+    >>
     \new DrumStaff \with {
       instrumentName = "Drumkit"
       shortInstrumentName = "Dr."

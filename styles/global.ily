@@ -128,10 +128,12 @@ blank_page = \bookpart {
 
 sffz = \markup { \dynamic "sffz" }
 
+ed-mf = #(make-dynamic-script (markup #:large #:normal-text "mf"))
 ed-f = #(make-dynamic-script (markup #:large #:normal-text "f"))
 ed-rf = #(make-dynamic-script (markup #:large #:normal-text "rf"))
 ed-sf = #(make-dynamic-script (markup #:large #:normal-text "sf"))
 ed-p = #(make-dynamic-script (markup #:large #:normal-text "p"))
+ed-pp = #(make-dynamic-script (markup #:large #:normal-text "pp"))
 
 ed-text = #(define-music-function (arg) (markup?)
   #{
