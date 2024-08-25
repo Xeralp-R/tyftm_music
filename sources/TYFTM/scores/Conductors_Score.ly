@@ -44,10 +44,11 @@
           20, dr: removed extraneous decrescendo
           21, L. Guit, R. Guit, B. Guit: regularized to editorial pp
           35: moved mark C one bar later
-          36, dr: added editorial decresc
+          36, rg: Placed dynamic markings at start of bar
           74, dr: changed pp to p
           106
           115, B. Guit: removed dim, corrected alongside others
+          115, across the board: regularized to pp
         }
       }
       \hspace #2

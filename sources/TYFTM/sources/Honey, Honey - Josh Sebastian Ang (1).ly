@@ -64,7 +64,7 @@ part-Pone-one = {
   % 40
   a'1 |
   \repeat volta 2 {
-    \textMark "Vamp 'till ready" b'1 |
+    \sectionLabel "Vamp 'till ready" b'1 |
   } \mark "D"
   a'1  |
   e''1 |
@@ -104,7 +104,7 @@ part-Pone-one = {
   r4 e''8 e''8 dis''8 e''4 gis''8 |
   gis''4 e''8 e''8 dis''8 e''4 gis''8 |
   \repeat volta 2 {
-    \textMark "Vamp 'till ready" e''4. e''8 dis''4. dis''8 |
+    \sectionLabel "Vamp 'till ready" e''4. e''8 dis''4. dis''8 |
   } \mark "F"
   e''1~  |
   % 75
@@ -145,7 +145,7 @@ part-Pone-one = {
   d''8 fis'8 g'8 gis'8~ gis'2 |
   % 105
   \repeat volta 2 {
-    \textMark "Vamp 'till ready" gis'4. g'8~ g'2
+    \sectionLabel "Vamp 'till ready" gis'4. g'8~ g'2
   } | \mark "H"
   gis'1~ \p |
   gis'1 |
@@ -156,7 +156,7 @@ part-Pone-one = {
   b'1 |
   cis''1~ |
   cis''2\> b'2~ |
-  \tempo "allargando" \textMark "Colla Voce" b'1  |
+  \tempo "allargando" \sectionLabel "Colla Voce" b'1  |
   % 115
   cis''4.\pp cis''8 dis''4 cis''4 |
   b'2 r2 |
@@ -2074,6 +2074,7 @@ part-Ponezero-two = {
   \key e \major
   \time 4/4
   \clef bass
+
   e,4 gis,8 b,8 e,4 gis,8 b,8 |
   e,4 gis,8 b,8 e,4 gis,8 b,8 |
   a,4 cis8 e8 a,4 cis8 e8 |
@@ -2231,149 +2232,62 @@ part-Poneone-one = {
   r4 b4 r4 b4 |
   r4 b4 r4 b4 |
   r4 b4 r4 b4 |
-  b8-> b8-> b8-> b8-> b4-^ b4-^ |
-  r4 b8 b8 r8 b8 b8 b8 |
+  \once-ed-cresc
+  b8->\< b8-> b8-> b8-> b4-^\ed-rf b4-^ |
+  \bar "||" \mark "A"
+  r4 b8\ed-f b8 r8 b8 b8 b8 |
   % 5
-  b4-\markup { "Rhythm sim." } b4 b4 b4 |
-  b4 b4 b4 b4 |
-  b4 b4 b4 b4 |
-  b4 b4 b4 b4 |
-  b4 b4 b4 b4 |
-  % 10
-  b4 b4 b4 b4 |
-  b4 b4 b4 b4 |
-  b4 b4 b4 b4 |
-  b4 b4 b4 b4 |
-  b4 b4 b4 b4 |
-  % 15
-  b4 b4 b4 b4 |
-  b4 b4 b4 b4 |
-  b4 b4 b4 b4 |
-  b4 b4 b4 b4 |
-  b8-> b8-> b8-> b8-> b4-^ b4-^ |
+  \linear-spanner 7 1
+  \mark AA
+  \linear-spanner 7 1
+  \once-ed-cresc
+  b8->\< b8-> b8-> b8-> b4-^\ed-rf b4-^ |
   % 20
-  b8->\ppp b8-> b8-> b8-> b4-^ b4-^ |
+  \once-ed-cresc
+  b8->\ed-pp\< b8-> b8-> b8-> b4-^\ed-rf b4-^ |
+  \mark "B" \bar "||"
   r4 b8 b8 r8 b8 b8 b8 |
-  b4-\markup { "Rhythm sim." } b4 b4 b4 |
-  b4 b4 b4 b4 |
-  b4 b4 b4 b4 |
-  % 25
-  b4 b4 b4 b4 |
-  b4 b4 b4 b4 |
-  b4 b4 b4 b4 |
-  b4 b4 b4 b4 |
-  b4 b4 b4 b4 |
-  % 30
-  b4 b4 b4 b4 |
-  b4 b4 b4 b4 |
-  b4 b4 b4 b4 |
-  b4 b4 b4 b4 |
-  b4 b4 b4 b4 |
+  \linear-spanner 7 1
+  \mark BA
+  \linear-spanner 6 1
   % 35
-  r4 b8\> b8 r8 r4 b8~ |
+  r4\> b8 b8 r8 r4 b8~ |
   b1\p |
-  R1 |
-  R1 |
-  R1 |
-  % 40
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 45
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 50
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 55
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 60
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 65
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 70
-  R1 |
-  R1 |
-  R1 |
-  R1 |
+  R1*4^\ed-text "For a solo, coordinate with rhythm"
+  \repeat volta 2 {
+  \sectionLabel "Vamp 'till ready"
+    R1 |
+  } \mark D
+  R1*7 | \mark DA
+  R1*6 | \mark E
+  R1*12 | \mark EA
+  R1*6
+  \repeat volta 2 {
+    \sectionLabel "Vamp 'till ready"
+    R1
+  } \mark F
   r4 b8 b8 r8 b8 b8 b8 |
   % 75
-  b4-\markup { "Rhythm sim." } b4 b4 b4 |
-  b4 b4 b4 b4 |
-  b4 b4 b4 b4 |
-  b4 b4 b4 b4 |
-  b4 b4 b4 b4 |
-  % 80
-  b4 b4 b4 b4 |
-  b4 b4 b4 b4 |
-  r4 b8 b8 r8 b8 b8 b8 |
-  b4-\markup { "Rhythm sim." } b4 b4 b4 |
-  b4 b4 b4 b4 |
-  % 85
-  b4 b4 b4 b4 |
-  b4 b4 b4 b4 |
-  b4 b4 b4 b4 |
-  b4\> b4 b4 b4 |
-  R1 |
+  \linear-spanner 7 1 | \mark FA
+  \linear-spanner 6 1 |
+  r4\> b8 b8 r8 b8 b8 b8 | \mark G
+  R1\ed-p |
   % 90
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 95
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 100
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
+  R1 *7 |
+  \mark GA
+  R1*8
   % 105
+  \repeat volta 2 { \sectionLabel "Vamp 'till ready"
   R1 |
+  }
   r4 b8\f b8 r8 b8 b8 b8 |
-  b4-\markup { "Rhythm sim." } b4 b4 b4 |
-  b4 b4 b4 b4 |
-  b4 b4 b4 b4 |
-  % 110
-  b4 b4 b4 b4 |
-  b4 b4 b4 b4 |
-  b4 b4 b4 b4 |
-  b4 b4 b4 b4 |
-  b1 |
+  \linear-spanner 6 1
+  \once-ed-cresc
+  r4 b8\> b8 r8 b8 b8 b8 |
+  b1\ed-pp |
   % 115
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 120
-  R1 |
-  R1 |
+  R1*6
+  R1\fermata \bar "|." |
 }
 
 part-Ponetwo-one = {
@@ -2382,74 +2296,44 @@ part-Ponetwo-one = {
   \clef "treble_8"
 
   \override NoteHead.style = #'slash
+  b8\ed-f b8 b8 b8 b8 b8 b8 b8 |
   b8 b8 b8 b8 b8 b8 b8 b8 |
   b8 b8 b8 b8 b8 b8 b8 b8 |
-  b8 b8 b8 b8 b8 b8 b8 b8 |
-  b8-> b8-> b8-> b8-> b4-^ b4-^ |
-  b8 b8 b8 b8 b8 b8 b8 b8 |
+  \once-ed-cresc
+  b8->\< b8-> b8-> b8-> b4-^\ed-rf b4-^ |
+  \bar "||" \mark "A"
+  b8\ed-f b8 b8 b8 b8 b8 b8 b8 |
   % 5
-  \linear-spanner 13 1
-  b8 b8 b8 b8 b8 b8 b8 b8 |
-  b8-> b8-> b8-> b8-> b4-^ b4-^ |
+  \linear-spanner 7 1
+  \mark AA
+  \linear-spanner 7 1
+  \once-ed-cresc
+  b8->\< b8-> b8-> b8-> b4-^\ed-rf b4-^ |
   % 20
-  b8->\p b8->\< b8-> b8-> b4-^ b4-^ |
-  b8 b8 b8 b8 b8 b8 b8 b8 |
-  b4-\markup { "Rhythm sim." } b4 b4 b4 |
-  b4 b4 b4 b4 |
-  b4 b4 b4 b4 |
-  % 25
-  b4 b4 b4 b4 |
-  b4 b4 b4 b4 |
-  b4 b4 b4 b4 |
-  b4 b4 b4 b4 |
-  b4\arpeggio b4 b4 b4 |
-  % 30
-  b4\arpeggio b4 b4 b4 |
-  b4\arpeggio b4 b4 b4 |
-  b4\arpeggio b4 b4 b4 |
-  b4\arpeggio b4 b4 b4 |
-  b4\arpeggio b4 b4 b4 |
+  b8->\ed-pp\< b8-> b8-> b8-> b4-^\ed-rf b4-^ |
+  \mark "B"
+  b8\ed-f b8 b8 b8 b8 b8 b8 b8 |
+  \linear-spanner 7 1
+  \mark BA
+  \linear-spanner 6 1
   % 35
-  r4 b8\> b8 r8 b4 b8 |
-  r4 b8\p b8 r8 b4 b8~ |
-  b4 b8 b8 r8 b4 b8~ |
-  b4 b8 b8 r8 b4 b8~ |
-  b4 b8 b8 r8 b4 b8~ |
+  r4\> b8 b8 r8 b4 b8 |
+  \mark C
+  r4\p b8 b8 r8 b4 b8~ |
+  b4 b8 b8 r8 b4 b8 |
+  \linear-spanner 2 1
   % 40
   b4 b8 b8 b8 b4. |
+  \repeat volta 2 {
+  \sectionLabel "Vamp 'till ready"
   b4. b8 b4. b8 |
-  b8 b8 r8 b8~ b4 b8 b8 |
-  r8 b8 r8 b8 b4 b8 b8 |
-  b8 b8 r8 b8 b4 b8 b8 |
-  % 45
-  r8 b8 r8 b8 b4 b8 b8 |
-  b8 b8 r8 b8 b4 b8 b8 |
-  r8 b8 r8 b8 b4 b8 b8 |
-  b8 b8 r8 b8 b4 b8 b8 |
-  r8 b8 r8 b8 b4 b8 b8 |
-  % 50
-  b8 b8 r8 b8~ b4 b8 b8 |
-  b8 b8 r8 b8~ b4 b8 b8 |
-  b8 b8 r8 b8 b4 b8 b8 |
-  b8 b8 r8 b8~ b4 b8 b8 |
-  b8 b8 r8 b8 b4 b8 b8 |
-  % 55
-  b8 b8 r8 b8 b4 b8 b8 |
-  b8 b8 r8 b8 b4 b8 b8 |
-  b8 b8 r8 b8 b4 b8 b8 |
-  b8 b8 r8 b8 b4 b8 b8 |
-  b8 b8 r8 b8 b4 b8 b8 |
-  % 60
-  b8 b8 r8 b8 b4 b8 b8 |
-  b8 b8 r8 b8 b4 b8 b8 |
-  b8 b8 r8 b8 b4 b8 b8 |
-  b8 b8 r8 b8 b4 b8 b8 |
-  b8 b8 r8 b8 b4 b8 b8 |
-  % 65
-  b8 b8 r8 b8 b4 b8 b8 |
-  b8 b8 r8 b8 b4 b8 b8 |
+  } \mark D
+  b8 b8 r8 b8~^\ed-text "Or: no tie" b4 b8 b8 |
+  \linear-spanner 6 1 | \mark DA
+  \linear-spanner 6 1 | \mark E
+  \linear-spanner 12 1 | \mark EA
   b4. b8 b4. b8 |
-  a4. a8 a4. a8 |
+  b4. b8 b4. b8 |
   b4. b8 b4. b8 |
   % 70
   b4. b8 b4. b8 |
@@ -2458,62 +2342,31 @@ part-Ponetwo-one = {
   b2 b2 |
   b8 b8 b8 b8 b8 b8 b8 b8 |
   % 75
-  b4-\markup { "Rhythm sim." } b4 b4 b4 |
-  b4 b4 b4 b4 |
-  b4 b4 b4 b4 |
-  b4 b4 b4 b4 |
-  b4 b4 b4 b4 |
-  % 80
-  b4 b4 b4 b4 |
-  b4 b4 b4 b4 |
-  b4\arpeggio b4 b4 b4 |
-  b4\arpeggio b4 b4 b4 |
-  b4\arpeggio b4 b4 b4 |
-  % 85
-  b4\arpeggio b4 b4 b4 |
-  b4\arpeggio b4 b4 b4 |
-  b4\arpeggio b4 b4 b4 |
-  b4\> b4 b4 b4 |
+  \linear-spanner 7 1 \mark "FA"
+  \linear-spanner 6 1
+  b8 b8 b8 b8 b8 b8 b8 b8 | \mark "G"
   r8 b8 r8 b8 b4 b8 b8 |
   % 90
-  r8 b8 r8 b8 b4 b8 b8 |
-  r8 b8 r8 b8 b4 b8 b8 |
+  \linear-spanner 2 1
   r4 b8 b8 b8 b4.\bendAfter #-4 |
-  R1 |
-  R1 |
-  % 95
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 100
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
+  R1*4 |
+  \mark GA
+  R1*8
   % 105
+  \repeat volta 2 {\sectionLabel "Vamp 'till ready"
   R1 |
-  b4 b4 b4 b4 |
-  b4 b4 b4 b4 |
-  b4 b4 b4 b4 |
-  b4 b4 b4 b4 |
-  % 110
-  b4 b4 b4 b4 |
-  b4 b4 b4 b4 |
-  b4 b4 b4 b4 |
-  b4 b4 b4 b4 |
-  b1 |
+  }
+  \mark H
+  b8\ed-f b8 b8 b8 b8 b8 b8 b8 |
+  \linear-spanner 6 1
+  \once-ed-cresc
+  b8\> b8 b8 b8 b8 b8 b8 b8 |
+  \mark HA
+  b1\ed-pp |
   % 115
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 120
-  R1 |
-  R1 |
+  R1*6
+  R1\fermata |
+  \bar "|."
 }
 
 part-Ponethree-one = \transpose c c, {
@@ -2546,8 +2399,10 @@ part-Ponethree-one = \transpose c c, {
   e,4 gis,8 b,8 e,4 b,8 c8 |
   cis4 gis,8 b,8 cis8 gis,8 cis4 |
   a,4 cis8 e8 a,4 cis8 e8 |
+  \once-ed-cresc
   a,4\< cis8 e8 a,4-.\ed-rf b,4-> |
   % 20
+  \once-ed-cresc
   a,8->\ed-pp\< a,8-> a,8-> a,8-> a,4-^ \ed-rf b,4-^ |
   \bar "||" \mark "B"
   e,4\f gis,8( b,8) e,4 gis,8( b,8) |
@@ -2576,7 +2431,7 @@ part-Ponethree-one = \transpose c c, {
   fis,4. fis,8 fis4. fis8 |
   % 40
   fis,2 fis,2 |
-  \textMark "Vamp 'till ready"
+  \sectionLabel "Vamp 'till ready"
   \repeat volta 2 {
     b,2 b,4 b,4 |
   }
@@ -2622,7 +2477,7 @@ part-Ponethree-one = \transpose c c, {
   fis,1~ |
   fis,1 |
   \repeat volta 2 {
-  \textMark "Vamp 'till ready"
+  \sectionLabel "Vamp 'till ready"
     \once-ed-cresc
     b,1\ed-p \< |
   }
@@ -2755,6 +2610,7 @@ part-Ponefour-one = \drummode {
         hh2:8 hh2:8 |
       }
       %35
+      \once-ed-cresc
       hh2:8\> hh8 hh8 hh8 cymc8~ |
       \oneVoice
       cymc4\p r4 r2 |
@@ -2787,7 +2643,7 @@ part-Ponefour-one = \drummode {
     }
   >>
   R1*4
-  \textMark "Vamp 'till ready"
+  \sectionLabel "Vamp 'till ready"
   \repeat volta 2 {
     R1 |
   }
@@ -2921,20 +2777,47 @@ chord-sequence = \chordmode {
   e1 % 35
   cis1:m | % 36
   a2.. b8/a | % 37
-  s1 | % 38
-  s1 |
-  s1 |
-  s1 |
-  s1 
-  \repeat volta 2 {
-    % 42
-    s1 
+  s4 s8 s8 s8 s4 a8:7 | % 38
+  s4 s8 s8 s8 s4 cis8:m | % 39
+  s4 s8 s8 s8 s4 fis8:m7 | \barNumberCheck #40
+  s4 s8 s8 s8 s4 fis8:m7 | % 41
+  s4 s8 s8 s8 s4. \repeat volta 2 {
+      b4.:sus4 s8 b4. s8 
   }
   | % 43
-  s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1
-  s1 s1 s1 s1 s1 s1 s1 s1 \repeat volta 2 {
+  b8:m7 s8 s8 s8 s4 s8 s8 | % 44
+  s8 e8:7 s8 s8 s4 s8 s8 | % 45
+  a8 s8 s8 s8 e4/+gis s8 s8 | % 46
+  s8 fis8:m s8 s8 s4 s8 s8 | % 47
+  fis8:m s8 s8 s8 s4 s8 s8 | % 48
+  s8 fis8:m s8 s8 s4 s8 s8 | % 49
+  fis8:m s8 s8 s8 s4 s8 s8 | \barNumberCheck #50
+  s8 b8:m7 s8 s8 s4 s8 s8 | % 51
+  e8:7 s8 s8 s8 s4 s8 s8 | % 52
+  a8 s8 s8 s8 s4 s8 s8 | % 53
+  a8 s8 s8 s8 s4 s8 s8 | % 54
+  a8 s8 s8 s8 s4 s8 s8 | % 55
+  a8 s8 s8 s8 s4 s8 s8 | % 56
+  e8:m7 s8 s8 s8 s4 s8 s8 | % 57
+  g8/+a a8 s8 s8 s4 s8 s8 | % 58
+  d8 s8 s8 s8 a4/+cis s8 s8 | % 59
+  g8 s8 s8 s8 s4 s8 s8 | \barNumberCheck #60
+  g8 s8 s8 s8 s4 s8 s8 | % 61
+  g8 s8 s8 s8 s4 s8 s8 | % 62
+  g8 s8 s8 s8 s4 s8 s8 | % 63
+  c8 s8 s8 s8 s4 s8 s8 | % 64
+  g8 s8 s8 s8 s4 s8 s8 | % 65
+  c8 s8 s8 s8 s4 s8 s8 | % 66
+  g8 s8 s8 s8 s4 s8 s8 | % 67
+  c8 s8 s8 s8 s4 s8 s8 | % 68
+  fis4.:m7 s8 b4.:7 s8 | % 69
+  gis4.:m7 s8 cis4.:7 s8 | \barNumberCheck #70
+  a4.:m7 s8 d4.:7 s8 | % 71
+  gis4.:m497+ s8 cis4.:7 s8 | % 72
+  fis1:m7 | % 73
+  s1 \repeat volta 2 {
       | % 74
-      s1 }
+      b2:sus4 b2 }
   | % 75
   e1 | % 76
   s1 % 77
@@ -2951,7 +2834,11 @@ chord-sequence = \chordmode {
   e1 % 88
   cis1:m | % 89
   a1 \barNumberCheck #90
-  s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 \repeat volta 2 {
+  a1 |
+  fis1:m 
+  fis1:m 
+  cis1:m7/b
+  s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 \repeat volta 2 {
       | % 106
       s1 }
   | % 107
@@ -2969,7 +2856,7 @@ chord-sequence = \chordmode {
 
 honey_honey = {
   <<
-  %%{
+  %{
     \new StaffGroup <<
       \new Staff \with {
         instrumentName = "Violin 1"
@@ -3024,10 +2911,14 @@ honey_honey = {
         \new Staff \part-Ponezero-one
         \new Staff \part-Ponezero-two
     >>
-    \new Staff \with {
-      instrumentName = "Lead Guitar"
-      shortInstrumentName = "L. Guit."
-    } \part-Poneone-one
+    %}
+    <<
+      \new ChordNames \chord-sequence
+      \new Staff \with {
+        instrumentName = "Lead Guitar"
+        shortInstrumentName = "L. Guit."
+      } \part-Poneone-one
+    >>
     <<
       \new ChordNames \chord-sequence
       \new Staff \with {
