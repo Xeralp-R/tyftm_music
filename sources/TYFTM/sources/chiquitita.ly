@@ -1185,7 +1185,7 @@ part-Ponezero-one = {
   <c' ees' >8 <des' f' >8 <ees' g' >8 <f' aes' >8 <g' bes' >4.%{ \scoop %}%{ \scoop %}
   <f' aes' >8 |
   \arpeggioArrowUp
-  <bes ees' g' >2\arpeggio\ed-p <des aes des' f'
+  <bes ees' g' >2\arpeggio\ed-p_\ed-text \markup { "Or: F" \small \flat} <des aes des' f'
   >2\arpeggio |
   <g bes ees' g' >2\arpeggio <g bes ees' g'
   >2\arpeggio |
@@ -1193,74 +1193,47 @@ part-Ponezero-one = {
 
 part-Poneone-one = {
   \key aes \major
-  \time 2/4
-  \clef treble
-  R2 |
   \time 4/4
-  R1 |
-  \time 2/4
-  R2 |
-  \time 3/4
-  R1 |
-  \time 4/4
-  R1 |
-  % 5
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 10
-  \time 3/4
-  R1 |
-  \time 4/4
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 15
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 20
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 25
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 30
-  R1 |
-  des'8\p r8 des'8 r8 des'8 r8 des'8 r8 |
+  \clef "treble_8"
+
+  \tempo "In free time"
+  R1*14 \bar "||"
+  \tempo "Allegretto. Moving" 4 = 84
+  \Footnote "*" #'(0 . 1.2) \markup {
+    \italic "*" 
+    "The performer may choose to play in this duration up 'till C,"
+    "but should coordinate with the rest of the band to do so."
+    "Otherwise, no rhythms nor notes are specifically written." 
+  }
+  R1
+  R1*2 | \mark "A"
+  R1*8 | \mark "B"
+  R1*8 | \mark "C"
+
+  \override NoteHead.style = #'slash
+  bes8\p-ed-f bes8 bes8 bes8 bes8 bes8 bes8 bes8 |
   \time 5/4
-  des'8 r8 des'8 r8 des'8 r8 des'8 r8 des'8 r8 |
+  bes8 bes8 bes8 bes8 bes8 bes8 bes8 bes8 bes8 bes8 |
   \time 4/4
-  des'8 r8 des'8 r8 des'8 r8 des'8 r8 |
-  des'8 r8 des'8 r8 des'8 r8 des'8 r8 |
-  % 35
-  des'8 r8 des'8 r8 des'8 r8 des'8 r8 |
-  des'8 r8 des'8 r8 des'8 r8 des'8 r8 |
-  des'8 r8 des'8 r8 des'8 r8 des'8 r8 |
-  des'8 r8 des'8 r8 des'8 r8 des'8 r8 |
-  des'8 r8 des'8 r8 des'8 r8 des'8 r8 |
+  \linear-spanner 6 1
+  bes8\ed-piu-f bes8 bes8 bes8 bes8 bes8 bes8 bes8 |
   % 40
   \time 5/4
-  des'8 r8 des'8 r8 des'8 r8 des'8 r8 des'8 r8 |
+  bes8 bes8 bes8 bes8 bes8 bes8 bes8 bes8 bes8 bes8 |
   \time 4/4
-  des'8 r8 des'8 r8 des'8 r8 des'8 r8 |
-  des'8 r8 des'8 r8 des'8 r8 des'8 r8 |
-  des'8 r8 des'8 r8 des'8 r8 des'8 r8 |
-  des'8 r8 des'8 r8 des'8 r8 des'8 r8 |
-  % 45
-  des'8 r8 des'8 r8 des'8 r8 c8 des8 |
-  ees8 f8 g8 aes8 bes4.:16 r8 |
+  \linear-spanner 4 1
+  bes8 bes8 bes8 bes8 bes8 bes8
+  \undo \override NoteHead.style = #'slash
+  <<
+    {
+      c8[ des8] |
+      ees8 f8 g8 aes8 bes4.:16 r8 |
+    }
+    \new TabStaff {
+      c8 des8 |
+      ees8 f8 g8 aes8 bes4.:16 r8 |
+    }
+  >>
   R1 |
   R1 |
 }
@@ -1534,7 +1507,6 @@ chiquitita = {
         }
       >>
     >>
-    %{
     <<
       \new ChordNames \chord-sequence
       \new Staff \with {
@@ -1542,6 +1514,7 @@ chiquitita = {
         shortInstrumentName = "R. Guit"
       } \part-Poneone-one
     >>
+    %{
     \new PianoStaff \with {
       instrumentName = "Electric Keyboard"
       shortInstrumentName = "Kbd."
