@@ -1457,7 +1457,7 @@ part-Pnine-one = {
   \key e \major
   \time 4/4
   \clef treble
-  e'8 gis'8 b'8 gis'8 e'8 gis'8 b'8 gis'8 |
+  e'8\ed-f gis'8 b'8 gis'8 e'8 gis'8 b'8 gis'8 |
   e'8 gis'8 b'8 gis'8 e'8 gis'8 b'8 gis'8 |
   a8 cis'8 e'8 cis'8 a8 cis'8 e'8 cis'8 |
   a8\< cis'8 e'8 cis'8 <cis' e' a' >4-^\! <dis' fis' b' >4-> |
@@ -1878,7 +1878,7 @@ part-Ponezero-one = {
   \key e \major
   \time 4/4
   \clef treble
-  e'8 gis'8 b'8 gis'8 e'8 gis'8 b'8 gis'8 |
+  e'8\ed-f gis'8 b'8 gis'8 e'8 gis'8 b'8 gis'8 |
   e'8 gis'8 b'8 gis'8 e'8 gis'8 b'8 gis'8 |
   a8 cis'8 e'8 cis'8 a8 cis'8 e'8 cis'8 |
   a8\< cis'8 e'8 cis'8 <cis' e' a' >4-^\! <dis' fis' b' >4-> |
@@ -2856,7 +2856,7 @@ chord-sequence = \chordmode {
 
 honey_honey = {
   <<
-  %{
+  %%{
     \new StaffGroup <<
       \new Staff \with {
         instrumentName = "Violin 1"
@@ -2875,6 +2875,7 @@ honey_honey = {
         shortInstrumentName = "Vl. 4"
       } \part-Pfour-one
     >>
+    %%}
     \new PianoStaff \with {
       instrumentName = "Piano"
       shortInstrumentName = "Pf."
@@ -2911,7 +2912,7 @@ honey_honey = {
         \new Staff \part-Ponezero-one
         \new Staff \part-Ponezero-two
     >>
-    %}
+    %%{
     <<
       \new ChordNames \chord-sequence
       \new Staff \with {
@@ -2940,6 +2941,7 @@ honey_honey = {
       instrumentName = "Drumkit"
       shortInstrumentName = "Dr."
     } \part-Ponefour-one
+    %%}
   >>
 }
 

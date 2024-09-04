@@ -1,4 +1,6 @@
 \version "2.22.1"
+\include "BarNumberStaff-1.0.ily"
+\include "dynamics.ily"
 
 newline = {}
 newpage = {}
@@ -118,6 +120,8 @@ blank_page = \bookpart {
       \set rehearsalMarkFormatter = #format-mark-box-alphabet
       \set countPercentRepeats = ##t
     }
+    \remove Bar_number_engraver
+    \remove Mark_engraver
   }
   \context {
     \DrumStaff {
@@ -125,25 +129,6 @@ blank_page = \bookpart {
     }
   }
 }
-
-sffz = \markup { \dynamic "sffz" }
-
-ed-mf = #(make-dynamic-script (markup #:large #:normal-text "mf"))
-ed-f = #(make-dynamic-script (markup #:large #:normal-text "f"))
-ed-rf = #(make-dynamic-script (markup #:large #:normal-text "rf"))
-ed-sf = #(make-dynamic-script (markup #:large #:normal-text "sf"))
-ed-p = #(make-dynamic-script (markup #:large #:normal-text "p"))
-ed-pp = #(make-dynamic-script (markup #:large #:normal-text "pp"))
-
-ed-text = #(define-music-function (arg) (markup?)
-  #{
-     -\markup { \upright #arg }
-  #})
-
-once-ed-cresc = #(define-music-function () ()
-  #{
-     \once \override Staff.Hairpin.style = #'dashed-line
-  #})
 
 linear-spanner = #(define-music-function (num_bars length) (integer? integer?)
   #{
