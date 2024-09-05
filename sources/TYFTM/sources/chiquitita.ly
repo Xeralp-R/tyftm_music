@@ -881,87 +881,36 @@ tanya-rosie-lyrics = \lyricmode {
 
 part-Pnine-one = {
   \key aes \major
-  \time 2/4
+  \time 4/4
   \clef treble
-  r8 r8 r8 r8 |
-  \time 4/4
-  R1 |
-  \time 2/4
-  R2 |
-  \time 3/4
-  R1 |
-  \time 4/4
-  R1 |
-  % 5
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 10
-  \time 3/4
-  R1 |
-  \time 4/4
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 15
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 20
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 25
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
+
+  \tempo "In free time"
+  R1*14 \bar "||"
+  \tempo "Allegretto. Moving" 4 = 84
+  R1*3 \mark "A"
+  R1*6
+  des''8^\ed-text "Bells/Glockenspiel" c''8 bes'8 aes'8 r2
+  R1 \mark "B"
+  R1*6
+  des''8^\ed-text "Bells/Glockenspiel" c''8 bes'8 aes'8 aes'8 aes'16 des''16 ees''16 f''16 aes''8 |
   % 30
-  r4 <ees' aes' >4 r8 bes'16 des''16 ees''16 aes''16 ees''16 des''16 |
-  des'8 r8 des'8 r8 des'8 r8 des'8 r8 |
-  \time 5/4
-  des'8 r8 des'8 r8 des'8 r8 des'8 r8 des'8 r8 |
-  \time 4/4
-  des'8 r8 des'8 r8 des'8 r8 des'8 r8 |
-  des'8 r8 des'8 r8 des'8 r8 des'8 r8 |
-  % 35
-  des'4 r4 r2 |
-  R1 |
+  r4 <ees' aes' >2. |
+
+  R1*25/4
   ees''8-\markup { "Synth: Arp 2600" } aes''8 c''8 ees''8 aes'8 c''8 ees'8
   aes'8 |
-  << { c'8 ees'8 aes8 c'8 r2 } \\ { } >> |
+  c'8 ees'8 aes8 c'8 r2 |
   f''8 aes''8 des''8 f''8 aes'8 des''8 f'8 aes'8 |
   % 40
   \time 5/4
   des'8 f'8 aes8 des'8 r4 r2 |
   \time 4/4
   ees''8 aes''8 c''8 ees''8 aes'8 c''8 ees'8 aes'8 |
-  <<
-    \context Voice = "voiceone" {
-      \voiceOne
-      c'8 ees'8 aes8 ees'8 r2 |
-      R1 |
-      R1 |
-      % 45
-      des'8 aes'8 c'8 ees'8 aes8 c'8 r4 |
-    }
-    \context Voice = "voicetwo" {
-      \voiceTwo
-      |
-      |
-      |
-      % 45
-      |
-    }
-  >>
+  c'8 ees'8 aes8 ees'8 r2 |
+  R1 |
+  R1 |
+  % 45
+  des'8 aes'8 c'8 ees'8 aes8 c'8 r4 |
   R1 |
   R1 |
   R1 |
@@ -969,60 +918,30 @@ part-Pnine-one = {
 
 part-Pnine-two = {
   \key aes \major
-  \time 2/4
-  \clef bass
-  R2 |
   \time 4/4
-  R1 |
-  \time 2/4
-  R2 |
-  \time 3/4
-  R1 |
-  \time 4/4
-  R1 |
-  % 5
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 10
-  \time 3/4
-  R1 |
-  \time 4/4
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 15
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 20
-  R1 |
-  \clef treble
   \clef bass
-  des''8 c''8 bes'8 aes'8 \clef treble
-  \clef bass
+
+  \tempo "In free time"
+  R1*14 \bar "||"
+  \tempo "Allegretto. Moving" 4 = 84
+  R1*3 \mark "A"
+  R1*6
+  r2
   f'8 ees'8 des'8 c'8 |
   bes8 aes8 aes2. |
-  r2 r4 r8 <ees, ees >8->-\markup { "Timps" } |
+  r2 r4 r8 <ees, ees >8->^\markup { "Timpani" } |
   <aes, aes >1-> |
   % 25
-  r2 r4 r8 <g, g >8->-\markup { "Timps" } |
+  r2 r4 r8 <g, g >8-> |
   <c c' >1-> |
   R1 |
   R1 |
-  \clef treble
-  des''8 c''8 bes'8 aes'8 aes'8 aes'16 des''16 ees''16 f''16 aes''8 |
+  R1
   % 30
-  \clef bass
   aes2-> <aes ees' >2-> |
   R1 |
   \time 5/4
-  R |
+  R1*5/4 |
   \time 4/4
   R1 |
   R1 |
@@ -1229,9 +1148,9 @@ part-Poneone-one = {
       c8[ des8] |
       ees8 f8 g8 aes8 bes4.:16 r8 |
     }
-    \new TabStaff {
-      c8 des8 |
-      ees8 f8 g8 aes8 bes4.:16 r8 |
+    \context TabStaff = "rhythm-tabs" {
+      \startStaff c8 des8 |
+      ees8 f8 g8 aes8 bes4.:16 r8 | \stopStaff
     }
   >>
   R1 |
@@ -1509,12 +1428,30 @@ chiquitita = {
     >>
     <<
       \new ChordNames \chord-sequence
-      \new Staff \with {
-        instrumentName = "Rhythm Guitar"
-        shortInstrumentName = "R. Guit"
-      } \part-Poneone-one
+      \new StaffGroup \with {
+        systemStartDelimiter = #'SystemStartSquare
+      } <<
+        \new Staff \with {
+          instrumentName = "Rhythm Guitar"
+          shortInstrumentName = "R. Guit"
+        } {
+          \part-Poneone-one
+        }
+        \new TabStaff = "rhythm-tabs" \with {
+          \RemoveAllEmptyStaves
+          \remove "Clef_engraver"
+        } {
+          \stopStaff
+          s1*14
+          s1*3
+          s1*8
+          s1*8
+          s1*33/4
+          s1*33/4
+          s2. 
+        }
+      >>
     >>
-    %{
     \new PianoStaff \with {
       instrumentName = "Electric Keyboard"
       shortInstrumentName = "Kbd."
@@ -1522,6 +1459,7 @@ chiquitita = {
         \new Staff \part-Pnine-one
         \new Staff \part-Pnine-two
     >>
+    %{
     \new StaffGroup \with {
       systemStartDelimiter = #'SystemStartSquare
       instrumentName = "Bass Guitar"
