@@ -1157,35 +1157,19 @@ part-Poneone-one = {
   R1 |
 }
 
-part-Ponetwo-one = {
+part-Ponetwo-one = \transpose c c, {
   \key aes \major
-  \time 2/4
-  \clef bass
-  R2 |
   \time 4/4
-  R1 |
-  \time 2/4
-  R2 |
-  \time 3/4
-  R1 |
-  \time 4/4
-  R1 |
-  % 5
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 10
-  \time 3/4
-  R1 |
-  \time 4/4
-  R1 |
-  R1 |
-  R1 |
-  R1 |
+
+  \tempo "In free time"
+  R1*14 \bar "||"
+  \tempo "Allegretto. Moving" 4 = 84
+  \once-ed-cresc
+  aes,4\ed-p \< r8. aes,16 aes,4 r8. ees16 |
+  aes,4 r8. aes,16 aes,4 r8. ees16 |
+  aes,4 r8. aes,16 aes,4 r8. ees16 |
   % 15
-  aes,4\mf r8. aes,16 aes,4 r8. ees16 |
+  aes,4\mf-ed-mp r8. aes,16 aes,4 r8. ees16 |
   aes,4 r8. aes,16 aes,4. r8 |
   aes,4 r8 aes,8\bendAfter #4 ees4 r8. bes,16 |
   ees4 r8. bes,16 ees4 r8. bes,16 |
@@ -1204,7 +1188,7 @@ part-Ponetwo-one = {
   aes,4 r8. aes,16 aes,4 r8 ees8 |
   % 30
   aes,1 |
-  des4 aes,4 des4 aes,4 |
+  des4\ed-f aes,4 des4 aes,4 |
   \time 5/4
   des4 aes,4 des4 aes,4 des16 aes,16 des16 ees16 |
   \time 4/4
@@ -1215,7 +1199,7 @@ part-Ponetwo-one = {
   ees4 bes,4 ees4 bes,8 des16( ees16) |
   aes4 ees4 aes4 ees4 |
   aes4 ees4 aes,8 aes,8 bes,8 c8 |
-  des4 aes,4 des4 aes,4 |
+  des4\ed-piu-f aes,4 des4 aes,4 |
   % 40
   \time 5/4
   des4 aes,4 des4 aes,4 des16 aes,16 des16( ees16) |
@@ -1227,127 +1211,94 @@ part-Ponetwo-one = {
   % 45
   aes,4 ees4 aes,4 aes,8\> bes,8 |
   c8\mp des8 ees8\> f8 aes2 |
-  ees2 des2 |
+  ees2\ed-p des2 |
   ees1 |
 }
 
-part-Ponethree-one = {
-  \key c \major
-  \time 2/4
-  \clef percussion
-  r4 r4 |
-  \time 4/4
-  R1 |
-  \time 2/4
-  R2 |
-  \time 3/4
-  R1 |
-  \time 4/4
-  R1 |
-  % 5
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 10
-  \time 3/4
-  R1 |
-  \time 4/4
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 15
+part-Ponethree-one = \drummode {
+  \tempo "In free time"
+  R1*14 \bar "||"
+  \tempo "Allegretto. Moving" 4 = 84
+
   <<
-    \context Voice = "voiceone" {
+    \context DrumVoice = "voiceone" {
       \voiceOne
-      g''16\mp g''16 g''16 g''16 g''4:16 g''4:16 g''16 g''16 g''8 |
-      g''16\mp g''16 g''16 g''16 g''4:16 g''4:16 g''16 g''16 g''8 |
-      g''4:16 g''16 g''16 g''8 g''4:16 g''4:16 |
-      g''4:16 g''16 g''16 g''8 g''4:16 g''4:16 |
-      g''4:16 g''16 g''16 g''8 g''4:16 g''16 g''16 g''8 |
+      \once-ed-cresc
+      hh16\ed-p\< hh16 hh16 hh16 hh4:16 hh4:16 hh16 hh16 hh8 |
+      hh16 hh16 hh16 hh16 hh4:16 hh4:16 hh16 hh16 hh8 |
+      hh16 hh16 hh16 hh16 hh4:16 hh4:16 hh16 hh16 hh8 |
+      hh16\mp hh16 hh16 hh16 hh4:16 hh4:16 hh16 hh16 hh8 |
+      hh16 hh16 hh16 hh16 hh4:16 hh4:16 hh16 hh16 hh8 |
+      hh4:16 hh16 hh16 hh8 hh4:16 hh4:16 |
+      hh4:16 hh16 hh16 hh8 hh4:16 hh4:16 |
+      hh4:16 hh16 hh16 hh8 hh4:16 hh16 hh16 hh8 |
       % 20
-      g''16 g''16 g''16 g''16 g''4:16 g''4:16 g''16 g''16 g''8 |
-      g''16 g''16 g''16 g''16 g''4:16 g''4:16 g''16 g''16 g''8 |
-      g''4:16 g''4:16 g''16 g''16 g''8 g''16 g''16 g''8 |
-      g''16 g''16 g''16 g''16 g''4:16 g''4:16 g''16 g''16 g''8 |
-      g''4:16 g''4:16 g''16 g''16 g''8 g''16 g''16 g''8 |
+      hh16 hh16 hh16 hh16 hh4:16 hh4:16 hh16 hh16 hh8 |
+      hh16 hh16 hh16 hh16 hh4:16 hh4:16 hh16 hh16 hh8 |
+      hh4:16\ed-mf hh4:16 hh16 hh16 hh8 hh16 hh16 hh8 |
+      hh16 hh16 hh16 hh16 hh4:16 hh4:16 hh16 hh16 hh8 |
+      hh4:16 hh4:16 hh16 hh16 hh8 hh16 hh16 hh8 |
       % 25
-      g''16 g''16 g''16 g''16 g''4:16 g''4:16 g''16 g''16 g''8 |
-      g''4:16 g''4:16 g''16 g''16 g''8 g''16 g''16 g''8 |
-      g''16 g''16 g''16 g''16 g''4:16 g''4:16 g''16 g''16 g''8 |
-      g''4:16 g''4:16 g''16 g''16 g''8 g''16 g''16 g''8 |
-      g''4:16 g''16 g''16 g''8 g''4:16 g''4:16 |
+      hh16 hh16 hh16 hh16 hh4:16 hh4:16 hh16 hh16 hh8 |
+      hh4:16 hh4:16 hh16 hh16 hh8 hh16 hh16 hh8 |
+      hh16 hh16 hh16 hh16 hh4:16 hh4:16 hh16 hh16 hh8 |
+      hh4:16 hh4:16 hh16 hh16 hh8 hh16 hh16 hh8 |
+      hh4:16 hh16 hh16 hh8 hh4:16 hh4:16 |
       % 30
-      g''4( g''4) r8 e''8~ e''16 d''16 a'8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
+      hh4( hh4) r8 tomh8~ tomh16 tommh16 tomml8 |
+      hh8\ed-f hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
       \time 5/4
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
+      hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
       \time 4/4
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      % 35
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
+      \linear-spanner 6 1
       % 40
+      hh8\ed-piu-f hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
       \time 5/4
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
+      hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
       \time 4/4
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
+      \linear-spanner 4 1
       % 45
-      g''8 g''8 g''8 g''8 g''8 g''8 g''4 |
-      e''8 d''8~ d''16 d''16 a'8 g''4. r32 r32 g''32 g''32 |
+      hh8 hh8 hh8 hh8 hh8 hh8 hh4 |
+      tomh8 tommh8~ tommh16 tommh16 tomml8 hh4. r16 hh32 hh32 |
     }
-    \context Voice = "voicetwo" {
+    \context DrumVoice = "voicetwo" {
       \voiceTwo
-      f'4 f'4 f'4 f'4 |
-      f'4 f'4 f'4 f'4 |
-      f'4 f'4 f'4 f'4 |
-      f'4 f'4 f'4 f'4 |
-      f'4 f'4 f'4 f'4 |
+      bd4 bd4 bd4 bd4 |
+      bd4 bd4 bd4 bd4 |
+      bd4 bd4 bd4 bd4 |
+
+      bd4 bd4 bd4 bd4 |
+      bd4 bd4 bd4 bd4 |
+      bd4 bd4 bd4 bd4 |
+      bd4 bd4 bd4 bd4 |
+      bd4 bd4 bd4 bd4 |
       % 20
-      f'4 f'4 f'4 f'4 |
-      f'4 f'4 f'4 f'4 |
-      f'4 f'4 f'4 f'4 |
-      f'4 f'4 f'4 f'4 |
-      f'4 f'4 f'4 f'4 |
+      bd4 bd4 bd4 bd4 |
+      bd4 bd4 bd4 bd4 |
+      bd4 bd4 bd4 bd4 |
+      bd4 bd4 bd4 bd4 |
+      bd4 bd4 bd4 bd4 |
       % 25
-      f'4 f'4 f'4 f'4 |
-      f'4 f'4 f'4 f'4 |
-      f'4 f'4 f'4 f'4 |
-      f'4 f'4 f'4 f'4 |
-      f'4 f'4 f'4 f'4 |
+      bd4 bd4 bd4 bd4 |
+      bd4 bd4 bd4 bd4 |
+      bd4 bd4 bd4 bd4 |
+      bd4 bd4 bd4 bd4 |
+      bd4 bd4 bd4 bd4 |
       % 30
-      f'4 r4 r2 |
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
-      f'4 <f' c'' >4 f'4 <f' c'' >4 f'4 |
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
-      % 35
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
+      bd4 r4 r2 |
+      bd4 <bd sn >4 bd4 <bd sn >4 |
+      bd4 <bd sn >4 bd4 <bd sn >4 bd4 |
+      s1*6
+      bd4 <bd sn >4 bd4 <bd sn >4 |
       % 40
-      f'4 <f' c'' >4 f'4 <f' c'' >4 f'4 |
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
+      bd4 <bd sn >4 bd4 <bd sn >4 bd4 |
+      s1*4
       % 45
-      f'4 <f' c'' >4 f'4 <f' d'' >8 e''8 |
-      f'2 |
+      bd4 <bd sn >4 bd4 <bd tommh >8 tomh8 |
+      r2 bd2 
     }
   >>
-  g''4 r4 r2 |
+  hh4\ed-sf r4 r2 |
   R1 |
 }
 
@@ -1459,13 +1410,15 @@ chiquitita = {
         \new Staff \part-Pnine-one
         \new Staff \part-Pnine-two
     >>
-    %{
     \new StaffGroup \with {
       systemStartDelimiter = #'SystemStartSquare
       instrumentName = "Bass Guitar"
       shortInstrumentName = "B. Guit"
     } <<
-      \new Staff \part-Ponethree-one
+      \new Staff {
+        \clef "bass_8"
+        \part-Ponetwo-one
+      }
       \new TabStaff \with {
         stringTunings = #bass-tuning
       } \part-Ponetwo-one
@@ -1474,7 +1427,6 @@ chiquitita = {
       instrumentName = "Drumkit"
       shortInstrumentName = "Dr."
     } \part-Ponethree-one
-    %}
   >>
 }
 
