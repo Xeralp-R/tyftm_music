@@ -1,37 +1,28 @@
 % Automatically generated from a musicxml file.
 \version "2.24.0"
+\include "../../../styles/Global.ily"
+\include "../../../styles/Pocket_Score.ily"
 
-#(set-global-staff-size 15.309)
-
-#(set! paper-alist
-       (cons '("new_size" . (cons (* 296.926 mm) (* 210.059 mm))) paper-alist))
-\paper {
-  #(set-paper-size "new_size")
-  top-margin = 15\mm
-  bottom-margin = 40\mm
-  left-margin = 15\mm
-  right-margin = 15\mm
-  ragged-last-bottom = ##f
-}
-
-\header {
+voulez_vous_header = \header {
   title = "Voulez Vous"
+  composer = "Benny Andersson, Bjorn Ulvaeus"
+  arranger = "Mico Javier, MJ Laxina"
 }
 
 part-Pone-one = {
   \key g \major
   \time 4/4
   \clef treble
-  R1-\mark "A" |
+  R1\mark "A" |
   R1 |
   R1 |
   R1 |
-  R1-\mark "B" |
+  R1\mark "B" |
   % 5
   R1 |
   b'1\mf |
   r2 r4 r4 |
-  r1-\mark "C" |
+  r1\mark "C" |
   R1 |
   % 10
   R1 |
@@ -41,7 +32,7 @@ part-Pone-one = {
   R1 |
   % 15
   r2 r8 b'8\f b'8 b'8 |
-  c''8-\mark "D" b'16 b'16~ b'8 b'8 e''8 dis''16 d''16~ d''8 d''8 |
+  c''8\mark "D" b'16 b'16~ b'8 b'8 e''8 dis''16 d''16~ d''8 d''8 |
   g''8 fis''16 fis''16~ fis''4 r2 |
   R1 |
   r2 r8 b'8\f b'8 b'8 |
@@ -50,7 +41,7 @@ part-Pone-one = {
   g''8 fis''16 fis''16~ fis''4 r2 |
   R1 |
   r2 e''4\mf g''4 |
-  a''8-\mark "E" r8 r8 r8 r8 r8 r8 g''8( |
+  a''8\mark "E" r8 r8 r8 r8 r8 r8 g''8( |
   % 25
   a''4) r4 r4 r8 g''8( |
   a''4) r4 r4 r8 g''8( |
@@ -67,7 +58,7 @@ part-Pone-one = {
   g''1 |
   a''1 |
   a''1 |
-  b''1-\mark "F" -\markup { "INSTRUMENTAL (SAM)" } |
+  b''1\mark "F" \markup { "INSTRUMENTAL (SAM)" } |
   R1 |
   % 40
   R1 |
@@ -77,12 +68,12 @@ part-Pone-one = {
   R1 |
   % 45
   R1 |
-  R1-\mark "G" |
+  R1\mark "G" |
   R1 |
   b'1\mf |
   c''2 d''4( c''4)( |
   % 50
-  b'1)-\mark "H*" |
+  b'1)\mark "H*" |
   R1 |
   R1 |
   R1 |
@@ -91,7 +82,7 @@ part-Pone-one = {
   R1 |
   R1 |
   r2 r8 b'8\f b'8 b'8 |
-  c''8-\mark "I*" b'16 b'16~ b'8 b'8 e''8 dis''16 d''16~ d''8 d''8 |
+  c''8\mark "I*" b'16 b'16~ b'8 b'8 e''8 dis''16 d''16~ d''8 d''8 |
   g''8 fis''16 fis''16~ fis''4 r2 |
   % 60
   R1 |
@@ -101,14 +92,14 @@ part-Pone-one = {
   R1 |
   % 65
   r2 e''4\mf g''4 |
-  a''2.-\mark "J" r8 g''8( |
+  a''2.\mark "J" r8 g''8( |
   a''4) r4 r4 r8 g''8( |
   a''4) r4 r4 r8 g''8( |
   a''4) r4 r4 r8 g''8( |
   % 70
   a''4) r4 r4 r8 r8 |
   g''2 e''4 g''4 |
-  a''2.-\mark "K" r8 g''8( |
+  a''2.\mark "K" r8 g''8( |
   a''4) r4 r4 r8 g''8( |
   a''4) r4 r4 r8 g''8( |
   % 75
@@ -125,14 +116,14 @@ part-Pone-one = {
   R1 |
   % 85
   r2 e''4\mf g''4 |
-  a''2.-\mark "L" r8 g''8( |
+  a''2.\mark "L" r8 g''8( |
   a''4) r4 r4 r8 g''8( |
   a''4) r4 r4 r8 g''8( |
   a''4) r4 r4 r8 g''8( |
   % 90
   a''4) r4 r4 r8 r8 |
   g''2 e''4 g''4 |
-  a''2.-\mark "M" r8 g''8( |
+  a''2.\mark "M" r8 g''8( |
   a''4) r4 r4 r8 g''8( |
   a''4) r4 r4 r8 g''8( |
   % 95
@@ -142,7 +133,7 @@ part-Pone-one = {
   a''1 |
   a''1 |
   % 100
-  b''1-\mark "N" -\markup { "INSTRUMENTAL (HARRY)" } |
+  b''1\mark "N" \markup { "INSTRUMENTAL (HARRY)" } |
   R1 |
   b''1 |
   R1 |
@@ -154,14 +145,14 @@ part-Pone-one = {
   b''1 |
   r2 e''4\mf g''4 |
   % 110
-  a''2.-\mark "O" r8 g''8( |
+  a''2.\mark "O" r8 g''8( |
   a''4) r4 r4 r8 g''8( |
   a''4) r4 r4 r8 g''8( |
   a''4) r4 r4 r8 g''8( |
   a''4) r4 r4 r8 r8 |
   % 115
   g''2 e''4 g''4 |
-  a''2.-\mark "P" r8 g''8( |
+  a''2.\mark "P" r8 g''8( |
   a''4) r4 r4 r8 g''8( |
   a''4) r4 r4 r8 g''8( |
   a''4) r4 r4 r8 g''8( |
@@ -169,21 +160,21 @@ part-Pone-one = {
   a''4) r4 r4 r8 r8 |
   g''2 f''4 aes''4 |
   \key aes \major
-  bes''2.-\mark "Q" r8 aes''8( |
+  bes''2.\mark "Q" r8 aes''8( |
   bes''4) r4 r4 r8 aes''8( |
   bes''4) r4 r4 r8 aes''8( |
   % 125
   bes''4) r4 r4 r8 aes''8( |
   bes''4) r4 r4 r8 r8 |
   aes''2 f''4 aes''4 |
-  bes''2.-\mark "R" r8 aes''8( |
+  bes''2.\mark "R" r8 aes''8( |
   bes''4) r4 r4 r8 aes''8( |
   % 130
   bes''4) r4 r4 r8 aes''8( |
   bes''4) r4 r4 r8 aes''8( |
   bes''4) r4 r4 r8 r8 |
   bes''1 |
-  bes''1-\mark "S" |
+  bes''1\mark "S" |
   % 135
   bes''1 |
   c'''1 |
@@ -1519,7 +1510,7 @@ part-Pseven-one = {
   % 60
   R1 |
   r2 r8 b8 b8 b8 |
-  b8 b16 b16~ b2.~-\markup { \italic "dim." } |
+  b8 b16 b16~ b2.~\markup { \italic "dim." } |
   b2 r2 |
   g'8. fis'16~ fis'8 e'8~ e'8 fis'8 g'4~ |
   % 65
@@ -1892,9 +1883,9 @@ part-Pnine-one = {
   R1 |
   R1 |
   % 60
-  g'8. fis'16~-\markup { "(coarse, rough)" } fis'8 e'8~ e'8 fis'8 g'4( |
+  g'8. fis'16~\markup { "(coarse, rough)" } fis'8 e'8~ e'8 fis'8 g'4( |
   fis'2) r8 b8 b8 b8 |
-  b8 b16 b16~ b2.~-\markup { \italic "dim." } |
+  b8 b16 b16~ b2.~\markup { \italic "dim." } |
   b2 r2 |
   g'8. fis'16~ fis'8 e'8~ e'8 fis'8 g'4~ |
   % 65
@@ -3340,7 +3331,8 @@ part-Ponefive-one = {
       \voiceOne
       \key c \major
       \time 4/4
-      \clef percussiong''8\f g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
+      \clef percussion
+      g''8\f g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
       g''8 g''8 g''8 g''8 r8 r8 r4 |
       g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
       g''8 g''8 g''8 g''8 r8 r8 r4 |
@@ -3688,24 +3680,33 @@ part-Ponefive-one = {
   % 140
 }
 
-\score {
-  \new Staff \part-Pone-one
-  \new Staff \part-Ptwo-one
-  \new Staff \part-Pthree-one
-  \new Staff \part-Pfour-one
-  \new GrandStaff <<
-    \new Staff \part-Pfive-one
-    \new Staff \part-Pfive-two
+voulez_vous =  {
+  <<
+    \new Staff \part-Pone-one
+    \new Staff \part-Ptwo-one
+    \new Staff \part-Pthree-one
+    \new Staff \part-Pfour-one
+    \new GrandStaff <<
+      \new Staff \part-Pfive-one
+      \new Staff \part-Pfive-two
+    >>
+    \new Staff \part-Psix-one
+    \new Staff \part-Pseven-one
+    \new Staff \part-Peight-one
+    \new Staff \part-Pnine-one
+    \new Staff \part-Ponezero-one
+    \new Staff \part-Poneone-one
+    \new Staff \part-Ponetwo-one
+    \new Staff \part-Ponethree-one
+    \new Staff \part-Ponefour-one
+    \new Staff \part-Ponefive-one
   >>
-  \new Staff \part-Psix-one
-  \new Staff \part-Pseven-one
-  \new Staff \part-Peight-one
-  \new Staff \part-Pnine-one
-  \new Staff \part-Ponezero-one
-  \new Staff \part-Poneone-one
-  \new Staff \part-Ponetwo-one
-  \new Staff \part-Ponethree-one
-  \new Staff \part-Ponefour-one
-  \new Staff \part-Ponefive-one
-  \layout {}
+}
+
+\header {
+  \voulez_vous_header
+}
+
+\score {
+  \voulez_vous
 }
