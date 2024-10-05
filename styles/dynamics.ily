@@ -52,6 +52,7 @@
              #{ \tweak X-offset 0 $dynamic #}))
 
 sffz = #(make-dynamic-script (markup #:dynamic "sffz"))
+rf = #(make-dynamic-script (markup #:dynamic "rf"))
 
 ed-ff = #(make-dynamic-script (markup #:large #:normal-text "ff"))
 ed-mf = #(make-dynamic-script (markup #:large #:normal-text "mf"))

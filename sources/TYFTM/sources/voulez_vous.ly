@@ -8,7 +8,7 @@
 voulez_vous_header = \header {
   title = "Voulez Vous"
   composer = "Benny Andersson, Bjorn Ulvaeus"
-  arranger = "Mico Javier, MJ Laxina"
+  arranger = "Mico Javier, MJ Laxina. / RAR"
 }
 
 voulez-vous-measures = {
