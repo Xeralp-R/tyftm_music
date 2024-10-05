@@ -3,10 +3,46 @@
 \include "../../../styles/Global.ily"
 \include "../../../styles/Pocket_Score.ily"
 
+\include "voulez_vous/voulez_vous_perc.ly"
+
 voulez_vous_header = \header {
   title = "Voulez Vous"
   composer = "Benny Andersson, Bjorn Ulvaeus"
   arranger = "Mico Javier, MJ Laxina"
+}
+
+voulez-vous-measures = {
+  \tempo "Allegro minacciosamente - Menacingly upbeat" 4 = 127
+  R1*6
+  R1*4 
+  R1*8 
+  R1*8 
+  R1*12 
+  R1*2 \bar "||"
+  R1*8 
+  R1 * 6 
+  R1*12
+  R1*2 \bar "||" 
+  R1*8 \bar "||" % key chage
+  R1*12 
+  R1*6 \bar "|."
+}
+
+voulez-vous-marks = {
+  \tempo "Allegro minacciosamente - Menacingly upbeat" 4 = 127
+  R1*6 \mark "A"
+  R1*4 \mark "B"
+  R1*8 \mark "C"
+  R1*8 \mark "D"
+  R1*12 \mark "E"
+  R1*2 \bar "||" \textMark "Instrumental: Sam"
+  R1*8 \mark "F"
+  R1 * 6 \mark "G"
+  R1*12 \mark "H"
+  R1*2 \bar "||" \textMark "Instrumental: Harry"
+  R1*8 \bar "||" \mark "I" % key chage
+  R1*12 \mark "J" 
+  R1*6 \bar "|."
 }
 
 part-Pone-one = {
@@ -58,7 +94,7 @@ part-Pone-one = {
   g''1 |
   a''1 |
   a''1 |
-  b''1\mark "F" \markup { "INSTRUMENTAL (SAM)" } |
+  b''1\mark "F"  |
   R1 |
   % 40
   R1 |
@@ -133,7 +169,7 @@ part-Pone-one = {
   a''1 |
   a''1 |
   % 100
-  b''1\mark "N" \markup { "INSTRUMENTAL (HARRY)" } |
+  b''1\mark "N"  |
   R1 |
   b''1 |
   R1 |
@@ -1510,7 +1546,7 @@ part-Pseven-one = {
   % 60
   R1 |
   r2 r8 b8 b8 b8 |
-  b8 b16 b16~ b2.~\markup { \italic "dim." } |
+  b8 b16 b16~ b2.~-\markup { \italic "dim." } |
   b2 r2 |
   g'8. fis'16~ fis'8 e'8~ e'8 fis'8 g'4~ |
   % 65
@@ -1883,9 +1919,9 @@ part-Pnine-one = {
   R1 |
   R1 |
   % 60
-  g'8. fis'16~\markup { "(coarse, rough)" } fis'8 e'8~ e'8 fis'8 g'4( |
+  g'8. fis'16~-\markup { "(coarse, rough)" } fis'8 e'8~ e'8 fis'8 g'4( |
   fis'2) r8 b8 b8 b8 |
-  b8 b16 b16~ b2.~\markup { \italic "dim." } |
+  b8 b16 b16~ b2.~-\markup { \italic "dim." } |
   b2 r2 |
   g'8. fis'16~ fis'8 e'8~ e'8 fis'8 g'4~ |
   % 65
@@ -3325,363 +3361,13 @@ part-Ponefour-one = {
   % 140
 }
 
-part-Ponefive-one = {
-  <<
-    \context Voice = "voiceone" {
-      \voiceOne
-      \key c \major
-      \time 4/4
-      \clef percussion
-      g''8\f g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 r8 r8 r4 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 r8 r8 r4 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      % 5
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      % 10
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      % 15
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      % 20
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 r2 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      % 25
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 r2 |
-      % 30
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      % 35
-      g''8 g''8 g''8 g''8 r2 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8\f g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 r8 r8 r4 |
-      % 40
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 r8 r8 r4 |
-      g''8\f g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 r8 r8 r4 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      % 45
-      g''8 g''8 g''8 g''8 r8 r8 r4 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      % 50
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      % 55
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      r4 r4 r4 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      % 60
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      % 65
-      g''8 g''8 g''8 g''8 r2 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      % 70
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 r2 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      % 75
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      r4 r4 r4 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      % 80
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      % 85
-      g''8 g''8 g''8 g''8 r2 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      % 90
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 r2 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      % 95
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 r2 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      % 100
-      g''8\f g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 r8 r8 r4 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 r8 r8 r4 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      % 105
-      g''8 g''8 g''8 g''8 r8 r8 r4 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 r8 r8 r4 |
-    }
-    \context Voice = "voicetwo" {
-      \voiceTwo
-      <f' c'' >4 <f' c'' >4 <f' c'' >4 <f' c'' >8 e''8 |
-      <f' c'' >4 <f' c'' >4 <f' c'' >8 e''8 c''16 c''16 d''8 |
-      <f' c'' >4 <f' c'' >4 <f' c'' >4 <f' c'' >8 e''8 |
-      <f' c'' >4 <f' c'' >4 <f' c'' >8 e''8 c''16 c''16 d''8 |
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
-      % 5
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
-      % 10
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
-      % 15
-      f'4 <f' c'' >4 f'4 <f' c'' >8 c''8 |
-      f'4 <f' c'' >4 f'4 <f' e'' >4 |
-      f'4 <f' c'' >4 f'4 <f' e'' >4 |
-      f'4 <f' c'' >4 f'4 <f' e'' >4 |
-      f'4 <f' c'' >4 f'4 <f' e'' >4 |
-      % 20
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
-      f'4 <f' c'' >4 <f' c'' d'' >4-> <f' c'' d'' >4-> |
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
-      % 25
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
-      f'4 <f' c'' >4 <f' c'' d'' >4-> <f' c'' d'' >4-> |
-      % 30
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
-      % 35
-      f'4 <f' c'' >4 <f' c'' d'' >4-> <f' c'' d'' >4-> |
-      <f' c'' >4 <f' c'' >4 <f' c'' >4 <f' c'' >8 f'8 |
-      <f' c'' >4 <f' c'' >4 <f' c'' >4 <f' c'' >8 f'8 |
-      <f' c'' >4 <f' c'' >4 <f' c'' >4 <f' c'' >8 e''8 |
-      <f' c'' >4 <f' c'' >4 <f' c'' >8 e''8 c''16 c''16 d''8 |
-      % 40
-      <f' c'' >4 <f' c'' >4 <f' c'' >4 <f' c'' >8 e''8 |
-      <f' c'' >4 <f' c'' >4 <f' c'' >8 e''8 c''16 c''16 d''8 |
-      <f' c'' >4 <f' c'' >4 <f' c'' >4 <f' c'' >8 e''8 |
-      <f' c'' >4 <f' c'' >4 <f' c'' >8 e''8 c''16 c''16 d''8 |
-      <f' c'' >4 <f' c'' >4 <f' c'' >4 <f' c'' >8 e''8 |
-      % 45
-      <f' c'' >4 <f' c'' >4 <f' c'' >8 e''8 c''16 c''16 d''8 |
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
-      % 50
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
-      % 55
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
-      f'4 <f' c'' >4 f'4 <f' c'' >8 c''8 |
-      f'4 <f' c'' >4 f'4 <f' e'' >4 |
-      f'4 <f' c'' >4 f'4 <f' e'' >4 |
-      % 60
-      f'4 <f' c'' >4 f'4 <f' e'' >4 |
-      f'4 <f' c'' >4 f'4 <f' e'' >4 |
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
-      % 65
-      f'4 <f' c'' >4 <f' c'' d'' >4-> <f' c'' d'' >4-> |
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
-      % 70
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
-      f'4 <f' c'' >4 <f' c'' d'' >4-> <f' c'' d'' >4-> |
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
-      % 75
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
-      f'4 <f' c'' >4 f'4 <f' c'' >8 c''8 |
-      f'4 <f' c'' >4 f'4 <f' e'' >4 |
-      f'4 <f' c'' >4 f'4 <f' e'' >4 |
-      % 80
-      f'4 <f' c'' >4 f'4 <f' e'' >4 |
-      f'4 <f' c'' >4 f'4 <f' e'' >4 |
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
-      % 85
-      f'4 <f' c'' >4 <f' c'' d'' >4-> <f' c'' d'' >4-> |
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
-      % 90
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
-      f'4 <f' c'' >4 <f' c'' d'' >4-> <f' c'' d'' >4-> |
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
-      % 95
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
-      f'4 <f' c'' >4 <f' c'' d'' >4-> <f' c'' d'' >4-> |
-      <f' c'' >4 <f' c'' >4 <f' c'' >4 <f' c'' >8 f'8 |
-      <f' c'' >4 <f' c'' >4 <f' c'' >4 <f' c'' >8 f'8 |
-      % 100
-      <f' c'' >4 <f' c'' >4 <f' c'' >4 <f' c'' >8 e''8 |
-      <f' c'' >4 <f' c'' >4 <f' c'' >8 e''8 c''16 c''16 d''8 |
-      <f' c'' >4 <f' c'' >4 <f' c'' >4 <f' c'' >8 e''8 |
-      <f' c'' >4 <f' c'' >4 <f' c'' >8 e''8 c''16 c''16 d''8 |
-      <f' c'' >4 <f' c'' >4 <f' c'' >4 <f' c'' >8 e''8 |
-      % 105
-      <f' c'' >4 <f' c'' >4 <f' c'' >8 e''8 c''16 c''16 d''8 |
-      <f' c'' >4 <f' c'' >4 <f' c'' >4 <f' c'' >8 e''8 |
-      <f' c'' >4 <f' c'' >4 <f' c'' >8 e''8 c''16 c''16 d''8 |
-    }
-  >>
-  R1 |
-  <<
-    \context Voice = "voiceone" {
-      \voiceOne
-      r2 r2 |
-      % 110
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      % 115
-      g''8 g''8 g''8 g''8 r2 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      % 120
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 r2 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      % 125
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      a'8 a'8 a'8 a'8 r2 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      % 130
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 r2 |
-      g''8-> g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      % 135
-      g''8-> g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8( r2 |
-      g''2 r2 |
-    }
-    \context Voice = "voicetwo" {
-      \voiceTwo
-      r2 <f' c'' d'' >4-> <f' c'' d'' >4-> |
-      % 110
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
-      % 115
-      f'4 <f' c'' >4 <f' c'' d'' >4-> <f' c'' d'' >4-> |
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
-      % 120
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
-      f'4 <f' c'' >4 <f' c'' d'' >4-> <f' c'' d'' >4-> |
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
-      % 125
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
-      c''4 <a' c'' >4 <a' c'' e'' >4-> <a' c'' e'' >4-> |
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
-      % 130
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
-      f'4 <f' c'' >4 <f' c'' d'' >4-> <f' c'' d'' >4-> |
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
-      % 135
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
-      <f' c'' >4 <f' c'' >4 <f' c'' >4 <f' c'' >8 e''8 |
-      <f' c'' >4 <f' c'' >4 <f' c'' >8) e''8 c''16 c''16 d''8 |
-      <f' c'' >4 r4 r2 |
-    }
-  >>
-  R1 |
-  % 140
-}
-
 voulez_vous =  {
   <<
+    \new BarNumberStaff <<
+      { \voulez-vous-marks }
+      { \compressEmptyMeasures \voulez-vous-measures }
+    >>
+    %{
     \new Staff \part-Pone-one
     \new Staff \part-Ptwo-one
     \new Staff \part-Pthree-one
@@ -3699,7 +3385,8 @@ voulez_vous =  {
     \new Staff \part-Ponetwo-one
     \new Staff \part-Ponethree-one
     \new Staff \part-Ponefour-one
-    \new Staff \part-Ponefive-one
+    %}
+    \new DrumStaff \part-Ponefive-one
   >>
 }
 

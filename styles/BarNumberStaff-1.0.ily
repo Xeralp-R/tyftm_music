@@ -197,7 +197,7 @@
     \override RehearsalMark.Y-offset = #0
     \override RehearsalMark.outside-staff-priority = 0
 
-    rehearsalMarkFormatter = #format-mark-box-letters
+    rehearsalMarkFormatter = #format-mark-box-alphabet
 
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     %% BarNumberStaves are intended to be used between StaffGroups,

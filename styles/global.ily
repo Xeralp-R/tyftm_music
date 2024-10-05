@@ -106,6 +106,7 @@ blank_page = \bookpart {
          (bassdrum        default   #f          -3)
          (snare           default   #f          1)
          (hihat           cross     #f          5)
+         (closedhihat     cross     stopped     5)
          (openhihat       cross     open        5)
          (pedalhihat      cross     #f          -6)
          (ridecymbal      cross     #f          4)
