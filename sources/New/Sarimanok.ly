@@ -129,6 +129,66 @@ upper = {
   % 45
     R1 |
     R1 |
+    r4 << {d'8 e} \\ {a,4} >>  <e' a>4 <d g> |
+    \time 2/4 
+    <e a>4 <d a' d>8 <e e'> |
+    <a e' a>8 <g g'> <a a'>4. <b b'>8 <c c'> <d d'> |
+  % 50
+    <ees ees'>8 <f f'> <ees ees'> <d d'> <ces ces'> <d d'> <a a'> <g g'> |
+    <fis fis'>8 <e e'> <fis fis'>2 
+    <<
+      \context Voice = "voiceOne" \relative c' {\voiceOne
+        d4 |
+        a'8 g a2 c4 |
+        g2. 
+      }
+      \context Voice = "voiceTwo" \relative c' {\voiceTwo
+        s4 |
+        e2 d4 g4 |
+        d8 c d2
+      }
+    >>
+    ees4
+    << { d'8 c d2 f4 }  \\ {r4 r8 aes,8 g2 } >> |
+  % 55
+    <ees aes d>2( <ees aes c>4) <d e a>4 |
+    <<
+      \context Voice = "voiceOne" \relative c'' { \voiceOne
+        e8 d e2 g4 |
+        d2 c4 d8 f8 |
+        e8 d8 e2  g4 |
+        bes2. g4 |
+      % 60
+        gis8 fis gis2 b4 |
+        fis2 e4 d |
+        c8 b c d ees4 bes'4 |
+        g2. d4 |
+        e8 d8 e2 g4 |
+        d2 a4 d4 |
+      % 65
+        e8 d e4~ e8 f4  g8 |
+        \slashedGrace {c8} bes4 g f g |
+        e2. e8 f~ |
+        f8 e8~ e8 d e a~ a g |
+        e2 f4 g |
+        \slashedGrace {c8} bes4 aes f g |
+        <b, e!>8 r8 r4 
+        b8 a <g d'> <a g'> |
+      }
+    >>
+    <e e'>8 <f f'> <g g'> <a a'> <b b'> <c c'> <d d'> <g g'>
+    \ottava #1 <a d a'>2\fermata \ottava #0 \bracket-rest r2 |
+    <g,, c d>2-> <a c g>2 -> |
+    <g c d>2-> \bracket-rest r2 |
+    <g a d>4 -> a' <a, d a'>-> <a d>|
+    <<
+      \context Voice = "voiceOne" {
+        <d, e>1 ~
+        <d e>~
+      }
+    >>
+    <gis b d e>2. \breathe
+    << { d'8 e } \\ { b a } >>
   }
 }
 
@@ -231,7 +291,40 @@ lower = {
     e,8_1 <a b>_2_3 <d e>_1 <g a>_2_3 e'_1 <g, a>_2_3 <d e>_1 <a b>_2_3 |
     c8_5 <ees f>_2_3 <ees g bes>_2_3_5 <g bes c>_1_2_3 <g bes f'>_1_2_3 <g bes ees>_1_2_3 <ees g bes>_2_3_5 <c d g>_1_2_3 |
     e,8_5 <b' cis>_2_3 <e fis>_1_2 <fis b>_3_5 <cis' e>_1_2 <fis, b>_3_5 <e fis>_1_2 <b cis>_3_4 |
-    <d, a>_1_2 <d' e>_1 <cis fis>_3_5 <e fis b>_1_3_4 <fis b cis>_1_2_3 <fis b d>_1_2_3 <fis a b>_1_2_3 <cis e fis>_3_4_5 |
+    <d, a>8_1_2 <d' e>_1 <cis fis>_3_5 <e fis b>_1_3_4 <fis b cis>_1_2_3 <fis b d>_1_2_3 <fis a b>_1_2_3 <cis e fis>_3_4_5 |
+    <f,! c!>8_3_5 <ees' f>_1_2 <ges bes>_3_5 <c! e!>_1_2 <des ees>_1_2 <c e>_1_3 <ges bes>_2_4 <ces, ees>_2_4 |
+  % 60
+    <g, d' g>8_1_3_5 <e' a>_1_2 <g d'>_3_5 <e' a>_1_2 <c' d>_1 <e, g>_2_4 <d e>_1 <d, a'>_2_5 |
+    <a e'>8_2_5 <a' e'>_2_5 <e' a>_1_2 <g d'>_2_5 <a e'>_1_4 <g d'>_2_5 <e a>_1_2 <d g>_1_3 |
+    <bes, a'>8_2_5 <f' bes>_1_3 <bes f'>_2_5 <d a'>_1_3 <f c'>_2_5 <g d'>_1_4 <d g>_1_2 <bes f'>_1_4 |
+    << 
+      \new Voice = "upper" \relative c { \voiceOne
+        r4 <e g a>-- <g a c>-- <a c d>-- |
+        r4 <ees aes> <f bes> <g c> |
+        r4 <e fis a>4 <a b d>2 |
+        r4 <e f a>4 <g a c> <a c d> |
+        r4 <e g a>4 <g a c> <a b d> |
+        r4 <ees ges aes> <ges ces des> <g a d> |
+        r4 <e! b'! c>4 <c g' a>4 <g g'>8 <f f'>8 |
+      }
+      \new Voice = "lower" \relative c { \voiceTwo
+        <a e'>1_3_5 |
+        <g d'>1_3_5 |
+        <fis cis'>1 |
+        <f! c'!>1 |
+        <e b'>1 |
+        <ees bes'>1 |
+        <d e! b'!>1 |
+      }
+    >> 
+    <e, c' e>4 <c' c'>8 <b b'> <a a'> <g g'> <f f'> <d d'> |
+    \ottava #-1 <e, b' e>2 \ottava #0 g''4-> a-> |
+    <d,, a' d >2-> <c g' c>-> |
+    <d a' d>2-> g'4-> a-> |
+    <c,, g' d'>4-> r <f c' g'>-> r |
+    <g d'>1->~ |
+    <g d'>2 \voiceTwo <f c'> \oneVoice |
+    <e b' e>2.\fermata \breathe <e d'>4 |
   }
 }
 

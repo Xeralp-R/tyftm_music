@@ -62,6 +62,7 @@ ed-p = #(make-dynamic-script (markup #:large #:normal-text "p"))
 ed-pp = #(make-dynamic-script (markup #:large #:normal-text "pp"))
 
 mf-ed-mp = #(make-post-dynamic-script "mf" " [mp]")
+p-ed-f = #(make-post-dynamic-script "p" " [f]")
 ed-poco-f = #(make-pre-ed-dynamic-script "poco" "f")
 ed-piu-f = #(make-pre-ed-dynamic-script "piu" "f")
 

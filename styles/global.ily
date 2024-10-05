@@ -1,6 +1,7 @@
 \version "2.22.1"
 \include "BarNumberStaff-1.0.ily"
 \include "dynamics.ily"
+\include "footnotes.ily"
 
 newline = {}
 newpage = {}
