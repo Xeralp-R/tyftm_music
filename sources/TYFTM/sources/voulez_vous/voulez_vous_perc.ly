@@ -1,7 +1,7 @@
 \version "2.24.0"
 \include "../../../../styles/Global.ily"
 
-part-Ponefive-one = \drummode {
+voulez-vous-perc = \drummode {
   \time 4/4
 
   <<

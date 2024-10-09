@@ -132,7 +132,7 @@ blank_page = \bookpart {
   }
 }
 
-linear-spanner = #(define-music-function (num_bars length) (integer? integer?)
+linear-spanner = #(define-music-function (length num_bars) (integer? integer?)
   #{
     \override TrillSpanner.bound-details.left.text = ##f
     \override TrillSpanner.extra-offset = #'(-0.66 . -3)
