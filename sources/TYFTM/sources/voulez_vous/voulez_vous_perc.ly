@@ -251,7 +251,7 @@ voulez-vous-perc = \drummode {
     }
   >>
   r4 r2 |
-  bd4.\sf bd4.\sf bd4\sf\fermata |
+  bd8.\sf bd8.\sf bd8\sf~ bd2\fermata |
   % 140
 }
 
