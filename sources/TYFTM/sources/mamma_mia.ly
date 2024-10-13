@@ -8,7 +8,7 @@ mamma_mia_header = \header {
   arranger = "Kate Quebral, William Lim"
   title = "Mamma Mia"
 }
-
+%{
 part-Pone-one = {
   \key d \major
   \time 4/4
@@ -112,7 +112,7 @@ part-Pone-one = {
   d''4-> c''4-> d''4.-> r8 |
   r4 e''4( a'4.) d''8 |
 }
-
+%}
 part-Ptwo-one = {
   \key d \major
   \time 4/4
@@ -774,7 +774,7 @@ part-Psix-one = {
   r4 fis''8 e''8 fis''8 e''8 d''8 e''8~ |
   e''8 fis''4 fis''8( e''8( d''8 d''8)) r8 |
   % 15
-  r4 fis''8 fis''8 fis''8( e''8) d''8 e''8~ |
+  r4 fis''8 fis''8 fis''8 e''8 d''8 e''8~ |
   e''8 fis''4 a'8~ a'2 |
   r2 g''4->\f fis''4 |
   e''8-> a'8 a'8 a'8 a'8 a'8 a'8 a'8~ |
@@ -854,6 +854,58 @@ part-Psix-one = {
   % 80
   r4 e''4 d''4 r8 g''8~ |
   g''8 g''8 fis''8 d''8 e''8 d''8 e''8( d''8) |
+}
+
+donna-lyrics = \lyricmode {
+  I was chea -- ted by you, __
+  and I think you know when. __
+  So I made up my mind,  __
+  It must come to an end. __
+  Look at me now, 
+  Will I ev -- ver learn? 
+  I don't know how, __
+  But I sud -- den -- ly lose con -- "trol." 
+  There's a fi -- re with -- in my soul. 
+  Just one look and I can hear a bell ring.
+  One more look and I for -- get ev -- ry -- thing.
+  Woh, woh!
+
+  Mam -- ma mi -- a, 
+  here I go a -- gain.
+  My, my, how can I re -- sist ya? 
+  Mam -- ma mi -- a,
+  does it show a -- gain, 
+  My, my, just how much "I've" missed ya? 
+  Yes, I've been bro -- ken heart -- ed,
+  Blue since the day we part -- ed. 
+  Why, why, did I ev -- er let you go? __
+  Mam -- ma mi -- a, now I real -- ly know, 
+  My, my, I should not have let you go!
+
+  I was an -- gry and sad __ 
+  when I knew we were through. __
+  I can't count all the times __
+  I have cried o -- ver you. __
+  Look at me now, 
+  Will I ev -- ver learn? 
+  I don't know how, __
+  But I sud -- den -- ly lose con -- "trol." 
+  There's a fi -- re with -- in my soul. 
+  Just one look and I can hear a bell ring.
+  One more look and I for -- get ev -- ry -- thing.
+  Woh, woh!  
+  
+  Mam -- ma mi -- a, 
+  here I go a -- gain.
+  My, my, how can I re -- sist ya? 
+  Mam -- ma mi -- a,
+  does it show a -- gain, 
+  My, my, just how much "I've" missed ya? 
+  Yes, I've been bro -- ken heart -- ed,
+  Blue since the day we part -- ed. 
+  Why, why, did I ev -- er let you go? __
+  Mam -- ma mi -- a, now I real -- ly know, 
+  My, my, I should not have let you go!
 }
 
 part-Pseven-one = {
@@ -1518,7 +1570,7 @@ part-Ponetwo-one = {
   R1 |
   R1 |
   R1 |
-  r2 r4 a4->\bendAfter #+4\mp |
+  r2 r4 a4->\bendAfter #4 \mp |
   % 30
   <fis b d' >2. d'4 |
   <a cis' e' >2.~~~ <a cis' e' >8 d'16 e'16 |
@@ -2073,6 +2125,7 @@ part-Ponefive-one = {
   >>
 }
 
+%{
 \score {
   \new Staff \part-Pone-one
   \new Staff \part-Ptwo-one
@@ -2097,6 +2150,7 @@ part-Ponefive-one = {
   \new Staff \part-Ponefive-one
   \layout {}
 }
+%}
 
 mamma_mia = {
   <<
@@ -2200,4 +2254,8 @@ mamma_mia = {
     } \part-Ponefive-one
     %}
   >>
+}
+
+\score {
+  \mamma_mia
 }

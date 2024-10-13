@@ -44,12 +44,12 @@ voulez-vous-perc = \drummode {
     \context DrumVoice = "voiceone" { \voiceOne
       hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
       % d
-      cymc8\sf\< hhc8 hhc8 hho8 hhc8 hhc8 hhc8 hho8 |
+      cymc8\sfp\< hhc8 hhc8 hho8 hhc8 hhc8 hhc8 hho8 |
       hhc8 hhc8 hhc8 hho8 hhc8 hhc8 hhc8 hho8 |
       hhc8\rf hhc8 hhc8 hhc8 hhc8 hhc8 hhc8 hhc8 |
       hhc8 hhc8 hhc8 hhc8 hhc8 hhc8 hhc8 hhc8 |
       % 20
-      cymc8\sf\< hho8 hhc8 hho8 hhc8 hho8 hhc8 hho8 |
+      cymc8\sfp\< hho8 hhc8 hho8 hhc8 hho8 hhc8 hho8 |
       hhc8 hho8 hhc8 hho8 hhc8 hho8 hhc8 hho8 |
       hhc8\rf hho8 hhc8 hho8 hhc8 hho8 hhc8 hho8 |
       hhc8 hho8 hhc8 hho8  s2 |
@@ -119,13 +119,13 @@ voulez-vous-perc = \drummode {
   <<
     \context DrumVoice = "voiceone" { \voiceOne
       
-      hhc8\p hhc8 hhc8 hhc8 hhc8 hhc8 hhc8 hhc8 |
+      hhc8\p\< hhc8 hhc8 hhc8 hhc8 hhc8 hhc8 hhc8 |
       hhc8 hhc8 hhc8 hhc8 hhc8 hhc8 hhc8 hhc8 |
       % 20
       cymc8\rf hho8 hhc8 hho8 hhc8 hho8 hhc8 hho8 |
       hhc8 hho8 hhc8 hho8 hhc8 hho8 hhc8 hho8 |
-      hhc8\p hho8 hhc8 hho8 hhc8 hho8 hhc8 hho8 |
-      hhc8 hho8 hhc8 hho8  s2 |
+      hhc8\p\< hho8 hhc8 hho8 hhc8 hho8 hhc8 hho8 |
+      hhc8\rf hho8 hhc8 hho8  s2 |
       % g
       cymc8\f hh8 hh8 hh8 hh8 hho8 hhc8 hh8 |
       hh8 hh8 hh8 hh8 hh8 hho8 hhc8 hh8 |
