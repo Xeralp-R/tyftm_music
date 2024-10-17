@@ -67,6 +67,8 @@ p-ed-f = #(make-post-dynamic-script "p" " [f]")
 ed-poco-f = #(make-pre-ed-dynamic-script "poco" "f")
 ed-piu-f = #(make-pre-ed-dynamic-script "piu" "f")
 
+piu-f = #(make-dynamic-script (markup #:normal-text #:italic "piu " #:dynamic "f"))
+
 ed-text = #(define-music-function (arg) (markup?)
   #{
      -\markup { \upright #arg }

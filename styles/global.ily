@@ -2,6 +2,7 @@
 \include "BarNumberStaff-1.0.ily"
 \include "dynamics.ily"
 \include "footnotes.ily"
+\include "stimmen.ily"
 
 newline = {}
 newpage = {}

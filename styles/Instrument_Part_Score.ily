@@ -154,10 +154,12 @@
     \FretBoards
     \remove "Fretboard_engraver"
   }
+  %{
   \context {
     \ChordNames
     \remove "Chord_name_engraver"
   }
+  %}
 }
 
 newline = {}
