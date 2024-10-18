@@ -59,12 +59,14 @@ part-Pfive-one = {
   g'16 bes'16 ees''16 g''16 ees''16 bes'16 ees''16 bes'16 g'16 bes'16
   ees''16 g''16 ees''16 bes'16 ees''16 bes'16 |
   \ottava #2
-  \tuplet 3/2 { r16 des'''16\mf des''''16 } \tuplet 3/2 {
+  \nebenstimmeStart
+  \tuplet 3/2 { r16 des'''16 des''''16 } \tuplet 3/2 {
     r16 c'''16 c''''16
-  } \tuplet 3/2 { r16 bes''16 bes'''16 } r8 <aes''' aes'''' >2 |
+  } \tuplet 3/2 { r16 bes''16 bes'''16 } 
+  \nebenstimmeEnd r8 <aes''' aes'''' >2 |
   \ottava #0
   % 30
-  <c' ees' aes' c'' >1\arpeggio\p |
+  <c' ees' aes' c'' >1\arpeggio |
       <des' f' aes' >8 <des' f' aes' >8 <des' f' aes' >8 <des' f' aes'
       >8 <des' f' aes' >8 <des' f' aes' >8 <des' f' aes' >8 <des' f'
       aes' >8 |

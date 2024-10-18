@@ -31,7 +31,8 @@
       \column {
         \fill-line {
           {
-            \huge \larger \fontsize #1 \fromproperty #'header:part
+            %\huge \larger \fontsize #1 \fromproperty #'header:part
+            ""
           }
           {
             \huge \larger \larger

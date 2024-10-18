@@ -1,7 +1,7 @@
 % Automatically generated from a musicxml file.
 \version "2.24.0"
 \include "../../../styles/Global.ily"
-\include "../../../styles/Pocket_Score.ily"
+%\include "../../../styles/Pocket_Score.ily"
 
 \include "chiquitita/chiquitita_drums.ly"
 \include "chiquitita/chiquitita_b_guit.ly"
@@ -11,6 +11,8 @@
 \include "chiquitita/chiquitita_tanya_rosie.ly"
 \include "chiquitita/chiquitita_donna.ly"
 \include "chiquitita/chiquitita_pno.ly"
+\include "chiquitita/chiquitita_vl_3_4.ly"
+\include "chiquitita/chiquitita_vl_1_2.ly"
 
 chiquitita_header = \header {
   composer = "Benny Andersson, Bjorn Ulvaeus"
@@ -79,302 +81,6 @@ default-dyn = {
   s1\p
 }
 
-part-Pone-one = {
-  \key aes \major
-  \time 2/4
-  \clef treble
-  R2-\markup { "Free tempo: follow voices" } |
-  \time 4/4
-  R1 |
-  \time 2/4
-  R2 |
-  \time 3/4
-  R1 |
-  \time 4/4
-  R1 |
-  % 5
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 10
-  \time 3/4
-  R1 |
-  \time 4/4
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 15
-  c''2(\p des''2) |
-  c''2~( c''4 des''4) |
-  des''4 c''8 ees''4.~( ees''8 ees''8) |
-  ees''1 |
-  ees''2( des''2) |
-  % 20
-  ees''1 |
-  c''1 |
-  c''1 |
-  c''2( des''2) |
-  c''1 |
-  % 25
-  ees''1 |
-  ees''2~ ees''4.. r16 |
-  ees''2( des''2) |
-  ees''1 |
-  c''1 |
-  % 30
-  c''1 |
-  des''1 |
-  \time 5/4
-  des''1~ des''4 |
-  \time 4/4
-  c''1 |
-  c''1 |
-  % 35
-  ees''2( des''2) |
-  ees''1 |
-  c''1 |
-  c''1 |
-  des''1 |
-  % 40
-  \time 5/4
-  des''1~ des''4 |
-  \time 4/4
-  c''1 |
-  c''1 |
-  ees''2( des''2) |
-  ees''1 |
-  % 45
-  bes'2. bes'8 c''8 |
-  c''4~ c''2. |
-  R1 |
-  R1 |
-}
-
-part-Ptwo-one = {
-  \key aes \major
-  \time 2/4
-  \clef treble
-  R2 |
-  \time 4/4
-  R1 |
-  \time 2/4
-  R2 |
-  \time 3/4
-  R1 |
-  \time 4/4
-  R1 |
-  % 5
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 10
-  \time 3/4
-  R1 |
-  \time 4/4
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 15
-  aes'2(\p bes'2) |
-  aes'2~( aes'4 bes'4) |
-  aes'4 aes'8 bes'4.~( bes'8 bes'8) |
-  bes'1 |
-  bes'2( aes'2) |
-  % 20
-  bes'1 |
-  aes'1 |
-  aes'1 |
-  aes'2( bes'2) |
-  aes'1 |
-  % 25
-  c''1 |
-  c''2~ c''4.. r16 |
-  bes'2( aes'2) |
-  bes'1 |
-  aes'1 |
-  % 30
-  aes'1 |
-  bes'1 |
-  \time 5/4
-  bes'1~ bes'4 |
-  \time 4/4
-  aes'1 |
-  aes'1 |
-  % 35
-  bes'2( aes'2) |
-  bes'1 |
-  aes'1 |
-  aes'1 |
-  bes'1 |
-  % 40
-  \time 5/4
-  bes'1~ bes'4 |
-  \time 4/4
-  aes'1 |
-  aes'1 |
-  bes'2( aes'2) |
-  bes'1 |
-  % 45
-  aes'2. aes'8 bes'8 |
-  aes'4~ aes'2. |
-  R1 |
-  R1 |
-}
-
-part-Pthree-one = {
-  \key aes \major
-  \time 2/4
-  \clef treble
-  R2 |
-  \time 4/4
-  R1 |
-  \time 2/4
-  R2 |
-  \time 3/4
-  R1 |
-  \time 4/4
-  R1 |
-  % 5
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 10
-  \time 3/4
-  R1 |
-  \time 4/4
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 15
-  ees'2(\p aes'2) |
-  ees'2~( ees'4 aes'4) |
-  f'4 ees'8 g'4.~( g'8 g'8) |
-  aes'1 |
-  g'2( f'2) |
-  % 20
-  g'1 |
-  ees'1 |
-  ees'1 |
-  ees'2( aes'2) |
-  ees'1 |
-  % 25
-  g'1 |
-  g'2~ g'4.. r16 |
-  g'2( f'2) |
-  g'1 |
-  ees'1 |
-  % 30
-  ees'1 |
-  aes'1 |
-  \time 5/4
-  aes'1~ aes'4 |
-  \time 4/4
-  ees'1 |
-  ees'1 |
-  % 35
-  g'2( f'2) |
-  g'1 |
-  ees'1 |
-  ees'1 |
-  aes'1 |
-  % 40
-  \time 5/4
-  aes'1~ aes'4 |
-  \time 4/4
-  ees'1 |
-  ees'1 |
-  g'2( f'2) |
-  g'1 |
-  % 45
-  ees'2. ees'8 f'8 |
-  ees'4~ ees'2. |
-  R1 |
-  R1 |
-}
-
-part-Pfour-one = {
-  \key aes \major
-  \time 2/4
-  \clef treble
-  R2 |
-  \time 4/4
-  R1 |
-  \time 2/4
-  R2 |
-  \time 3/4
-  R1 |
-  \time 4/4
-  R1 |
-  % 5
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 10
-  \time 3/4
-  R1 |
-  \time 4/4
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 15
-  aes2(\p ees'2) |
-  aes2~( aes4 ees'4) |
-  des'4 aes8 ees'4.~( ees'8 ees'8) |
-  ees'1 |
-  ees'2( des'2) |
-  % 20
-  ees'1 |
-  aes1 |
-  aes1 |
-  aes2( ees'2) |
-  aes1 |
-  % 25
-  c'1 |
-  c'2~ c'4.. r16 |
-  ees'2( des'2) |
-  ees'1 |
-  aes1 |
-  % 30
-  aes1 |
-  ees'1 |
-  \time 5/4
-  ees'1~ ees'4 |
-  \time 4/4
-  aes1 |
-  aes1 |
-  % 35
-  ees'2( des'2) |
-  ees'1 |
-  aes1 |
-  aes1 |
-  ees'1 |
-  % 40
-  \time 5/4
-  ees'1~ ees'4 |
-  \time 4/4
-  aes1 |
-  aes1 |
-  ees'2( des'2) |
-  ees'1 |
-  % 45
-  aes2. aes8 bes8 |
-  aes4~ aes2. |
-  R1 |
-  R1 |
-}
-
 chord-sequence = \chordmode {
   \tempo "In free time"
   R1*14 \bar "||"
@@ -425,36 +131,56 @@ chiquitita = {
       { \chiquitita-marks }
       { \compressEmptyMeasures \chiquitita-measures }
     >>
-    %{
     \new StaffGroup <<
+      \tag #'(accompaniment orch vl_i)
       \new Staff \with {
         instrumentName = "Violin 1"
         shortInstrumentName = "Vl. 1"
-      } \part-Pone-one
+      } <<
+      \part-Pone-one
+      \new Dynamics \default-dyn
+      >>
+
+      \tag #'(accompaniment orch vl_ii)
       \new Staff \with {
         instrumentName = "Violin 2"
         shortInstrumentName = "Vl. 2"
-      } \part-Ptwo-one
+      } <<
+      \part-Ptwo-one
+      \new Dynamics \default-dyn
+      >>
+
+      \tag #'(accompaniment orch vl_iii)
       \new Staff \with {
         instrumentName = "Violin 3"
         shortInstrumentName = "Vl. 3"
-      } \part-Pthree-one
+      } <<
+      \part-Pthree-one
+      \new Dynamics \default-dyn
+      >>
+
+      \tag #'(accompaniment orch vl_iv)
       \new Staff \with {
         instrumentName = "Violin 4"
         shortInstrumentName = "Vl. 4"
-      } \part-Pfour-one
+      } <<
+        \part-Pfour-one
+        \new Dynamics \default-dyn
+      >>
     >>
-    %}
 
+    \tag #'(accompaniment orch piano)
     \new PianoStaff \with {
       instrumentName = "Piano"
       shortInstrumentName = "Pf."
     } <<
-        \new Staff \part-Pfive-one
-        \new Staff \part-Pfive-two
+      \new ChordNames \chord-sequence
+      \new Staff \part-Pfive-one
+      \new Dynamics \default-dyn
+      \new Staff \part-Pfive-two
     >>
     
-
+    \tag #'(chor soli donna)
     \new Staff \with {
       instrumentName = "Donna"
       shortInstrumentName = "D."
@@ -463,6 +189,7 @@ chiquitita = {
       \addlyrics \donna-lyrics
     }
 
+    \tag #'(chor soli t_r)
     \new Staff \with {
       instrumentName = "Tanya & Rosie"
       shortInstrumentName = "T.,R."
@@ -475,10 +202,12 @@ chiquitita = {
       \new NullVoice = "aligner" \aligner-voice
       \new Lyrics \lyricsto "aligner" \tanya-rosie-lyrics
     >>
+    \tag #'(invis)
     \new BarNumberStaff <<
       { \chiquitita-marks }
       { \compressEmptyMeasures \chiquitita-measures }
     >>
+    \tag #'(accompaniment band l_guit)
     <<
       \new ChordNames \chord-sequence
       \new StaffGroup \with {
@@ -496,6 +225,7 @@ chiquitita = {
         }
       >>
     >>
+    \tag #'(accompaniment band r_guit)
     <<
       \new ChordNames \chord-sequence
       \new StaffGroup \with {
@@ -522,6 +252,7 @@ chiquitita = {
         }
       >>
     >>
+    \tag #'(accompaniment band kbd)
     \new PianoStaff \with {
       instrumentName = "Electric Keyboard"
       shortInstrumentName = "Kbd."
@@ -529,6 +260,7 @@ chiquitita = {
         \new Staff \part-Pnine-one
         \new Staff \part-Pnine-two
     >>
+    \tag #'(accompaniment band b_guit)
     \new StaffGroup \with {
       systemStartDelimiter = #'SystemStartSquare
       instrumentName = "Bass Guitar"
@@ -543,6 +275,7 @@ chiquitita = {
         stringTunings = #bass-tuning
       } \part-Ponetwo-one
     >>
+    \tag #'(accompaniment band drum)
     \new DrumStaff \with {
       instrumentName = "Drumkit"
       shortInstrumentName = "Dr."
@@ -552,11 +285,3 @@ chiquitita = {
     >>
   >>
 }
-
-\header {
-    \chiquitita_header
-  }
-
-  \score {
-    \chiquitita
-  }

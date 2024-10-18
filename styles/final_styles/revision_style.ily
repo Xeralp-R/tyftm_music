@@ -1,7 +1,7 @@
 \version "2.22.1"
 
-#(set-global-staff-size 18)
-#(set-default-paper-size "philippine-legal")
+#(set-global-staff-size 12.60)
+#(set-default-paper-size "arch alandscape")
 
 \paper {
   %system-system-spacing = #'((basic-distance . 0.1) (padding . 0))
