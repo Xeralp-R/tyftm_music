@@ -62,11 +62,11 @@ chiquitita-marks = {
   R1*2
   \bar "||"
   \tempo "Allegretto. Moving" 4 = 84
-  R1*3 \mark "A"
-  R1*8 | \mark "B"
-  R1*8 | \mark "C"
-  R1*33/4 | \mark "D"
-  R1*33/4 | \mark "E" \tempo "(Poco rit.) In free time"
+  R1*3 \mark \default
+  R1*8 | \mark \default
+  R1*8 | \mark \default
+  R1*33/4 | \mark \default
+  R1*33/4 | \mark \default \tempo "(Poco rit.) In free time"
   R1*2 \bar "|."
 }
 

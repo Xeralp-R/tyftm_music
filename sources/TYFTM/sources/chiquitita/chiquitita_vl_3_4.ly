@@ -34,7 +34,7 @@ part-Pthree-one = {
   ees'1 |
   % graft
   \relative c'' {
-  r8 _\mf des8 r8 des8 r8 des8 r8 des8 | % 2
+  r8  des8 r8 des8 r8 des8 r8 des8 | % 2
     \time 5/4  r8 des8 r8 des8 r8 des8 r8 des8 as4 | % 3
     \time 4/4  r8 c8 r8 c8 r8 c8 r8 c8 | % 4
     r8 c8 r8 c8 r8 c8 r8 c8 | % 5
@@ -88,7 +88,7 @@ part-Pfour-one = {
   aes1 |
   % graft
   \relative c'' {
-  as4 _\mf des,4 as'4 des,4 | % 2
+  as4  des,4 as'4 des,4 | % 2
     \time 5/4  as'4 des,4 as'4 des,4 as'4 | % 3
     \time 4/4  as4 es4 as4 es4 | % 4
     as4 es4 as4 es4 | % 5

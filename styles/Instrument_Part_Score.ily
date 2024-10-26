@@ -142,6 +142,10 @@
     \override Glissando.style = #'trill
     \remove "Instrument_name_engraver"
   }
+  \context {
+    \StaffGroup
+    \remove "Instrument_name_engraver"
+  }
   \context{
     \Lyrics
     \override LyricText.font-size = #1

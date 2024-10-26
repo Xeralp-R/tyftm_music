@@ -9,7 +9,7 @@
 \book {
   \header {
     tagline = ##f
-    part = "Piano"
+    part = "Violins 3 and 4"
   }
 
   \bookpart {
@@ -38,7 +38,7 @@
         \vspace #2
 
         \fill-line \huge \larger \larger {
-          "Piano Part Score"
+          "Violins 3 and 4 Part Score"
         }
       }
     }
@@ -58,7 +58,7 @@
       \chiquitita_header
     }
     \score {
-      \keepWithTag #'(piano) \chiquitita
+      \keepWithTag #'(vl_iii vl_iv) \chiquitita
 
       \layout {}
     }

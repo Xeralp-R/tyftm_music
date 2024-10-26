@@ -1,6 +1,6 @@
 \version "2.24.0"
 \include "../styles/Global.ily"
-\include "../styles/Instrument_Part_Score.ily"
+\include "../styles/Full_Score.ily"
 
 \include "../sources/chiquitita.ly"
 
@@ -9,7 +9,7 @@
 \book {
   \header {
     tagline = ##f
-    part = "Piano"
+    part = "Choir"
   }
 
   \bookpart {
@@ -38,7 +38,7 @@
         \vspace #2
 
         \fill-line \huge \larger \larger {
-          "Piano Part Score"
+          "Choral Score"
         }
       }
     }
@@ -58,7 +58,7 @@
       \chiquitita_header
     }
     \score {
-      \keepWithTag #'(piano) \chiquitita
+      \keepWithTag #'(chor) \chiquitita
 
       \layout {}
     }

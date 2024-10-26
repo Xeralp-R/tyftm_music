@@ -33,7 +33,7 @@ part-Pone-one = {
   % 30
   c''1 |
   \relative c''' {
-    r8 _\mf as8 r8 as8 r8 as8 r8 as8 | % 2
+    r8  as8 r8 as8 r8 as8 r8 as8 | % 2
     \time 5/4  r8 as8 r8 as8 r8 as8 r8 as8 r8 as8 | % 3
     \time 4/4  r8 as8 r8 as8 r8 as8 r8 as8 | % 4
     r8 as8 r8 as8 r8 as8 r8 as8 | % 5
@@ -89,7 +89,7 @@ part-Ptwo-one = {
   % 30
   aes'1 |
   \relative c'' {
-    r8 _\mf f8 r8 f8 r8 f8 r8 f8 | % 2
+    r8  f8 r8 f8 r8 f8 r8 f8 | % 2
     \time 5/4  r8 f8 r8 f8 r8 f8 r8 f8 r8 f8 | % 3
     \time 4/4  r8 es8 r8 es8 r8 es8 r8 es8 | % 4
     r8 es8 r8 es8 r8 es8 r8 es8 | % 5
