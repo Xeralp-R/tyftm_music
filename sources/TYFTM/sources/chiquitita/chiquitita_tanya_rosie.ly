@@ -32,7 +32,7 @@ part-Psix-one = {
   \tempo "Allegretto. Moving" 4 = 84
   des'8 c'8 bes8 c'8~ c'4 r4 |
   R1
-  r4 r8 c'16\mf des'16 ees'8 f'8 ees'16 des'16 c'8 | \mark "A"
+  r4 r8 c'16\mf des'16 ees'8 f'8 ees'16 des'16 c'8 | %\mark "A"
   % 15
   ees'2. r4 |
   r4 r8 c'16 des'16 ees'4 f'4 |
@@ -42,7 +42,7 @@ part-Psix-one = {
   % 20
   ees'4. bes16 c'16 des'4 des'4 |
   des'8 c'16 bes16~ bes8 c'8~ c'4 r4 |
-  r4 r8 c'16 des'16 ees'8 f'8 ees'16 des'16 c'8 | \mark "B"
+  r4 r8 c'16 des'16 ees'8 f'8 ees'16 des'16 c'8 | %\mark "B"
   ees'2. r4 |
   r4 r8 c'16 des'16 ees'4 f'4 |
   % 25
@@ -53,7 +53,7 @@ part-Psix-one = {
   r8 ees'8 des'8 c'8~ c'2 |
   % 30
   r4 r8 f'16\f g'16 aes'8 bes'8 aes'16 g'16
-  f'16( aes'16) | \mark "C"
+  f'16( aes'16) | %\mark "C"
   aes'1 |
   \time 5/4
   r4 r8 f'16 g'16 aes'8 bes'8 aes'16 g'16 f'8 aes'8 g'16 f'16 |
@@ -64,7 +64,7 @@ part-Psix-one = {
   g'4. f'16 g'16 aes'4. f'8 |
   ees'4 r8 bes16 c'16 des'4 des'4 |
   des'8 c'16 bes16~ bes8 c'8~ c'2 |
-  r4 r8 f'16 g'16 aes'8 bes'8 aes'16 g'16 f'16( aes'16) | \mark "D"
+  r4 r8 f'16 g'16 aes'8 bes'8 aes'16 g'16 f'16( aes'16) | %\mark "D"
   aes'1 |
   % 40
   \time 5/4
@@ -77,7 +77,7 @@ part-Psix-one = {
   ees'4. bes16 c'16 des'4 des'4 |
   % 45
   des'8 c'16 bes16~ bes8 aes8~ aes2 |
-  R1 | \mark "E"
+  R1 | %\mark "E"
   R1 |
   R1 | \bar "|."
 }
@@ -113,7 +113,7 @@ part-Pseven-one = {
   \tempo "Allegretto. Moving" 4 = 84
   des'8 c'8 bes8 c'8~ c'4 r4 |
   R1
-  r4 r8 aes16\mf bes16 c'8 des'8 c'16 bes16 aes8 | \mark "A"
+  r4 r8 aes16\mf bes16 c'8 des'8 c'16 bes16 aes8 | %\mark "A"
   % 15
   c'2. r4 |
   r4 r8 aes16 bes16 c'4 des'4 |
@@ -123,7 +123,7 @@ part-Pseven-one = {
   % 20
   c'4. g16 aes16 bes4 bes4 |
   bes8 aes16 g16~ g8 aes8~ aes4 r4 |
-  r4 r8 aes16 bes16 c'8 des'8 c'16 bes16 aes8 | \mark "B"
+  r4 r8 aes16 bes16 c'8 des'8 c'16 bes16 aes8 | %\mark "B"
   c'2. r4 |
   r4 r8 aes16 bes16 c'4 des'4 |
   % 25
@@ -134,7 +134,7 @@ part-Pseven-one = {
   r8 c'8 bes8 aes8~ aes2 |
   % 30
   r4 r8 f'16\f g'16 aes'8 bes'8 aes'16 g'16
-  f'16( aes'16) | \mark "C"
+  f'16( aes'16) | %\mark "C"
   aes'1 |
   \time 5/4
   r4 r8 f'16 g'16 aes'8 bes'8 aes'16 g'16 f'8 aes'8 g'16 f'16 |
@@ -145,7 +145,7 @@ part-Pseven-one = {
   g'4. f'16 g'16 aes'4. f'8 |
   ees'4 r8 bes16 c'16 des'4 des'4 |
   des'8 c'16 bes16~ bes8 c'8~ c'2 |
-  r4 r8 f'16 g'16 aes'8 bes'8 aes'16 g'16 f'16( aes'16) | \mark "D"
+  r4 r8 f'16 g'16 aes'8 bes'8 aes'16 g'16 f'16( aes'16) | %\mark "D"
   aes'1 |
   % 40
   \time 5/4
@@ -158,7 +158,7 @@ part-Pseven-one = {
   ees'4. bes16 c'16 des'4 des'4 |
   % 45
   des'8 c'16 bes16~ bes8 aes8~ aes2 |
-  R1 | \mark "E"
+  R1 | %\mark "E"
   R1 |
   R1 | \bar "|."
 }

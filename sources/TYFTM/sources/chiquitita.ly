@@ -88,7 +88,7 @@ chord-sequence = \chordmode {
   aes2 des2/aes | 
   aes2 des2/aes | 
   aes2 des2/aes | 
-  \mark "A"
+  %%\mark "A"
   aes2 des2/aes | % 17
   aes2. des4/aes | % 18
   aes2 ees2 | % 19
@@ -96,7 +96,7 @@ chord-sequence = \chordmode {
   ees2 des2 | % 21
   ees1 | % 22
   aes1 | % 23
-  aes1 | % 24 \mark "B"
+  aes1 | % 24 %%\mark "B"
   aes2 des2/aes | % 25
   aes1 | % 26
   c1:m | % 27
@@ -104,7 +104,7 @@ chord-sequence = \chordmode {
   ees2 des2 | 
   ees1 |  % #30
   aes1 | % 31
-  aes1 | % 32 \mark "C"
+  aes1 | % 32 %%\mark "C"
   des1 | % 33
   des1*5/4 | % 34
   aes1 | % 35
@@ -112,7 +112,7 @@ chord-sequence = \chordmode {
   ees2 des2 | 
   ees1 |
   aes1 | % 39
-  aes1 | % #40 \mark "D"
+  aes1 | % #40 %%\mark "D"
   des1 | % 33
   des1*5/4 | % 34
   aes1 | % 35

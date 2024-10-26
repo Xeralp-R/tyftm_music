@@ -9,10 +9,10 @@ part-Pnine-one = {
   \tempo "In free time"
   R1*14 \bar "||"
   \tempo "Allegretto. Moving" 4 = 84
-  R1*3 \mark "A"
+  R1*3 %\mark "A"
   R1*6
   des''8\mf^\ed-text "Bells/Glockenspiel" c''8 bes'8 aes'8 r2
-  R1 \mark "B"
+  R1 %\mark "B"
   R1*6
   des''8^\ed-text "Bells/Glockenspiel"\mf c''8 bes'8 aes'8 aes'8 aes'16 des''16 ees''16 f''16 aes''8 |
   % 30
@@ -46,7 +46,7 @@ part-Pnine-two = {
   \tempo "In free time"
   R1*14 \bar "||"
   \tempo "Allegretto. Moving" 4 = 84
-  R1*3 \mark "A"
+  R1*3 %\mark "A"
   R1*6
   r2
   f'8 ees'8 des'8 c'8 |

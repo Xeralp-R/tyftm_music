@@ -16,7 +16,7 @@ part-Ponezero-one = {
   c'16 aes,16 ees16 aes16 c'16 ees16 aes16 c'16 des'16 ees16 f16 aes16
   des'16 f16 aes16 des'16 |
   c'16 aes,16 ees16 aes16 c'16 ees16 aes16 c'16 des'16 ees16 f16 aes16
-  des'16 f16 aes16 des'16 | \mark "A"
+  des'16 f16 aes16 des'16 | %\mark "A"
 
   c'16 aes,16 ees16 aes16 c'16 ees16 aes16 c'16 des'16 ees16 f16 aes16
   des'16 f16 aes16 des'16 |

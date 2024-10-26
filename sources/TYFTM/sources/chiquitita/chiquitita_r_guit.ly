@@ -16,9 +16,9 @@ part-Poneone-one = {
     "Otherwise, no rhythms nor notes are specifically written." 
   }
   R1
-  R1*2 | \mark "A"
-  R1*8 | \mark "B"
-  R1*8 | \mark "C"
+  R1*2 | %\mark "A"
+  R1*8 | %\mark "B"
+  R1*8 | %\mark "C"
 
   \override NoteHead.style = #'slash
   bes8\f bes8 bes8 bes8 bes8 bes8 bes8 bes8 |
