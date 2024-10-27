@@ -143,3 +143,11 @@ linear-spanner = #(define-music-function (length num_bars) (integer? integer?)
     \revert TrillSpanner.bound-details
     \revert TrillSpanner.extra-offset
   #})
+
+tocSection =
+#(define-music-function (label text) (symbol-list-or-symbol? markup?)
+   (add-toc-item! 'tocSectionMarkup text label))
+
+tocGroup =
+#(define-music-function (label text) (symbol-list-or-symbol? markup?)
+   (add-toc-item! 'tocGroupMarkup text label))
