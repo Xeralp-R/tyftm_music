@@ -1,6 +1,6 @@
 \version "2.22.1"
 
-#(set-global-staff-size 20)
+#(set-global-staff-size 18.5)
 #(set-default-paper-size "a4")
 
 \paper {
@@ -131,6 +131,10 @@
     #(ly:make-moment 1/16)
     \override Score.Footnote.annotation-line = ##f
     skipBars = ##t
+  }
+  \context {
+    \DrumStaff
+    \remove "Instrument_name_engraver"
   }
   \context {
     \PianoStaff

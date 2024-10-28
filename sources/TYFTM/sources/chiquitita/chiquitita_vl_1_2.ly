@@ -42,7 +42,7 @@ part-Pone-one = {
     r8 c8 r8 c8 r8 es8 r8 es8 | % 8
     r8 as8 r8 as8 r8 as8 r8 as8 | % 9
     as16 bes16 as16 bes16 as8 g8 f16 g16 f16 g16 f8 es8 |
-    \barNumberCheck #10
+    %\barNumberCheck #10
     \time 5/4  des16 es16 des16 es16 des8 c8 c16 des16 c16 des16 c8 bes8
     as'16 bes16 as16 bes16 | % 11
     \time 4/4  as8 c8 es,16 f16 es16 f16 es8 as8 c,16 des16 c16 des16 | % 12
@@ -97,7 +97,7 @@ part-Ptwo-one = {
     r8 bes8 r8 bes8 r8 g8 r8 g8 | % 7
     r8 as8 r8 as8 r8 c8 r8 c8 | % 8
     r8 g'8 r8 g8 r8 g8 r8 g8 | % 9
-    r8 <f as>8 r8 <f as>8 r8 <f as>8 r8 <f as>8 | \barNumberCheck #10
+    r8 <f as>8 r8 <f as>8 r8 <f as>8 r8 <f as>8 | %\barNumberCheck #10
     \time 5/4  r8 <f as>8 r8 <f as>8 r8 <f as>8 r8 <f as>8 r8 <f as>8 | % 11
     \time 4/4  r8 as8 r8 as8 r8 as8 r8 as8 | % 12
     r8 as8 r8 as8 r8 as8 r8 as8 | % 13

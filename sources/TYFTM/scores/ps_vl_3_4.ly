@@ -3,6 +3,7 @@
 \include "../styles/Instrument_Part_Score.ily"
 
 \include "../sources/chiquitita.ly"
+\include "../sources/mamma_mia.ly"
 
 \pointAndClickOff
 
@@ -44,21 +45,32 @@
     }
   }
 
-  %{
   \bookpart { \blank_page }
   \bookpart { \markuplist \table-of-contents }
-  %}
 
   \bookpart {
     %\tocSection piano \markup { "Piano Part Score" }
-    %\tocGroup piano.i \markup { "Act I" }
-    %\tocItem piano.i.chiq \markup { "Chiquitita" }
+    \tocSection i \markup { "Act I" }
+    \tocItem i.chiq \markup { "Chiquitita" }
 
     \header {
       \chiquitita_header
     }
     \score {
       \keepWithTag #'(vl_iii vl_iv) \chiquitita
+
+      \layout {}
+    }
+  }
+
+  \bookpart {
+    \tocItem i.mamma_mia \markup { "Mamma Mia" }
+
+    \header {
+      \mamma_mia_header
+    }
+    \score {
+      \keepWithTag #'(vl_iii vl_iv) \mamma_mia
 
       \layout {}
     }

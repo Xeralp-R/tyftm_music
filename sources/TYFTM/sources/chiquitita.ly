@@ -252,7 +252,7 @@ chiquitita = {
         }
       >>
     >>
-    \tag #'(accompaniment band kbd)
+    \tag #'(accompaniment band e_kbd)
     \new PianoStaff \with {
       instrumentName = "Electric Keyboard"
       shortInstrumentName = "Kbd."

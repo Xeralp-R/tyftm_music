@@ -2,8 +2,9 @@
 \include "../../../../styles/Global.ily"
 
 PartPOneFiveVoiceOne =  \drummode {
-  %\clef "percussion" \numericTimeSignature\time 4/4 \key c \major
-  r1 | % 1
+  %\clef "percussion" 
+  \numericTimeSignature\time 4/4 
+  R1 | % 1
   r2 r8 bd8-> _\sf sn4-> | % 2
   \bar "||"
   << { hh4_\mf hh4 hh4 hh4  } \\ { bd4 sn4 s8 bd8 sn8 bd8 } >> | % 3
@@ -25,12 +26,12 @@ PartPOneFiveVoiceOne =  \drummode {
   << { <sn toml>8-> <sn toml>8 <sn toml>8-> <sn toml>8 <sn toml>8-> <sn toml>8 <sn toml>8-> <sn toml>8 } \\ { bd4 bd4 bd4 bd4 } >> | % 21
   << { <sn toml>8-> <sn toml>8 <sn toml>8-> <sn toml>8 sn8 sn8 sn8-> s8 } \\ { bd4 bd4 bd8 r4 bd8 } >> | % 22
   << { hh4 } \\ { bd4 _\p } >> \oneVoice r4 r2| % 23
-  r1 | % 24
-  r1 | % 25
-  r1 | % 26
-  r1 | % 27
-  r1 | % 28
-  r1 | % 29
+  R1 | % 24
+  R1 | % 25
+  R1 | % 26
+  R1 | % 27
+  R1 | % 28
+  R1 | % 29
   r2  bd4 \grace {sn16} sn4 | %30
   << { hh4 hh4 hh4 hh4 } \\ { bd4 <bd sn>4 bd8 bd8 sn8 bd8 } >> | % 31
   \linear-spanner #1 #2
@@ -42,10 +43,10 @@ PartPOneFiveVoiceOne =  \drummode {
   << { hh4 hh4 hh4 hh8 hho8 } \\ { bd8 bd8 sn4 bd8 bd8 sn8 <bd sn>8 } >> | % 39
   << { hh4 hh4 hh4 hh4 } \\ { bd8 bd8 sn4 bd8 bd8 sn4 } >> | % 40
   << { hho4 } \\ { bd4 } >> \oneVoice r4 r2| % 41
-  r1 | % 42
-  r1 | % 43
-  r2 r4 \grace {sn16} sn4 | % 44
-  << { hh4 _\rf hh4 hh4 hh4 } \\ { bd4 sn4 s8 bd8 sn8 bd8 } >> | % 45
+  R1 | % 42
+  R1 | % 43
+  r2 r4 \grace {sn16} sn4\f | % 44
+  << { hh4 _\mf hh4 hh4 hh4 } \\ { bd4 sn4 s8 bd8 sn8 bd8 } >> | % 45
   \linear-spanner #1 #2
   << { hh4 hh4 hh4 hho4 } \\ { bd8 bd8 sn4 bd8 bd8 sn4 } >> | % 48
   << { hh4 hh4 hh4 hho4 } \\ { bd8 bd8 sn4 bd8 bd8 sn8 bd8 } >> | % 49
@@ -64,14 +65,14 @@ PartPOneFiveVoiceOne =  \drummode {
   << { <sn toml>8 -> <sn toml>8 <sn toml>8 -> <sn toml>8 <sn hho>4  <sn hho>4 } \\ { bd4 bd4 bd4 bd4 } >> | % 62
   << { <sn toml>8 -> <sn toml>8 <sn toml>8 -> <sn toml>8 <sn toml>8 -> <sn toml>8 <sn toml>8 -> <sn toml>8 } \\ { bd4 bd4 bd4 bd4 } >> | % 63
   << { <sn toml>8 -> <sn toml>8 <sn toml>8 -> <sn toml>8 r4. hho8 } \\ { bd4 bd4 <bd sn>8 (sn8 sn8 bd8)  } >> | % 64
-  << { hh4 } \\ { bd4 _\fp)  } >> \oneVoice r4 r2| % 65
-  r1 | % 66
-  r1 | % 67
-  r1 | % 68
-  r1 | % 69
-  r1 | % 70
-  r1 | % 71
-  r2 r4 \grace {sn16} sn4 | % 72
+  << { hh4 } \\ { bd4 _\fp  } >> \oneVoice r4 r2| % 65
+  R1 | % 66
+  R1 | % 67
+  R1 | % 68
+  R1 | % 69
+  R1 | % 70
+  R1 | % 71
+  r2 r4 \grace {sn16} sn4\f | % 72
   << { hh4 hh4 hh4 hh4 } \\ { bd4 <bd sn>4 bd8 bd8 sn8 bd8 } >> | % 73
   \linear-spanner #1 #2
   << { hh4 hh4 hh4 hho4 } \\ { bd4 <bd sn>4 bd8 bd8 sn8 <bd sn>8 } >> | % 76
@@ -80,6 +81,6 @@ PartPOneFiveVoiceOne =  \drummode {
   << { hh4  _\f hh4 hh4 hh4 } \\ { bd4 sn4 bd8 bd8 sn4 } >> | % 79
   << { hh4 hh4 hh4 hho4 } \\ { bd8 bd8 sn4 bd8 bd8 sn4 } >> | % 80
   << { hh4 hh4 _\rf hh4 hh8 hh8 } \\ { bd8 bd8 sn4 bd8 bd8 sn8 <bd sn>8 } >> | % 81
-  << { hh4 hh4 hh4 cymc4 } \\ { bd8 bd8 sn4 bd8 bd8 sn4 } >> | % 82
+  << { hh4 hh4 hh4 cymc4 } \\ { bd8 bd8 sn4 bd8 bd8 sn4_\sfz } >> | % 82
 
 }
