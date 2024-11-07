@@ -203,6 +203,7 @@ voulez-vous-l-guit = {
 voulez-vous-l-guit-strums = {
   s1*6
   s1*4 
+  s1*8
 
   \override NoteHead.style = #'slash
   \voiceTwo
@@ -252,9 +253,6 @@ voulez-vous-l-guit-strums = {
   s1*7
   b2 b4 b4 | \bar "||" % key chage
 
-  s1*12 
-  s1*6 \bar "|."
-
   s1*5
   s2 
   b4^\ed-text "V11" b4^\ed-text "V111" |
@@ -263,7 +261,6 @@ voulez-vous-l-guit-strums = {
   s2 
   b4^\ed-text "V11" b4^\ed-text "V111" |
 
-  s1*1
   b2 b4 b4 |
     b2 b4 b4 |
 }

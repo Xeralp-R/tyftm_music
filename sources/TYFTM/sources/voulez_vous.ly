@@ -1,11 +1,12 @@
 % Automatically generated from a musicxml file.
 \version "2.24.0"
 \include "../../../styles/Global.ily"
-\include "../../../styles/Pocket_Score.ily"
+\include "../../../styles/final_styles/revision_style.ily"
 
 \include "voulez_vous/voulez_vous_perc.ly"
 \include "voulez_vous/voulez_vous_b_guit.ly"
 \include "voulez_vous/voulez_vous_r_guit.ly"
+\include "voulez_vous/voulez_vous_l_guit.ly"
 
 voulez_vous_header = \header {
   title = "Voulez Vous"
@@ -2452,6 +2453,28 @@ voulez_vous =  {
     \new Staff \part-Ponetwo-one
     
     %}
+    \tag #'(accompaniment band l_guit)
+    \new StaffGroup \with {
+      systemStartDelimiter = #'SystemStartSquare
+      instrumentName = "Lead Guitar"
+      shortInstrumentName = "L. Guit"
+    } <<
+      %\new ChordNames \voulez-vous-r-guit-chords
+      \new Staff <<
+        {
+          \clef "treble_8"
+          \voulez-vous-l-guit
+        }
+        {
+          \clef "treble_8"
+          \voulez-vous-l-guit-strums
+        }
+      >>
+      \new Dynamics \voulez-vous-b-guit-dyn
+      \new TabStaff \with {
+      } \voulez-vous-l-guit
+    >>
+
     \tag #'(accompaniment band r_guit)
     <<
       \new ChordNames \voulez-vous-r-guit-chords
