@@ -95,8 +95,8 @@ PartPFiveVoiceOne =  {
   <a d'>2 <a cis' e'>2 | % 55
   <f a d'>4 <a d' f'>4 <a' d'' f'' a''>4 <d' f' a' d''>4 | % 56
   <d' g' b'>4 <d' g' c''>4 <d' g' c''>8 <d' g' b'>8 ~ ~ ~ <d' g' b'>4 | % 57
-  \startTrillSpan g'1 | % 58
-  \stopTrillSpan R1 
+  g'1\startTrillSpan | % 58
+   R1 \stopTrillSpan
   R1*7 | % 66
   <g' c'' g''>4  <g' c'' g''>4 <g' c'' f''>4 <g' c'' f''>4 | % 67
   <g' c'' e''>8 <g' c'' d''>8 <g' c'' e''>8 <g' c'' f''>8 <g' c'' e''>4

@@ -27,14 +27,14 @@ PartPOneTwoVoiceOne =  {
   <g, d g>8 <g, d g>8 <g, d g>4 <g, d g>8 <g, d g>8 <g, d g>4 | % 46
   R1 | % 47
   R1*2 | % 48
-  <a c'>1 ~ ~ | % 49
+  <a c'>1 ~ | % 49
   <a c'>1 | \barNumberCheck #50
   <a d'>2 <g d'>2 | % 51
   <g c'>2 c'4 b4 | % 52
   <a c'>1 | % 53
   <a d'>2 cis'2 | % 54
   <a d'>1 | % 55
-  <g b>1 ~ ~ | % 56
+  <g b>1 ~ | % 56
   <g b>2 r8 r8 r4 | % 57
   <c g c'>8 <c g c'>8 <c g c'>4 <c g c'>8 <c g c'>8 <c g c'>4 | % 58
   R1*2 | \barNumberCheck #60
@@ -54,7 +54,7 @@ PartPOneTwoVoiceOne =  {
 
 PartPOneTwoVoiceOneLyricsOne =  \lyricmode {
   \set ignoreMelismata =
-  ##tWish -- ing "ev'" -- ry show was the last \skip1 show Glad to hear "you're" Glad to hear your come -- in \skip1 And sud -- den -- ly "it's" gon -- na be, so diff -- erent when "I'm" on the stage to -- night \skip1 \skip1 \skip1 Su -- pa -- per troup -- pa
+  ##t Wish -- ing "ev'" -- ry show was the last \skip1 show Glad to hear "you're" Glad to hear your come -- in \skip1 And sud -- den -- ly "it's" gon -- na be, so diff -- erent when "I'm" on the stage to -- night \skip1 \skip1 \skip1 Su -- pa -- per troup -- pa
   -- per Su -- pa -- per troup -- pa -- per Su -- pa -- per troup -- pa --
   per Su -- pa -- per troup -- pa -- per Su -- pa -- per troup -- pa --
   per Su -- pa -- per troup -- pa -- per Ooh Ooh ooh ooh ooh ooh ooh Ooh ooh ooh ooh Ooh \skip1 Su -- pa -- per troup -- pa -- per Su -- pa -- per troup -- pa -- per Su -- pa -- per troup -- pa -- per Su -- pa -- per troup -- pa -- per Su -- pa -- per troup -- pa -- per Su -- pa -- per troup -- pa -- per

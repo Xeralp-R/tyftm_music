@@ -4,6 +4,7 @@
 
 \include "../sources/chiquitita.ly"
 \include "../sources/mamma_mia.ly"
+\include "../sources/super_trouper.ly"
 
 \pointAndClickOff
 
@@ -71,6 +72,19 @@
     }
     \score {
       \keepWithTag #'(vl_iii vl_iv) \mamma_mia
+
+      \layout {}
+    }
+  }
+
+  \bookpart {
+    \tocItem i.st \markup { "Super Trouper" }
+
+    \header {
+      \super_trouper_header
+    }
+    \score {
+      \keepWithTag #'(vl_iii vl_iv) \super_trouper
 
       \layout {}
     }

@@ -4,6 +4,7 @@
 
 \include "../sources/chiquitita.ly"
 \include "../sources/mamma_mia.ly"
+\include "../sources/super_trouper.ly"
 
 \pointAndClickOff
 
@@ -51,7 +52,7 @@
   \bookpart {
     %\tocSection piano \markup { "Piano Part Score" }
     \tocSection i \markup { "Act I" }
-    %\tocItem i.chiq \markup { "Chiquitita" }
+    \tocItem i.chiq \markup { "Chiquitita" }
 
     \header {
       \chiquitita_header
@@ -71,6 +72,19 @@
     }
     \score {
       \keepWithTag #'(vl_i vl_ii) \mamma_mia
+
+      \layout {}
+    }
+  }
+
+  \bookpart {
+    \tocItem i.st \markup { "Super Trouper" }
+
+    \header {
+      \super_trouper_header
+    }
+    \score {
+      \keepWithTag #'(vl_i vl_ii) \super_trouper
 
       \layout {}
     }

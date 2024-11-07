@@ -1,9 +1,10 @@
 \version "2.24.0"
-\include "../styles/Global.ily"
-\include "../styles/Instrument_Part_Score.ily"
+\include "../../../styles/global.ily"
+\include "../../../styles/Instrument_Part_Score.ily"
 
 \include "../sources/chiquitita.ly"
 \include "../sources/mamma_mia.ly"
+\include "../sources/super_trouper.ly"
 
 \pointAndClickOff
 
@@ -71,6 +72,20 @@
     }
     \score {
       \keepWithTag #'(piano) \mamma_mia
+
+      \layout {}
+    }
+  }
+
+  \bookpart { \blank_page }
+  \bookpart {
+    \tocItem i.mamma_mia \markup { "Super Trouper" }
+
+    \header {
+      \super_trouper_header
+    }
+    \score {
+      \keepWithTag #'(piano) \super_trouper
 
       \layout {}
     }
