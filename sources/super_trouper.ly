@@ -1,13 +1,13 @@
 % Automatically generated from a musicxml file.
 \version "2.24.4"
 \include "../styles/Global.ily"
-%\include "../styles/final_styles/revision_style.ily"
+\include "../styles/final_styles/revision_style.ily"
 
 \include "super_trouper/vl_1_2.ly"
 \include "super_trouper/vl_3_4.ly"
 \include "super_trouper/pno.ly"
-%{
 \include "super_trouper/donna.ly"
+%{
 \include "super_trouper/sophie.ly"
 \include "super_trouper/t_r.ly"
 \include "super_trouper/s_a.ly"
@@ -16,8 +16,8 @@
 \include "super_trouper/l_guit.ly"
 \include "super_trouper/r_guit.ly"
 \include "super_trouper/b_guit.ly"
-\include "super_trouper/drums.ly"
 %}
+\include "super_trouper/drums.ly"
 
 super_trouper_header = \header {
     title =  "Super Trouper"
@@ -94,7 +94,6 @@ super_trouper = {
         \context Staff = "2" \PartPFiveVoiceFive
     >>
 
-    %{
     \tag #'(chor soli donna)
     \new Staff
     <<
@@ -106,6 +105,7 @@ super_trouper = {
             \new Lyrics \lyricsto "PartPSixVoiceOne" \PartPSixVoiceOneLyricsOne
         >>
     >>
+    %{
 
     \tag #'(chor soli sophie)
     \new Staff
@@ -215,20 +215,18 @@ super_trouper = {
             stringTunings = #bass-tuning
         } \PartPOneSixVoiceOne
     >>
+    %}
 
     \tag #'(accompaniment band drum)
     \new DrumStaff \with {
         instrumentName = "Drum Kit"
         shortInstrumentName = "D. Kit"
     } \PartPOneSevenVoiceOne
-    %}
 >>
 
 }
 
-%{
 \score {
     \super_trouper
     \layout{}
 }
-%}
