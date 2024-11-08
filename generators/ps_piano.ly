@@ -1,6 +1,6 @@
 \version "2.24.0"
-\include "../../../styles/global.ily"
-\include "../../../styles/Instrument_Part_Score.ily"
+\include "../styles/Global.ily"
+\include "../styles/Instrument_Part_Score.ily"
 
 \include "../sources/chiquitita.ly"
 \include "../sources/mamma_mia.ly"

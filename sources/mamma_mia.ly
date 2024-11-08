@@ -1,6 +1,6 @@
 \version "2.24.4"
-\include "../../../styles/Global.ily"
-%\include "../../../styles/final_styles/revision_style.ily"
+\include "../styles/Global.ily"
+%\include "../styles/final_styles/revision_style.ily"
 
 \include "mamma_mia/vl_1_2.ly"
 \include "mamma_mia/vl_3_4.ly"

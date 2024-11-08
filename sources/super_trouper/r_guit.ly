@@ -1,5 +1,5 @@
 \version "2.24.4"
-\include "../../../../styles/global.ily"
+\include "../../styles/Global.ily"
 
 PartPOneFiveVoiceOne = {
 

@@ -1,5 +1,5 @@
 \version "2.24.4"
-\include "../../../../styles/Global.ily"
+\include "../../styles/Global.ily"
 
 PartPOneVoiceOne =  \relative fis' {
   \clef "treble" \numericTimeSignature\time 4/4 \key d \major | % 1

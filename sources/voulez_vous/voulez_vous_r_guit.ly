@@ -1,5 +1,5 @@
 \version "2.24.0"
-\include "../../../../styles/Global.ily"
+\include "../../styles/Global.ily"
 
 voulez-vous-r-guit =  {
   \key g \major

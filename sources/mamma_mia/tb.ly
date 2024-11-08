@@ -1,5 +1,5 @@
 \version "2.24.4"
-\include "../../../../styles/Global.ily"
+\include "../../styles/Global.ily"
 
 PartPEightVoiceOne =  \relative cis' {
   \clef "treble_8" \numericTimeSignature\time 4/4 \key d \major | % 1

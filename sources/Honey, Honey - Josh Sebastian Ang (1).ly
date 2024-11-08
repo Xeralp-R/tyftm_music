@@ -1,6 +1,6 @@
 % Automatically generated from a musicxml file.
 \version "2.24.4"
-\include "../../../styles/Global.ily"
+\include "../styles/Global.ily"
 \include "../../../styles/Pocket_Score.ily"
 
 honey_honey_header = \header {

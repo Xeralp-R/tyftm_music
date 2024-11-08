@@ -1,5 +1,5 @@
 \version "2.24.4"
-\include "../../../../styles/global.ily"
+\include "../../styles/Global.ily"
 
 PartPOneTwoVoiceOne =  {
   \clef "bass" \numericTimeSignature\time 4/4 \key c \major | % 1

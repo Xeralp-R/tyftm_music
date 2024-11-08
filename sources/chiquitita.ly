@@ -1,7 +1,7 @@
 % Automatically generated from a musicxml file.
 \version "2.24.0"
-\include "../../../styles/Global.ily"
-%\include "../../../styles/final_styles/revision_style.ily"
+\include "../styles/Global.ily"
+%\include "../styles/final_styles/revision_style.ily"
 
 \include "chiquitita/chiquitita_drums.ly"
 \include "chiquitita/chiquitita_b_guit.ly"

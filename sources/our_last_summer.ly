@@ -1,6 +1,6 @@
 % Automatically generated from a musicxml file.
 \version "2.24.0"
-\include "../../../styles/Global.ily"
+\include "../styles/Global.ily"
 \include "../../../styles/Pocket_Score.ily"
 
 \include "our_last_summer/vl_1_2.ly"

@@ -1,5 +1,5 @@
 \version "2.24.4"
-\include "../../../../styles/global.ily"
+\include "../../styles/Global.ily"
 
 PartPOneSevenVoiceOne = \drummode {
   \clef "percussion" \numericTimeSignature \time 4/4 \major

@@ -1,5 +1,5 @@
 \version "2.24.4"
-\include "../../../../styles/global.ily"
+\include "../../styles/Global.ily"
 
 PartPEightVoiceOne =  {
   \clef "treble" \numericTimeSignature\time 4/4 \key c \major | % 1
