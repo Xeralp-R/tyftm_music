@@ -93,8 +93,8 @@ b-guit-dyn = {
   R1*4 %%%\mark \default % D
   R1\sub-p R1 R1\ben-mp R1 R1\f R1 R1\poco-p\< R1 %%%\mark \default % E
   R1\f R1*6 R1\< %%%\mark \default % F
-  R1\piu-f R1*7 %%%\mark \default % G
-  R1\> R1\! R1*2 r2 r4 r8 r8\sfz %%%\mark \markup \box \bold "G1"
+  R1\piu-f R1*6 R1\> %%%\mark \default % G
+  R1\! R1*3 r2 r4 r8 r8\sfz %%%\mark \markup \box \bold "G1"
   R1*2 R1\mp\< %%%\mark \default % H
   R1\f R1*7 %%%\mark \default % I 
   R1\piu-f R1*7 %%%\bar "|."
