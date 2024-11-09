@@ -1,127 +1,98 @@
-part-Poneseven-one = {
-  \key c \major
+\version "2.24.0"
+\include "../../styles/Global.ily"
+
+part-Poneseven-one = \drummode {
   \time 4/4
-  \clef percussion r2 |
+  r2 |
+  R1*7
   % 0
   <<
-    \context Voice = "voiceone" {
+    \context DrumVoice = "voiceone" {
+      cymr4\< cymr cymr cymr |
       \voiceOne
-      g''8\mf g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8\mf g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8\mf g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      % 5
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8\> g''8 g''8 g''8 g''8 g''8\! |
-      g''8\p g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8\p g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      % 10
-      g''8\p g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
+      cymr8->\meno-mf hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
+      \linear-spanner 1 2
+      hh8 hh8 hh8 hh8 hh8 hh8 hh8 hho8 |
+      hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
+      \linear-spanner 1 2
       % 15
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
+      hh8 hh8 hh8 hh8 hh8 hh8 hh8 hho8 |
     }
-    \context Voice = "voicetwo" {
+    \context DrumVoice = "voicetwo" {
+      s1
       \voiceTwo
-      f'4 r8 f'8 f'4 r8 f'8 |
-      f'4 r8 f'8 f'4 r8 f'8 |
-      f'4 r8 f'8 f'4 r8 f'8 |
-      f'4 f'4 f'4 f'4 |
-      f'4 r8 f'8 f'4 r8 f'8 |
-      % 5
-      f'4 r8 f'8 f'4 r8 f'8 |
-      f'4 r8 f'8 f'4 r8 f'8 |
-      f'4 r8 f'8 f'4 r8 f'8 |
-      f'4 r8 f'8 f'4 r8 f'8 |
-      f'4 r8 f'8 f'4 r8 f'8 |
-      % 10
-      f'4 r8 f'8 f'4 r8 f'8 |
-      f'4 r8 f'8 f'4 r4 |
-      f'4 r8 f'8 f'4 r8 f'8 |
-      f'4 r8 f'8 f'4 r8 f'8 |
-      f'4 r8 f'8 f'4 r8 f'8 |
+      bd4 r8 bd8 bd4 r8 bd8 |
+      s1*2
+      bd4 r8 bd8 bd4 r4 |
+      bd4 r8 bd8 bd4 r8 bd8 |
+      s1*2
       % 15
-      f'4 r8 f'8 f'4 r4 |
+      bd4 r8 bd8 bd4 r4 |
     }
   >>
-  g''4\pp g''4 g''4 g''4 |
+  cymr4\rf cymr4 cymr4 cymr4 |
   <<
-    \context Voice = "voiceone" {
+    \context DrumVoice = "voiceone" {
       \voiceOne
-      g''8-> g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
+      hh8-> hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
+      hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
+      hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
       % 20
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8->\f g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
+      hh8\sub-p hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
+      hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
+      hh8\ben-mp hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
+      hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
+      hhc8->\f hho8 hh8 hh8 hh8 hh8 hh8 hh8 |
       % 25
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8-> g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      f'8\< <a' c'' >8) <f' a' c'' >8 <a' c'' >8 <f' a' c'' >8 <a' c''
-      >8 <f' a' c'' >8 <a' c'' >8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      % 30
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
+      hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
+      hh8->\poco-p\< hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
+      hh8 cymc8\laissezVibrer s2. |
+      hh8\f hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
+      \linear-spanner 1 2
+      hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
+      hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
+      \linear-spanner 1 2
       % 35
-      f'4\< <f' a' c'' >8 <a' c'' >8 <f' a' c'' >8) <a' c'' >8 <f' a'
-      c'' >8 <a' c'' >8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
+      hh8\< cymc8\laissezVibrer s2. |
+      hh8\piu-f hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
+      \linear-spanner 1 2
+      hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
       % 40
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8\> g''8 g''8 g''8 g''8 g''8 g''8\! g''8 |
+      hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
+      \linear-spanner 1 2
+      hh8\> hh8 hh8 hh8 hh8 hh8 hh8\! hh8 |
     }
-    \context Voice = "voicetwo" {
+    \context DrumVoice = "voicetwo" {
       \voiceTwo
-      f'4 r8 f'8 f'4 r8 f'8 |
-      f'4 r8 f'8 f'4 r4 |
-      f'4 c''8 f'8 f'8 c''8 c''8 f'8 |
+      bd4 r8 bd8 bd4 r8 bd8 |
+      bd4 r8 bd8 bd4 r4 |
+      bd4 sn8 bd8 bd8 sn8 sn8 bd8 |
       % 20
-      f'4 r4 r2 |
-      r1 |
-      f'4 r4 r2 |
-      r1 |
-      f'4 r4 r2 |
+      bd4 r4 r2 |
+      R1 |
+      bd4 r4 r2 |
+      R1 |
+      bd4 r4 r2 |
       % 25
-      r1 |
-      f'4 r4 r2 |
-      e''4(\! |
-      f'4 c''8 f'8 f'4 c''8 f'8 |
-      f'4 c''8 f'8 f'4 c''8 f'8 |
-      % 30
-      f'4 c''8 f'8 f'4 c''8 f'8 |
-      f'4 c''8 f'8 f'8 c''8 <f' c'' >8 c''8 |
-      f'4 c''8 f'8 f'4 c''8 f'8 |
-      f'4 c''8 f'8 f'4 c''8 f'8 |
-      f'4 c''8 f'8 f'4 c''8 f'8 |
+      R1 |
+      bd4 r4 r2 |
+      bd8 <toml sn >8 <bd toml sn >8 <toml sn >8 <bd toml sn >8 <toml sn
+      >8 <bd toml sn >8 <toml sn >8 |
+      bd4 sn8 bd8 bd4 sn8 bd8 |
+      s1*2
+      bd4 sn8 bd8 bd8 sn8 <bd sn >8 sn8 |
+      bd4 sn8 bd8 bd4 sn8 bd8 |
+      s1*2
       % 35
-      g''8\! e''8( |
-      f'4 c''8 f'8 f'4 c''8 f'8 |
-      f'4 c''8 f'8 f'4 c''8 f'8 |
-      f'4 c''8 f'8 f'4 c''8 f'8 |
-      f'4 c''8 f'8 f'8 c''8 <f' c'' >8 c''8 |
+      bd4 <bd toml sn >8 <toml sn >8 <bd toml sn >8 <toml sn >8 <bd toml
+      sn >8 <toml sn >8 |
+      bd4 sn8 bd8 bd4 sn8 bd8 |
+      s1*2
+      bd4 sn8 bd8 bd8 sn8 <bd sn >8 sn8 |
       % 40
-      f'4 c''8 f'8 f'4 c''8 f'8 |
-      f'4 c''8 f'8 f'4 c''8 f'8 |
-      f'4 c''8 f'8 f'4 c''8 f'8 |
-      f'4 c''8 f'8 f'8 e''8 <f' c'' >4 |
+      bd4 sn8 bd8 bd4 sn8 bd8 |
+      s1*2
+      bd4 sn8 bd8 bd8 tommh8 <bd sn >4 |
     }
   >>
   R1 |
@@ -129,73 +100,63 @@ part-Poneseven-one = {
   R1 |
   R1 |
   R1 |
+  r2 r8 
   <<
-    \context Voice = "voiceone" {
+    \context DrumVoice = "voiceone" {
       \voiceOne
-      r2 r8 e''16-> e''16-> e''8 e''8-> |
-      r4 g''8 g''8 g''8 g''8 g''8 g''8 |
+      hh16-> hh16-> hh8 cymc8->\sfz |
+      r4 hh8 hh8 hh8 hh8 hh8 hh8 |
       % 50
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
+      hh8\< hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
+      s2
+
+      cymc8\f hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
+      \linear-spanner 1 2
+      % 55
+      hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
+      hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
+      \linear-spanner 1 2
+      hh8 hh8 hh8 hh8 cymc2 |
     }
-    \context Voice = "voicetwo" {
+    \context DrumVoice = "voicetwo" {
       \voiceTwo
-      e''8 f'8~-> |
-      f'4 f'4 f'4 f'4 |
+      s8 tommh8 bd8~-> |
+      bd4 bd4 bd4 bd4 |
       % 50
-      f'4 f'4 f'4 f'4 |
+      bd4 bd4 bd4 bd4 |
+      bd8 <toml sn >8 <bd toml sn >8 <toml sn >8 <bd toml sn >8 <toml sn >8 <bd toml
+      sn >8 <toml sn >8 |
+
+      bd4 <bd sn >4 bd4 <bd sn >4 |
+      s1*2
+      % 55
+      bd4 <bd sn >4 bd8 sn8 <bd sn >8 sn8 |
+      bd4 <bd sn >4 bd4 <bd sn >4 |
+      s1*2
+      bd4 <bd sn >4 <bd sn>2 |
     }
   >>
-  f'8 <a' c'' >8 <f' a' c'' >8\< <a' c'' >8 <f' a' c'' >8 <a' c'' >8 <f' a'
-  c'' >8 <a' c'' >8 |
-  <<
-    \context Voice = "voiceone" {
-      \voiceOne
-      a''8\mf g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      % 55
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-    }
-    \context Voice = "voicetwo" {
-      \voiceTwo
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
-      % 55
-      f'4 <f' c'' >4 f'8 c''8 <f' c'' >8 c''8 |
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
-    }
-  >>
-  g''8 g''8 g''8 g''8 e''2 |
   % 60
   <<
-    \context Voice = "voiceone" {
+    \context DrumVoice = "voiceone" {
       \voiceOne
-      g''8\mf g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8\mf g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8\mf g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
+      hh8\piu-f hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
+      \linear-spanner 1 2
+      hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
+      hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
       % 65
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
-      g''8 g''8 g''8 g''8 g''8 g''8 g''8 g''8 |
+      \linear-spanner 1 2
+      hh8 hh8 hh8 hh8 cymc2 |
     }
-    \context Voice = "voicetwo" {
+    \context DrumVoice = "voicetwo" {
       \voiceTwo
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
-      f'4 <f' c'' >4 f'8 c''8 <f' c'' >8 c''8 |
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
+      bd4 <bd sn >4 bd4 <bd sn >4 |
+      s1*2
+      bd4 <bd sn >4 bd8 sn8 <bd sn >8 sn8 |
+      bd4 <bd sn >4 bd4 <bd sn >4 |
       % 65
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
-      f'4 <f' c'' >4 f'4 <f' c'' >4 |
+      s1*2
+      bd4 <bd sn >4 <bd sn>2 |
     }
   >>
-  g''8 g''8 g''8 g''8 e''2 |
 }

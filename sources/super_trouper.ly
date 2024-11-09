@@ -22,7 +22,7 @@
 super_trouper_header = \header {
     title =  "Super Trouper"
     composer =  "Benny Anderson & Bjorn Ulvaeus"
-    arranger = "Iris Lexi Ababon / JDAT"
+    arranger = "Iris Lexi Ababon / JDAT-RAR"
 }
 
 super_trouper-measures = {

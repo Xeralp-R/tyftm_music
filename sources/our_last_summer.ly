@@ -1,25 +1,57 @@
 % Automatically generated from a musicxml file.
 \version "2.24.0"
 \include "../styles/Global.ily"
-\include "../../../styles/Pocket_Score.ily"
+\include "../styles/final_styles/revision_style.ily"
 
+%{
 \include "our_last_summer/vl_1_2.ly"
 \include "our_last_summer/vl_3_4.ly"
 \include "our_last_summer/pno.ly"
 \include "our_last_summer/e_kbd.ly"
 \include "our_last_summer/chorus.ly"
+%}
+\include "our_last_summer/b_guit.ly"
 \include "our_last_summer/drums.ly"
+%{
 \include "our_last_summer/l_guit.ly"
 \include "our_last_summer/r_guit.ly"
-\include "our_last_summer/b_guit.ly"
 \include "our_last_summer/on_stage_guit.ly"
 \include "our_last_summer/men.ly"
 \include "our_last_summer/sophie.ly"
+%}
 
 our_last_summer_header = \header {
-  arranger = "Josh Ang, Gabriel Nillos"
+  arranger = "Josh Ang, Gabriel Nillos / RAR"
   composer = "Benny Andersson, Björn Ulvaeus"
   title = "Our Last Summer"
+}
+
+our_last_summer-measures = {
+  \tempo \markup \column {
+  "Andante grazioso"
+  \italic "At a calm and walking pace"
+  } 4=96
+  \partial 2 r2 
+  R1*68 \bar "|."
+}
+
+
+our_last_summer-marks = {
+  \tempo \markup \column {
+  "Andante grazioso"
+  \italic "At a calm and walking pace"
+  } 4=96
+  \partial 2 r2 \mark \default % A
+  R1*8 \mark \default % B
+  R1*8 \mark \default % C
+  R1*4 \mark \default % D
+  R1*8 \mark \default % E
+  R1*8 \mark \default % F
+  R1*8 \mark \default % G
+  R1*5 \mark \markup \box \bold "G1"
+  R1*3 \mark \default % H
+  R1*8 \mark \default % I 
+  R1*8 \bar "|."
 }
 
 chords_set = \chordmode {
@@ -38,13 +70,12 @@ chords_set = \chordmode {
 
 our_last_summer = {
   <<
-    %{
     \new BarNumberStaff <<
-      { \chiquitita-marks }
-      { \compressEmptyMeasures \chiquitita-measures }
+      { \our_last_summer-marks }
+      { \compressEmptyMeasures \our_last_summer-measures }
     >>
-    %}
     
+    %{
     \new StaffGroup <<
       \new Staff \with {
         instrumentName = "Violin 1"
@@ -94,12 +125,11 @@ our_last_summer = {
         \new Staff \part-Poneone-two
     >>
     
-    %{
     \new BarNumberStaff <<
       { \chiquitita-marks }
       { \compressEmptyMeasures \chiquitita-measures }
     >>
-    %}
+
     <<
       \new ChordNames \chords_set
       \new StaffGroup \with {
@@ -151,6 +181,9 @@ our_last_summer = {
         \new Staff \part-Ponetwo-one
         \new Staff \part-Ponetwo-two
     >>
+
+        %}
+
     \new StaffGroup \with {
       systemStartDelimiter = #'SystemStartSquare
       instrumentName = "Bass Guitar"
@@ -164,12 +197,13 @@ our_last_summer = {
         stringTunings = #bass-tuning
       } \part-Ponesix-one
     >>
+
     \new DrumStaff \with {
       instrumentName = "Drumkit"
       shortInstrumentName = "Dr."
     } \part-Poneseven-one
   >>
-
+    
 }
 
 \header {
