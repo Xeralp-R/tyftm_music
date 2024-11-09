@@ -4,73 +4,19 @@
 PartPOneFourVoiceOne =  {
   \clef "treble_8" \numericTimeSignature\time 4/4 \key c \major | % 1
   R1*7 | % 8
-  \override NoteHead.style = #'slash
-  \arpeggioArrowUp \arpeggioArrowUp \arpeggioArrowUp b1 _\f
-  \arpeggio \arpeggio \arpeggio \arpeggioNormal \arpeggioNormal
-  \arpeggioNormal | % 9
-  \arpeggioArrowUp \arpeggioArrowUp \arpeggioArrowUp b1
-  \arpeggio \arpeggio \arpeggio \arpeggioNormal \arpeggioNormal
-  \arpeggioNormal | \barNumberCheck #10
-  \arpeggioArrowUp \arpeggioArrowUp \arpeggioArrowUp b1
-  \arpeggio \arpeggio \arpeggio \arpeggioNormal \arpeggioNormal
-  \arpeggioNormal | % 11
-  \arpeggioArrowUp \arpeggioArrowUp \arpeggioArrowUp b1
-  \arpeggio \arpeggio \arpeggio \arpeggioNormal \arpeggioNormal
-  \arpeggioNormal | % 12
-  \arpeggioArrowUp \arpeggioArrowUp \arpeggioArrowUp b1
-  \arpeggio \arpeggio \arpeggio \arpeggioNormal \arpeggioNormal
-  \arpeggioNormal | % 13
-  \arpeggioArrowUp \arpeggioArrowUp \arpeggioArrowUp b1
-  \arpeggio \arpeggio \arpeggio \arpeggioNormal \arpeggioNormal
-  \arpeggioNormal | % 14
-  \arpeggioArrowUp \arpeggioArrowUp \arpeggioArrowUp b1
-  \arpeggio \arpeggio \arpeggio \arpeggioNormal \arpeggioNormal
-  \arpeggioNormal | % 15
-  \arpeggioArrowUp \arpeggioArrowUp \arpeggioArrowUp b1
-  \arpeggio \arpeggio \arpeggio \arpeggioNormal \arpeggioNormal
-  \arpeggioNormal | % 16
-  \arpeggioArrowUp \arpeggioArrowUp \arpeggioArrowUp b1
-  \arpeggio \arpeggio \arpeggio \arpeggioNormal \arpeggioNormal
-  \arpeggioNormal | % 17
-  r4 b8 b8 b8 b8 b4 | % 18
-  b1 | % 19
-  \arpeggioArrowUp \arpeggioArrowUp \arpeggioArrowUp b2
-  \arpeggio \arpeggio \arpeggio \arpeggioNormal \arpeggioNormal
-  \arpeggioNormal \arpeggioArrowUp \arpeggioArrowUp \arpeggioArrowUp
-  b2 \arpeggio \arpeggio \arpeggio \arpeggioNormal
-  \arpeggioNormal \arpeggioNormal | \barNumberCheck #20
-  \arpeggioArrowUp \arpeggioArrowUp \arpeggioArrowUp b1
-  \arpeggio \arpeggio \arpeggio \arpeggioNormal \arpeggioNormal
-  \arpeggioNormal | % 21
-  r4 b8 b8 b8 b8 b4 | % 22
-  b1 | % 23
-  \arpeggioArrowUp \arpeggioArrowUp \arpeggioArrowUp b2
-  \arpeggio \arpeggio \arpeggio \arpeggioNormal \arpeggioNormal
-  \arpeggioNormal \arpeggioArrowUp \arpeggioArrowUp \arpeggioArrowUp
-  b2 \arpeggio \arpeggio \arpeggio \arpeggioNormal
-  \arpeggioNormal \arpeggioNormal | % 24
-  \arpeggioArrowUp \arpeggioArrowUp \arpeggioArrowUp b1
-  \arpeggio \arpeggio \arpeggio \arpeggioNormal \arpeggioNormal
-  \arpeggioNormal | % 25
-  \arpeggioArrowUp \arpeggioArrowUp \arpeggioArrowUp b1
-  \arpeggio \arpeggio \arpeggio \arpeggioNormal \arpeggioNormal
-  \arpeggioNormal | % 26
-  \arpeggioArrowUp \arpeggioArrowUp \arpeggioArrowUp b1
-  \arpeggio \arpeggio \arpeggio \arpeggioNormal \arpeggioNormal
-  \arpeggioNormal | % 27
-  \arpeggioArrowUp \arpeggioArrowUp \arpeggioArrowUp b1
-  \arpeggio \arpeggio \arpeggio \arpeggioNormal \arpeggioNormal
-  \arpeggioNormal | % 28
-  \arpeggioArrowUp \arpeggioArrowUp \arpeggioArrowUp b1
-  \arpeggio \arpeggio \arpeggio \arpeggioNormal \arpeggioNormal
-  \arpeggioNormal | % 29
-  \arpeggioArrowUp \arpeggioArrowUp \arpeggioArrowUp b1
-  \arpeggio \arpeggio \arpeggio \arpeggioNormal \arpeggioNormal
-  \arpeggioNormal | \barNumberCheck #30
-  \revert NoteHead.style
+
+  s1*8
+  s1
+  r4 <b e'>8 <c' e'> <b e'> <c' e'> g4 |
+  s1*2
+  s1*1
+  r4 <b e'>8 <c' e'> <b e'> <c' e'> g4 |
+  s1*2
+  s1*6
+  
   g'1 ~ \startTrillSpan | % 31
-  g'1 \stopTrillSpan | % 32
-  c8 c'8 c'8 a16 g16 c8 c'8 c'8 a16 g16 | % 33
+  g'1  | % 32
+  c8\stopTrillSpan c'8 c'8 a16 g16 c8 c'8 c'8 a16 g16 | % 33
   c8 c'8 c'8 a16 g16 c8 c'8 c'8 a16 g16 | % 34
   c8 c'8 c'8 a16 g16 c8 c'8 c8 c'8 | % 35
   g,8 g8 g8 e16 d16 g,8 g8 g8 e16 d16 | % 36
@@ -85,39 +31,31 @@ PartPOneFourVoiceOne =  {
   d8 d'8 d'8 b16 a16 d8 d'8 d'8 b16 a16 | % 45
   g,8 g8 g8 e16 d16 g,8 g8 g8 e16 d16 | % 46
   g,8 g8 g8 e16 d16 g,8 g8 g8 e16 d16 | % 47
-  \arpeggioArrowUp \arpeggioArrowUp <c g>2 \arpeggio \arpeggio
-  \arpeggioNormal \arpeggioNormal r2 | % 48
+    <c g>2     r2 | % 48
   R1 | % 49
-  \arpeggioArrowUp \arpeggioArrowUp \arpeggioArrowUp \arpeggioArrowUp
-  <a c' f' a'>1 \arpeggio \arpeggio \arpeggio \arpeggio
-  \arpeggioNormal \arpeggioNormal \arpeggioNormal \arpeggioNormal | % 50
-  \arpeggioArrowUp \arpeggioArrowUp \arpeggioArrowUp \arpeggioArrowUp
-  <a cis' e' a'>1 \arpeggio \arpeggio \arpeggio \arpeggio
-  \arpeggioNormal \arpeggioNormal \arpeggioNormal \arpeggioNormal |
+     \voiceOne
+  a'1      | % 50
+  a'1       |
   \barNumberCheck #51
-  \arpeggioArrowUp \arpeggioArrowUp \arpeggioArrowUp <a c' f'>2
-  \arpeggio \arpeggio \arpeggio \arpeggioNormal \arpeggioNormal
-  \arpeggioNormal \arpeggioArrowUp \arpeggioArrowUp \arpeggioArrowUp
-  <g b d'>2 \arpeggio \arpeggio \arpeggio \arpeggioNormal
-  \arpeggioNormal \arpeggioNormal | % 52
-  \arpeggioArrowUp \arpeggioArrowUp \arpeggioArrowUp \arpeggioArrowUp
-  <e g c' e'>2. \arpeggio \arpeggio \arpeggio \arpeggio
-  \arpeggioNormal \arpeggioNormal \arpeggioNormal \arpeggioNormal
-  \arpeggioArrowUp \arpeggioArrowUp \arpeggioArrowUp <g b d'>4
-  \arpeggio \arpeggio \arpeggio \arpeggioNormal \arpeggioNormal
-  \arpeggioNormal | % 53
-  \arpeggioArrowUp \arpeggioArrowUp \arpeggioArrowUp \arpeggioArrowUp
-  <a c' f' a'>1 \arpeggio \arpeggio \arpeggio \arpeggio
-  \arpeggioNormal \arpeggioNormal \arpeggioNormal \arpeggioNormal | % 54
-  \arpeggioArrowUp \arpeggioArrowUp \arpeggioArrowUp \arpeggioArrowUp
-  <a d' fis' a'>2 \arpeggio \arpeggio \arpeggio \arpeggio
-  \arpeggioNormal \arpeggioNormal \arpeggioNormal \arpeggioNormal
-  \arpeggioArrowUp \arpeggioArrowUp \arpeggioArrowUp \arpeggioArrowUp
-  <a cis' e' a'>2 \arpeggio \arpeggio \arpeggio \arpeggio
-  \arpeggioNormal \arpeggioNormal \arpeggioNormal \arpeggioNormal | % 55
-  \arpeggioArrowUp \arpeggioArrowUp \arpeggioArrowUp <a d' fis'>1
-  \arpeggio \arpeggio \arpeggio \arpeggioNormal \arpeggioNormal
-  \arpeggioNormal | % 56
+  f'2
+   
+     
+  d'2 
+    | % 52
+     
+  e'2.      
+  d'4
+   
+   | % 53
+     
+  a'1       | % 54
+     
+  a'2      
+     
+  a'2       | % 55
+  fis'1
+   \oneVoice
+   | % 56
   g'1 ~ \startTrillSpan | % 57
   g'1 \stopTrillSpan | % 58
   R1*8 | % 66
@@ -128,7 +66,88 @@ PartPOneFourVoiceOne =  {
   d8 d'8 d'8 b16 a16 d8 d'8 d'8 b16 a16 | \barNumberCheck #71
   g,8 g8 g8 e16 d16 g,8 g8 g8 e16 d16 | % 72
   g,8 g8 g8 e16 d16 g,8 g8 g8 e16 d16 | % 73
-  R1*2 \bar "|."
+  s1 R1 \bar "|."
+}
+
+l-guit-strums = {
+  R1*7 %%%\mark \default % A
+
+  \override Voice.NoteHead.style = #'slash
+     b1
+   | % 9
+     b1
+   | \barNumberCheck #10
+     b1
+   | % 11
+     b1
+   | % 12
+     b1
+   | % 13
+     b1
+   | % 14
+     b1
+   | % 15
+     b1
+   | % 16
+     b1
+   | % 17
+  s1%18
+  b1 | % 19
+     b2
+     
+  b2
+    | \barNumberCheck #20
+     b1
+   | % 21
+  s1 | % 22
+  b1 | % 23
+     b2
+     
+  b2 
+    | % 24
+     b1
+   | % 25
+     b1
+   | % 26
+     b1
+   | % 27
+     b1
+   | % 28
+     b1
+   | % 29
+     b1
+   | \barNumberCheck #30
+
+  s1*8 %%%\mark \default % E
+  s1*7 %%%\mark \default % F
+  s1*4
+  b1      | % 50
+  b1       |
+  \barNumberCheck #51
+  b2
+   
+     
+  b2 
+    | % 52
+     
+  b2.      
+  b4
+   
+   | % 53
+     
+  b1       | % 54
+     
+  b2      
+     
+  b2       | % 55
+  b1
+   
+   | % 56
+  s1*2 %%%\mark \default % H
+  s1*8 %%%\mark \default % I
+  s1*7
+  b1\laissezVibrer
+  s1
 }
 
 PartPOneFourVoiceOneChords =  \chordmode {
@@ -192,5 +211,5 @@ PartPOneFourVoiceOneChords =  \chordmode {
   s8 s8 s8 s16 s16 s8 s8 s8 s16 s16 | \barNumberCheck #71
   s8 s8 s8 s16 s16 s8 s8 s8 s16 s16 | % 72
   s8 s8 s8 s16 s16 s8 s8 s8 s16 s16 | % 73
-  s1 s1 \bar "|."
+  c1 s1 \bar "|."
 }

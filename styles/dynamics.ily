@@ -70,6 +70,7 @@ ed-piu-f = #(make-pre-ed-dynamic-script "piu" "f")
 piu-f = #(make-dynamic-script (markup #:normal-text #:italic "piu " #:dynamic "f"))
 poco-p = #(make-dynamic-script (markup #:normal-text #:italic "poco " #:dynamic "p"))
 sub-p = #(make-dynamic-script (markup #:normal-text #:italic "sub " #:dynamic "p"))
+ben-mp = #(make-dynamic-script (markup #:normal-text #:italic "ben " #:dynamic "mp"))
 
 ed-text = #(define-music-function (arg) (markup?)
   #{

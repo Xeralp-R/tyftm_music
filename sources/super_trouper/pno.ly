@@ -85,7 +85,7 @@ PartPFiveVoiceOne =  {
   }
   >>
   <c' e' g' c''>1 ~ ~ ~ ~ | % 48
-  <c' e' g' c''>2. <c' e' g' c''>4 | % 49
+  <c' e' g' c''>2. <c' e' g' c''>4\textMark "Vi-" | % 49
   <c' f' a' c''>4. <c' f' a'>8 <c' f' a'>2 | % 50
   <c' e' a' c''>4. <c' e' a'>8 <c' e' a'>2 | \barNumberCheck #51
   <d' f' a' d''>2 <d' g' b' d''>4. <e' g' c'' e''>8 | % 52
@@ -95,7 +95,7 @@ PartPFiveVoiceOne =  {
   <a d'>2 <a cis' e'>2 | % 55
   <f a d'>4 <a d' f'>4 <a' d'' f'' a''>4 <d' f' a' d''>4 | % 56
   <d' g' b'>4 <d' g' c''>4 <d' g' c''>8 <d' g' b'>8 ~ ~ ~ <d' g' b'>4 | % 57
-  g'1\startTrillSpan | % 58
+  g'1\startTrillSpan\textMark "-de" | % 58
    R1 \stopTrillSpan
   R1*7 | % 66
   <g' c'' g''>4  <g' c'' g''>4 <g' c'' f''>4 <g' c'' f''>4 | % 67
@@ -188,7 +188,7 @@ pno-dyn = {
   R1*7 \mark \default % A
   R1\f R1*6 R1\> \mark \default % B
   R1\mp R1*7 \mark \default % C
-  R1 R1*5 R1\< R1 \mark \default % D
+  R1\ben-mp R1*5 R1\< R1 \mark \default % D
   R1\f R1*7 \mark \default % E
   R1*7 \mark \default % F
   R1\> R1 R1\mp R1*3 \mark \default % G

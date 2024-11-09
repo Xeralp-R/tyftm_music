@@ -12,10 +12,10 @@
 \include "super_trouper/t_r.ly"
 \include "super_trouper/s_a.ly"
 \include "super_trouper/t_b.ly"
+%}
 \include "super_trouper/e_kbd.ly"
 \include "super_trouper/l_guit.ly"
 \include "super_trouper/r_guit.ly"
-%}
 \include "super_trouper/b_guit.ly"
 \include "super_trouper/drums.ly"
 
@@ -156,22 +156,16 @@ super_trouper = {
             \new Lyrics \lyricsto "PartPOneTwo" \PartPOneTwoVoiceOneLyricsOne
         >>
     >>
+            %}
 
     \tag #'(accompaniment band e_kbd)
     \new PianoStaff \with {
         instrumentName = "Electric Keyboard"
-        shortInstrumentName = "E. kbd."
+        shortInstrumentName = "E. Kbd."
     }
     <<
-        \context Staff = "1" << 
-            \mergeDifferentlyDottedOn\mergeDifferentlyHeadedOn
-            \context Voice = "PartPOneThreeVoiceOne" {  \voiceOne \PartPOneThreeVoiceOne }
-            \context Voice = "PartPOneThreeVoiceTwo" {  \voiceTwo \PartPOneThreeVoiceTwo }
-        >> 
-        \context Staff = "2" <<
-            \mergeDifferentlyDottedOn\mergeDifferentlyHeadedOn
-            \context Voice = "PartPOneThreeVoiceFive" {  \PartPOneThreeVoiceFive }
-        >>
+        \new Staff \PartPOneThreeVoiceOne
+        \new Dynamics \e-kbd-dyn
     >>
 
     \tag #'(accompaniment band l_guit)
@@ -184,13 +178,18 @@ super_trouper = {
       \new Staff <<
         {
           \clef "treble_8"
-          \PartPOneFourVoiceOne
+          <<
+            \PartPOneFourVoiceOne
+            \l-guit-strums
+          >>
         }
       >>
+      \new Dynamics \bass-guit-dyn
       \new TabStaff {
         \PartPOneFourVoiceOne
       }
     >>
+
     \tag #'(accompaniment band r_guit)
     <<
       \new ChordNames \PartPOneFiveVoiceOneChords
@@ -198,8 +197,8 @@ super_trouper = {
         instrumentName = "Rhythm Guitar"
         shortInstrumentName = "R. Guit."
       } \PartPOneFiveVoiceOne
+      \new Dynamics \bass-guit-dyn
     >> 
-    %}
 
     \tag #'(accompaniment band b_guit)
     \new StaffGroup \with {

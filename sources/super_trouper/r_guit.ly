@@ -7,7 +7,7 @@ PartPOneFiveVoiceOne = {
   \override StaffSymbol.line-count = #1
   \override NoteHead.style = #'slash
   R1*7 | % 8
-  b4 _\f b4 b8 b8 b8 b8 | % 9
+  b4 b4 b8 b8 b8 b8 | % 9
   b4 b4 b8 b8 b8 b8 |
   \barNumberCheck #10
   b4 b4 b4 b4 | % 11
@@ -48,8 +48,8 @@ PartPOneFiveVoiceOne = {
   b4 r8 b8 b4 b4 | % 45
   b4 b8 b8 b8 b8 r8 b8 | % 46
   b4 b8 b8 b8 b8 r8 b8 | % 47
-  b8 b8 b8 b8 b8 b8 b8 b8 | % 48
-  R1 | % 49
+  b8-> b8 b8-> b8-> b8 b8-> b8-> b8-> | % 48
+  b8-> b8 b8-> b8-> b8 b8-> b8-> b8-> | % 49
   b8 b8 b8 b8 b8 b8 b8 b8 | % 50
   b8 b8 b8 b8 b8 b8 b8 b8 | \barNumberCheck #51
   b8 b8 b8 b8 b8 b8 b8 b8 | % 52
@@ -66,7 +66,7 @@ PartPOneFiveVoiceOne = {
   b4 b8 b8 b4 b4 | \barNumberCheck #71
   b4 b8 b8 b8 b8 r8 b8 | % 72
   b4 b8 b8 b8 b8 r8 b8 | % 73
-  R1*2 \bar "|."
+  b1\laissezVibrer R1 \bar "|."
 }
 
 PartPOneFiveVoiceOneChords =  \chordmode {
@@ -89,30 +89,32 @@ PartPOneFiveVoiceOneChords =  \chordmode {
   d8:7 s8 s4 s4 s4 | % 23
   g8 s8 s4 s4 s4 | % 24
   f8 s8 s4 s4 s4 | % 25
-  c8:e s8 s4 s4 s4 | % 26
+  c8/e s8 s4 s4 s4 | % 26
   f8 s8 s4 s4 s4 | % 27
-  c8:e s8 s4 s4 s4 | % 28
+  c8/e s8 s4 s4 s4 | % 28
   f8 s8 s4 s4 s4 | % 29
   c8 s8 s4 s4 s4 | \barNumberCheck #30
   g4:sus s4 s8 s8 s8 s8 | % 31
   g4 s4 s8 s8 s8 s8 | % 32
-  s4 s8 s8 s8 s8 s8 s8 | % 33
-  s4 s4 s4 s4 | % 34
-  s4 s8 s8 s4 s4 | % 35
-  s4 s8 s8 s8 s8 s8 s8 | % 36
-  s4 s8 s8 s4 s4 | % 37
-  s4 s8 s8 s8 s8 s8 s8 | % 38
-  s4 s8 s8 s8 s8 s8 s8 | % 39
-  s4 s8 s8 s8 s8 s8 s8 | \barNumberCheck #40
-  s4 s8 s8 s8 s8 s8 s8 | % 41
-  s4 s4 s4 s4 | % 42
-  s4 s8 s8 s4 s4 | % 43
-  s4 s8 s8 s8 s8 s8 s8 | % 44
-  s4 s8 s8 s4 s4 | % 45
-  s4 s8 s8 s8 s8 s8 s8 | % 46
-  s4 s8 s8 s8 s8 s8 s8 | % 47
-  c8 s8 s8 s8 s8 s8 s8 s8 | % 48
-  s1 | % 49
+
+  c1 | % 33
+  c1 | % 34
+  c1 | % 35
+  g1 | % 36
+  d1 | % 37
+  g1 | % 38
+  g2.. c8 | % 39
+  s1 | \barNumberCheck #40
+  c1 | % 33
+  c1 | % 34
+  c1 | % 35
+  g1 | % 36
+  d1 | % 37
+  g1 | % 38
+  g2.. c8 | % 39
+  s8 s8 s8 s8 s8 s8 s8 s8 | % 48
+  c1 | % 49
+
   f8 s8 s8 s8 s8 s8 s8 s8 | % 50
   a8:m s8 s8 s8 s8 s8 s8 s8 | \barNumberCheck #51
   d8 s8 s8 s8 g8 s8 s8 s8 | % 52
@@ -121,13 +123,15 @@ PartPOneFiveVoiceOneChords =  \chordmode {
   d8 s8 s8 s8 a8 s8 s8 s8 | % 55
   g8 s8 s8 s8 s8 s8 s8 s8 | % 56
   g8 s8 s8 s16 s16 s8 s8 s8 s16 s16 | % 57
+
   s1 s1 s1 s1 s1 s1 s1 s1 s1 | % 66
-  s4 s8 s8 s8 s8 s8 s8 | % 67
-  s4 s4 s4 s4 | % 68
-  s4 s8 s8 s4 s4 | % 69
-  s4 s8 s8 s8 s8 s8 s8 | % 70
-  s4 s8 s8 s4 s4 | \barNumberCheck #71
-  s4 s8 s8 s8 s8 s8 s8 | % 72
-  s4 s8 s8 s8 s8 s8 s8 | % 73
-  s1 s1 \bar "|."
+  c1 | % 33
+  c1 | % 34
+  c1 | % 35
+  g1 | % 36
+  d1 | % 37
+  g1 | % 38
+  g2.. c8 | % 39
+  s1 
+  s1 \bar "|."
 }
