@@ -108,7 +108,7 @@ part-Poneseven-one = \drummode {
       r4 hh8 hh8 hh8 hh8 hh8 hh8 |
       % 50
       hh8\< hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
-      s2
+      s1
 
       cymc8\f hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
       \linear-spanner 1 2
@@ -146,7 +146,7 @@ part-Poneseven-one = \drummode {
       hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
       % 65
       \linear-spanner 1 2
-      hh8 hh8 hh8 hh8 cymc2 |
+      hh8 hh8 hh8 hh8 cymc2\fermata |
     }
     \context DrumVoice = "voicetwo" {
       \voiceTwo

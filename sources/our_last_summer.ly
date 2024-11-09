@@ -174,15 +174,6 @@ our_last_summer = {
         }
       >>
     >>
-    \new PianoStaff \with {
-      instrumentName = "Electric Keyboard"
-      shortInstrumentName = "Kbd."
-    } <<
-        \new Staff \part-Ponetwo-one
-        \new Staff \part-Ponetwo-two
-    >>
-
-        %}
 
     \new StaffGroup \with {
       systemStartDelimiter = #'SystemStartSquare
@@ -191,8 +182,9 @@ our_last_summer = {
     } <<
       \new Staff {
         \clef "bass_8"
-        \part-Ponetwo-one
+        \part-Ponesix-one
       }
+      \new Dynamics \b-guit-dyn
       \new TabStaff \with {
         stringTunings = #bass-tuning
       } \part-Ponesix-one
