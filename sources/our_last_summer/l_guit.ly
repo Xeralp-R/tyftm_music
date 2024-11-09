@@ -1,18 +1,13 @@
+\version "2.24.0"
+\include "../../styles/global.ily"
+
 part-Ponefour-one = {
   \key g \major
   \time 4/4
-  \clef treble
+  \clef "treble_8"
   r2 |
   % 0
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 5
-  R1 |
-  R1 |
-  R1 |
+  R1*8
   R1 |
   R1 |
   % 10
@@ -28,7 +23,7 @@ part-Ponefour-one = {
   R1 |
   R1 |
   % 20
-  a,1~->\mf |
+  a,1~->^\ed-text "Harsher" \f |
   a,1 |
   a,1~-> |
   a,1 |
@@ -37,7 +32,7 @@ part-Ponefour-one = {
   <a, e a >1 |
   g2 fis2 |
   e2 fis2 |
-  g8\p b8 <d' g' >8 d'8 b,8 d8 <fis b >8 fis8 |
+  g8\ben-mp^\ed-text "Smoother" b8 <d' g' >8 d'8 b,8 d8 <fis b >8 fis8 |
   c8 e8 <g c' >8 g8 d8 fis8 <a d' >8 a8 |
   % 30
   g8 b8 <d' g' >8 d'8 b,8 d8 <fis b >8 fis8 |
@@ -47,7 +42,7 @@ part-Ponefour-one = {
   c8 e8 <g c' >8 g8 d8 fis8 <a d' >8 a8 |
   % 35
   g8 c'8 <d' g' >8 d'8 g8 c'8 <d' g' >8 d'8 |
-  g2 b,2 |
+  g2\f^\ed-text "Harsher" b,2 |
   c2 d8 e8 fis4 |
   g2 b,2 |
   c2 d8 e8 fis4 |
@@ -61,12 +56,12 @@ part-Ponefour-one = {
   b'1\> |
   R1 |
   R1 |
-  r2 r8 e16\mf e16 e8 <a, e a >8~~~ |
+  r2 r8 e16\rf e16 e8 <a, e a >8~~~\sfz |
   <a, e a >1 |
   % 50
   R1 |
   R1 |
-  g8\mf b8 <d' g' >8 d'8 b,8 d8 <fis b >8 fis8 |
+  g8\mf^\ed-text "Smoother" b8 <d' g' >8 d'8 b,8 d8 <fis b >8 fis8 |
   c8 e8 <g c' >8 g8 d8 fis8 <a d' >8 a8 |
   g8 b8 <d' g' >8 d'8 b,8 d8 <fis b >8 fis8 |
   % 55
@@ -76,7 +71,7 @@ part-Ponefour-one = {
   c8 e8 <g c' >8 g8 d8 fis8 <a d' >8 a8 |
   g8 c'8 <d' g' >8 d'8 g8 c'8 <d' g' >8 d'8 |
   % 60
-  g2 b,2 |
+  g2\f^\ed-text "Harsher" b,2 |
   c2 d8 e8 fis4 |
   g2 b,2 |
   c2 d8 e8 fis4 |

@@ -1,5 +1,5 @@
 \version "2.24.0"
-\include "../../styles/Global.ily"
+\include "../../styles/global.ily"
 
 part-Ponefive-one = {
   \key g \major
@@ -11,10 +11,34 @@ part-Ponefive-one = {
 
   \override NoteHead.style = #'slash
   R1*8
-  b2 b2 |
+  \footnote "*" #'(0 . 1.2) \markup \column {
+    \line {\italic "*" "All sections in 8th notes are to be arpeggiated thus, or in a similar manner:"}
+    \line {
+    \score { 
+      \new Staff \with { 
+        \remove Time_signature_engraver 
+        \remove Instrument_name_engraver 
+        \magnifyStaff #5/7
+      } { \clef "treble_8" <g b d' g' >8 } 
+      \layout {
+        indent = 0
+      }
+    } \large \bold "=" 
+    \score { 
+      \new Staff \with { 
+        \remove Time_signature_engraver 
+        \remove Instrument_name_engraver 
+        \magnifyStaff #5/7
+      }  { \clef "treble_8" g8 b8 <d' g' >8 d'8 } 
+      \layout {
+        indent = 0
+      }
+    }
+    }
+  } b8 b8 b8 b8 b8 b8 b8 b8 |
   \linear-spanner 1 7
   R1 |
-  b2 b2 |
+  b8 b8 b8 b8 b8 b8 b8 b8 |
   \linear-spanner 1 2
   % 20
   R1*4
@@ -48,14 +72,7 @@ part-Ponefive-one = {
 
 r-guit-chords =  \chordmode {
   \partial 2 s2 
-  g8 s8 s8 s8 b8:m s8 s8 s8 | % 2
-  c4 s4 d4 s4 | % 3
-  g4 s4 b4:m s4 | % 4
-  c4 s4 d4 s4 | % 5
-  g4 s4 b4 s4 | % 6
-  e4:m s4 b4:m s4 | % 7
-  c4 s4 d4 s4 | % 8
-  g4:sus4 s4 s4 s4 
+  s1*8
   g2 s2 | \barNumberCheck #10
   g2/+e g2/+d | % 11
   c2 g2/+b | % 12

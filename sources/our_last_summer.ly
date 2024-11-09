@@ -10,11 +10,11 @@
 \include "our_last_summer/e_kbd.ly"
 \include "our_last_summer/chorus.ly"
 %}
+\include "our_last_summer/l_guit.ly"
 \include "our_last_summer/r_guit.ly"
 \include "our_last_summer/b_guit.ly"
 \include "our_last_summer/drums.ly"
 %{
-\include "our_last_summer/l_guit.ly"
 \include "our_last_summer/on_stage_guit.ly"
 \include "our_last_summer/men.ly"
 \include "our_last_summer/sophie.ly"
@@ -144,9 +144,9 @@ our_last_summer = {
         }
       >>
     >>
+    %}
 
     <<
-      %%%%%% \new ChordNames \chord-sequence
       \new StaffGroup \with {
         systemStartDelimiter = #'SystemStartSquare
         instrumentName = "Lead Guitar"
@@ -161,7 +161,6 @@ our_last_summer = {
         }
       >>
     >>
-    %}
 
     <<
       \new ChordNames \r-guit-chords
