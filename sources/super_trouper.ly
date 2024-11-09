@@ -1,7 +1,7 @@
 % Automatically generated from a musicxml file.
 \version "2.24.4"
 \include "../styles/Global.ily"
-\include "../styles/final_styles/revision_style.ily"
+%\include "../styles/final_styles/revision_style.ily"
 
 \include "super_trouper/vl_1_2.ly"
 \include "super_trouper/vl_3_4.ly"
@@ -229,9 +229,4 @@ super_trouper = {
     >>
 >>
 
-}
-
-\score {
-    \super_trouper
-    \layout{}
 }

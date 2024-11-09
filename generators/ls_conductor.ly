@@ -4,6 +4,7 @@
 
 \include "../sources/chiquitita.ly"
 \include "../sources/mamma_mia.ly"
+\include "../sources/super_trouper.ly"
 
 \pointAndClickOff
 
@@ -34,6 +35,19 @@
     }
     \score {
       \mamma_mia
+
+      \layout {}
+    }
+  }
+
+  \bookpart {
+    \tocItem i.st \markup { "Super Trouper" }
+
+    \header {
+      \super_trouper_header
+    }
+    \score {
+      \super_trouper
 
       \layout {}
     }
