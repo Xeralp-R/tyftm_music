@@ -5,6 +5,7 @@
 \include "../sources/chiquitita.ly"
 \include "../sources/mamma_mia.ly"
 \include "../sources/super_trouper.ly"
+\include "../sources/our_last_summer.ly"
 
 \pointAndClickOff
 
@@ -53,4 +54,16 @@
     }
   }
 
+  \bookpart {
+    \tocItem i.ols \markup { "Our Last Summer" }
+
+    \header {
+      \our_last_summer_header
+    }
+    \score {
+      \our_last_summer
+
+      \layout {}
+    }
+  }
 }

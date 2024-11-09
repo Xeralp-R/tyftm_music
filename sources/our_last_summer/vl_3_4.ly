@@ -1,19 +1,13 @@
+\version "2.24.0"
+\include "../../styles/global.ily"
+
 part-Pthree-one = {
   \key g \major
   \time 4/4
   \clef treble
-  a'2\p |
-  % 0
-  g'8-\markup { "pizz." }\mf d'8 d''8 d'8 fis'2 |
-  g'8 e'8 c''8 e'8 fis'2 |
-  g'8 d'8 d''8 d'8 fis'2 |
-  g'8 e'8 c''8 e'8 fis'2 |
-  g'8 d'8 d''8 d'8 ees'2 |
-  % 5
-  e'8 g'8 b'8 e'8 fis'2 |
-  g'8 c'8 c''8 c'8 a'2 |
-  d'8\> g'8 c''8 g'8 d'2 |
-  d'1~\p-\markup { "arco" } |
+
+  r2 R1*8
+  d'1~\poco-p |
   d'1 |
   % 10
   c'2 b2 |
@@ -28,14 +22,14 @@ part-Pthree-one = {
   c'1 |
   a'1 |
   % 20
+  g'4-.\sub-p g'4-. fis'4-. fis'4-. |
+  f'4-. f'4-. e'4-. e'4-. |
+  g'4-.\ben-mp g'4-. fis'4-. fis'4-. |
+  f'4-. f'4-. e'4-. e'4-. |
   g'4-.\f g'4-. fis'4-. fis'4-. |
-  f'4-. f'4-. e'4-. e'4-. |
-  g'4-. g'4-. fis'4-. fis'4-. |
-  f'4-. f'4-. e'4-. e'4-. |
-  g'4-. g'4-. fis'4-. fis'4-. |
   % 25
   f'4-. f'4-. e'4-. e'4-. |
-  g'4-. g'4-. fis'4-. fis'4-. |
+  g'4-.\p\< g'4-. fis'4-. fis'4-. |
   e'4-. e'4-. fis'4-. fis'4-. |
   g'8\mf d'8 d''8 d'8 fis'2 |
   g'8 e'8 c''8 e'8 fis'2 |
@@ -46,8 +40,8 @@ part-Pthree-one = {
   e'8 g'8 b'8 e'8 fis'2 |
   g'8 c'8 c''8 c'8 a'2 |
   % 35
-  g'8 d'8 d''8 d'8 fis'8 g'8 a'8 fis'8 |
-  g'8 d'8 d''8 d'8 fis'2 |
+  g'8\< d'8 d''8 d'8 fis'8 g'8 a'8 fis'8 |
+  g'8\f d'8 d''8 d'8 fis'2 |
   g'8 e'8 c''8 e'8 fis'2 |
   g'8 d'8 d''8 d'8 fis'2 |
   g'8 e'8 c''8 e'8 fis'2 |
@@ -55,13 +49,13 @@ part-Pthree-one = {
   g'8 d'8 d''8 d'8 ees'2 |
   e'8 g'8 b'8 e'8 fis'2 |
   g'8 c'8 c''8 c'8 a'2 |
-  d'8 g'8 c''8 g'8 d'2 |
+  d'8\> g'8 c''8 g'8 d'2 |
   g'1\p |
   % 45
   g'1 |
   g'1 |
   e'1 |
-  d'2. r8 a'8~-> |
+  d'2. r8 a'8~->\sfz |
   a'2.~ a'8 r8 |
   % 50
   e'8 d'8 fis'8 d'8 e'2 |
@@ -74,35 +68,26 @@ part-Pthree-one = {
   g'8 d'8 d''8 d'8 ees'2 |
   e'8 g'8 b'8 e'8 fis'2 |
   g'8 c'8 c''8 c'8 a'2 |
-  g'8 d'8 d''8 d'8 fis'8 g'8 a'8 fis'8 |
+  g'8\< d'8 d''8 d'8 fis'8 g'8 a'8 fis'8 |
   % 60
-  g'8 d'8 d''8 d'8 fis'2 |
+  g'8\piu-f d'8 d''8 d'8 fis'2 |
   g'8 e'8 c''8 e'8 fis'2 |
   g'8 d'8 d''8 d'8 fis'2 |
-  g'8\mp e'8 c''8 e'8 fis'2 |
+  g'8 e'8 c''8 e'8 fis'2 |
   g'8 d'8 d''8 d'8 ees'2 |
   % 65
   e'8 g'8 b'8 e'8 fis'2 |
   g'2 a'2 |
-  c''8\> d'8 a'8 d'8 g'2 |
+  c''8 d'8 a'8 d'8 g'2\fermata |
 }
 
 part-Pfour-one = {
   \key g \major
   \time 4/4
   \clef treble
-  d'2\p |
-  % 0
-  g'2-\markup { "pizz." }\mf fis'8 d'8 b'8 d'8 |
-  g'2 fis'8 d'8 d''8 d'8 |
-  g'2 fis'8 d'8 b'8 d'8 |
-  g'2 fis'8 d'8 d''8 d'8 |
-  g'2 ees'8 fis'8 b'8 d'8 |
-  % 5
-  e'2 fis'8 d'8 b'8 d'8 |
-  g'2 a'8 d'8 d''8 d'8 |
-  d'2\> d'8 g'8 c''8 g'8 |
-  b1~\p-\markup { "arco" } |
+
+  r2 R1*8
+  b1~\poco-p |
   b1 |
   % 10
   g2 g2 |
@@ -117,14 +102,14 @@ part-Pfour-one = {
   g1) |
   e'2 fis'2 |
   % 20
+  c'4-.\sub-p c'4-. c'4-. c'4-. |
+  c'4-. c'4-. c'4-. c'4-. |
+  c'4-.\ben-mp c'4-. c'4-. c'4-. |
+  c'4-. c'4-. c'4-. c'4-. |
   c'4-.\f c'4-. c'4-. c'4-. |
-  c'4-. c'4-. c'4-. c'4-. |
-  c'4-. c'4-. c'4-. c'4-. |
-  c'4-. c'4-. c'4-. c'4-. |
-  c'4-. c'4-. c'4-. c'4-. |
   % 25
   c'4-. c'4-. c'4-. c'4-. |
-  c'4-. c'4-. c'4-. c'4-. |
+  c'4-.\p\< c'4-. c'4-. c'4-. |
   c'4-. c'4-. c'4-. c'4-. |
   g'2\mf fis'8 d'8 b'8 d'8 |
   g'2 fis'8 d'8 d''8 d'8 |
@@ -135,8 +120,8 @@ part-Pfour-one = {
   e'2 fis'8 d'8 b'8 d'8 |
   g'2 a'8 d'8 d''8 d'8 |
   % 35
-  d'2 a8 b8 c'8 a8 |
-  g'2 fis'8 d'8 b'8 d'8 |
+  d'2\< a8 b8 c'8 a8 |
+  g'2\f fis'8 d'8 b'8 d'8 |
   g'2 fis'8 d'8 d''8 d'8 |
   g'2 fis'8 d'8 b'8 d'8 |
   g'2 fis'8 d'8 d''8 d'8 |
@@ -144,13 +129,13 @@ part-Pfour-one = {
   g'2 ees'8 fis'8 b'8 d'8 |
   e'2 fis'8 d'8 b'8 d'8 |
   g'2 a'8 d'8 d''8 d'8 |
-  d'2 d'8 g'8 c''8 g'8 |
+  d'2\> d'8 g'8 c''8 g'8 |
   d'1\p |
   % 45
   d'1 |
   d'2 b2 |
   a1 |
-  a2. r8 a8~-> |
+  a2. r8 a8~->\sfz |
   a2.~ a8 r8 |
   % 50
   e'2 e'8 c'8 e'8 c'8 |
@@ -163,15 +148,15 @@ part-Pfour-one = {
   g'2 ees'8 fis'8 b'8 d'8 |
   e'2 fis'8 d'8 b'8 d'8 |
   g'2 a'8 d'8 d''8 d'8 |
-  d'2 a8 b8 c'8 a8 |
+  d'2\< a8 b8 c'8 a8 |
   % 60
-  g'2 fis'8 d'8 b'8 d'8 |
+  g'2\piu-f fis'8 d'8 b'8 d'8 |
   g'2 fis'8 d'8 d''8 d'8 |
   g'2 fis'8 d'8 b'8 d'8 |
-  g'2\mp fis'8 d'8 d''8 d'8 |
+  g'2 fis'8 d'8 d''8 d'8 |
   g'2 ees'8 fis'8 b'8 d'8 |
   % 65
   e'2 fis'8 d'8 b'8 d'8 |
   g'2 a'2 |
-  c''2\> d'2 |
+  c''2 d'2\fermata |
 }

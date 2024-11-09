@@ -1,12 +1,12 @@
 % Automatically generated from a musicxml file.
 \version "2.24.0"
 \include "../styles/Global.ily"
-\include "../styles/final_styles/revision_style.ily"
+%\include "../styles/final_styles/revision_style.ily"
 
-%{
 \include "our_last_summer/vl_1_2.ly"
 \include "our_last_summer/vl_3_4.ly"
 \include "our_last_summer/pno.ly"
+%{
 \include "our_last_summer/e_kbd.ly"
 \include "our_last_summer/chorus.ly"
 %}
@@ -75,35 +75,42 @@ our_last_summer = {
       { \compressEmptyMeasures \our_last_summer-measures }
     >>
     
-    %{
     \new StaffGroup <<
+      \tag #'(accompaniment orch vl_i)
       \new Staff \with {
         instrumentName = "Violin 1"
         shortInstrumentName = "Vl. 1"
       } \part-Pone-one
+
+      \tag #'(accompaniment orch vl_ii)
       \new Staff \with {
         instrumentName = "Violin 2"
         shortInstrumentName = "Vl. 2"
       } \part-Ptwo-one
+
+      \tag #'(accompaniment orch vl_iii)
       \new Staff \with {
         instrumentName = "Violin 3"
         shortInstrumentName = "Vl. 3"
       } \part-Pthree-one
+
+      \tag #'(accompaniment orch vl_iv)
       \new Staff \with {
         instrumentName = "Violin 4"
         shortInstrumentName = "Vl. 4"
       } \part-Pfour-one
     >>
 
+    \tag #'(accompaniment orch piano)
     \new PianoStaff \with {
       instrumentName = "Piano"
       shortInstrumentName = "Pf."
     } <<
-        \new Staff \part-Ponezero-one
-        \new Staff \part-Ponezero-two
+        \new Staff \part-Poneone-one
+        \new Staff \part-Poneone-two
     >>
     
-
+    %{
     \new Staff \part-Pfive-one
     \new Staff \part-Psix-one
     \new Staff \part-Pseven-one
@@ -146,6 +153,7 @@ our_last_summer = {
     >>
     %}
 
+    \tag #'(accompaniment band l_guit)
     <<
       \new StaffGroup \with {
         systemStartDelimiter = #'SystemStartSquare
@@ -162,6 +170,7 @@ our_last_summer = {
       >>
     >>
 
+    \tag #'(accompaniment band r_guit)
     <<
       \new ChordNames \r-guit-chords
       \new StaffGroup \with {
@@ -188,6 +197,7 @@ our_last_summer = {
     >>
     %}
 
+    \tag #'(accompaniment band b_guit)
     \new StaffGroup \with {
       systemStartDelimiter = #'SystemStartSquare
       instrumentName = "Bass Guitar"
@@ -203,6 +213,7 @@ our_last_summer = {
       } \part-Ponesix-one
     >>
 
+    \tag #'(accompaniment band drum)
     \new DrumStaff \with {
       instrumentName = "Drumkit"
       shortInstrumentName = "Dr."
@@ -211,6 +222,7 @@ our_last_summer = {
     
 }
 
+%{
 \header {
   \our_last_summer_header
 }
@@ -218,4 +230,5 @@ our_last_summer = {
 \score {
   \our_last_summer
 }
+%}
 

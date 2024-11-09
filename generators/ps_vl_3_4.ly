@@ -5,6 +5,7 @@
 \include "../sources/chiquitita.ly"
 \include "../sources/mamma_mia.ly"
 \include "../sources/super_trouper.ly"
+\include "../sources/our_last_summer.ly"
 
 \pointAndClickOff
 
@@ -85,6 +86,19 @@
     }
     \score {
       \keepWithTag #'(vl_iii vl_iv) \super_trouper
+
+      \layout {}
+    }
+  }
+
+  \bookpart {
+    \tocItem i.ols \markup { "Our Last Summer" }
+
+    \header {
+      \our_last_summer_header
+    }
+    \score {
+      \keepWithTag #'(vl_iii vl_iv) \our_last_summer
 
       \layout {}
     }

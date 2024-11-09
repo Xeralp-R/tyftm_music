@@ -54,7 +54,7 @@ part-Ponefour-one = {
   b2. b8 b'8~ |
   % 45
   b'1\> |
-  R1 |
+  R1\! |
   R1 |
   r2 r8 e16\rf e16 e8 <a, e a >8~~~\sfz |
   <a, e a >1 |
