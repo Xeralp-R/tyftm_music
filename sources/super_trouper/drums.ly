@@ -6,7 +6,7 @@ PartPOneSevenVoiceOne = \drummode {
 
   % 1
   R1*6 | % 7
-  r2 r4 r8 _\f hh8 | % 8
+  r2 r4 r8 hh8 | % 8
   << { hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 } \\ { bd4 <bd sn>4 bd4 <bd sn>4 } >> | % 9
   \linear-spanner #1 #7
   << { hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 } \\ { bd4 <bd sn>4 bd4 <bd sn>4 } >>

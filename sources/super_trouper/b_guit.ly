@@ -5,7 +5,7 @@ PartPOneSixVoiceOne =  \transpose c c, {
   \numericTimeSignature\time 4/4 \key c \major
   | % 1
   R1*7 | % 8
-  c8 _\f c8 a,4 g,4 a,8 g,8 | % 9
+  c8 c8 a,4 g,4 a,8 g,8 | % 9
   c8 c8 a,4 g,8 g,8 a,8 g,8 | \barNumberCheck #10
   a,8 a,8 c4 e4 c8 e8 | % 11
   a,8 a,8 c4 a,8 b,8 c4 | % 12
@@ -28,12 +28,12 @@ PartPOneSixVoiceOne =  \transpose c c, {
   f4 r8 f8 f4 r4 | % 29
   c4 r8 c8 c4 c4 | \barNumberCheck #30
   g,4 g,4 g,4 d8 g8 ~ | % 31
-  g8 g8 g4 d'8 g'8 d'8 a16 g16 | % 32
+  g8 g8 g4 d'8\2 g'8 d'8\2 a16\3 g16 | % 32
   c8 c'8 c'8 a16 g16 c8 c'8 c'8 a16 g16 | % 33
   c8 c'8 c'8 a16 g16 c8 c'8 c'8 a16 g16 | % 34
   c8 c'8 c'8 a16 g16 c8 c'8 c8 c'8 | % 35
   g,8 g8 g8 e16 d16 g,8 g8 g8 e16 d16 | % 36
-  d8 d'8 d'8 b16 a16 d8 d'8 d'8 b16 a16 | % 37
+  d8\3 d'8 d'8 b16\2 a16\2 d8\3 d'8 d'8 b16\2 a16\2 | % 37
   g,8 g8 g8 e16 d16 g,8 g8 g8 e16 d16 | % 38
   g,8 g8 g8 e16 d16 g,8 g8 g8 e16 d16 | % 39
   c8 c'8 c'8 a16 g16 c8 c'8 c'8 a16 g16 | \barNumberCheck #40
@@ -41,7 +41,7 @@ PartPOneSixVoiceOne =  \transpose c c, {
   c8 c'8 c'8 a16 g16 c8 c'8 c'8 a16 g16 | % 42
   c8 c'8 c'8 a16 g16 c8 c'8 c8 c'8 | % 43
   g,8 g8 g8 e16 d16 g,8 g8 g8 e16 d16 | % 44
-  d8 d'8 d'8 b16 a16 d8 d'8 d'8 b16 a16 | % 45
+  d8\3 d'8 d'8 b16\2 a16\2 d8\3 d'8 d'8 b16\2 a16\2 | % 45
   g,8 g8 g8 e16 d16 g,8 g8 g8 e16 d16 | % 46
   g,8 g8 g8 e16 d16 g,8 g8 g8 e16 d16 | % 47
   c4. c8 c4. c8 | % 48
@@ -54,14 +54,28 @@ PartPOneSixVoiceOne =  \transpose c c, {
   d4 r8 d8 e4 r8 e8 | % 55
   f4 r8 f8 f4 f4 | % 56
   g4 g4 g4 g4 | % 57
-  d'8 g'8 g'4 g'8 d'8 g'16 d'16 g8 | % 58
+  d'8\2 g'8 g'4 g'8 d'8\2 g'16 d'16\2 g8\3 | % 58
   R1*8 | % 66
   c8 c'8 c'8 a16 g16 c8 c'8 c'8 a16 g16 | % 67
   c8 c'8 c'8 a16 g16 c8 c'8 c'8 a16 g16 | % 68
   c8 c'8 c'8 a16 g16 c8 c'8 c8 c'8 | % 69
   g,8 g8 g8 e16 d16 g,8 g8 g8 e16 d16 | % 70
-  d8 d'8 d'8 b16 a16 d8 d'8 d'8 b16 a16 | \barNumberCheck #71
+  d8\3 d'8 d'8 b16\2 a16\2 d8\3 d'8 d'8 b16\2 a16\2 | \barNumberCheck #71
   g,8 g8 g8 e16 d16 g,8 g8 g8 e16 d16 | % 72
   g,8 g8 g8 e16 d16 g,8 g8 g8 e16 d16 | % 73
-  R1*2 \bar "|."
+  c1\laissezVibrer
+  R1 \bar "|."
+}
+
+bass-guit-dyn = {
+  R1*7 %\mark \default % A
+  R1\f R1*6 R1\> %\mark \default % B
+  R1\p R1*7 %\mark \default % C
+  R1\mp R1*5 R1\< R1 %\mark \default % D
+  R1\f R1*7 %\mark \default % E
+  R1*7 %\mark \default % F
+  R1\> R1 R1 \mp R1*3 %\mark \default % G
+  R1*3 R1\< R1 %\mark \default % H
+  R1\! R1*7 %\mark \default % I
+  R1\f R1*8
 }

@@ -15,8 +15,8 @@
 \include "super_trouper/e_kbd.ly"
 \include "super_trouper/l_guit.ly"
 \include "super_trouper/r_guit.ly"
-\include "super_trouper/b_guit.ly"
 %}
+\include "super_trouper/b_guit.ly"
 \include "super_trouper/drums.ly"
 
 super_trouper_header = \header {
@@ -199,6 +199,7 @@ super_trouper = {
         shortInstrumentName = "R. Guit."
       } \PartPOneFiveVoiceOne
     >> 
+    %}
 
     \tag #'(accompaniment band b_guit)
     \new StaffGroup \with {
@@ -207,21 +208,26 @@ super_trouper = {
     shortInstrumentName = "B. Guit."
     }
     <<
-        \new Staff {
+        \new Staff \with {
+            \omit StringNumber
+        } {
             \clef "bass_8"
             \PartPOneSixVoiceOne
         }
+        \new Dynamics \bass-guit-dyn
         \new TabStaff \with {
             stringTunings = #bass-tuning
         } \PartPOneSixVoiceOne
     >>
-    %}
 
     \tag #'(accompaniment band drum)
     \new DrumStaff \with {
         instrumentName = "Drum Kit"
         shortInstrumentName = "D. Kit"
-    } \PartPOneSevenVoiceOne
+    } <<
+        \PartPOneSevenVoiceOne
+        \new Dynamics \bass-guit-dyn
+    >>
 >>
 
 }
