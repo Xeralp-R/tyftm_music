@@ -117,7 +117,7 @@ mamma_mia = {
       \context Staff = "2" \PartPFiveVoiceFive
     >>
 
-    \tag #'(chor soli dona)
+    \tag #'(chor soli donna)
     \new Staff
     <<
       \set Staff.instrumentName = "Donna"

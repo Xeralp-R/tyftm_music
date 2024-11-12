@@ -2,6 +2,7 @@
 \include "../styles/Global.ily"
 \include "../styles/Instrument_Part_Score.ily"
 
+\include "../sources/honey_honey.ly"
 \include "../sources/chiquitita.ly"
 \include "../sources/mamma_mia.ly"
 \include "../sources/super_trouper.ly"
@@ -52,6 +53,19 @@
 
   \bookpart {
     \tocSection i \markup { "Act I" }
+    \tocItem i.hh \markup { "Honey, Honey" }
+
+    \header {
+      \honey_honey_header
+    }
+    \score {
+      \keepWithTag #'(drum) \honey_honey
+
+      \layout {}
+    }
+  }
+
+  \bookpart {
     \tocItem i.chiq \markup { "Chiquitita" }
 
     \header {

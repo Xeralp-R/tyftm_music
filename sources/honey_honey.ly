@@ -1,7 +1,7 @@
 % Automatically generated from a musicxml file.
 \version "2.24.4"
 \include "../styles/Global.ily"
-\include "../styles/final_styles/revision_style.ily"
+%\include "../styles/final_styles/revision_style.ily"
 
 \include "honey_honey/sophie.ly"
 \include "honey_honey/a_l.ly"
@@ -28,7 +28,14 @@ honey_honey_marks = {
   R1*8 \mark \default %H
   R1*9 \mark \default %I
   R1*8 \mark \default %J
-  R1*8 \mark \default %K
+  R1*10 \mark \default %K
+  R1*8 \mark \default %L
+  \tempo \markup \column {
+  "Allargando"
+  \italic "Slower and broader"
+  } 4=96
+  R1*5 \tempo "Rit. al fin."
+  R1*3 \bar "|."
 }
 
 part-Pone-one = {
@@ -644,158 +651,6 @@ part-Pfour-one = {
   a'4 e'4 a'4 e'4 |
   cis'1\> |
   b1 |
-  % 115
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 120
-  R1 |
-  R1 |
-}
-
-part-Peight-two = {
-  \key e \major
-  \time 4/4
-  \clef bass
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 5
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 10
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 15
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 20
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 25
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 30
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 35
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 40
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 45
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 50
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 55
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 60
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 65
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 70
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  <e b >1~~ |
-  % 75
-  <e b >8 <e b >8 r8 <e b >8 r8 <e b >8 r8 <e b >8 |
-  <e cis' >1~~ |
-  <e cis' >8 <e cis' >8 r8 <e cis' >8 r8 <e cis' >8 r8 <e cis' >8 |
-  <e b >1~~ |
-  <e b >8 <e b >8 r8 <e b >8 r8 <e b >8 r8 <e b >8 |
-  % 80
-  <e cis' >1~~ |
-  <e cis' >8 <e cis' >8 r8 <e cis' >8 r8 <e cis' >8 r8 <e cis' >8 |
-  <e b >2. r4 |
-  cis'8 cis'8 cis'8 cis'8~ cis'8 dis'8 cis'8( b8) |
-  b2 r2 |
-  % 85
-  cis'8 cis'8 cis'8 cis'8 r8 dis'8 cis'8( b8) |
-  b2 r2 |
-  R1 |
-  R1 |
-  R1 |
-  % 90
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 95
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 100
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 105
-  R1 |
-  <e b >1~~ |
-  <e b >8 <e b >8 r8 <e b >8 r8 <e b >8 r8 <e b >8 |
-  <e cis' >1~~ |
-  <e cis' >8 <e cis' >8 r8 <e cis' >8 r8 <e cis' >8 r8 <e cis' >8 |
-  % 110
-  <e b >1~~ |
-  <e b >8 <e b >8 r8 <e b >8 r8 <e b >8 r8 <e b >8 |
-  <e cis' >1~~ |
-  <e cis' >8 <e cis' >8 r8 <e cis' >8 r8 <e cis' >8 r8 <e cis' >8 |
-  <e b >2. r4 |
   % 115
   R1 |
   R1 |
@@ -2057,6 +1912,8 @@ honey_honey = {
         \new Staff \part-Pnine-two
     >>
     %}
+
+    \tag #'(chor soli sophie)
     \new Staff \with {
       instrumentName = "Sophie"
       shortInstrumentName = "S."
@@ -2064,6 +1921,8 @@ honey_honey = {
       \part-Pfive-one 
       \addlyrics \sophie-lyrics
     }
+
+    \tag #'(chor soli a_l)
     \new Staff \with {
       instrumentName = "Ali & Lisa"
       shortInstrumentName = "A.,L."
@@ -2072,11 +1931,17 @@ honey_honey = {
       \new NullVoice = "aligner" \part-Psix-one
       \new Lyrics \lyricsto "aligner" \ali-lyrics
     >>
+
+    \tag #'(chor)
     \new StaffGroup \with {
       instrumentName = "Chorus"
       shortInstrumentName = "Chor."
     } <<
-        \new Staff \part-Peight-one
+        \new Staff <<
+          \part-Peight-one
+          \new NullVoice = "chorstimmung" \part-Peight-one
+          \new Lyrics \lyricsto "chorstimmung" \chor-lyrics
+        >>
         \new Staff \part-Peight-two
     >>
     %{
@@ -2113,6 +1978,8 @@ honey_honey = {
       } \part-Ponethree-one
     >>
     %}
+
+    \tag #'(accompaniment band drum)
     \new DrumStaff \with {
       instrumentName = "Drumkit"
       shortInstrumentName = "Dr."
@@ -2121,9 +1988,11 @@ honey_honey = {
   >>
 }
 
+%{
 \header {
       \honey_honey_header
     }
 \score {
   \honey_honey
 }
+%}

@@ -1,3 +1,6 @@
+\version "2.24.4"
+\include "../../styles/global.ily"
+
 part-Pfive-one = {
   \key e \major
   \time 4/4
@@ -44,52 +47,10 @@ part-Pfive-one = {
   b'8 b'8 b'8 gis'8~ gis'8 gis'8 e'8( cis'8~) |
   cis'8 r8 cis'8 cis'8 dis'8 e'4 r8 |
   % 35
-  r4 a'4 r2 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 40
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 45
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 50
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 55
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 60
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 65
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 70
-  R1 |
-  R1 |
-  R1 |
-  R1 |
+  r4 \once \override NoteHead.style = #'cross a'4 r2 |
+  R1*2
+  R1*8
+  R1*8
   r4 e'8 e'8 dis'8 e'8 r8 gis'8 |
   % 75
   r8 e'8 r8 dis'8~ dis'8 e'8 r8 b8 |
@@ -107,28 +68,9 @@ part-Pfive-one = {
   cis'4) r4 r4 r8 b8 |
   b'8 b'8 b'8 gis'8~ gis'8 gis'8 e'8( cis'8~ |
   cis'8) r8 cis'8 cis'8 dis'8 e'4 r8 |
-  r4 a'4 r2 |
-  R1 |
-  % 90
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 95
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 100
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 105
-  R1 |
+  r4 \once \override NoteHead.style = #'cross a'4 r2 |
+  R1*8
+  R1*12 |
   r4 e'8 e'8 dis'8 e'8 r8 gis'8~ |
   gis'8 e'4 dis'8~ dis'8 e'8 r8 b8 |
   cis'8 r8 e'8 e'8 dis'8 e'8 r4 |
@@ -144,10 +86,10 @@ part-Pfive-one = {
   b'8 b'8 b'8 gis'8~ gis'8 gis'8 e'8( cis'8~ |
   cis'4) r4 r4 r8 b8 |
   b'8 b'8 b'8 gis'8 r8 gis'8 e'8( cis'8~ |
-  cis'8) r8 cis'8 cis'8 dis'4-\markup { "rall." } e'4 |
+  cis'8) r8 cis'8 cis'8 dis'4 e'4 |
   % 120
   a'2. r4 |
-  R1 |
+  R1\fermata |
 }
 
 sophie-lyrics = \lyricmode {

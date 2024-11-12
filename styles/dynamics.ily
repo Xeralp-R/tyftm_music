@@ -98,6 +98,7 @@ sub-p = #(make-pre-dynamic-script "sub " "p")
 ben-mp = #(make-pre-dynamic-script "ben "  "mp")
 meno-mf = #(make-pre-dynamic-script "meno" "mf")
 poco-mf = #(make-pre-dynamic-script "poco " "mf")
+ben-mf = #(make-pre-dynamic-script "ben" "mf")
 
 ed-text = #(define-music-function (arg) (markup?)
   #{
