@@ -3,9 +3,32 @@
 \include "../styles/Global.ily"
 \include "../styles/final_styles/revision_style.ily"
 
+\include "honey_honey/sophie.ly"
+\include "honey_honey/a_l.ly"
+\include "honey_honey/chor.ly"
+\include "honey_honey/drum.ly"
+
 honey_honey_header = \header {
   composer = "Benny Andersson, Björn Ulvaeus"
   title = "Honey, Honey"
+}
+
+honey_honey_marks = {
+  \tempo \markup \column {
+  "Allegro animato"
+  \italic "Lively and gaily"
+  } 4=140
+  R1*4 \mark \default %A
+  R1*8 \mark \default %B 
+  R1*9 \mark \default %C
+  R1*8 \mark \default %D
+  R1*9 \mark \default %E
+  R1*8 \mark \default %F
+  R1*8 \mark \default %G
+  R1*8 \mark \default %H
+  R1*9 \mark \default %I
+  R1*8 \mark \default %J
+  R1*8 \mark \default %K
 }
 
 part-Pone-one = {
@@ -630,675 +653,6 @@ part-Pfour-one = {
   % 120
   R1 |
   R1 |
-}
-
-part-Pfive-one = {
-  \key e \major
-  \time 4/4
-  \clef treble
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  r4 e'8^\f e'8 dis'8 e'8 r8 gis'8~ |
-  % 5
-  gis'8 e'4 dis'8~ dis'8 e'8 r8 b8 |
-  cis'8 r8 e'8 e'8 dis'8 e'8 r4 |
-  R1 |
-  r4 e'8 e'8 dis'8 e'8 r8 gis'8~ |
-  gis'8 e'4 dis'8~ dis'8 e'8 r8 b8 |
-  % 10
-  cis'8 r8 e'8 e'8 dis'8 e'8 r4 |
-  r2 r4 r8 b8 |
-  b'8 b'8 b'8 gis'8~ gis'8 gis'8 e'8( cis'8~) |
-  cis'4 r4 r4 r8 b8 |
-  b'8 b'8 b'8 gis'8~ gis'8 gis'8 e'8( cis'8~) |
-  % 15
-  cis'4 r4 r4 r8 b8 |
-  b'8 b'8 b'8 gis'8 r8 gis'8 e'8( cis'8~) |
-  cis'8 r8 cis'8 cis'8 dis'4 e'8 a'8~ |
-  a'2. r4 |
-  a'8 gis'8 a'8 gis'8 a'4 b'4 |
-  % 20
-  R1 |
-  r4 e'8 e'8 dis'8 e'8 r8 gis'8 |
-  r8 e'8 r8 dis'8~ dis'8 e'8 r8 b8 |
-  cis'8 r8 e'8 e'8 dis'8 e'8 r4 |
-  R1 |
-  % 25
-  r4 e'8 e'8 dis'8 e'8 r8 gis'8 |
-  r8 e'8 r8 dis'8~ dis'8 e'8 r8 b8 |
-  cis'8 r8 e'8 e'8 dis'8 e'8 r4 |
-  r2 r4 r8 b8 |
-  b'8 b'8 b'8 gis'8~ gis'8 gis'8 e'8( cis'8~) |
-  % 30
-  cis'4 r4 r4 r8 b8 |
-  b'8 b'8 b'8 gis'8~ gis'8 gis'8 e'8( cis'8~) |
-  cis'4 r4 r4 r8 b8 |
-  b'8 b'8 b'8 gis'8~ gis'8 gis'8 e'8( cis'8~) |
-  cis'8 r8 cis'8 cis'8 dis'8 e'4 r8 |
-  % 35
-  r4 a'4 r2 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 40
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 45
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 50
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 55
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 60
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 65
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 70
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  r4 e'8 e'8 dis'8 e'8 r8 gis'8 |
-  % 75
-  r8 e'8 r8 dis'8~ dis'8 e'8 r8 b8 |
-  cis'8 r8 e'8 e'8 dis'8 e'8 r4 |
-  R1 |
-  r4 e'8 e'8 dis'8 e'8 r8 gis'8~ |
-  gis'8 e'8 r8 dis'8~ dis'8 e'8 r8 b8 |
-  % 80
-  cis'8 r8 e'8 e'8 dis'8 e'8 r4 |
-  r2 r4 r8 b8 |
-  b'8 b'8 b'8 gis'8~ gis'8 gis'8 e'8( cis'8~ |
-  cis'4) r4 r4 r8 b8 |
-  b'8 b'8 b'8 gis'8~ gis'8 gis'8 e'8( cis'8~ |
-  % 85
-  cis'4) r4 r4 r8 b8 |
-  b'8 b'8 b'8 gis'8~ gis'8 gis'8 e'8( cis'8~ |
-  cis'8) r8 cis'8 cis'8 dis'8 e'4 r8 |
-  r4 a'4 r2 |
-  R1 |
-  % 90
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 95
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 100
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 105
-  R1 |
-  r4 e'8 e'8 dis'8 e'8 r8 gis'8~ |
-  gis'8 e'4 dis'8~ dis'8 e'8 r8 b8 |
-  cis'8 r8 e'8 e'8 dis'8 e'8 r4 |
-  R1 |
-  % 110
-  r4 e'8 e'8 dis'8 e'8 r8 gis'8~ |
-  gis'8 e'4 dis'8~ dis'8 e'8 r8 b8 |
-  cis'8 r8 e'8 e'8 dis'8 e'8 r4 |
-  r2 r4 r8 b8 |
-  b'8 b'8 b'8 gis'8~ gis'8 gis'8 e'8( cis'8~ |
-  % 115
-  cis'4) r4 r4 r8 b8 |
-  b'8 b'8 b'8 gis'8~ gis'8 gis'8 e'8( cis'8~ |
-  cis'4) r4 r4 r8 b8 |
-  b'8 b'8 b'8 gis'8 r8 gis'8 e'8( cis'8~ |
-  cis'8) r8 cis'8 cis'8 dis'4-\markup { "rall." } e'4 |
-  % 120
-  a'2. r4 |
-  R1 |
-}
-
-sophie-lyrics = \lyricmode {
-  Ho-- "ney," ho -- "ney," how he thrills "me." Ah -- "ha!"
-  Ho -- "ney," ho -- "ney." Ho -- "ney," ho -- "ney," near -- ly
-  kills "me." Ah -- "ha!" Ho -- "ney," ho -- "ney." "I'd" heard
-  a -- bout him be -- "fore."   I wan -- ted to
-  know some "more."   And now I know what they
-  "mean."   "He's" a love ma -- "chine."  "Oh," he
-  makes me diz -- "zy!" Ho -- "ney," ho -- "ney," let me feel
-  "it." Ah -- "ha!" Ho -- "ney," ho -- "ney." Ho -- "ney," ho --
-  "ney," "don't" con -- ceal "it." Ah -- "ha!" Ho -- "ney," ho
-  -- "ney." The way that you kiss good "night,"  
-  The way that you hold me "tight,"   I feel that I
-  wan -- na "sing,"   when you do your "thing!" Ho
-  -- "ney," ho -- "ney," touch me ba -- "by." Ah -- "ha!" Ho --
-  "ney," ho -- "ney." Ho -- "ney," ho -- "ney," hold me ba
-  -- "by." Ah -- "ha!" Ho -- "ney," ho -- "ney." You look like a
-  mo -- vie "star."   But I love just who
-  you "are."  And ho -- ney to say the "least,"
-    "You're" a dog -- gone "beast!" Ho -- "ney," ho --
-  "ney," how he thrills "me." Ah -- "Ha!" Ho -- "ney," ho
-  -- "ney." Ho -- "ney," ho -- "ney," near -- ly kills
-  "me." Ah -- "Ha!" Ho -- "ney," ho -- "ney." I heard a -- bout
-  you be -- "fore,"   I wan -- ted to know
-  some "more,"   And now "I'm" a -- bout to see
-   what you mean to "me."
-}
-
-part-Psix-one = {
-  \key e \major
-  \time 4/4
-  \clef treble
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 5
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 10
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 15
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 20
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 25
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  r2 r4 r8 cis'8 |
-  % 30
-  cis'8 cis'8 cis'8 cis'8 r8 dis'8 cis'8( b8) |
-  b2 r4 r8 b8 |
-  cis'8 cis'8 cis'8 cis'8~ cis'8 dis'8 cis'8( b8) |
-  b2 r2 |
-  R1 |
-  % 35
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 40
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 45
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 50
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 55
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 60
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 65
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 70
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  r4 e'8 e'8 dis'8 e'8 r8 gis'8 |
-  % 75
-  r8 e'8 r8 dis'8~ dis'8 e'8 r8 b8 |
-  cis'8 r8 e'8 e'8 dis'8 e'8 r4 |
-  R1 |
-  r4 e'8 e'8 dis'8 e'8 r8 gis'8~ |
-  gis'8 e'8 r8 dis'8~ dis'8 e'8 r8 b8 |
-  % 80
-  cis'8 r8 e'8 e'8 dis'8 e'8 r4 |
-  R1 |
-  R1 |
-  cis'8 cis'8 cis'8 cis'8~( cis'8 dis'8) cis'8( b8) |
-  b2 r2 |
-  % 85
-  cis'8 cis'8 cis'8 cis'8 r8 dis'8 cis'8( b8) |
-  b2 r2 |
-  r4 cis'8 cis'8 dis'8 e'4 r8 |
-  r4 a'4 r2 |
-  R1 |
-  % 90
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 95
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 100
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 105
-  R1 |
-  r4 e'8 e'8 dis'8 e'8 r8 gis'8~ |
-  gis'8 e'4 dis'8~ dis'8 e'8 r8 b8 |
-  cis'8 r8 e'8 e'8 dis'8 e'8 r4 |
-  R1 |
-  % 110
-  r4 e'8 e'8 dis'8 e'8 r8 gis'8~ |
-  gis'8 e'4 dis'8~ dis'8 e'8 r8 b8 |
-  cis'8 r8 e'8 e'8 dis'8 e'8 r4 |
-  R1 |
-  R1 |
-  % 115
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 120
-  R1 |
-  R1 |
-}
-
-ali-lyrics = \lyricmode {
-  The
-  way that you kiss me good "night," The way that "you're" hold
-  -- ing me "tight," Ho -- "ney," ho -- "ney," touch me ba
-  -- "by." Ah -- "ha!" Ho -- "ney," ho -- "ney." Ho -- "ney," ho
-  -- "ney," hold me ba -- "by." Ah -- "ha!" Ho -- "ney,"
-  ho -- "ney." Look like a mo -- vie "star."   But I
-  love just who you "are." "You're" a dog -- gone "beast!" Ho --
-  "ney," ho -- "ney," how he thrills "me." Ah -- "Ha!" Ho
-  -- "ney," ho -- "ney." Ho -- "ney," ho -- "ney," near -- ly
-  kills "me." Ah -- "Ha!" Ho -- "ney," ho -- "ney."
-}
-
-part-Pseven-one = {
-  \key e \major
-  \time 4/4
-  \clef treble
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 5
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 10
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 15
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 20
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 25
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  r2 r4 r8 cis'8 |
-  % 30
-  cis'8 cis'8 cis'8 cis'8 r8 dis'8 cis'8( b8) |
-  b2 r4 r8 b8 |
-  cis'8 cis'8 cis'8 cis'8~ cis'8 dis'8 cis'8( b8) |
-  b2 r2 |
-  R1 |
-  % 35
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 40
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 45
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 50
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 55
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 60
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 65
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 70
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  r4 e'8 e'8 dis'8 e'8 r8 gis'8 |
-  % 75
-  r8 e'8 r8 dis'8~ dis'8 e'8 r8 b8 |
-  cis'8 r8 e'8 e'8 dis'8 e'8 r4 |
-  R1 |
-  r4 e'8 e'8 dis'8 e'8 r8 gis'8~ |
-  gis'8 e'8 r8 dis'8~ dis'8 e'8 r8 b8 |
-  % 80
-  cis'8 r8 e'8 e'8 dis'8 e'8 r4 |
-  R1 |
-  R1 |
-  cis'8 cis'8 cis'8 cis'8~( cis'8 dis'8) cis'8( b8) |
-  b2 r2 |
-  % 85
-  cis'8 cis'8 cis'8 cis'8 r8 dis'8 cis'8( b8) |
-  b2 r2 |
-  r4 cis'8 cis'8 dis'8 e'4 r8 |
-  r4 a'4 r2 |
-  R1 |
-  % 90
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 95
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 100
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 105
-  R1 |
-  r4 e'8 e'8 dis'8 e'8 r8 gis'8~ |
-  gis'8 e'4 dis'8~ dis'8 e'8 r8 b8 |
-  cis'8 r8 e'8 e'8 dis'8 e'8 r4 |
-  R1 |
-  % 110
-  r4 e'8 e'8 dis'8 e'8 r8 gis'8~ |
-  gis'8 e'4 dis'8~ dis'8 e'8 r8 b8 |
-  cis'8 r8 e'8 e'8 dis'8 e'8 r4 |
-  R1 |
-  R1 |
-  % 115
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 120
-  R1 |
-  R1 |
-}
-
-lisa-lyrics = \lyricmode {
-  The way that you kiss me good "night," The way that "you're"
-  hold -- ing me "tight," Ho -- "ney," ho -- "ney," touch
-  me ba -- "by." Ah -- "ha!" Ho -- "ney," ho -- "ney." Ho --
-  "ney," ho -- "ney," hold me ba -- "by." Ah -- "ha!" Ho
-  -- "ney," ho -- "ney." Look like a mo -- vie "star." 
-   But I love just who you "are." "You're" a dog -- gone
-  "beast!" Ho -- "ney," ho -- "ney," how he thrills "me."
-  Ah -- "Ha!" Ho -- "ney," ho -- "ney." Ho -- "ney," ho -- "ney," near
-  -- ly kills "me." Ah -- "Ha!" Ho -- "ney," ho -- "ney."
-}
-
-part-Peight-one = {
-  \key e \major
-  \time 4/4
-  \clef treble
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 5
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 10
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 15
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 20
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 25
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 30
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 35
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 40
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 45
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 50
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 55
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 60
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 65
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 70
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  <e' gis' >1~~ |
-  % 75
-  <e' gis' >8 <e' gis' >8 r8 <e' gis' >8 r8 <e' gis' >8 r8 <e' gis' >8 |
-  <e' a' >1~~ |
-  <e' a' >8 <e' a' >8 r8 <e' a' >8 r8 <e' a' >8 r8 <e' a' >8 |
-  <e' gis' >1~~ |
-  <e' gis' >8 <e' gis' >8 r8 <e' gis' >8 r8 <e' gis' >8 r8 <e' gis' >8 |
-  % 80
-  <e' a' >1~~ |
-  <e' a' >8 <e' a' >8 r8 <e' a' >8 r8 <e' a' >8 r8 <e' a' >8 |
-  <e' gis' >2. r4 |
-  cis'8 cis'8 cis'8 cis'8~( cis'8 dis'8) cis'8( b8) |
-  b2 r2 |
-  % 85
-  cis'8 cis'8 cis'8 cis'8 r8 dis'8 cis'8( b8) |
-  b2 r2 |
-  R1 |
-  R1 |
-  R1 |
-  % 90
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 95
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 100
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 105
-  R1 |
-  <e' gis' >1~~ |
-  <e' gis' >8 <e' gis' >8 r8 <e' gis' >8 r8 <e' gis' >8 r8 <e' gis' >8 |
-  <e' a' >1~~ |
-  <e' a' >8 <e' a' >8 r8 <e' a' >8 r8 <e' a' >8 r8 <e' a' >8 |
-  % 110
-  <e' gis' >1~~ |
-  <e' gis' >8 <e' gis' >8 r8 <e' gis' >8 r8 <e' gis' >8 r8 <e' gis' >8 |
-  <e' a' >1~~ |
-  <e' a' >8 <e' a' >8 r8 <e' a' >8 r8 <e' a' >8 r8 <e' a' >8 |
-  <e' gis' >2.\> r4\! |
-  % 115
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 120
-  R1 |
-  R1 |
-}
-
-chor-lyrics = \lyricmode {
-  
-    Ooh Wa Pa Pa Pa Ooh Wa Pa Pa Pa Ooh Wa Pa Pa Pa
-    Ooh Wa Pa Pa Pa Ooh Look like a mo -- vie "star." 
-     But I love just who you "are." Ooh Wa Pa Pa Pa
-    Ooh Wa Pa Pa Pa Ooh Wa Pa Pa Pa Ooh Wa Pa Pa Pa
-    Ooh
 }
 
 part-Peight-two = {
@@ -2553,192 +1907,6 @@ part-Ponethree-one = \transpose c c, {
   a,1 |
 }
 
-part-Ponefour-one = \drummode {
-  \clef percussion
-  \time 4/4
-  <<
-    \context DrumVoice = "voiceone" {
-      \voiceOne
-      hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
-      hh8  hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
-      hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
-      \once \override Hairpin.style = #'dashed-line
-      sn8\< sn8 sn8 sn8 sn4\rf sn4 |
-      \mark "A"
-      hh8\f hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
-      % 5
-      hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
-      \repeat unfold 13 {
-        hh2:8 hh2:8 |
-      }
-    }
-    \context DrumVoice = "voicetwo" {
-      \voiceTwo
-      bd4\f sn4 bd8 bd8 sn8 bd8 |
-      bd4 sn4 bd8 bd8 sn8 bd8 |
-      bd4 sn4 bd8 bd8 sn8 bd8 |
-      s2. tomfl4 |
-      bd4 sn4 bd8 bd8 sn8 bd8 |
-      % 5
-      bd4 sn4 bd8 bd8 sn8 bd8 |
-      bd4 sn4 bd4 sn8 bd8 |
-      bd4 sn4 bd8 bd8 sn8 bd8 |
-      bd4 sn4 bd8 bd8 sn8 bd8 |
-      bd4 sn4 bd8 bd8 sn8 bd8 |
-      % 10
-      bd4 sn4 bd8 bd8 sn4 |
-      bd4 sn4 bd8 sn8 sn8 sn8 |
-      \mark "AA"
-      bd4 sn4 bd8 bd8 sn4 |
-      bd4 sn4 bd8 bd8 sn4 |
-      bd4 sn4 bd8 bd8 sn4 |
-      % 15
-      bd4 sn4 bd8 bd8 sn8 bd8 |
-      bd4 sn4 bd8 bd8 sn8 bd8 |
-      bd4 sn4 bd8 bd8 sn8 bd8 |
-      bd4 sn4 bd8 bd8 sn4 |
-    }
-  >>
-  <<
-    \context DrumVoice = "voiceone" {
-      \voiceOne
-      hh8\rf hh8 hh8 hh8 hh4 hho4-> |
-      % 20
-      hh8\pp\< hh8 hh8 hh8 hh4\rf hho4-> |
-      hh8\f hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
-      \repeat unfold 13 {
-        hh2:8 hh2:8 |
-      }
-      %35
-      
-      hh2:8\> hh8 hh8 hh8 cymc8~ |
-      \oneVoice
-      cymc4\p r4 r2 |
-    }
-    \context DrumVoice = "voicetwo" {
-      \voiceTwo
-      <bd sn >8\! sn8 <bd sn >8 sn8 <bd sn >4 <bd sn >4-> |
-      % 20
-      <bd sn >8 <bd sn >8 sn8 <bd sn >4 <bd sn >4-> r8 |
-      bd4 sn4 bd8 bd8 sn4 |
-      bd4 sn4 bd8 bd8 sn8 bd8 |
-      bd4 sn4 bd8 bd8 sn4 |
-      bd4 sn4 bd8 bd8 sn8 bd8 |
-      % 25
-      bd4 sn4 bd8 bd8 sn4 |
-      bd4 sn4 bd8 bd8 sn8 bd8 |
-      bd4 sn4 bd8 bd8 sn4 |
-      bd4 sn4 bd8 bd8 sn4 |
-      \mark "BA"
-      bd4 sn4 bd8 bd8 sn4 |
-      % 30
-      bd4 sn4 bd8 bd8 sn4 |
-      bd4 sn4 bd8 bd8 sn4 |
-      bd4 sn4 bd8 bd8 sn8 bd8 |
-      bd4 sn4 bd8 bd8 sn8 bd8 |
-      bd4 sn4 bd8 bd8 sn8 bd8 |
-      %35
-      bd4 sn4 bd8 bd8 sn8 bd8
-      s1 |
-    }
-  >>
-  R1*4
-  \sectionLabel "Vamp 'till ready"
-  \repeat volta 2 {
-    R1 |
-  }
-  \mark D
-  R1*7
-  \mark DA
-  R1*6
-  \mark E
-  R1*12
-  \mark EA
-  R1*6
-  \repeat volta 2 {
-    \once \override TrillSpanner.bound-details.left.text = ##f
-    \once \override TrillSpanner.extra-offset = #'(-0.66 . -3)
-    
-    \endSpanners { s1 ^\markup{ \italic "Fill, last time only"}\p \< \startTrillSpan } 
-  }
-  \mark "F"
-  <<
-    \context DrumVoice = "voiceone" {
-      \voiceOne
-      hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
-      % 75
-      hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
-      hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
-      \repeat unfold 12 {
-        hh2:8 hh2:8
-      }
-    }
-    \context DrumVoice = "voicetwo" {
-      \voiceTwo
-      bd4\f sn4 bd8 bd8 sn4 |
-      % 75
-      bd4 sn4 bd8 bd8 sn4 |
-      bd4 sn4 bd8 bd8 sn4 |
-      bd4 sn4 bd8 bd8 sn4 |
-      bd4 sn4 bd8 bd8 sn4 |
-      bd4 sn4 bd8 bd8 sn4 |
-      % 80
-      bd4 sn4 bd8 bd8 sn4 |
-      bd4 sn4 bd8 bd8 sn8 bd8 |
-      \mark "FA"
-      bd4 sn4 bd8 bd8 sn4 |
-      bd4 sn4 bd8 bd8 sn8 bd8 |
-      bd4 sn4 bd8 bd8 sn4 |
-      % 85
-      bd4 sn4 bd8 bd8 sn8 bd8 |
-      bd4 sn4 bd8 bd8 sn4 |
-      bd4 sn4 bd8 bd8 sn4 |
-      bd4\> sn4 bd8 bd8 sn4 \! |
-    }
-  >>
-  
-  \mark "G"
-  hho1\p |
-  % 90
-  R1*7
-  \mark "GA"
-  R1*8
-  % 105
-  \repeat volta 2 {
-    \once \override TrillSpanner.bound-details.left.text = ##f
-    \once \override TrillSpanner.extra-offset = #'(-0.66 . -3)
-    
-    \endSpanners { s1 ^\markup{ \italic "Fill, last time only"}\p \< \startTrillSpan } 
-  }
-  \mark "H"
-  <<
-    \context DrumVoice = "voiceone" {
-      \voiceOne
-      \repeat unfold 8 {
-      hh2:8 hh2:8
-      }
-      s1
-    }
-    \context DrumVoice = "voicetwo" {
-      \voiceTwo
-      bd4\f sn4 bd8 bd8 sn4 |
-      bd4 sn4 bd8 bd8 sn4 |
-      bd4 sn4 bd8 bd8 sn4 |
-      bd8 bd8 sn4 bd8 bd8 sn8 bd8 |
-      % 110
-      bd4 sn4 bd8 bd8 sn4 |
-      bd4 sn4 bd8 bd8 sn4 |
-      bd4 sn4 bd8 bd8 sn4 |
-      bd4\> sn4 bd8 sn8 sn8 sn8 |
-      \oneVoice
-      \mark "HA"
-      hho1->^\markup { "L.V." }\ed-sf |
-    }
-  >>
-  % 115
-  R1*7 \bar "|."
-}
-
 chord-sequence = \chordmode {
   % 1
   e1 | % 2
@@ -2856,7 +2024,12 @@ chord-sequence = \chordmode {
 
 honey_honey = {
   <<
-  %%{
+    \new BarNumberStaff <<
+      { \honey_honey_marks }
+      
+    >>
+
+    %{
     \new StaffGroup <<
       \new Staff \with {
         instrumentName = "Violin 1"
@@ -2875,7 +2048,7 @@ honey_honey = {
         shortInstrumentName = "Vl. 4"
       } \part-Pfour-one
     >>
-    %%}
+
     \new PianoStaff \with {
       instrumentName = "Piano"
       shortInstrumentName = "Pf."
@@ -2883,6 +2056,7 @@ honey_honey = {
         \new Staff \part-Pnine-one
         \new Staff \part-Pnine-two
     >>
+    %}
     \new Staff \with {
       instrumentName = "Sophie"
       shortInstrumentName = "S."
@@ -2905,6 +2079,7 @@ honey_honey = {
         \new Staff \part-Peight-one
         \new Staff \part-Peight-two
     >>
+    %{
     \new PianoStaff \with {
       instrumentName = "Electric Keyboard"
       shortInstrumentName = "Kbd."
@@ -2912,7 +2087,7 @@ honey_honey = {
         \new Staff \part-Ponezero-one
         \new Staff \part-Ponezero-two
     >>
-    %%{
+    
     <<
       \new ChordNames \chord-sequence
       \new Staff \with {
@@ -2937,11 +2112,12 @@ honey_honey = {
         stringTunings = #bass-tuning
       } \part-Ponethree-one
     >>
+    %}
     \new DrumStaff \with {
       instrumentName = "Drumkit"
       shortInstrumentName = "Dr."
     } \part-Ponefour-one
-    %%}
+
   >>
 }
 
