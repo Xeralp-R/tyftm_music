@@ -1,7 +1,7 @@
 % Automatically generated from a musicxml file.
 \version "2.24.4"
 \include "../styles/Global.ily"
-\include "../../../styles/Pocket_Score.ily"
+\include "../styles/final_styles/revision_style.ily"
 
 honey_honey_header = \header {
   composer = "Benny Andersson, Björn Ulvaeus"
@@ -14,7 +14,7 @@ part-Pone-one = {
   \clef treble
   \tempo "Allegro Animato"
 
-  e''1~\ed-f |
+  e''1~\f |
   e''4. e''4 fis''8 e''4 |
   a'1 |
   a'8-.\ff a'8-. a'8-. a'8-. a'4-! b'4-! | \bar "||" \mark "A"
@@ -34,11 +34,11 @@ part-Pone-one = {
   % 15
   cis''1 |
   e''1 |
-  cis''1 | \once-ed-cresc
+  cis''1 | 
   e''1\< |
-  a'8-.\ed-rf \! a'8-. a'8-. a'8-. a'4-! b'4-! |
+  a'8-.\rf \! a'8-. a'8-. a'8-. a'4-! b'4-! |
   % 20
-  a'8-.\pp a'8-.\< a'8-. a'8-. a'4-!\ed-rf \! b'4-! | \mark "B"
+  a'8-.\pp a'8-.\< a'8-. a'8-. a'4-!\rf \! b'4-! | \mark "B"
   e''1~  \mf |
   e''4. e''4 fis''8 e''4 |
   a'1 |
@@ -172,7 +172,7 @@ part-Ptwo-one = {
   \key e \major
   \time 4/4
   \clef treble
-  e''1~\ed-f |
+  e''1~\f |
   e''4. e''4 fis''8 e''4 |
   a'1 |
   e'8-.\ff e'8-. e'8-. e'8-. e'4-! fis'4-! |
@@ -192,11 +192,11 @@ part-Ptwo-one = {
   % 15
   cis''1 |
   b'1 |
-  cis''1 | \once-ed-cresc
+  cis''1 | 
   cis''1\< |
-  e'8-.\ed-rf \! e'8-. e'8-. e'8-. e'4-! fis'4-! |
+  e'8-.\rf \! e'8-. e'8-. e'8-. e'4-! fis'4-! |
   % 20
-  e'8-.\pp e'8-.\< e'8-. e'8-. e'4-!\ed-rf \! fis'4-! |
+  e'8-.\pp e'8-.\< e'8-. e'8-. e'4-!\rf \! fis'4-! |
   b'8-.\mf b'8-. b'8-. b'8-. b'8-. b'8-. b'8-. b'8-. |
   b'8-. b'8-. b'8-. b'8-. b'8-. b'8-. b'8-. b'8-. |
   \omit Staff.Script
@@ -326,7 +326,7 @@ part-Pthree-one = {
   \key e \major
   \time 4/4
   \clef treble
-  r8\ed-f gis'8 b'8 gis'8 r8 gis'8 b'8 gis'8 |
+  r8\f gis'8 b'8 gis'8 r8 gis'8 b'8 gis'8 |
   r8 gis'8 b'8 gis'8 r8 gis'8 b'8 gis'8 |
   r8 cis'8 e'8 cis'8 r8 cis'8 e'8 cis'8 |
   cis'8-.\ff cis'8-. cis'8-. cis'8-. cis'4-! dis'4-! |
@@ -347,11 +347,11 @@ part-Pthree-one = {
   gis'1 |
   gis'1 |
   gis'1 |
-  \once-ed-cresc
+  
   a'1\< |
-  cis'8-.\! \ed-rf cis'8-. cis'8-. cis'8-. cis'4-! dis'4-! |
+  cis'8-.\! \rf cis'8-. cis'8-. cis'8-. cis'4-! dis'4-! |
   % 20
-  cis'8-.\pp cis'8-.\< cis'8-. cis'8-. cis'4-!\ed-rf \! dis'4-! |
+  cis'8-.\pp cis'8-.\< cis'8-. cis'8-. cis'4-!\rf \! dis'4-! |
   gis'8-.\mf gis'8-. gis'8-. gis'8-. gis'8-. gis'8-. gis'8-. gis'8-. |
   gis'8-. gis'8-. gis'8-. gis'8-. gis'8-. gis'8-. gis'8-. gis'8-. |
   \omit Staff.Script
@@ -483,11 +483,11 @@ part-Pfour-one = {
   \clef treble
 
   \slurDashed
-  e'4\ed-f gis'8( b'8) e'4 gis'8( b'8) |
+  e'4\f gis'8( b'8) e'4 gis'8( b'8) |
   e'4 gis'8( b'8) e'4 gis'8( b'8) |
   a4 cis'8( e'8) a4 cis'8( e'8) |
   a8-._\markup { \dynamic "ff" } a8-. a8-. a8-. a4-! b4-! |
-  e'4\ed-p ^\ed-text "détaché" b4 e'4 b4 |
+  e'4\p ^\ed-text "détaché" b4 e'4 b4 |
   % 5
   e'4 b4 e'4 b4 |
   a'4 e'4 a'4 e'4 |
@@ -504,11 +504,11 @@ part-Pfour-one = {
   cis''4 gis'4 cis'2 |
   e'4 b4 e'4 b4 |
   cis''4 gis'4 cis'2 |
-  \once-ed-cresc
+  
   e'1\< |
-  a8-.\ed-rf \! a8-. a8-. a8-. a4-! b4-! |
+  a8-.\rf \! a8-. a8-. a8-. a4-! b4-! |
   % 20
-  a8-.\pp a8-.\< a8-. a8-. a4-!\ed-rf \! b4-! |
+  a8-.\pp a8-.\< a8-. a8-. a4-!\rf \! b4-! |
   e'4\mf ^\ed-text "détaché" b4 e'4 b4 |
   e'4 b4 e'4 b4 |
   a'4 e'4 a'4 e'4 |
@@ -640,7 +640,7 @@ part-Pfive-one = {
   R1 |
   R1 |
   R1 |
-  r4 e'8^\ed-f e'8 dis'8 e'8 r8 gis'8~ |
+  r4 e'8^\f e'8 dis'8 e'8 r8 gis'8~ |
   % 5
   gis'8 e'4 dis'8~ dis'8 e'8 r8 b8 |
   cis'8 r8 e'8 e'8 dis'8 e'8 r4 |
@@ -1457,7 +1457,7 @@ part-Pnine-one = {
   \key e \major
   \time 4/4
   \clef treble
-  e'8\ed-f gis'8 b'8 gis'8 e'8 gis'8 b'8 gis'8 |
+  e'8\f gis'8 b'8 gis'8 e'8 gis'8 b'8 gis'8 |
   e'8 gis'8 b'8 gis'8 e'8 gis'8 b'8 gis'8 |
   a8 cis'8 e'8 cis'8 a8 cis'8 e'8 cis'8 |
   a8\< cis'8 e'8 cis'8 <cis' e' a' >4-^\! <dis' fis' b' >4-> |
@@ -1878,7 +1878,7 @@ part-Ponezero-one = {
   \key e \major
   \time 4/4
   \clef treble
-  e'8\ed-f gis'8 b'8 gis'8 e'8 gis'8 b'8 gis'8 |
+  e'8\f gis'8 b'8 gis'8 e'8 gis'8 b'8 gis'8 |
   e'8 gis'8 b'8 gis'8 e'8 gis'8 b'8 gis'8 |
   a8 cis'8 e'8 cis'8 a8 cis'8 e'8 cis'8 |
   a8\< cis'8 e'8 cis'8 <cis' e' a' >4-^\! <dis' fis' b' >4-> |
@@ -2232,19 +2232,19 @@ part-Poneone-one = {
   r4 b4 r4 b4 |
   r4 b4 r4 b4 |
   r4 b4 r4 b4 |
-  \once-ed-cresc
-  b8->\< b8-> b8-> b8-> b4-^\ed-rf b4-^ |
+  
+  b8->\< b8-> b8-> b8-> b4-^\rf b4-^ |
   \bar "||" \mark "A"
-  r4 b8\ed-f b8 r8 b8 b8 b8 |
+  r4 b8\f b8 r8 b8 b8 b8 |
   % 5
   \linear-spanner 7 1
   \mark AA
   \linear-spanner 7 1
-  \once-ed-cresc
-  b8->\< b8-> b8-> b8-> b4-^\ed-rf b4-^ |
+  
+  b8->\< b8-> b8-> b8-> b4-^\rf b4-^ |
   % 20
-  \once-ed-cresc
-  b8->\ed-pp\< b8-> b8-> b8-> b4-^\ed-rf b4-^ |
+  
+  b8->\pp\< b8-> b8-> b8-> b4-^\rf b4-^ |
   \mark "B" \bar "||"
   r4 b8 b8 r8 b8 b8 b8 |
   \linear-spanner 7 1
@@ -2271,7 +2271,7 @@ part-Poneone-one = {
   \linear-spanner 7 1 | \mark FA
   \linear-spanner 6 1 |
   r4\> b8 b8 r8 b8 b8 b8 | \mark G
-  R1\ed-p |
+  R1\p |
   % 90
   R1 *7 |
   \mark GA
@@ -2282,9 +2282,9 @@ part-Poneone-one = {
   }
   r4 b8\f b8 r8 b8 b8 b8 |
   \linear-spanner 6 1
-  \once-ed-cresc
+  
   r4 b8\> b8 r8 b8 b8 b8 |
-  b1\ed-pp |
+  b1\pp |
   % 115
   R1*6
   R1\fermata \bar "|." |
@@ -2296,23 +2296,23 @@ part-Ponetwo-one = {
   \clef "treble_8"
 
   \override NoteHead.style = #'slash
-  b8\ed-f b8 b8 b8 b8 b8 b8 b8 |
+  b8\f b8 b8 b8 b8 b8 b8 b8 |
   b8 b8 b8 b8 b8 b8 b8 b8 |
   b8 b8 b8 b8 b8 b8 b8 b8 |
-  \once-ed-cresc
-  b8->\< b8-> b8-> b8-> b4-^\ed-rf b4-^ |
+  
+  b8->\< b8-> b8-> b8-> b4-^\rf b4-^ |
   \bar "||" \mark "A"
-  b8\ed-f b8 b8 b8 b8 b8 b8 b8 |
+  b8\f b8 b8 b8 b8 b8 b8 b8 |
   % 5
   \linear-spanner 7 1
   \mark AA
   \linear-spanner 7 1
-  \once-ed-cresc
-  b8->\< b8-> b8-> b8-> b4-^\ed-rf b4-^ |
+  
+  b8->\< b8-> b8-> b8-> b4-^\rf b4-^ |
   % 20
-  b8->\ed-pp\< b8-> b8-> b8-> b4-^\ed-rf b4-^ |
+  b8->\pp\< b8-> b8-> b8-> b4-^\rf b4-^ |
   \mark "B"
-  b8\ed-f b8 b8 b8 b8 b8 b8 b8 |
+  b8\f b8 b8 b8 b8 b8 b8 b8 |
   \linear-spanner 7 1
   \mark BA
   \linear-spanner 6 1
@@ -2357,12 +2357,12 @@ part-Ponetwo-one = {
   R1 |
   }
   \mark H
-  b8\ed-f b8 b8 b8 b8 b8 b8 b8 |
+  b8\f b8 b8 b8 b8 b8 b8 b8 |
   \linear-spanner 6 1
-  \once-ed-cresc
+  
   b8\> b8 b8 b8 b8 b8 b8 b8 |
   \mark HA
-  b1\ed-pp |
+  b1\pp |
   % 115
   R1*6
   R1\fermata |
@@ -2375,12 +2375,12 @@ part-Ponethree-one = \transpose c c, {
   \clef "bass_8"
 
   \slurDashed
-  e,4\ed-f gis,8( b,8) e,4 gis,8( b,8) |
+  e,4\f gis,8( b,8) e,4 gis,8( b,8) |
   e,4 gis,8( b,8) e,4 gis,8( b,8) |
   a,4^\ed-text "articulation sim."  cis8 e8 a,4 cis8 e8 |
-  \once-ed-cresc
-  a,4\< cis8 e8 a,4-.\!\ed-rf b,4-> | \mark "A"
-  e,4\ed-f gis,8( b,8) e,4 gis,8( b,8) |
+  
+  a,4\< cis8 e8 a,4-.\!\rf b,4-> | \mark "A"
+  e,4\f gis,8( b,8) e,4 gis,8( b,8) |
   % 5
   e,4 gis,8( b,8) e,4 gis,8( b,8) |
   a,4 cis8 e8 a,4 cis8 e8 |
@@ -2399,11 +2399,11 @@ part-Ponethree-one = \transpose c c, {
   e,4 gis,8 b,8 e,4 b,8 c8 |
   cis4 gis,8 b,8 cis8 gis,8 cis4 |
   a,4 cis8 e8 a,4 cis8 e8 |
-  \once-ed-cresc
-  a,4\< cis8 e8 a,4-.\ed-rf b,4-> |
+  
+  a,4\< cis8 e8 a,4-.\rf b,4-> |
   % 20
-  \once-ed-cresc
-  a,8->\ed-pp\< a,8-> a,8-> a,8-> a,4-^ \ed-rf b,4-^ |
+  
+  a,8->\pp\< a,8-> a,8-> a,8-> a,4-^ \rf b,4-^ |
   \bar "||" \mark "B"
   e,4\f gis,8( b,8) e,4 gis,8( b,8) |
   e,4 gis,8( b,8) e,4 gis,8( b,8) |
@@ -2478,8 +2478,8 @@ part-Ponethree-one = \transpose c c, {
   fis,1 |
   \repeat volta 2 {
   \sectionLabel "Vamp 'till ready"
-    \once-ed-cresc
-    b,1\ed-p \< |
+    
+    b,1\p \< |
   }
   \mark F
   e,4\f gis,8( b,8) e,4 gis,8( b,8) |
@@ -2524,11 +2524,11 @@ part-Ponethree-one = \transpose c c, {
   r8 d8 dis8 e8~ e2 |
   % 105
   \repeat volta 2 {
-    \once-ed-cresc
+    
     e,8\< g,8 gis,8 a,8~ a,8 a,8 cis8 e8 |
   }
   \mark H
-  e,4\ed-f gis,8 b,8 e,4 gis,8 b,8 |
+  e,4\f gis,8 b,8 e,4 gis,8 b,8 |
   e,4 gis,8 b,8 e,4 gis,8 b,8 |
   a,4 cis8 e8 a,4 cis8 e8 |
   a,4 cis8 e8 a,4 cis8 e8 |
@@ -2536,7 +2536,7 @@ part-Ponethree-one = \transpose c c, {
   e,4 gis,8 b,8 e,4 gis,8 b,8 |
   e,4 gis,8 b,8 e,4 gis,8 b,8 |
   a,4 cis8 e8 a,4 cis8 e8 |
-  \once-ed-cresc
+  
   a,4\> cis8 e8 a,4 cis8 e8 |
   \mark HA
   \once \override DynamicText.X-offset = #0
@@ -2563,9 +2563,9 @@ part-Ponefour-one = \drummode {
       hh8  hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
       hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
       \once \override Hairpin.style = #'dashed-line
-      sn8\< sn8 sn8 sn8 sn4\ed-rf sn4 |
+      sn8\< sn8 sn8 sn8 sn4\rf sn4 |
       \mark "A"
-      hh8\ed-f hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
+      hh8\f hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
       % 5
       hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
       \repeat unfold 13 {
@@ -2574,7 +2574,7 @@ part-Ponefour-one = \drummode {
     }
     \context DrumVoice = "voicetwo" {
       \voiceTwo
-      bd4\ed-f sn4 bd8 bd8 sn8 bd8 |
+      bd4\f sn4 bd8 bd8 sn8 bd8 |
       bd4 sn4 bd8 bd8 sn8 bd8 |
       bd4 sn4 bd8 bd8 sn8 bd8 |
       s2. tomfl4 |
@@ -2602,15 +2602,15 @@ part-Ponefour-one = \drummode {
   <<
     \context DrumVoice = "voiceone" {
       \voiceOne
-      hh8\ed-rf hh8 hh8 hh8 hh4 hho4-> |
+      hh8\rf hh8 hh8 hh8 hh4 hho4-> |
       % 20
-      hh8\pp\< hh8 hh8 hh8 hh4\ed-rf hho4-> |
+      hh8\pp\< hh8 hh8 hh8 hh4\rf hho4-> |
       hh8\f hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
       \repeat unfold 13 {
         hh2:8 hh2:8 |
       }
       %35
-      \once-ed-cresc
+      
       hh2:8\> hh8 hh8 hh8 cymc8~ |
       \oneVoice
       cymc4\p r4 r2 |
@@ -2658,8 +2658,8 @@ part-Ponefour-one = \drummode {
   \repeat volta 2 {
     \once \override TrillSpanner.bound-details.left.text = ##f
     \once \override TrillSpanner.extra-offset = #'(-0.66 . -3)
-    \once-ed-cresc
-    \endSpanners { s1 ^\markup{ \italic "Fill, last time only"}\ed-p \< \startTrillSpan } 
+    
+    \endSpanners { s1 ^\markup{ \italic "Fill, last time only"}\p \< \startTrillSpan } 
   }
   \mark "F"
   <<
@@ -2675,7 +2675,7 @@ part-Ponefour-one = \drummode {
     }
     \context DrumVoice = "voicetwo" {
       \voiceTwo
-      bd4\ed-f sn4 bd8 bd8 sn4 |
+      bd4\f sn4 bd8 bd8 sn4 |
       % 75
       bd4 sn4 bd8 bd8 sn4 |
       bd4 sn4 bd8 bd8 sn4 |
@@ -2707,8 +2707,8 @@ part-Ponefour-one = \drummode {
   \repeat volta 2 {
     \once \override TrillSpanner.bound-details.left.text = ##f
     \once \override TrillSpanner.extra-offset = #'(-0.66 . -3)
-    \once-ed-cresc
-    \endSpanners { s1 ^\markup{ \italic "Fill, last time only"}\ed-p \< \startTrillSpan } 
+    
+    \endSpanners { s1 ^\markup{ \italic "Fill, last time only"}\p \< \startTrillSpan } 
   }
   \mark "H"
   <<
@@ -2721,7 +2721,7 @@ part-Ponefour-one = \drummode {
     }
     \context DrumVoice = "voicetwo" {
       \voiceTwo
-      bd4\ed-f sn4 bd8 bd8 sn4 |
+      bd4\f sn4 bd8 bd8 sn4 |
       bd4 sn4 bd8 bd8 sn4 |
       bd4 sn4 bd8 bd8 sn4 |
       bd8 bd8 sn4 bd8 bd8 sn8 bd8 |
