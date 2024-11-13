@@ -1,7 +1,7 @@
 % Automatically generated from a musicxml file.
 \version "2.24.0"
 \include "../styles/Global.ily"
-\include "../styles/final_styles/revision_style.ily"
+%\include "../styles/final_styles/revision_style.ily"
 
 \include "voulez_vous/voulez_vous_perc.ly"
 \include "voulez_vous/voulez_vous_b_guit.ly"
@@ -2503,7 +2503,7 @@ voulez_vous =  {
       } \voulez-vous-b-guit
     >> 
 
-    \tag #'(accompaniment band drums)
+    \tag #'(accompaniment band drum)
     \new DrumStaff \with {
       instrumentName = "Drumkit"
       shortInstrumentName = "Dr."
@@ -2512,6 +2512,7 @@ voulez_vous =  {
   >>
 }
 
+%{
 \header {
   \voulez_vous_header
 }
@@ -2520,3 +2521,4 @@ voulez_vous =  {
   \voulez_vous
   \layout{}
 }
+%}

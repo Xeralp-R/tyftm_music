@@ -10,6 +10,7 @@
 
 honey_honey_header = \header {
   composer = "Benny Andersson, Björn Ulvaeus"
+  arranger = "Josh Ang, Gab Nillos / RAR"
   title = "Honey, Honey"
 }
 

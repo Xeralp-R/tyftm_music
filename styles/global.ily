@@ -112,8 +112,8 @@ blank_page = \bookpart {
          (pedalhihat      cross     #f          -6)
          (ridecymbal      cross     #f          4)
          (crashcymbal     cross     #f          6)
-         (midhightom      default   #f          3)
-         (midlowtom       default   #f          2)
+         (himidtom        default   #f          3)
+         (lowmidtom       default   #f          2)
          (lowtom          default   #f          -1)
          (floortom        default   #f          -1)))
 
