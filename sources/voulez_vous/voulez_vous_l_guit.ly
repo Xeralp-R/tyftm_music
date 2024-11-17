@@ -251,16 +251,68 @@ voulez-vous-l-guit-strums = {
   | \bar "||"
 
   s1*7
-  b2 b4 b4 | \bar "||" % key chage
+  bes2 bes4 bes4 | \bar "||" % key chage
 
   s1*5
   s2 
-  b4^\ed-text "V11" b4^\ed-text "V111" |
+  bes4^\ed-text "V11" b4^\ed-text "V111" |
 
   s1*5
   s2 
-  b4^\ed-text "V11" b4^\ed-text "V111" |
+  bes4^\ed-text "V11" b4^\ed-text "V111" |
 
-  b2 b4 b4 |
-    b2 b4 b4 |
+  bes2 bes4 bes4 |
+    bes2 bes4 bes4 |
+}
+
+voulez-vous-l-guit-chords = \chordmode {
+  s1*6
+
+  % a
+  s1*4
+
+  % b
+  s1*8
+
+  % c
+  b1 | s2 b2 | e1:m7 | b1 |
+  s1*2 | e1:m7 | e2:m e4:m c4 |
+
+  % d
+  s1*5 s2 e4:m c4 |
+  s1*5 s2 e4:m c4 |
+
+  % e
+  a1 |
+  a1 |
+
+  % instru 
+  s1*8
+
+  % f
+  b1 | s2 b2 | e1:m7 | b1 |
+  s1*2 | e1:m7 | e2:m e4:m c4 |
+
+  % g
+  s1*5 s2 e4:m c4 |
+  s1*5 s2 e4:m c4 |
+
+  % h
+  a1 |
+  a1 |
+
+  % instru
+  s1*7 | e2:m f4:m des4 |
+
+  % i
+  \transpose c des {
+    s1*5
+    s2 e4:m c4 |
+    s1*5
+    s2 e4:m c4 |
+
+    % j
+    a1 |
+    a1 |
+  }
 }

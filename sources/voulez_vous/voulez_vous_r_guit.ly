@@ -153,7 +153,7 @@ voulez-vous-r-guit-chords = \chordmode {
   e1:m | c1/e | e1:m | c2/e s8 e4.:m |
 
   % c
-  b1 | b1 | e1:m7 | e1:m7 |
+  b1 | b1 | e1:m7 | b1:m7 |
   b1 | b1 | e1:m7 | e2:m e4:m c4 |
 
   % d
@@ -179,7 +179,7 @@ voulez-vous-r-guit-chords = \chordmode {
   b1:7 | b1:7 | b1:7 | b2:7 a4 b4:7 |
 
   % f
-  b1 | b1 | e1:m7 | e1:m7 |
+  b1 | b1 | e1:m7 | b1:m7 |
   b1 | e2:m e4:m c4 |
 
   % g

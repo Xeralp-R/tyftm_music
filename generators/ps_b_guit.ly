@@ -102,4 +102,17 @@
       \layout {}
     }
   }
+
+    \bookpart {
+    \tocItem i.vv \markup { "12. Voulez Vous" }
+
+    \header {
+      \voulez_vous_header
+    }
+    \score {
+      \keepWithTag #'(b_guit) \voulez_vous
+
+      \layout {}
+    }
+  }
 }

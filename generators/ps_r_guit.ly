@@ -47,26 +47,24 @@
     }
   }
 
-  \bookpart { \blank_page }
+  \bookpart { \blank_page \tocSection i \markup { "Act I" } }
   \bookpart { \markuplist \table-of-contents }
 
   \bookpart {
-    %\tocSection piano \markup { "Piano Part Score" }
-    \tocSection i \markup { "Act I" }
-    \tocItem i.chiq \markup { "Chiquitita" }
+    \tocItem i.ols \markup { "5. Our Last Summer" }
 
     \header {
-      \chiquitita_header
+      \our_last_summer_header
     }
     \score {
-      \keepWithTag #'(r_guit) \chiquitita
+      \keepWithTag #'(r_guit) \our_last_summer
 
       \layout {}
     }
   }
-
+  
   \bookpart {
-    \tocItem i.mamma_mia \markup { "Mamma Mia" }
+    \tocItem i.mamma_mia \markup { "6. Mamma Mia" }
 
     \header {
       \mamma_mia_header
@@ -79,7 +77,22 @@
   }
 
   \bookpart {
-    \tocItem i.st \markup { "Super Trouper" }
+    %\tocSection piano \markup { "Piano Part Score" }
+    
+    \tocItem i.chiq \markup { "7. Chiquitita" }
+
+    \header {
+      \chiquitita_header
+    }
+    \score {
+      \keepWithTag #'(r_guit) \chiquitita
+
+      \layout {}
+    }
+  }
+
+  \bookpart {
+    \tocItem i.st \markup { "10. Super Trouper" }
 
     \header {
       \super_trouper_header
@@ -91,14 +104,14 @@
     }
   }
 
-  \bookpart {
-    \tocItem i.ols \markup { "Our Last Summer" }
+    \bookpart {
+    \tocItem i.vv \markup { "12. Voulez Vous" }
 
     \header {
-      \our_last_summer_header
+      \voulez_vous_header
     }
     \score {
-      \keepWithTag #'(r_guit) \our_last_summer
+      \keepWithTag #'(r_guit) \voulez_vous
 
       \layout {}
     }

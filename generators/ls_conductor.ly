@@ -6,6 +6,7 @@
 \include "../sources/mamma_mia.ly"
 \include "../sources/super_trouper.ly"
 \include "../sources/our_last_summer.ly"
+\include "../sources/voulez_vous.ly"
 
 \pointAndClickOff
 
@@ -16,20 +17,20 @@
 
   \bookpart {
     \tocSection i \markup {"Act One"}
-    \tocItem i.chiquitita \markup { "Chiquitita" }
+    \tocItem i.ols \markup { "5. Our Last Summer" }
+
     \header {
-      \chiquitita_header
+      \our_last_summer_header
     }
     \score {
-      \chiquitita
+      \our_last_summer
 
       \layout {}
-      %\midi { \tempo 4 = 168 }
     }
   }
 
   \bookpart {
-    \tocItem i.mamma_mia \markup { "Mamma Mia" }
+    \tocItem i.mamma_mia \markup { "6. Mamma Mia" }
 
     \header {
       \mamma_mia_header
@@ -42,7 +43,20 @@
   }
 
   \bookpart {
-    \tocItem i.st \markup { "Super Trouper" }
+    \tocItem i.chiquitita \markup { "7. Chiquitita" }
+    \header {
+      \chiquitita_header
+    }
+    \score {
+      \chiquitita
+
+      \layout {}
+      %\midi { \tempo 4 = 168 }
+    }
+  }
+
+  \bookpart {
+    \tocItem i.st \markup { "10. Super Trouper" }
 
     \header {
       \super_trouper_header
@@ -55,13 +69,13 @@
   }
 
   \bookpart {
-    \tocItem i.ols \markup { "Our Last Summer" }
+    \tocItem i.vv \markup { "12. Voulez Vous" }
 
     \header {
-      \our_last_summer_header
+      \voulez_vous_header
     }
     \score {
-      \our_last_summer
+      \voulez_vous
 
       \layout {}
     }
