@@ -61,7 +61,7 @@ PartPSevenVoiceOne =  {
 }
 
 PartPSevenVoiceOneLyricsOne =  \lyricmode {
-  Wish -- ing "ev'" -- ry show was the last --  show Glad to
+    Wish -- ing "ev'" -- ry show was the last --  show Glad to
     hear "you're" glad to hear "you're" com -- "in'"  And sud --
     den -- ly "it's" gon -- na be so dif -- ferent when "I'm" on the
     stage -- to --  night to -- night the su -- per
