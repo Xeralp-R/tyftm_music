@@ -4,8 +4,8 @@
 
 \header {
     title =  "Dancing Queen"
-    composer =  "Benny Andersson, Björn Ulvaeus"
-    arranger =  "Hannah Ramos"
+    composer =  "Benny Anderson & Bjorn Ulvaeus"
+    arranger =  "Hannah Ramos / GKLQ"
     encodingsoftware =  "MuseScore 4.4.2"
     encodingdate =  "2024-11-11"
     poet =  "Hannah Ramos"
@@ -3721,6 +3721,7 @@ PartPOneFiveVoiceTwo =  {
         <<
             \new StaffGroup
             <<
+				\tag #'(accompaniment orch vl_i)
                 \new Staff
                 <<
                     \set Staff.instrumentName = "Violin 1"
@@ -3731,6 +3732,7 @@ PartPOneFiveVoiceTwo =  {
                         \context Voice = "PartPOneVoiceOne" {  \PartPOneVoiceOne }
                         >>
                     >>
+				\tag #'(accompaniment orch vl_ii)
                 \new Staff
                 <<
                     \set Staff.instrumentName = "Violin 2"
@@ -3741,6 +3743,7 @@ PartPOneFiveVoiceTwo =  {
                         \context Voice = "PartPTwoVoiceOne" {  \PartPTwoVoiceOne }
                         >>
                     >>
+				\tag #'(accompaniment orch vl_iii)
                 \new Staff
                 <<
                     \set Staff.instrumentName = "Violin 3"
@@ -3751,6 +3754,7 @@ PartPOneFiveVoiceTwo =  {
                         \context Voice = "PartPThreeVoiceOne" {  \PartPThreeVoiceOne }
                         >>
                     >>
+				\tag #'(accompaniment orch vl_iv)
                 \new Staff
                 <<
                     \set Staff.instrumentName = "Violin 4"
@@ -3765,6 +3769,7 @@ PartPOneFiveVoiceTwo =  {
                 >>
             
             >>
+		\tag #'(accompaniment orch pno)
         \new PianoStaff
         <<
             \set PianoStaff.instrumentName = "Piano"
@@ -3783,6 +3788,7 @@ PartPOneFiveVoiceTwo =  {
         <<
             \new StaffGroup
             <<
+				\tag #'(chor soli donna)
                 \new Staff
                 <<
                     \set Staff.instrumentName = "Donna"
@@ -3794,6 +3800,7 @@ PartPOneFiveVoiceTwo =  {
                         \new Lyrics \lyricsto "PartPSixVoiceOne" { \set stanza = "1." \PartPSixVoiceOneLyricsOne }
                         >>
                     >>
+				\tag #'(chor soli rosie)
                 \new Staff
                 <<
                     \set Staff.instrumentName = "Rosie"
@@ -3805,6 +3812,7 @@ PartPOneFiveVoiceTwo =  {
                         \new Lyrics \lyricsto "PartPSevenVoiceOne" { \set stanza = "1." \PartPSevenVoiceOneLyricsOne }
                         >>
                     >>
+				\tag #'(chor soli tanya)
                 \new Staff
                 <<
                     \set Staff.instrumentName = "Tanya"
@@ -3820,6 +3828,7 @@ PartPOneFiveVoiceTwo =  {
                 >>
             
             >>
+		\tag #'(chor ensem sa)
         \new Staff
         <<
             \set Staff.instrumentName = "Ensemble 1"
@@ -3831,6 +3840,7 @@ PartPOneFiveVoiceTwo =  {
                 \new Lyrics \lyricsto "PartPNineVoiceOne" { \set stanza = "1." \PartPNineVoiceOneLyricsOne }
                 >>
             >>
+		\tag #'(chor ensem tb)	
         \new Staff
         <<
             \set Staff.instrumentName = "Ensemble 2"
@@ -3846,6 +3856,7 @@ PartPOneFiveVoiceTwo =  {
             }
         
         <<
+			\tag #'(accompaniment band l_guit)
             \new PianoStaff
             <<
                 \set PianoStaff.instrumentName = "Lead Guitar"
@@ -3862,6 +3873,7 @@ PartPOneFiveVoiceTwo =  {
             
             >>
         \context ChordNames = "PartPOneTwoVoiceOneChords" { \PartPOneTwoVoiceOneChords}
+		\tag #'(accompaniment band r_guit)
         \new Staff
         <<
             \set Staff.instrumentName = "Rhythm Guitar"
@@ -3873,6 +3885,7 @@ PartPOneFiveVoiceTwo =  {
                 >>
             >>
         \context ChordNames = "PartPOneThreeVoiceOneChords" { \PartPOneThreeVoiceOneChords}
+		\tag #'(accompaniment band e_kbd)
         \new PianoStaff
         <<
             \set PianoStaff.instrumentName = "Electric Keyboard"
@@ -3890,6 +3903,7 @@ PartPOneFiveVoiceTwo =  {
             }
         
         <<
+			\tag #'(accompaniment band b_guit)
             \new PianoStaff
             <<
                 \set PianoStaff.instrumentName = "Electric Bass"
@@ -3905,6 +3919,7 @@ PartPOneFiveVoiceTwo =  {
                 >>
             
             >>
+		\tag #'(accompaniment band drum)
         \new DrumStaff
         <<
             \set DrumStaff.instrumentName = "Drumkit"
