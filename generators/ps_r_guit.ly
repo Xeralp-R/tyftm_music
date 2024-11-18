@@ -6,6 +6,8 @@
 \include "../sources/mamma_mia.ly"
 \include "../sources/super_trouper.ly"
 \include "../sources/our_last_summer.ly"
+\include "../sources/voulez_vous.ly"
+\include "../sources/honey_honey.ly"
 
 \pointAndClickOff
 
@@ -49,6 +51,19 @@
 
   \bookpart { \blank_page \tocSection i \markup { "Act I" } }
   \bookpart { \markuplist \table-of-contents }
+
+  \bookpart {
+    \tocItem i.hh \markup { "3. Honey Honey" }
+
+    \header {
+      \honey_honey_header
+    }
+    \score {
+      \keepWithTag #'(r_guit) \honey_honey
+
+      \layout {}
+    }
+  }
 
   \bookpart {
     \tocItem i.ols \markup { "5. Our Last Summer" }

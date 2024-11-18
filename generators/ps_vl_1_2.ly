@@ -6,6 +6,8 @@
 \include "../sources/mamma_mia.ly"
 \include "../sources/super_trouper.ly"
 \include "../sources/our_last_summer.ly"
+\include "../sources/voulez_vous.ly"
+\include "../sources/honey_honey.ly"
 
 \pointAndClickOff
 
@@ -47,26 +49,37 @@
     }
   }
 
-  \bookpart { \blank_page }
+  \bookpart { \blank_page \tocSection i \markup { "Act I" } }
   \bookpart { \markuplist \table-of-contents }
 
   \bookpart {
-    %\tocSection piano \markup { "Piano Part Score" }
-    \tocSection i \markup { "Act I" }
-    \tocItem i.chiq \markup { "Chiquitita" }
+    \tocItem i.hh \markup { "3. Honey Honey" }
 
     \header {
-      \chiquitita_header
+      \honey_honey_header
     }
     \score {
-      \keepWithTag #'(vl_i vl_ii) \chiquitita
+      \keepWithTag #'(vl_i vl_ii) \honey_honey
 
       \layout {}
     }
   }
 
   \bookpart {
-    \tocItem i.mamma_mia \markup { "Mamma Mia" }
+    \tocItem i.ols \markup { "5. Our Last Summer" }
+
+    \header {
+      \our_last_summer_header
+    }
+    \score {
+      \keepWithTag #'(vl_i vl_ii) \our_last_summer
+
+      \layout {}
+    }
+  }
+
+  \bookpart {
+    \tocItem i.mamma_mia \markup { "6. Mamma Mia" }
 
     \header {
       \mamma_mia_header
@@ -79,7 +92,22 @@
   }
 
   \bookpart {
-    \tocItem i.st \markup { "Super Trouper" }
+    %\tocSection piano \markup { "Piano Part Score" }
+    
+    \tocItem i.chiq \markup { "7. Chiquitita" }
+
+    \header {
+      \chiquitita_header
+    }
+    \score {
+      \keepWithTag #'(vl_i vl_ii) \chiquitita
+
+      \layout {}
+    }
+  }
+
+  \bookpart {
+    \tocItem i.st \markup { "10. Super Trouper" }
 
     \header {
       \super_trouper_header
@@ -92,15 +120,17 @@
   }
 
   \bookpart {
-    \tocItem i.ols \markup { "Our Last Summer" }
+    \tocItem i.st \markup { "12. Voulez Vous" }
 
     \header {
-      \our_last_summer_header
+      \voulez_vous_header
     }
-    \score {
-      \keepWithTag #'(vl_i vl_ii) \our_last_summer
+    \markup {
+      \vspace #8
 
-      \layout {}
+      \fill-line {
+        "See written score"
+      }
     }
   }
 }

@@ -69,8 +69,9 @@ part-Pfive-one = {
   b'8 b'8 b'8 gis'8~ gis'8 gis'8 e'8( cis'8~ |
   cis'8) r8 cis'8 cis'8 dis'8 e'4 r8 |
   r4 \once \override NoteHead.style = #'cross a'4 r2 |
+  R1*2
   R1*8
-  R1*12 |
+  R1*8 |
   r4 e'8 e'8 dis'8 e'8 r8 gis'8~ |
   gis'8 e'4 dis'8~ dis'8 e'8 r8 b8 |
   cis'8 r8 e'8 e'8 dis'8 e'8 r4 |

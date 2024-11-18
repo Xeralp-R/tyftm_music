@@ -148,13 +148,13 @@ part-Ponefour-one = \drummode {
     {hh8\poco-p hh8 hh8 hh8 hh8 hh8 hh8 hh8} \\
     {bd4 sn4 bd8 bd8 sn8 bd8}
   >>
-  \linear-spanner 1 7
+  \linear-spanner 1 1
 
   <<
     {hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8} \\
     {bd4 sn4 bd8 bd8 sn8 bd8}
   >>
-  \linear-spanner 1 10
+  \linear-spanner 1 14
 
   <sn bd hh>8^\ed-text "Or other fill" q q q <sn bd hho>4 <sn bd cymc>4
   

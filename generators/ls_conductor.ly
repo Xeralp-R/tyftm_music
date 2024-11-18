@@ -7,7 +7,7 @@
 \include "../sources/super_trouper.ly"
 \include "../sources/our_last_summer.ly"
 \include "../sources/voulez_vous.ly"
-
+\include "../sources/honey_honey.ly"
 \pointAndClickOff
 
 \book {
@@ -15,8 +15,25 @@
     tagline = ##f
   }
 
+  \bookpart { \markuplist \table-of-contents }
+
+  \bookpart { \blank_page }
+
   \bookpart {
-    \tocSection i \markup {"Act One"}
+  \tocSection i \markup {"Act One"}
+    \tocItem i.hh \markup { "3. Honey Honey" }
+
+    \header {
+      \honey_honey_header
+    }
+    \score {
+      \keepWithTag \honey_honey
+
+      \layout {}
+    }
+  }
+
+  \bookpart {
     \tocItem i.ols \markup { "5. Our Last Summer" }
 
     \header {

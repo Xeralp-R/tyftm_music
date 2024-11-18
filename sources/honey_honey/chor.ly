@@ -44,8 +44,9 @@ part-Peight-one = {
   cis'8 cis'8 cis'8 cis'8 r8 dis'8 cis'8( b8) |
   b2 r2 |
   R1*2
+  R1*2
   R1*8
-  R1*12
+  R1*8 |
   <e' gis' >1~^\ben-mf |
   <e' gis' >8 <e' gis' >8 r8 <e' gis' >8 r8 <e' gis' >8 r8 <e' gis' >8 |
   <e' a' >1~~ |
@@ -104,8 +105,9 @@ part-Peight-two = {
   cis'8 cis'8 cis'8 cis'8 r8 dis'8 cis'8( b8) |
   b2 r2 |
   R1*2
+  R1*2
   R1*8
-  R1*12
+  R1*8 |
   <e b >1~~ |
   <e b >8 <e b >8 r8 <e b >8 r8 <e b >8 r8 <e b >8 |
   <e cis' >1~~ |
