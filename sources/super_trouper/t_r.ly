@@ -54,7 +54,7 @@ PartPEightVoiceOne =  {
     d'2. r4 | % 62
     d'4 d'4 d'4 d'4 | % 63
     b2. r4 | % 64
-    f'8 e'8 f'8 r8 f'8 e'8 e'4 | % 65
+    f'8 e'8 f'8 e'8 f'8( e'8) e'4 | % 65
     e'2 r8 g8 c'8 e'8 | % 66
     e'4 e'4 d'4 d'4 | % 67
     c'8 c'8 c'8 c'8 c'4 c'4 | % 68

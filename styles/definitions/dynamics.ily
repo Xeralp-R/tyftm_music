@@ -94,6 +94,7 @@ ed-piu-f = #(make-pre-ed-dynamic-script "piu" "f")
 
 piu-f = #(make-pre-dynamic-script "piu " "f")
 poco-p = #(make-pre-dynamic-script "poco " "p")
+poco-mp = #(make-pre-dynamic-script "poco " "mp")
 sub-p = #(make-pre-dynamic-script "sub " "p")
 ben-mp = #(make-pre-dynamic-script "ben "  "mp")
 meno-mf = #(make-pre-dynamic-script "meno" "mf")

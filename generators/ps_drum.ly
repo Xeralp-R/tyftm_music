@@ -1,6 +1,6 @@
 \version "2.24.0"
 \include "../styles/global.ily"
-\include "../styles/Instrument_Part_Score.ily"
+\include "../styles/final_styles/Instrument_Part_Score.ily"
 
 \include "../sources/honey_honey.ly"
 \include "../sources/chiquitita.ly"
@@ -9,6 +9,8 @@
 \include "../sources/our_last_summer.ly"
 \include "../sources/gimme_gimme_gimme.ly"
 \include "../sources/voulez_vous.ly"
+\include "../sources/lay_all_your_love.ly"
+\include "../sources/money_money_money.ly"
 
 \pointAndClickOff
 
@@ -149,6 +151,21 @@
       \keepWithTag #'(drum) \honey_honey
 
       \layout {}
+      \midi {}
+    }
+  }
+
+  \bookpart {
+    \tocItem i.ols \markup { "4. Money, Money, Money" }
+
+    \header {
+      \money_iiix_header
+    }
+    \score {
+      \keepWithTag #'(drum) \money_iiix
+
+      \layout {}
+      \midi {}
     }
   }
 
@@ -162,6 +179,7 @@
       \keepWithTag #'(drum) \our_last_summer
 
       \layout {}
+      \midi {}
     }
   }
 
@@ -175,6 +193,7 @@
       \keepWithTag #'(drum) \mamma_mia
 
       \layout {}
+      \midi {}
     }
   }
 
@@ -188,6 +207,21 @@
       \keepWithTag #'(drum) \chiquitita
 
       \layout {}
+      \midi {}
+    }
+  }
+
+  \bookpart {
+    \tocItem i.ly \markup { "9. Lay All Your Love On Me"}
+
+    \header {
+      \lay_all_your_love_header
+    }
+    \score {
+      \keepWithTag #'(drum) \lay_all_your_love
+
+      \layout {}
+      \midi {}
     }
   }
 
@@ -201,6 +235,7 @@
       \keepWithTag #'(drum) \super_trouper
 
       \layout {}
+      \midi {}
     }
   }
 
@@ -214,6 +249,7 @@
       \keepWithTag #'(drum) \gimme_iiix
 
       \layout {}
+      \midi {}
     }
   }
 
@@ -227,6 +263,7 @@
       \keepWithTag #'(drum) \voulez_vous
 
       \layout {}
+      \midi {}
     }
   }
 }

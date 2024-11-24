@@ -1,8 +1,9 @@
 \version "2.22.1"
-\include "BarNumberStaff-1.0.ily"
-\include "dynamics.ily"
-\include "footnotes.ily"
-\include "stimmen.ily"
+\include "definitions/BarNumberStaff-1.0.ily"
+\include "definitions/dynamics.ily"
+\include "definitions/footnotes.ily"
+\include "definitions/stimmen.ily"
+\include "definitions/staff_tear.ily"
 
 newline = {}
 newpage = {}
@@ -115,7 +116,10 @@ blank_page = \bookpart {
          (himidtom        default   #f          3)
          (lowmidtom       default   #f          2)
          (lowtom          default   #f          -1)
-         (floortom        default   #f          -1)))
+         (floortom        default   #f          -1)
+         (maracas         cross     #f          2)
+         (tambourine      cross     #f          -2)
+         (sidestick       cross     #f          1)))
 
 \layout {
   \context {
@@ -136,12 +140,27 @@ blank_page = \bookpart {
 linear-spanner = #(define-music-function (length num_bars) (integer? integer?)
   #{
     \override TrillSpanner.bound-details.left.text = ##f
-    \override TrillSpanner.extra-offset = #'(-0.66 . -3)
+    \override TrillSpanner.extra-offset = #'(-1.125 . -3)
     \repeat unfold #num_bars { 
       \endSpanners { s1 *#length \startTrillSpan } 
     }
     \revert TrillSpanner.bound-details
     \revert TrillSpanner.extra-offset
+  #})
+
+linear-repeat = #(define-music-function (length num_bars part) (integer? integer? ly:music?)
+  #{
+    #part
+    \override Staff.TrillSpanner.bound-details.left.text = ##f
+    \override TrillSpanner.extra-offset = #'(-1.125 . -3)
+    \repeat unfold #(- num_bars 1) {
+      \keepWithTag #'layout <<
+        \tag #'layout { \endSpanners { s1 *#length \startTrillSpan }  }
+        \tag #'midi { #part }
+      >>
+    }
+    \revert TrillSpanner.extra-offset
+    \revert Staff.TrillSpanner.bound-details
   #})
 
 tocSection =

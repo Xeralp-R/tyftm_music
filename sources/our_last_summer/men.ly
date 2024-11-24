@@ -1,3 +1,7 @@
+\version "2.24.0"
+\include "../../styles/global.ily"
+
+
 PartPFiveVoiceOne =  \relative a' {
     \clef "treble" \numericTimeSignature\time 4/4 \key g \major \partial
     2 a8 _\mf b8 c8 a16 b16 ~ \bar "||"
@@ -168,7 +172,7 @@ PartPSevenVoiceOne =  \relative c'' {
     e8. g16 ~ g4 fis8 g8 a8 fis8 | % 44
     g2. _\> r4 _\! \bar "||"
     R1*7 | % 52
-    R1 "||" % 53
+    R1 \bar "||" % 53
     R1* 11 | % 65
     R1*4 \bar "|."
     }

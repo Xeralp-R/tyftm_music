@@ -8,17 +8,18 @@
 \include "our_last_summer/pno.ly"
 %{
 \include "our_last_summer/e_kbd.ly"
-\include "our_last_summer/chorus.ly"
+
 %}
+
+\include "our_last_summer/chorus.ly"
+\include "our_last_summer/men.ly"
+\include "our_last_summer/sophie.ly"
+
+\include "our_last_summer/on_stage_guit.ly"
 \include "our_last_summer/l_guit.ly"
 \include "our_last_summer/r_guit.ly"
 \include "our_last_summer/b_guit.ly"
 \include "our_last_summer/drums.ly"
-%{
-\include "our_last_summer/on_stage_guit.ly"
-\include "our_last_summer/men.ly"
-\include "our_last_summer/sophie.ly"
-%}
 
 our_last_summer_header = \header {
   arranger = "Josh Ang, Gabriel Nillos / RAR"
@@ -150,6 +151,31 @@ our_last_summer = {
           \part-Ponethree-one
         }
       >>
+    >>
+    
+
+    \new StaffGroup \with {
+      systemStartDelimiter = #'SystemStartSquare
+    } <<
+    \new Staff \with {
+      instrumentName = "Harry"
+      shortInstrumentName = "H."
+    } <<
+      \new Voice = "a" \PartPFiveVoiceOne
+      \new Lyrics \lyricsto "a" \PartPFiveVoiceOneLyricsOne
+    >>
+    \new Staff \part-Psix-one
+    \new Staff \part-Pseven-one
+    \new Staff \part-Peight-one
+    >>
+
+
+    \new StaffGroup \with {
+      instrumentName = "Chorus"
+      shortInstrumentName = "Ch."
+    } <<
+        \new Staff \part-Ponezero-one
+        \new Staff \part-Ponezero-two
     >>
     %}
 

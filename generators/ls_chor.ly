@@ -1,10 +1,12 @@
 \version "2.24.0"
 \include "../styles/Global.ily"
-\include "../styles/Full_Score.ily"
+\include "../styles/final_styles/Full_Score.ily"
 
 \include "../sources/honey_honey.ly"
 \include "../sources/chiquitita.ly"
 \include "../sources/mamma_mia.ly"
+\include "../sources/super_trouper.ly"
+%\include "../sources/our_last_summer.ly"
 
 \pointAndClickOff
 
@@ -51,7 +53,7 @@
 
   \bookpart {
     \tocSection i \markup { "Act I" }
-    \tocItem i.hh \markup { "Honey, Honey" }
+    \tocItem i.hh \markup { "3. Honey, Honey" }
 
     \header {
       \honey_honey_header
@@ -62,9 +64,35 @@
       \layout {}
     }
   }
+%{
+  \bookpart {
+    \tocItem i.mamma_mia \markup { "5. Our Last Summer" }
+
+    \header {
+      \our_last_summer_header
+    }
+    \score {
+      \keepWithTag #'(chor) \our_last_summer
+
+      \layout {}
+    }
+  }%}
 
   \bookpart {
-    \tocItem i.chiq \markup { "Chiquitita" }
+    \tocItem i.mamma_mia \markup { "6. Mamma Mia" }
+
+    \header {
+      \mamma_mia_header
+    }
+    \score {
+      \keepWithTag #'(chor) \mamma_mia
+
+      \layout {}
+    }
+  }
+
+  \bookpart {
+    \tocItem i.chiq \markup { "7. Chiquitita" }
 
     \header {
       \chiquitita_header
@@ -77,13 +105,13 @@
   }
 
   \bookpart {
-    \tocItem i.mamma_mia \markup { "Mamma Mia" }
+    \tocItem i.mamma_mia \markup { "10. Super Trouper" }
 
     \header {
-      \mamma_mia_header
+      \super_trouper_header
     }
     \score {
-      \keepWithTag #'(chor) \mamma_mia
+      \keepWithTag #'(chor) \super_trouper
 
       \layout {}
     }
