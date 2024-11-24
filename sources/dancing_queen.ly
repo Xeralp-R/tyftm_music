@@ -1,4 +1,8 @@
 \version "2.24.4"
+
+\include "../styles/final_styles/revision_style.ily" > 
+\include "../styles/Pocket_Score.ily"
+
 % automatically converted by musicxml2ly from dancing_queen_Ramos - Hannah Ramos.mscz.musicxml
 \pointAndClickOff
 
@@ -11,11 +15,76 @@
     poet =  "Hannah Ramos"
     }
 
+dancing_queen-marks = {
+  \tempo "Moderate" 4=100
+  R1 | % A
+  R1*8 % B
+  R1*8 % C
+  R1*4 % D
+  R1*8 % E
+  R1*6 % F
+  R1*4 % G
+  R1*4 \bar "||" % H
+  R1*8 % I
+  R1*8 % J
+  R1*4 % K
+  R1*8 % L
+  R1*6 % M
+  R1*4 \bar "|." % N
+  R1*8 % O
+  R1*8 % P
+  R1*4 % Q
+  R1*8 % R
+  R1*6 % S
+  R1*4 % T
+  R1*8 % U
+  R1*8 % V
+  R1*4 % W
+  R1*8 % X
+  R1*6 % Y
+}
+
+dancing_queen-measures = {
+  \tempo "Moderate" 4=100
+  R1 | % A
+  R1*8 % B
+  R1*8 % C
+  R1*4 % D
+  R1*8 % E
+  R1*6 % F
+  R1*4 % G
+  R1*4 \bar "||" % H
+  R1*8 % I
+  R1*8 % J
+  R1*4 % K
+  R1*8 % L
+  R1*6 % M
+  R1*4 \bar "|." % N
+  R1*8 % O
+  R1*8 % P
+  R1*4 % Q
+  R1*8 % R
+  R1*6 % S
+  R1*4 % T
+  R1*8 % U
+  R1*8 % V
+  R1*4 % W
+  R1*8 % X
+  R1*6 % Y
+}
+
 \layout {
     \context { \Score
         skipBars = ##t
         }
     }
+	
+    % BarNumberStaff on top of Violin 1 (No tag)
+    \new BarNumberStaff <<
+      { \dancing_queen-marks }
+      { \compressEmptyMeasures \dancing_queen-measures }
+    >>
+	
 PartPOneVoiceOne =  {
     \clef "treble" \numericTimeSignature\time 4/4 \key a \major | % 1
     \tempo "Moderate" 4=100 \mark \markup { \box { A } } R1 | % 2
@@ -384,6 +453,12 @@ PartPFiveVoiceOne =  {
     <a d' fis'>2. <a d' fis'>16 <a d' fis'>8 <a d' fis'>16 | % 92
     <b e' gis'>4 <cis' e' a'>2. \bar "|."
     }
+	
+    % BarNumberStaff in between Piano and solo voices (invisible)
+    \new BarNumberStaff <<
+      { \dancing_queen-marks }
+      { \compressEmptyMeasures \dancing_queen-measures }
+    >>
 
 PartPFiveVoiceFive =  {
     \clef "bass" \numericTimeSignature\time 4/4 \key a \major | % 1
@@ -601,6 +676,12 @@ PartPSevenVoiceOneLyricsOne =  \lyricmode {\set ignoreMelismata = ##t
     \skip1 "Ooh, " __\skip1 \skip1 see that "girl," watch that "scene,"
     Di -- gging the dan -- cing "queen. " __\skip1 \skip1 \skip1
     }
+
+    % BarNumberStaff between the chorus and lead guitar (invisible)
+    \new BarNumberStaff <<
+      { \dancing_queen-marks }
+      { \compressEmptyMeasures \dancing_queen-measures }
+    >>
 
 PartPEightVoiceOne =  {
     \clef "treble" \numericTimeSignature\time 4/4 \key a \major | % 1
