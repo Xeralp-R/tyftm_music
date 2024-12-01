@@ -1,6 +1,6 @@
 \version "2.24.4"
 \include "../styles/global.ily"
-\include "../styles/final_styles/revision_style.ily"
+%\include "../styles/final_styles/revision_style.ily"
 
 \include "overture/vl_1_2.ly"
 %\include "overture/vl_3_4.ly"
@@ -10,6 +10,12 @@
 \include "overture/e_kbd.ly"
 \include "overture/b_guit.ly"
 \include "overture/drum.ly"
+
+overture_header = \header {
+  title = "Overture"
+  composer = "Benny Andersson, Björn Ulvaeus"
+  arranger = "RAR, de mano"
+}
 
 overture_marks = {
   \tempo "Storm-like" 4 = 125
@@ -22,7 +28,8 @@ overture_marks = {
   R1*5 \tempo "accel." \time 2/4 R2 \time 4/4 R1*2 \mark \default % G
   \tempo "Poco presto" 4 = 135
   R1*8 \mark \default % H
-  \tempo "rit." R1*4 \mark \default % I
+  R1*4 \mark \default % I
+  \tempo "gran. rit." 
   R1*4 \mark "attaca" \bar "||"
 }
 
@@ -37,7 +44,8 @@ overture_measures = {
   R1*5 \tempo "accel." \time 2/4 R2 \time 4/4 R1*2
   \tempo "Poco presto" 4 = 135
   R1*8
-  \tempo "rit." R1*4
+  R1*4
+  \tempo "gran. rit." 
   R1*4 \mark "attaca" \bar "||"
 }
 
@@ -45,10 +53,9 @@ overture = {
   <<
     \new BarNumberStaff <<
       { \overture_marks }
-     % { \compressEmptyMeasures \honey_honey_measures }
+      { \compressEmptyMeasures \overture_measures }
     >>
-    
-    %{
+
     \new StaffGroup <<
       \tag #'(accompaniment orch vl_i)
       \new Staff \with {
@@ -62,45 +69,54 @@ overture = {
         shortInstrumentName = "Vl. 2"
       } \vl_ii
     >>
-    %}
     
-    %{
+    
+    \tag #'(accompaniment orch pno)
     \new PianoStaff \with {
       instrumentName = "Piano"
       shortInstrumentName = "Pf."
     } <<
-        \new Staff \part-Pnine-one
-        \new Staff \part-Pnine-two
+      \new ChordNames \pno_chords
+      \new Staff = "pu" \pno_rh
+      \new Staff = "pl" \pno_lh
     >>
-    %}
 
-    %{
+    \tag #'(accompaniment band e_kbd)
     \new PianoStaff \with {
       instrumentName = "Electric Keyboard"
       shortInstrumentName = "Kbd."
     } <<
-        \new Staff \part-Ponezero-one
-        \new Staff \part-Ponezero-two
-    >>%}
-    %{
+      \new Staff = "ku" \e_kbd_rh
+      \new Staff = "kl" \e_kbd_lh
+    >>
+
     \tag #'(accompaniment band l_guit)
     <<
-      \new ChordNames \chord-sequence
-      \new Staff \with {
+      %\new ChordNames \chord-sequence
+      \new StaffGroup \with {
+        systemStartDelimiter = #'SystemStartSquare
         instrumentName = "Lead Guitar"
         shortInstrumentName = "L. Guit."
-      } \l_guit
+      } <<
+        \new Staff { \clef "treble_8" \l_guit }
+        \new TabStaff \l_guit
+      >>
     >>
 
     \tag #'(accompaniment band r_guit)
     <<
-      \new ChordNames \chord-sequence
-      \new Staff \with {
+      \new ChordNames \r_guit_chords
+      \new StaffGroup \with {
         instrumentName = "Rhythm Guitar"
         shortInstrumentName = "R. Guit"
-      } \r_guit
+      } <<
+        \new Staff <<
+          {\clef "treble_8" \r_guit }
+          {\clef "treble_8" \r_guit_strums }
+        >>
+        \new TabStaff \r_guit
+      >>
     >>
-    %}
 
     \tag #'(accompaniment band b_guit)
     \new StaffGroup \with {
@@ -126,6 +142,8 @@ overture = {
   >>
 }
 
+%{
 \score {
   \overture
 }
+%}

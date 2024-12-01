@@ -1,7 +1,8 @@
-
+\include "../../styles/global.ily"
 
 b_guit = \transpose c c, {
   \tempo "Storm-like" 4 = 125
+  \key d \minor
   r2 r8 e'16 f' e' c'\2 a\3 f\4
   d1~
   d1~
