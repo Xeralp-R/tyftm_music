@@ -11,6 +11,8 @@
 \include "../sources/voulez_vous.ly"
 \include "../sources/lay_all_your_love.ly"
 \include "../sources/money_money_money.ly"
+\include "../sources/overture.ly"
+\include "../sources/dancing_queen.ly"
 
 \pointAndClickOff
 
@@ -142,6 +144,20 @@
 
   \bookpart {
     \tocSection i \markup { "Act I" }
+    \tocItem i.hh \markup { "1. Overture, Live" }
+
+    \header {
+      \overture_header
+    }
+    \score {
+      \keepWithTag #'(drum) \overture
+
+      \layout {}
+      %\midi {}
+    }
+  }
+
+  \bookpart {
     \tocItem i.hh \markup { "3. Honey, Honey" }
 
     \header {
@@ -151,7 +167,7 @@
       \keepWithTag #'(drum) \honey_honey
 
       \layout {}
-      \midi {}
+      %\midi {}
     }
   }
 
@@ -165,7 +181,7 @@
       \keepWithTag #'(drum) \money_iiix
 
       \layout {}
-      \midi {}
+      %\midi {}
     }
   }
 
@@ -179,7 +195,7 @@
       \keepWithTag #'(drum) \our_last_summer
 
       \layout {}
-      \midi {}
+      %\midi {}
     }
   }
 
@@ -193,7 +209,7 @@
       \keepWithTag #'(drum) \mamma_mia
 
       \layout {}
-      \midi {}
+      %\midi {}
     }
   }
 
@@ -207,8 +223,24 @@
       \keepWithTag #'(drum) \chiquitita
 
       \layout {}
-      \midi {}
+      %\midi {}
     }
+  }
+
+  \bookpart {
+    \tocItem i.dq \markup { "8. Dancing Queen" }
+
+    \header {
+      \dancing_queen_header
+    }
+    \score {
+      \keepWithTag #'(drum) \dancing_queen
+
+      \layout {}
+      %\midi {}
+    }
+
+    %\bookOutputSuffix "dancing_queen"
   }
 
   \bookpart {
@@ -221,7 +253,7 @@
       \keepWithTag #'(drum) \lay_all_your_love
 
       \layout {}
-      \midi {}
+      %\midi {}
     }
   }
 
@@ -235,7 +267,7 @@
       \keepWithTag #'(drum) \super_trouper
 
       \layout {}
-      \midi {}
+      %\midi {}
     }
   }
 
@@ -249,7 +281,7 @@
       \keepWithTag #'(drum) \gimme_iiix
 
       \layout {}
-      \midi {}
+      %\midi {}
     }
   }
 
@@ -263,7 +295,7 @@
       \keepWithTag #'(drum) \voulez_vous
 
       \layout {}
-      \midi {}
+      %\midi {}
     }
   }
 }

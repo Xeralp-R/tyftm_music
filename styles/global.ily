@@ -3,7 +3,8 @@
 \include "definitions/dynamics.ily"
 \include "definitions/footnotes.ily"
 \include "definitions/stimmen.ily"
-\include "definitions/staff_tear.ily"
+%\include "definitions/staff_tear.ily"
+\include "definitions/make_octaves.ily"
 
 newline = {}
 newpage = {}
@@ -170,3 +171,13 @@ tocSection =
 tocGroup =
 #(define-music-function (label text) (symbol-list-or-symbol? markup?)
    (add-toc-item! 'tocGroupMarkup text label))
+
+#(define (scoop-stencil grob)
+  (ly:stencil-combine-at-edge
+   (ly:note-head::print grob) 0 -1
+   (grob-interpret-markup grob
+    (markup #:with-dimensions '(0 . 0) '(0 . 0)
+     #:translate '( -2 . -2) #:musicglyph "brackettips.up" )) 0 )
+)
+
+scoop = \once \override NoteHead.stencil = #scoop-stencil

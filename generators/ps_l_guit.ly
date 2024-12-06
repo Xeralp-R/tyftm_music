@@ -8,6 +8,8 @@
 \include "../sources/our_last_summer.ly"
 \include "../sources/voulez_vous.ly"
 \include "../sources/honey_honey.ly"
+\include "../sources/overture.ly"
+\include "../sources/dancing_queen.ly"
 
 \pointAndClickOff
 
@@ -51,6 +53,21 @@
 
   \bookpart { \blank_page \tocSection i \markup { "Act I" } }
   \bookpart { \markuplist \table-of-contents }
+
+  \bookpart {
+    \tocSection i \markup { "Act I" }
+    \tocItem i.hh \markup { "1. Overture, Live" }
+
+    \header {
+      \overture_header
+    }
+    \score {
+      \keepWithTag #'(l_guit) \overture
+
+      \layout {}
+      %%\midi {}
+    }
+  }
 
   \bookpart {
     \tocItem i.hh \markup { "3. Honey Honey" }
@@ -102,6 +119,22 @@
 
       \layout {}
     }
+  }
+
+  \bookpart {
+    \tocItem i.dq \markup { "8. Dancing Queen" }
+
+    \header {
+      \dancing_queen_header
+    }
+    \score {
+      \keepWithTag #'(l_guit) \dancing_queen
+
+      \layout {}
+      %\midi {}
+    }
+
+    %\bookOutputSuffix "dancing_queen"
   }
 
   \bookpart {

@@ -1,10 +1,16 @@
 \version "2.24.4"
 \include "../styles/global.ily"
-\include "../styles/final_styles/revision_style.ily"
+%\include "../styles/final_styles/revision_style.ily"
 
 \include "prelude/vl_1_2.ly"
 \include "prelude/e_kbd.ly"
 \include "prelude/pno.ly"
+
+prelude_header = \header {
+  title = "Prelude"
+  composer = "Benny Andersson, Björn Ulvaeus"
+  arranger = "RAR, de mano"
+}
 
 prelude_marks = {
   \tempo "Poco largo" 2 = 47
@@ -67,6 +73,8 @@ prelude = {
   >>
 }
 
+%{
 \score {
   \prelude
 }
+%}

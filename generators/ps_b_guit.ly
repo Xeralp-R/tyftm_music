@@ -8,6 +8,8 @@
 \include "../sources/our_last_summer.ly"
 \include "../sources/voulez_vous.ly"
 \include "../sources/honey_honey.ly"
+\include "../sources/overture.ly"
+\include "../sources/dancing_queen.ly"
 
 \pointAndClickOff
 
@@ -49,8 +51,25 @@
     }
   }
 
-  \bookpart { \blank_page \tocSection i \markup { "Act I" } }
+  \bookpart { \blank_page }
   \bookpart { \markuplist \table-of-contents }
+
+  \bookpart {
+    \tocSection i \markup { "Act I" }
+    \tocItem i.hh \markup { "1. Overture, Live" }
+
+    \header {
+      \overture_header
+    }
+    \score {
+      \keepWithTag #'(b_guit) \overture
+
+      \layout {}
+      %\midi {}
+    }
+
+    %\bookOutputSuffix "overture"
+  }
 
   \bookpart {
     \tocItem i.hh \markup { "3. Honey Honey" }
@@ -106,6 +125,22 @@
   }
 
   \bookpart {
+    \tocItem i.dq \markup { "8. Dancing Queen" }
+
+    \header {
+      \dancing_queen_header
+    }
+    \score {
+      \keepWithTag #'(b_guit) \dancing_queen
+
+      \layout {}
+      %\midi {}
+    }
+
+    %\bookOutputSuffix "dancing_queen"
+  }
+
+  \bookpart {
     \tocItem i.st \markup { "10. Super Trouper" }
 
     \header {
@@ -118,7 +153,7 @@
     }
   }
 
-    \bookpart {
+  \bookpart {
     \tocItem i.vv \markup { "12. Voulez Vous" }
 
     \header {

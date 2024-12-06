@@ -2,10 +2,8 @@ part-Pfive-one = {
   \key a \major
   \time 4/4
   \clef treble
-  r2 r4 <a' b' cis'' d'' e'' fis'' gis'' a'' b'' cis''' d''' e''' fis'''
-  gis''' a'''
-  >4\arpeggio\arpeggio\arpeggio\arpeggio\arpeggio\arpeggio\arpeggio\arpeggio\a
-  R1 |
+  r2 r4 a'''4\glissando
+  e'4 r2. |
   R1 |
   R1 |
   R1 |

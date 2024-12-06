@@ -3,7 +3,7 @@ part-Pthree-one = {
   \time 4/4
   \clef treble
   R1 |
-  e'1\mf |
+  e'1\f |
   eis'1 |
   fis'1 |
   dis'1 |
@@ -14,7 +14,7 @@ part-Pthree-one = {
   d'2. cis'16 b8 a16 |
   b8. cis'8. cis'8~\> cis'2~ |
   % 10
-  cis'8 r8 r4 r2 |
+  cis'8\! r8 r4 r2 |
   R1 |
   R1 |
   R1 |
@@ -53,7 +53,7 @@ part-Pthree-one = {
   R1 |
   R1 |
   R1 |
-  r2 r4 e''4 |
+  r2 r4 e''4\f |
   d''2. cis''16 b'8 a'16 |
   % 45
   b'8. cis''8. cis''8~ cis''2~ |
@@ -108,7 +108,7 @@ part-Pthree-one = {
   R1 |
   e'2. r4 |
   R1 |
-  r2 r4 e''4 |
+  r2 r4 e''4\ff |
   % 90
   d''2. cis''16 b'8 a'16 |
   b'4 cis''2. |

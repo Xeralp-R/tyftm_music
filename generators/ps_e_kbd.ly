@@ -5,6 +5,9 @@
 \include "../sources/chiquitita.ly"
 \include "../sources/mamma_mia.ly"
 \include "../sources/super_trouper.ly"
+\include "../sources/overture.ly"
+\include "../sources/prelude.ly"
+\include "../sources/dancing_queen.ly"
 
 \pointAndClickOff
 
@@ -50,7 +53,33 @@
   \bookpart { \markuplist \table-of-contents }
 
   \bookpart {
-    \tocSection i \markup { "Act I" }
+    \tocSection i \markup {"Act One"}
+    \tocItem i.o \markup { "1. Overture" }
+
+    \header {
+      \overture_header
+    }
+    \score {
+      \keepWithTag #'(e_kbd) \overture
+
+      \layout {}
+    }
+  }
+
+  \bookpart {
+    \tocItem i.p \markup { "2. Prelude" }
+
+    \header {
+      \prelude_header
+    }
+    \score {
+      \keepWithTag #'(e_kbd) \prelude
+
+      \layout {}
+    }
+  }
+
+  \bookpart {
     \tocItem i.chiq \markup { "Chiquitita" }
 
     \header {
@@ -64,7 +93,7 @@
   }
 
   \bookpart {
-    \tocItem i.mamma_mia \markup { "Mamma Mia" }
+    \tocItem i.mamma_mia \markup { "6. Mamma Mia" }
 
     \header {
       \mamma_mia_header
@@ -77,7 +106,20 @@
   }
 
   \bookpart {
-    \tocItem i.st \markup { "Super Trouper" }
+    \tocItem i.dq \markup { "8. Dancing Queen" }
+
+    \header {
+      \dancing_queen_header
+    }
+    \score {
+      \keepWithTag #'(e_kbd) \dancing_queen
+
+      \layout {}
+    }
+  }
+
+  \bookpart {
+    \tocItem i.st \markup { "10. Super Trouper" }
 
     \header {
       \super_trouper_header
@@ -89,3 +131,29 @@
     }
   }
 }
+
+%{
+\book {
+  \bookOutputSuffix "Overture"
+  \score {
+    \keepWithTag #'(e_kbd) \overture
+    \midi{}
+  }
+}
+
+\book {
+  \bookOutputSuffix "Prelude"
+  \score {
+    \keepWithTag #'(e_kbd) \prelude
+    \midi{}
+  }
+}
+
+\book {
+  \bookOutputSuffix "Dancing Queen"
+  \score {
+    \keepWithTag #'(e_kbd) \dancing_queen
+    \midi{}
+  }
+}
+%}
