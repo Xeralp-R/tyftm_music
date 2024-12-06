@@ -1,10 +1,11 @@
 \version "2.24.4"
 \include "../styles/global.ily"
-%\include "../styles/final_styles/revision_style.ily"
+\include "../styles/final_styles/revision_style.ily"
 
 \include "prelude/vl_1_2.ly"
 \include "prelude/e_kbd.ly"
 \include "prelude/pno.ly"
+\include "prelude/sophie.ly"
 
 prelude_header = \header {
   title = "Prelude"
@@ -51,6 +52,15 @@ prelude = {
       } \vl_ii
     >>
 
+    \tag #'(chor soli sophie)
+    <<
+      \new Staff \with {
+        instrumentName = "Sophie"
+        shortInstrumentName = "S."
+      } \sophie
+      \new Lyrics \sophie_lyr_ii
+    >>
+
     \tag #'(accompaniment band e_kbd)
     \new PianoStaff \with {
       instrumentName = "Electric Keyboard"
@@ -73,7 +83,7 @@ prelude = {
   >>
 }
 
-%{
+% {
 \score {
   \prelude
 }
