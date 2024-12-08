@@ -226,7 +226,7 @@ voulez-vous-l-guit-strums = {
   b4^\ed-text "V11" b4^\ed-text "V111" |
 
   s1*1
-  b1\arpeggio\upbow  | 
+  b1%{\arpeggio%}\upbow  | 
   | \bar "||"
 
   s1*8 
@@ -247,7 +247,7 @@ voulez-vous-l-guit-strums = {
   b4^\ed-text "V11" b4^\ed-text "V111" |
 
   s1*1
-  b1\arpeggio\upbow  | 
+  b1%{\arpeggio%}\upbow  | 
   | \bar "||"
 
   s1*7
