@@ -1,4 +1,4 @@
-#! /bin/bash
+#! /bin/zsh
 
 lilypond --output=./exports ./generators/ls_conductor.ly
 lilypond --output=./exports ./generators/ps_piano.ly
