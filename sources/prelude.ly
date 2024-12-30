@@ -1,6 +1,6 @@
 \version "2.24.4"
 \include "../styles/global.ily"
-\include "../styles/final_styles/revision_style.ily"
+%\include "../styles/final_styles/revision_style.ily"
 
 \include "prelude/vl_1_2.ly"
 \include "prelude/e_kbd.ly"
@@ -83,7 +83,7 @@ prelude = {
   >>
 }
 
-% {
+%{
 \score {
   \prelude
 }

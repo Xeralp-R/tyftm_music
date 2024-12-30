@@ -1,7 +1,7 @@
 % Automatically generated from a musicxml file.
 \version "2.24.0"
 \include "../styles/Global.ily"
-%\include "../styles/final_styles/revision_style.ily"
+\include "../styles/final_styles/revision_style.ily"
 
 \include "our_last_summer/vl_1_2.ly"
 \include "our_last_summer/vl_3_4.ly"
@@ -169,6 +169,7 @@ our_last_summer = {
     \new Staff \part-Peight-one
     >>
 
+    %}
 
     \new StaffGroup \with {
       instrumentName = "Chorus"
@@ -177,7 +178,6 @@ our_last_summer = {
         \new Staff \part-Ponezero-one
         \new Staff \part-Ponezero-two
     >>
-    %}
 
     \tag #'(accompaniment band l_guit)
     <<
@@ -248,7 +248,6 @@ our_last_summer = {
     
 }
 
-%{
 \header {
   \our_last_summer_header
 }
@@ -256,5 +255,5 @@ our_last_summer = {
 \score {
   \our_last_summer
 }
-%}
+
 
