@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"make",
+				"make-pre-dynamic-script"
+			],
+			[
 				"num",
 				"num_bars"
 			],
@@ -24,10 +28,13 @@
 	"buffers":
 	[
 		{
-			"file": "styles/Instrument_Part_Score.ily",
+			"contents": "% Automatically generated from a musicxml file.\n\\version \"2.24.0\"\n\\include \"../styles/Global.ily\"\n\\include \"../styles/final_styles/revision_style.ily\"\n\n\\include \"our_last_summer/vl_1_2.ly\"\n\\include \"our_last_summer/vl_3_4.ly\"\n\\include \"our_last_summer/pno.ly\"\n%{\n\\include \"our_last_summer/e_kbd.ly\"\n\n%}\n\n\\include \"our_last_summer/chorus.ly\"\n\\include \"our_last_summer/men.ly\"\n\\include \"our_last_summer/sophie.ly\"\n\n\\include \"our_last_summer/on_stage_guit.ly\"\n\\include \"our_last_summer/l_guit.ly\"\n\\include \"our_last_summer/r_guit.ly\"\n\\include \"our_last_summer/b_guit.ly\"\n\\include \"our_last_summer/drums.ly\"\n\nour_last_summer_header = \\header {\n  arranger = \"Josh Ang, Gabriel Nillos / RAR\"\n  composer = \"Benny Andersson, Björn Ulvaeus\"\n  title = \"Our Last Summer\"\n}\n\nour_last_summer-measures = {\n  \\tempo \\markup \\column {\n  \"Andante grazioso\"\n  \\italic \"At a calm and walking pace\"\n  } 4=96\n  \\partial 2 r2 \n  R1*68 \\bar \"|.\"\n}\n\n\nour_last_summer-marks = {\n  \\tempo \\markup \\column {\n  \"Andante grazioso\"\n  \\italic \"At a calm and walking pace\"\n  } 4=96\n  \\partial 2 r2 \\mark \\default % A\n  R1*8 \\mark \\default % B\n  R1*8 \\mark \\default % C\n  R1*4 \\mark \\default % D\n  R1*8 \\mark \\default % E\n  R1*8 \\mark \\default % F\n  R1*8 \\mark \\default % G\n  R1*5 \\mark \\markup \\box \\bold \"G1\"\n  R1*3 \\mark \\default % H\n  R1*8 \\mark \\default % I \n  R1*8 \\bar \"|.\"\n}\n\nchords_set = \\chordmode {\n  \\partial 2\n  s2\n  g2 b2:m |\n  c2 d2 |\n  g2 b2:m |\n  c2 d2 |\n  g2 b2:m |\n  e2:m b2:m |\n  c2 d2 |\n  g1:sus |\n  g1\n}\n\nour_last_summer = {\n  <<\n    \\new BarNumberStaff <<\n      { \\our_last_summer-marks }\n      { \\compressEmptyMeasures \\our_last_summer-measures }\n    >>\n    \n    \\new StaffGroup <<\n      \\tag #'(accompaniment orch vl_i)\n      \\new Staff \\with {\n        instrumentName = \"Violin 1\"\n        shortInstrumentName = \"Vl. 1\"\n      } \\part-Pone-one\n\n      \\tag #'(accompaniment orch vl_ii)\n      \\new Staff \\with {\n        instrumentName = \"Violin 2\"\n        shortInstrumentName = \"Vl. 2\"\n      } \\part-Ptwo-one\n\n      \\tag #'(accompaniment orch vl_iii)\n      \\new Staff \\with {\n        instrumentName = \"Violin 3\"\n        shortInstrumentName = \"Vl. 3\"\n      } \\part-Pthree-one\n\n      \\tag #'(accompaniment orch vl_iv)\n      \\new Staff \\with {\n        instrumentName = \"Violin 4\"\n        shortInstrumentName = \"Vl. 4\"\n      } \\part-Pfour-one\n    >>\n\n    \\tag #'(accompaniment orch piano)\n    \\new PianoStaff \\with {\n      instrumentName = \"Piano\"\n      shortInstrumentName = \"Pf.\"\n    } <<\n        \\new Staff \\part-Poneone-one\n        \\new Staff \\part-Poneone-two\n    >>\n    \n    %{\n    \\new Staff \\part-Pfive-one\n    \\new Staff \\part-Psix-one\n    \\new Staff \\part-Pseven-one\n    \\new Staff \\part-Peight-one\n\n    \\new StaffGroup \\with {\n      instrumentName = \"Chorus\"\n      shortInstrumentName = \"Ch.\"\n    } <<\n        \\new Staff \\part-Ponezero-one\n        \\new Staff \\part-Ponezero-two\n    >>\n\n    \\new PianoStaff \\with {\n      instrumentName = \"Piano\"\n      shortInstrumentName = \"Pf.\"\n    } <<\n        \\new Staff \\part-Poneone-one\n        \\new Staff \\part-Poneone-two\n    >>\n    \n    \\new BarNumberStaff <<\n      { \\chiquitita-marks }\n      { \\compressEmptyMeasures \\chiquitita-measures }\n    >>\n\n    <<\n      \\new ChordNames \\chords_set\n      \\new StaffGroup \\with {\n        systemStartDelimiter = #'SystemStartSquare\n      } << \n        \\new Staff {\n          \\clef \"treble_8\" \n          \\part-Ponethree-one\n        }\n        \\new TabStaff {\n          \\part-Ponethree-one\n        }\n      >>\n    >>\n    \n\n    \\new StaffGroup \\with {\n      systemStartDelimiter = #'SystemStartSquare\n    } <<\n    \\new Staff \\with {\n      instrumentName = \"Harry\"\n      shortInstrumentName = \"H.\"\n    } <<\n      \\new Voice = \"a\" \\PartPFiveVoiceOne\n      \\new Lyrics \\lyricsto \"a\" \\PartPFiveVoiceOneLyricsOne\n    >>\n    \\new Staff \\part-Psix-one\n    \\new Staff \\part-Pseven-one\n    \\new Staff \\part-Peight-one\n    >>\n\n    %}\n\n    \\new StaffGroup \\with {\n      instrumentName = \"Chorus\"\n      shortInstrumentName = \"Ch.\"\n    } <<\n        \\new Staff \\PartPOneZeroVoiceOne\n        \\new Staff \\part-Ponezero-two\n    >>\n\n    \\tag #'(accompaniment band l_guit)\n    <<\n      \\new StaffGroup \\with {\n        systemStartDelimiter = #'SystemStartSquare\n        instrumentName = \"Lead Guitar\"\n        shortInstrumentName = \"L. Guit.\"\n      } << \n        \\new Staff {\n          \\clef \"treble_8\" \n          \\part-Ponefour-one\n        }\n        \\new TabStaff {\n          \\part-Ponefour-one\n        }\n      >>\n    >>\n\n    \\tag #'(accompaniment band r_guit)\n    <<\n      \\new ChordNames \\r-guit-chords\n      \\new StaffGroup \\with {\n        systemStartDelimiter = #'SystemStartSquare\n      } <<\n        \\new Staff \\with {\n          instrumentName = \"Rhythm Guitar\"\n          shortInstrumentName = \"R. Guit\"\n        } {\n          \\part-Ponefive-one\n        }\n        \\new Dynamics \\r-guit-dyn\n      >>\n    >>\n\n    \n    %{\n    \\new PianoStaff \\with {\n      instrumentName = \"Electric Keyboard\"\n      shortInstrumentName = \"Kbd.\"\n    } <<\n        \\new Staff \\part-Ponetwo-one\n        \\new Staff \\part-Ponetwo-two\n    >>\n    %}\n\n    \\tag #'(accompaniment band b_guit)\n    \\new StaffGroup \\with {\n      systemStartDelimiter = #'SystemStartSquare\n      instrumentName = \"Bass Guitar\"\n      shortInstrumentName = \"B. Guit\"\n    } <<\n      \\new Staff {\n        \\clef \"bass_8\"\n        \\part-Ponesix-one\n      }\n      \\new Dynamics \\b-guit-dyn\n      \\new TabStaff \\with {\n        stringTunings = #bass-tuning\n      } \\part-Ponesix-one\n    >>\n\n    \\tag #'(accompaniment band drum)\n    \\new DrumStaff \\with {\n      instrumentName = \"Drumkit\"\n      shortInstrumentName = \"Dr.\"\n    } \\part-Poneseven-one\n  >>\n    \n}\n\n\\header {\n  \\our_last_summer_header\n}\n\n\\score {\n  \\our_last_summer\n}\n\n\n",
+			"file": "sources/our_last_summer.ly",
+			"file_size": 5723,
+			"file_write_time": 133779352159508345,
 			"settings":
 			{
-				"buffer_size": 3958,
+				"buffer_size": 5725,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			},
@@ -35,570 +42,112 @@
 			[
 				[
 					6,
-					2,
+					3,
 					"left_delete",
 					null,
-					"AgAAACwAAAAAAAAALAAAAAAAAAABAAAAMCsAAAAAAAAAKwAAAAAAAAABAAAAMg",
-					"BQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAtAAAAAAAAAC0AAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					7,
-					1,
-					"paste",
-					null,
-					"AQAAACsAAAAAAAAAMAAAAAAAAAAAAAAA",
-					"BQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAArAAAAAAAAACsAAAAAAAAAAAAAAAAA8L8"
+					"AwAAABUWAAAAAAAAFRYAAAAAAAABAAAAexQWAAAAAAAAFBYAAAAAAAABAAAAJRMWAAAAAAAAExYAAAAAAAABAAAACg",
+					"AQAAAAAAAAABAAAAFhYAAAAAAAAWFgAAAAAAAAAAAAAAAPC/"
 				],
 				[
 					9,
-					5,
-					"left_delete",
-					null,
-					"BQAAAC8AAAAAAAAALwAAAAAAAAABAAAAMi4AAAAAAAAALgAAAAAAAAABAAAAOC0AAAAAAAAALQAAAAAAAAABAAAALiwAAAAAAAAALAAAAAAAAAABAAAANysAAAAAAAAAKwAAAAAAAAABAAAAMQ",
-					"BQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAwAAAAAAAAADAAAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					10,
-					1,
-					"insert",
-					{
-						"characters": "18"
-					},
-					"AgAAACsAAAAAAAAALAAAAAAAAAAAAAAALAAAAAAAAAAtAAAAAAAAAAAAAAA",
-					"BQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAArAAAAAAAAACsAAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					14,
 					2,
 					"left_delete",
 					null,
-					"AgAAACwAAAAAAAAALAAAAAAAAAABAAAAOCsAAAAAAAAAKwAAAAAAAAABAAAAMQ",
-					"BQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAtAAAAAAAAAC0AAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					15,
-					1,
-					"insert",
-					{
-						"characters": "20"
-					},
-					"AgAAACsAAAAAAAAALAAAAAAAAAAAAAAALAAAAAAAAAAtAAAAAAAAAAAAAAA",
-					"BQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAArAAAAAAAAACsAAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					18,
-					2,
-					"left_delete",
-					null,
-					"AgAAACwAAAAAAAAALAAAAAAAAAABAAAAMCsAAAAAAAAAKwAAAAAAAAABAAAAMg",
-					"BQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAtAAAAAAAAAC0AAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					19,
-					1,
-					"insert",
-					{
-						"characters": "18"
-					},
-					"AgAAACsAAAAAAAAALAAAAAAAAAAAAAAALAAAAAAAAAAtAAAAAAAAAAAAAAA",
-					"BQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAArAAAAAAAAACsAAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					26,
-					1,
-					"insert",
-					{
-						"characters": "\n\\context"
-					},
-					"CgAAAHgMAAAAAAAAeQwAAAAAAAAAAAAAeQwAAAAAAAB7DAAAAAAAAAAAAAB7DAAAAAAAAHwMAAAAAAAAAAAAAHwMAAAAAAAAfQwAAAAAAAAAAAAAfQwAAAAAAAB+DAAAAAAAAAAAAAB+DAAAAAAAAH8MAAAAAAAAAAAAAH8MAAAAAAAAgAwAAAAAAAAAAAAAgAwAAAAAAACBDAAAAAAAAAAAAACBDAAAAAAAAIIMAAAAAAAAAAAAAIIMAAAAAAAAgwwAAAAAAAAAAAAA",
-					"BQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAB4DAAAAAAAAHgMAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					27,
-					1,
-					"insert",
-					{
-						"characters": " "
-					},
-					"AQAAAIMMAAAAAAAAhAwAAAAAAAAAAAAA",
-					"BQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACDDAAAAAAAAIMMAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					28,
-					1,
-					"insert_snippet",
-					{
-						"contents": "{$0}"
-					},
-					"AQAAAIQMAAAAAAAAhgwAAAAAAAAAAAAA",
-					"BQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACEDAAAAAAAAIQMAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					29,
-					1,
-					"run_macro_file",
-					{
-						"file": "res://Packages/Default/Add Line in Braces.sublime-macro"
-					},
-					"BgAAAIUMAAAAAAAAhgwAAAAAAAAAAAAAhgwAAAAAAACIDAAAAAAAAAAAAACIDAAAAAAAAIkMAAAAAAAAAAAAAIkMAAAAAAAAiwwAAAAAAAAAAAAAhgwAAAAAAACGDAAAAAAAAAIAAAAgIIYMAAAAAAAAigwAAAAAAAAAAAAA",
-					"BQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACFDAAAAAAAAIUMAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					30,
-					1,
-					"insert",
-					{
-						"characters": "\\DrumStaff"
-					},
-					"CgAAAIoMAAAAAAAAiwwAAAAAAAAAAAAAiwwAAAAAAACMDAAAAAAAAAAAAACMDAAAAAAAAI0MAAAAAAAAAAAAAI0MAAAAAAAAjgwAAAAAAAAAAAAAjgwAAAAAAACPDAAAAAAAAAAAAACPDAAAAAAAAJAMAAAAAAAAAAAAAJAMAAAAAAAAkQwAAAAAAAAAAAAAkQwAAAAAAACSDAAAAAAAAAAAAACSDAAAAAAAAJMMAAAAAAAAAAAAAJMMAAAAAAAAlAwAAAAAAAAAAAAA",
-					"BQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACKDAAAAAAAAIoMAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					31,
-					1,
-					"insert",
-					{
-						"characters": "\n\\remove"
-					},
-					"CQAAAJQMAAAAAAAAlQwAAAAAAAAAAAAAlQwAAAAAAACZDAAAAAAAAAAAAACZDAAAAAAAAJoMAAAAAAAAAAAAAJoMAAAAAAAAmwwAAAAAAAAAAAAAmwwAAAAAAACcDAAAAAAAAAAAAACcDAAAAAAAAJ0MAAAAAAAAAAAAAJ0MAAAAAAAAngwAAAAAAAAAAAAAngwAAAAAAACfDAAAAAAAAAAAAACfDAAAAAAAAKAMAAAAAAAAAAAAAA",
-					"BQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACUDAAAAAAAAJQMAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					32,
-					1,
-					"insert",
-					{
-						"characters": " "
-					},
-					"AQAAAKAMAAAAAAAAoQwAAAAAAAAAAAAA",
-					"BQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACgDAAAAAAAAKAMAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					33,
-					1,
-					"insert_snippet",
-					{
-						"contents": "\"$0\""
-					},
-					"AQAAAKEMAAAAAAAAowwAAAAAAAAAAAAA",
-					"BQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAChDAAAAAAAAKEMAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					34,
-					1,
-					"insert",
-					{
-						"characters": "Instru"
-					},
-					"BgAAAKIMAAAAAAAAowwAAAAAAAAAAAAAowwAAAAAAACkDAAAAAAAAAAAAACkDAAAAAAAAKUMAAAAAAAAAAAAAKUMAAAAAAAApgwAAAAAAAAAAAAApgwAAAAAAACnDAAAAAAAAAAAAACnDAAAAAAAAKgMAAAAAAAAAAAAAA",
-					"BQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACiDAAAAAAAAKIMAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					35,
-					1,
-					"insert_completion",
-					{
-						"completion": "Instrument_name_engraver",
-						"format": "text",
-						"keep_prefix": false,
-						"must_insert": false,
-						"trigger": "Instrument_name_engraver"
-					},
-					"AgAAAKIMAAAAAAAAogwAAAAAAAAGAAAASW5zdHJ1ogwAAAAAAAC6DAAAAAAAAAAAAAA",
-					"BQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACoDAAAAAAAAKgMAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					40,
-					1,
-					"left_delete",
-					null,
-					"AQAAACwAAAAAAAAALAAAAAAAAAABAAAAOA",
-					"BQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAtAAAAAAAAAC0AAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					41,
-					1,
-					"insert",
-					{
-						"characters": "9"
-					},
-					"AQAAACwAAAAAAAAALQAAAAAAAAAAAAAA",
-					"BQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAsAAAAAAAAACwAAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					42,
-					1,
-					"left_delete",
-					null,
-					"AQAAACwAAAAAAAAALAAAAAAAAAABAAAAOQ",
-					"BQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAtAAAAAAAAAC0AAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					43,
-					1,
-					"insert",
-					{
-						"characters": "8.5"
-					},
-					"AwAAACwAAAAAAAAALQAAAAAAAAAAAAAALQAAAAAAAAAuAAAAAAAAAAAAAAAuAAAAAAAAAC8AAAAAAAAAAAAAAA",
-					"BQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAsAAAAAAAAACwAAAAAAAAAAAAAAAAA8L8"
-				]
-			]
-		},
-		{
-			"file": "sources/TYFTM/sources/super_trouper.ly",
-			"settings":
-			{
-				"buffer_size": 6171,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "sources/TYFTM/sources/super_trouper/vl_1_2.ly",
-			"settings":
-			{
-				"buffer_size": 2961,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			},
-			"undo_stack":
-			[
-				[
-					5,
-					1,
-					"left_delete",
-					null,
-					"AQAAAL4AAAAAAAAAvgAAAAAAAAABAAAAcA",
-					"AQAAAAAAAAABAAAAvwAAAAAAAAC/AAAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					6,
-					1,
-					"insert",
-					{
-						"characters": "mf\\>"
-					},
-					"BAAAAL4AAAAAAAAAvwAAAAAAAAAAAAAAvwAAAAAAAADAAAAAAAAAAAAAAADAAAAAAAAAAMEAAAAAAAAAAAAAAMEAAAAAAAAAwgAAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAvgAAAAAAAAC+AAAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					9,
-					1,
-					"insert",
-					{
-						"characters": "\\!"
-					},
-					"AgAAAM8AAAAAAAAA0AAAAAAAAAAAAAAA0AAAAAAAAADRAAAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAzwAAAAAAAADPAAAAAAAAAAAAAAAAAPC/"
+					"AgAAAFoWAAAAAAAAWhYAAAAAAAABAAAAfVkWAAAAAAAAWRYAAAAAAAABAAAAJQ",
+					"AQAAAAAAAAABAAAAWxYAAAAAAABbFgAAAAAAAAAAAAAAAPC/"
 				],
 				[
 					13,
 					1,
 					"left_delete",
 					null,
-					"AQAAAL8AAAAAAAAAvwAAAAAAAAABAAAAZg",
-					"AQAAAAAAAAABAAAAwAAAAAAAAADAAAAAAAAAAAAAAAAAAPC/"
+					"AQAAAGIAAAAAAAAAYgAAAAAAAAABAAAAJQ",
+					"AQAAAAAAAAABAAAAYwAAAAAAAABjAAAAAAAAAAAAAAAAAPC/"
 				],
 				[
-					14,
+					22,
+					1,
+					"cut",
+					null,
+					"AQAAADQPAAAAAAAANA8AAAAAAAC1AAAAXG5ldyBTdGFmZkdyb3VwIFx3aXRoIHsKICAgICAgaW5zdHJ1bWVudE5hbWUgPSAiQ2hvcnVzIgogICAgICBzaG9ydEluc3RydW1lbnROYW1lID0gIkNoLiIKICAgIH0gPDwKICAgICAgICBcbmV3IFN0YWZmIFxwYXJ0LVBvbmV6ZXJvLW9uZQogICAgICAgIFxuZXcgU3RhZmYgXHBhcnQtUG9uZXplcm8tdHdvCiAgICA+Pg",
+					"AQAAAAAAAAABAAAA6Q8AAAAAAAA0DwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					23,
+					4,
+					"left_delete",
+					null,
+					"BAAAADIPAAAAAAAAMg8AAAAAAAACAAAAICAwDwAAAAAAADAPAAAAAAAAAgAAACAgLw8AAAAAAAAvDwAAAAAAAAEAAAAKLg8AAAAAAAAuDwAAAAAAAAEAAAAK",
+					"AQAAAAAAAAABAAAANA8AAAAAAAA0DwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					26,
 					1,
 					"insert",
 					{
-						"characters": "p"
+						"characters": "\n\n"
 					},
-					"AQAAAL8AAAAAAAAAwAAAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAvwAAAAAAAAC/AAAAAAAAAAAAAAAAAPC/"
+					"BQAAADUPAAAAAAAANg8AAAAAAAAAAAAANg8AAAAAAAA6DwAAAAAAAAAAAAA6DwAAAAAAADsPAAAAAAAAAAAAADsPAAAAAAAAPw8AAAAAAAAAAAAANg8AAAAAAAA2DwAAAAAAAAQAAAAgICAg",
+					"AQAAAAAAAAABAAAANQ8AAAAAAAA1DwAAAAAAAAAAAAAAAPC/"
 				],
 				[
-					15,
+					27,
 					1,
-					"left_delete",
+					"paste",
 					null,
-					"AQAAAL8AAAAAAAAAvwAAAAAAAAABAAAAcA",
-					"AQAAAAAAAAABAAAAwAAAAAAAAADAAAAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					16,
-					1,
-					"insert",
-					{
-						"characters": "f"
-					},
-					"AQAAAL8AAAAAAAAAwAAAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAvwAAAAAAAAC/AAAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					19,
-					1,
-					"insert",
-					{
-						"characters": "]\\"
-					},
-					"AgAAAO0AAAAAAAAA7gAAAAAAAAAAAAAA7gAAAAAAAADvAAAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAA7QAAAAAAAADtAAAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					20,
-					2,
-					"left_delete",
-					null,
-					"AgAAAO4AAAAAAAAA7gAAAAAAAAABAAAAXO0AAAAAAAAA7QAAAAAAAAABAAAAXQ",
-					"AQAAAAAAAAABAAAA7wAAAAAAAADvAAAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					21,
-					1,
-					"insert",
-					{
-						"characters": "\\mf"
-					},
-					"AwAAAO0AAAAAAAAA7gAAAAAAAAAAAAAA7gAAAAAAAADvAAAAAAAAAAAAAADvAAAAAAAAAPAAAAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAA7QAAAAAAAADtAAAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					25,
-					5,
-					"left_delete",
-					null,
-					"BQAAAI8BAAAAAAAAjwEAAAAAAAABAAAAZo4BAAAAAAAAjgEAAAAAAAABAAAAbY0BAAAAAAAAjQEAAAAAAAABAAAAXIwBAAAAAAAAjAEAAAAAAAABAAAAX4sBAAAAAAAAiwEAAAAAAAABAAAAIA",
-					"AQAAAAAAAAABAAAAkAEAAAAAAACQAQAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					28,
-					5,
-					"left_delete",
-					null,
-					"BQAAAKMBAAAAAAAAowEAAAAAAAABAAAAZqIBAAAAAAAAogEAAAAAAAABAAAAbaEBAAAAAAAAoQEAAAAAAAABAAAAXKABAAAAAAAAoAEAAAAAAAABAAAAX58BAAAAAAAAnwEAAAAAAAABAAAAIA",
-					"AQAAAAAAAAABAAAApAEAAAAAAACkAQAAAAAAAAAAAAAAAPC/"
+					"AQAAADsPAAAAAAAA8A8AAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAOw8AAAAAAAA7DwAAAAAAAAAAAAAAAPC/"
 				],
 				[
 					32,
 					1,
-					"insert",
-					{
-						"characters": "\\mf"
-					},
-					"AwAAALsBAAAAAAAAvAEAAAAAAAAAAAAAvAEAAAAAAAC9AQAAAAAAAAAAAAC9AQAAAAAAAL4BAAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAuwEAAAAAAAC7AQAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					38,
-					1,
-					"insert",
-					{
-						"characters": "1"
-					},
-					"AgAAAG4CAAAAAAAAbwIAAAAAAAAAAAAAbwIAAAAAAABvAgAAAAAAABAAAAA4IH4gZyc4IH4gZycyLiB+",
-					"AQAAAAAAAAABAAAAfgIAAAAAAABuAgAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					40,
-					1,
-					"insert",
-					{
-						"characters": "\\rf"
-					},
-					"AwAAAG8CAAAAAAAAcAIAAAAAAAAAAAAAcAIAAAAAAABxAgAAAAAAAAAAAABxAgAAAAAAAHICAAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAbwIAAAAAAABvAgAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					42,
-					3,
-					"left_delete",
-					null,
-					"AwAAAHQCAAAAAAAAdAIAAAAAAAABAAAAIXMCAAAAAAAAcwIAAAAAAAABAAAAXHICAAAAAAAAcgIAAAAAAAABAAAAIA",
-					"AQAAAAAAAAABAAAAdQIAAAAAAAB1AgAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					45,
-					1,
-					"insert",
-					{
-						"characters": "\\<"
-					},
-					"AgAAAIQCAAAAAAAAhQIAAAAAAAAAAAAAhQIAAAAAAACGAgAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAhAIAAAAAAACEAgAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					47,
-					1,
-					"insert",
-					{
-						"characters": "\\!"
-					},
-					"AgAAAI4CAAAAAAAAjwIAAAAAAAAAAAAAjwIAAAAAAACQAgAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAjgIAAAAAAACOAgAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					51,
-					1,
-					"insert",
-					{
-						"characters": "\\f"
-					},
-					"AgAAAKwCAAAAAAAArQIAAAAAAAAAAAAArQIAAAAAAACuAgAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAArAIAAAAAAACsAgAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					54,
-					1,
-					"insert",
-					{
-						"characters": "\\mp\\<"
-					},
-					"BQAAAOQCAAAAAAAA5QIAAAAAAAAAAAAA5QIAAAAAAADmAgAAAAAAAAAAAADmAgAAAAAAAOcCAAAAAAAAAAAAAOcCAAAAAAAA6AIAAAAAAAAAAAAA6AIAAAAAAADpAgAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAA5AIAAAAAAADkAgAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					60,
-					1,
-					"insert",
-					{
-						"characters": "\\f"
-					},
-					"AgAAABwDAAAAAAAAHQMAAAAAAAAAAAAAHQMAAAAAAAAeAwAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAHAMAAAAAAAAcAwAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					64,
-					1,
-					"insert",
-					{
-						"characters": "\\<"
-					},
-					"AgAAAGUDAAAAAAAAZgMAAAAAAAAAAAAAZgMAAAAAAABnAwAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAZQMAAAAAAABlAwAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					66,
-					1,
-					"insert",
-					{
-						"characters": "\\mp"
-					},
-					"AwAAAGUDAAAAAAAAZgMAAAAAAAAAAAAAZgMAAAAAAABnAwAAAAAAAAAAAABnAwAAAAAAAGgDAAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAZQMAAAAAAABlAwAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					68,
-					1,
-					"insert",
-					{
-						"characters": "\\!"
-					},
-					"AgAAAHIDAAAAAAAAcwMAAAAAAAAAAAAAcwMAAAAAAAB0AwAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAcgMAAAAAAAByAwAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					72,
-					1,
-					"insert",
-					{
-						"characters": "\\f"
-					},
-					"AgAAAJADAAAAAAAAkQMAAAAAAAAAAAAAkQMAAAAAAACSAwAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAkAMAAAAAAACQAwAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					79,
-					1,
-					"insert",
-					{
-						"characters": "\\>"
-					},
-					"AgAAAI0FAAAAAAAAjgUAAAAAAAAAAAAAjgUAAAAAAACPBQAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAjQUAAAAAAACNBQAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					83,
-					1,
-					"left_delete",
-					null,
-					"AQAAAPgFAAAAAAAA+AUAAAAAAAABAAAAPw",
-					"AQAAAAAAAAABAAAA+QUAAAAAAAD5BQAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					86,
-					1,
-					"left_delete",
-					null,
-					"AQAAAAIGAAAAAAAAAgYAAAAAAAABAAAAPw",
-					"AQAAAAAAAAABAAAAAwYAAAAAAAADBgAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					89,
-					1,
-					"left_delete",
-					null,
-					"AQAAAAwGAAAAAAAADAYAAAAAAAABAAAAPw",
-					"AQAAAAAAAAABAAAADQYAAAAAAAANBgAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					92,
-					1,
-					"left_delete",
-					null,
-					"AQAAABYGAAAAAAAAFgYAAAAAAAABAAAAPw",
-					"AQAAAAAAAAABAAAAFwYAAAAAAAAXBgAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					95,
-					1,
-					"left_delete",
-					null,
-					"AQAAAIUGAAAAAAAAhQYAAAAAAAABAAAAPw",
-					"AQAAAAAAAAABAAAAhgYAAAAAAACGBgAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					99,
-					1,
-					"left_delete",
-					null,
-					"AQAAAI8GAAAAAAAAjwYAAAAAAAABAAAAPw",
-					"AQAAAAAAAAABAAAAkAYAAAAAAACQBgAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					102,
-					1,
-					"left_delete",
-					null,
-					"AQAAAJkGAAAAAAAAmQYAAAAAAAABAAAAPw",
-					"AQAAAAAAAAABAAAAmgYAAAAAAACaBgAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					105,
-					1,
-					"left_delete",
-					null,
-					"AQAAAKMGAAAAAAAAowYAAAAAAAABAAAAPw",
-					"AQAAAAAAAAABAAAApAYAAAAAAACkBgAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					112,
-					1,
 					"paste",
 					null,
-					"AgAAAN4FAAAAAAAABgYAAAAAAAAAAAAABgYAAAAAAAAGBgAAAAAAAAQAAABSMSB8",
-					"AQAAAAAAAAABAAAA4gUAAAAAAADeBQAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					115,
-					4,
-					"left_delete",
-					null,
-					"BAAAAOcFAAAAAAAA5wUAAAAAAAABAAAAcOYFAAAAAAAA5gUAAAAAAAABAAAAXOUFAAAAAAAA5QUAAAAAAAABAAAAX+QFAAAAAAAA5AUAAAAAAAABAAAAIA",
-					"AQAAAAAAAAABAAAA6AUAAAAAAADoBQAAAAAAAAAAAAAAAPC/"
+					"AgAAALIPAAAAAAAAxg8AAAAAAAAAAAAAxg8AAAAAAADGDwAAAAAAABEAAABwYXJ0LVBvbmV6ZXJvLW9uZQ",
+					"AQAAAAAAAAABAAAAww8AAAAAAACyDwAAAAAAAAAAAAAAAPC/"
 				]
 			]
 		},
 		{
-			"file": "sources/TYFTM/sources/mamma_mia.ly",
+			"file": "sources/our_last_summer/chorus.ly",
 			"settings":
 			{
-				"buffer_size": 5394,
+				"buffer_size": 3947,
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+			]
+		},
+		{
+			"file": "sources/prelude.ly",
+			"settings":
+			{
+				"buffer_size": 1748,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
-			}
+			},
+			"undo_stack":
+			[
+				[
+					4,
+					1,
+					"insert",
+					{
+						"characters": "%"
+					},
+					"AQAAADIAAAAAAAAAMwAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAMgAAAAAAAAAyAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					7,
+					1,
+					"left_delete",
+					null,
+					"AQAAALoGAAAAAAAAugYAAAAAAAABAAAAIA",
+					"AQAAAAAAAAABAAAAuwYAAAAAAAC7BgAAAAAAAAAAAAAAAPC/"
+				]
+			]
 		}
 	],
 	"build_system": "",
@@ -617,6 +166,10 @@
 				"Indentation: Detect"
 			],
 			[
+				"dete",
+				"Indentation: Detect"
+			],
+			[
 				"inden",
 				"Indentation: Detect"
 			],
@@ -630,10 +183,6 @@
 			],
 			[
 				"detect",
-				"Indentation: Detect"
-			],
-			[
-				"dete",
 				"Indentation: Detect"
 			],
 			[
@@ -657,9 +206,10 @@
 	},
 	"console":
 	{
-		"height": 0.0,
+		"height": 130.0,
 		"history":
 		[
+			"echo \"nil\""
 		]
 	},
 	"distraction_free":
@@ -673,146 +223,141 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/mariquitreventar/Desktop/ACodes/Music",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/build",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/sources",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/sources/TYFTM",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/sources/TYFTM/scores",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/sources/TYFTM/sources",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/sources/TYFTM/sources/super_trouper",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/styles",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/styles/final_styles"
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/sources",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/sources/our_last_summer",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/waste"
 	],
 	"file_history":
 	[
-		"/Users/mariquitreventar/Desktop/ACodes/Music/sources/TYFTM/sources/super_trouper.ly",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/sources/TYFTM/scores/ps_piano.ly",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/build/tyftm_build.sh",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/sources/TYFTM/sources/super_trouper/r_guit.ly",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/sources/TYFTM/sources/super_trouper/t_b.ly",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/sources/TYFTM/sources/super_trouper/pno.ly",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/sources/TYFTM/sources/super_trouper/e_kbd.ly",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/sources/TYFTM/sources/super_trouper/l_guit.ly",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/sources/TYFTM/sources/super_trouper/s_a.ly",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/sources/TYFTM/sources/super_trouper/t_r.ly",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/sources/TYFTM/sources/super_trouper/drums.ly",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/sources/TYFTM/sources/super_trouper/sophie.ly",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/sources/TYFTM/sources/super_trouper/donna.ly",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/sources/TYFTM/sources/super_trouper/b_guit.ly",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/sources/TYFTM/sources/super_trouper/vl_3_4.ly",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/sources/TYFTM/sources/super_trouper/vl_1_2.ly",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/sources/TYFTM/sources/voulez_vous.ly",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/sources/TYFTM/sources/Scene Change 8A - Josh Sebastian Ang.ly",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/sources/TYFTM/sources/chiquitita/chiquitita_vl_1_2.ly",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/sources/TYFTM/sources/chiquitita.ly",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/sources/TYFTM/scores/ps_e_kbd.ly",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/sources/TYFTM/scores/ps_l_guit.ly",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/sources/TYFTM/sources/mamma_mia.ly",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/sources/TYFTM/scores/ps_vl_3_4.ly",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/sources/TYFTM/scores/ps_vl_1_2.ly",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/sources/TYFTM/scores/ps_r_guit.ly",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/sources/TYFTM/scores/ps_b_guit.ly",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/sources/TYFTM/sources/chiquitita/chiquitita_e_kbd.ly",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/sources/TYFTM/sources/chiquitita/chiquitita_drums.ly",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/sources/TYFTM/scores/ls_chor.ly",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/sources/TYFTM/scores/ls_conductor.ly",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/sources/TYFTM/scores/ps_drum.ly",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/styles/dynamics.ily",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/sources/TYFTM/sources/mamma_mia/e_kbd.ly",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/sources/TYFTM/sources/mamma_mia/b_guit.ly",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/sources/TYFTM/sources/mamma_mia/r_guit.ly",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/sources/TYFTM/sources/mamma_mia/drums.ly",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/sources/TYFTM/sources/mamma_mia/l_guit.ly",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/sources/TYFTM/sources/mamma_mia/sa.ly",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/sources/TYFTM/sources/mamma_mia/donna.ly",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/sources/TYFTM/sources/mamma_mia/tb.ly",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/styles/global.ily",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/sources/TYFTM/sources/voulez_vous/voulez_vous_l_guit.ly",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/sources/TYFTM/sources/mamma_mia/pno.ly",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/sources/TYFTM/sources/our_last_summer/vl_1_2.ly",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/sources/TYFTM/sources/our_last_summer.ly",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/sources/TYFTM/sources/our_last_summer/r_guit.ly",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/sources/TYFTM/sources/mamma_mia/vl_3_4.ly",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/sources/TYFTM/sources/mamma_mia/vl_1_2.ly",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/Music.sublime-project",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/styles/BarNumberStaff-1.0.ily",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/styles/final_styles/revision_style.ily",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/styles/stimmen.ily",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/sources/TYFTM/sources/chiquitita/chiquitita_tanya_rosie.ly",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/sources/TYFTM/sources/chiquitita/chiquitita_r_guit.ly",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/sources/TYFTM/sources/chiquitita/chiquitita_l_guit.ly",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/sources/TYFTM/sources/chiquitita/chiquitita_donna.ly",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/sources/TYFTM/sources/chiquitita/chiquitita_vl_3_4.ly",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/styles/Instrument_Part_Score.ily",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/build/build_all.sh",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/styles/Choir_Part_Score.ily",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/sources/Mass1/scores/Part_Score_Piano.ly",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/styles/Full_Score.ily",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/styles/Pocket_Score.ily",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/sources/TYFTM/sources/chiquitita/chiquitita_pno.ly",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/sources/TYFTM/sources/chiquitita/chiquitita_b_guit.ly",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/.gitignore",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/sources/TYFTM/sources/voulez_vous/voulez_vous_perc.ly",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/sources/Mass1/scores/Part_Score_Asax_Brass.ly",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/sources/TYFTM/sources/voulez_vous/voulez_vous_b_guit.ly",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/sources/TYFTM/sources/voulez_vous/voulez_vous_r_guit.ly",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/sources/Mass1/sources/Christify.ly",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/styles/individual.ily",
-		"/Users/mariquitreventar/Desktop/ACodes/Experiments/path",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/sources/New/Sarimanok.ly",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/styles/final.ily",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/sources/TYFTM/sources/Honey, Honey - Josh Sebastian Ang (1).ly",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/styles/footnotes.ily",
-		"/Users/mariquitreventar/Desktop/Grade 12 Stuff/TYFTM/Revised Scores/chiquitita - Julianne Dominique Taoatao (1).mscz.ly",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/exports/All_I_Want_For_Christmas.pdf",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/sources/Mass1/scores/Full_Score.ly",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/sources/Alt/esq052.ly",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/sources/Alt/esq081.ly",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/sources/White_Book/Orange_Book/Come_Back_to_Sorrento.ly",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/styles/Exercise_Part_Score.ily",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/sources/New/Parangal/Parangal_I.ly",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/sources/White_Book/Orange_Book/Orange_Book.ly",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/sources/White_Book/Orange_Book/Sacro_Monte.ly",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/sources/White_Book/Orange_Book/L_Elephant.ly",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/imports/esq081.ly",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/imports/esq081.musicxml",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/sources/Mass1/sources/Anima_Christi.ly",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/sources/White_Book/Orange_Book/Canon_in_D.ly",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/sources/White_Book/Orange_Book/Can_Can.ly",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/sources/Bravura/bcc_exercise_2.ly",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/sources/Alt/tingin.ly",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/sources/Bravura/bcc_piece_1.ly",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/sources/Bravura/bcc_score.ly",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/sources/Bravura/bcc_exercise_1.ly",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/sources/Bravura/bcc_piece_2.ly",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/sources/Bravura/bcc_parts.ly",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/sources/Mass1/sources/Ama_Namin-simplified.ly",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/sources/Misc/Final-Fantasy-IV-Prologue-r2-Piano.ly",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/sources/Bravura/greenpath.ly",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/sources/Mass1/scores/Part_Score_Cello.ly",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/sources/New/April_Morning_Fantasy.ly",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/sources/White_Book/White_Book.ly",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/.vscode/tasks.json",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/untitled.sublime-project",
-		"/Users/mariquitreventar/Desktop/ACodes/Projects/lblly2ly/user_lib/lmt/CMakeLists.txt",
-		"/Users/mariquitreventar/Desktop/ACodes/Projects/lblly2ly/user_lib/mxlr/metadata_loader.cpp",
-		"/Users/mariquitreventar/Desktop/ACodes/Projects/lblly2ly/user_lib/mxlr/metadata_loader.hpp",
-		"/Users/mariquitreventar/Desktop/ACodes/Projects/lblly2ly/CMakeLists.txt",
-		"/Users/mariquitreventar/Desktop/ACodes/Projects/lblly2ly/user_lib/mxlr/CMakeLists.txt",
-		"/Users/mariquitreventar/Desktop/ACodes/Tex/src/Chem3_Exercise_EAS.tex",
-		"/Users/mariquitreventar/Library/Application Support/Sublime Text/Packages/User/Simple Latex.sublime-build",
-		"/Users/mariquitreventar/Desktop/ACodes/Tex/.vscode/tasks.json",
-		"/Users/mariquitreventar/Desktop/ACodes/Tex/src/Chem2_LR7_1.tex",
-		"/Users/mariquitreventar/Desktop/ACodes/Tex/src/writing_5.tex",
-		"/Users/mariquitreventar/Desktop/ACodes/Tex/src/Math5_2extra2.tex",
-		"/Users/mariquitreventar/Library/Application Support/Sublime Text/Packages/User/untitled.sublime-build",
-		"/Users/mariquitreventar/Desktop/ACodes/Tex/src/Math4_3AA2a.tex",
-		"/Users/mariquitreventar/Desktop/ACodes/Tex/.vscode/settings.json",
-		"/Users/mariquitreventar/Desktop/ACodes/Projects/lblly2ly/user_lib/lblr/CMakeLists.txt",
-		"/Users/mariquitreventar/Desktop/ACodes/Music/sources/New/April_Morning_Fantasy.lbly",
-		"/Users/mariquitreventar/Desktop/ACodes/Projects/lblly2ly/src/CMakeLists.txt",
-		"/Users/mariquitreventar/Desktop/ACodes/Projects/lblly2ly/user_lib/lblr/lbllilypondreader.hpp",
-		"/Users/mariquitreventar/Desktop/ACodes/Projects/lblly2ly/user_lib/lblr/lbllilypondreader.cpp"
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/sources/prelude.ly",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/sources/prelude/vl_1_2.ly",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/sources/prelude/sophie.ly",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/sources/dancing_queen.ly",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/sources/overture.ly",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/sources/dancing_queen/r_guit.ly",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/sources/our_last_summer.ly",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/generators/ps_b_guit.ly",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/tyftm_build.sh",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/generators/ps_e_kbd.ly",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/generators/ps_piano.ly",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/generators/ps_drum.ly",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/generators/ps_l_guit.ly",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/generators/ps_r_guit.ly",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/sources/dancing_queen/pno.ly",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/generators/ls_conductor.ly",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/generators/ps_vl_1_2.ly",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/generators/ls_chor.ly",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/sources/dancing_queen/e_kbd.ly",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/sources/dancing_queen/vl_1_2.ly",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/sources/dancing_queen/vl_3_4.ly",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/generators/ps_vl_3_4.ly",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/sources/lay_all_your_love.ly",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/sources/dancing_queen/b_guit.ly",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/sources/overture/l_guit.ly",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/sources/overture/vl_1_2.ly",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/sources/overture/pno.ly",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/sources/overture/r_guit.ly",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/sources/overture/e_kbd.ly",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/generators/Conductors_Score.log",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/waste/waste001.ly",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/styles/global.ily",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/styles/definitions/make_octaves.ily",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/styles/final_styles/revision_style.ily",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/styles/definitions/staff_tear.ily",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/sources/mamma_mia.ly",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/sources/prelude/e_kbd.ly",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/sources/prelude/pno.ly",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/sources/dancing_queen/drums.ly",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/sources/dancing_queen/l_guit.ly",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/sources/gimme_gimme_gimme.ly",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/sources/honey_honey.ly",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/sources/mamma_mia/drums.ly",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/sources/voulez_vous.ly",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/sources/dancing_queen/t_r.ly",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/sources/overture/b_guit.ly",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/sources/mamma_mia/e_kbd.ly",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/sources/mamma_mia/l_guit.ly",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/sources/mamma_mia/donna.ly",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/sources/overture/drum.ly",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/styles/final.ily",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/styles/dynamics.ily",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/sources/money_money_money.ly",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/styles/BarNumberStaff-1.0.ily",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/sources/overture/vl_3_4.ly",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/sources/money_money_money/drum.ly",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/sources/lay_all_your_love/drum.ly",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/sources/dancing_queen_Ramos - Hannah Ramos copy.ly",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/sources/lay/drum.ly",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/.vscode/tasks.json",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/Fonts/Cardo/OFL.txt",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/Fonts/Computer_Modern/SIL Open Font License.txt",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/Fonts/Edwin/Edwin-BdIta.otf",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/Fonts/Edwin/Edwin-Bold.otf",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/Fonts/Edwin/Edwin-Italic.otf",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/Fonts/Edwin/Edwin-Roman.otf",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/Fonts/Edwin/LICENSE.txt",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/Fonts/Edwin/OFL-FAQ.txt",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/Fonts/Edwin/README.md",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/Fonts/Linux_Libertine/LinLibertine_Bd-4.1.5 copy.otf",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/Fonts/Linux_Libertine/LinLibertine_BI-4.1.0 copy.otf",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/Fonts/Linux_Libertine/LinLibertine_C-4.0.4 copy.otf",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/Fonts/Linux_Libertine/LinLibertine_It-4.2.6 copy.otf",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/Fonts/Linux_Libertine/LinLibertine_Re-4.7.5 copy.otf",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/Fonts/Old_Music_Standard/OldMusicStandard-Italic copy.otf",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/Fonts/Old_Music_Standard/OldMusicStandard-Regular copy.otf",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/Fonts/Old_Standard_TT/OFL.txt",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/styles/lyricstuff.ily",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/styles/stimmen.ily",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/styles/fonts/Cardo/OFL.txt",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/sources/super_trouper/drums.ly",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/sources/our_last_summer/l_guit.ly",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/sources/our_last_summer/men.ly",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/sources/super_trouper/t_r.ly",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/sources/super_trouper.ly",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/sources/super_trouper/t_b.ly",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/sources/honey_honey/chor.ly",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/basis_files/honey_honey - basis correct.ly",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/basis_files/honey_honey - basis legible.ly",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/sources/honey_honey/drum.ly",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/sources/honey_honey/b_guit.ly",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/sources/honey_honey/r_guit.ly",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/sources/honey_honey/l_guit.ly",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/sources/honey_honey/vl_3_4.ly",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/sources/honey_honey/vl_1_2.ly",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/sources/honey_honey/a_l.ly",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/sources/honey_honey/sophie.ly",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/sources/honey_honey/e_kbd.ly",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/.gitignore",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/sources/voulez_vous/voulez_vous_l_guit.ly",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/sources/voulez_vous/voulez_vous_r_guit.ly",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/sources/voulez_vous/chor_sa.ly",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/sources/gimme_3x/drum.ly",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/sources/our_last_summer/b_guit.ly",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/sources/mamma_mia/sa.ly",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/sources/Honey, Honey - Josh Sebastian Ang (1).ly",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/sources/our_last_summer/r_guit.ly",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/sources/super_trouper/r_guit.ly",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/sources/our_last_summer/pno.ly",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/sources/voulez_vous/voulez_vous_b_guit.ly",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/sources/chiquitita/chiquitita_b_guit.ly",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/sources/mamma_mia/b_guit.ly",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/sources/our_last_summer/drums.ly",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/sources/chiquitita/chiquitita_vl_3_4.ly",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/sources/our_last_summer/vl_1_2.ly",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/sources/our_last_summer/vl_3_4.ly",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/sources/our_last_summer/on_stage_guit.ly",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/sources/chiquitita/chiquitita_r_guit.ly",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/sources/chiquitita/chiquitita_l_guit.ly",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/sources/mamma_mia/r_guit.ly",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/sources/chiquitita.ly",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/styles/Instrument_Part_Score.ily",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/Music.sublime-project",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/sources/super_trouper/l_guit.ly",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/sources/super_trouper/pno.ly",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/sources/super_trouper/e_kbd.ly",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/sources/super_trouper/donna.ly",
+		"/Users/mariquitreventar/Desktop/ACodes/Music/tyftm/sources/super_trouper/b_guit.ly"
 	],
 	"find":
 	{
@@ -823,6 +368,14 @@
 		"height": 107.0,
 		"where_history":
 		[
+			"<current file>",
+			"<current file>, <open folders>",
+			"<current file>",
+			"<current file>,<open folders>",
+			"<current file>",
+			"<current file>,<open folders>",
+			"<current file>",
+			"<current file>,<open folders>",
 			"<current file>,./super_trouper/",
 			"<current file>,super_trouper/",
 			"<current file>",
@@ -855,6 +408,95 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"{\n",
+			"\\bookOutputSuffix",
+			"\\midi {}",
+			"\\midi{}",
+			"ees,8. ees,16 r8 ees,4 ees,8 ees,4 |",
+			"\\ChordName",
+			"\\other-dynamics",
+			"-\\\\mark \"\\w\"",
+			"\\repeat tremolo 16",
+			"\\once \\override NoteHead.style = #'cross",
+			"(\\w\\d[.]*:[\\w]+)5",
+			"(\\w\\d[.]*):5",
+			"f'",
+			"a'",
+			"d''",
+			"e''",
+			"c''",
+			"g''",
+			"a''",
+			"-\\\\mark \"\\w\"",
+			"\\\\mark \"\\w\"",
+			"zigzagTearWidth",
+			"final_scores",
+			"\\include \"../styles/Instrument_Part_Score.ily\"",
+			"\\include \"../styles/Pocket_Score.ily\"",
+			"\\include \"../styles/Full_Score.ily\"",
+			"\\mark",
+			"//",
+			"colla voce",
+			"\\mark",
+			"de",
+			"(\\w\\d[.]*:[\\w]+)5",
+			"(\\w\\d[.]*):5",
+			"repeat",
+			"\\\\linear-spanner (\\d+) (\\d+)",
+			"\\mark",
+			"\\\\once[\\s|\\n]+\\\\override[\\s|\\n]+NoteHead.style[\\s|\\n]+=[\\s|\\n]+#'slash",
+			"\\\\once[\\s\\n]\\\\override[\\s\\n]NoteHead.style[\\s\\n]=[\\s\\n]#'slash",
+			"\\\\once[\\s+]\\\\override[\\s+]NoteHead.style[\\s+]=[\\s+]#'slash",
+			"\\once \\override NoteHead.style = #'slash",
+			"\\mark",
+			"\\\\linear-spanner (\\d+) (\\d+)",
+			"\\\\linear-spanner \\d \\d",
+			"\\mark",
+			"\\mark \"",
+			"c''",
+			"f'",
+			"g''",
+			"Voice ",
+			"Voice",
+			"\\\\mark \"\\w+\"",
+			"%",
+			"\\ed-ff",
+			"\\ed-mp",
+			"\\ed-mf",
+			"\\ed-p",
+			"\\once-ed-cresc",
+			"\\ed-rf",
+			"\\ed-f",
+			"\\! ",
+			":16",
+			"(\\\\(mp|mf|pp|ff|sfz|sf|rf|p|f|!|<|>))",
+			"fis,2 fis,2 |",
+			"(\\w\\d[.]*:[\\w]+)5",
+			"(\\w\\d[.]*):5",
+			"[a|b|c|d|e|f|g][',]*?(\\d)",
+			"[a|b|c|d|e|f|g][',]*?\\d",
+			"(\\\\(mp|mf|pp|ff|sfz|sf|rf|p|f|!|<|>))",
+			"ccym",
+			"e''",
+			"a'",
+			"c''",
+			"f'",
+			"g''",
+			"Voice ",
+			"Voice",
+			"<<[\\s\\S]+?{(\\s+)\\\\voiceOne\\s+([\\S\\s]+)}[\\s\\S]+{([\\s\\S]+)\\\\voiceTwo\\s+([\\s\\S]+)}\\s+>>",
+			"\\arpeggio",
+			"(\\\\arpeggio\\s?)+",
+			"\\arpeggioNormal",
+			"\\arpeggioArrowUp",
+			"<< \\\\voiceOne {\\\\stemUp ([\\s\\S]+?)} \\\\new DrumVoice = \"lower\" {([\\s\\S]+?)} >>",
+			"<< \\\\voiceOne {([\\s\\S]+?)} \\\\new DrumVoice = \\\"lower\\\" { \\\\stemDown ([\\s\\S]+?)} >>",
+			"<< \\\\voiceOne {([\\s\\S]+?)} \\\\new DrumVoice = \"lower\" {([\\s\\S]+?)} >>",
+			"\\skip1",
+			"\"../../../../styles/Global.ily\"",
+			"\"../../../styles/Instrument_Part_Score.ily\"",
+			"\"../../../styles/final_styles/revision_style.ily\"",
+			"\"../../../styles/Global.ily\"",
 			"\"../styles/global.ily\"",
 			"r1",
 			"(\\w\\d[.]*:[\\w]+)5",
@@ -893,95 +535,7 @@
 			"\\sf",
 			"c,",
 			"rehearsalMarkFormatter",
-			"-\\markup { \"INSTRUMENTAL (HARRY)\" }",
-			"-\\markup { \"INSTRUMENTAL (SAM)\" }",
-			"-\\markup",
-			"a'",
-			"tomf",
-			"e''",
-			"d''",
-			"c''",
-			"f'",
-			"g''",
-			"-\\mark ",
-			"-\\mark",
-			"\\mark",
-			"bendAf",
-			"\\bendafter #-4",
-			"\\bendafter #4",
-			"\\bendafter #+4",
-			"\\bendafter",
-			"f'",
-			"c'",
-			"c''",
-			"midlowtom",
-			"hitom",
-			"midhitom",
-			"hitom",
-			"a'",
-			"d''",
-			"e''",
-			"g''",
-			"\\barNumberCheck",
-			"book-handler",
-			"(let ((book-handler",
-			"\\arpeggio\\arpeggio",
-			":2",
-			"R2",
-			"\\scoop",
-			"\\bendAfter",
-			"\\bendAfter #-4",
-			"\\bendAfter #+4",
-			"\\bendAfter",
-			"\\\\bendAfter",
-			"\\bendAfter",
-			"R",
-			"linearSpanner",
-			"textMark",
-			"slurNormal",
-			"textmark",
-			"chord",
-			"4 s4 s4 s4 |",
-			":5",
-			"chord",
-			"Sim.",
-			"Sim",
-			"a'",
-			"tomh",
-			"\\ed-dyn \"p\"",
-			"\\ed-dyn \"rf\"",
-			"\\ed-dyn \"f\"",
-			"ed-dyn \"f\"",
-			"ed-dyn",
-			"up-dyn",
-			"–",
-			"\\mark\"",
-			"\\mark ",
-			"-\\mark ",
-			"-\\markup { \"arco\" }",
-			"arco",
-			"-\\markup { \"arco.\" }",
-			"-\\markup { \"pizz.\" }",
-			"tremolo",
-			"\\acciaccatura s8",
-			"r1",
-			"\\tremolo",
-			"r1\\p",
-			"r1 ",
-			"r1",
-			"tag",
-			"\\tempo \"Poco Moderato\"",
-			"-\\mark \"",
-			"-\\mark",
-			"-\\mark{",
-			"-\\markup{ \\dynamic \"sffz\" }",
-			"\\sffz",
-			"r1",
-			"\\tremolo",
-			" |",
-			"r1",
-			" \\italic",
-			" \\italic "
+			"-\\markup { \"INSTRUMENTAL (HARRY)\" }"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -989,6 +543,76 @@
 		"regex": false,
 		"replace_history":
 		[
+			"%\\bookOutputSuffix",
+			"%\\midi {}",
+			"%\\midi{}",
+			"fis,8. fis,16 r8 fis,4 fis,8 fis,4 |",
+			"\\sub-p",
+			"",
+			"\\repeat tremolo 4",
+			"\\deadNote",
+			"$1",
+			"bd",
+			"toml",
+			"tomml",
+			"tommh",
+			"sn",
+			"hh",
+			"cymc",
+			"%{ $0 %}",
+			"final_styles",
+			"\\include \"../styles/final_scores/Instrument_Part_Score.ily\"",
+			"\\include \"../styles/final_scores/Pocket_Score.ily\"",
+			"\\include \"../styles/final_scores/Full_Score.ily\"",
+			"% \\mark",
+			"\\\\",
+			"%%% \\mark",
+			"$1",
+			"\\\\linear-spanner $2 $1",
+			"%%% \\mark",
+			"",
+			"%%% \\mark",
+			"\\\\linear-spanner $2 $1",
+			"% \\mark \"",
+			"sn",
+			"bd",
+			"hh",
+			"DrumVoice ",
+			"DrumVoice",
+			"",
+			"\\ff",
+			"\\mp",
+			"\\mf",
+			"\\p",
+			"",
+			"\\rf",
+			"\\f",
+			":32",
+			"",
+			"b2 b2 |",
+			"$1",
+			"b$1",
+			"",
+			"cymc",
+			"ccym",
+			"toml",
+			"sn",
+			"bd",
+			"hh",
+			"DrumVoice ",
+			"DrumVoice",
+			"<<$1{$2$3}$1\\\\$4{$5$6}$7>>",
+			"",
+			"\\\\arpeggio",
+			"\\arpeggio",
+			"",
+			"<< { $1 } \\\\\\\\ { $2 } >>",
+			"<< {$1} \\\\ {$2} >>",
+			"",
+			"\"../../styles/Global.ily\"",
+			"\"../styles/Instrument_Part_Score.ily\"",
+			"\"../styles/final_styles/revision_style.ily\"",
+			"\"../styles/Global.ily\"",
 			"\"../../../../styles/global.ily\"",
 			"R1",
 			"$1",
@@ -1046,25 +670,7 @@
 			"ed-dyn",
 			" \\mark \"",
 			" \\mark",
-			"\\mark",
-			"^\\markup { \"arco\" }",
-			"^\\markup { \"arco.\" }",
-			"^\\markup { \"pizz.\" }",
-			"\\grace {s8}",
-			"R1",
-			":32",
-			"R2.\\p",
-			"R2. ",
-			"R2.",
-			"\\tempo \"Poco moderato\"",
-			"\\mark \"",
-			"-\\markup{ \\dynamic \"sffz\" } \\!",
-			"-\\markup{ \\dynamic \"sffz\" }",
-			"\\markup{ \\dynamic \"sffz\" }",
-			"R1",
-			":32",
-			"R1",
-			""
+			"\\mark"
 		],
 		"reverse": false,
 		"scrollbar_highlights": true,
@@ -1081,49 +687,50 @@
 			[
 				{
 					"buffer": 0,
-					"file": "styles/Instrument_Part_Score.ily",
+					"file": "sources/our_last_summer.ly",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3958,
+						"buffer_size": 5725,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								47,
-								47
+								4038,
+								4038
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/SubLilyPond/LilyPond.tmLanguage",
+							"syntax": "Packages/Git Formats/Git Commit.sublime-syntax",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2556.0,
+						"translation.y": 3032.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 1,
 					"stack_multiselect": false,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "sources/TYFTM/sources/super_trouper.ly",
+					"file": "sources/our_last_summer/chorus.ly",
+					"selected": true,
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6171,
+						"buffer_size": 3947,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
+								20,
 								0
 							]
 						],
@@ -1134,39 +741,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"stack_multiselect": false,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "sources/TYFTM/sources/super_trouper/vl_1_2.ly",
-					"selected": true,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2961,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1508,
-								1508
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Git Formats/Git Commit.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 655.0,
+						"translation.y": 1542.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -1174,20 +749,20 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "sources/TYFTM/sources/mamma_mia.ly",
+					"buffer": 2,
+					"file": "sources/prelude.ly",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5394,
+						"buffer_size": 1748,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								55,
-								0
+								1722,
+								1722
 							]
 						],
 						"settings":
@@ -1197,10 +772,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1616.0,
+						"translation.y": 1156.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 2,
 					"stack_multiselect": false,
 					"type": "text"
 				}
@@ -1240,7 +815,7 @@
 	"menu_visible": true,
 	"output.exec":
 	{
-		"height": 37.0
+		"height": 126.0
 	},
 	"output.find_results":
 	{
@@ -1289,7 +864,7 @@
 	{
 	},
 	"show_minimap": true,
-	"show_open_files": false,
+	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
 	"side_bar_width": 233.0,
