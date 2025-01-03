@@ -30,7 +30,7 @@ part-Pfive-one = {
   a'8 gis'8 a'8 gis'8 a'4 b'4 |
   % 20
   R1 |
-  r4 e'8 e'8 dis'8 e'8 r8 gis'8 |
+  r4 e'8^\f e'8 dis'8 e'8 r8 gis'8 |
   r8 e'8 r8 dis'8~ dis'8 e'8 r8 b8 |
   cis'8 r8 e'8 e'8 dis'8 e'8 r4 |
   R1 |
@@ -47,11 +47,11 @@ part-Pfive-one = {
   b'8 b'8 b'8 gis'8~ gis'8 gis'8 e'8( cis'8~) |
   cis'8 r8 cis'8 cis'8 dis'8 e'4 r8 |
   % 35
-  r4 \once \override NoteHead.style = #'cross a'4 r2 |
+  r4 \once \override NoteHead.style = #'cross a'4 r2\sfz |
   R1*2
   R1*8
   R1*8
-  r4 e'8 e'8 dis'8 e'8 r8 gis'8 |
+  r4 e'8^\f e'8 dis'8 e'8 r8 gis'8 |
   % 75
   r8 e'8 r8 dis'8~ dis'8 e'8 r8 b8 |
   cis'8 r8 e'8 e'8 dis'8 e'8 r4 |
@@ -68,11 +68,11 @@ part-Pfive-one = {
   cis'4) r4 r4 r8 b8 |
   b'8 b'8 b'8 gis'8~ gis'8 gis'8 e'8( cis'8~ |
   cis'8) r8 cis'8 cis'8 dis'8 e'4 r8 |
-  r4 \once \override NoteHead.style = #'cross a'4 r2 |
+  r4 \once \override NoteHead.style = #'cross a'4 r2\sfz |
   R1*2
   R1*8
   R1*8 |
-  r4 e'8 e'8 dis'8 e'8 r8 gis'8~ |
+  r4 e'8\f e'8 dis'8 e'8 r8 gis'8~ |
   gis'8 e'4 dis'8~ dis'8 e'8 r8 b8 |
   cis'8 r8 e'8 e'8 dis'8 e'8 r4 |
   R1 |
@@ -80,7 +80,7 @@ part-Pfive-one = {
   r4 e'8 e'8 dis'8 e'8 r8 gis'8~ |
   gis'8 e'4 dis'8~ dis'8 e'8 r8 b8 |
   cis'8 r8 e'8 e'8 dis'8 e'8 r4 |
-  r2 r4 r8 b8 |
+  r2 r4 r8 b8^\markup{\dynamic "mp" \italic " espressivo"} |
   b'8 b'8 b'8 gis'8~ gis'8 gis'8 e'8( cis'8~ |
   % 115
   cis'4) r4 r4 r8 b8 |

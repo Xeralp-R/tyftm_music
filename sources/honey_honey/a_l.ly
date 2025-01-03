@@ -20,7 +20,7 @@ part-Psix-one = {
   R1*4
   R1*8
   R1*8
-  r4 e'8 e'8 dis'8 e'8 r8 gis'8 |
+  r4 e'8^\f e'8 dis'8 e'8 r8 gis'8 |
   % 75
   r8 e'8 r8 dis'8~ dis'8 e'8 r8 b8 |
   cis'8 r8 e'8 e'8 dis'8 e'8 r4 |
@@ -31,7 +31,7 @@ part-Psix-one = {
   cis'8 r8 e'8 e'8 dis'8 e'8 r4 |
   R1 |
   R1 |
-  cis'8 cis'8 cis'8 cis'8~( cis'8 dis'8) cis'8( b8) |
+  cis'8^\mf cis'8 cis'8 cis'8~( cis'8 dis'8) cis'8( b8) |
   b2 r2 |
   % 85
   cis'8 cis'8 cis'8 cis'8 r8 dis'8 cis'8( b8) |
@@ -41,7 +41,7 @@ part-Psix-one = {
   R1*2
   R1*8
   R1*8 |
-  r4 e'8 e'8 dis'8 e'8 r8 gis'8~ |
+  r4 e'8^\f e'8 dis'8 e'8 r8 gis'8~ |
   gis'8 e'4 dis'8~ dis'8 e'8 r8 b8 |
   cis'8 r8 e'8 e'8 dis'8 e'8 r4 |
   R1 |
@@ -86,7 +86,7 @@ part-Pseven-one = {
   R1*4
   R1*8
   R1*8
-  r4 e'8 e'8 dis'8 e'8 r8 gis'8 |
+  r4 e'8^\f e'8 dis'8 e'8 r8 gis'8 |
   % 75
   r8 e'8 r8 dis'8~ dis'8 e'8 r8 b8 |
   cis'8 r8 e'8 e'8 dis'8 e'8 r4 |
@@ -97,7 +97,7 @@ part-Pseven-one = {
   cis'8 r8 e'8 e'8 dis'8 e'8 r4 |
   R1 |
   R1 |
-  cis'8 cis'8 cis'8 cis'8~( cis'8 dis'8) cis'8( b8) |
+  cis'8^\mf cis'8 cis'8 cis'8~( cis'8 dis'8) cis'8( b8) |
   b2 r2 |
   % 85
   cis'8 cis'8 cis'8 cis'8 r8 dis'8 cis'8( b8) |
@@ -107,7 +107,7 @@ part-Pseven-one = {
   R1*2
   R1*8
   R1*8 |
-  r4 e'8 e'8 dis'8 e'8 r8 gis'8~ |
+  r4 e'8^\f e'8 dis'8 e'8 r8 gis'8~ |
   gis'8 e'4 dis'8~ dis'8 e'8 r8 b8 |
   cis'8 r8 e'8 e'8 dis'8 e'8 r4 |
   R1 |
