@@ -9,6 +9,10 @@
 \include "dancing_queen/vl_3_4.ly"
 \include "dancing_queen/pno.ly"
 
+\include "dancing_queen/donna.ly"
+\include "dancing_queen/t_r.ly"
+\include "dancing_queen/chor.ly"
+
 \include "dancing_queen/l_guit.ly"
 \include "dancing_queen/r_guit.ly"
 \include "dancing_queen/e_kbd.ly"
@@ -95,6 +99,38 @@ dancing_queen = {
     } <<
       \new Staff \part-Pfive-one
       \new Staff \part-Pfive-two
+    >>
+
+    \new StaffGroup \with {
+      systemStartDelimiter = #'SystemStartSquare
+    } <<
+      \tag #'(chor soli donna)
+      \new Staff \with {
+        instrumentName = "Donna"
+        shortInstrumentName = "D."
+      } \part-Psix-one \addlyrics \donna-lyrics
+
+      \tag #'(chor soli t_r)
+      \new Staff \with {
+        instrumentName = "Tanya & Rosie"
+        shortInstrumentName = "T.,R. "
+
+        soloText = #"Tanya"
+        soloIIText = #"Rosie"
+        aDueText = #"Tanya & Rosie"
+      } <<
+        \partCombine \part-Peight-one \part-Pseven-one
+        \new NullVoice = "aligner" \aligner-voice
+        \new Lyrics \lyricsto "aligner" \tanya-rosie-lyrics
+      >>
+    >>
+
+    \tag #'(chor)
+    \new StaffGroup <<
+      \new Staff \with {
+        instrumentName = "Chorus"
+        shortInstrumentName = "Ch."
+      } \partCombine \part-Pnine-one \part-Ponezero-one
     >>
 
     %{

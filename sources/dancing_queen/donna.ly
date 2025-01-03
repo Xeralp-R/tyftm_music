@@ -113,3 +113,7 @@ part-Psix-one = {
   a'1~ |
   a'1 |
 }
+
+donna-lyrics = \lyricmode {
+  You are the
+}

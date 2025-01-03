@@ -126,7 +126,7 @@
     }
   }
 
-  %{\bookpart {
+  \bookpart {
     \tocItem i.mamma_mia \markup { "6. Mamma Mia" }
 
     \header {
@@ -165,7 +165,7 @@
     }
   }
 
-  \bookpart {
+  %{\bookpart {
     \tocItem i.lay \markup { "9. Lay All Your Love On Me (Under Construction)" }
 
     %{\header {
