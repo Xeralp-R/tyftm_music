@@ -1,17 +1,17 @@
 % Automatically generated from a musicxml file.
 \version "2.24.0"
-\include "../styles/Global.ily"
+\include "../styles/global.ily"
 \include "../styles/final_styles/revision_style.ily"
 
 \include "our_last_summer/vl_1_2.ly"
 \include "our_last_summer/vl_3_4.ly"
 \include "our_last_summer/pno.ly"
+
 %{
 \include "our_last_summer/e_kbd.ly"
-
+\include "our_last_summer/chorus.ly"
 %}
 
-\include "our_last_summer/chorus.ly"
 \include "our_last_summer/men.ly"
 \include "our_last_summer/sophie.ly"
 
@@ -55,20 +55,6 @@ our_last_summer-marks = {
   R1*8 \bar "|."
 }
 
-chords_set = \chordmode {
-  \partial 2
-  s2
-  g2 b2:m |
-  c2 d2 |
-  g2 b2:m |
-  c2 d2 |
-  g2 b2:m |
-  e2:m b2:m |
-  c2 d2 |
-  g1:sus |
-  g1
-}
-
 our_last_summer = {
   <<
     \new BarNumberStaff <<
@@ -110,77 +96,54 @@ our_last_summer = {
         \new Staff \part-Poneone-one
         \new Staff \part-Poneone-two
     >>
-    
-    %{
-    \new Staff \part-Pfive-one
-    \new Staff \part-Psix-one
-    \new Staff \part-Pseven-one
-    \new Staff \part-Peight-one
 
-    \new StaffGroup \with {
-      instrumentName = "Chorus"
-      shortInstrumentName = "Ch."
-    } <<
-        \new Staff \part-Ponezero-one
-        \new Staff \part-Ponezero-two
-    >>
-
-    \new PianoStaff \with {
-      instrumentName = "Piano"
-      shortInstrumentName = "Pf."
-    } <<
-        \new Staff \part-Poneone-one
-        \new Staff \part-Poneone-two
-    >>
-    
-    \new BarNumberStaff <<
-      { \chiquitita-marks }
-      { \compressEmptyMeasures \chiquitita-measures }
-    >>
-
-    <<
-      \new ChordNames \chords_set
-      \new StaffGroup \with {
-        systemStartDelimiter = #'SystemStartSquare
-      } << 
-        \new Staff {
-          \clef "treble_8" 
-          \part-Ponethree-one
-        }
-        \new TabStaff {
-          \part-Ponethree-one
-        }
-      >>
-    >>
-    
+    \tag #'(chor soli sophie)
+    \new Staff \with {
+      instrumentName = "Sophie"
+      shortInstrumentName = "S."
+    } \PartPEightVoiceOne \addlyrics \PartPEightVoiceOneLyricsOne
 
     \new StaffGroup \with {
       systemStartDelimiter = #'SystemStartSquare
     } <<
-    \new Staff \with {
-      instrumentName = "Harry"
-      shortInstrumentName = "H."
-    } <<
-      \new Voice = "a" \PartPFiveVoiceOne
-      \new Lyrics \lyricsto "a" \PartPFiveVoiceOneLyricsOne
-    >>
-    \new Staff \part-Psix-one
-    \new Staff \part-Pseven-one
-    \new Staff \part-Peight-one
-    >>
+      \tag #'(chor soli harry)
+      \new Staff \with {
+        instrumentName = "Harry"
+        shortInstrumentName = "H."
+      } \PartPFiveVoiceOne \addlyrics \PartPFiveVoiceOneLyricsOne
 
-    %}
+      \tag #'(chor soli sam)
+      \new Staff \with {
+        instrumentName = "Sam"
+        shortInstrumentName = "Sm."
+      } \PartPSixVoiceOne \addlyrics \PartPSixVoiceOneLyricsOne
 
-    \new StaffGroup \with {
-      instrumentName = "Chorus"
-      shortInstrumentName = "Ch."
-    } <<
-        \new Staff \part-Ponezero-one
-        \new Staff \part-Ponezero-two
+      \tag #'(chor soli bill)
+      \new Staff \with {
+        instrumentName = "Bill"
+        shortInstrumentName = "Bl."
+      } \PartPSevenVoiceOne \addlyrics \PartPSevenVoiceOneLyricsOne
     >>
 
     \tag #'(accompaniment band l_guit)
     <<
+      <<
+        \new ChordNames \chords_set
+        \new StaffGroup \with {
+          systemStartDelimiter = #'SystemStartSquare
+          instrumentName = "On-Stage Guitar"
+          shortInstrumentName = "O.S. Guit."
+        } << 
+          \new Staff {
+            \clef "treble_8" 
+            \part-Ponethree-one
+          }
+          \new TabStaff {
+            \part-Ponethree-one
+          }
+        >>
+      >>
+
       \new StaffGroup \with {
         systemStartDelimiter = #'SystemStartSquare
         instrumentName = "Lead Guitar"
@@ -248,7 +211,7 @@ our_last_summer = {
     
 }
 
-
+%{
 \header {
   \our_last_summer_header
 }
@@ -256,5 +219,5 @@ our_last_summer = {
 \score {
   \our_last_summer
 }
-
+%}
 

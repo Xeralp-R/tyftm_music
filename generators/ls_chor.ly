@@ -120,7 +120,7 @@
       \our_last_summer_header
     }
     \score { 
-      \our_last_summer
+      \keepWithTag #'(chor) \our_last_summer
 
       \layout {}
     }
