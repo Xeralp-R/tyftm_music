@@ -78,9 +78,11 @@ voulez_vous =  {
     } <<
       \new Staff \women
       \addlyrics \women-lyr
-      \new Staff \men 
-      \new NullVoice \men_null_vc
-      \addlyrics \men_lyr
+      \new Staff <<
+        \men 
+        \new NullVoice \men_null_vc
+        \addlyrics \men_lyr
+      >>
     >>
     
     \tag #'(accompaniment band l_guit)
@@ -142,7 +144,7 @@ voulez_vous =  {
   >>
 }
 
-%{
+
 \header {
   \voulez_vous_header
 }
@@ -151,4 +153,4 @@ voulez_vous =  {
   \voulez_vous
   \layout{}
 }
-%}
+

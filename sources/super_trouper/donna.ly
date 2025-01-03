@@ -70,9 +70,8 @@ PartPSixVoiceOne =  {
     d'2. r8 d'8 | % 72
     d'8 c'8 d'8 e'8 d'8 ( c'8 ) c'8 r8 | % 73
     c'1 | % 74
-    e'8 ^\p ^ "rit." \startTrillSpan ^\> d'8 \stopTrillSpan e'8 f'8 e'8
+    e'8 ^ "rit." \startTrillSpan ^\> d'8 \stopTrillSpan e'8 f'8 e'8
     ( d'8 ) d'4 \bar "|."
-    ^\!
 }
 
 PartPSixVoiceOneLyricsOne =  \lyricmode {

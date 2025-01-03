@@ -10,7 +10,7 @@
 \include "../sources/overture.ly"
 \include "../sources/prelude.ly"
 \include "../sources/dancing_queen.ly"
-\include "../sources/voulez_vous.ly"
+%\include "../sources/voulez_vous.ly"
 
 \pointAndClickOff
 
@@ -165,12 +165,12 @@
     }
   }
 
-  %{\bookpart {
+  \bookpart {
     \tocItem i.lay \markup { "9. Lay All Your Love On Me (Under Construction)" }
 
     %{\header {
       \overture_header
-    }
+    %}
     \markup {
       \vspace #14
 
@@ -198,7 +198,7 @@
 
     %{\header {
       \overture_header
-    }
+    %}
     \markup {
       \vspace #14
 
@@ -208,8 +208,9 @@
     }
   }
 
+  %{
   \bookpart {
-    \tocItem i.vv \markup { "12. Voulez Vous" }
+    \tocItem i.vv \markup { "12. Voulez Vous (Under Construction)" }
 
     \header {
       \voulez_vous_header

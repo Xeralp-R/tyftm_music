@@ -475,14 +475,14 @@ men = {
       g'8 fis'16 fis'16~ fis'2. |
     } \\
     {
+      r8 b8\f b8 b8 |
+      c'8 b16 b16~ b2.~ |
+      b1 |
+    } \\
+    {
       r2
       r4 r8 b8 e'8 dis'16 d'16 d'4~ |
       d'1 |
-    } \\
-    {
-      r8 b8\f b8 b8 |
-      c'8 b16 b16 b2.~ |
-      b1 |
     }
   >>
 }
@@ -502,7 +502,7 @@ men_null_vc = {
   b8 e'16 fis'16~ fis'16 e'16 g'8 r2 |
   r2 \clef bass 
   r8 b8\f b8 b8 |
-  c'8 b16 b16 b8 b8 e'8 dis'16 d'16 d'4 |
+  c'8 b16 b16~ b8 b8 e'8 dis'16 d'16 d'4 |
   g'8 fis'16 fis'16~ fis'2. |
 }
 
