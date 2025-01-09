@@ -67,10 +67,12 @@ voulez_vous =  {
       \new Staff \part-Pfive-two
     >>
     %}
+    %{
     \new Staff \part-Psix-one
     \new Staff \part-Pseven-one
     \new Staff \part-Peight-one
     \new Staff \part-Pnine-one
+    %}
 
     \new ChoirStaff \with {
       instrumentName = "Chorus"
