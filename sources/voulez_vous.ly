@@ -78,8 +78,11 @@ voulez_vous =  {
       instrumentName = "Chorus"
       shortInstrumentName = "Ch."
     } <<
-      \new Staff \women
-      \addlyrics \women-lyr
+      \new Staff <<
+        \women
+        \new NullVoice \women-null-voice
+        \addlyrics \women-lyr
+      >>
       \new Staff <<
         \men 
         \new NullVoice \men_null_vc
