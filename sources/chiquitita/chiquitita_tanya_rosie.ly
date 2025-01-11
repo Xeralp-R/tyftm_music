@@ -32,7 +32,7 @@ part-Psix-one = {
   \tempo "Allegretto. Moving" 4 = 84
   des'8 c'8 bes8 c'8~ c'4 r4 |
   R1
-  r4 r8 c'16\mf des'16 ees'8 f'8 ees'16 des'16 c'8 | %\mark "A"
+  r4 r8 c'16^\mf des'16 ees'8 f'8 ees'16 des'16 c'8 | %\mark "A"
   % 15
   ees'2. r4 |
   r4 r8 c'16 des'16 ees'4 f'4 |
@@ -52,7 +52,7 @@ part-Psix-one = {
   ees'4 r8 des'16 ees'16 r8 f'8~ f'8 f'16 f'16 |
   r8 ees'8 des'8 c'8~ c'2 |
   % 30
-  r4 r8 f'16\f g'16 aes'8 bes'8 aes'16 g'16
+  r4 r8 f'16^\f g'16 aes'8 bes'8 aes'16 g'16
   f'16( aes'16) | %\mark "C"
   aes'1 |
   \time 5/4
@@ -88,7 +88,7 @@ part-Pseven-one = {
   \clef treble
   \tempo "In free time"
 
-  r4^\markup { "Not in perfect tune" } r8 c'16\f des'16 ees'8 f'8 ees'16 des'16 c'8 |
+  r4^\markup { "Not in perfect tune" } r8 c'16^\f des'16 ees'8 f'8 ees'16 des'16 c'8 |
   ees'4. r8 r2 |
   R1^\markup {"Tanya: Oh, me? Uhh..."} |
   R1 |
@@ -113,7 +113,7 @@ part-Pseven-one = {
   \tempo "Allegretto. Moving" 4 = 84
   des'8 c'8 bes8 c'8~ c'4 r4 |
   R1
-  r4 r8 aes16\mf bes16 c'8 des'8 c'16 bes16 aes8 | %\mark "A"
+  r4 r8 aes16^\mf bes16 c'8 des'8 c'16 bes16 aes8 | %\mark "A"
   % 15
   c'2. r4 |
   r4 r8 aes16 bes16 c'4 des'4 |
@@ -133,7 +133,7 @@ part-Pseven-one = {
   c'4 r8 bes16 c'16 r8 des'8~ des'8 des'16 des'16 |
   r8 c'8 bes8 aes8~ aes2 |
   % 30
-  r4 r8 f'16\f g'16 aes'8 bes'8 aes'16 g'16
+  r4 r8 f'16^\f g'16 aes'8 bes'8 aes'16 g'16
   f'16( aes'16) | %\mark "C"
   aes'1 |
   \time 5/4
@@ -190,7 +190,7 @@ aligner-voice = {
   des'8 c'8 bes8 c'8~ c'4 r4 |
   % copied from tanya
   R1
-  r4 r8 c'16\mf des'16 ees'8 f'8 ees'16 des'16 c'8 |
+  r4 r8 c'16^\mf des'16 ees'8 f'8 ees'16 des'16 c'8 |
   % 15
   ees'2. r4 |
   r4 r8 c'16 des'16 ees'4 f'4 |
@@ -210,7 +210,7 @@ aligner-voice = {
   ees'4 r8 des'16 ees'16 r8 f'8~ f'8 f'16 f'16 |
   r8 ees'8 des'8 c'8~ c'2 |
   % 30
-  r4 r8 f'16-\markup { "Tanya and Rosie" }\f g'16 aes'8 bes'8 aes'16 g'16
+  r4 r8 f'16-\markup { "Tanya and Rosie" }^\f g'16 aes'8 bes'8 aes'16 g'16
   f'16( aes'16) |
   aes'1 |
   \time 5/4
