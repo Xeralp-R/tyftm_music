@@ -144,7 +144,7 @@ gimme_iiix = {
 
     \tag #'(accompaniment band r_guit)
     <<
-      %\new ChordNames \voulez-vous-r-guit-chords
+      \new ChordNames \r_guit_chords
       \new Staff \with {
         instrumentName = "Rhythm Guitar"
         shortInstrumentName = "R. Guit"
