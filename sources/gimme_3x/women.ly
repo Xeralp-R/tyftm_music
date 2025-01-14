@@ -1,0 +1,295 @@
+\include "../../styles/global.ily"
+\version "2.24.4"
+
+part-Pseven-one = {
+  \key f \major
+  \time 4/4
+  \clef treble
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  % 5
+  r8\f e'8 e'8 e'8 e'8. f'16~ f'8 g'8~ |
+  g'4\bendAfter #-4 r4 r2 |
+  r8 e'8 e'8 e'8 e'8. f'16~ f'8 g'8~ |
+  g'1~ |
+  g'1~ |
+  % 10
+  g'2. r4 |
+  d'8\f f'8 d'8 f'8 d'8 f'8 a'8 g'8~ |
+  g'8 f'8 d'8 f'8~ f'8 d'8 r8 aes'8~ |
+  aes'8 g'8 f'8 d'16 f'16~ f'8 d'8 d'8 d'8 |
+  c'8 f'8 f'8 d'8~ d'4 r4 |
+  % 15
+  d'8 f'8 d'8 f'8 d'8 f'8 a'8 g'8~ |
+  g'8 f'8 d'8 f'8~ f'8 d'8 r8 aes'8~ |
+  aes'8 g'8 f'8 d'16 f'16~ f'8 d'8 d'8 d'8 |
+  c'8 f'8 f'8 d'8~ d'4 r4 |
+  R1 |
+  % 20
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  % 25
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  % 30
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  % 35
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  % 40
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  % 45
+  r8\mf e'8 e'8 e'8 e'8. f'16~ f'8 g'8~ |
+  g'4\bendAfter #-4 r2 r4 |
+  r8 e'8 e'8 e'8 e'8. f'16~ f'8 g'8~ |
+  g'1(\< |
+  d''1)( |
+  % 50
+  d''2)( d''4) r4 |
+  d'8\f f'8 d'8 f'8 d'8 f'8 a'8 g'8~ |
+  g'8 f'8 d'8 f'8~ f'8 d'4 aes'8~ |
+  aes'8 g'8 f'8 d'16 f'16~ f'8 d'8 f'8 f'8 |
+  c'8 e'8 f'8 d'8~ d'4 r4 |
+  % 55
+  d'8 f'8 d'8 f'8 d'8 f'8 a'8 g'8~ |
+  g'8 f'8 d'8 f'8~ f'8 d'4 aes'8~ |
+  aes'8 g'8 f'8 d'16 f'16~ f'8 d'8 f'8 f'8 |
+  c'8 e'8 f'8 d'8~ d'4 r4 |
+  R1 |
+  % 60
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  % 65
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  % 70
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  % 75
+  R1 |
+  r8\f e'8 e'8 e'8 e'8. f'16~ f'8 g'8~ |
+  g'4\bendAfter #-4 r2 r4 |
+  r8 e'8 e'8 e'8 e'8. f'16~ f'8 g'8( |
+  bes'2) r2 |
+  % 80
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  % 85
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  % 90
+  R1 |
+  f'8 a'8 f'8 a'8 f'8 a'8 c''8 bes'8~ |
+  bes'8 c''8 c''8 a'8~ a'8 c''8( a'8) c''8~ |
+  c''8 bes'8 a'8 a'16 a'16~ a'8 a'8 f'8 f'8 |
+  f'8 f'8 a'8 a'8( f'4) r4 |
+  % 95
+  f'8 a'8 f'8 a'8 f'8 a'8 c''8 bes'8~ |
+  bes'8 c''8 c''8 a'8~ a'8 c''8( a'8) c''8~ |
+  c''8 bes'8 a'8 a'16 a'16~ a'8 a'8 f'8 f'8 |
+  \key a \major
+  f'8 f'8 a'8 a'8( f'4) r4 |
+  R1 |
+  % 100
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  % 105
+  R1 |
+  R1 |
+}
+
+part-Peight-one = {
+  \key f \major
+  \time 4/4
+  \clef treble
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  % 5
+  r8\f e'8 e'8 e'8 e'8. f'16~ f'8 g'8~ |
+  g'4\bendAfter #-4 r4 r2 |
+  r8 e'8 e'8 e'8 e'8. f'16~ f'8 g'8~ |
+  g'1~ |
+  g'1~ |
+  % 10
+  g'2. r4 |
+  d'8\f f'8 d'8 f'8 d'8 f'8 a'8 g'8~ |
+  g'8 f'8 d'8 f'8~ f'8 d'8 r8 aes'8~ |
+  aes'8 g'8 f'8 d'16 f'16~ f'8 d'8 d'8 d'8 |
+  c'8 a8 f'8 d'8~ d'4 r4 |
+  % 15
+  d'8 f'8 d'8 f'8 d'8 f'8 a'8 g'8~ |
+  g'8 f'8 d'8 f'8~ f'8 d'8 r8 aes'8~ |
+  aes'8 g'8 f'8 d'16 f'16~ f'8 d'8 d'8 d'8 |
+  c'8 a8 f'8 d'8~ d'4 r4 |
+  R1 |
+  % 20
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  % 25
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  % 30
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  % 35
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  % 40
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  % 45
+  r8\mf e'8 e'8 e'8 e'8. f'16~ f'8 g'8~ |
+  g'4\bendAfter #-4 r2 r4 |
+  r8 e'8 e'8 e'8 e'8. f'16~ f'8 g'8~ |
+  g'1~\< |
+  g'1~ |
+  % 50
+  g'2~ <e' g' >4 r4 |
+  d'8\f f'8 d'8 f'8 d'8 f'8 a'8 e'8~ |
+  e'8 d'8 bes8 bes8~ bes8 d'8( c'8) d'8( |
+  f'8) f'8 f'8 f'16 d'16~ d'8 d'8 d'8 d'8 |
+  d'8 a8 a8 d'8~ d'4 r4 |
+  % 55
+  d'8 f'8 d'8 f'8 d'8 f'8 a'8 e'8~ |
+  e'8 d'8 bes8 bes8~ bes8 d'8( c'8) d'8( |
+  f'8) f'8 f'8 f'16 d'16~ d'8 d'8 d'8 d'8 |
+  d'8 a8 a8 d'8~ d'4 r4 |
+  R1 |
+  % 60
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  % 65
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  % 70
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  % 75
+  R1 |
+  r8\f e'8 e'8 e'8 e'8. f'16~ f'8 g'8~ |
+  g'4\bendAfter #-4 r2 r4 |
+  r8 e'8 e'8 e'8 e'8. f'16~ f'8 g'8~ |
+  <e' g' >2 r2 |
+  % 80
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  % 85
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  % 90
+  R1\ff |
+  d'8\ff f'8 d'8 f'8 d'8 f'8 a'8 g'8~ |
+  g'8 f'8 d'8 f'8~ f'8 d'4 aes'8~ |
+  aes'8 g'8 f'8 d'16 f'16~ f'8 d'8 d'8 d'8 |
+  c'8 a8 f'8 d'8~ d'4 r4 |
+  % 95
+  d'8 f'8 d'8 f'8 d'8 f'8 a'8 g'8~ |
+  g'8 f'8 d'8 f'8~ f'8 d'4 aes'8~ |
+  aes'8 g'8 f'8 d'16 f'16~ f'8 d'8 d'8 d'8 |
+  \key a \major
+  c'8 a8 f'8 d'8~ d'4 r4 |
+  R1 |
+  % 100
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  % 105
+  R1 |
+  R1 |
+}
+
+women-lyr = \lyricmode {
+  Is there a man out "there?"
+  Some -- one to hear my "pray'r?" __
+  Gim -- me, gim -- me, gim -- me, a man af -- ter mid --  night,
+  "Won't"  some -- bo -- dy help me chase the sha -- dows a -- way?
+  Gim -- me, gim -- me, gim -- me, a man af -- ter mid --  night,
+  Take me through the dark --  ness to the break of the day.
+
+  Is there a man out "there?"
+  Some -- one to hear my "pray'r?" __
+  Gim -- me, gim -- me, gim -- me, a man af -- ter mid --  night,
+  "Won't"  some -- bo -- dy help me chase the sha -- dows a -- way?
+  Gim -- me, gim -- me, gim -- me, a man af -- ter mid --  night,
+  Take me through the dark --  ness to the break of the day.
+
+  Is there a man out "there?"
+  Some -- one to hear my "pray'r?" __
+  Gim -- me, gim -- me, gim -- me, a man af -- ter mid --  night,
+  "Won't"  some -- bo -- dy help me chase the sha -- dows a -- way?
+  Gim -- me, gim -- me, gim -- me, a man af -- ter mid --  night,
+  Take me through the dark --  ness to the break of the day.
+}

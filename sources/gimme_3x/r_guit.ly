@@ -1,0 +1,238 @@
+part-Poneone-one = {
+  \key f \major
+  \time 4/4
+  \clef treble
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  % 5
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  % 10
+  R1 |
+  <d' f' a' >8\p <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16 <d'
+  f' a' >16 <bes d' f' >8 <bes d' f' >16 <bes d' f' >16 <bes d' f' >8 <bes
+  d' f' >16 <bes d' f' >16 |
+  <c' e' g' >8 <c' e' g' >16 <c' e' g' >16 <c' e' g' >8 <c' e' g' >16 <c' e'
+  g' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16
+  <d' f' a' >16 |
+  <bes d' f' >8 <bes d' f' >16 <bes d' f' >16 <bes d' f' >8 <bes d' f' >16
+  <bes d' f' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d'
+  f' a' >16 <d' f' a' >16 |
+  <c' e' g' >8 <c' e' g' >16 <c' e' g' >16 <c' e' g' >8 <c' e' g' >16 <c' e'
+  g' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16
+  <d' f' a' >16 |
+  % 15
+  <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16 <d' f'
+  a' >16 <bes d' f' >8 <bes d' f' >16 <bes d' f' >16 <bes d' f' >8 <bes d'
+  f' >16 <bes d' f' >16 |
+  <c' e' g' >8 <c' e' g' >16 <c' e' g' >16 <c' e' g' >8 <c' e' g' >16 <c' e'
+  g' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16
+  <d' f' a' >16 |
+  <bes d' f' >8 <bes d' f' >16 <bes d' f' >16 <bes d' f' >8 <bes d' f' >16
+  <bes d' f' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d'
+  f' a' >16 <d' f' a' >16 |
+  <c' e' g' >8 <c' e' g' >16 <c' e' g' >16 <c' e' g' >8 <c' e' g' >16 <c' e'
+  g' >16 <d' f' a' >2~~~ |
+  <d' f' a' >1\> |
+  % 20
+  <d' f' a' >8\mp-\markup { "P.M." } <d' f' a' >16 <d' f' a' >16 <d' f' a'
+  >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16
+  <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 |
+  <d' f' a' >8\mp-\markup { "P.M." } <d' f' a' >16 <d' f' a' >16 <d' f' a'
+  >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16
+  <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 |
+  <d' f' a' >8\mp-\markup { "P.M." } <d' f' a' >16 <d' f' a' >16 <d' f' a'
+  >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16
+  <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 |
+  <d' f' a' >8\mp-\markup { "P.M." } <d' f' a' >16 <d' f' a' >16 <d' f' a'
+  >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16
+  <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 |
+  <d' f' a' >8\mp-\markup { "P.M." } <d' f' a' >16 <d' f' a' >16 <d' f' a'
+  >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16
+  <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 |
+  % 25
+  <d' f' a' >8\mp-\markup { "P.M." } <d' f' a' >16 <d' f' a' >16 <d' f' a'
+  >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16
+  <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 |
+  <d' f' a' >8\mp-\markup { "P.M." } <d' f' a' >16 <d' f' a' >16 <d' f' a'
+  >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16
+  <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 |
+  <d' f' a' >8\mp-\markup { "P.M." } <d' f' a' >16 <d' f' a' >16 <d' f' a'
+  >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16
+  <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 |
+  <d' f' a' >8\mp-\markup { "P.M." } <d' f' a' >16 <d' f' a' >16 <d' f' a'
+  >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16
+  <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 |
+  <d' f' a' >8\mp-\markup { "P.M." } <d' f' a' >16 <d' f' a' >16 <d' f' a'
+  >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16
+  <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 |
+  % 30
+  <d' f' a' >8\mp-\markup { "P.M." } <d' f' a' >16 <d' f' a' >16 <d' f' a'
+  >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16
+  <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 |
+  <d' f' a' >8\mp-\markup { "P.M." } <d' f' a' >16 <d' f' a' >16 <d' f' a'
+  >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16
+  <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 |
+  <d' f' a' >8\mp-\markup { "P.M." } <d' f' a' >16 <d' f' a' >16 <d' f' a'
+  >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16
+  <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 |
+  <d' f' a' >8\mp-\markup { "P.M." } <d' f' a' >16 <d' f' a' >16 <d' f' a'
+  >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16
+  <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 |
+  <d' f' a' >8\mp-\markup { "P.M." } <d' f' a' >16 <d' f' a' >16 <d' f' a'
+  >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16
+  <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 |
+  % 35
+  <d' f' a' >8\mp-\markup { "P.M." } <d' f' a' >16 <d' f' a' >16 <d' f' a'
+  >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16
+  <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 |
+  <d' f' a' >8\mp-\markup { "P.M." } <d' f' a' >16 <d' f' a' >16 <d' f' a'
+  >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16
+  <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 |
+  <d' f' a' >8\mp-\markup { "P.M." } <d' f' a' >16 <d' f' a' >16 <d' f' a'
+  >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16
+  <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 |
+  <d' f' a' >8\mp-\markup { "P.M." } <d' f' a' >16 <d' f' a' >16 <d' f' a'
+  >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16
+  <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 |
+  <d' f' a' >8\mp-\markup { "P.M." } <d' f' a' >16 <d' f' a' >16 <d' f' a'
+  >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16
+  <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 |
+  % 40
+  <d' f' a' >8\mp-\markup { "P.M." } <d' f' a' >16 <d' f' a' >16 <d' f' a'
+  >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16
+  <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 |
+  <d' f' a' >8\mp-\markup { "P.M." } <d' f' a' >16 <d' f' a' >16 <d' f' a'
+  >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16
+  <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 |
+  <d' f' a' >8\mp-\markup { "P.M." } <d' f' a' >16 <d' f' a' >16 <d' f' a'
+  >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16
+  <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 |
+  <d' f' a' >8\mp-\markup { "P.M." } <d' f' a' >16 <d' f' a' >16 <d' f' a'
+  >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16
+  <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 |
+  <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16 <d' f'
+  a' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16
+  <d' f' a' >16 |
+  % 45
+  <bes d' f' >2 <bes d' f' >2 |
+  <bes d' f' >2 <bes d' f' >8 <bes d' f' >16 <bes d' f' >16 <bes d' f' >4 |
+  <g bes d' >2 <g bes d' >2 |
+  <g bes d' >2 <g bes d' >8 <g bes d' >16 <g bes d' >16 <g bes d' >4 |
+  <d' f' a' >4 <d' f' a' >4 <d' f' a' >4 <d' f' a' >4 |
+  % 50
+  <a cis' e' >4 <a cis' e' >4 <a cis' e' >8 <a cis' e' >16 <a cis' e' >16 <a
+  cis' e' >8 <a cis' e' >16 <a cis' e' >16 |
+  <d' f' a' >8\p <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16 <d'
+  f' a' >16 <bes d' f' >8 <bes d' f' >16 <bes d' f' >16 <bes d' f' >8 <bes
+  d' f' >16 <bes d' f' >16 |
+  <c' e' g' >8 <c' e' g' >16 <c' e' g' >16 <c' e' g' >8 <c' e' g' >16 <c' e'
+  g' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16
+  <d' f' a' >16 |
+  <bes d' f' >8 <bes d' f' >16 <bes d' f' >16 <bes d' f' >8 <bes d' f' >16
+  <bes d' f' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d'
+  f' a' >16 <d' f' a' >16 |
+  <c' e' g' >8 <c' e' g' >16 <c' e' g' >16 <c' e' g' >8 <c' e' g' >16 <c' e'
+  g' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16
+  <d' f' a' >16 |
+  % 55
+  <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16 <d' f'
+  a' >16 <bes d' f' >8 <bes d' f' >16 <bes d' f' >16 <bes d' f' >8 <bes d'
+  f' >16 <bes d' f' >16 |
+  <c' e' g' >8 <c' e' g' >16 <c' e' g' >16 <c' e' g' >8 <c' e' g' >16 <c' e'
+  g' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16
+  <d' f' a' >16 |
+  <bes d' f' >8 <bes d' f' >16 <bes d' f' >16 <bes d' f' >8 <bes d' f' >16
+  <bes d' f' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d'
+  f' a' >16 <d' f' a' >16 |
+  <c' e' g' >8 <c' e' g' >16 <c' e' g' >16 <c' e' g' >8 <c' e' g' >16 <c' e'
+  g' >16 <d' f' a' >2~~~ |
+  <d' f' a' >1\> |
+  % 60
+  <d' f' a' >8\mp-\markup { "P.M." } <d' f' a' >16 <d' f' a' >16 <d' f' a'
+  >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16
+  <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  % 65
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  % 70
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  <d' f' a' >8\p <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16 <d'
+  f' a' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a'
+  >16 <d' f' a' >16 |
+  % 75
+  <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16 <d' f'
+  a' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16
+  <d' f' a' >16 |
+  <bes d' f' >2 <bes d' f' >2 |
+  <bes d' f' >2 <bes d' f' >8 <bes d' f' >16 <bes d' f' >16 <bes d' f' >4 |
+  <g bes d' >2 <g bes d' >2 |
+  <g bes d' >2 <g bes d' >8-^ r4 r8 |
+  % 80
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  % 85
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  r2 <d' f' a' >2\pp |
+  % 90
+  <d' f' a' >8\< <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16 <d'
+  f' a' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a'
+  >16 <d' f' a' >16 |
+  <d' f' a' >8\p <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16 <d'
+  f' a' >16 <bes d' f' >8 <bes d' f' >16 <bes d' f' >16 <bes d' f' >8 <bes
+  d' f' >16 <bes d' f' >16 |
+  <c' e' g' >8 <c' e' g' >16 <c' e' g' >16 <c' e' g' >8 <c' e' g' >16 <c' e'
+  g' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16
+  <d' f' a' >16 |
+  <bes d' f' >8 <bes d' f' >16 <bes d' f' >16 <bes d' f' >8 <bes d' f' >16
+  <bes d' f' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d'
+  f' a' >16 <d' f' a' >16 |
+  <c' e' g' >8 <c' e' g' >16 <c' e' g' >16 <c' e' g' >8 <c' e' g' >16 <c' e'
+  g' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16
+  <d' f' a' >16 |
+  % 95
+  <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16 <d' f'
+  a' >16 <bes d' f' >8 <bes d' f' >16 <bes d' f' >16 <bes d' f' >8 <bes d'
+  f' >16 <bes d' f' >16 |
+  <c' e' g' >8 <c' e' g' >16 <c' e' g' >16 <c' e' g' >8 <c' e' g' >16 <c' e'
+  g' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16
+  <d' f' a' >16 |
+  <bes d' f' >8 <bes d' f' >16 <bes d' f' >16 <bes d' f' >8 <bes d' f' >16
+  <bes d' f' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d'
+  f' a' >16 <d' f' a' >16 |
+  \key a \major
+  <c' e' g' >8 <c' e' g' >16 <c' e' g' >16 <c' e' g' >8 <c' e' g' >16 <c' e'
+  g' >16 <d' f' a' >2 |
+  R1 |
+  % 100
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  R1 |
+  % 105
+  R1 |
+  R1 |
+}
