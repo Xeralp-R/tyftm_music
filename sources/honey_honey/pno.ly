@@ -2,7 +2,7 @@ part-Pnine-one = {
     \key e \major
     \time 4/4
     \clef treble
-    e'8\mp gis'8 b'8 gis'8 e'8 gis'8 b'8 gis'8 |
+    e'8\f gis'8 b'8 gis'8 e'8 gis'8 b'8 gis'8 |
     e'8 gis'8 b'8 gis'8 e'8 gis'8 b'8 gis'8 |
     a8 cis'8 e'8 cis'8 a8 cis'8 e'8 cis'8 |
     a8\< cis'8 e'8 cis'8 <cis' e' a' >4-^\! <dis' fis' b' >4-> |
