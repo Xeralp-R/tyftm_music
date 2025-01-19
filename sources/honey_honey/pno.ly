@@ -74,7 +74,7 @@ part-Pnine-one = {
     <e' gis' cis'' >8 <e' gis' cis'' >8 <e' gis' cis'' >8 <e' gis' cis'' >8 
     <e' gis' cis'' >8 <e' gis' cis'' >8 <e' gis' cis'' >8 <e' gis' cis'' >8 |
 % 35
-    <e' a' cis'' >8\mp <e' a' cis'' >8 <e' a' cis'' >8 <e' a' cis'' >8 <e' a' 
+    <e' a' cis'' >8 <e' a' cis'' >8 <e' a' cis'' >8 <e' a' cis'' >8 <e' a' 
     cis'' >8 <e' a' cis'' >8 <e' a' cis'' >8 <e' a' cis'' >8 |
     <fis' b' e'' >1 |
     <fis' b' dis'' >1 |
