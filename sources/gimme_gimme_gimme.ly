@@ -67,7 +67,7 @@ gimme_iiix = {
       { \gimme_iiix_marks }
       { \compressEmptyMeasures \gimme_iiix_measures }
     >>
-
+    %{
     \new StaffGroup <<
       \tag #'(accompaniment orch vl_i)
       \new Staff \with {
@@ -100,7 +100,7 @@ gimme_iiix = {
       } <<
         \part-Pfour-one
       >>
-    >>
+    >>%}
 
     \tag #'(accompaniment orch pno)
     \new GrandStaff \with {
