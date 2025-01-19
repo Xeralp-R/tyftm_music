@@ -42,7 +42,7 @@ part-Pnine-one = {
     a8\< cis'8 e'8 cis'8 <a a' >4-^\rf <b b' >4-^ |
 % 20
     <e' a' cis'' >8\pp <e' a' cis'' >8\< <e' a' cis'' >8 <e' a' cis'' >8 <e' 
-    a' cis'' >4-^ <fis' b' dis'' >4-^ |
+    a' cis'' >4-^\rf <fis' b' dis'' >4-^ |
     <e' gis' b' >8\mf <e' gis' b' >8 <e' gis' b' >8 <e' gis' b' >8 <e' gis' b' 
     >8 <e' gis' b' >8 <e' gis' b' >8 <e' gis' b' >8 |
     <e' gis' b' >8 <e' gis' b' >8 <e' gis' b' >8 <e' gis' b' >8 <e' gis' b' >8 
