@@ -5,7 +5,7 @@ part-Pnine-one = {
     e'8\f gis'8 b'8 gis'8 e'8 gis'8 b'8 gis'8 |
     e'8 gis'8 b'8 gis'8 e'8 gis'8 b'8 gis'8 |
     a8 cis'8 e'8 cis'8 a8 cis'8 e'8 cis'8 |
-    a8\< cis'8 e'8 cis'8 <cis' e' a' >4-^\! <dis' fis' b' >4-> |
+    a8\< cis'8 e'8 cis'8 <cis' e' a' >4-^\rf <dis' fis' b' >4-> |
     <e' gis' b' >8\mp <e' gis' b' >8 <e' gis' b' >8 <e' gis' b' >8 <e' gis' b' 
     >8 <e' gis' b' >8 <e' gis' b' >8 <e' gis' b' >8 |
 % 5
@@ -39,7 +39,7 @@ part-Pnine-one = {
     <e' gis' cis'' >8 <e' gis' cis'' >8 <e' gis' cis'' >8 <e' gis' cis'' >8 |
     <e' a' cis'' >8 <e' a' cis'' >8 <e' a' cis'' >8 <e' a' cis'' >8 <e' a' 
     cis'' >8 <e' a' cis'' >8 <e' a' cis'' >8 <e' a' cis'' >8 |
-    a8\< cis'8 e'8 cis'8 <a a' >4-^\! <b b' >4-^ |
+    a8\< cis'8 e'8 cis'8 <a a' >4-^\rf <b b' >4-^ |
 % 20
     <e' a' cis'' >8\pp <e' a' cis'' >8\< <e' a' cis'' >8 <e' a' cis'' >8 <e' 
     a' cis'' >4-^ <fis' b' dis'' >4-^ |
