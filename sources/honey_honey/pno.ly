@@ -1,11 +1,13 @@
+\include "../../styles/global.ily"
+
 part-Pnine-one = {
     \key e \major
     \time 4/4
     \clef treble
-    e'8\mp gis'8 b'8 gis'8 e'8 gis'8 b'8 gis'8 |
+    e'8\f gis'8 b'8 gis'8 e'8 gis'8 b'8 gis'8 |
     e'8 gis'8 b'8 gis'8 e'8 gis'8 b'8 gis'8 |
     a8 cis'8 e'8 cis'8 a8 cis'8 e'8 cis'8 |
-    a8\< cis'8 e'8 cis'8 <cis' e' a' >4-^\! <dis' fis' b' >4-> |
+    a8\< cis'8 e'8 cis'8 <cis' e' a' >4-^\rf <dis' fis' b' >4-> |
     <e' gis' b' >8\mp <e' gis' b' >8 <e' gis' b' >8 <e' gis' b' >8 <e' gis' b' 
     >8 <e' gis' b' >8 <e' gis' b' >8 <e' gis' b' >8 |
 % 5
@@ -39,10 +41,10 @@ part-Pnine-one = {
     <e' gis' cis'' >8 <e' gis' cis'' >8 <e' gis' cis'' >8 <e' gis' cis'' >8 |
     <e' a' cis'' >8 <e' a' cis'' >8 <e' a' cis'' >8 <e' a' cis'' >8 <e' a' 
     cis'' >8 <e' a' cis'' >8 <e' a' cis'' >8 <e' a' cis'' >8 |
-    a8\< cis'8 e'8 cis'8 <a a' >4-^\! <b b' >4-^ |
+    a8\< cis'8 e'8 cis'8 <a a' >4-^\rf <b b' >4-^ |
 % 20
-    <e' a' cis'' >8\pp <e' a' cis'' >8\< <e' a' cis'' >8 <e' a' cis'' >8 <e' 
-    a' cis'' >4-^ <fis' b' dis'' >4-^ |
+    <e' a' cis'' >8\pp\< <e' a' cis'' >8 <e' a' cis'' >8 <e' a' cis'' >8 <e' 
+    a' cis'' >4-^\rf <fis' b' dis'' >4-^ |
     <e' gis' b' >8\mf <e' gis' b' >8 <e' gis' b' >8 <e' gis' b' >8 <e' gis' b' 
     >8 <e' gis' b' >8 <e' gis' b' >8 <e' gis' b' >8 |
     <e' gis' b' >8 <e' gis' b' >8 <e' gis' b' >8 <e' gis' b' >8 <e' gis' b' >8 
@@ -74,21 +76,21 @@ part-Pnine-one = {
     <e' gis' cis'' >8 <e' gis' cis'' >8 <e' gis' cis'' >8 <e' gis' cis'' >8 
     <e' gis' cis'' >8 <e' gis' cis'' >8 <e' gis' cis'' >8 <e' gis' cis'' >8 |
 % 35
-    <e' a' cis'' >8\mp <e' a' cis'' >8 <e' a' cis'' >8 <e' a' cis'' >8 <e' a' 
+    <e' a' cis'' >8 <e' a' cis'' >8 <e' a' cis'' >8 <e' a' cis'' >8 <e' a' 
     cis'' >8 <e' a' cis'' >8 <e' a' cis'' >8 <e' a' cis'' >8 |
     <fis' b' e'' >1 |
     <fis' b' dis'' >1 |
-    << { d''8\ff d''8 cis''8 d''8~ d''8 cis''8 cis''8 d''8~ } \\ { } >> |
+    \hauptstimmeStart d''8\f d''8 cis''8 d''8~ d''8 cis''8 cis''8 d''8~ |
     d''8 e''8 r4 r4 r8 a'8 |
 % 40
     cis''8 cis''8 cis''8 b'8~ b'8 cis''8~ cis''8 a'8~ |
     a'8 fis'8 r2 r8 cis''8 |
     d''8 d''8 cis''8 d''8~ d''8 e''8 r8 cis''8 |
     d''8 d''8 cis''8 d''8 r8 e''8~ e''8 cis''8~ |
-    cis''4 r4 <e'' a'' d''' >4 <e'' a'' cis''' >4 |
+    cis''4\hauptstimmeEnd r4 <e'' a'' d''' >4\mp <e'' a'' cis''' >4 |
 % 45
     <cis'' e'' b'' >4 <cis'' e'' a'' >4 <cis'' e'' gis'' >4 <cis'' e'' fis'' 
-    >8 e''8 |
+    >8 \hauptstimmeStart e''8\f |
     <g' d'' g'' >8 <g' d'' g'' >8 <g' d'' fis'' >8 <g' d'' g'' >8 r8 <g' d'' 
     fis'' >8 <g' d'' fis'' >8 <g' d'' g'' >8~~~ |
     <g' d'' g'' >8 <g' d'' a'' >8~~~ <g' d'' a'' >4~~~ <g' d'' a'' >4 r8 a'8 |
@@ -99,7 +101,7 @@ part-Pnine-one = {
     <g' b' >8 <g' b' >8 <g' b' >8 <g' b' >8~~ <g' b' >8 <g' c'' >8 <g' d'' >8 
     <g' d'' >8~~ |
     <g' d'' >8 <g' c'' >8 <g' b' >8 <g' c'' >8~~ <g' c'' >8 g'8 a'4 |
-    b'2 cis'4\p b4\< |
+    b'2 \hauptstimmeEnd cis'4\p\< b4 |
     cis'4 dis'4 e'4 fis'4 |
     <e' gis' b' >8\mf <e' gis' b' >8 <e' gis' b' >8 <e' gis' b' >8 <e' gis' b' 
     >8 <e' gis' b' >8 <e' gis' b' >8 <e' gis' b' >8 |
@@ -132,13 +134,12 @@ part-Pnine-one = {
     <e' gis' b' >8 <e' gis' b' >8 <e' gis' b' >8 |
     <e' gis' cis'' >8 <e' gis' cis'' >8 <e' gis' cis'' >8 <e' gis' cis'' >8 
     <e' gis' cis'' >8 <e' gis' cis'' >8 <e' gis' cis'' >8 <e' gis' cis'' >8 |
-    << { <e' a' cis'' >8 <e' a' cis'' >8 <e' a' cis'' >8 <e' a' cis'' >8 <e' 
-    a' cis'' >8 <e' a' cis'' >8 <e' a' cis'' >8 <e' a' cis'' >8 } \\ { <a' 
+    << {e'8 e'8 e'8 e'8 e'8 e'8 e'8 e'8} \\ { <a' 
     cis'' >4 <gis' b' >4 <fis' a' >4 <e' gis' >4 } >> |
     <fis' b' e'' >1 |
 % 70
     <fis' b' dis'' >1 |
-    << { b'1\mp } \\ { fis'1 } \\ { } >> |
+    << { b'1\p } \\ { fis'1 } \\ { } >> |
     <<
         \context Voice = "voiceone" { \voiceOne 
             gis'1 |
@@ -153,10 +154,10 @@ part-Pnine-one = {
         % 75
         }
     >>
-    r8 cis''8\ff |
+    r8\hauptstimmeStart cis''8\f |
     d''8 d''8 cis''8 d''8~ d''8 e''8 r8 cis''8 |
     d''8 d''8 cis''8 d''8 r8 e''8~ e''8 cis''8~ |
-    cis''4 r4 <e'' a'' d''' >4\> <e'' a'' cis''' >4 |
+    cis''4\hauptstimmeEnd r4 <e'' a'' d''' >4\p\> <e'' a'' cis''' >4 |
     <cis'' e'' b'' >4 <cis'' e'' a'' >4 <cis'' e'' gis'' >4 <cis'' e'' fis'' 
     >8 e''8\! |
     <<
@@ -173,12 +174,12 @@ part-Pnine-one = {
             d''4. cis''2 <g' b' >8~~ |
         }
     >>
-    <g' b' d'' >2. r8 <g' b' >8\ff |
+    <g' b' d'' >2. r8\hauptstimmeStart <g' b' >8\f |
     <g' b' >8 <g' b' >8 <g' b' >8 <g' b' >8~~ <g' b' >8 <g' c'' >8 <g' d'' >8 
     <g' d'' >8~~ |
-    <g' d'' >8 <g' c'' >8 <g' b' >8 <g' c'' >8~~ <g' c'' >8 g'8 a'4 |
+    <g' d'' >8\hauptstimmeEnd <g' c'' >8 <g' b' >8 <g' c'' >8~~ <g' c'' >8 g'8 a'4 |
 % 85
-    b'2 cis'4\p b4\< |
+    b'2 cis'4\p\< b4 |
     cis'4 dis'4 e'4 fis'4 |
     <e' gis' b' >8\mf <e' gis' b' >8 <e' gis' b' >8 <e' gis' b' >8 <e' gis' b' 
     >8 <e' gis' b' >8 <e' gis' b' >8 <e' gis' b' >8 |
@@ -198,15 +199,15 @@ part-Pnine-one = {
     <e' a' cis'' >8 <e' a' cis'' >8 <e' a' cis'' >8 <e' a' cis'' >8 <e' a' 
     cis'' >8 <e' a' cis'' >8 <e' a' cis'' >8 <e' a' cis'' >8 |
 % 95
-    b'2 e''2 |
+    b'2\p e''2 |
     cis''2 gis'2 |
     r2 r4 b'4~ |
     b'4 dis''2 e''4~ |
     e''4 r4 r4 gis''4 |
 % 100
     cis''4 r4 e''4 gis'4 |
-    r4 b'4-> gis''4-> fis''4-> |
-    a''4-> r4 r2 |
+    r4\hauptstimmeStart b'4-> gis''4-> fis''4-> |
+    a''4->\hauptstimmeEnd r4\fermata r2\fermata |
 }
 
 part-Pnine-two = {
