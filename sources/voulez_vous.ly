@@ -1,7 +1,7 @@
 % Automatically generated from a musicxml file.
 \version "2.24.0"
 \include "../styles/Global.ily"
-%\include "../styles/final_styles/revision_style.ily"
+\include "../styles/final_styles/revision_style.ily"
 
 \include "voulez_vous/voulez_vous_perc.ly"
 \include "voulez_vous/voulez_vous_b_guit.ly"
@@ -9,6 +9,7 @@
 \include "voulez_vous/voulez_vous_l_guit.ly"
 \include "voulez_vous/chor_tb.ly"
 \include "voulez_vous/chor_sa.ly"
+\include "voulez_vous/chor_extra.ly"
 \include "voulez_vous/soli.ly"
 
 voulez_vous_header = \header {
@@ -74,6 +75,13 @@ voulez_vous =  {
     \new Staff \part-Pnine-one
     %}
 
+    \tag #'(chor soli)
+    \new Staff \with {
+      instrumentName = "Soli"
+      shortInstrumentName = "Si."
+    } \soli \addlyrics \soli_lyr
+
+    \tag #'(chor)
     \new ChoirStaff \with {
       instrumentName = "Chorus"
       shortInstrumentName = "Ch."
@@ -88,6 +96,13 @@ voulez_vous =  {
         \new NullVoice \men_null_vc
         \addlyrics \men_lyr
       >>
+    >>
+
+    \new ChoirStaff \with {
+      instrumentName = "Recorded Vocals"
+      shortInstrumentName = "Rec. V."
+    } <<
+      \new Staff << \extra_part \addlyrics \extra_lyr >>
     >>
     
     \tag #'(accompaniment band l_guit)
@@ -149,7 +164,6 @@ voulez_vous =  {
   >>
 }
 
-%{
 \header {
   \voulez_vous_header
 }
@@ -158,4 +172,3 @@ voulez_vous =  {
   \voulez_vous
   \layout{}
 }
-%}
