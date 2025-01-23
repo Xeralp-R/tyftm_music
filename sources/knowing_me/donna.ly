@@ -8,7 +8,7 @@ PartPSevenVoiceOne =  {
   a'4 fis'8 fis'8 fis'8 ( d'8 ) d'8 e'8 | % 23
   e'4 r4 r2 | % 24
   e'8 e'8 e'8 e'8 e'8 fis'8 g'8 a'8 ~ | % 25
-  a'2 b'4. ( e'8 ) ~ | % 26
+  a'2 b'4. e'8 ~ | % 26
   e'2. r4 | % 27
   r4 a'8 a'8 a'8 a'8 a'8 a'8 | % 28
   \times 2/3  {
@@ -18,7 +18,7 @@ PartPSevenVoiceOne =  {
     e'4 fis'4 g'4
   }
   | % 29
-  a'2 b'4. ( e'8 ) | \barNumberCheck #30
+  a'2 b'4. e'8~ | \barNumberCheck #30
   e'4. r4 r8 d'8 e'8 | % 31
   fis'8 g'8 fis'8 fis'8 r8 e'8 d'8 e'8 ~ | % 32
   \time 2/4  e'8 fis'8 e'8 ( d'8 ) | % 33
