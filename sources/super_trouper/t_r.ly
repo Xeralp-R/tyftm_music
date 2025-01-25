@@ -3,7 +3,7 @@
 
 PartPEightVoiceOne =  {
   \clef "treble" \numericTimeSignature\time 4/4 \key c \major | % 1
-    g'4 _\f g'4 f'4 f'4 | % 2
+    g'4 ^\f g'4 f'4 f'4 | % 2
     e'8 d'8 e'8 f'8 e'8 ( d'8 ) d'4 | % 3
     f'4 f'8 ( e'8 ) e'4 e'8 ( d'8 ) | % 4
     d'2. r4 | % 5
@@ -12,17 +12,17 @@ PartPEightVoiceOne =  {
     d'8 c'8 d'8 e'8 \acciaccatura { e'8 } d'8 ( c'8 ) c'4 | % 8
     c'1 | % 9
     R1*13 | % 22
-    r2 r4 g'8 g'8 | % 23
+    r2 r4 g'8 ^\f g'8 | % 23
     g'8 g'8 g'4 g'4 g'4 | % 24
     g'4. ( f'8 ) f'4 r4 | % 25
-    c'8 e'8 e'8 c'8 c'8 e'8 e'8 c'8 | % 26
+    c'8 ^\poco-mf e'8 e'8 c'8 c'8 e'8 e'8 c'8 | % 26
     e'8 f'8 ( f'2 ) r4 | % 27
     r4 r8 f'8 f'8 e'8 e'8 d'8 | % 28
     d'8 c'8 c'2 r8 c'8 | % 29
     c'8 c'8 c'8 c'8 c'8 c'8 c'8 c'8 ~ | \barNumberCheck #30
     c'8 \< c'8  ~ c'2. ~ | % 31 
     c'2 \! r8 g8 c'8 e'8 | % 32
-    e'4 e'4 d'4 d'4 | % 33
+    e'4 ^\f e'4 d'4 d'4 | % 33
     c'8 c'8 c'8 c'8 c'4 c'4 | % 34
     c'4 c'4 c'4 c'4 | % 35
     d'2. r4 | % 36
@@ -37,17 +37,17 @@ PartPEightVoiceOne =  {
     d'4 d'4 d'4 d'4 | % 45
     b2. r8 f'8 | % 46
     f'8 e'8 f'8 r8 f'8 ( e'8 ) e'4 | % 47
-    e'2 r2 | % 48
-    R1 | % 49
-    f'1 | % 50
+    e'2 \> r2 | % 48
+    \! R1 | % 49
+    f'1 ^\mp | % 50
     e'1 | \barNumberCheck #51
     f'2 f'2 | % 52
     e'2 e'4 d'4 | % 53
     f'1 | % 54
     f'2 e'2 | % 55
     f'1 | % 56
-    f'1 ~ | % 57
-    f'2 r8 g8 c'8 e'8 | % 58
+    f'1 ~ \< | % 57
+    f'2 r8 \! g8 ^\f c'8 e'8 | % 58
     e'4 e'4 d'4 d'4 | % 59
     c'8 c'8 c'8 c'8 c'4 c'4 | % 60
     c'4 c'4 c'4 c'4 | \barNumberCheck #61

@@ -4,17 +4,17 @@
 PartPSevenVoiceOne =  {
   \clef "treble" \numericTimeSignature\time 4/4 \key c \major | % 1
     R1*21 | % 22
-    r2 r4 d''8 _\f d''8 | % 23
+    r2 r4 d''8 ^\f d''8 | % 23
     e''8 d''8 d''4 d''4 d''4 | % 24
     d''4. ( c''8 ) c''4 r4 | % 25
-    g'8 c''8 c''8 g'8 g'8 c''8 c''8 g'8 | % 26
+    g'8 ^\poco-mf c''8 c''8 g'8 g'8 c''8 c''8 g'8 | % 26
     b'8 c''8 ( c''2 ) r4 | % 27
     r4 r8 c''8 c''8 c''8 c''8 b'8 | % 28
     b'8 a'8 a'2 r8 g'8 | % 29
     g'8 g'8 g'8 g'8 g'8 g'8 g'8 g'8 ~ | \barNumberCheck #30
     g'8 \<  g'8 ~ g'2.( | % 31
     g'2) \! r8 g8 c'8 e'8 | % 32
-    g'4 g'4 g'4 g'4 | % 33
+    g'4 ^\f g'4 g'4 g'4 | % 33
     g'8 g'8 g'8 g'8 g'4 g'4 | % 34
     g'4 g'4 g'4 g'4 | % 35
     g'2. r4 | % 36
@@ -29,17 +29,17 @@ PartPSevenVoiceOne =  {
     a'4 a'4 a'4 a'4 | % 45
     g'2. r8 g'8 | % 46
     g'8 g'8 g'8 g'8 g'4 g'4 | % 47
-    g'2 r2 | % 48
-    R1 | % 49
-    c''1 ~ | % 50
+    g'2 \> r2 | % 48
+    \! R1 | % 49
+    c''1 ~ ^\mp | % 50
     c''1 | \barNumberCheck #51
     c''2 b'2 | % 52
     c''2 r2 | % 53
     c''1 | % 54
     d''2 cis''2 | % 55
     d''1 | % 56
-    d''1 ~ | % 57
-    d''2 r8 g8 c'8 e'8 | % 58
+    d''1 ~ \< | % 57
+    d''2 r8 \! g8 ^\f c'8 e'8 | % 58
     g'4 g'4 g'4 g'4 | % 59
     g'8 g'8 g'8 g'8 g'4 g'4 | % 60
     g'4 g'4 g'4 g'4 | \barNumberCheck #61
