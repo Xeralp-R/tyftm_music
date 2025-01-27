@@ -4,6 +4,8 @@ imports/
 .vscode/
 Musical_Experiments/
 other/
+__pycache__/
+.pdf
 
 # i don't know if this should be out or not
 .uuid
