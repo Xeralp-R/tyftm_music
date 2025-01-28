@@ -24,7 +24,7 @@ part-Peight-one = {
   % 15
   r2 r8 r8 r4 |
   r4 r8 b8 e'8 dis'16 d'16 d'4 |
-  g'8 fis'16 fis'16~ fis'2. |
+  g'8 \mf sn 3° fis'16 fis'16~ fis'2. |
   g'8. fis'16~ fis'8 e'8~ e'8 fis'8 g'4( |
   fis'2) r8 b8 b8 b8 |
   % 20
@@ -151,7 +151,7 @@ part-Peight-one = {
   R1 |
   r2 c'4\< des'4 |
   \key aes \major
-  des'2.\f\f r4 |
+  des'2.^\f\f r4 |
   r8. bes'16 bes'8 bes'8 bes'8 aes'16 f'16~ f'8 aes'8 |
   r8. bes'16 bes'8 bes'8 bes'8 aes'8 \tuplet 3/2 { bes'8 aes'8 f'8 } |
   % 125
@@ -197,7 +197,7 @@ part-Pnine-one = {
   R1 |
   R1 |
   % 15
-  r2 r8 b8\f b8 b8 |
+  r2 r8 b8^\f b8 b8 |
   c'8 b16 b16 b2.~ |
   b1 |
   g'8. fis'16~ fis'8 e'8~ e'8 fis'8 g'4( |
@@ -407,7 +407,7 @@ part-Pnine-one = {
     \context Voice = "voiceone" {
       \voiceOne
       \key aes \major
-      bes2.\f\f r4 |
+      bes2.^\f\f r4 |
       r4 f'8-^ f'8 f'8 f'16 f'16~ f'8 f'8 |
       r8. f'16 f'8 f'8 f'8 f'8 f'4 |
       % 125
@@ -415,7 +415,7 @@ part-Pnine-one = {
     }
     \context Voice = "voicetwo" {
       \voiceTwo
-      r2 r4 r8 aes8\f |
+      r2 r4 r8 aes8^\f |
       bes4-^ aes8 |
       bes4-^ r4 r4 r8 aes8 |
       % 125
@@ -462,7 +462,7 @@ men = {
   b8\mf^\ed-text "T., blended w soli" e'16 fis'16~ fis'16 e'16 g'8 r2 |
   r8. g'16~ g'8 fis'8 fis'8 e'8 d'8 c'8 |
   % 10
-  b8 e'16 fis'16~ fis'16 e'16 g'8 r2 |
+  b8 ^\ben-mp snp e'16 fis'16~ fis'16 e'16 g'8 r2 |
   R1 |
   b8 e'16 fis'16~ fis'16 e'16 g'8 r2 |
   r8. g'16~ g'8 fis'8 fis'8 e'8 d'8 c'8 |
@@ -475,7 +475,7 @@ men = {
       g'8 fis'16 fis'16~ fis'2. |
     } \\
     {
-      r8 b8\f b8 b8 |
+      r8 b8^\f b8 b8 |
       c'8 b16 b16~ b2.~ |
       b1 |
     } \\
@@ -501,7 +501,7 @@ men_null_vc = {
   r8. g'16~ g'8 fis'8 fis'8 e'8 d'8 c'8 |
   b8 e'16 fis'16~ fis'16 e'16 g'8 r2 |
   r2 \clef bass 
-  r8 b8\f b8 b8 |
+  r8 b8^\f b8 b8 |
   c'8 b16 b16~ b8 b8 e'8 dis'16 d'16 d'4 |
   g'8 fis'16 fis'16~ fis'2. |
 }

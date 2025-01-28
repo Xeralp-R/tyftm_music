@@ -13,7 +13,7 @@ part-Psix-one = {
   c''2)( d''8) d''4 c''8( |
   b'8) b'2. r8 |
   R1 |
-  <g' b' >8\mf <g' b' >16 <g' b' >16~~ <g' b' >16 <g' b' >16 <g' b' >8 r2 |
+  <g' b' >8^\mf <g' b' >16 <g' b' >16~~ <g' b' >16 <g' b' >16 <g' b' >8 r2 |
   r8. g'16~ g'8 fis'8 fis'8 e'8 d'8 c'8 |
   % 10
   <g' b' >8 <g' b' >16 <g' b' >16~~ <g' b' >16 <g' b' >16 <g' b' >8 r2 |
@@ -250,7 +250,7 @@ part-Psix-one = {
     \context Voice = "voiceone" {
       \voiceOne
       \key aes \major
-      bes'2.\f\f r4 |
+      bes'2.^\f\f r4 |
       r8. <bes' des'' >16 <bes' des'' >8 <bes' des'' >8 <bes' des'' >8
       <bes' des'' >16 <bes' des'' >16~~ <bes' des'' >8 <bes' des'' >8 |
       r8. <bes' des'' >16 <bes' des'' >8 <bes' des'' >8 <bes' des'' >8
@@ -261,7 +261,7 @@ part-Psix-one = {
     }
     \context Voice = "voicetwo" {
       \voiceTwo
-      r2 r4 r8 aes'8\f |
+      r2 r4 r8 aes'8^\f |
       bes'4-^ aes'8 |
       bes'4-^ r4 r4 r8 aes'8 |
       % 125
@@ -316,7 +316,7 @@ part-Pseven-one = {
   R1 |
   R1 |
   R1 |
-  b8\f e'16 fis'16~ fis'16 e'16 g'8 r2 |
+  b8^\f e'16 fis'16~ fis'16 e'16 g'8 r2 |
   r8. g'16~ g'8 fis'8 fis'8 e'8 d'8 c'8 |
   % 10
   b8 e'16 fis'16~ fis'16 e'16 g'8 r2 |
@@ -375,13 +375,13 @@ part-Pseven-one = {
   % 55
   r8. g'16~ g'8 fis'8 fis'8 e'8 d'8 c'8 |
   b8 e'16 fis'16~ fis'16 e'16 g'8 r2 |
-  r2 r8 b8\f b8 b8 |
+  r2 r8 b8^\f b8 b8 |
   c'8 b16 b16 b2.~ |
   b1 |
   % 60
   R1 |
   r2 r8 b8 b8 b8 |
-  b8 b16 b16~ b2.~-\markup { \italic "dim." } |
+  b8 b16 b16~ b2.~-^\markup { \italic "dim." } |
   b2 r2 |
   g'8. fis'16~ fis'8 e'8~ e'8 fis'8 g'4~ |
   % 65
@@ -454,7 +454,7 @@ part-Pseven-one = {
   R1 |
   r2 f'4\< <f' aes' >4 |
   \key aes \major
-  <f' bes' >2.\f\f r4 |
+  <f' bes' >2.^\f\f r4 |
   r8. bes'16 bes'8 bes'8 bes'8 aes'16 f'16~ f'8 aes'8 |
   r8. bes'16 bes'8 bes'8 bes'8 aes'8 \tuplet 3/2 { bes'8 aes'8 f'8 } |
   % 125

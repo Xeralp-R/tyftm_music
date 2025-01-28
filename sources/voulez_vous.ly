@@ -9,6 +9,7 @@
 \include "voulez_vous/voulez_vous_l_guit.ly"
 \include "voulez_vous/chor_tb.ly"
 \include "voulez_vous/chor_sa.ly"
+\include "voulez_vous/chor_extra.ly"
 \include "voulez_vous/soli.ly"
 
 voulez_vous_header = \header {
@@ -67,22 +68,41 @@ voulez_vous =  {
       \new Staff \part-Pfive-two
     >>
     %}
+    %{
     \new Staff \part-Psix-one
     \new Staff \part-Pseven-one
     \new Staff \part-Peight-one
     \new Staff \part-Pnine-one
+    %}
 
+    \tag #'(chor soli)
+    \new Staff \with {
+      instrumentName = "Soli"
+      shortInstrumentName = "Si."
+    } \soli \addlyrics \soli_lyr
+
+    \tag #'(chor)
     \new ChoirStaff \with {
       instrumentName = "Chorus"
       shortInstrumentName = "Ch."
     } <<
-      \new Staff \women
-      \addlyrics \women-lyr
+      \new Staff <<
+        \women
+        \new NullVoice \women-null-voice
+        \addlyrics \women-lyr
+      >>
       \new Staff <<
         \men 
         \new NullVoice \men_null_vc
         \addlyrics \men_lyr
       >>
+    >>
+
+    \new ChoirStaff \with {
+      instrumentName = "Recorded Vocals"
+      shortInstrumentName = "Rec. V."
+    } <<
+      \new Staff << \extra_part \addlyrics \extra_lyr >>
     >>
     
     \tag #'(accompaniment band l_guit)
@@ -144,7 +164,6 @@ voulez_vous =  {
   >>
 }
 
-
 \header {
   \voulez_vous_header
 }
@@ -153,4 +172,3 @@ voulez_vous =  {
   \voulez_vous
   \layout{}
 }
-

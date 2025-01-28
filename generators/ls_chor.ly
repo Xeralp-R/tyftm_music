@@ -10,7 +10,7 @@
 \include "../sources/overture.ly"
 \include "../sources/prelude.ly"
 \include "../sources/dancing_queen.ly"
-%\include "../sources/voulez_vous.ly"
+\include "../sources/voulez_vous.ly"
 
 \pointAndClickOff
 
@@ -206,20 +206,19 @@
         "Under Construction!"
       }
     }
-  }
+    }
 
-  %{
   \bookpart {
-    \tocItem i.vv \markup { "12. Voulez Vous (Under Construction)" }
+    \tocItem i.vv \markup { "12. Voulez Vous" }
 
     \header {
       \voulez_vous_header
     }
     \score {
-      \voulez_vous
+      \keepWithTag #'(chor) \voulez_vous
 
       \layout {}
     }
-  %}
+  }
 
   }
