@@ -4,7 +4,7 @@ soli = {
   \clef treble
   R1*6
   R1*4
-  b8\mf e'16 fis'16~ fis'16 e'16 g'8 r2 |
+  b8^\mf e'16 fis'16~ fis'16 e'16 g'8 r2 |
   r8 g'16 g'16~ g'8 fis'8 fis'8 e'8 d'8 c'8 |
   % 10
   b8 e'16 fis'16~ fis'16 e'16 g'8 r2 |
@@ -13,7 +13,7 @@ soli = {
   r8 g'16 g'16~ g'8 fis'8 fis'8 e'8 d'8 c'8 |
   b8 e'16 fis'16~ fis'16 e'16 g'8 r2 |
   r2
-  r8 b8\f b8 b8 |
+  r8 b8^\f b8 b8 |
   c'8 b16 b16~ b8 b8 e'8 dis'16 d'16~ d'8 d'8 |
   g'8 fis'16 fis'16~ fis'2. |
   g'8.  fis'16~ fis'8 e'8~ e'8 fis'8 g'4( | 
@@ -23,9 +23,9 @@ soli = {
   g'8. fis'16~ fis'8 e'8~ e'8 fis'8 g'4~ | 
   g'8 r8 r4 e'4 g'4 |
 
-  a'2. r4 |
+  a'2. ^\< sn 7° r4 |
   % 25
-  r8. a'16~ a'8 a'8 a'8 g'16 e'16~ e'8 g'8 |
+  r8. a'16~ ^\sfz snp a'8 a'8 a'8 g'16 e'16~ e'8 g'8 |
   r8. a'16~ a'8 a'8 a'8 g'8 \tuplet 3/2 { a'8( g'8 e'8) } |
   r8. a'16~ a'8 a'8 a'8 g'8 e'8 fis'8 |
   g'2. r4 |

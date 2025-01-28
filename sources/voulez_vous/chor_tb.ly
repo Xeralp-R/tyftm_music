@@ -10,7 +10,7 @@ men = {
   b8^\mf^\ed-text "T., blended w soli" e'16 fis'16~ fis'16 e'16 g'8 r2 |
   r8 g'16 g'16~ g'8 fis'8 fis'8 e'8 d'8 c'8 |
   % 10
-  b8 e'16 fis'16~ fis'16 e'16 g'8 r2 |
+  b8 ^\ben-mp snp e'16 fis'16~ fis'16 e'16 g'8 r2 |
   R1 |
   b8 e'16 fis'16~ fis'16 e'16 g'8 r2 |
   r8 g'16 g'16~ g'8 fis'8 fis'8 e'8 d'8 c'8 |
@@ -43,7 +43,7 @@ men = {
       g'8 fis'16 fis'16~ fis'2. |
     } \\
     {
-      b8 b8 b8 |
+      r8 b8^\f b8 b8 |
       c'8 b16 b16~ b2.~ |
       b1 |
     } \\
