@@ -265,7 +265,7 @@ part-Psix-one = {
     }
   >>
   \key a \major
-  fis'8 cis''8 fis''8. cis''16 fis'8 d''8 fis''8. d''16 |
+  fis'8_\markup { \dynamic "p" \italic " al fine"} cis''8 fis''8. cis''16 fis'8 d''8 fis''8. d''16 |
   % 100
   e'8 b'8 fis''8. b'16 fis'8 cis''8 fis''8. cis''16 |
   fis'8 cis''8 fis''8. cis''16 fis'8 d''8 fis''8. d''16 |
@@ -277,7 +277,7 @@ part-Psix-one = {
   <<
     \context Voice = "voiceone" {
       \voiceOne
-      r4 b4~ <b fis' >2_\markup { \dynamic "p" \italic " al fine"}|
+      r4 b4~ <b fis' >2|
     }
     \context Voice = "voicetwo" {
       \voiceTwo

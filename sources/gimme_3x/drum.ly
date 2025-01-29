@@ -180,11 +180,11 @@ part-Ponethree-one = \drummode {
       bd4 sn4 bd4 sn4 |
     }
   >>
-  hh8-> hh8 hh8-> hh16 hh16 hh8 hh8 hh8-> hh16 hh16 |
+  hh8->_\markup { \dynamic "p" \italic " al fine"} hh8 hh8-> hh16 hh16 hh8 hh8 hh8-> hh16 hh16 |
   \linear-spanner 1 3
   hh8 hh8 hh8 hh16 hh16 hh8 hh8 hh8 hh16 hh16 |
   \linear-spanner 1 2
-  cymr4\laissezVibrer r4 r2\fermata _\markup { \dynamic "p" \italic " al fine"}|
+  cymr4\laissezVibrer r4 r2\fermata|
 }
 
 %{part-Ponefour-one = {

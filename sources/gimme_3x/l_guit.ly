@@ -166,7 +166,7 @@ part-Ponezero-one = {
       c2 d2 |
     }
   >>
-  <fis cis' >1 |
+  <fis cis' >1 _\markup { \dynamic "p" \italic " al fine"}|
   % 100
   R1 |
   R1 |

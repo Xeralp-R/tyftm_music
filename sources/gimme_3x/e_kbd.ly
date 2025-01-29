@@ -166,7 +166,7 @@ part-Pnine-one = {
     d'''16(-> a''16 f''16)
   } |
   \key a \major
-  fis''2.-> r4 |
+  fis''2.->_\markup { \dynamic "p" \italic " al fine"} r4 |
   % 100
   R1 |
   R1 |
@@ -175,7 +175,7 @@ part-Pnine-one = {
   R1 |
   % 105
   R1 |
-  R1_\markup { \dynamic "p" \italic " al fine"} |
+  R1 |
 }
 
 part-Pnine-two = {
