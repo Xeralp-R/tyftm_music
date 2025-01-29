@@ -5,7 +5,7 @@ women = {
   \time 4/4
   R1*10
 
-  <g' b' >8\ben-mp <g' b' >16 <g' b' >16~ <g' b' >16 <g' b' >16 <g' b' >8 r2 |
+  <g' b' >8^\ben-mp <g' b' >16 <g' b' >16~ <g' b' >16 <g' b' >16 <g' b' >8 r2 |
   r8 g'16 g'16~ g'8 fis'8 fis'8 e'8 d'8 c'8 |
   % 10
   <g' b' >8 <g' b' >16 <g' b' >16~ <g' b' >16 <g' b' >16 <g' b' >8 r2 |
@@ -18,31 +18,9 @@ women = {
 
   % C
   <<
-<<<<<<< HEAD
-    \context Voice = "voiceone" {
-      \voiceOne
-      a'2. r8 r8 |
-      % 25
-      r4 <a' c'' >8 \< sn 4° <a' c'' >8 <a' c'' >8 <a' c'' >16 <a' c'' >16~~ <a'
-      c'' >8 <a' c'' >8 |
-      r8. <a' c'' >16 ^\f <a' c'' >8 <a' c'' >8 <a' c'' >8 <a' c'' >8 <a'
-      c'' >4 |
-      r8. <a' c'' >16 <a' c'' >8 <a' c'' >8 <a' c'' >8 <a' c'' >8 <a'
-      c'' >8 <a' c'' >8 |
-    }
-    \context Voice = "voicetwo" {
-      \voiceTwo
-      r2 r4 r8 g'8 |
-      % 25
-      a'4-^ g'8 |
-      a'4-^ r4 r4 r8 g'8 |
-      a'4-^ r4 r2 |
-    }
-=======
     {f''1\rest | fis''1} \\
     {bes'1^"div. a3" ~ | bes'1} \\ 
     {d''2\rest des''2 ~ | des''1 }
->>>>>>> fe402e95e84eaff95dd9e93da37023e3c331bbce
   >>
   \partCombine
   \transpose c c' {g'8.^\ed-text "div. a2" fis'16~ fis'8 e'8~ e'8 fis'8 g'4( | fis'2)}
@@ -55,11 +33,11 @@ women = {
     {d''2\rest des''2 ~ | des''1 }
   >>
   \partCombine
-  \transpose c c' {g'8.^\ed-text "div. a2" fis'16~ fis'8 e'8~ e'8 fis'8 g'4~\< | g'8\sfz}
-  { b'8. a'16~ a'8 g'8~ g'8 a'8 b'4~\< | b'8\sfz }
-  r8 r4 e'4 g'4 |
+  \transpose c c' {g'8.^\ed-text "div. a2" fis'16~ fis'8 e'8~ e'8 fis'8 g'4~\< | g'8^\sfz}
+  { b'8. a'16~ a'8 g'8~ g'8 a'8 b'4~\< | b'8^\sfz }
+  r8 r4 e'4\< g'4 |
 
-  a'2. r4 |
+  a'2.^\f r4 |
   % 25
   r8. <a' c''>16~ <a' c'' >8 <a' c'' >8 <a' c'' >8 <a' c'' >16 <a' c'' >16~ <a'
   c'' >8 <a' c'' >8 |
@@ -80,18 +58,18 @@ women = {
   <g' b' >2. r4 |
   % 35
   r2 e'4 g'4 |
-  a'1~( |
+  a'1\<~( |
   a'1\glissando |
-  b'1~ |
+  b'1~ ^\rf |
   b'2) r2 |
   % 40
 
   % Sam's interthingy
   R1*11
-  r2 e'4 g'4 |
+  r2 e'4\< g'4 |
 
   % next chorus
-      a'2. r4 |
+      a'2.^\f  r4 |
       r8. <a' c''>16~ <a' c'' >8 <a' c'' >8 <a' c'' >8 <a' c'' >16 <a' c'' >16~~ <a'
       c'' >8 <a' c'' >8 |
       r8. <a' c'' >16~ <a' c'' >8 <a' c'' >8 <a' c'' >8 <a' c'' >8 <a'
@@ -111,20 +89,21 @@ women = {
       c'' >8 <a' c'' >8 |
   <g' b' >2. r4 |
   r2 e'4 g'4 |
-  a'1~( |
+  a'1~\<( |
   a'1\glissando |
   % 100
-  b'1) |
+  b'1)^\rf  |
   R1 |
-  b'1 |
+  b'1^\sf |
   R1 |
-  b'1 |
+  b'1^\sf |
   % 105
   R1 |
-  b'1 |
+  b'1 ^\sf 
+  R1*3 
   r2 f'4\< aes'4 |
   \key f \minor
-      bes'2.\f r4 |
+      bes'2.^\f r4 |
       r8. <bes' des'' >16~ <bes' des'' >8 <bes' des'' >8 <bes' des'' >8
       <bes' des'' >16 <bes' des'' >16~ <bes' des'' >8 <bes' des'' >8 |
       r8. <bes' des'' >16~ <bes' des'' >8 <bes' des'' >8 <bes' des'' >8
@@ -144,13 +123,13 @@ women = {
       <bes' des'' >8 <bes' des'' >8 <bes' des'' >8 |
   <aes' c'' >2. r4 |
   r2 f'4 aes'4 |
-  bes'1~( |
+  bes'1~(\cresc |
   % 135
   bes'1\glissando |
   c''1~ |
-  c''4) r4 <c' c'' >4 <ees' ees'' >4 |
-  <f' f'' >4 r4 r2 |
-  R1 |
+  c''4) r4 <c' c'' >4\<-> <ees' ees'' >4-> |
+  <f' f'' >4^\ff r4 r2 |
+  R1\fermata |
   % 140
 }
 
@@ -230,66 +209,6 @@ women-null-voice = {
       r8. <a' c'' >16~ <a' c'' >8 <a' c'' >8 <a' c'' >8 <a' c'' >8 <a'
       c'' >8 <a' c'' >8 |
   <g' b' >2. r4 |
-<<<<<<< HEAD
-  r2 r8 b8 b8 b8 |
-  c'8 b16 b16~ b8 b8 e'8 dis'16 d'16~ d'8 d'8 |
-  g'8 fis'16 fis'16~ fis'4 r2 |
-  % 80
-  g'8. fis'16~ fis'8 e'8~ e'8 fis'8 g'4( |
-  fis'2) r8 b8 b8 b8 |
-  c'8 b16 b16~ b8 b8 e'8 dis'16 d'16~ d'8 d'8 |
-  g'8 fis'16 fis'16~ fis'4 r2 |
-  g'8. fis'16~ fis'8 e'8~ e'8 fis'8 g'4~ |
-  % 85
-  g'4 r4 e'4 g'4 |
-  <<
-    \context Voice = "voiceone" {
-      \voiceOne
-      a'2. r4 |
-      r4 <a' c'' >8 <a' c'' >8 <a' c'' >8 <a' c'' >16 <a' c'' >16~~ <a'
-      c'' >8 <a' c'' >8 |
-      r8. <a' c'' >16 <a' c'' >8 <a' c'' >8 <a' c'' >8 <a' c'' >8 <a'
-      c'' >4 |
-      r8. <a' c'' >16 <a' c'' >8 <a' c'' >8 <a' c'' >8 <a' c'' >8 <a'
-      c'' >8 <a' c'' >8 |
-      % 90
-    }
-    \context Voice = "voicetwo" {
-      \voiceTwo
-      r2 r4 r8 g'8 |
-      a'4-^ r4 r4 r8 g'8 |
-      a'4-^ r4 r4 r8 g'8 |
-      a'4-^ r4 r2 |
-      % 90
-    }
-  >>
-  <g' b' >2. r4 |
-  r2 e'4 g'4 |
-  <<
-    \context Voice = "voiceone" {
-      \voiceOne
-      a'2. r8 r8 |
-      r4 <a' c'' >8 ^\fermata <a' c'' >8 <a' c'' >8 <a' c'' >16 <a' c'' >16~~ <a'
-      c'' >8 <a' c'' >8 |
-      r8. <a' c'' >16 <a' c'' >8 <a' c'' >8 <a' c'' >8 <a' c'' >8 <a'
-      c'' >4 |
-      % 95
-      r8. <a' c'' >16~~ <a' c'' >8 <a' c'' >8 <a' c'' >8 <a' c'' >8 <a'
-      c'' >8 <a' c'' >8 |
-      <g' b' >2. r4 |
-    }
-    \context Voice = "voicetwo" {
-      \voiceTwo
-      r2 r4 r8 g'8 |
-      a'4-^ r4 r8 r8 r8 g'8 |
-      a'4-^ r2 r8 g'8 |
-      % 95
-      a'4-^ r2 r4 |
-      R1 |
-    }
-  >>
-=======
->>>>>>> fe402e95e84eaff95dd9e93da37023e3c331bbce
   r2 e'4 g'4 |
   a'1~( |
   a'1\glissando |
@@ -301,7 +220,8 @@ women-null-voice = {
   b'1 |
   % 105
   R1 |
-  b'1 |
+  b'1 
+  R1*3
   r2 f'4\< aes'4 |
   \key f \minor
       bes'2.\f r4 |
@@ -324,11 +244,11 @@ women-null-voice = {
       <bes' des'' >8 <bes' des'' >8 <bes' des'' >8 |
   <aes' c'' >2. r4 |
   r2 f'4 aes'4 |
-  bes'1~( |
+  bes'1~(\cresc |
   % 135
-  bes'1 \glissando|
+  bes'1\glissando|
   c''1~ |
-  c''4) r4 <c' c'' >4 <ees' ees'' >4 |
+  c''4) r4 <c' c'' >4\<-> <ees' ees'' >4-> |
   <f' f'' >4 r4 r2 |
   R1 |
   % 140
