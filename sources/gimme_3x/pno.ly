@@ -4,17 +4,17 @@ part-Psix-one = {
       \key f \major
       \time 4/4
       \clef treble
-      c'16->\mf d'16-> r8 r8 c'16-> d'16-> r8 <d' g' >8-> <c' f' >8-> r8
+      c'16->\mp d'16-> r8 r8 c'16-> d'16-> r8 <d' g' >8-> <c' f' >8-> r8
     } \\ {
     }
   >> |
   c'16-> d'16-> r8 r8 c'16-> d'16-> r2 |
   c'16-> d'16-> r8 r8 c'16-> d'16-> r8 <d' g' >8-> <c' f' >8-> r8 |
   c'16-> d'16-> r8 r8 c'16-> d'16-> r2 |
-  e'16 \< c'16 d'16 e'16 f'16 d'16 e'16 f'16 g'16 e'16 f'16 g'16 a'16 bes'16
+  e'16 c'16 d'16 e'16 f'16 d'16 e'16 f'16 g'16 e'16 f'16 g'16 a'16 bes'16
   c''16 d''16 |
   % 5
-  <bes' d'' e'' >1\f~~~ |
+  <bes' d'' e'' >1~~~ |
   \tuplet 3/2 { <bes' d'' e'' >4 <bes' d'' e'' >4 <bes' d'' f'' >4 } \tuplet
   3/2 { <bes' d'' g'' >4 <bes' d'' f'' >4 <bes' d'' e'' >4 } |
   <bes d' f' >2 <bes d' >2~~ |
@@ -22,11 +22,11 @@ part-Psix-one = {
     <bes
     d' g' >4 <bes d' f' >4 <bes d' e' >4
   } |
-  <d' f' >4\< <d' f' a' >4 <fis' a' d'' >4 <a' d'' f'' >4 |
-  % 10 crechendo not shoing up for some reason
-  <a' cis'' e'' >4 <e' a' cis'' >4 <cis' e' a' >4 <a cis' e' >4\! |
+  <d' f' >4 <d' f' a' >4 <fis' a' d'' >4 <a' d'' f'' >4 |
+  % 10
+  <a' cis'' e'' >4 <e' a' cis'' >4 <cis' e' a' >4 <a cis' e' >4 |
   <<
-    { d'8\f a'8 d''8. a'16 d'8 bes'8 d''8. bes'16 } \\ { d'2 d'2 }
+    { d'8\mf a'8 d''8. a'16 d'8 bes'8 d''8. bes'16 } \\ { d'2 d'2 } \\ { }
   >> |
   <<
     \context Voice = "voiceone" {
@@ -40,7 +40,7 @@ part-Psix-one = {
       d'8 bes'8 d''8. bes'16 d'8 a'8 d''8. a'16 |
       c'8 g'8 d''8. g'16 r8 \tuplet 3/2 { d''16-> f''16 a''16 } d'''8-^
       \tuplet 3/2 { d'''16-> a''16 f''16 } |
-      d''2\p r2 |
+      d''2\> r2\!\mp |
       % 20
       <f' d'' >4 <e' c'' >4 <d' a' >2~~ |
     }
@@ -53,7 +53,7 @@ part-Psix-one = {
       d'2 d'2 |
       c'2 d'2 |
       d'2 d'2 |
-      c'2 s2|
+      c'2 |
       |
       % 20
       |
@@ -88,7 +88,7 @@ part-Psix-one = {
   % 30
   << { g'8 f'8 d'8 c'8 d'2~ } \\ { bes1 } >> |
   <a d' >1 |
-  d'8\mp a'8 d''8. a'16 d'8 bes'8 d''8. bes'16 |
+  d'8 a'8 d''8. a'16 d'8 bes'8 d''8. bes'16 |
   c'8 g'8 d''8. g'16 d'8 a'8 d''8. a'16 |
   d'8 a'8 d''8. a'16 d'8 bes'8 d''8. bes'16 |
   % 35
@@ -108,7 +108,7 @@ part-Psix-one = {
       e'16\< c'16 d'16 e'16 f'16 d'16 e'16 f'16 g'16 e'16 f'16 g'16 a'16
       bes'16 c''16 d''16 |
       % 45
-      <bes' d'' e'' >2~~~\f <bes' d'' e'' >2~~~ |
+      <bes' d'' e'' >2~~~\mf <bes' d'' e'' >2~~~ |
     }
     \context Voice = "voicetwo" {
       \voiceTwo
@@ -124,9 +124,9 @@ part-Psix-one = {
     <bes
     d' g' >4 <bes d' f' >4 <bes d' e' >4
   } |
-  <d' f' >4\< <d' f' a' >4 <fis' a' d'' >4 <a' d'' f'' >4 |
+  << { <d' f' >4\< <d' f' a' >4 <fis' a' d'' >4 <a' d'' f'' >4 } \\ { } >> |
   % 50
-  <a' cis'' e'' >4 <e' a' cis'' >4 <cis' e' a' >4 <a cis' e' >4 \! |
+  <a' cis'' e'' >4 <e' a' cis'' >4 <cis' e' a' >4 <a cis' e' >4 |
   <<
     { d'8\f a'8 d''8. a'16 d'8 bes'8 d''8. bes'16 } \\ { d'2 d'2 } \\ { }
   >> |
@@ -142,9 +142,9 @@ part-Psix-one = {
       d'8 bes'8 d''8. bes'16 d'8 a'8 d''8. a'16 |
       c'8 g'8 d''8. g'16 r8 \tuplet 3/2 { d''16-> f''16 a''16 } d'''8-^
       \tuplet 3/2 { d'''16-> a''16 f''16 } |
-      d''2\p r2 |
+      d''2\> r2\!\mp |
       % 60
-      <f' d'' >4\mp <e' c'' >4 <d' a' >4 d'8 f'8 |
+      <f' d'' >4 <e' c'' >4 <d' a' >4 d'8 f'8 |
       g'4 g'8 f'16 g'16~ g'8 a'8~ a'4~ |
       a'2. d'8 f'8 |
       g'4 g'8 f'16 g'16~ g'2~ |
@@ -162,7 +162,7 @@ part-Psix-one = {
       d'2 d'2 |
       c'2 d'2 |
       d'2 d'2 |
-      c'2 s2 |
+      c'2 |
       |
       % 60
       |
@@ -175,7 +175,7 @@ part-Psix-one = {
       bes2 a2 |
     }
   >>
-  <f' d'' >4\mf <e' c'' >4 <d' a' >4 d'8 f'8 |
+  <f' d'' >4 <e' c'' >4 <d' a' >4 d'8 f'8 |
   <<
     \context Voice = "voiceone" {
       \voiceOne
@@ -192,14 +192,24 @@ part-Psix-one = {
       c'2 b2 |
     }
   >>
-  d'8\mp a'8 d''8. a'16 d'8 bes'8 d''8. bes'16 |
+  d'8 a'8 d''8. a'16 d'8 bes'8 d''8. bes'16 |
   c'8 g'8 d''8. g'16 d'8 a'8 d''8. a'16 |
   d'8 a'8 d''8. a'16 d'8 bes'8 d''8. bes'16 |
   c'8 g'8 d''8. g'16 c'8 g'8 d''8. g'16 |
   % 75
-  e'16\< c'16 d'16 e'16 f'16 d'16 e'16 f'16 g'16 e'16 f'16 g'16 a'16
-  bes'16 c''16 d''16 |
-  <bes' d'' e'' >1\f |
+  <<
+    \context Voice = "voiceone" {
+      \voiceOne
+      e'16\< c'16 d'16 e'16 f'16 d'16 e'16 f'16 g'16 e'16 f'16 g'16 a'16
+      bes'16 c''16 d''16 |
+      <bes' d'' e'' >1~~~\mf |
+    }
+    \context Voice = "voicetwo" {
+      \voiceTwo
+      |
+      |
+    }
+  >>
   \tuplet 3/2 { <bes' d'' e'' >4 <bes' d'' e'' >4 <bes' d'' f'' >4 } \tuplet
   3/2 { <bes' d'' g'' >4 <bes' d'' f'' >4 <bes' d'' e'' >4 } |
   <f' bes' d'' f'' >2-> <d' g' bes' d'' >2~->~~~ |
@@ -229,15 +239,10 @@ part-Psix-one = {
   d''8 a''8 d'''8. a''16 d''8 bes''8 d'''8. bes''16 |
   c''8 g''8 d'''8. g''16 d''8 a''8 d'''8. a''16 |
   % 90
-  <<
-    { 
-      e'16\< c'16 d'16 e'16 f'16 d'16 e'16 f'16 g'16 e'16 f'16 g'16 a'16 bes'16
+  e'16\< c'16 d'16 e'16 f'16 d'16 e'16 f'16 g'16 e'16 f'16 g'16 a'16 bes'16
   c''16 d''16 |
-      d'8\piu-f a'8 d''8. a'16 d'8 bes'8 d''8. bes'16 
-    } \\ {
-      s1|
-      d'2 d'2
-    }
+  <<
+    { d'8\f a'8 d''8. a'16 d'8 bes'8 d''8. bes'16 } \\ { d'2 d'2 } \\ { }
   >> |
   <<
     \context Voice = "voiceone" {
@@ -249,6 +254,7 @@ part-Psix-one = {
       d'8 a'8 d''8. a'16 d'8 bes'8 d''8. bes'16 |
       c'8 g'8 d''8. g'16 d'8 a'8 d''8. a'16 |
       d'8 bes'8 d''8. bes'16 d'8 a'8 d''8. a'16 |
+      \key a \major
       c'8 g'8 d''8. g'16 r8 \tuplet 3/2 { d'16(-> f'16 a'16) } d''8-^
       \tuplet 3/2 { d''16(-> a'16 f'16) } |
     }
@@ -261,10 +267,9 @@ part-Psix-one = {
       d'2 d'2 |
       c'2 d'2 |
       d'2 d'2 |
-      c'2 s2|
+      c'2 |
     }
   >>
-  \key a \major
   fis'8 cis''8 fis''8. cis''16 fis'8 d''8 fis''8. d''16 |
   % 100
   e'8 b'8 fis''8. b'16 fis'8 cis''8 fis''8. cis''16 |
@@ -273,11 +278,11 @@ part-Psix-one = {
   fis'8 cis''8 fis''8. cis''16 fis'8 d''8 fis''8. d''16 |
   e'8 b'8 fis''8. b'16 fis'8 cis''8 fis''8. cis''16 |
   % 105
-  fis8 cis'8 fis'8. cis'16 fis8 cis'8 fis'8. cis'16|
+  fis8 cis'8 fis'8. cis'16 fis8 cis'8 fis'8. cis'16 |
   <<
     \context Voice = "voiceone" {
       \voiceOne
-      r4 b4~ <b fis' >2_\markup { \dynamic "p" \italic " al fine"}|
+      r4 b4~ <b fis' >2 |
     }
     \context Voice = "voicetwo" {
       \voiceTwo
@@ -407,8 +412,8 @@ part-Psix-two = {
   d8 d'8 d8 d'8 bes,8 bes8 bes,8 bes8 |
   c8 c'8 c8 c'8 d8 d'8 d16 d'8.-> |
   bes,8 bes8 bes,8 bes8 d8 d'8 d8 d'8 |
-  c8 c'8 c8 c'8 d8 d'8 d8 d'8 |
   \key a \major
+  c8 c'8 c8 c'8 d8 d'8 d8 d'8 |
   <<
     \context Voice = "voiceone" {
       \voiceOne
