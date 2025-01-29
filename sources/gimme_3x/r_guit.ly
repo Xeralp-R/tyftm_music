@@ -22,7 +22,7 @@ part-Poneone-one = {
       R1 |
       % 10
       R1 |
-      <d' f' a' >8\f <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16 <d'
+      <d' f' a' >8\p <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16 <d'
       f' a' >16 <bes d' f' >8 <bes d' f' >16 <bes d' f' >16 <bes d' f' >8 <bes
       d' f' >16 <bes d' f' >16 |
       <c' e' g' >8 <c' e' g' >16 <c' e' g' >16 <c' e' g' >8 <c' e' g' >16 <c' e'
@@ -46,22 +46,89 @@ part-Poneone-one = {
       f' a' >16 <d' f' a' >16 |
       <c' e' g' >8 <c' e' g' >16 <c' e' g' >16 <c' e' g' >8 <c' e' g' >16 <c' e'
       g' >16 <d' f' a' >2~~~ |
-      <d' f' a' >1 |
+      <d' f' a' >1\> |
       % 20
-      \linear-repeat 1 12 {
-        <d' f' a' >8\p-\markup { "P.M." } <d' f' a' >16 <d' f' a' >16 <d' f' a'>8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 |
-      }
-
-      \linear-repeat 1 12 {
-        <d' f' a' >8\mp-\markup { "P.M." } <d' f' a' >16 <d' f' a' >16 <d' f' a'
+      <d' f' a' >8\mp-\markup { "P.M." } <d' f' a' >16 <d' f' a' >16 <d' f' a'
       >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16
       <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 |
-      }
+      <d' f' a' >8\mp-\markup { "P.M." } <d' f' a' >16 <d' f' a' >16 <d' f' a'
+      >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16
+      <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 |
+      <d' f' a' >8\mp-\markup { "P.M." } <d' f' a' >16 <d' f' a' >16 <d' f' a'
+      >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16
+      <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 |
+      <d' f' a' >8\mp-\markup { "P.M." } <d' f' a' >16 <d' f' a' >16 <d' f' a'
+      >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16
+      <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 |
+      <d' f' a' >8\mp-\markup { "P.M." } <d' f' a' >16 <d' f' a' >16 <d' f' a'
+      >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16
+      <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 |
+      % 25
+      <d' f' a' >8\mp-\markup { "P.M." } <d' f' a' >16 <d' f' a' >16 <d' f' a'
+      >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16
+      <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 |
+      <d' f' a' >8\mp-\markup { "P.M." } <d' f' a' >16 <d' f' a' >16 <d' f' a'
+      >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16
+      <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 |
+      <d' f' a' >8\mp-\markup { "P.M." } <d' f' a' >16 <d' f' a' >16 <d' f' a'
+      >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16
+      <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 |
+      <d' f' a' >8\mp-\markup { "P.M." } <d' f' a' >16 <d' f' a' >16 <d' f' a'
+      >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16
+      <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 |
+      <d' f' a' >8\mp-\markup { "P.M." } <d' f' a' >16 <d' f' a' >16 <d' f' a'
+      >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16
+      <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 |
+      % 30
+      <d' f' a' >8\mp-\markup { "P.M." } <d' f' a' >16 <d' f' a' >16 <d' f' a'
+      >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16
+      <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 |
+      <d' f' a' >8\mp-\markup { "P.M." } <d' f' a' >16 <d' f' a' >16 <d' f' a'
+      >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16
+      <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 |
+      <d' f' a' >8\mp-\markup { "P.M." } <d' f' a' >16 <d' f' a' >16 <d' f' a'
+      >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16
+      <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 |
+      <d' f' a' >8\mp-\markup { "P.M." } <d' f' a' >16 <d' f' a' >16 <d' f' a'
+      >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16
+      <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 |
+      <d' f' a' >8\mp-\markup { "P.M." } <d' f' a' >16 <d' f' a' >16 <d' f' a'
+      >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16
+      <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 |
+      % 35
+      <d' f' a' >8\mp-\markup { "P.M." } <d' f' a' >16 <d' f' a' >16 <d' f' a'
+      >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16
+      <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 |
+      <d' f' a' >8\mp-\markup { "P.M." } <d' f' a' >16 <d' f' a' >16 <d' f' a'
+      >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16
+      <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 |
+      <d' f' a' >8\mp-\markup { "P.M." } <d' f' a' >16 <d' f' a' >16 <d' f' a'
+      >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16
+      <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 |
+      <d' f' a' >8\mp-\markup { "P.M." } <d' f' a' >16 <d' f' a' >16 <d' f' a'
+      >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16
+      <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 |
+      <d' f' a' >8\mp-\markup { "P.M." } <d' f' a' >16 <d' f' a' >16 <d' f' a'
+      >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16
+      <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 |
+      % 40
+      <d' f' a' >8\mp-\markup { "P.M." } <d' f' a' >16 <d' f' a' >16 <d' f' a'
+      >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16
+      <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 |
+      <d' f' a' >8\mp-\markup { "P.M." } <d' f' a' >16 <d' f' a' >16 <d' f' a'
+      >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16
+      <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 |
+      <d' f' a' >8\mp-\markup { "P.M." } <d' f' a' >16 <d' f' a' >16 <d' f' a'
+      >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16
+      <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 |
+      <d' f' a' >8\mp-\markup { "P.M." } <d' f' a' >16 <d' f' a' >16 <d' f' a'
+      >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16
+      <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 |
       <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16 <d' f'
       a' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16
       <d' f' a' >16 |
       % 45
-      <bes d' f' >2\f <bes d' f' >2 |
+      <bes d' f' >2 <bes d' f' >2 |
       <bes d' f' >2 <bes d' f' >8 <bes d' f' >16 <bes d' f' >16 <bes d' f' >4 |
       <g bes d' >2 <g bes d' >2 |
       <g bes d' >2 <g bes d' >8 <g bes d' >16 <g bes d' >16 <g bes d' >4 |
@@ -69,7 +136,7 @@ part-Poneone-one = {
       % 50
       <a cis' e' >4 <a cis' e' >4 <a cis' e' >8 <a cis' e' >16 <a cis' e' >16 <a
       cis' e' >8 <a cis' e' >16 <a cis' e' >16 |
-      <d' f' a' >8\f <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16 <d'
+      <d' f' a' >8\p <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16 <d'
       f' a' >16 <bes d' f' >8 <bes d' f' >16 <bes d' f' >16 <bes d' f' >8 <bes
       d' f' >16 <bes d' f' >16 |
       <c' e' g' >8 <c' e' g' >16 <c' e' g' >16 <c' e' g' >8 <c' e' g' >16 <c' e'
@@ -93,24 +160,34 @@ part-Poneone-one = {
       f' a' >16 <d' f' a' >16 |
       <c' e' g' >8 <c' e' g' >16 <c' e' g' >16 <c' e' g' >8 <c' e' g' >16 <c' e'
       g' >16 <d' f' a' >2~~~ |
-      <d' f' a' >1\p |
+      <d' f' a' >1\> |
       % 60
-      <d' f' a' >8\p-\markup { "P.M." } <d' f' a' >16 <d' f' a' >16 <d' f' a'
+      <d' f' a' >8\mp-\markup { "P.M." } <d' f' a' >16 <d' f' a' >16 <d' f' a'
       >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16
-
-      \linear-repeat 1 7{
-        <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 |
-      }
-      
-      %67
-      \linear-repeat 1 8{
-        <d' f' a' >8\mp-\markup { "P.M." } <d' f' a' >16 <d' f' a' >16 <d' f' a'>8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 |
-      }
+      <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 |
+      R1 |
+      R1 |
+      R1 |
+      R1 |
+      % 65
+      R1 |
+      R1 |
+      R1 |
+      R1 |
+      R1 |
+      % 70
+      R1 |
+      R1 |
+      R1 |
+      R1 |
+      <d' f' a' >8\p <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16 <d'
+      f' a' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a'
+      >16 <d' f' a' >16 |
       % 75
-      <d' f' a' >8\< <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16 <d' f'
+      <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16 <d' f'
       a' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16
       <d' f' a' >16 |
-      <bes d' f' >2\f <bes d' f' >2 |
+      <bes d' f' >2 <bes d' f' >2 |
       <bes d' f' >2 <bes d' f' >8 <bes d' f' >16 <bes d' f' >16 <bes d' f' >4 |
       <g bes d' >2 <g bes d' >2 |
       <g bes d' >2 <g bes d' >8-^ r4 r8 |
@@ -130,7 +207,7 @@ part-Poneone-one = {
       <d' f' a' >8\< <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16 <d'
       f' a' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a'
       >16 <d' f' a' >16 |
-      <d' f' a' >8\piu-f <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16 <d'
+      <d' f' a' >8\p <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16 <d'
       f' a' >16 <bes d' f' >8 <bes d' f' >16 <bes d' f' >16 <bes d' f' >8 <bes
       d' f' >16 <bes d' f' >16 |
       <c' e' g' >8 <c' e' g' >16 <c' e' g' >16 <c' e' g' >8 <c' e' g' >16 <c' e'
@@ -152,9 +229,9 @@ part-Poneone-one = {
       <bes d' f' >8 <bes d' f' >16 <bes d' f' >16 <bes d' f' >8 <bes d' f' >16
       <bes d' f' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d'
       f' a' >16 <d' f' a' >16 |
+      \key a \major
       <c' e' g' >8 <c' e' g' >16 <c' e' g' >16 <c' e' g' >8 <c' e' g' >16 <c' e'
       g' >16 <d' f' a' >2 |
-      \key a \major
       R1 |
       % 100
       R1 |
@@ -222,19 +299,7 @@ r_guit_chords = \chordmode {
   c8 s16 s16 s8 s16 s16 d2:m | \barNumberCheck #60
   s1 | % 61
   d8:m s16 s16 s8 s16 s16 s8 s16 s16 s8 s16 s16 | % 62
-  d8:m s16 s16 s8 s16 s16 s8 s16 s16 s8 s16 s16 | % 63
-  d8:m s16 s16 s8 s16 s16 s8 s16 s16 s8 s16 s16 | % 64
-  d8:m s16 s16 s8 s16 s16 s8 s16 s16 s8 s16 s16 | % 65
-  d8:m s16 s16 s8 s16 s16 s8 s16 s16 s8 s16 s16 | % 66
-  d8:m s16 s16 s8 s16 s16 s8 s16 s16 s8 s16 s16 | % 67
-  d8:m s16 s16 s8 s16 s16 s8 s16 s16 s8 s16 s16 | % 68
-  d8:m s16 s16 s8 s16 s16 s8 s16 s16 s8 s16 s16 | % 69
-  d8:m s16 s16 s8 s16 s16 s8 s16 s16 s8 s16 s16 | % 70
-  d8:m s16 s16 s8 s16 s16 s8 s16 s16 s8 s16 s16 | % 71
-  d8:m s16 s16 s8 s16 s16 s8 s16 s16 s8 s16 s16 | % 72
-  d8:m s16 s16 s8 s16 s16 s8 s16 s16 s8 s16 s16 | % 73
-  d8:m s16 s16 s8 s16 s16 s8 s16 s16 s8 s16 s16 | % 74
-  d8:m s16 s16 s8 s16 s16 s8 s16 s16 s8 s16 s16 | % 75
+  s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 s1 | % 75
   d8:m s16 s16 s8 s16 s16 s8 s16 s16 s8 s16 s16 | % 76
   d8:m s16 s16 s8 s16 s16 s8 s16 s16 s8 s16 s16 | % 77
   bes2 s2 | % 78
@@ -250,7 +315,7 @@ r_guit_chords = \chordmode {
   c8 s16 s16 s8 s16 s16 d8:m s16 s16 s8 s16 s16 | % 96
   d8:m s16 s16 s8 s16 s16 bes8 s16 s16 s8 s16 s16 | % 97
   c8 s16 s16 s8 s16 s16 d8:m s16 s16 s8 s16 s16 | % 98
-  bes8 s16 s16 s8 s16 s16 d8:m s16 s16 s8 s16 s16 |
+  bes8 s16 s16 s8 s16 s16 d8:m s16 s16 s8 s16 s16 \bar "||"
   c8 s16 s16 s8 s16 s16 d2:m | \barNumberCheck #100
   s1 s1 s1 s1 s1 s1 s1 s1 \bar "|."
 }
