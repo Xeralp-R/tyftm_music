@@ -34,8 +34,8 @@ part-Peight-one = {
   g'4 r4 b4 c'4 |
   c'2. r4 |
   % 25
-  r8. a'16 a'8 a'8 a'8 g'16 e'16~ e'8 g'8 |
-  r8. a'16 a'8 a'8 a'8 g'8 \tuplet 3/2 { a'8 g'8 e'8 } |
+  r8. a'16 \< sn 4° a'8 a'8 a'8 g'16 e'16~ e'8 g'8 |
+  r8. a'16 ^\f  a'8 a'8 a'8 g'8 \tuplet 3/2 { a'8 g'8 e'8 } |
   r8. a'16 a'8 a'8 a'8 g'8 e'8 fis'8 |
   g'2. r4 |
   r2 b4 c'4 |
@@ -49,7 +49,7 @@ part-Peight-one = {
   r2 b4 c'4 |
   cis'1(( |
   c'1) |
-  dis'1( |
+  dis'1( \< |
   d'2)) r2 |
   % 40
   R1 |
@@ -462,7 +462,7 @@ men = {
   b8\mf^\ed-text "T., blended w soli" e'16 fis'16~ fis'16 e'16 g'8 r2 |
   r8. g'16~ g'8 fis'8 fis'8 e'8 d'8 c'8 |
   % 10
-  b8 ^\ben-mp snp e'16 fis'16~ fis'16 e'16 g'8 r2 |
+  b8 ^\ben-mp e'16 fis'16~ fis'16 e'16 g'8 r2 |
   R1 |
   b8 e'16 fis'16~ fis'16 e'16 g'8 r2 |
   r8. g'16~ g'8 fis'8 fis'8 e'8 d'8 c'8 |

@@ -25,8 +25,8 @@ soli = {
 
   a'2. ^\< sn 7° r4 |
   % 25
-  r8. a'16~ ^\sfz snp a'8 a'8 a'8 g'16 e'16~ e'8 g'8 |
-  r8. a'16~ a'8 a'8 a'8 g'8 \tuplet 3/2 { a'8( g'8 e'8) } |
+  r8. a'16~ ^\sfz \< sn 4° a'8 a'8 a'8 g'16 e'16~ e'8 g'8 |
+  r8. a'16~ ^\f a'8 a'8 a'8 g'8 \tuplet 3/2 { a'8( g'8 e'8) } |
   r8. a'16~ a'8 a'8 a'8 g'8 e'8 fis'8 |
   g'2. r4 |
   r2 e'4 g'4 |
@@ -40,7 +40,7 @@ soli = {
   r2 e'4 g'4 |
   a'1~( |
   a'1\glissando |
-  b'1~ |
+  b'1~ \< |
   b'2) r2 |
 
   R1*11
@@ -93,7 +93,7 @@ soli = {
     b'4) r4
   }
 
-  <c' c''>4 <ees' ees''>4 |
+  <c' c''>4 ^\rf <ees' ees''>4 |
   <f' f''>4 r4 r2
   R1\fermata |
 }
