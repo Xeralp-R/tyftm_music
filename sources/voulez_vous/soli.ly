@@ -23,10 +23,15 @@ soli = {
   g'8. fis'16~ fis'8 e'8~ e'8 fis'8 g'4~ | 
   g'8 r8 r4 e'4 g'4 |
 
-  a'2. ^\< sn 7° r4 |
+  a'2. ^\< r4 |
   % 25
+<<<<<<< HEAD
   r8. a'16~ ^\sfz \< sn 4° a'8 a'8 a'8 g'16 e'16~ e'8 g'8 |
   r8. a'16~ ^\f a'8 a'8 a'8 g'8 \tuplet 3/2 { a'8( g'8 e'8) } |
+=======
+  r8. a'16~ ^\sfz a'8 a'8 a'8 g'16 e'16~ e'8 g'8 |
+  r8. a'16~ a'8 a'8 a'8 g'8 \tuplet 3/2 { a'8( g'8 e'8) } |
+>>>>>>> fe402e95e84eaff95dd9e93da37023e3c331bbce
   r8. a'16~ a'8 a'8 a'8 g'8 e'8 fis'8 |
   g'2. r4 |
   r2 e'4 g'4 |

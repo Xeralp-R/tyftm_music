@@ -9,10 +9,11 @@
 \include "../sources/overture.ly"
 \include "../sources/prelude.ly"
 \include "../sources/dancing_queen.ly"
+\include "../sources/honey_honey.ly"
 
 \pointAndClickOff
 
-%{\book {
+\book {
   \header {
     tagline = ##f
     part = "Piano"
@@ -55,7 +56,7 @@
 
   \bookpart {
     \tocSection i \markup { "Act I" }
-    \tocItem i.hh \markup { "1. Overture" }
+    \tocItem i.ov \markup { "1. Overture" }
 
     \header {
       \overture_header
@@ -68,13 +69,26 @@
   }
 
   \bookpart {
-    \tocItem i.hh \markup { "2. Prelude" }
+    \tocItem i.prel \markup { "2. Prelude" }
 
     \header {
       \prelude_header
     }
     \score {
       \keepWithTag #'(piano) \prelude
+
+      \layout {}
+    }
+  }
+
+  \bookpart {
+    \tocItem i.hh \markup { "3. Honey Honey" }
+
+    \header {
+      \honey_honey_header
+    }
+    \score {
+      \keepWithTag #'(piano) \honey_honey
 
       \layout {}
     }
@@ -145,7 +159,7 @@
       \layout {}
     }
   }
-%}
+}
 
 %{
 \book {

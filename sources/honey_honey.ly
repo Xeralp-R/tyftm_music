@@ -12,6 +12,7 @@
 \include "honey_honey/r_guit.ly"
 \include "honey_honey/b_guit.ly"
 \include "honey_honey/drum.ly"
+\include "honey_honey/pno.ly"
 
 honey_honey_header = \header {
   composer = "Benny Andersson, Björn Ulvaeus"
@@ -204,7 +205,7 @@ honey_honey = {
         shortInstrumentName = "Vl. 4"
       } \part-Pfour-one
     >>
-    %{
+    % {
 
     \new PianoStaff \with {
       instrumentName = "Piano"

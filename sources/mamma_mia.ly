@@ -225,3 +225,8 @@ mamma_mia = {
     } \PartPOneFiveVoiceOne
   >>
 }
+
+
+\score{
+  \mamma_mia
+}
