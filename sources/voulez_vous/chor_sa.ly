@@ -81,13 +81,8 @@ women = {
   % 35
   r2 e'4 g'4 |
   a'1~( |
-<<<<<<< HEAD
-  a'1 |
-  b'1~ \<|
-=======
   a'1\glissando |
   b'1~ |
->>>>>>> fe402e95e84eaff95dd9e93da37023e3c331bbce
   b'2) r2 |
   % 40
 

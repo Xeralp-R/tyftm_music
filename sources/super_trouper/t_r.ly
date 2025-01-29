@@ -69,21 +69,21 @@ PartPEightVoiceOne =  {
 
 
 PartPEightVoiceOneLyricsOne =  \lyricmode {
-  Su -- per -- Trou -- per lights are gon -- na find me But I
-    "won't" feel blue Like I al -- ways do "'Cause" some -- where
-    in the crowd "there's" you Wish -- ing "ev'" -- ry show was the last --  show Glad to
-    hear "you're" glad to hear "you're" com -- "in'" And sud --
+  Su -- per -- Trou -- per lights are gon -- na find "me," But I
+    "won't" feel "blue," Like I al -- ways "do," "'Cause" some -- where
+    in the crowd "there's" "you." Wish -- ing "ev'" -- ry show was the last --  "show." Glad to
+    hear "you're," glad to hear "you're" com -- "in'," And sud --
     den -- ly "it's" gon -- na be so dif -- ferent when "I'm" on the
-    stage -- to --  night to -- night the su -- per
-    trou -- per lights are gon -- na find me shi -- ning like the sun
-    Smi -- ling hav -- ing fun Feel -- ing like a num -- ber one to --
-    night the su -- per trou -- per beams are gon -- na blind me but I
-    "won't" feel blue like I al -- ways do "'Cause" some -- where in the
-    crowd "there's" you Ooh Ooh ooh ooh ooh ooh ooh Ooh --
+    stage -- to --  "night." to -- night the su -- per
+    trou -- per lights are gon -- na find me shi -- ning like the "sun,"
+    Smi -- ling hav -- ing "fun," Feel -- ing like a num -- ber "one." to --
+    night the su -- per trou -- per beams are gon -- na blind "me," but I
+    "won't" feel "blue," like I al -- ways "do," "'Cause" some -- where in the
+    crowd "there's" "you." Ooh Ooh ooh ooh ooh ooh ooh Ooh --
     ooh ooh Ooh to -- night the su -- per trou -- per lights
-    are gon -- na find me shi -- ning like the sun Smi -- ling hav --
-    ing fun Feel -- ing like a num -- ber one to -- night the su -- per
-    trou -- per beams are gon -- na blind me but I "won't" feel blue
-    like I al -- ways do "'Cause" some -- where in the crowd "there's"
-    Su -- per -- trou -- per lights are gon -- na find --  me
+    are gon -- na find "me," shi -- ning like the "sun," Smi -- ling hav --
+    ing "fun," Feel -- ing like a num -- ber "one." to -- night the su -- per
+    trou -- per beams are gon -- na blind "me," but I "won't" feel "blue,"
+    like I al -- ways "do," "'Cause" some -- where in the crowd "there's"
+    Su -- per -- trou -- per lights are gon -- na find --  "me."
 }

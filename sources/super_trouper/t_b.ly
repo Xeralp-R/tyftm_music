@@ -53,9 +53,9 @@ PartPOneTwoVoiceOne =  {
 }
 
 PartPOneTwoVoiceOneLyricsOne =  \lyricmode {
-  Wish -- ing "ev'" -- ry show was the last show Glad to hear "you're" Glad 
-  to hear your come -- in And sud -- den -- ly "it's" gon -- na be, so diff -- erent 
-  when "I'm" on the stage to -- night Su -- pa -- per troup -- pa
+  Wish -- ing "ev'" -- ry show was the last "show." Glad to hear "you're," Glad 
+  to hear your come -- "in," And sud -- den -- ly "it's" gon -- na "be," so diff -- erent 
+  when "I'm" on the stage to -- "night." Su -- pa -- per troup -- pa
   -- per Su -- pa -- per troup -- pa -- per Su -- pa -- per troup -- pa --
   per Su -- pa -- per troup -- pa -- per Su -- pa -- per troup -- pa --
   per Su -- pa -- per troup -- pa -- per Ooh Ooh ooh ooh ooh ooh ooh Ooh ooh ooh ooh 
