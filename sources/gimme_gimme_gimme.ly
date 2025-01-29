@@ -29,15 +29,15 @@ gimme_iiix_marks = {
   R1*6 \mark \default %B
   R1*8 \mark \default %C
   R1*13 \mark \default %D
-  R1*13 \mark \default %E
+  R1*13 \bar "||" \mark \default %E
   R1*6 \mark \default %F
-  R1*8 \mark \default %G
+  R1*8 \bar "||" \mark \default %G
   R1*8 \mark \default %H
   R1*9 \mark \default %I
   R1*4 \mark \default %J
   R1*11 \mark \default %K
-  R1*8 \mark \default %L
-  R1*8 \bar "|."
+  R1*8 \bar "||" \mark \default %L
+  R1*8 \bar "|." 
 }
 
 gimme_iiix_measures = {
