@@ -270,7 +270,8 @@ part-Psix-one = {
       c'2 |
     }
   >>
-  fis'8 cis''8 fis''8. cis''16 fis'8 d''8 fis''8. d''16 |
+  \key a \major
+  fis'8_\markup { \dynamic "p" \italic " al fine"} cis''8 fis''8. cis''16 fis'8 d''8 fis''8. d''16 |
   % 100
   e'8 b'8 fis''8. b'16 fis'8 cis''8 fis''8. cis''16 |
   fis'8 cis''8 fis''8. cis''16 fis'8 d''8 fis''8. d''16 |

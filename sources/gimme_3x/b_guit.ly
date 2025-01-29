@@ -120,7 +120,7 @@ part-Ponetwo-one = \transpose c c, {
   bes,8 bes8 bes,8 bes8 d8 d'8 d8 d'8 |
   \key a \major
   c8 c'8 c8 c'8 d8 d'8 d8 d'8 |
-  fis1~ |
+  fis1~ _\markup { \dynamic "p" \italic " al fine"}|
   % 100
   fis1 |
   fis1~ |

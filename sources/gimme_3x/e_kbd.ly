@@ -189,7 +189,7 @@ part-Pnine-one = {
   d'2 r8 \tuplet 3/2 { d''16(-> f''16 a''16) } d'''8-^ \tuplet 3/2 {
     d'''16(-> a''16 f''16)
   } |
-  fis''2.-> r4 |
+  fis''2.->_\markup { \dynamic "p" \italic " al fine"} r4 |
   % 100
   R1 |
   R1 |
