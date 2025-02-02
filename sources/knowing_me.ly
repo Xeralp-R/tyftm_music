@@ -1,7 +1,7 @@
 \version "2.24.4"
 % automatically converted by musicxml2ly from Knowing Me, Knowing You - Lim, Quebral (1) - William Matthew Lim.mscz.musicxml
-\include "../styles/global.ily"
-\include "../styles/final_styles/revision_style.ily"
+% \include "../styles/global.ily"
+% \include "../styles/final_styles/revision_style.ily"
 
 \include "knowing_me/drum.ly"
 \include "knowing_me/rguit.ly"

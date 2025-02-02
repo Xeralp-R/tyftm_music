@@ -6,6 +6,7 @@ Musical_Experiments/
 other/
 __pycache__/
 .pdf
+test.py
 
 # i don't know if this should be out or not
 .uuid

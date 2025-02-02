@@ -20,7 +20,7 @@ def __categorize(graphic):
     return "Uncategorized"
 
 # Deletes all instances of a certain graphic in a certain bar
-def delete(line: str, item: str, pos: str = None):
+def delete(line: str, item: str, pos: str = 'sb'):
     new_line = line
 
     # For categorical deletions (e.g., deleting all dynamics)
@@ -50,7 +50,7 @@ def add(line: str, graphic: str, note_no: int = 1, pos: str = 'default'):
     # Assuming new notes will be added onto empty bars
     if category == 'note' and __categorize(tokens[0]) == 'rest':
         if tokens[-2] == '%' or '#' in tokens[-1]:
-            bar_no = int(tokens[-1])
+            bar_no = int(tokens[-1].strip().replace('#', ''))
 
         rest = tokens[0].split('*')
         note_len = 1 / int(graphic[1:])
@@ -101,11 +101,11 @@ def replace(line: str, graphic_orig: str, graphic_new: str):
         if graphic_orig in token:
             tokens[i] = token.replace(graphic_orig, graphic_new)
 
-    return ' '.join(tokens)
+            # Add commands only add one graphic at a time, so there
+            # is no need to keep running once one graphic has been added
+            break
 
-# Moves graphics from one note to another
-def move(line: str, graphic: str, note_no_orig: int, note_no_new: int):
-    raise NotImplementedError()
+    return ' '.join(tokens)
 
 # Moves graphics from one position to another
 def move(line: str, graphic: str, note_no: int, pos_orig: str, pos_new: int):
@@ -117,11 +117,8 @@ def move(line: str, graphic: str, note_no: int, pos_orig: str, pos_new: int):
     for token in tokens:
         if __categorize(token) == "note":
             note_count += 1
-            if note_count == note_no:
-                if category == 'tie':
-                    tokens[i] += '~'
-                elif category == 'dyn':
-                    tokens.insert(i + 1, f"{POSITIONS[pos_new]}{graphic}")
+            if note_count == note_no and graphic in token:
+                tokens[i].replace(f"{POSITIONS[pos_orig]}{graphic}", f"{POSITIONS[pos_new]}{graphic}")
                 
                 # Add commands only add one graphic at a time, so there
                 # is no need to keep running once one graphic has been added

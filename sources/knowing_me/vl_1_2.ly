@@ -12,7 +12,7 @@ PartPOneVoiceOne =  {
   g'4. ( a'8 ) ~ a'2 ~ | % 9
   a'2. ~ _\> a'8 r8 _\ppp | \barNumberCheck #10
   R1 | % 11
-  fis''1 (_\ppp _\< | % 12
+  fis''1 ( _\< | % 12
   a''1 ) (_\pp | % 13
   a''1 ) ( | % 14
   c''1 ) ( | % 15
@@ -28,7 +28,7 @@ PartPOneVoiceOne =  {
 
 PartPTwoVoiceOne =  {
   \clef "treble" \numericTimeSignature\time 4/4 \key g \major | % 1
-  r8 b'2 ~ _\pp _\> b'4. ~ | % 2
+  r8 b'2 ~ _\pp  b'4. ~ | % 2
   \after 2 _\pppp b'2 r2 | % 3
   R1*11 | % 14
   \after 2. _\pp g'1 ~ _\ppp _\< | % 15
