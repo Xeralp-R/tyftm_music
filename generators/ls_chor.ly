@@ -195,21 +195,6 @@
   }
 
   \bookpart {
-    \tocItem i.giiix \markup { "11. Gimme, Gimme, Gimme (Under Construction)" }
-
-    %{\header {
-      \overture_header
-    %}
-    \markup {
-      \vspace #14
-
-      \fill-line {
-        "Under Construction!"
-      }
-    }
-    }
-
-  \bookpart {
     \tocItem i.ggg \markup { "11. Gimme Gimme Gimme" }
 
     \header {
