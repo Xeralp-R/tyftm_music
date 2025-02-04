@@ -3,22 +3,22 @@ part-Ponezero-one = {
   \time 4/4
   \clef "treble_8"
 
-  c16->\mp d16-> r8 r8 c16-> d16-> r8 <d g >8-> <c f >8-> r8 |
+  c16->\mf d16-> r8 r8 c16-> d16-> r8 <d g >8-> <c f >8-> r8 |
   c16-> d16-> r8 r8 c16-> d16-> r2 |
   c16-> d16-> r8 r8 c16-> d16-> r8 <d g >8-> <c f >8-> r8 |
   c16-> d16-> r8 r8 c16-> d16-> r2 |
-  d2.-^\p\< c4-^\!\mp |
+  d2.-^\< c4-^ |
   % 5
-  bes,1~-> |
+  bes,1\f~-> |
   bes,1( |
   g,1)( |
   g,2.) g,4 |
-  a,2. a,8 <a, e a >16-> <a, e a >16-> |
+  a,2. a,8 <a, e a >16->\rf <a, e a >16-> |
   % 10
   <a, e a >2-> r2 |
   <<
     {
-      d8\mp a8 d'8. a16 d8 bes8 d'8. bes16 |
+      d8\f a8 d'8. a16 d8 bes8 d'8. bes16 |
       c8 g8 d'8. g16 d8 a8 d'8. a16 |
       d8 a8 d'8. bes16 d8 a8 d'8. a16 |
       c8 g8 d'8. g16 d8 a8 d'8. a16 |
@@ -40,10 +40,10 @@ part-Ponezero-one = {
       c2 d2 |
     }
   >>
-  <d a >1\> |
+  <d a >1\p |
   % 20
-  R1\p |
-  r2. d'8 f'8 |
+  R1 |
+  r2. d'8\ben-mf f'8 |
   g'4 g'8 f'16 g'16 g'8 a'8~ a'4~ |
   a'2. d'8 f'8 |
   g'4 a'8 f'16 g'16~ g'2~ |
@@ -56,7 +56,7 @@ part-Ponezero-one = {
   % 30
   g'8 f'8 d'8 c'16 d'16 d'2~ |
   d'1 |
-  d'8 a'8 d''8. a'16 d'8 bes'8 d''8. bes'16 |
+  d'8\mp a'8 d''8. a'16 d'8 bes'8 d''8. bes'16 |
   c'8 g'8 d''8. g'16 d'8 a'8 d''8. a'16 |
   d'8 a'8 d''8. a'16 d'8 bes'8 d''8. bes'16 |
   % 35
@@ -72,16 +72,16 @@ part-Ponezero-one = {
   c'8 g'8 d''8. g'16 c'8 g'8 d''8. g'16 |
   d2.\< c4\!\mf |
   % 45
-  bes,1( |
+  bes,1\f( |
   bes,1)( |
   g,1)( |
   g,2.) g,4 |
-  a,2.~ a,8 <a, e a >16-> <a, e a >16-> |
+  a,2.~ a,8 <a, e a >16->\sp <a, e a >16-> |
   % 50
   <a, e a >2-> r2 |
   <<
     {
-      d8\mf a8 d'8. a16 d8 bes8 d'8. bes16 |
+      d8\f a8 d'8. a16 d8 bes8 d'8. bes16 |
       c8 g8 d'8. g16 d8 a8 d'8. a16 |
       d8 a8 d'8. bes16 d8 a8 d'8. a16 |
       c8 g8 d'8. g16 d8 a8 d'8. a16 |
@@ -102,9 +102,9 @@ part-Ponezero-one = {
       c2 d2 |
     }
   >>
-  <d a >1\> |
+  <d a >1\p |
   % 60
-  r2\p r4 d'8 f'8 |
+  r2 r4 d'8\f f'8 |
   g'4 g'8 f'16 g'16 g'8 a'8~ a'4~ |
   a'2. d'8 f'8 |
   g'4 a'8 f'16 g'16~ g'2~ |
@@ -117,13 +117,13 @@ part-Ponezero-one = {
   R1 |
   % 70
   R1 |
-  d'8 a'8 d''8. a'16 d'8 bes'8 d''8. bes'16 |
+  d'8\mp a'8 d''8. a'16 d'8 bes'8 d''8. bes'16 |
   c'8 g'8 d''8. g'16 d'8 a'8 d''8. a'16 |
   d'8 a'8 d''8. a'16 d'8 bes'8 d''8. bes'16 |
   c'8 g'8 d''8. g'16 c'8 g'8 d''8. g'16 |
   % 75
   d2.\< c4 |
-  bes,1~\mf |
+  bes,1~\f |
   bes,1( |
   g,1) |
   g,2 a,8-^ r4 r8 |
@@ -140,10 +140,10 @@ part-Ponezero-one = {
   R1 |
   R1 |
   % 90
-  d1\p\< |
   <<
     {
-      d8\mf a8 d'8. a16 d8 bes8 d'8. bes16 |
+      d1\p\< |
+      d8\piu-f a8 d'8. a16 d8 bes8 d'8. bes16 |
       c8 g8 d'8. g16 d8 a8 d'8. a16 |
       d8 bes8 d'8. bes16 d8 a8 d'8. a16 |
       c8 g8 d'8. g16 d8 a8 d'8. a16 |
@@ -151,9 +151,10 @@ part-Ponezero-one = {
       d8 a8 d'8. a16 d8 bes8 d'8. bes16 |
       c8 g8 d'8. g16 d8 a8 d'8. a16 |
       d8 bes8 d'8. bes16 d8 a8 d'8. a16 |
-      \key a \major
       c8 g8 d'8. g16 d8 a8 d'8. a16 |
+      \key a \major
     }\\{
+      s1 |
       d2 d2 |
       c2 d2 |
       d2 d2 |
@@ -165,7 +166,7 @@ part-Ponezero-one = {
       c2 d2 |
     }
   >>
-  <fis cis' >1 |
+  <fis cis' >1 _\markup { \dynamic "p" \italic " al fine"}|
   % 100
   R1 |
   R1 |
