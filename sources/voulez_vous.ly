@@ -30,7 +30,7 @@ voulez-vous-measures = {
   R1 * 6 
   R1*12
   R1*2 \bar "||" 
-  R1*8 \bar "||" % key chage
+  R1*11 \bar "||" % key chage
   R1*12 
   R1*6 \bar "|."
 }
@@ -47,7 +47,7 @@ voulez-vous-marks = {
   R1 * 6 \mark \default
   R1*12 \mark \default
   R1*2 \bar "||" \textMark "Instrumental: Harry"
-  R1*8 \bar "||" \mark \default % key chage
+  R1*11 \bar "||" \mark \default % key chage
   R1*12 \mark \default 
   R1*6 \bar "|."
 }
