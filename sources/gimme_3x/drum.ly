@@ -4,7 +4,7 @@
 part-Ponethree-one = \drummode {
   <<
     {
-      hh8\mf hh8 hh8 hh16 hh16 hh8 hh8 hh8 hho8 |
+      hh8\p hh8 hh8 hh16 hh16 hh8 hh8 hh8 hho8 |
       hh16 hh16 hh16 hh16 hh16 hh16 hh16 hh16 hh16 hh16 hh16
       hh16 hh16 hh16 hh16 hh16 |
     } \\
@@ -30,7 +30,7 @@ part-Ponethree-one = \drummode {
 
 
       hh8\< hh8 hh8 hh16 hh16 hh8 hh16 hh16 hh8 hho8 |
-      hh8\f hh8 hh8 hh16 hh16 hh8 hh16 hh16 hh8 hho8 |
+      hh8\mf hh8 hh8 hh16 hh16 hh8 hh16 hh16 hh8 hho8 |
       \linear-spanner 1 4
       hh8\< hh8 hh8 hh16 hh16 hh8 hh8 hho4
     }
@@ -78,8 +78,8 @@ part-Ponethree-one = \drummode {
       bd4 sn4 bd4 sn4 |
     }
   >>
-  hho8->\p hh8 hh8-> hh16 hh16 hh8 hh8 hh8-> hh16 hh16 |
-  hho8 hh8 hh8 hh16 hh16 hh8 hh8 hh8 hh16 hh16 |
+  hho8-> hh8\> hh8-> hh16 hh16 hh8 hh8 hh8-> hh16 hh16 |
+  hho8\mp hh8 hh8 hh16 hh16 hh8 hh8 hh8 hh16 hh16 |
   \linear-spanner 1 6
   % 25
   hh8 hh8 hh8 hh16 hh16 hh8 hh8 hh8 hh16 hh16 |
@@ -92,7 +92,7 @@ part-Ponethree-one = \drummode {
     \context DrumVoice = "voiceone" {
       \voiceOne
       sn1:16\< |
-      hh8\f hh8 hh8 hh16 hh16 hh8 hh16 hh16 hh8 hho8 |
+      hh8\ben-mf hh8 hh8 hh16 hh16 hh8 hh16 hh16 hh8 hho8 |
       \linear-spanner 1 4
       hh8\< hh8 hh8 hh16 hh16 hh8 hh8 hho4
       hh8->\f hh8 hh8 hh16 hh16 hh8 hh8 hh8 hh16 hh16 |
@@ -122,8 +122,8 @@ part-Ponethree-one = \drummode {
       bd4 sn4 bd4 sn4 |
     }
   >>
-  hho8->\piu-f hh8 hh8-> hh16 hh16 hh8 hh8 hh8-> hh16 hh16 |
-  hho8 hh8 hh8 hh16 hh16 hh8 hh8 hh8 hh16 hh16 |
+  hho8-> hh8\> hh8-> hh16 hh16 hh8 hh8 hh8-> hh16 hh16 |
+  hho8\p hh8 hh8 hh16 hh16 hh8 hh8 hh8 hh16 hh16 |
   \linear-spanner 1 6
 
   hh8\p hh8 hh8 hh16 hh16 hh8 hh8 hh8 hh16 hh16 |
@@ -157,7 +157,7 @@ part-Ponethree-one = \drummode {
       \voiceOne
       sn1:16\< |
       % 90
-      hh8\piu-f hh8 hh8 hh16 hh16 hh8 hh8 hh8 hh16 hh16 |
+      hh8\ff hh8 hh8 hh16 hh16 hh8 hh8 hh8 hh16 hh16 |
       \linear-spanner 1 2
       hh8 hh8 hh8 hh16 hh16 hh8 hh8 hh8 hh16 hh16 |
       hh8 hh8 hh8 hh16 hh16 hh8 hh8 hh8 hh16 hh16 |
@@ -184,7 +184,7 @@ part-Ponethree-one = \drummode {
   \linear-spanner 1 3
   hh8 hh8 hh8 hh16 hh16 hh8 hh8 hh8 hh16 hh16 |
   \linear-spanner 1 2
-  cymr4\laissezVibrer r4 r2\fermata|
+  cymr4\laissezVibrer r4 r2\fermata |
 }
 
 %{part-Ponefour-one = {
