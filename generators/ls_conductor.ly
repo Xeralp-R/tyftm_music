@@ -11,6 +11,7 @@
 \include "../sources/overture.ly"
 \include "../sources/prelude.ly"
 \include "../sources/dancing_queen.ly"
+\include "../sources/gimme_gimme_gimme.ly"
 \pointAndClickOff
 
 \book {
@@ -160,6 +161,19 @@
   }
 
   \bookpart {
+    \tocItem i.ggg \markup { "11. Gimme Gimme Gimme" }
+
+    \header {
+      \gimme_iiix_header
+    }
+    \score {
+      \gimme_iiix
+
+      \layout {}
+    }
+  }
+
+  \bookpart {
     \tocItem i.vv \markup { "12. Voulez Vous" }
 
     \header {
@@ -172,7 +186,7 @@
     }
   }
 }
-
+%{
 \book {
   \bookOutputSuffix "1-Overture"
   \score {
@@ -244,3 +258,4 @@
     \midi{}
   }
 }
+%}

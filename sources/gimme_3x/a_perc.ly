@@ -81,7 +81,7 @@ part-Ponefour-one = \drummode {
   \linear-repeat 1 3{
     tamb16->\f tamb16 tamb16 tamb16 tamb4:16 tamb4:16 tamb4:16 |
   }
-  tamb16 tamb16 tamb16 tamb16 tamb16 tamb16 tamb16 tamb16 tamb8:2-^ r4 r8 |
+  tamb16 tamb16 tamb16 tamb16 tamb16 tamb16 tamb16 tamb16 tamb8-^ r4 r8 |
   % 80
   R1 |
   R1 |

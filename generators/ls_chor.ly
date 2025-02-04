@@ -10,6 +10,7 @@
 \include "../sources/overture.ly"
 \include "../sources/prelude.ly"
 \include "../sources/dancing_queen.ly"
+\include "../sources/gimme_gimme_gimme.ly"
 %\include "../sources/voulez_vous.ly"
 
 \pointAndClickOff
@@ -205,6 +206,19 @@
       \fill-line {
         "Under Construction!"
       }
+    }
+  }
+
+  \bookpart {
+    \tocItem i.ggg \markup { "11. Gimme Gimme Gimme" }
+
+    \header {
+      \gimme_iiix_header
+    }
+    \score {
+      \keepWithTag #'(chor) \gimme_iiix
+
+      \layout {}
     }
   }
 

@@ -1,7 +1,7 @@
 % Automatically generated from a musicxml file.
 \version "2.24.0"
 \include "../styles/Global.ily"
-\include "../styles/final_styles/revision_style.ily"
+%\include "../styles/final_styles/revision_style.ily"
 
 \include "gimme_3x/vl_1_2.ly"
 \include "gimme_3x/vl_3_4.ly"
@@ -16,7 +16,7 @@
 
 gimme_iiix_header = \header {
   composer = "Benny Andersson, Björn Ulvaeus"
-  arranger = "Kate Quebral, MJ Laxina / RAR"
+  arranger = "Kate Quebral, MJ Laxina / RAR, SLCC"
   title = "Gimme, Gimme, Gimme"
 }
 
@@ -190,7 +190,7 @@ gimme_iiix = {
   >>
 }
 
-
+%{
 \score {
   \gimme_iiix
 }
@@ -198,4 +198,4 @@ gimme_iiix = {
 \header {
   \gimme_iiix_header
 }
-
+%}

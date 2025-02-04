@@ -8,6 +8,7 @@
 \include "../sources/overture.ly"
 \include "../sources/prelude.ly"
 \include "../sources/dancing_queen.ly"
+\include "../sources/gimme_gimme_gimme.ly"
 
 \pointAndClickOff
 
@@ -126,6 +127,19 @@
     }
     \score {
       \keepWithTag #'(e_kbd) \super_trouper
+
+      \layout {}
+    }
+  }
+
+  \bookpart {
+    \tocItem i.ggg \markup { "11. Gimme Gimme Gimme" }
+
+    \header {
+      \gimme_iiix_header
+    }
+    \score {
+      \keepWithTag #'(e_kbd) \gimme_iiix
 
       \layout {}
     }

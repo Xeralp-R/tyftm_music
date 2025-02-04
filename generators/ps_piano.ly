@@ -10,6 +10,8 @@
 \include "../sources/prelude.ly"
 \include "../sources/dancing_queen.ly"
 \include "../sources/honey_honey.ly"
+\include "../sources/gimme_gimme_gimme.ly"
+\include "../sources/voulez_vous.ly"
 
 \pointAndClickOff
 
@@ -157,6 +159,34 @@
       \keepWithTag #'(piano) \super_trouper
 
       \layout {}
+    }
+  }
+
+  \bookpart {
+    \tocItem i.ggg \markup { "11. Gimme Gimme Gimme" }
+
+    \header {
+      \gimme_iiix_header
+    }
+    \score {
+      \keepWithTag #'(piano) \gimme_iiix
+
+      \layout {}
+    }
+  }
+
+  \bookpart {
+    \tocItem i.vv \markup { "12. Voulez Vous (Tacet)" }
+
+    \header {
+      \voulez_vous_header
+    }
+    \markup {
+      \vspace #14
+
+      \fill-line {
+        "Tacet"
+      }
     }
   }
 }

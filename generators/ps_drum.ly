@@ -13,6 +13,7 @@
 \include "../sources/money_money_money.ly"
 \include "../sources/overture.ly"
 \include "../sources/dancing_queen.ly"
+\include "../sources/gimme_gimme_gimme.ly"
 
 \pointAndClickOff
 

@@ -10,6 +10,7 @@
 \include "../sources/honey_honey.ly"
 \include "../sources/overture.ly"
 \include "../sources/dancing_queen.ly"
+\include "../sources/gimme_gimme_gimme.ly"
 
 \pointAndClickOff
 
@@ -148,6 +149,19 @@
     }
     \score {
       \keepWithTag #'(b_guit) \super_trouper
+
+      \layout {}
+    }
+  }
+
+  \bookpart {
+    \tocItem i.ggg \markup { "11. Gimme Gimme Gimme" }
+
+    \header {
+      \gimme_iiix_header
+    }
+    \score {
+      \keepWithTag #'(b_guit) \gimme_iiix
 
       \layout {}
     }
