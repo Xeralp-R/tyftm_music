@@ -12,6 +12,7 @@
 \include "../sources/prelude.ly"
 \include "../sources/dancing_queen.ly"
 \include "../sources/gimme_gimme_gimme.ly"
+\include "../sources/thank_you_for_the_music.ly"
 \pointAndClickOff
 
 \book {
@@ -51,12 +52,25 @@
     }
   }
 
+  \bookpart { \blank_page }
   \bookpart { \markuplist \table-of-contents }
 
-  \bookpart { \blank_page  }
+
+  \bookpart { \blank_page }
+  \bookpart {
+    \tocSection i "Act I"
+
+    \markup {
+      \vspace #14
+
+      \fill-line {
+        "Act I"
+      }
+    }
+  }
+  \bookpart { \blank_page }
 
   \bookpart {
-    \tocSection i \markup {"Act One"}
     \tocItem i.o \markup { "1. Overture" }
 
     \header {
@@ -181,6 +195,33 @@
     }
     \score {
       \voulez_vous
+
+      \layout {}
+    }
+  }
+
+  \bookpart { \blank_page }
+  \bookpart {
+    \tocSection ii "Act II"
+
+    \markup {
+      \vspace #14
+
+      \fill-line {
+        "Act II"
+      }
+    }
+  }
+  \bookpart { \blank_page }
+
+  \bookpart {
+    \tocItem ii.tyftm \markup { "24. Thank You For The Music" }
+
+    \header {
+      \tyftm_header
+    }
+    \score {
+      \tyftm
 
       \layout {}
     }

@@ -8,7 +8,7 @@ part-Pone-one = {
 
   R1*2 |
   \time 2/4
-  r4 r8 r16 e'16~ \breathe |
+  r4 r8 r16 e'16~^\mf \breathe |
   \time 4/4
   e'4 e'8 e'8 e'8 dis'8 r8 cis'8 |
   b8 r8 r4 \tuplet 3/2 { b8 b8 b8 } \tuplet 3/2 { cis'8 b8 b8( } |
@@ -31,8 +31,8 @@ part-Pone-one = {
   e'8
   a8 a8 a8~ a8 gis8 a8 b8~ |
   b8
-  r8 b'4 b'4 b'4 |
-  \tempo "Gently" 4 = 100 b'8 b'8 b'8 bes'16 a'16~ a'8 gis'8 r8
+  r8 b'4-- b'4-- b'4-- |
+  \tempo "Gently" 4 = 100 b'8^\f b'8 b'8 bes'16 a'16~ a'8 gis'8 r8
   cis'8 |
   % 20
   e'4 dis'4 fis'8 e'8~ e'4 |
@@ -49,8 +49,8 @@ part-Pone-one = {
   % 30
   e'4 dis'4 gis'8 fis'8( e'8) e'8~ |
   e'4 r4 r2 |
-  << { R1 } \\ { r2 r2 } >> |
-  e'8 e'8 e'8 e'8~ e'8 dis'8 cis'8 b8~ |
+  R1 |
+  e'8^\mf e'8 e'8 e'8~ e'8 dis'8 cis'8 b8~ |
   b8 b8 b8 b8~ b8 cis'8 b8 b8( |
   % 35
   gis4) r4 r2 |
@@ -69,8 +69,8 @@ part-Pone-one = {
   gis8 gis8 gis8~ gis4 r4 |
   r2 r4 cis'8 dis'8 |
   \tuplet 3/2 { e'8 a8 a8 } a4 r8 gis8 a8 b8~ |
-  b8 r8 b'4 b'4 b'4 |
-  b'8 b'8 b'8 bes'16 a'16~ a'8 gis'8 r8 cis'8 |
+  b8 r8 b'4-- b'4-- b'4-- |
+  b'8^\f b'8 b'8 bes'16 a'16~ a'8 gis'8 r8 cis'8 |
   % 50
   e'4 dis'4 fis'8 e'8~ e'4 |
   r8 dis'4 cis'8 dis'4. e'8 |
@@ -86,20 +86,21 @@ part-Pone-one = {
   % 60
   e'4 dis'4 gis'8 fis'8( e'8) e'8~ |
   e'4 r4 r2 |
-  << { R1 } \\ { r2 r2 } >> |
-  fis'2 \tuplet 3/2 { r4 e'4 dis'4 } |
+  R1 |
+  fis'2\ben-mf \tuplet 3/2 { r4 e'4 dis'4 } |
   e'8 b8~ b4 gis8 b8 e'8 gis'8~ |
   % 65
   gis'4 fis'4 e'4 dis'8 fis'8( |
   e'4) r4 gis8 b8 e'8 gis'8~ |
   gis'4 fis'8 a'8~ a'4 gis'8( fis'8) |
   fis'4 e'4 e'4 dis'4 |
-  cis'8 dis'8 e'4 \tuplet 3/2 { e'8 fis'8 gis'8~ } gis'8 r8 |
+  cis'8\< dis'8 e'4 \tuplet 3/2 { e'8 fis'8 gis'8~ } gis'8 r8 |
   % 70
   \time 5/4
-  gis'16 a'16 b'4.( cis''4 gis'4) b'4 |
+  gis'16^\sfz a'16 b'4.( cis''4 gis'4) b'4 |
   \time 4/4
-  \tempo "A tempo" b'8 b'8 b'8 bes'16 a'16~ a'8 gis'8 r8 cis'8 |
+  \tempo "A tempo" b'8^\markup{\dynamic "f" \italic "leggiero molto"} 
+  b'8 b'8 bes'16 a'16~ a'8 gis'8 r8 cis'8 |
   e'4 dis'4 fis'8 e'8~ e'4 |
   r8 dis'4 cis'8 dis'4. e'8 |
   gis'4 fis'8( e'8) e'8 dis'8~ dis'4 |
@@ -120,7 +121,7 @@ part-Pone-one = {
   e'4 dis'4 gis'8 fis'8( e'8) e'8~ |
   e'4 r4 r2 |
   R1*2
-  R1 |
+  R1\fermata |
 }
 
 sophie_lyr = \lyricmode {
