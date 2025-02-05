@@ -9,10 +9,14 @@
 \include "../sources/overture.ly"
 \include "../sources/prelude.ly"
 \include "../sources/dancing_queen.ly"
+\include "../sources/honey_honey.ly"
+\include "../sources/gimme_gimme_gimme.ly"
+\include "../sources/voulez_vous.ly"
+\include "../sources/thank_you_for_the_music.ly"
 
 \pointAndClickOff
 
-%{\book {
+\book {
   \header {
     tagline = ##f
     part = "Piano"
@@ -53,9 +57,22 @@
   \bookpart { \blank_page }
   \bookpart { \markuplist \table-of-contents  }
 
+  \bookpart { \blank_page }
   \bookpart {
-    \tocSection i \markup { "Act I" }
-    \tocItem i.hh \markup { "1. Overture" }
+    \tocSection i "Act I"
+
+    \markup {
+      \vspace #14
+
+      \fill-line {
+        "Act I"
+      }
+    }
+  }
+  \bookpart { \blank_page }
+
+  \bookpart {
+    \tocItem i.ov \markup { "1. Overture" }
 
     \header {
       \overture_header
@@ -68,13 +85,26 @@
   }
 
   \bookpart {
-    \tocItem i.hh \markup { "2. Prelude" }
+    \tocItem i.prel \markup { "2. Prelude" }
 
     \header {
       \prelude_header
     }
     \score {
       \keepWithTag #'(piano) \prelude
+
+      \layout {}
+    }
+  }
+
+  \bookpart {
+    \tocItem i.hh \markup { "3. Honey Honey" }
+
+    \header {
+      \honey_honey_header
+    }
+    \score {
+      \keepWithTag #'(piano) \honey_honey
 
       \layout {}
     }
@@ -145,7 +175,62 @@
       \layout {}
     }
   }
-%}
+
+  \bookpart {
+    \tocItem i.ggg \markup { "11. Gimme Gimme Gimme" }
+
+    \header {
+      \gimme_iiix_header
+    }
+    \score {
+      \keepWithTag #'(piano) \gimme_iiix
+
+      \layout {}
+    }
+  }
+
+  \bookpart {
+    \tocItem i.vv \markup { "12. Voulez Vous (Tacet)" }
+
+    \header {
+      \voulez_vous_header
+    }
+    \markup {
+      \vspace #14
+
+      \fill-line {
+        "Tacet"
+      }
+    }
+  }
+
+  \bookpart { \blank_page }
+  \bookpart {
+    \tocSection ii "Act II"
+
+    \markup {
+      \vspace #14
+
+      \fill-line {
+        "Act II"
+      }
+    }
+  }
+  \bookpart { \blank_page }
+
+  \bookpart {
+    \tocItem ii.tyftm \markup { "24. Thank You For The Music" }
+
+    \header {
+      \tyftm_header
+    }
+    \score {
+      \keepWithTag #'(piano) \tyftm
+
+      \layout {}
+    }
+  }
+}
 
 %{
 \book {

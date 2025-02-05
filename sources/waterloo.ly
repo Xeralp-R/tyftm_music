@@ -1,0 +1,108 @@
+% Automatically generated from a musicxml file.
+\version "2.24.0"
+\include "../styles/global.ily"
+\include "../styles/final_styles/revision_style.ily"
+
+waterloo_header = \header {
+  composer = "Benny Andersson, Björn Ulvaeus"
+  arranger = "Kate Quebral, William Lim / RAR"
+  title = "Waterloo"
+}
+
+waterloo = {
+  <<
+    \new StaffGroup <<
+      \tag #'(accompaniment orch vl_i)
+      \new Staff \with {
+        instrumentName = "Violin 1"
+        shortInstrumentName = "Vl. 1"
+      } \part-Pone-one
+
+      \tag #'(accompaniment orch vl_ii)
+      \new Staff \with {
+        instrumentName = "Violin 2"
+        shortInstrumentName = "Vl. 2"
+      } \part-Ptwo-one
+
+      \tag #'(accompaniment orch vl_iii)
+      \new Staff \with {
+        instrumentName = "Violin 3"
+        shortInstrumentName = "Vl. 3"
+      } \part-Pthree-one
+
+      \tag #'(accompaniment orch vl_iv)
+      \new Staff \with {
+        instrumentName = "Violin 4"
+        shortInstrumentName = "Vl. 4"
+      } \part-Pfour-one
+    >>
+
+    \tag #'(accompaniment orch piano)
+    \new PianoStaff \with {
+        instrumentName = "Piano"
+        shortInstrumentName = "Pf."
+      } <<
+      \new Staff \part-Pfive-one
+      \new Staff \part-Pfive-two
+    >>
+
+    \tag #'(chor)
+    \new StaffGroup \with {
+      instrumentName = "Chorus"
+      shortInstrumentName = "Ch."
+    } <<
+      \new Staff \part-Psix-one
+      \new Staff \part-Pseven-one
+    >>
+
+    \tag #'(accompaniment band e_kbd)
+    \new PianoStaff \with {
+      instrumentName = "Electric Keyboard"
+      shortInstrumentName = "E. Kbd."
+    }
+    <<
+      \new Staff \part-Peight-one
+      \new Staff \part-Peight-two
+    >>
+    \tag #'(accompaniment band l_guit)
+    \new StaffGroup \with {
+      instrumentName = "Lead Guitar"
+      shortInstrumentName = "L. Guit."
+
+    } \part-Pnine-one
+
+    \tag #'(accompaniment band r_guit)
+    <<
+      %\new ChordNames \chord-sequence
+      \new Staff \with {
+        instrumentName = "Rhythm Guitar"
+        shortInstrumentName = "R. Guit"
+      } \part-Ponezero-one
+    >>
+
+    \tag #'(accompaniment band b_guit)
+    \new StaffGroup \with {
+      systemStartDelimiter = #'SystemStartSquare
+      instrumentName = "Bass Guitar"
+      shortInstrumentName = "B. Guit"
+    } <<
+      \new Staff \part-Poneone-one
+      \new TabStaff \with {
+        stringTunings = #bass-tuning
+      } \part-Poneone-one
+    >>
+
+    \tag #'(accompaniment band drum)
+    \new DrumStaff \with {
+      instrumentName = "Drumkit"
+      shortInstrumentName = "Dr."
+    } \part-Ponetwo-one
+    
+    \tag #'(accompaniment band drum a_perc)
+    \new DrumStaff \with {
+      \override StaffSymbol.line-positions = #'(-2 2)
+      instrumentName = "Aux. Perc."
+      shortInstrumentName = "A. Pc."
+    } \part-Ponethree-one
+  >>
+}

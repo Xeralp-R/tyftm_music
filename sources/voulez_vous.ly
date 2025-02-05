@@ -1,7 +1,7 @@
 % Automatically generated from a musicxml file.
 \version "2.24.0"
 \include "../styles/Global.ily"
-\include "../styles/final_styles/revision_style.ily"
+%\include "../styles/final_styles/revision_style.ily"
 
 \include "voulez_vous/voulez_vous_perc.ly"
 \include "voulez_vous/voulez_vous_b_guit.ly"
@@ -9,6 +9,7 @@
 \include "voulez_vous/voulez_vous_l_guit.ly"
 \include "voulez_vous/chor_tb.ly"
 \include "voulez_vous/chor_sa.ly"
+\include "voulez_vous/chor_extra.ly"
 \include "voulez_vous/soli.ly"
 
 voulez_vous_header = \header {
@@ -29,7 +30,7 @@ voulez-vous-measures = {
   R1 * 6 
   R1*12
   R1*2 \bar "||" 
-  R1*8 \bar "||" % key chage
+  R1*11 \bar "||" % key chage
   R1*12 
   R1*6 \bar "|."
 }
@@ -46,7 +47,7 @@ voulez-vous-marks = {
   R1 * 6 \mark \default
   R1*12 \mark \default
   R1*2 \bar "||" \textMark "Instrumental: Harry"
-  R1*8 \bar "||" \mark \default % key chage
+  R1*11 \bar "||" \mark \default % key chage
   R1*12 \mark \default 
   R1*6 \bar "|."
 }
@@ -67,20 +68,41 @@ voulez_vous =  {
       \new Staff \part-Pfive-two
     >>
     %}
+    %{
     \new Staff \part-Psix-one
     \new Staff \part-Pseven-one
     \new Staff \part-Peight-one
     \new Staff \part-Pnine-one
+    %}
 
+    \tag #'(chor soli)
+    \new Staff \with {
+      instrumentName = "Soli"
+      shortInstrumentName = "Si."
+    } \soli \addlyrics \soli_lyr
+
+    \tag #'(chor)
     \new ChoirStaff \with {
       instrumentName = "Chorus"
       shortInstrumentName = "Ch."
     } <<
-      \new Staff \women
-      \addlyrics \women-lyr
-      \new Staff \men 
-      \new NullVoice \men_null_vc
-      \addlyrics \men_lyr
+      \new Staff <<
+        \women
+        \new NullVoice \women-null-voice
+        \addlyrics \women-lyr
+      >>
+      \new Staff <<
+        \men 
+        \new NullVoice \men_null_vc
+        \addlyrics \men_lyr
+      >>
+    >>
+
+    \new ChoirStaff \with {
+      instrumentName = "Recorded Vocals"
+      shortInstrumentName = "Rec. V."
+    } <<
+      \new Staff << \extra_part \addlyrics \extra_lyr >>
     >>
     
     \tag #'(accompaniment band l_guit)
@@ -142,7 +164,7 @@ voulez_vous =  {
   >>
 }
 
-
+%{
 \header {
   \voulez_vous_header
 }
@@ -151,4 +173,4 @@ voulez_vous =  {
   \voulez_vous
   \layout{}
 }
-
+%}

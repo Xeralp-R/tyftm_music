@@ -1,12 +1,18 @@
 \version "2.24.0"
 \include "../styles/Global.ily"
-\include "../styles/final_styles/Full_Score.ily"
+\include "../styles/final_styles/revision_style.ily"
 
 \include "../sources/honey_honey.ly"
 \include "../sources/chiquitita.ly"
 \include "../sources/mamma_mia.ly"
 \include "../sources/super_trouper.ly"
-%\include "../sources/our_last_summer.ly"
+\include "../sources/our_last_summer.ly"
+\include "../sources/overture.ly"
+\include "../sources/prelude.ly"
+\include "../sources/dancing_queen.ly"
+\include "../sources/gimme_gimme_gimme.ly"
+\include "../sources/voulez_vous.ly"
+\include "../sources/thank_you_for_the_music.ly"
 
 \pointAndClickOff
 
@@ -51,8 +57,51 @@
   \bookpart { \blank_page }
   \bookpart { \markuplist \table-of-contents }
 
+  \bookpart { \blank_page }
   \bookpart {
-    \tocSection i \markup { "Act I" }
+    \tocSection i "Act I"
+
+    \markup {
+      \vspace #14
+
+      \fill-line {
+        "Act I"
+      }
+    }
+  }
+  \bookpart { \blank_page }
+
+  \bookpart {
+    \tocItem i.overture \markup { "1. Overture (Tacet)" }
+
+    \header {
+      \overture_header
+    }
+    \markup {
+      \vspace #14
+
+      \fill-line {
+        "Tacet"
+      }
+    }
+  }
+
+  \bookpart {
+    \tocItem i.p \markup { "2. Prelude (Tacet)" }
+
+    \header {
+      \prelude_header
+    }
+    \markup {
+      \vspace #14
+
+      \fill-line {
+        "Tacet"
+      }
+    }
+  }
+
+  \bookpart {
     \tocItem i.hh \markup { "3. Honey, Honey" }
 
     \header {
@@ -64,19 +113,34 @@
       \layout {}
     }
   }
-%{
+
   \bookpart {
-    \tocItem i.mamma_mia \markup { "5. Our Last Summer" }
+    \tocItem i.mmm \markup { "4. Money, Money, Money (Under Construction)" }
+
+    %{\header {
+      \overture_header
+    %}
+    \markup {
+      \vspace #14
+
+      \fill-line {
+        "Under Construction!"
+      }
+    }
+  }
+
+  \bookpart {
+    \tocItem i.ols \markup { "5. Our Last Summer" }
 
     \header {
       \our_last_summer_header
     }
-    \score {
+    \score { 
       \keepWithTag #'(chor) \our_last_summer
 
       \layout {}
     }
-  }%}
+  }
 
   \bookpart {
     \tocItem i.mamma_mia \markup { "6. Mamma Mia" }
@@ -105,7 +169,35 @@
   }
 
   \bookpart {
-    \tocItem i.mamma_mia \markup { "10. Super Trouper" }
+    \tocItem i.dq \markup { "8. Dancing Queen" }
+
+    \header {
+      \dancing_queen_header
+    }
+    \score {
+      \keepWithTag #'(chor) \dancing_queen
+
+      \layout {}
+    }
+  }
+
+  \bookpart {
+    \tocItem i.lay \markup { "9. Lay All Your Love On Me (Under Construction)" }
+
+    %{\header {
+      \overture_header
+    %}
+    \markup {
+      \vspace #14
+
+      \fill-line {
+        "Under Construction!"
+      }
+    }
+  }
+
+  \bookpart {
+    \tocItem i.st \markup { "10. Super Trouper" }
 
     \header {
       \super_trouper_header
@@ -116,4 +208,58 @@
       \layout {}
     }
   }
-}
+
+  \bookpart {
+    \tocItem i.ggg \markup { "11. Gimme Gimme Gimme" }
+
+    \header {
+      \gimme_iiix_header
+    }
+    \score {
+      \keepWithTag #'(chor) \gimme_iiix
+
+      \layout {}
+    }
+  }
+
+  \bookpart {
+    \tocItem i.vv \markup { "12. Voulez Vous" }
+
+    \header {
+      \voulez_vous_header
+    }
+    \score {
+      \keepWithTag #'(chor) \voulez_vous
+
+      \layout {}
+    }
+  }
+
+  \bookpart { \blank_page }
+  \bookpart {
+    \tocSection ii "Act II"
+
+    \markup {
+      \vspace #14
+
+      \fill-line {
+        "Act II"
+      }
+    }
+  }
+  \bookpart { \blank_page }
+
+  \bookpart {
+    \tocItem ii.tyftm \markup { "24. Thank You For The Music" }
+
+    \header {
+      \tyftm_header
+    }
+    \score {
+      \keepWithTag #'(chor) \tyftm
+
+      \layout {}
+    }
+  }
+
+  }
