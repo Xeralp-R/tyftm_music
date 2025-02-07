@@ -1,0 +1,3 @@
+package lyparser
+
+type LyDocument
