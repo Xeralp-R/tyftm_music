@@ -99,10 +99,10 @@ PartPOneOneVoiceOne = \transpose c c, {
   \numericTimeSignature\time 4/4 \key g \major
   \transposition c | % 1
   R1*15 | % 16
-  d1 _\f | % 17
+  d1 _\rf | % 17
   b,1 \bar "||"
   \key d \major g,1 | % 19
-  r2 r8 g,8 -. g,8 -. a,8 -. | \barNumberCheck #20
+  r2 r8 g,8 -. g,8 -. a,8 -.| \barNumberCheck #20
   a,8 -. a,8 -. a8 -. a,8 -. g4 -. a8 -. a,8 -. | % 21
   e8 ( fis8 ) a8 -. a8 -. cis'8 cis'8 r8 fis16 ( e16 ) | % 22
   d4 r8 d8 g,8 -. g8 -. g8 -. g16 ( a16 ) | % 23
@@ -124,7 +124,7 @@ PartPOneOneVoiceOne = \transpose c c, {
   fis,4 fis8 -. cis8 -. e8 fis8 r8 fis,16 fis,16 | % 39
   g,4 r8 g8 -. d8 -. g,8 -. r8 gis,8 -. | \barNumberCheck #40
   a,4 r8 a,8 a,4 r8 cis16 cis16 | % 41
-  cis4. d8 ~ _\> d2 ~ | % 42
+  cis4. d8 ~ d2 ~ | % 42
   d1 | % 43
   a,4. b,8 ~ b,2 ~ | % 44
   \after 2. _\ppp b,1 \bar "|."

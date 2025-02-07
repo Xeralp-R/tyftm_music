@@ -33,7 +33,7 @@ PartPOneZeroVoiceOne =  {
   b8 b8 b8 b8 b8 b8 b8 b8 | \barNumberCheck #40
   b8 b8 b8 b8 b8
   b8 b8 b8 | % 41
-  b4. _\f ^ "distort" b8 ~ ~ ~ ~ b2 ~
+  b4.  ^ "distort" b8 ~ ~ ~ ~ b2 ~
   ~ ~ ~ | % 42
   b1 | % 43
   b4. ^ "distort" b8 ~ ~ ~ ~ b2 ~ ~ ~

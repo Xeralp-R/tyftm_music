@@ -8,6 +8,8 @@ CATEGORIES = {
 POSITIONS = {
     'default': '_',
     'sb': '_',
+    'sn': '^',
+    'np': '',
 }
 
 # Categorizes graphics
@@ -110,7 +112,6 @@ def replace(line: str, graphic_orig: str, graphic_new: str):
 # Moves graphics from one position to another
 def move(line: str, graphic: str, note_no: int, pos_orig: str, pos_new: int):
     tokens = line.split(' ')
-    category = __categorize(graphic)
     note_count = 0
     i = 0
 
@@ -123,6 +124,23 @@ def move(line: str, graphic: str, note_no: int, pos_orig: str, pos_new: int):
                 # Add commands only add one graphic at a time, so there
                 # is no need to keep running once one graphic has been added
                 break
+        
+        i += 1
+
+    return ' '.join(tokens)
+
+# Moves all dynamics to a certain position
+def moveDynamics(line: str, pos_orig: str, pos_new: str):
+    tokens = line.split(' ')
+    i = 0
+
+    for token in tokens:
+        if __categorize(token) == "dyn":
+            tokens[i].replace(f"{POSITIONS[pos_orig]}{token}", f"{POSITIONS[pos_new]}{token}")
+                
+            # Add commands only add one graphic at a time, so there
+            # is no need to keep running once one graphic has been added
+            break
         
         i += 1
 

@@ -8,7 +8,7 @@ PartPSixVoiceOne =  {
   g'4. a'8 ~ a'4 r4 | % 7
   e'4. g'2 r8 | % 8
   g'4. a'8 ~ _\> a'2 ~ | % 9
-  a'4 r2 _\! r8 g'8 ~ _\mp | \barNumberCheck #10
+  a'4 r2 _\! r8 g'8 ~  | \barNumberCheck #10
   g'8 b'8 b'8 a'8 a'8 g'8 g'8 ( fis'8 ) | % 11
   r2 g'8 a'8 b'8 b'8 ( | % 12
   a'4 ) r4 r2 | % 13
@@ -16,7 +16,7 @@ PartPSixVoiceOne =  {
   c'8 a'8 a'8 g'8 g'8
   fis'8 fis'8 ( e'8 ) ~ | % 15
   e'4. r8 e'8 fis'8 g'8 fis'8 ~ | % 16
-  fis'1 _\> | % 17
+  fis'1 _\sfz | % 17
   R1 \bar "||"
   \key d \major R1*2 | \barNumberCheck #20
   r4 _\! _\f r8 g8 g4( \glissando a4 | % 21

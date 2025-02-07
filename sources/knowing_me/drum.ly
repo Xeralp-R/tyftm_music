@@ -1,7 +1,7 @@
 PartPOneTwoVoiceOne =  \drummode {
   \clef "percussion" \numericTimeSignature\time 4/4 | % 1
   R1*15 | % 16
-  cymc4 _\f cymc4 r2 | % 17
+  cymc4 _\rf cymc4 r2 | % 17
   cymc4 r8 cymc4 r8 r4 \bar "||"
   cymc4 _\f hh8 cymc8 hh8 hh8 hh8 hh8 | % 19
   hh4 r4 r8 <toml sn>8 ->
@@ -31,7 +31,7 @@ PartPOneTwoVoiceOne =  \drummode {
   hh8 hh8 hh8 hh16 hh16 hh8 hh8 sn8 hh16
   hh16 | \barNumberCheck #40
   hh8 hh8 hh4 hh8 hh8 sn8 hh16 hh16 | % 41
-  hh8 hh8 hh4 r2 _\ff | % 42
+  hh8 hh8 hh4 r2  | % 42
   R1*3 \bar "|."
 }
 

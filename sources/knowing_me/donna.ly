@@ -2,7 +2,7 @@ PartPSevenVoiceOne =  {
   \clef "treble" \numericTimeSignature\time 4/4 \key g \major | % 1
   R1*17 \bar "||"
   \key d \major R1 | % 19
-  r4 fis'8 _\f fis'8 fis'4 d'8 e'8 | \barNumberCheck #20
+  r4 fis'8 ^\f fis'8 fis'4 d'8 e'8 | \barNumberCheck #20
   e'4 r4 r2 | % 21
   e'8 e'8 e'8 e'8 e'8 a'4 a'8 ~ ^^ | % 22
   a'4 fis'8 fis'8 fis'8 ( d'8 ) d'8 e'8 | % 23

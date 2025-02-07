@@ -1,7 +1,7 @@
 PartPFiveVoiceOne =  {
   \clef "treble" \numericTimeSignature\time 4/4 \key g \major | % 1
   R1 | % 2
-  r2 r8 c''8 _\mp b'8 a'8 | % 3
+  r2 r8 c''8 _\ben-p b'8 a'8 | % 3
   e'4. <b e' g'>8 ~ ~ ~ <b e' g'>2 | % 4
   <b e'>8 g'8 r8 a'8 ~ a'4 b4 | % 5
   fis'4. d'4. b4 | % 6
