@@ -6,12 +6,10 @@ import (
 	//"test/specific_builds/internal/build_chor"
 	"test/specific_builds/internal/lyparser"
 	"os"
-	"embed"
+	//"embed"
 )
 
 // i dunno what this does
-//go:embed ../../../../sources/under_attack.ly
-var content embed.FS
 
 func check(e error) {
     if e != nil {
@@ -20,13 +18,15 @@ func check(e error) {
 }
 
 func main() {
-	outputnamePtr := flag.String("o", "output.pdf", "Name of the final pdf: must end in .pdf for best results.")
+	//outputnamePtr := flag.String("o", "output.pdf", "Name of the final pdf: must end in .pdf for best results.")
 	flag.Parse()
 	tail := flag.Args()
 	
 	//build_chor.BuildChor(tail);
 
-	file, err := content.ReadFile("../../../../sources/under_attack.ly")
+	//fmt.Println(outputnamePtr)
+	file, err := os.Open(tail[0])
 	check(err)
 	lyparser.ParseLilypond(file)
+	file.Close();
 }

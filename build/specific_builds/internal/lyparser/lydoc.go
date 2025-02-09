@@ -1,3 +1,6 @@
 package lyparser
 
-type LyDocument
+type LyDocument struct {
+	prelude []string
+	blocks []string
+}
