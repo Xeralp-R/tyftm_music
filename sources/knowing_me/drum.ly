@@ -3,10 +3,10 @@ PartPOneTwoVoiceOne =  \drummode {
   R1*15 | % 16
   cymc4 _\rf cymc4 r2 | % 17
   cymc4 r8 cymc4 r8 r4 \bar "||"
-  cymc4 _\f hh8 cymc8 hh8 hh8 hh8 hh8 | % 19
-  hh4 r4 r8 <toml sn>8 ->
+  cymc4 hh8 cymc8 hh8 hh8 hh8 hh8 | % 19
+  hh4 r4 r8 <toml sn>8 ->\<
   <toml sn>8 -> <toml sn>8 -> | \barNumberCheck #20
-  hh8 -> _\mp hh8 hh8 hh16 hh16 hh8 -> hh8 hh8 hho8 | % 21
+  hh8 -> _\f hh8 hh8 hh16 hh16 hh8 -> hh8 hh8 hho8 | % 21
   hh8 hh8 hh8 hh16 hh16 hh8 -> hh8 hh8 hho8 | % 22
   hh8 hh8 hh8 hh16 hh16 hh8 -> hh8 hh8 hho8 | % 23
   bd4 <bd sn>4 bd8 sn8 <bd cymc>8 sn8 | % 24
@@ -19,7 +19,7 @@ PartPOneTwoVoiceOne =  \drummode {
   hh8 hh8 hh8 hh16 hh16 hh8 -> hh8 hh8 hho8 | % 31
   hh8 hh8 hh8 hh16 hh16 hh8 -> hh8 hh8 hho8 | % 32
   \time 2/4  hh8 hh8 hh8 hh16 hh16 | % 33
-  \numericTimeSignature\time 4/4  hh8 hh8 hh8 hh16 hh16 hh8 _\mf
+  \numericTimeSignature\time 4/4  hh8\f hh8 hh8 hh16 hh16 hh8
   hh8 sn8 hh16 hh16 | % 34
   hh8 hh8 hh4 hh8 hh8 hh8 hh8 | % 35
   hh8 hh8 hh8 hh16 hh16 hh8 hh8 sn8 hh16
@@ -32,7 +32,8 @@ PartPOneTwoVoiceOne =  \drummode {
   hh16 | \barNumberCheck #40
   hh8 hh8 hh4 hh8 hh8 sn8 hh16 hh16 | % 41
   hh8 hh8 hh4 r2  | % 42
-  R1*3 \bar "|."
+  R1
+  \oneVoice R1 R1\fermata \bar "|."
 }
 
 PartPOneTwoVoiceTwo =  \drummode {

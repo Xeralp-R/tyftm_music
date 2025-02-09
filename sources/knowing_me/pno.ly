@@ -18,8 +18,8 @@ PartPFiveVoiceOne =  {
   r2 r2 | % 17
   R1 \bar "||"
   \key d \major R1 | % 19
-  r4 fis'8 fis'8 fis'4 <b d'>8 <b e'>8 | \barNumberCheck #20
-  <a cis' e'>4 r8 g8 g4 a4 | % 21
+  r4 fis'8\< fis'8 fis'4 <b d'>8 <b e'>8 | \barNumberCheck #20
+  <a cis' e'>4\f r8 g8 g4 a4 | % 21
   << { e'8 e'8 e'8 e'8 e'8 a'4 a'8 ~ | % 22
   a'8 r8 fis'8 fis'8 fis'4 d'8 e'8 | % 23
   <a cis' e'>4 r8 g8 g4 a4 | % 24
@@ -46,8 +46,22 @@ PartPFiveVoiceOne =  {
   <a fis'>8 <b g'>8 <a fis'>8 <b fis'>8 r8 <g e'>8 <fis d'>8 <g e'>8 ~
   ~ | % 32
   \time 2/4  <g e'>8 <a fis'>8 <g e'>4 | % 33
-  \numericTimeSignature\time 4/4  <fis d'>2 <fis' d''>2 | % 34
-  R1*11 \bar "|."
+  \numericTimeSignature\time 4/4  
+  \override NoteHead.style = #'slash
+  \transpose c c' { 
+    b4 _\f b4 b4 b4 | % 34
+    b4 b4 b4 b4 | % 35
+    b4 b4 b4 b4 | % 36
+    b4 b4 b4 b4 | % 37
+    b4 b4 b4 b4 | % 38
+    b4 b4 b4 b4 | % 39
+    b4 b4 b4 b4 | \barNumberCheck #40
+    b4 b4 b4 b4 | % 41
+    b4 b4 b4 b4 | % 42
+    b1 | % 43
+    b4\p b4 b4 b4 | % 44
+    b1\fermata \bar "|."
+  }
 }
 
 PartPFiveVoiceFive =  {
@@ -68,7 +82,7 @@ PartPFiveVoiceFive =  {
   c'1 | % 16
   R1*2 \bar "||"
   \key d \major R1 | % 19
-  r4 r4. g,8 g,8 g,8 | \barNumberCheck #20
+  r2 r8 g,8 g,8 g,8 | \barNumberCheck #20
   a,4 a,4 a,4 a,4 | % 21
   a,4 a,4 a,4 a,4 | % 22
   d4 d4 d8 g,8 g,8 g,8 | % 23
@@ -93,7 +107,7 @@ PartPFiveVoiceFive =  {
   cis4. d8 ~ d2 ~ | % 42
   d1 | % 43
   a,4. b,8 ~ b,2 ~ | % 44
-  \after 2. _\ppp b,1 \bar "|."
+  b,1\fermata \bar "|."
 }
 
 PartPFiveVoiceTwo =  {
@@ -106,4 +120,21 @@ PartPFiveVoiceTwo =  {
   <d' fis'>2 r2 s4*5 <d' fis'>4 <cis' fis'>4 <cis' fis'>4 s1*4 | % 32
   \time 2/4  s2 | % 33
   \numericTimeSignature\time 4/4  s1*12 \bar "|."
+}
+
+pno_chords = \chordmode {
+  s1*31
+  s2
+  d1 | % 34
+  fis1:m | % 35
+  g1 | % 36
+  a1 | % 37
+  d1 | % 38
+  fis1:m | % 39
+  g1 | \barNumberCheck #40
+  a1 | % 41
+  a4. b8:m s2 | % 42
+  s1 | % 43
+  a4. b8:m s2 | % 44
+  s1 \bar "|."
 }
