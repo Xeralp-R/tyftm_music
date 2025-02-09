@@ -1,7 +1,7 @@
 \version "2.24.4"
 % automatically converted by musicxml2ly from Knowing Me, Knowing You - Lim, Quebral (1) - William Matthew Lim.mscz.musicxml
 \include "../styles/global.ily"
-\include "../styles/final_styles/revision_style.ily"
+%\include "../styles/final_styles/revision_style.ily"
 
 \include "knowing_me/drum.ly"
 \include "knowing_me/rguit.ly"
@@ -16,7 +16,7 @@
 
 \pointAndClickOff
 
-\header {
+knwoing_me_header = \header {
   title =  "Knowing Me, Knowing You"
   composer =  "Benny Anderson & Bjorn Ulvaeus"
   arranger = "Kate Quebral & William Lim / SLCC "
@@ -56,9 +56,6 @@ knowingMeMarks = {
 
 
 
-
-
-
 %{
 PartPOneThreeVoiceOne =  {
     \clef "percussion" \numericTimeSignature\time 4/4 \key c \major | % 1
@@ -74,7 +71,7 @@ PartPOneThreeVoiceOne =  {
 %}
 
 % The score dRefinition
-\score {
+knowing_me = {
   <<
     \new BarNumberStaff <<
       { \knowingMeMeasures }
@@ -271,7 +268,7 @@ PartPOneThreeVoiceOne =  {
             >>
     %}
   >>
-  \layout {}
+  %\layout {}
   % To create MIDI output, uncomment the following line:
   %\midi {\tempo 4 = 120 }
 }

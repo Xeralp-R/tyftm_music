@@ -2,8 +2,8 @@ PartPOneVoiceOne =  {
   \clef "treble" \numericTimeSignature\time 4/4 \key g \major | % 1
   a''16 _\p g''16 ~ g''2
   ~ g''4. ~ | % 2
-  g''1\pp ~ | % 3
-  g''1 ~ | % 4
+  g''1 ~ | % 3
+  g''1\pp ~ | % 4
   g''1 | % 5
   % g''1 _\pppp | % 5
   R1 | % 6

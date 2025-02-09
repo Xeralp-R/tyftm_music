@@ -110,7 +110,11 @@ voulez-vous-r-guit =  {
   % Instru
   % 100
   b8.-- b16-. b8-. b8-. b8-. b8-. b4-. |
-  \linear-spanner 1 6
+  \linear-spanner 1 7
+  b16-> b16 b16-> b16-> b16 b16-> b16-> b16 b16-> b16 b16-> b16-> b16 b16-> b16->
+  b16 |
+  b16-> b16 b16-> b16-> b16 b16-> b16-> b16 b16-> b16 b16-> b16-> b16 b16-> b16->
+  b16 |
   b2 b4-> b4-> |
 
   % I
@@ -202,7 +206,9 @@ voulez-vous-r-guit-chords = \chordmode {
 
   % instru
   b1:7 | b1:7 | b1:7 | b1:7 | 
-  b1:7 | b1:7 | b1:7 | e2:m f4:m des4 |
+  b1:7 | b1:7 | b1:7 | b1:7 |
+  b1 | b1 |
+  e2:m f4:m des4 |
 
   % i
   \transpose c des {

@@ -185,17 +185,21 @@ voulez-vous-perc = \drummode {
     }
   >>
 
-  \linear-spanner 1 5
+  \linear-spanner 1 6
 
   <<
     \context DrumVoice = "voiceone" { \voiceOne
       hhc8\p hho8 hhc8 hho8 hhc8 hho8 hhc8 hho8 |
-      hhc8 hho8 hhc8 hho8  s2 |
+      hhc8\< hhc8 hhc8 hhc8 hhc8 hhc8 hhc8 hhc8 |
+      hhc8 hhc8 hhc8 hhc8 hhc8 hhc8 hhc8 hhc8 |
+      hhc8\rf hho8 hhc8 hho8  s2 |
       % i
       cymc8\f hh8 hh8 hh8 hh8 hho8 hhc8 hh8 |
       hh8 hh8 hh8 hh8 hh8 hho8 hhc8 hh8 |
     }
     \context DrumVoice = "voiceTwo" { \voiceTwo
+      bd4 <bd sn >4 bd4 <bd tomh >4 |
+      bd4 <bd sn >4 bd4 <bd tomh >4 |
       bd4 <bd sn >4 bd4 <bd tomh >4 |
       bd4 <bd sn >4 <bd sn tommh >4-> <bd sn tommh >4-> |
       % i
