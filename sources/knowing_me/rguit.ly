@@ -20,7 +20,7 @@ PartPOneZeroVoiceOne =  {
   b4 b8 b4 b8 b8 b8 | % 31
   b4 b8 b8 b4 b8 b8 | % 32
   \time 2/4  b8 b8 b8 b8 | % 33
-  \numericTimeSignature\time 4/4  b8 _\mf b8 b8 b8 b8 b8 b8 b8 | % 34
+  \numericTimeSignature\time 4/4  b8 _\f b8 b8 b8 b8 b8 b8 b8 | % 34
   b8 b8 b8 b8 b8 b8 b8
   b8 | % 35
   b8 b8 b8 b8 b8 b8 b8 b8 | % 36
@@ -33,12 +33,12 @@ PartPOneZeroVoiceOne =  {
   b8 b8 b8 b8 b8 b8 b8 b8 | \barNumberCheck #40
   b8 b8 b8 b8 b8
   b8 b8 b8 | % 41
-  b4. _\f ^ "distort" b8 ~ ~ ~ ~ b2 ~
+  b4.  ^ "distort" b8 ~ ~ ~ ~ b2 ~
   ~ ~ ~ | % 42
   b1 | % 43
-  b4. ^ "distort" b8 ~ ~ ~ ~ b2 ~ ~ ~
+  b4.\p ^ "distort" b8 ~ ~ ~ ~ b2 ~ ~ ~
   ~ | % 44
-  \after 2. _\ppp b1 _\> \bar "|."
+  b1\fermata \bar "|."
 }
 
 PartPOneZeroVoiceOneChords =  \chordmode {

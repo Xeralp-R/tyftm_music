@@ -17,10 +17,10 @@ PartPNineVoiceOne =  {
   \grace { a'32 } <g' b'>8 <fis' a'>8 <e' g'>8 <d' fis'>8 ~ ~ <d'
   fis'>8 <e' g'>8 e'4 -\bendAfter #-4 | % 41
   R1 | % 42
-  r2 r8 <b, d b>16 -> ^ "distort" _\p <b, d b>16 -> <b, d b>8 -. <cis
-  e cis'>16 -> <b, d b>16 -> | % 43
-  r16 r16 r8 r4 r2 | % 44
-  R1 \bar "|."
+  r2 r8 <b, d b>16 -> ^ "distort" _\rf\> <b, d b>16 -> <b, d b>8 -. <cis
+  e cis'>16 -> <b, d b>16 ->\! | % 43
+  R1 | % 44
+  R1\fermata \bar "|."
 }
 
 PartPNineVoiceOneChords = \chordmode{

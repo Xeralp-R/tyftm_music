@@ -92,6 +92,9 @@ voulez-vous-b-guit = \transpose c c, {
   b,8 b16 b16 b,8 b16 b16 b,8 b16 b16 b,8 b16 b16 |
   b,8 c8 b,8 c8 b,8 c8 b,8 c8 |
   b,8 b16 b16 b,8 b16 b16 b,8 b16 b16 b,8 b16 b16 |
+  b,8 c8 b,8 c8 b,8 c8 b,8 c8 |
+  b,8 b16 b16 b,8 b16 b16 b,8 b16 b16 b,8 b16 b16 |
+  b,8 b16 b16 b,8 b16 b16 cis8 cis'8 dis8 dis'8 |
   e,4 e,4 f,4-> des4-> |
   \key f \minor
   \transpose c des {

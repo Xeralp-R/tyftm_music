@@ -101,6 +101,7 @@ meno-mf = #(make-pre-dynamic-script "meno" "mf")
 poco-mf = #(make-pre-dynamic-script "poco " "mf")
 ben-mf = #(make-pre-dynamic-script "ben" "mf")
 mp-leggiero = #(make-post-dynamic-script "mp" " leggiero")
+ben-p = #(make-pre-dynamic-script "ben" "p")
 
 ed-text = #(define-music-function (arg) (markup?)
   #{
