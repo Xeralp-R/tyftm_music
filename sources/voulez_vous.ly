@@ -15,7 +15,7 @@
 voulez_vous_header = \header {
   title = "Voulez Vous"
   composer = "Benny Andersson, Bjorn Ulvaeus"
-  arranger = "Mico Javier, MJ Laxina. / RAR"
+  arranger = "Mico Javier, MJ Laxina. / JDAT-RAR"
 }
 
 voulez-vous-measures = {
@@ -98,6 +98,7 @@ voulez_vous =  {
       >>
     >>
 
+    \tag #'(chor)
     \new ChoirStaff \with {
       instrumentName = "Recorded Vocals"
       shortInstrumentName = "Rec. V."

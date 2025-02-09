@@ -2,6 +2,7 @@
 
 soli = {
   \clef treble
+  \dynamicUp
   R1*6
   R1*4
   b8^\mf e'16 fis'16~ fis'16 e'16 g'8 r2 |

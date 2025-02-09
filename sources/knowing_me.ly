@@ -16,20 +16,13 @@
 
 \pointAndClickOff
 
-knwoing_me_header = \header {
+knowing_me_header = \header {
   title =  "Knowing Me, Knowing You"
   composer =  "Benny Anderson & Bjorn Ulvaeus"
-  arranger = "Kate Quebral & William Lim / SLCC "
+  arranger = "Kate Quebral & William Lim / SLCC-ESA-RAR"
 
   encodingsoftware =  "MuseScore 4.3.2"
   encodingdate =  "2024-08-05"
-}
-
-\layout {
-  \context {
-    \Score
-    skipBars = ##t
-  }
 }
 
 
@@ -214,13 +207,13 @@ knowing_me = {
       }
     >>
 
-    \context ChordNames = "PartPOneZeroVoiceOneChords" { \PartPOneZeroVoiceOneChords}
     \tag #'(accompaniment band r_guit)
     \new Staff
     <<
       \set Staff.instrumentName = "Rhythm Guitar"
       \set Staff.shortInstrumentName = "R. Guit."
 
+      \context ChordNames = "PartPOneZeroVoiceOneChords" { \PartPOneZeroVoiceOneChords}
       \context Staff <<
         \mergeDifferentlyDottedOn\mergeDifferentlyHeadedOn
         \context Voice = "PartPOneZeroVoiceOne" \with {\consists Pitch_squash_engraver} {  \PartPOneZeroVoiceOne }

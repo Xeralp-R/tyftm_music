@@ -13,6 +13,7 @@
 \include "../sources/gimme_gimme_gimme.ly"
 \include "../sources/voulez_vous.ly"
 \include "../sources/thank_you_for_the_music.ly"
+\include "../sources/knowing_me.ly"
 
 \pointAndClickOff
 
@@ -248,6 +249,19 @@
     }
   }
   \bookpart { \blank_page }
+
+  \bookpart {
+    \tocItem ii.kmky \markup { "17. Knowing Me, Knowing You" }
+
+    \header {
+      \knowing_me_header
+    }
+    \score {
+      \keepWithTag #'(chor) \knowing_me
+
+      \layout {}
+    }
+  }
 
   \bookpart {
     \tocItem ii.tyftm \markup { "24. Thank You For The Music" }

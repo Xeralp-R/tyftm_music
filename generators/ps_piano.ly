@@ -13,6 +13,7 @@
 \include "../sources/gimme_gimme_gimme.ly"
 \include "../sources/voulez_vous.ly"
 \include "../sources/thank_you_for_the_music.ly"
+\include "../sources/knowing_me.ly"
 
 \pointAndClickOff
 
@@ -226,6 +227,33 @@
     }
     \score {
       \keepWithTag #'(piano) \tyftm
+
+      \layout {}
+    }
+  }
+
+  \bookpart { \blank_page }
+  \bookpart {
+    \tocSection ii "Act II"
+
+    \markup {
+      \vspace #14
+
+      \fill-line {
+        "Act II"
+      }
+    }
+  }
+  \bookpart { \blank_page }
+
+  \bookpart {
+    \tocItem ii.kmky \markup { "17. Knowing Me, Knowing You" }
+
+    \header {
+      \knowing_me_header
+    }
+    \score {
+      \keepWithTag #'(pno) \knowing_me
 
       \layout {}
     }

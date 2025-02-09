@@ -4,6 +4,7 @@ men = {
   \key e \minor
   \time 4/4
   \clef "treble_8"
+  \dynamicUp
   R1*6
   R1*4
   

@@ -154,8 +154,10 @@ voulez-vous-b-guit-dyn = {
   s1\<
   s1 \bar "||" 
   s1\f\decresc
-  s1*5
+  s1*6
+  s1\>
   s1\p\<
+  s1
   s1\rf \bar "||" % key chage
   s1\f
   s1*11 

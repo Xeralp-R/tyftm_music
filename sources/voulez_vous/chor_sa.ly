@@ -3,6 +3,7 @@
 women = {
   \key e \minor
   \time 4/4
+  \dynamicUp
   R1*10
 
   <g' b' >8^\ben-mp <g' b' >16 <g' b' >16~ <g' b' >16 <g' b' >16 <g' b' >8 r2 |

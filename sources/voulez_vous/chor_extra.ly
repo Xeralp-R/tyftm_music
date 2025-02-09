@@ -1,6 +1,7 @@
 \include "../../styles/global.ily"
 
 extra_part = {
+  \dynamicUp
   \key g \major
   \time 4/4
   \clef treble
