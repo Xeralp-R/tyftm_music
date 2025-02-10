@@ -1,7 +1,6 @@
-part-Ponethree-one = {
-  \key c \major
+part-Ponethree-one = \drummode {
   \time 12/8
-  \clef percussionR1. |
+  \clef percussion R1. |
   R1. |
   R1. |
   R1. |
@@ -22,23 +21,23 @@ part-Ponethree-one = {
   R1. |
   R1. |
   R1. |
-  r4.\mf d''4. r4. d''4. |
-  r4. d''4. r4. d''4. |
+  r4.\mf tamb4. r4. tamb4. |
+  r4. tamb4. r4. tamb4. |
   % 20
-  r4. d''4. r4. d''4. |
-  r4. d''4. r4. d''4. |
-  r4. d''4. r4. d''4. |
-  r4. d''4. r4. d''4. |
-  r4. d''4. r4. d''4. |
+  r4. tamb4. r4. tamb4. |
+  r4. tamb4. r4. tamb4. |
+  r4. tamb4. r4. tamb4. |
+  r4. tamb4. r4. tamb4. |
+  r4. tamb4. r4. tamb4. |
   % 25
-  r4 d''8 d''4 d''8 d''4 d''8 d''4 d''8 |
-  r4. d''4. r4. d''4. |
-  r4. d''4. r4. d''4. |
-  r4. d''4. r4. d''4. |
-  r4. d''4. r4. d''4. |
+  r4 tamb8 tamb4 tamb8 tamb4 tamb8 tamb4 tamb8 |
+  r4. tamb4. r4. tamb4. |
+  r4. tamb4. r4. tamb4. |
+  r4. tamb4. r4. tamb4. |
+  r4. tamb4. r4. tamb4. |
   % 30
-  r4. d''4. r4. d''4. |
-  r4. d''4. r4. d''4. |
+  r4. tamb4. r4. tamb4. |
+  r4. tamb4. r4. tamb4. |
   R1. |
   R1. |
   R1. |
@@ -51,23 +50,23 @@ part-Ponethree-one = {
   % 40
   R1. |
   R1. |
-  r4. d''4. r4. d''4. |
-  r4. d''4. r4. d''4. |
-  r4. d''4. r4. d''4. |
+  r4. tamb4. r4. tamb4. |
+  r4. tamb4. r4. tamb4. |
+  r4. tamb4. r4. tamb4. |
   % 45
-  r4. d''4. r4. d''4. |
-  r4. d''4. r4. d''4. |
-  r4. d''4. r4. d''4. |
-  r4. d''4. r4. d''4. |
-  r4 d''8 d''4 d''8 d''4 d''8 d''4 d''8 |
+  r4. tamb4. r4. tamb4. |
+  r4. tamb4. r4. tamb4. |
+  r4. tamb4. r4. tamb4. |
+  r4. tamb4. r4. tamb4. |
+  r4 tamb8 tamb4 tamb8 tamb4 tamb8 tamb4 tamb8 |
   % 50
-  r4. d''4. r4. d''4. |
-  r4. d''4. r4. d''4. |
-  r4. d''4. r4. d''4. |
-  r4. d''4. r4. d''4. |
-  r4. d''4. r4. d''4. |
+  r4. tamb4. r4. tamb4. |
+  r4. tamb4. r4. tamb4. |
+  r4. tamb4. r4. tamb4. |
+  r4. tamb4. r4. tamb4. |
+  r4. tamb4. r4. tamb4. |
   % 55
-  r4. d''4. r4. d''4. |
+  r4. tamb4. r4. tamb4. |
   R1. |
   R1. |
   R1. |

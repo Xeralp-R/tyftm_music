@@ -3,14 +3,45 @@
 \include "../styles/global.ily"
 \include "../styles/final_styles/revision_style.ily"
 
+\include "waterloo/a_perc.ly"
+\include "waterloo/b_guit.ly"
+\include "waterloo/drum.ly"
+\include "waterloo/e_kbd.ly"
+\include "waterloo/l_guit.ly"
+\include "waterloo/men.ly"
+\include "waterloo/pno.ly"
+\include "waterloo/r_guit.ly"
+\include "waterloo/vl_1_2.ly"
+\include "waterloo/vl_3_4.ly"
+\include "waterloo/women.ly"
+
 waterloo_header = \header {
   composer = "Benny Andersson, Björn Ulvaeus"
   arranger = "Kate Quebral, William Lim / RAR"
   title = "Waterloo"
 }
 
+waterloo_marks = {
+  R1.*4 \mark \default %A
+  R1.*12 \mark \default %B
+  R1.*9 \mark \default %C
+  R1.*24 \mark \default %D
+  R1.*15 \mark \default %E
+  R1.*4
+}
+
+waterloo_measures = {
+  R1.*68
+}
+
 waterloo = {
   <<
+
+    \new BarNumberStaff <<
+      { \waterloo_marks }
+      { \compressEmptyMeasures \waterloo_measures }
+    >>
+
     \new StaffGroup <<
       \tag #'(accompaniment orch vl_i)
       \new Staff \with {
@@ -105,4 +136,8 @@ waterloo = {
       shortInstrumentName = "A. Pc."
     } \part-Ponethree-one
   >>
+}
+
+\score{
+  \waterloo
 }
