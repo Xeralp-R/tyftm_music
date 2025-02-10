@@ -57,6 +57,28 @@ tyftm = <<
   >>
 >>
 
+tyftm_pno = <<
+  \new BarNumberStaff <<
+    \tyftm_marks
+  >>
+
+  \tag #'(chor soli sophie)
+  \new Staff \with {
+    shortInstrumentName = "S."
+    instrumentName = "Sophie"
+    \magnifyStaff #(magstep -3)
+  } \part-Pone-one \addlyrics { \override LyricText.font-size = #-2 \sophie_lyr }
+
+  \tag #'(accompaniment orch pno)
+  \new PianoStaff \with {
+    instrumentName = "Piano"
+    shortInstrumentName = "Pf."
+  } <<
+    \new Staff = "upper" \part-Ptwo-one
+    \new Staff = "lower" \part-Ptwo-two
+  >>
+>>
+
 %{
 \header {
   \tyftm_header

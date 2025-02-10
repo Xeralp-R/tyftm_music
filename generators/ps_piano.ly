@@ -220,33 +220,6 @@
   \bookpart { \blank_page }
 
   \bookpart {
-    \tocItem ii.tyftm \markup { "24. Thank You For The Music" }
-
-    \header {
-      \tyftm_header
-    }
-    \score {
-      \keepWithTag #'(piano) \tyftm
-
-      \layout {}
-    }
-  }
-
-  \bookpart { \blank_page }
-  \bookpart {
-    \tocSection ii "Act II"
-
-    \markup {
-      \vspace #14
-
-      \fill-line {
-        "Act II"
-      }
-    }
-  }
-  \bookpart { \blank_page }
-
-  \bookpart {
     \tocItem ii.kmky \markup { "17. Knowing Me, Knowing You" }
 
     \header {
@@ -254,6 +227,19 @@
     }
     \score {
       \keepWithTag #'(pno) \knowing_me
+
+      \layout {}
+    }
+  }
+
+  \bookpart {
+    \tocItem ii.tyftm \markup { "24. Thank You For The Music" }
+
+    \header {
+      \tyftm_header
+    }
+    \score {
+      \tyftm_pno
 
       \layout {}
     }
