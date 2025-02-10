@@ -207,6 +207,7 @@ honey_honey = {
     >>
     % {
 
+    \tag #'(accompaniment band pno)
     \new PianoStaff \with {
       instrumentName = "Piano"
       shortInstrumentName = "Pf."

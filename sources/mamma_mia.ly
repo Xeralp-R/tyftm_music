@@ -226,7 +226,7 @@ mamma_mia = {
   >>
 }
 
-
+%{
 \score{
   \mamma_mia
-}
+}%}

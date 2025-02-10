@@ -1,11 +1,11 @@
 \version "2.24.4"
 
 % For post dynamics, particularly editorial notations.
-#(define-markup-command (post-center-dyn layout props dyn atr-text)(markup? string?)
+#(define-markup-command (post-norm-center-dyn layout props dyn atr-text)(markup? string?)
   "x-align on center of dynamic"
   (let* ((text (string-append atr-text " "))
          (atr-stencil 
-           (interpret-markup layout props (markup #:normal-text #:large text)))
+           (interpret-markup layout props (markup #:normal-text #:italic text)))
          (dyn-stencil 
            (interpret-markup layout props (markup #:dynamic dyn)))
          (atr-x-ext (ly:stencil-extent atr-stencil X))
@@ -19,7 +19,7 @@
     (interpret-markup layout props 
       (markup 
         #:halign x-align 
-        #:concat (#:dynamic dyn #:normal-text #:large text)))))
+        #:concat (#:dynamic dyn #:normal-text #:italic text)))))
 
 % For pre-editorial dynamics.
 #(define-markup-command (pre-ed-center-dyn layout props atr-text dyn)(markup? string?)
@@ -65,7 +65,7 @@
         
 % define a 'new' attributed dynamic script
 #(define (make-post-dynamic-script dyn atr)
-        (let ((dynamic (make-dynamic-script (markup #:post-center-dyn dyn atr))))
+        (let ((dynamic (make-dynamic-script (markup #:post-norm-center-dyn dyn atr))))
              #{ \tweak X-offset 0 $dynamic #}))
 
 #(define (make-pre-ed-dynamic-script atr dyn)
@@ -100,6 +100,8 @@ ben-mp = #(make-pre-dynamic-script "ben "  "mp")
 meno-mf = #(make-pre-dynamic-script "meno" "mf")
 poco-mf = #(make-pre-dynamic-script "poco " "mf")
 ben-mf = #(make-pre-dynamic-script "ben" "mf")
+mp-leggiero = #(make-post-dynamic-script "mp" " leggiero")
+ben-p = #(make-pre-dynamic-script "ben" "p")
 
 ed-text = #(define-music-function (arg) (markup?)
   #{

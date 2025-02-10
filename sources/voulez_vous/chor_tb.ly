@@ -4,13 +4,14 @@ men = {
   \key e \minor
   \time 4/4
   \clef "treble_8"
+  \dynamicUp
   R1*6
   R1*4
   
-  b8^\mf^\ed-text "T., blended w soli" e'16 fis'16~ fis'16 e'16 g'8 r2 |
+  b8^\ben-mp^\ed-text "T., blended w soli" e'16 fis'16~ fis'16 e'16 g'8 r2 |
   r8 g'16 g'16~ g'8 fis'8 fis'8 e'8 d'8 c'8 |
   % 10
-  b8 e'16 fis'16~ fis'16 e'16 g'8 r2 |
+  b8 ^\ben-mp e'16 fis'16~ fis'16 e'16 g'8 r2 |
   R1 |
   b8 e'16 fis'16~ fis'16 e'16 g'8 r2 |
   r8 g'16 g'16~ g'8 fis'8 fis'8 e'8 d'8 c'8 |
@@ -23,7 +24,7 @@ men = {
       g'8 fis'16 fis'16~ fis'2. |
     } \\
     {
-      b8^\f b8 b8 |
+      b8^\mf b8 b8 |
       c'8 b16 b16~ b2.~ |
       b1 |
     } \\
@@ -43,7 +44,7 @@ men = {
       g'8 fis'16 fis'16~ fis'2. |
     } \\
     {
-      b8 b8 b8 |
+      b8^\f b8 b8 |
       c'8 b16 b16~ b2.~ |
       b1 |
     } \\
@@ -54,12 +55,12 @@ men = {
     }
   >>
   \partCombine
-  {g'8.^\ed-text "div. a2" fis'16~ fis'8 e'8~ e'8 fis'8 g'4~\< | g'8\sfz}
-  \transpose c c, { g'8. fis'16~ fis'8 e'8~ e'8 fis'8 g'4~\< | g'8\sfz }
-  r8 r4 <g b>4 <g c'>4 |
+  {g'8.^\ed-text "div. a2" fis'16~ fis'8 e'8~ e'8 fis'8 g'4~\< | g'8^\sfz}
+  \transpose c c, { g'8. fis'16~ fis'8 e'8~ e'8 fis'8 g'4~\< | g'8^\sfz }
+  r8 r4 <g b>4\< <g c'>4 |
 
   % D
-  <a c'>2. r4 |
+  <a c'>2.^\f r4 |
   r8. <e' a'>16~ q8 <e' a'>8 <e' a'>8 <e' g'>16 e'16~ e'8 <e' g'>8 |
   r8. <e' a'>16~ q8 <e' a'>8 <e' a'>8 <e' g'>8 << {\tuplet 3/2 {a'8( g' e')}} \\ {e'4} >> |
   r8. <e' a'>16~ q8 <e' a'>8 <e' a'>8 <e' g'>8 e'8 <e' f'>8 |
@@ -71,17 +72,17 @@ men = {
   r8. <e' a'>16~ q8 <e' a'>8 <e' a'>8 <e' g'>8 e'8 <e' f'>8 |
   <e' g'>2. r4 |
   r2 <g b>4 <g c'>4 |
-  <a cis'>1~(
+  <a cis'>1~\<(
   <a cis'>1\glissando
-  <b dis'>1 ~
+  <b dis'>1 ^\rf~
   <b dis'>2) r2 |
 
   % Sam instru 
   R1*11
-  r2 <g b>4 <g c'>4 |
+  r2 <g b>4\< <g c'>4 |
 
   % G
-  <a c'>2. r4 |
+  <a c'>2.^\f r4 |
   r8. <e' a'>16~ q8 <e' a'>8 <e' a'>8 <e' g'>16 e'16~ e'8 <e' g'>8 |
   r8. <e' a'>16~ q8 <e' a'>8 <e' a'>8 <e' g'>8 << {\tuplet 3/2 {a'8( g' e')}} \\ {e'4} >> |
   r8. <e' a'>16~ q8 <e' a'>8 <e' a'>8 <e' g'>8 e'8 <e' f'>8 |
@@ -93,23 +94,24 @@ men = {
   r8. <e' a'>16~ q8 <e' a'>8 <e' a'>8 <e' g'>8 e'8 <e' f'>8 |
   <e' g'>2. r4 |
   r2 <g b>4 <g c'>4 |
-  <a cis'>1~(
+  <a cis'>1~\< (
   <a cis'>1\glissando
 
   % Harry instru
-  <b dis'>1)
+  <b dis'>1 ^\rf)
   R1 |
-  <b dis'>1
+  <b dis'>1^\sf |
   R1
-  <b dis'>1
+  <b dis'>1^\sf |
   R1
-  <b dis'>1
+  <b dis'>1 ^\sf 
+  R1*3 
   r2 
   \transpose c des {
-    <g b>4 <g c'>4 |
+    <g b>4\< <g c'>4 |
 
     % I
-    <a c'>2. r4 |
+    <a c'>2.^\f r4 |
     r8. <e' a'>16~ q8 <e' a'>8 <e' a'>8 <e' g'>16 e'16~ e'8 <e' g'>8 |
     r8. <e' a'>16~ q8 <e' a'>8 <e' a'>8 <e' g'>8 << {\tuplet 3/2 {a'8( g' e')}} \\ {e'4} >> |
     r8. <e' a'>16~ q8 <e' a'>8 <e' a'>8 <e' g'>8 e'8 <e' f'>8 |
@@ -121,13 +123,13 @@ men = {
     r8. <e' a'>16~ q8 <e' a'>8 <e' a'>8 <e' g'>8 e'8 <e' f'>8 |
     <e' g'>2. r4 |
     r2 <g b>4 <g c'>4 |
-    <a cis'>1~(
-    <a cis'>1\glissando
-    <b dis'>1 ~
-    <b dis'>4) r4
+    <a cis'>1~(\cresc |
+    <a cis'>1\glissando |
+    <b dis'>1 ~ |
+    <b dis'>4) r4 |
   }
-  <c c'>4 <ees! ees'!>4 |
-  <f f'>4 r4 r2
+  <c c'>4\<-> <ees! ees'!>4-> |
+  <f f'>4^\ff r4 r2
   R1\fermata |
 }
 
@@ -136,7 +138,7 @@ men_null_vc = {
   R1*6
   R1*4
   \clef "treble_8"
-  b8\mf^\ed-text "T., blended w soli" e'16 fis'16~ fis'16 e'16 g'8 r2 |
+  b8^\mf^\ed-text "T., blended w soli" e'16 fis'16~ fis'16 e'16 g'8 r2 |
   r8 g'16 g'16~ g'8 fis'8 fis'8 e'8 d'8 c'8 |
   % 10
   b8 e'16 fis'16~ fis'16 e'16 g'8 r2 |
@@ -145,7 +147,7 @@ men_null_vc = {
   r8 g'16 g'16~ g'8 fis'8 fis'8 e'8 d'8 c'8 |
   b8 e'16 fis'16~ fis'16 e'16 g'8 r2 |
   r2
-  r8 b8\f b8 b8 |
+  r8 b8^\mf b8 b8 |
   c'8 b16 b16~ b8 b8 e'8 dis'16 d'16~ d'8 d'8 |
   g'8 fis'16 fis'16~ fis'2. |
   g'8.  fis'16~ fis'8 e'8~ e'8 fis'8 g'4( | 
@@ -201,14 +203,15 @@ men_null_vc = {
   r1 |
   dis'1 |
   r1 |
-  dis'1 |
+  dis'1 
+  R1*3
   r2 \transpose c des {
-    b4 c'4 |
+    b4\< c'4 |
   }
   
   \key f \minor
   \transpose c des {
-    c'2. r4 |
+    c'2.^\f r4 |
     % 25
     r8. a'16~ a'8 a'8 a'8 g'16 e'16~ e'8 g'8 |
     r8. a'16~ a'8 a'8 a'8 g'8 \tuplet 3/2 { a'8( g'8 e'8) } |
@@ -272,8 +275,8 @@ men_lyr = \lyricmode {
   Vou -- lez vous, __
 
   Ooh,
-  Ooh,
-  Ooh,
+  "Ooh,"
+  "Ooh,"
 
   Vou -- lez vous,
   Take it now or leave it,

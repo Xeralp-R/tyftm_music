@@ -4,17 +4,17 @@
 PartPSevenVoiceOne =  {
   \clef "treble" \numericTimeSignature\time 4/4 \key c \major | % 1
     R1*21 | % 22
-    r2 r4 d''8 _\f d''8 | % 23
+    r2 r4 d''8 ^\f d''8 | % 23
     e''8 d''8 d''4 d''4 d''4 | % 24
     d''4. ( c''8 ) c''4 r4 | % 25
-    g'8 c''8 c''8 g'8 g'8 c''8 c''8 g'8 | % 26
+    g'8 ^\poco-mf c''8 c''8 g'8 g'8 c''8 c''8 g'8 | % 26
     b'8 c''8 ( c''2 ) r4 | % 27
     r4 r8 c''8 c''8 c''8 c''8 b'8 | % 28
     b'8 a'8 a'2 r8 g'8 | % 29
     g'8 g'8 g'8 g'8 g'8 g'8 g'8 g'8 ~ | \barNumberCheck #30
     g'8 \<  g'8 ~ g'2.( | % 31
     g'2) \! r8 g8 c'8 e'8 | % 32
-    g'4 g'4 g'4 g'4 | % 33
+    g'4 ^\f g'4 g'4 g'4 | % 33
     g'8 g'8 g'8 g'8 g'4 g'4 | % 34
     g'4 g'4 g'4 g'4 | % 35
     g'2. r4 | % 36
@@ -29,17 +29,17 @@ PartPSevenVoiceOne =  {
     a'4 a'4 a'4 a'4 | % 45
     g'2. r8 g'8 | % 46
     g'8 g'8 g'8 g'8 g'4 g'4 | % 47
-    g'2 r2 | % 48
-    R1 | % 49
-    c''1 ~ | % 50
+    g'2 \> r2 | % 48
+    \! R1 | % 49
+    c''1 ~ ^\mp | % 50
     c''1 | \barNumberCheck #51
     c''2 b'2 | % 52
     c''2 r2 | % 53
     c''1 | % 54
     d''2 cis''2 | % 55
     d''1 | % 56
-    d''1 ~ | % 57
-    d''2 r8 g8 c'8 e'8 | % 58
+    d''1 ~ \< | % 57
+    d''2 r8 \! g8 ^\f c'8 e'8 | % 58
     g'4 g'4 g'4 g'4 | % 59
     g'8 g'8 g'8 g'8 g'4 g'4 | % 60
     g'4 g'4 g'4 g'4 | \barNumberCheck #61
@@ -61,19 +61,19 @@ PartPSevenVoiceOne =  {
 }
 
 PartPSevenVoiceOneLyricsOne =  \lyricmode {
-    Wish -- ing "ev'" -- ry show was the last --  show Glad to
-    hear "you're" glad to hear "you're" com -- "in'"  And sud --
+    Wish -- ing "ev'" -- ry show was the last --  "show." Glad to
+    hear "you're," glad to hear "you're" com -- "in'."  And sud --
     den -- ly "it's" gon -- na be so dif -- ferent when "I'm" on the
-    stage -- to --  night to -- night the su -- per
-    trou -- per lights are gon -- na find me shi -- ning like the sun
-    Smi -- ling hav -- ing fun Feel -- ing like a num -- ber one to --
-    night the su -- per trou -- per beams are gon -- na blind me but I
-    "won't" feel blue like I al -- ways do "'Cause" some -- where in the
-    crowd "there's" you Ooh Ooh ooh ooh ooh Ooh --
+    stage -- to --  "night." to -- night the su -- per
+    trou -- per lights are gon -- na find me shi -- ning like the "sun,"
+    Smi -- ling hav -- ing "fun," Feel -- ing like a num -- ber "one." to --
+    night the su -- per trou -- per beams are gon -- na blind "me." but I
+    "won't" feel "blue," like I al -- ways "do," "'Cause" some -- where in the
+    crowd "there's" "you." Ooh Ooh ooh ooh ooh Ooh --
     ooh ooh Ooh to -- night the su -- per trou -- per lights
-    are gon -- na find me shi -- ning like the sun Smi -- ling hav --
-    ing fun Feel -- ing like a num -- ber one to -- night the su -- per
-    trou -- per beams are gon -- na blind me but I "won't" feel blue
-    like I al -- ways do "'Cause" some -- where in the crowd "there's"
-    Su -- per -- trou -- per lights are gon -- na find --  me
+    are gon -- na find me shi -- ning like the "sun," Smi -- ling hav --
+    ing "fun," Feel -- ing like a num -- ber "one." to -- night the su -- per
+    trou -- per beams are gon -- na blind "me," but I "won't" feel "blue,"
+    like I al -- ways "do," "'Cause" some -- where in the crowd "there's,"
+    Su -- per -- trou -- per lights are gon -- na find --  "me."
 }

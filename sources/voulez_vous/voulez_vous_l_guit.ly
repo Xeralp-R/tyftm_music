@@ -139,11 +139,13 @@ voulez-vous-l-guit = {
   s1
   % 100
 
-  \repeat percent 3 {
+  \repeat percent 4 {
     dis'16(-> e'16 dis'16 e'16 dis'8 b8~)-> b8 a8 e16( fis16 a16 b16) |
     e16( fis16 a16 b16) e8-^ fis8-^ b,8-> c8 -> a,8-> b,8-> |
   }
-  dis'16(-> e'16 dis'16 e'16 dis'8 b8~)-> b8 a8 e16( fis16 a16 b16) |
+  b'1~ |
+  b'1 |
+
 
   s1 |
 
@@ -250,8 +252,10 @@ voulez-vous-l-guit-strums = {
   b1%{\arpeggio%}\upbow  | 
   | \bar "||"
 
-  s1*7
-  bes2 bes4 bes4 | \bar "||" % key chage
+  s1*8
+  b1~
+  b1
+  b2 b4 b4 | \bar "||" % key chage
 
   s1*5
   s2 
@@ -302,7 +306,7 @@ voulez-vous-l-guit-chords = \chordmode {
   a1 |
 
   % instru
-  s1*7 | e2:m f4:m des4 |
+  s1*8 | b1 | s1 | e2:m f4:m des4 |
 
   % i
   \transpose c des {

@@ -1,7 +1,7 @@
 % Automatically generated from a musicxml file.
 \version "2.24.0"
 \include "../styles/Global.ily"
-\include "../styles/final_styles/revision_style.ily"
+%\include "../styles/final_styles/revision_style.ily"
 
 \include "voulez_vous/voulez_vous_perc.ly"
 \include "voulez_vous/voulez_vous_b_guit.ly"
@@ -15,7 +15,7 @@
 voulez_vous_header = \header {
   title = "Voulez Vous"
   composer = "Benny Andersson, Bjorn Ulvaeus"
-  arranger = "Mico Javier, MJ Laxina. / RAR"
+  arranger = "Mico Javier, MJ Laxina. / JDAT-RAR"
 }
 
 voulez-vous-measures = {
@@ -30,7 +30,7 @@ voulez-vous-measures = {
   R1 * 6 
   R1*12
   R1*2 \bar "||" 
-  R1*8 \bar "||" % key chage
+  R1*11 \bar "||" % key chage
   R1*12 
   R1*6 \bar "|."
 }
@@ -47,7 +47,7 @@ voulez-vous-marks = {
   R1 * 6 \mark \default
   R1*12 \mark \default
   R1*2 \bar "||" \textMark "Instrumental: Harry"
-  R1*8 \bar "||" \mark \default % key chage
+  R1*11 \bar "||" \mark \default % key chage
   R1*12 \mark \default 
   R1*6 \bar "|."
 }
@@ -98,6 +98,7 @@ voulez_vous =  {
       >>
     >>
 
+    \tag #'(chor)
     \new ChoirStaff \with {
       instrumentName = "Recorded Vocals"
       shortInstrumentName = "Rec. V."
@@ -164,6 +165,7 @@ voulez_vous =  {
   >>
 }
 
+%{
 \header {
   \voulez_vous_header
 }
@@ -172,3 +174,4 @@ voulez_vous =  {
   \voulez_vous
   \layout{}
 }
+%}

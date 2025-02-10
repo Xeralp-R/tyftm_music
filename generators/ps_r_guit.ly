@@ -10,6 +10,8 @@
 \include "../sources/honey_honey.ly"
 \include "../sources/overture.ly"
 \include "../sources/dancing_queen.ly"
+\include "../sources/gimme_gimme_gimme.ly"
+\include "../sources/knowing_me.ly"
 
 \pointAndClickOff
 
@@ -54,8 +56,22 @@
   \bookpart { \blank_page }
   \bookpart { \markuplist \table-of-contents }
 
+
+  \bookpart { \blank_page }
   \bookpart {
-    \tocSection i \markup { "Act I" }
+    \tocSection i "Act I"
+
+    \markup {
+      \vspace #14
+
+      \fill-line {
+        "Act I"
+      }
+    }
+  }
+  \bookpart { \blank_page }
+
+  \bookpart {
     \tocItem i.hh \markup { "1. Overture, Live" }
 
     \header {
@@ -152,7 +168,20 @@
     }
   }
 
-    \bookpart {
+  \bookpart {
+    \tocItem i.ggg \markup { "11. Gimme Gimme Gimme" }
+
+    \header {
+      \gimme_iiix_header
+    }
+    \score {
+      \keepWithTag #'(r_guit) \gimme_iiix
+
+      \layout {}
+    }
+  }
+
+  \bookpart {
     \tocItem i.vv \markup { "12. Voulez Vous" }
 
     \header {
@@ -160,6 +189,33 @@
     }
     \score {
       \keepWithTag #'(r_guit) \voulez_vous
+
+      \layout {}
+    }
+  }
+
+  \bookpart { \blank_page }
+  \bookpart {
+    \tocSection ii "Act II"
+
+    \markup {
+      \vspace #14
+
+      \fill-line {
+        "Act II"
+      }
+    }
+  }
+  \bookpart { \blank_page }
+
+  \bookpart {
+    \tocItem ii.kmky \markup { "17. Knowing Me, Knowing You" }
+
+    \header {
+      \knowing_me_header
+    }
+    \score {
+      \keepWithTag #'(pno) \knowing_me
 
       \layout {}
     }

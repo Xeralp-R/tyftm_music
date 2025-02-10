@@ -11,6 +11,7 @@
 \include "../sources/overture.ly"
 \include "../sources/prelude.ly"
 \include "../sources/dancing_queen.ly"
+\include "../sources/knowing_me.ly"
 
 \pointAndClickOff
 
@@ -52,8 +53,23 @@
     }
   }
 
-  \bookpart { \blank_page \tocSection i \markup { "Act I" } }
+  \bookpart { \blank_page }
   \bookpart { \markuplist \table-of-contents }
+
+
+  \bookpart { \blank_page }
+  \bookpart {
+    \tocSection i "Act I"
+
+    \markup {
+      \vspace #14
+
+      \fill-line {
+        "Act I"
+      }
+    }
+  }
+  \bookpart { \blank_page }
 
   \bookpart {
     \tocItem i.o \markup { "1. Overture" }
@@ -173,6 +189,33 @@
       \fill-line {
         "See written score"
       }
+    }
+  }
+
+  \bookpart { \blank_page }
+  \bookpart {
+    \tocSection ii "Act II"
+
+    \markup {
+      \vspace #14
+
+      \fill-line {
+        "Act II"
+      }
+    }
+  }
+  \bookpart { \blank_page }
+
+  \bookpart {
+    \tocItem ii.kmky \markup { "17. Knowing Me, Knowing You" }
+
+    \header {
+      \knowing_me_header
+    }
+    \score {
+      \keepWithTag #'(vl_i vl_ii) \knowing_me
+
+      \layout {}
     }
   }
 }

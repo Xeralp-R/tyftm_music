@@ -11,6 +11,10 @@
 \include "../sources/overture.ly"
 \include "../sources/prelude.ly"
 \include "../sources/dancing_queen.ly"
+\include "../sources/gimme_gimme_gimme.ly"
+\include "../sources/thank_you_for_the_music.ly"
+\include "../sources/knowing_me.ly"
+
 \pointAndClickOff
 
 \book {
@@ -50,12 +54,25 @@
     }
   }
 
+  \bookpart { \blank_page }
   \bookpart { \markuplist \table-of-contents }
 
-  \bookpart { \blank_page  }
+
+  \bookpart { \blank_page }
+  \bookpart {
+    \tocSection i "Act I"
+
+    \markup {
+      \vspace #14
+
+      \fill-line {
+        "Act I"
+      }
+    }
+  }
+  \bookpart { \blank_page }
 
   \bookpart {
-    \tocSection i \markup {"Act One"}
     \tocItem i.o \markup { "1. Overture" }
 
     \header {
@@ -160,6 +177,19 @@
   }
 
   \bookpart {
+    \tocItem i.ggg \markup { "11. Gimme Gimme Gimme" }
+
+    \header {
+      \gimme_iiix_header
+    }
+    \score {
+      \gimme_iiix
+
+      \layout {}
+    }
+  }
+
+  \bookpart {
     \tocItem i.vv \markup { "12. Voulez Vous" }
 
     \header {
@@ -171,8 +201,48 @@
       \layout {}
     }
   }
-}
 
+  \bookpart { \blank_page }
+  \bookpart {
+    \tocSection ii "Act II"
+
+    \markup {
+      \vspace #14
+
+      \fill-line {
+        "Act II"
+      }
+    }
+  }
+  \bookpart { \blank_page }
+
+  \bookpart {
+    \tocItem ii.kmky \markup { "17. Knowing Me, Knowing You" }
+
+    \header {
+      \knowing_me_header
+    }
+    \score {
+      \knowing_me
+
+      \layout {}
+    }
+  }
+
+  \bookpart {
+    \tocItem ii.tyftm \markup { "24. Thank You For The Music" }
+
+    \header {
+      \tyftm_header
+    }
+    \score {
+      \tyftm
+
+      \layout {}
+    }
+  }
+}
+%{
 \book {
   \bookOutputSuffix "1-Overture"
   \score {
@@ -244,3 +314,4 @@
     \midi{}
   }
 }
+%}

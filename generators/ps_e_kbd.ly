@@ -8,6 +8,8 @@
 \include "../sources/overture.ly"
 \include "../sources/prelude.ly"
 \include "../sources/dancing_queen.ly"
+\include "../sources/gimme_gimme_gimme.ly"
+\include "../sources/knowing_me.ly"
 
 \pointAndClickOff
 
@@ -52,8 +54,22 @@
   \bookpart { \blank_page }
   \bookpart { \markuplist \table-of-contents }
 
+
+  \bookpart { \blank_page }
   \bookpart {
-    \tocSection i \markup {"Act One"}
+    \tocSection i "Act I"
+
+    \markup {
+      \vspace #14
+
+      \fill-line {
+        "Act I"
+      }
+    }
+  }
+  \bookpart { \blank_page }
+
+  \bookpart {
     \tocItem i.o \markup { "1. Overture" }
 
     \header {
@@ -126,6 +142,46 @@
     }
     \score {
       \keepWithTag #'(e_kbd) \super_trouper
+
+      \layout {}
+    }
+  }
+
+  \bookpart {
+    \tocItem i.ggg \markup { "11. Gimme Gimme Gimme" }
+
+    \header {
+      \gimme_iiix_header
+    }
+    \score {
+      \keepWithTag #'(e_kbd) \gimme_iiix
+
+      \layout {}
+    }
+  }
+
+  \bookpart { \blank_page }
+  \bookpart {
+    \tocSection ii "Act II"
+
+    \markup {
+      \vspace #14
+
+      \fill-line {
+        "Act II"
+      }
+    }
+  }
+  \bookpart { \blank_page }
+
+  \bookpart {
+    \tocItem ii.kmky \markup { "17. Knowing Me, Knowing You" }
+
+    \header {
+      \knowing_me_header
+    }
+    \score {
+      \keepWithTag #'(e_kbd) \knowing_me
 
       \layout {}
     }

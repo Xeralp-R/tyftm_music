@@ -10,6 +10,10 @@
 \include "../sources/prelude.ly"
 \include "../sources/dancing_queen.ly"
 \include "../sources/honey_honey.ly"
+\include "../sources/gimme_gimme_gimme.ly"
+\include "../sources/voulez_vous.ly"
+\include "../sources/thank_you_for_the_music.ly"
+\include "../sources/knowing_me.ly"
 
 \pointAndClickOff
 
@@ -54,8 +58,21 @@
   \bookpart { \blank_page }
   \bookpart { \markuplist \table-of-contents  }
 
+  \bookpart { \blank_page }
   \bookpart {
-    \tocSection i \markup { "Act I" }
+    \tocSection i "Act I"
+
+    \markup {
+      \vspace #14
+
+      \fill-line {
+        "Act I"
+      }
+    }
+  }
+  \bookpart { \blank_page }
+
+  \bookpart {
     \tocItem i.ov \markup { "1. Overture" }
 
     \header {
@@ -155,6 +172,74 @@
     }
     \score {
       \keepWithTag #'(piano) \super_trouper
+
+      \layout {}
+    }
+  }
+
+  \bookpart {
+    \tocItem i.ggg \markup { "11. Gimme Gimme Gimme" }
+
+    \header {
+      \gimme_iiix_header
+    }
+    \score {
+      \keepWithTag #'(piano) \gimme_iiix
+
+      \layout {}
+    }
+  }
+
+  \bookpart {
+    \tocItem i.vv \markup { "12. Voulez Vous (Tacet)" }
+
+    \header {
+      \voulez_vous_header
+    }
+    \markup {
+      \vspace #14
+
+      \fill-line {
+        "Tacet"
+      }
+    }
+  }
+
+  \bookpart { \blank_page }
+  \bookpart {
+    \tocSection ii "Act II"
+
+    \markup {
+      \vspace #14
+
+      \fill-line {
+        "Act II"
+      }
+    }
+  }
+  \bookpart { \blank_page }
+
+  \bookpart {
+    \tocItem ii.kmky \markup { "17. Knowing Me, Knowing You" }
+
+    \header {
+      \knowing_me_header
+    }
+    \score {
+      \keepWithTag #'(pno) \knowing_me
+
+      \layout {}
+    }
+  }
+
+  \bookpart {
+    \tocItem ii.tyftm \markup { "24. Thank You For The Music" }
+
+    \header {
+      \tyftm_header
+    }
+    \score {
+      \tyftm_pno
 
       \layout {}
     }
