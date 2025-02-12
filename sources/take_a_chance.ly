@@ -14,25 +14,25 @@
 \include "take_a_chance/rosie.ly"
 
 \score {
-    \new GrandStaff <<
-        \new Staff \part-Pone-one
-        \new Staff \part-Pone-two
-    >>
-    \new Staff \part-Ptwo-one
-    \new Staff \part-Pthree-one
-    \new Staff \part-Pfour-one
-    \new GrandStaff <<
-        \new Staff \part-Pfive-one
-        \new Staff \part-Pfive-two
-    >>
-    \new GrandStaff <<
-        \new Staff \part-Psix-one
-        \new Staff \part-Psix-two
-        \new Staff \part-Psix-three
-    >>
-    \new Staff \part-Pseven-one
-    \new Staff \part-Peight-one
-    \new Staff \part-Pnine-one
-    \new Staff \part-Ponezero-one
-    \layout {}
+  \new GrandStaff <<
+    \new Staff \part-Pone-one
+    \new Staff \part-Pone-two
+  >>
+  \new Staff \part-Ptwo-one
+  \new Staff \part-Pthree-one
+  \new Staff \part-Pfour-one
+  \new GrandStaff <<
+    \new Staff \part-Pfive-one
+    \new Staff \part-Pfive-two
+  >>
+  \new GrandStaff <<
+    \new Staff \part-Psix-one
+    \new Staff \part-Psix-two
+    \new Staff \part-Psix-three
+  >>
+  \new Staff \part-Pseven-one
+  \new Staff \part-Peight-one
+  \new Staff \part-Pnine-one
+  \new Staff \part-Ponezero-one
+  \layout {}
 }
