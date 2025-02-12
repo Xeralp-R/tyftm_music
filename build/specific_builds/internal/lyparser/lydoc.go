@@ -18,3 +18,12 @@ type LyStatement struct {
 type LyDocument struct {
 	statements []LyStatement
 }
+
+func (st *LyStatement) print() string {
+	if st.classification == Variable {
+		return st.content[0] + " = " + st.content[1]
+	} else {
+		return ""
+	}
+}
+

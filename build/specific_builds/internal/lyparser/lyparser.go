@@ -89,7 +89,8 @@ func ParseLilypond(file *os.File) LyDocument {
 		}
 
 		if unicode.IsLetter(r) {
-			varname := readTillSpace(buffer)
+			varname := string(r)
+			varname += readTillSpace(buffer)
 			discardToChar('{', buffer)
 			varcontent := equalRuneParser('{', '}', buffer)
 			output.statements = append(output.statements, LyStatement{[]string{varname, varcontent}, Variable})

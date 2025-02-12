@@ -27,6 +27,8 @@ func main() {
 	//fmt.Println(outputnamePtr)
 	file, err := os.Open(tail[0])
 	check(err)
-	_ = lyparser.ParseLilypond(file)
-	file.Close();
+	defer file.Close()
+
+	doc := lyparser.ParseLilypond(file)
+	lyparser.WinnowVariables(&doc)
 }
