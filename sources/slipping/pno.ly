@@ -3,27 +3,27 @@ part-Pfive-one = {
   \time 4/4
   \clef treble
   R1 |
-  d''2\ppp\< f'2 |
-  \grace { f'16(\pp g'16 } a'4) <f' a' >8 <g' bes' >8 <f' a' >8 <e' g' >8
+  d''2\p f'2 |
+  \grace { f'16( g'16 } a'4) <f' a' >8 <g' bes' >8 <f' a' >8 <e' g' >8
   <d' f' >8 <c' e' >8 |
-  d'2 <bes des' f' >2\arpeggio\arpeggio\arpeggio |
+  d'2 <bes des' f' >2\arpeggio |
   \time 2/4
   <g' bes' >8 <f' a' >8 <e' g' >8 <d' f' >8 |
   % 5
   \time 4/4
   <c' e' a' >1\< |
-  <d' f' bes' d'' >2\arpeggio\arpeggio\arpeggio\arpeggio\p\other-dynamics
-  <f' bes' des'' f'' >2\arpeggio\arpeggio\arpeggio\arpeggio |
-  r4 <f'' a'' >8-\markup { \italic "cresc." } <g'' bes'' >8 <f'' a'' >8 <e''
-  g'' >8 <d'' f'' >8 <c'' e'' >8 |
-  <d' f' bes' d'' >2\arpeggio\arpeggio\arpeggio\arpeggio <c' f' g' c''
-  >2\arpeggio\arpeggio\arpeggio\arpeggio |
-  <c' f' a' c'' >2.\arpeggio\arpeggio\arpeggio\arpeggio <c' f' a' c'' >4-> |
+  <d' f' bes' d'' >2\arpeggio#(make-post-dynamic-script "p" " bright")
+  <f' bes' des'' f'' >2\arpeggio |
+  r4 <f'' a'' >8-\cresc <g'' bes'' >8 <f'' a'' >8 <e''
+  g'' >8 <d'' f'' >8 <c'' e'' >8\! |
+  <d' f' bes' d'' >2\arpeggio <c' f' g' c''
+  >2\arpeggio |
+  <c' f' a' c'' >2.\arpeggio <c' f' a' c'' >4-> |
   % 10
   d'8\p bes'8 bes'8 a'8 a'16 g'8. g'8 c'8 |
   bes8 <f' a' >8 <f' a' >4 <a cis' e' a' >4 <a cis' e' a' >8 d'8 |
   d'16 bes'8. bes'8 a'8 a'8 g'8 g'8 c'8 |
-  <c' f' a' >2.~~~ <c' f' a' >8 c'16 d'16 |
+  <c' f' a' >2.~ <c' f' a' >8 c'16 d'16 |
   d'8 bes'8 bes'8 a'8 a'16 g'8. g'8 c'8 |
   % 15
   r8 <c' f' a' c'' >8. <c' f' a' c'' >4 r16 <c' f' g' >8 <c' g' c'' >8 c'8 |
@@ -64,7 +64,7 @@ part-Pfive-one = {
       |
     }
   >>
-  <a' c'' f'' a'' >4\arpeggio\arpeggio\arpeggio\arpeggio <f'' a'' >8 <g''
+  <a' c'' f'' a'' >4\arpeggio <f'' a'' >8 <g''
   bes'' >16 <f'' a'' >16~~ <f'' a'' >8 <e'' g'' >8 <d'' f'' >8 <c'' e'' >8 |
   <d' f' bes' d'' >4\< <d' f' bes' d'' >4 <f' bes' des'' f'' >4 <f' bes'
   des'' f'' >8 g''8 |
@@ -76,14 +76,14 @@ part-Pfive-one = {
   >> |
   % 30
   \time 4/4
-  <a' c'' e'' a'' >1\arpeggio\arpeggio\arpeggio\arpeggio |
+  <a' c'' e'' a'' >1\arpeggio |
   <d' f' bes' d'' >4\mp <d' f' bes' d'' >4 <f' bes' des'' f'' >4 <f' bes'
   des'' f'' >4 |
-  <a' c'' f'' a'' >4\arpeggio\arpeggio\arpeggio\arpeggio <f'' a'' >8 <g''
+  <a' c'' f'' a'' >4\arpeggio <f'' a'' >8 <g''
   bes'' >16 <f'' a'' >16~~ <f'' a'' >8 <e'' g'' >8 <d'' f'' >8 <c'' e'' >8 |
-  <d' f' bes' d'' >2\arpeggio\arpeggio\arpeggio\arpeggio <c' e' g' c'' >4
+  <d' f' bes' d'' >2\arpeggio <c' e' g' c'' >4
   \slashedGrace { g'8 } <c' e' a' >4 |
-  <a c' f' a' >4.\arpeggio\arpeggio\arpeggio\arpeggio a8 c'4 <f' a' c'' f''
+  <a c' f' a' >4.\arpeggio a8 c'4 <f' a' c'' f''
   >4-> |
   % 35
   <<
@@ -95,7 +95,7 @@ part-Pfive-one = {
     \context Voice = "voicetwo" {
       \voiceTwo
       <d' f' >4 <d' f' >4 <c' e' >2 |
-      <a c' >4 <a c' >4 <cis' e' >4\arpeggio\arpeggio <cis' e' >4 |
+      <a c' >4 <a c' >4 <cis' e' >4\arpeggio <cis' e' >4 |
     }
   >>
   d'8 bes'8 bes'8 a'8 a'8 g'16 g'16~ g'8 c'8 |

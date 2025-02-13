@@ -51,6 +51,7 @@ func WinnowVariables(doc *LyDocument) {
 			check(err)
 			f.Sync()
 		}
+		accul = []
 		_, err = f.WriteString(statement.print())
 		check(err)
 		f.Sync()

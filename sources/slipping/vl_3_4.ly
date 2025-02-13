@@ -11,12 +11,12 @@ part-Pone-one = {
   % 5
   \time 4/4
   R1 |
-  f'2\ppp-\mark "A" \< f'2\!\pp |
+  f'2\ppp \< f'2\!\pp |
   c''2 d''2 |
   f'2 g'2 |
   c''2~\< c''4 e''4\!\mp |
   % 10
-  f'4\p-\mark "B" f'4 g'4 g'4 |
+  f'4\p f'4 g'4 g'4 |
   c''4 c''4 e''4 e''4 |
   f'4 f'4 g'4 g'4 |
   c''4 a'8\mf bes'16\> a'8~ a'16 g'8 f'8 e'8 |
@@ -24,7 +24,7 @@ part-Pone-one = {
   % 15
   c''4 c''4 g'4 g'4 |
   c''2 r2 |
-  R1-\mark "C" |
+  R1 |
   R1 |
   R1 |
   % 20
@@ -37,7 +37,7 @@ part-Pone-one = {
   % 25
   \time 4/4
   f''2.\> r4 |
-  R1-\mark "D" |
+  R1 |
   R1 |
   R1 |
   \time 2/4
@@ -50,7 +50,7 @@ part-Pone-one = {
   f'2 g'2 |
   g''2 f''2 |
   % 35
-  f'4\p-\mark "E" f'4 g'4 g'4 |
+  f'4\p f'4 g'4 g'4 |
   c''4 c''4 e''4 e''4 |
   f'4 f'4 g'4 g'4 |
   c''4 a'16\mp c''16 f''16 a''16 a''16 g''8. g''8 f''16 f''16~ |
@@ -58,12 +58,12 @@ part-Pone-one = {
   % 40
   c''4 c''4 g'4 g'4 |
   c''2\> r2\! |
-  R1-\mark "F" |
+  R1 |
   R1 |
   R1 |
   % 45
   r2. a'16\p c''16 f''16 a''16 |
-  a''16-\mark "G" g''8. g''8 f''16 f''16~ f''8 c'''8 a''8 f''16 e''16~ |
+  a''16 g''8. g''8 f''16 f''16~ f''8 c'''8 a''8 f''16 e''16~ |
   e''8 c'''8 a''8 e''16 d''16~ d''8 bes''8 g''8 d''8 |
   bes'4 d''8 bes'8 c''8 a''8 a''4 |
   a''16\> g''8. a''8 f''8 f''2 |

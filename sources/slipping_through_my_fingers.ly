@@ -15,13 +15,80 @@
 \include "slipping/vl_3_4.ly"
 
 \header {
-  composer = "Music & Lyrics by Benny Andersson and Björn Ulvaeus
-    "
-  subtitle = "for 4 violins, piano, choir, and band"
+  composer = "Benny Andersson, Björn Ulvaeus"
   title = "Slipping Through My Fingers"
 }
 
+slip_meas = {
+  \key f \major
+  \time 4/4
+  \clef bass
+  R1 |
+  R1*3
+  \time 2/4
+  R2 |
+  % 5
+  \time 4/4
+  R1*5 |
+  % 10
+  R1*7 |
+  R1*7
+  \time 2/4
+  R2 |
+  % 25
+  \time 4/4
+  R1 |
+  R1*3
+  \time 2/4
+  R2 |
+  % 30
+  \time 4/4
+  R1*5 |
+  % 35
+  R1*7 |
+  R1*8 |
+  % 50
+  R1*3 | \bar "|."
+}
+
+slip_marks = {
+  \key f \major
+  \time 4/4
+  \clef bass
+  R1 | \mark \default
+  R1*3
+  \time 2/4
+  R2 |
+  % 5
+  \time 4/4
+  R1*5 | \mark \default
+  % 10
+  R1*7 | \mark \default
+  R1*7
+  \time 2/4
+  R2 |
+  % 25
+  \time 4/4
+  R1 | \mark \default
+  R1*3
+  \time 2/4
+  R2 |
+  % 30
+  \time 4/4
+  R1*5 | \mark \default
+  % 35
+  R1*7 | \mark \default
+  R1*8 | \mark \default
+  % 50
+  R1*3 | \bar "|."
+}
+
 slipping = <<
+  \new BarNumberStaff <<
+    { \slip_meas }
+    { \compressEmptyMeasures \slip_marks }
+  >>
+
   \new StaffGroup <<
     \tag #'(accompaniment orch vl_i)
     \new Staff \with {
@@ -62,25 +129,30 @@ slipping = <<
     instrumentName = "Donna"
     shortInstrumentName = "D."
   } {
-    \part-Psix-one
+    \part-Psix-one \addlyrics \donna_lyr
   }
 
+  %{
   \tag #'(chor)
   \new StaffGroup \with {
     instrumentName = "Chorus"
     shortInstrumentName = "Chor."
   } <<
-    \new Staff \part-Pseven-one
-    \new Staff \part-Peight-one
+    \new Staff \part-Pseven-one \addlyrics \women_lyr
+    \new Staff \part-Peight-one \addlyrics \men_lyr
   >>
+  %}
 
 
   \tag #'(accompaniment band l_guit)
-  <<
-    \new Staff \with {
-      instrumentName = "Lead Guitar"
-      shortInstrumentName = "L. Guit."
-    } \part-Ponezero-one
+  \new StaffGroup \with {
+    instrumentName = "Lead Guitar"
+    shortInstrumentName = "L. Guit."
+    minimumFret = #5
+    restrainOpenStrings = ##t
+  } <<
+    \new Staff { \clef "treble_8" \part-Ponezero-one }
+    \new TabStaff \part-Ponezero-one
   >>
 
   \tag #'(accompaniment band r_guit)
@@ -98,7 +170,7 @@ slipping = <<
     shortInstrumentName = "Kbd."
   } <<
     \new Staff \part-Pnine-one
-    \new Staff \part-Pnine-two
+    %\new Staff \part-Pnine-two
   >>
 
   \tag #'(accompaniment band b_guit)
@@ -107,12 +179,27 @@ slipping = <<
     instrumentName = "Bass Guitar"
     shortInstrumentName = "B. Guit"
   } <<
-    \new Staff \part-Ponetwo-one
+    \new Staff {\clef "bass_8" \part-Ponetwo-one}
+    \new TabStaff \with {
+      stringTunings = #bass-tuning
+    } \part-Ponetwo-one
   >>
 
   \tag #'(accompaniment band drum)
-  <<
-    \new DrumStaff \part-Ponethree-one
-    %\new Staff \part-Ponefour-one
-  >>
+  \new DrumStaff \with {
+    instrumentName = "Drumkit"
+    shortInstrumentName = "Dr."
+  } \part-Ponethree-one
+
+  \tag #'(accompaniment band drum a_perc)
+  \new DrumStaff \with {
+    \override StaffSymbol.line-positions = #'(-2 2)
+    instrumentName = "Aux. Perc."
+    shortInstrumentName = "A. Pc."
+  } \part-Ponefour-one
 >>
+
+\score {
+  \slipping
+  \layout{}
+}

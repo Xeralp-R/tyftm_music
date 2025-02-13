@@ -181,3 +181,13 @@ tocGroup =
 )
 
 scoop = \once \override NoteHead.stencil = #scoop-stencil
+
+#(define (plop-stencil grob)
+  (ly:stencil-combine-at-edge
+   (ly:note-head::print grob) 0 -1
+   (grob-interpret-markup grob
+    (markup #:with-dimensions '(0 . 0) '(0 . 0)
+     #:translate '( 2 . 2) #:musicglyph "brackettips.up" )) 0 )
+)
+
+plop = \once \override NoteHead.stencil = #plop-stencil
