@@ -84,3 +84,31 @@ part-Psix-one = {
   R1. |
   R1. |
 }
+
+women_lyr =  \lyricmode {\set ignoreMelismata = ##t My
+  my at wa -- \skip1 ter -- \skip1 loo\skip1 Na -- \skip1 po -- \skip1
+  leon\skip1 did\skip1 su -- rren -- \skip1 "der." \skip1 Oh "yeah,"
+  and I\skip1 have\skip1 met\skip1 my\skip1 des -- \skip1 ti -- \skip1
+  ny\skip1 in\skip1 quite\skip1 a\skip1 sim -- \skip1 ilar\skip1
+  "way." \skip1 The his -- \skip1 to -- ry book\skip1 on the shelf is
+  al -- \skip1 ways re -- pea -- \skip1 ting it -- "self." \skip1
+  \skip1 \skip1 \skip1 Wa -- \skip1 ter -- "loo," I\skip1 was de --
+  fea -- \skip1 ted you won\skip1 the "war." Wa -- \skip1 ter --
+  "loo," pro -- \skip1 mise to love\skip1 you for e -- \skip1 ver
+  "more." Wa -- \skip1 ter -- "loo," coul -- \skip1 "d'nt" es --
+  cape\skip1 if I wan -- \skip1 ted "to." Wa -- \skip1 ter -- "loo,"
+  know -- \skip1 ing my fate\skip1 is to be\skip1 with "you."
+  Woh\skip1 o woh woh "woh." Wa -- \skip1 ter "loo," fin -- \skip1 a
+  -- lly fa -- \skip1 cing my wa -- \skip1 ter -- "loo." So how\skip1
+  could I ev -- \skip1 er re -- "fuse," I feel\skip1 like I win\skip1
+  when I "lose." \skip1 \skip1 \skip1 Wa -- \skip1 ter -- "loo,"
+  I\skip1 was de -- fea -- \skip1 ted you won\skip1 the "war." Wa --
+  \skip1 ter -- "loo," pro -- \skip1 mise to love\skip1 you for e --
+  \skip1 ver "more." Wa -- \skip1 ter -- "loo," coul -- \skip1 "d'nt"
+  es -- cape\skip1 if I wan -- \skip1 ted "to." Wa -- \skip1 ter --
+  "loo," know -- \skip1 ing my fate\skip1 is to be\skip1 with "you."
+  Woh\skip1 o woh woh "woh." Wa -- \skip1 ter "loo," fin -- \skip1 a
+  -- lly fa -- \skip1 cing my wa -- \skip1 ter -- "loo." Ooh\skip1
+  ooh\skip1 ohh\skip1 wa -- \skip1 ter -- "loo," fin -- \skip1 a --
+  lly fa -- \skip1 cing my wa -- \skip1 ter -- "loo."
+  }
