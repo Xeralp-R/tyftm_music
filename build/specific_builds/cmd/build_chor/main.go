@@ -5,6 +5,7 @@ import (
 	"flag"
 	//"test/specific_builds/internal/build_chor"
 	"test/specific_builds/internal/lyparser"
+	"test/specific_builds/internal/lymanip"
 	"os"
 	//"embed"
 )
@@ -30,5 +31,5 @@ func main() {
 	defer file.Close()
 
 	doc := lyparser.ParseLilypond(file)
-	lyparser.WinnowVariables(&doc)
+	lymanip.WinnowVariables(&doc)
 }

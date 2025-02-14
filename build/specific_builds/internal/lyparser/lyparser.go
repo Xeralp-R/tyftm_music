@@ -60,8 +60,8 @@ func ParseLilypond(file *os.File) LyDocument {
 			var comment string
 			comment += string(r) + readToChar('\n', buffer)
 
-			fmt.Println("Passed comment into statements.")
-			output.statements = append(output.statements, LyStatement{content: []string{comment}, classification: Comment})
+			fmt.Println("Passed comment into Statements.")
+			output.Statements = append(output.Statements, LyStatement{Content: []string{comment}, Classification: Comment})
 		}
 
 		if r == '#' {
@@ -69,8 +69,8 @@ func ParseLilypond(file *os.File) LyDocument {
 			_, _, _ = buffer.ReadRune()
 			object := equalRuneParser('(', ')', buffer)
 
-			fmt.Println("Passed # statement into statements.")
-			output.statements = append(output.statements, LyStatement{[]string{object}, Other})
+			fmt.Println("Passed # statement into Statements.")
+			output.Statements = append(output.Statements, LyStatement{[]string{object}, Other})
 		}
 
 		if r == '\\' {
@@ -82,9 +82,9 @@ func ParseLilypond(file *os.File) LyDocument {
 			block := equalRuneParser('{', '}', buffer)
 
 			if command == "\\paper" || command == "\\header" {
-				output.statements = append(output.statements, LyStatement{[]string{command, block}, Prologue})
+				output.Statements = append(output.Statements, LyStatement{[]string{command, block}, Prologue})
 			} else {
-				output.statements = append(output.statements, LyStatement{[]string{command, block}, Command})
+				output.Statements = append(output.Statements, LyStatement{[]string{command, block}, Command})
 			}
 		}
 
@@ -93,7 +93,7 @@ func ParseLilypond(file *os.File) LyDocument {
 			varname += readTillSpace(buffer)
 			discardToChar('{', buffer)
 			varcontent := equalRuneParser('{', '}', buffer)
-			output.statements = append(output.statements, LyStatement{[]string{varname, varcontent}, Variable})
+			output.Statements = append(output.Statements, LyStatement{[]string{varname, varcontent}, Variable})
 			fmt.Println("Read a variable.")
 		}
 

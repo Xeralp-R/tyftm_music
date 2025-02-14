@@ -1,26 +1,33 @@
-package lyparser
+package lymanip
 
 import (
 	"fmt"
 	"os"
 	"bufio"
+	"test/specific_builds/internal/lyparser"
 )
 
-func WinnowVariables(doc *LyDocument) {
+func check(e error) {
+    if e != nil {
+        panic(e)
+    }
+}
+
+func WinnowVariables(doc *lyparser.LyDocument) {
 	reader := bufio.NewReader(os.Stdin)
 	fmt.Println("State your filepath.")
 	fmt.Print("> ")
 	fp, _ := reader.ReadString('\n')
 	fp = fp[:len(fp)-1]
 
-	var accul []LyStatement
+	var accul []lyparser.LyStatement
 	//var acculon bool
 
-	for _, statement := range doc.statements {
-		if statement.classification != Variable {
+	for _, statement := range doc.Statements {
+		if statement.Classification != lyparser.Variable {
 			continue
 		}
-		fmt.Println("Do you want to distribute the variable labelled " + statement.content[0] + "? (y/accul/any other key)")
+		fmt.Println("Do you want to distribute the variable labelled " + statement.Content[0] + "? (y/accul/any other key)")
 		fmt.Print("> ")
 
 		text, _ := reader.ReadString('\n')
@@ -47,12 +54,12 @@ func WinnowVariables(doc *LyDocument) {
 		defer f.Close()
 
 		for _, ns := range accul {
-			_, err = f.WriteString(ns.print() + "\n\n")
+			_, err = f.WriteString(ns.Print() + "\n\n")
 			check(err)
 			f.Sync()
 		}
-		accul = []
-		_, err = f.WriteString(statement.print())
+		accul = nil
+		_, err = f.WriteString(statement.Print())
 		check(err)
 		f.Sync()
 

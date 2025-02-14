@@ -11,17 +11,17 @@ const (
 )
 
 type LyStatement struct {
-	content []string
-	classification LyStatementType
+	Content []string
+	Classification LyStatementType
 }
 
 type LyDocument struct {
-	statements []LyStatement
+	Statements []LyStatement
 }
 
-func (st *LyStatement) print() string {
-	if st.classification == Variable {
-		return st.content[0] + " = " + st.content[1]
+func (st *LyStatement) Print() string {
+	if st.Classification == Variable {
+		return st.Content[0] + " = " + st.Content[1]
 	} else {
 		return ""
 	}
