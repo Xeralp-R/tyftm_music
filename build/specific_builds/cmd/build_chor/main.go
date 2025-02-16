@@ -2,12 +2,14 @@ package main
 
 import (
 	//"fmt"
-	"flag"
+	//"flag"
 	//"test/specific_builds/internal/build_chor"
-	"test/specific_builds/internal/lyparser"
+	//"test/specific_builds/internal/lyparser"
 	"test/specific_builds/internal/lymanip"
-	"os"
+	//"os"
+	"log"
 	//"embed"
+	tea "github.com/charmbracelet/bubbletea"
 )
 
 // i dunno what this does
@@ -20,6 +22,7 @@ func check(e error) {
 
 func main() {
 	//outputnamePtr := flag.String("o", "output.pdf", "Name of the final pdf: must end in .pdf for best results.")
+	/*
 	flag.Parse()
 	tail := flag.Args()
 	
@@ -30,6 +33,10 @@ func main() {
 	check(err)
 	defer file.Close()
 
-	doc := lyparser.ParseLilypond(file)
-	lymanip.WinnowVariables(&doc)
+	doc := lyparser.ParseLilypond(file)*/
+	//lymanip.WinnowVariables(&doc)
+	tui := tea.NewProgram(lymanip.MakeManipModel())
+	if _, err := tui.Run(); err != nil {
+		log.Fatal(err)
+	}
 }
