@@ -22,12 +22,17 @@ waterloo_header = \header {
 }
 
 waterloo_marks = {
+  \tempo \markup \column { "Al°" "W°" } 4. = 147
   R1.*4 \mark \default %A
-  R1.*12 \mark \default %B
-  R1.*9 \mark \default %C
-  R1.*24 \mark \default %D
-  R1.*15 \mark \default %E
-  R1.*4
+  R1.*9 \mark \default %B
+  R1.*5 \mark \default %C
+  R1.*8 \mark \default %D
+  R1.*10 \mark \default %E
+  R1.*6 \mark \default %F
+  R1.*8 \mark \default %G
+  R1.*10 \mark \default %H
+  R1.*4 \mark \default %I
+  R1.*4 \bar "|."
 }
 
 waterloo_measures = {
@@ -82,8 +87,10 @@ waterloo = {
       instrumentName = "Chorus"
       shortInstrumentName = "Ch."
     } <<
-      \new Staff \part-Psix-one
-      \new Staff \part-Pseven-one
+      \new Voice = "women" {\part-Psix-one}
+      \new Lyrics \lyricsto "women" {\women_lyr}
+      \new Voice = "men" {\part-Pseven-one}
+      % \new Lyrics \lyricsto "men" {\men_lyr}
     >>
 
     \tag #'(accompaniment band e_kbd)
@@ -95,20 +102,33 @@ waterloo = {
       \new Staff \part-Peight-one
       \new Staff \part-Peight-two
     >>
+
     \tag #'(accompaniment band l_guit)
     \new StaffGroup \with {
       instrumentName = "Lead Guitar"
       shortInstrumentName = "L. Guit."
-
-    } \part-Pnine-one
+      systemStartDelimiter = #'SystemStartSquare
+    } <<
+      \new ChordNames \part-Pnine-one-chords
+      \new Staff <<
+        \part-Pnine-one
+        \l-guit-strums
+      >>
+      \new TabStaff \part-Pnine-one
+    >>
 
     \tag #'(accompaniment band r_guit)
-    <<
-      %\new ChordNames \chord-sequence
-      \new Staff \with {
-        instrumentName = "Rhythm Guitar"
-        shortInstrumentName = "R. Guit"
-      } \part-Ponezero-one
+    \new StaffGroup \with {
+      instrumentName = "Rhythm Guitar"
+      shortInstrumentName = "R. Guit"
+      systemStartDelimiter = #'SystemStartSquare
+    } <<
+        \new ChordNames \PartPOneZeroVoiceOneChords
+        \new Staff <<
+          \part-Ponezero-one
+          \r-guit-strums
+        >>
+        \new TabStaff \part-Ponezero-one
     >>
 
     \tag #'(accompaniment band b_guit)

@@ -3,11 +3,11 @@ part-Ponetwo-one = \drummode {
     \context DrumVoice = "voiceone" {
       \voiceOne
       \time 12/8
-      \clef percussion cymc4.\mp hh4. hh4. hh4. |
+      \clef percussion cymc4.\f hh4. hh4. hh4. |
       hh4. hh4. hh4. hh4. |
       hh4. hh4. hh4. hh4. |
       hh4. hh4. hh4. hh4. |
-      hh4. cymc4 cymc8~ cymc4. hh4. |
+      hh4.\meno-p cymc4 cymc8~ cymc4. hh4. |
       % 5
       hh4. hh4. hh4. hh4. |
       hh4. hh4. hh4. hh4. |
@@ -21,10 +21,10 @@ part-Ponetwo-one = \drummode {
       hh4. hh4. hh4. hh4. |
       hh4. hh4. hh4. hh4. |
       % 15
+      hh4.\< hh4. hh4. hh4. |
+      hh4.\f hh4. hh4. hh4. |
       hh4. hh4. hh4. hh4. |
-      hh4. hh4. hh4. hh4. |
-      hh4. hh4. hh4. hh4. |
-      cymc4.\mf hh4. hh4. hh4. |
+      cymc4.\ben-mf hh4. hh4. hh4. |
       hh4. hh4. hh4. hh4. |
       % 20
       hh4. hh4. hh4. hh4. |
@@ -33,8 +33,8 @@ part-Ponetwo-one = \drummode {
       hh4. hh4. hh4. hh4. |
       hh4. hh4. hh4. hh4. |
       % 25
-      bd4 sn8 <toml sn >4 sn8 <toml sn >4 sn8 hh4 sn8 |
-      cymc4. hh4. hh4. hh4. |
+      bd4\< sn8 <toml sn >4 sn8 <toml sn >4 sn8 hh4 sn8 |
+      cymc4.\f hh4. hh4. hh4. |
       hh4. hh4. hh4. hh4. |
       hh4. hh4. hh4. hh4. |
       hh4. hh4. hh4. hh4. |
@@ -46,14 +46,14 @@ part-Ponetwo-one = \drummode {
       cymc4. hh4. hh4. hh4. |
       % 35
       hh4. hh4. hh4. hh4. |
-      hh4. hh4. hh4. hh4. |
+      hh4.\f \decresc hh4. hh4. hh4. |
       cymc4. hh4. hh4. hh4. |
-      hh4. hh4. hh4. hh4. |
+      hh4.\meno-p hh4. hh4. hh4. |
       hh4. hh4. hh4. hh4. |
       % 40
       hh4. hh4. hh4. hh4. |
-      hh4. hh4. hh4. hh4. |
-      hh4. hh4. hh4. hh4. |
+      hh4.\< hh4. hh4. hh4. |
+      hh4.\f hh4. hh4. hh4. |
       hh4. hh4. hh4. hh4. |
       hh4. hh4. hh4. hh4. |
       % 45
@@ -61,9 +61,9 @@ part-Ponetwo-one = \drummode {
       hh4. hh4. hh4. hh4. |
       hh4. hh4. hh4. hh4. |
       hh4. hh4. hh4. hh4. |
-      bd4 sn8 sn4. <hhp bd >4 sn8 sn4. |
+      bd4\< sn8 sn4. <hhp bd >4 sn8 sn4. |
       % 50
-      cymc4. hh4. hh4. hh4. |
+      cymc4.\f hh4. hh4. hh4. |
       hh4. hh4. hh4. hh4. |
       hh4. hh4. hh4. hh4. |
       hh4. hh4. hh4. hh4. |
@@ -75,15 +75,15 @@ part-Ponetwo-one = \drummode {
       cymc4. hh4. hh4. hh4. |
       hh4. hh4. hh4. hh4. |
       % 60
+      hh4.\< hh4. hh4. hh4. |
       hh4. hh4. hh4. hh4. |
+      hh4.\piu-f hh4. hh4. hh4. |
       hh4. hh4. hh4. hh4. |
-      hh4. hh4. hh4. hh4. |
-      hh4. hh4. hh4. hh4. |
-      hh4. hh4. hh4. hh4 cymc8~ |
+      hh4.\< hh4. hh4. hh4 cymc8~ |
       % 65
       cymc4. hh4. hh4. hh4 cymc8~ |
       cymc4. hh4 cymc8~ cymc4. hh4 cymc8 |
-      r4 cymc8~ cymc4. hh4. hh4 cymc8 |
+      r4 cymc8~ cymc4. hh4. hh4 cymc8 \rfz|
     }
     \context DrumVoice = "voicetwo" {
       \voiceTwo

@@ -21,7 +21,7 @@ part-Ponethree-one = \drummode {
   R1. |
   R1. |
   R1. |
-  r4.\mf tamb4. r4. tamb4. |
+  r4.\ben-mf tamb4. r4. tamb4. |
   r4. tamb4. r4. tamb4. |
   % 20
   r4. tamb4. r4. tamb4. |
@@ -30,8 +30,8 @@ part-Ponethree-one = \drummode {
   r4. tamb4. r4. tamb4. |
   r4. tamb4. r4. tamb4. |
   % 25
-  r4 tamb8 tamb4 tamb8 tamb4 tamb8 tamb4 tamb8 |
-  r4. tamb4. r4. tamb4. |
+  r4 tamb8\< tamb4 tamb8 tamb4 tamb8 tamb4 tamb8 |
+  r4.\f tamb4. r4. tamb4. |
   r4. tamb4. r4. tamb4. |
   r4. tamb4. r4. tamb4. |
   r4. tamb4. r4. tamb4. |
@@ -50,7 +50,7 @@ part-Ponethree-one = \drummode {
   % 40
   R1. |
   R1. |
-  r4. tamb4. r4. tamb4. |
+  r4.\f tamb4. r4. tamb4. |
   r4. tamb4. r4. tamb4. |
   r4. tamb4. r4. tamb4. |
   % 45
@@ -58,9 +58,9 @@ part-Ponethree-one = \drummode {
   r4. tamb4. r4. tamb4. |
   r4. tamb4. r4. tamb4. |
   r4. tamb4. r4. tamb4. |
-  r4 tamb8 tamb4 tamb8 tamb4 tamb8 tamb4 tamb8 |
+  r4\< tamb8 tamb4 tamb8 tamb4 tamb8 tamb4 tamb8 |
   % 50
-  r4. tamb4. r4. tamb4. |
+  r4.\f tamb4. r4. tamb4. |
   r4. tamb4. r4. tamb4. |
   r4. tamb4. r4. tamb4. |
   r4. tamb4. r4. tamb4. |

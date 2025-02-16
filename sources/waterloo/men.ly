@@ -22,7 +22,7 @@ part-Pseven-one = {
   % 15
   R1. |
   R1. |
-  r2.\f r4. r4 g'8~ |
+  r2. r4. r4 g'8~ |
   g'4 g'8 fis'4. r4. r4 g'8~ |
   g'4 g'8 fis'4 e'8~ e'4 e'8 d'4 cis'8~ |
   % 20
@@ -85,22 +85,22 @@ part-Pseven-one = {
   R1. |
 }
 
-men_lyr =  \lyricmode {\set ignoreMelismata = ##t Wa
-  -- \skip1 ter -- "loo," I\skip1 was de -- fea -- \skip1 ted you
-  won\skip1 the "war." Wa -- \skip1 ter -- "loo," pro -- \skip1 mise
-  to love\skip1 you for e -- \skip1 ver "more." Wa -- \skip1 ter --
-  "loo," coul -- \skip1 "d'nt" es -- cape\skip1 if I wan -- \skip1 ted
-  "to." Wa -- \skip1 ter -- "loo," know -- \skip1 ing my fate\skip1 is
-  to be\skip1 with "you." Woh\skip1 o woh woh "woh." Wa -- \skip1 ter
-  "loo," fin -- \skip1 a -- lly fa -- \skip1 cing my wa -- \skip1 ter
-  -- "loo." Wa -- \skip1 ter -- "loo," I\skip1 was de -- fea -- \skip1
-  ted you won\skip1 the "war." Wa -- \skip1 ter -- "loo," pro --
-  \skip1 mise to love\skip1 you for e -- \skip1 ver "more." Wa --
-  \skip1 ter -- "loo," coul -- \skip1 "d'nt" es -- cape\skip1 if I wan
-  -- \skip1 ted "to." Wa -- \skip1 ter -- "loo," know -- \skip1 ing my
-  fate\skip1 is to be\skip1 with "you." Woh\skip1 o woh woh "woh." Wa
-  -- \skip1 ter "loo," fin -- \skip1 a -- lly fa -- \skip1 cing my wa
-  -- \skip1 ter -- "loo." Ooh\skip1 ooh\skip1 ohh\skip1 wa -- \skip1
-  ter -- "loo," fin -- \skip1 a -- lly fa -- \skip1 cing my wa --
-  \skip1 ter -- "loo."
+men_lyr =  \lyricmode {
+  Wa -- ter -- loo, I was de -- fea --  ted you
+  won the war. Wa --  ter -- loo, pro --  mise
+  to love you for e -- ver more. Wa --  ter --
+  loo, coul --  d'nt es -- cape if I wan --  ted
+  to. Wa --  ter -- loo, know --  ing my fate is
+  to be with you. Woh o woh woh woh. Wa --  ter
+  loo, fin --  a -- lly fa --  cing my wa --  ter
+  -- loo. Wa --  ter -- loo, I was de -- fea -- 
+  ted you won the war. Wa --  ter -- loo, pro --
+   mise to love you for e --  ver more. Wa --
+   ter -- loo, coul --  d'nt es -- cape if I wan
+  --  ted to. Wa --  ter -- loo, know --  ing my
+  fate is to be with you. Woh o woh woh woh. Wa
+  --  ter loo, fin --  a -- lly fa --  cing my wa
+  --  ter -- loo. Ooh ooh ohh wa -- 
+  ter -- loo, fin --  a -- lly fa --  cing my wa --
+   ter -- loo.
   }
