@@ -17,7 +17,7 @@ var (
 	titleStyle = lipgloss.NewStyle().Bold(true).Foreground(lipgloss.Color("0")).
 	             Background(lipgloss.Color("79")).Padding(2).Width(40).Align(lipgloss.Center).
 	             BorderStyle(lipgloss.RoundedBorder())
-	subtleStyle   = lipgloss.NewStyle().Foreground(lipgloss.Color("241")).MarginLeft(2)
+	subtleStyle   = lipgloss.NewStyle().Foreground(lipgloss.Color("241"))
 	//ticksStyle    = lipgloss.NewStyle().Foreground(lipgloss.Color("79"))
 	//checkboxStyle = lipgloss.NewStyle().Foreground(lipgloss.Color("212"))
 	//progressEmpty = subtleStyle.Render(progressEmptyChar)
@@ -55,15 +55,19 @@ type FileSelectorData struct {
 	SelectedFolder string
 }
 
-func (fsd FileSelectorData) verifyFileCorrect() {
+func (fsd *FileSelectorData) verifyFileCorrect() {
 	var err error
 	fsd.SelectedFile, err = os.Open(fsd.FileTextInput.Value())
 	if errors.Is(err, os.ErrNotExist) {
 		fsd.IsFileSelected = false
 		fsd.Message = "invalid file; try again."
+		return
 	}
 	fsd.IsFileSelected = true
-	fsd.Message = "esc to quit. enter name to proceed."
+	fsd.FileTextInput.Blur() // defocus
+	fsd.Message = "esc to quit. enter folder path to proceed."
+
+	fsd.FolderTextInput.Focus()
 }
 
 type ManipModel struct {
@@ -81,13 +85,14 @@ func MakeManipModel() ManipModel  {
 	flti := textinput.New()
 	flti.Placeholder = "Enter your complete filepath, from /."
 	flti.Focus()
-	flti.CharLimit = 256
+	flti.CharLimit = 512
 	flti.Width = 40
 	flti.Prompt = "File: "
 
 	fdti := textinput.New()
-	fdti.CharLimit = 256
+	fdti.CharLimit = 512
 	fdti.Width = 40
+	fdti.Prompt = "Folder: "
 
 	return ManipModel {
 		CurrentView: FileSelector,
