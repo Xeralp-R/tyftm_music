@@ -2,10 +2,12 @@
 exports/
 imports/
 .vscode/
+.venv/
 Musical_Experiments/
 other/
 __pycache__/
-.pdf
+*.exe
+*.pdf
 test.py
 
 # i don't know if this should be out or not
