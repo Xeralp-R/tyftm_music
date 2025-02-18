@@ -47,5 +47,15 @@ def include(piece: str, inst: str):
         
         return ly.document.Document(new)
 
+def engrave(piece: str, doc: ly.document.Document):
+    """Engraves a Lilypond document onto a file
+
+    Args:
+        piece (str): _filepath to engrave to_
+        doc (ly.document.Document): _document to engrave onto the file_
+    """
+    with open(piece, 'w') as file:
+        file.write(doc.plaintext())
+
 if __name__ == "__main__":
     print(include("sources/knowing_me.ly", "test").plaintext())
