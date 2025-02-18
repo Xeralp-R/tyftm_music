@@ -1,0 +1,4 @@
+# Some Notes On Automations
+
+## `python-ly`
+It turns out that there is a small bug in the `ly/document.py` module that may stop the `Runner.position()` method from working. I can't quite figure out exactly when it occurs, but it seems to fix itself when you replace `return self._d.position(self.block)` with `return self._doc.position(self.block)`. My best guess is that one of the contributors forgot they were coding in the `Runner` class, not the `Cursor` class, and accidentally wrote the wrong code. `Cursor` uses `_d` as an alias for the document being read, while `Runner` uses `_doc`. Just make this small change and all should be well.

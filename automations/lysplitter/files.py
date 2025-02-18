@@ -2,7 +2,7 @@ from pathlib import Path
 import ly.document
 import variables
 
-# TODO: Account for cases where the file has no includes
+# str argument instead of document makes writing include statement easier
 def include(piece: str, inst: str):
     """Write an include command for an instrument for a certain piece
 
@@ -19,30 +19,33 @@ def include(piece: str, inst: str):
         doc = ly.document.Document.load(piece)
         runner = ly.document.Runner(doc)
         new = ""
-        IGNORE = [ly.lex.lilypond.LineComment, ly.lex._token.Space, ly.lex._token.Newline]
-        includes_found = False
-
+        included = False
+        ignoring = False
+        has_include_ly = False
+        IGNORE = {ly.lex.lilypond.LineComment, ly.lex._token.Space, "\\version", "\\include"}
 
         while token := runner.next():
-            # if token == "\\include":
-            #     includes_found = True
-            #     new += doc.text(doc.block(runner.position())) + '\n'
-            #     runner.next_block()
-            # elif includes_found and token != "\\include" and type(token) not in IGNORE:
-            #     new = new.strip('\n') + f"\n\\include \"{piece.split('/')[-1].replace(".ly", '')}/{inst}.ly\""
-            #     includes_found = False
-            # else:
-            #     new += token
+            data = {str(token), type(token)}
 
-            added = False
+            if token == '\n':
+                ignoring = False
+            elif ignoring or data & IGNORE:
+                ignoring = True
+            elif not included:
+                new = new.strip('\n')
 
-            if not added and (token != "\\include" or token != "\\version") and type(token) not in IGNORE:
-                new = new.strip('\n') + f"\n\\include \"{piece.split('/')[-1].replace(".ly", '')}/{inst}.ly\""
-                added = True
-            else:
-                new += token
+                if not has_include_ly:
+                    new += '\n'
+                
+                new += f"\n\\include \"{piece.split('/')[-1].replace(".ly", '')}/{inst}.ly\"\n\n"
+                included = True
+
+            if not has_include_ly and not included:
+                has_include_ly = token.find(".ly") != -1
+
+            new += token
         
         return ly.document.Document(new)
 
 if __name__ == "__main__":
-    print(include("sources/Scene Change 4a.ly", "test").plaintext())
+    print(include("sources/knowing_me.ly", "test").plaintext())
