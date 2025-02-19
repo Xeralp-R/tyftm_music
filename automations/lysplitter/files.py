@@ -1,13 +1,13 @@
 from pathlib import Path
 import ly.document
-import variables
 
 # str argument instead of document makes writing include statement easier
 def include(piece: str, inst: str):
     """Write an include command for an instrument for a certain piece
 
     Args:
-        piece (str): _path of file to write include command into_
+        piece (str): _path of file to write include command into; **enter
+        filepaths using backslashes, not forward slashes**_
         inst (str): _instrument to write include command for_
     
     Returns:
@@ -37,7 +37,7 @@ def include(piece: str, inst: str):
                 if not has_include_ly:
                     new += '\n'
                 
-                new += f"\n\\include \"{piece.split('/')[-1].replace(".ly", '')}/{inst}.ly\"\n\n"
+                new += f"\n\\include \"{piece.split('\\')[-1].replace(".ly", '')}/{inst}.ly\"\n\n"
                 included = True
 
             if not has_include_ly and not included:
@@ -47,15 +47,22 @@ def include(piece: str, inst: str):
         
         return ly.document.Document(new)
 
-def engrave(piece: str, doc: ly.document.Document):
+def engrave(piece: str, doc: ly.document.Document, overwrite: bool = False):
     """Engraves a Lilypond document onto a file
 
     Args:
         piece (str): _filepath to engrave to_
-        doc (ly.document.Document): _document to engrave onto the file_
+        doc (ly.document.Document): _document to engrave onto file_
     """
-    with open(piece, 'w') as file:
-        file.write(doc.plaintext())
+    if (not Path(piece).is_file()) or overwrite:
+        with open(piece, 'w') as file:
+            file.write(doc.plaintext())
+            file.write('\n')
+    else:
+        with open(piece, 'a') as file:
+            file.write('\n')
+            file.write(doc.plaintext())
+            file.write('\n')
 
 if __name__ == "__main__":
-    print(include("sources/knowing_me.ly", "test").plaintext())
+    print(include("sources\\knowing_me.ly", "test").plaintext())

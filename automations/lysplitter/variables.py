@@ -1,28 +1,22 @@
-from pathlib import Path
-# from multipledispatch import dispatch
 import ly.document
 
-def itemize(piece: str):
+def itemize(doc: ly.document.Document):
     """Lists all variables in a Lilypond file
 
     Args:
-        piece (str): _path of file to scan for variables_
+        doc (ly.document.Document): _Lilypond document to scan_
 
     Returns:
-        list: _names of all variables in piece_
+        list: _names of all variables in doc_
     """
-    if not Path(piece).is_file():
-        raise FileNotFoundError("This piece does not exist!")
-    else:
-        doc = ly.document.Document.load(piece)
-        runner = ly.document.Runner(doc)
-        variables = []
+    runner = ly.document.Runner(doc)
+    variables = []
 
-        while token := runner.next():
-            if type(token) == ly.lex.lilypond.Name:
-                variables.append(token)
-    
-        return variables
+    while token := runner.next():
+        if type(token) == ly.lex.lilypond.Name:
+            variables.append(token)
+
+    return variables
 
 def position(doc: ly.document.Document, var: str):
     """Gives the position of a variable in a lilypond file
@@ -84,7 +78,7 @@ def delete(doc: ly.document.Document, var: str):
         var (str): _name of variable to delete_
     
     Returns:
-        _str_: _plain text version of document without the specified variable_
+        _ly.document.Runner_: _new Lilypond document without the specified variable_
     """
     runner = ly.document.Runner(doc)
 
