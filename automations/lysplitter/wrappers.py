@@ -27,8 +27,8 @@ def itemize(piece: str):
             doc = ly.document.Document.load(piece)
             out = variables.itemize(doc)
             print(' '.join(out))
-    except:
-        print(0)
+    except Exception as ex:
+        print(0, str(type(ex)))
 
 def separate(piece: str, var: str, inst: str):
     """Wrapper function that follows the algorithm below:
@@ -46,19 +46,21 @@ def separate(piece: str, var: str, inst: str):
         var (str): _name of variable to extract and engrave onto new file_
         inst (str): _name of new file (instrument)_
     """
-    # try:
-    if not Path(piece).is_file():
-        raise FileNotFoundError("This piece does not exist!")
-    else:
-        doc = ly.document.Document.load(piece)
-        declaration = variables.extract(doc, var)
-        folder_path = f".\\sources\\{piece.split('\\')[-1].replace('.ly', '')}"
-        Path(folder_path).mkdir(parents=True, exist_ok=True)
-        files.engrave(f"{folder_path}\\{inst}.ly", declaration)
-        new_doc = variables.delete(files.include(piece, inst), var)
-        files.engrave(piece, new_doc, overwrite=True)
-    # except:
-    #     print(0)
+    try:
+        if not Path(piece).is_file():
+            raise FileNotFoundError("This piece does not exist!")
+        else:
+            doc = ly.document.Document.load(piece)
+            declaration = variables.extract(doc, var)
+            folder_path = f".\\sources\\{piece.split('\\')[-1].replace('.ly', '')}"
+            Path(folder_path).mkdir(parents=True, exist_ok=True)
+            files.engrave(f"{folder_path}\\{inst}.ly", declaration)
+            new_doc = variables.delete(files.include(piece, inst), var)
+            files.engrave(piece, new_doc, overwrite=True)
+            print(1)
+    except Exception as ex:
+        print(0, str(type(ex)))
 
 if __name__ == "__main__":
+    # itemize(".\\sources\\Scene Change 4a.ly")
     separate(".\\sources\\Scene Change 4a.ly", "part-Pone-one", "test")
