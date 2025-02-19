@@ -1,3 +1,5 @@
+// TODO: incorporate Python code with Go TUI
+
 package lyparser
 
 import (
