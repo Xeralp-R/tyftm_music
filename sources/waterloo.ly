@@ -47,30 +47,26 @@ waterloo = {
       { \compressEmptyMeasures \waterloo_measures }
     >>
 
+    \tag #'(nonchor)
+    \new Staff \with {
+      \remove Clef_engraver
+      \remove Time_signature_engraver
+      \remove Key_engraver
+      \remove Staff_symbol_engraver
+    } \new NullVoice \part-Psix-one \addlyrics \women_lyr
+
     \new StaffGroup <<
       \tag #'(accompaniment orch vl_i)
       \new Staff \with {
         instrumentName = "Violin 1"
         shortInstrumentName = "Vl. 1"
-      } \part-Pone-one
+      } \partCombine \part-Pone-one \part-Ptwo-one
 
       \tag #'(accompaniment orch vl_ii)
       \new Staff \with {
         instrumentName = "Violin 2"
         shortInstrumentName = "Vl. 2"
-      } \part-Ptwo-one
-
-      \tag #'(accompaniment orch vl_iii)
-      \new Staff \with {
-        instrumentName = "Violin 3"
-        shortInstrumentName = "Vl. 3"
-      } \part-Pthree-one
-
-      \tag #'(accompaniment orch vl_iv)
-      \new Staff \with {
-        instrumentName = "Violin 4"
-        shortInstrumentName = "Vl. 4"
-      } \part-Pfour-one
+      } \partCombine \part-Pthree-one \part-Pfour-one
     >>
 
     \tag #'(accompaniment orch piano)

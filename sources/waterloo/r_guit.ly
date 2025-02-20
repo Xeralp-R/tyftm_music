@@ -65,7 +65,7 @@ r-guit-strums = {
   b4. b4. b4.
   b4. |
   % 25
-  b4. b4. b4.
+  b4.\< b4. b4.
   b4. |
   b4.\f b4. b4.
   b4. |
