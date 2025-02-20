@@ -22,7 +22,7 @@ part-Pseven-one = {
   % 15
   R1. |
   R1. |
-  r2.\f r4. r4 g'8~ |
+  r2. r4. r4 g'8~ |
   g'4 g'8 fis'4. r4. r4 g'8~ |
   g'4 g'8 fis'4 e'8~ e'4 e'8 d'4 cis'8~ |
   % 20
@@ -84,3 +84,23 @@ part-Pseven-one = {
   R1. |
   R1. |
 }
+
+men_lyr =  \lyricmode {
+  Wa -- ter -- loo, I was de -- fea --  ted you
+  won the war. Wa --  ter -- loo, pro --  mise
+  to love you for e -- ver more. Wa --  ter --
+  loo, coul --  d'nt es -- cape if I wan --  ted
+  to. Wa --  ter -- loo, know --  ing my fate is
+  to be with you. Woh o woh woh woh. Wa --  ter
+  loo, fin --  a -- lly fa --  cing my wa --  ter
+  -- loo. Wa --  ter -- loo, I was de -- fea -- 
+  ted you won the war. Wa --  ter -- loo, pro --
+   mise to love you for e --  ver more. Wa --
+   ter -- loo, coul --  d'nt es -- cape if I wan
+  --  ted to. Wa --  ter -- loo, know --  ing my
+  fate is to be with you. Woh o woh woh woh. Wa
+  --  ter loo, fin --  a -- lly fa --  cing my wa
+  --  ter -- loo. Ooh ooh ohh wa -- 
+  ter -- loo, fin --  a -- lly fa --  cing my wa --
+   ter -- loo.
+  }
