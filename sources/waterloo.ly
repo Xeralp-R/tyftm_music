@@ -1,7 +1,7 @@
 % Automatically generated from a musicxml file.
 \version "2.24.0"
 \include "../styles/global.ily"
-\include "../styles/final_styles/revision_style.ily"
+%\include "../styles/final_styles/revision_style.ily"
 
 \include "waterloo/a_perc.ly"
 \include "waterloo/b_guit.ly"
@@ -22,7 +22,7 @@ waterloo_header = \header {
 }
 
 waterloo_marks = {
-  \tempo \markup \column { "Al°" "W°" } 4. = 147
+  \tempo \markup \column { "Allegrissimo" "With a driving blues beat" } 4. = 147
   R1.*4 \mark \default %A
   R1.*9 \mark \default %B
   R1.*5 \mark \default %C
@@ -154,6 +154,6 @@ waterloo = {
   >>
 }
 
-\score{
+%{\score{
   \waterloo
-}
+}%}
