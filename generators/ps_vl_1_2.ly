@@ -12,6 +12,7 @@
 \include "../sources/prelude.ly"
 \include "../sources/dancing_queen.ly"
 \include "../sources/knowing_me.ly"
+\include "../sources/under_attack.ly"
 
 \pointAndClickOff
 

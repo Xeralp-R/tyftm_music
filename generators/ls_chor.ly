@@ -14,6 +14,7 @@
 \include "../sources/voulez_vous.ly"
 \include "../sources/thank_you_for_the_music.ly"
 \include "../sources/knowing_me.ly"
+\include "../sources/under_attack.ly"
 
 \pointAndClickOff
 

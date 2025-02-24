@@ -25,7 +25,7 @@ part-Psix-two = {
   R1 |
   R1 |
   R1 |
-  r8 e'8 e'8 fis'8 fis'8 dis'8 dis'8 e'8 |
+  r8 e'8 \f e'8 fis'8 fis'8 dis'8 dis'8 e'8 |
   r8 e'8 e'8 gis'8 gis'8( fis'8) fis'4 |
   % 20
   R1 |
@@ -35,7 +35,7 @@ part-Psix-two = {
   R1 |
   % 25
   R1 |
-  r8 e'8 e'8 fis'8 fis'8 dis'8 dis'8 e'8 |
+  r8 e'8 \f e'8 fis'8 fis'8 dis'8 dis'8 e'8 |
   r8 e'8 e'8 gis'8 gis'8( fis'8) fis'4 |
   R1 |
   R1 |

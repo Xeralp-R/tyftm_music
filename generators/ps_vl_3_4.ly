@@ -8,6 +8,7 @@
 \include "../sources/our_last_summer.ly"
 \include "../sources/voulez_vous.ly"
 \include "../sources/honey_honey.ly"
+\include "../sources/under_attack.ly"
 
 \pointAndClickOff
 

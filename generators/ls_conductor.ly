@@ -14,6 +14,7 @@
 \include "../sources/gimme_gimme_gimme.ly"
 \include "../sources/thank_you_for_the_music.ly"
 \include "../sources/knowing_me.ly"
+\include "../sources/under_attack.ly"
 
 \pointAndClickOff
 
@@ -214,7 +215,21 @@
       }
     }
   }
-  \bookpart { \blank_page }
+
+
+  \bookpart {
+    \tocItem ii.ua \markup { "14. Under Attack" }
+
+    \header {
+      \under_attack_header
+    }
+    \score {
+      \under_attack
+
+      \layout {}
+    }
+  }
+
 
   \bookpart {
     \tocItem ii.kmky \markup { "17. Knowing Me, Knowing You" }

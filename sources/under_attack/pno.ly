@@ -2,35 +2,35 @@ part-Pseven-one = {
   \key e \major
   \time 4/4
   \clef treble
-  <b e' fis' a' >8 <b e' fis' a' >8 <b e' fis' a' >8 <b e' fis' a' >8 <b e'
+  <b e' fis' a' >8 \mf <b e' fis' a' >8 <b e' fis' a' >8 <b e' fis' a' >8 <b e'
   fis' a' >8 <b e' fis' a' >8 <b e' fis' a' >8 <b e' fis' a' >8 |
   <b e' fis' a' >8 <b e' fis' a' >8 <b e' fis' a' >8 <b e' fis' a' >8 <b e'
   fis' a' >8 <b e' fis' a' >8 <a cis' fis' a' >8 <a cis' fis' a' >8 |
   <a cis' fis' a' >8 <a cis' fis' a' >8 <a cis' fis' a' >8 <a cis' fis' a'
   >8 <b e' fis' a' >8 <b e' fis' a' >8 <b e' fis' a' >8 <b e' fis' a' >8 |
-  <b e' fis' a' >8 <b e' fis' a' >8 <b e' fis' a' >8 <b e' fis' a' >8 <b e'
+  <b e' fis' a' >8 \> <b e' fis' a' >8 <b e' fis' a' >8 <b e' fis' a' >8 <b e'
   fis' a' >8 <b e' fis' a' >8 <b e' fis' a' >8 <b e' fis' a' >8 |
   \time 2/4
   <b e' fis' a' >8 <b e' fis' a' >8 <b e' fis' a' >8 <b e' fis' a' >8 |
   % 5
   \time 4/4
-  <b dis' fis' a' >8 <b e' fis' a' >8 <b e' fis' a' >8 <b e' fis' a' >8 <b
+  <b dis' fis' a' >8 \p <b e' fis' a' >8 <b e' fis' a' >8 <b e' fis' a' >8 <b
   e' fis' a' >8 <b e' fis' a' >8 <b dis' fis' a' >8 <b e' fis' a' >8 |
   <b e' fis' a' >8 <b e' fis' a' >8 <b e' fis' a' >8 <b dis' fis' a' >8 <b
   dis' fis' a' >8 <b dis' fis' a' >8 <b dis' fis' a' >8 <b dis' fis' a' >8 |
   <b dis' fis' a' >8 <b e' fis' a' >8 <b e' fis' a' >8 <b e' fis' a' >8 <b
   e' fis' a' >8 <b e' fis' a' >8 <b e' fis' a' >8 <b dis' fis' a' >8 |
-  <b dis' fis' a' >8 <b dis' fis' a' >8 <b dis' fis' a' >8 <b dis' fis' a'
+  <b dis' fis' a' >8 <b dis' fis' a' >8 <b dis' fis' a' >8 \< <b dis' fis' a'
   >8 <b dis' fis' a' >8 <b dis' fis' a' >8 <b dis' fis' a' >8 <b dis' fis'
   a' >8 |
-  <b e' gis' >8-> <b e' gis' >8 <b e' gis' >8 <b e' gis' >8-> <b e' gis' >8
+  <b e' gis' >8-> \f <b e' gis' >8 <b e' gis' >8 <b e' gis' >8-> <b e' gis' >8
   <b e' gis' >8 <cis' e' a' >8-> <cis' e' a' >8 |
   % 10
   <cis' e' a' >8 <cis' e' a' >8-> <cis' e' a' >8 <b dis' fis' >4~->~~ <b
   dis' fis' >8 <b dis' fis' >8 <b e' gis' >8-^ |
   r8 <b e' gis' b' >8 <b e' gis' b' >8 <e' gis' b' e'' >8 <e' gis' b' e'' >8
   <b e' gis' >8 <b e' gis' >8 <b e' fis' a' >8 |
-  <b dis' fis' a' >8 <b e' fis' a' >8 <b e' fis' a' >8 <b e' fis' a' >8 <b
+  <b dis' fis' a' >8 \sub-p <b e' fis' a' >8 <b e' fis' a' >8 <b e' fis' a' >8 <b
   e' fis' a' >8 <b e' fis' a' >8 <b dis' fis' a' >8 <b e' fis' a' >8 |
   <b e' fis' a' >8 <b e' fis' a' >8 <b e' fis' a' >8 <b dis' fis' a' >8 <b
   dis' fis' a' >8 <b dis' fis' a' >8 <b dis' fis' a' >8 <b dis' fis' a' >8 |
@@ -38,13 +38,13 @@ part-Pseven-one = {
   e' fis' a' >8 <b e' fis' a' >8 <b e' fis' a' >8 <b dis' fis' a' >8 |
   % 15
   <b dis' fis' a' >8 <b dis' fis' a' >8 <b dis' fis' a' >8 <b dis' fis' a'
-  >8 <b dis' fis' a' >8 <b dis' fis' a' >8 <b dis' fis' a' >8 <b dis' fis'
+  >8 <b dis' fis' a' >8 \< <b dis' fis' a' >8 <b dis' fis' a' >8 <b dis' fis'
   a' >8 |
-  <b e' gis' >8-> <b e' gis' >8 <b e' gis' >8 <b e' gis' >8-> <b e' gis' >8
+  <b e' gis' >8-> \f <b e' gis' >8 <b e' gis' >8 <b e' gis' >8-> <b e' gis' >8
   <b e' gis' >8 <cis' e' a' >8-> <cis' e' a' >8 |
   <cis' e' a' >8 <cis' e' a' >8-> <cis' e' a' >8 <cis' e' a' >8 <b dis' fis'
   >8-> <b dis' fis' >8 <b dis' fis' >4-> |
-  r8 <gis b e' >8 <gis b e' >8 <gis b e' >8 <gis b e' >4-. <gis b e' >4-. |
+  r8 <gis b e' >8 \f <gis b e' >8 <gis b e' >8 <gis b e' >4-. <gis b e' >4-. |
   <a cis' e' >4-. <a cis' e' >4-. <fis b e' >4-- <fis b dis' >8-- <fis b
   dis' >8 |
   % 20
@@ -59,7 +59,7 @@ part-Pseven-one = {
   <a cis' e' >8 |
   % 25
   <a d' fis' >2 <b dis' fis' b' >2 |
-  r8 <gis b e' >8 <gis b e' >8 <gis b e' >8 <gis b e' >4-. <gis b e' >4-. |
+  r8 \f <gis b e' >8 <gis b e' >8 <gis b e' >8 <gis b e' >4-. <gis b e' >4-. |
   <a cis' e' >4-. <a cis' e' >4-. <fis b e' >4-- <fis b dis' >8-- <fis b
   dis' >8 |
   r8 <gis b e' >8 <gis b e' >8 <gis b e' >8 <gis bis dis' >4-. <gis bis dis'
@@ -77,23 +77,23 @@ part-Pseven-one = {
   <gis' b' e'' >8-> <gis' b' e'' >8 <gis' b' e'' >8 <gis' b' e'' >8-> <gis'
   b' e'' >8 <gis' b' e'' >8 <gis' b' e'' >8 <gis' b' e'' >8 |
   % 35
-  <b dis' fis' a' >8 <b e' fis' a' >8 <b e' fis' a' >8 <b e' fis' a' >8 <b
+  <b dis' fis' a' >8 \mp <b e' fis' a' >8 <b e' fis' a' >8 <b e' fis' a' >8 <b
   e' fis' a' >8 <b e' fis' a' >8 <b dis' fis' a' >8 <b e' fis' a' >8 |
   <b e' fis' a' >8 <b e' fis' a' >8 <b e' fis' a' >8 <b dis' fis' a' >8 <b
   dis' fis' a' >8 <b dis' fis' a' >8 <b dis' fis' a' >8 <b dis' fis' a' >8 |
   <b dis' fis' a' >8 <b e' fis' a' >8 <b e' fis' a' >8 <b e' fis' a' >8 <b
   e' fis' a' >8 <b e' fis' a' >8 <b e' fis' a' >8 <b dis' fis' a' >8 |
   <b dis' fis' a' >8 <b dis' fis' a' >8 <b dis' fis' a' >8 <b dis' fis' a'
-  >8 <b dis' fis' a' >8 <b dis' fis' a' >8 <b dis' fis' a' >8 <b dis' fis'
+  >8 <b dis' fis' a' >8\< <b dis' fis' a' >8 <b dis' fis' a' >8 <b dis' fis'
   a' >8 |
-  <b e' gis' >8-> <b e' gis' >8 <b e' gis' >8 <b e' gis' >8-> <b e' gis' >8
+  <b e' gis' >8->\f <b e' gis' >8 <b e' gis' >8 <b e' gis' >8-> <b e' gis' >8
   <b e' gis' >8 <cis' e' a' >8-> <cis' e' a' >8 |
   % 40
   <cis' e' a' >8 <cis' e' a' >8-> <cis' e' a' >8 <b dis' fis' >4-> <b dis'
   fis' >8 <b dis' fis' >8 <b e' gis' >8-^ |
   r8 <b e' gis' b' >8 <b e' gis' b' >8 <e' gis' b' e'' >8 <e' gis' b' e'' >8
   <b e' gis' >8 <b e' gis' >8 <b e' fis' a' >8 |
-  <b dis' fis' a' >8 <b e' fis' a' >8 <b e' fis' a' >8 <b e' fis' a' >8 <b
+  <b dis' fis' a' >8\mp  <b e' fis' a' >8 <b e' fis' a' >8 <b e' fis' a' >8 <b
   e' fis' a' >8 <b e' fis' a' >8 <b dis' fis' a' >8 <b e' fis' a' >8 |
   <b e' fis' a' >8 <b e' fis' a' >8 <b e' fis' a' >8 <b dis' fis' a' >8 <b
   dis' fis' a' >8 <b dis' fis' a' >8 <b dis' fis' a' >8 <b dis' fis' a' >8 |
@@ -101,9 +101,9 @@ part-Pseven-one = {
   e' fis' a' >8 <b e' fis' a' >8 <b e' fis' a' >8 <b dis' fis' a' >8 |
   % 45
   <b dis' fis' a' >8 <b dis' fis' a' >8 <b dis' fis' a' >8 <b dis' fis' a'
-  >8 <b dis' fis' a' >8 <b dis' fis' a' >8 <b dis' fis' a' >8 <b dis' fis'
+  >8 <b dis' fis' a' >8 \< <b dis' fis' a' >8 <b dis' fis' a' >8 <b dis' fis'
   a' >8 |
-  <b e' gis' >8-> <b e' gis' >8 <b e' gis' >8 <b e' gis' >8-> <b e' gis' >8
+  <b e' gis' >8->\f <b e' gis' >8 <b e' gis' >8 <b e' gis' >8-> <b e' gis' >8
   <b e' gis' >8 <cis' e' a' >8-> <cis' e' a' >8 |
   <cis' e' a' >8 <cis' e' a' >8-> <cis' e' a' >8 <cis' e' a' >8 <b dis' fis'
   >8-> <b dis' fis' >8 <b dis' fis' >4-> |
@@ -140,22 +140,22 @@ part-Pseven-one = {
   <gis' b' e'' >8-> <gis' b' e'' >8 <gis' b' e'' >8 <gis' b' e'' >8-> <gis'
   b' e'' >8 <gis' b' e'' >8 <gis' b' e'' >8 <gis' b' e'' >8 |
   % 65
-  <b e' fis' a' >8 <b e' fis' a' >8 <b e' fis' a' >8 <b e' fis' a' >8 <b e'
+  <b e' fis' a' >8\piu-p  <b e' fis' a' >8 <b e' fis' a' >8 <b e' fis' a' >8 <b e'
   fis' a' >8 <b e' fis' a' >8 <b e' fis' a' >8 <b e' fis' a' >8 |
-  <b e' fis' a' >8 <b e' fis' a' >8 <b e' fis' a' >8 <c' f' g' bes' >8-> <c'
+  <b e' fis' a' >8\cresc <b e' fis' a' >8 <b e' fis' a' >8 <c' f' g' bes' >8-> <c'
   f' g' bes' >8 <c' f' g' bes' >8 <cis' fis' gis' b' >8-> <cis' fis' gis' b'
   >8 |
-  <d' g' a' c'' >8 <dis' gis' bes' cis'' >8 <e' a' b' d'' >8 <eis' ais' c''
+  <d' g' a' c'' >8\< <dis' gis' bes' cis'' >8 <e' a' b' d'' >8 <eis' ais' c''
   dis'' >8 <fis' b' cis'' e'' >8 <g' c'' d'' f'' >8 <gis' cis'' dis'' fis''
   >8 <a' d'' e'' g'' >8 |
-  <a' d'' e'' a'' >8 <a' d'' e'' a'' >8 <a' d'' e'' a'' >8 <a' d'' e'' a''
+  <a' d'' e'' a'' >8\piu-f <a' d'' e'' a'' >8 <a' d'' e'' a'' >8 <a' d'' e'' a''
   >8 <a' d'' e'' a'' >8 <a' d'' e'' a'' >8 <a' d'' e'' a'' >8 <a' d'' e''
   a'' >8 |
   <a' d'' e'' a'' >8 <a' d'' e'' a'' >8 <a' d'' e'' a'' >8 <a' d'' e'' a''
   >8 <a' d'' e'' a'' >8 <a' d'' e'' a'' >8 <a' d'' e'' a'' >8 <a' d'' e''
   a'' >8 |
   % 70
-  <a' d'' e'' a'' >8 <a' d'' e'' a'' >8 <a' d'' e'' a'' >8 <a' d'' e'' a''
+  \nebenstimmeStart <a' d'' e'' a'' >8 <a' d'' e'' a'' >8 <a' d'' e'' a'' >8 <a' d'' e'' a''
   >8 <a' d'' e'' a'' >8 <a' d'' e'' a'' >8 <a' d'' e'' a'' >8 <a' d'' e''
   a'' >8~~~~ |
   <g' a' d'' e'' a'' >8 <bes' bes'' >8 <a' d'' e'' a'' >8 <bes' bes'' >8 <a'
@@ -164,17 +164,17 @@ part-Pseven-one = {
   <a' cis'' dis'' a'' >8 <bes' bes'' >8 <a' cis'' dis'' a'' >8 <bes' bes''
   >8 <a' cis'' dis'' a'' >8 <bes' bes'' >8 <a' cis'' dis'' a'' >8 <bes'
   bes'' >8 |
-  <a' cis'' dis'' a'' >8 <bes' bes'' >8 <a' cis'' dis'' a'' >8 <bes' bes''
+  <a' cis'' dis'' a'' >8\< <bes' bes'' >8 <a' cis'' dis'' a'' >8 <bes' bes''
   >8 <a' cis'' dis'' a'' >8 <bes' bes'' >8 <a' cis'' dis'' a'' >8 <bes'
-  bes'' >8 |
-  <f' a' b' d'' e'' f'' a'' >1 |
+  bes'' >8 \nebenstimmeEnd |
+  <f' a' b' d'' e'' f'' a'' >1\ff |
   % 75
-  <dis' a' >1-^ |
+  <dis' a' >1-^\ff |
   <<
     \context Voice = "voiceone" {
       \voiceOne
-      f'8 fis'4 g'4 fis'4 f'8~ |
-      f'8 fis'4 g'4 fis'4 f'8 |
+      f'8\p fis'4 g'4 fis'4 f'8~ |
+      f'8 fis'4 g'4\sfz fis'4 f'8 |
     }
     \context Voice = "voicetwo" {
       \voiceTwo
@@ -183,7 +183,7 @@ part-Pseven-one = {
     }
   >>
   \time 5/4
-  <b' e'' fis'' a'' >8 <b' e'' fis'' a'' >8 <b' e'' fis'' a'' >8 <b' e''
+  <b' e'' fis'' a'' >8\f <b' e'' fis'' a'' >8 <b' e'' fis'' a'' >8 \sfz <b' e''
   fis'' a'' >8 <b' e'' fis'' a'' >8 <b' e'' fis'' a'' >8 <b' e'' fis'' a''
   >8 <b' e'' fis'' a'' >8 <b' e'' fis'' a'' >8 <b' e'' fis'' a'' >8 |
   \time 4/4
@@ -195,7 +195,7 @@ part-Pseven-one = {
   r8 <a' cis'' >8 <b' dis'' >8 <cis'' e'' >8~~ <cis'' e'' >8 <b' dis'' >8
   <a' cis'' >4 |
   <gis' b' >4. <gis'' b'' >4. <e'' gis'' >4~~ |
-  <e'' gis'' >2. r4 |
+  <e'' gis'' >2.\hauptstimmeEnd r4 |
   % 85
   r8 <gis b e' >8 <gis b e' >8 <gis b e' >8 <gis b e' >4-. <gis b e' >4-. |
   <a cis' e' >4-. <a cis' e' >4-. <fis b e' >4-- <fis b dis' >8-- <fis b
@@ -338,19 +338,19 @@ part-Pseven-two = {
   % 75
   <gis, dis gis >1-^ |
   R1 |
-  r2 r8 <fis, cis fis >16 <fis, cis fis >16 <fis, cis fis >4~~~ |
+  r2 r8 <fis , cis fis >16 <fis, cis fis >16 <fis, cis fis >4~~~ |
   \time 5/4
   <fis, cis fis >2. r4 <b,, b, >4 |
   \time 4/4
-  gis,8 gis,8 gis,8 gis,8 gis,8 gis,8 gis,8 gis,8 |
+  gis,8 gis,8 gis,8\hauptstimmeStart 3° rh gis,8 gis,8 gis,8 gis,8 gis,8 |
   % 80
   a,4-. a,4-. a,4-. a,4-. |
   gis,4-. gis,4-. gis,4-.-> gis,4-. |
   a,4-. a,4-. a,4-. a,4-. |
   <e, e >4. <e, e >4.-> <e, e >4 |
-  <e, e >4. <e, e >4.-> <e, e >4 |
+  <e, e >4.\< <e, e >4.-> <e, e >4 |
   % 85
-  e,8 fis,8 gis,4 e,4 gis,8 fis,8 |
+  e,8\f fis,8 gis,4 e,4 gis,8 fis,8 |
   e,8 fis,8 gis,4 b,4 gis,8 fis,8 |
   e,8 fis,8 gis,4 bis,4 gis,8 fis,8 |
   dis,8 fis,8 gis,4 bis,4 gis,8 dis,8 |
