@@ -157,11 +157,12 @@ slipping = <<
 
   \tag #'(accompaniment band r_guit)
   <<
-    %\new ChordNames \chord-sequence
+    \new ChordNames \chord_sequence
     \new Staff \with {
       instrumentName = "Rhythm Guitar"
       shortInstrumentName = "R. Guit"
-    }\part-Poneone-one
+
+    } \new Voice \with { \consists "Pitch_squash_engraver" } \part-Poneone-one
   >>
 
   \tag #'(accompaniment band e_kbd)
