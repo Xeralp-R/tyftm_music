@@ -94,7 +94,7 @@ ed-poco-f = #(make-pre-ed-dynamic-script "poco" "f")
 ed-piu-f = #(make-pre-ed-dynamic-script "piu" "f")
 
 
-piu-p = #(make-pre-dynamic-script "piu " “p”)
+piu-p = #(make-pre-dynamic-script "piu " "p")
 piu-f = #(make-pre-dynamic-script "piu " "f")
 poco-p = #(make-pre-dynamic-script "poco " "p")
 meno-p = #(make-pre-dynamic-script "meno " "p")

@@ -86,10 +86,10 @@ part-Ponetwo-one = \drummode {
     {
       \voiceTwo
       bd4\piu-p bd4 bd4 bd4 |
-      R1*3
+      s1*3
       % 5
       bd4 bd4 bd4 bd4 
-      linear-spanner 1 2 |
+      \linear-spanner 1 2 |
       bd4 bd4 bd4 bd4 |
       <bd cymc >4 bd4 <bd cymc >4 bd4 |
       % 10
