@@ -2,6 +2,8 @@ part-Psix-one = {
   \key f \major
   \time 4/4
   \clef treble
+  \dynamicUp
+  
   R1 |
   d'4\mp d'8 e'16 f'16~ f'4 \tuplet 3/2 { r8 f'8 g'8 } |
   a'4 a'8 bes'8 a'8 g'16 f'16~ f'8 e'8 |

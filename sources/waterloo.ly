@@ -1,7 +1,19 @@
 % Automatically generated from a musicxml file.
 \version "2.24.0"
 \include "../styles/global.ily"
-\include "../styles/final_styles/revision_style.ily"
+%\include "../styles/final_styles/revision_style.ily"
+
+\include "waterloo/a_perc.ly"
+\include "waterloo/b_guit.ly"
+\include "waterloo/drum.ly"
+\include "waterloo/e_kbd.ly"
+\include "waterloo/l_guit.ly"
+\include "waterloo/men.ly"
+\include "waterloo/pno.ly"
+\include "waterloo/r_guit.ly"
+\include "waterloo/vl_1_2.ly"
+\include "waterloo/vl_3_4.ly"
+\include "waterloo/women.ly"
 
 waterloo_header = \header {
   composer = "Benny Andersson, Björn Ulvaeus"
@@ -9,32 +21,52 @@ waterloo_header = \header {
   title = "Waterloo"
 }
 
+waterloo_marks = {
+  \tempo \markup \column { "Allegrissimo" "With a driving blues beat" } 4. = 147
+  R1.*4 \mark \default %A
+  R1.*9 \mark \default %B
+  R1.*5 \mark \default %C
+  R1.*8 \mark \default %D
+  R1.*10 \mark \default %E
+  R1.*6 \mark \default %F
+  R1.*8 \mark \default %G
+  R1.*10 \mark \default %H
+  R1.*4 \mark \default %I
+  R1.*4 \bar "|."
+}
+
+waterloo_measures = {
+  R1.*68
+}
+
 waterloo = {
   <<
+
+    \new BarNumberStaff <<
+      { \waterloo_marks }
+      { \compressEmptyMeasures \waterloo_measures }
+    >>
+
+    \tag #'(nonchor)
+    \new Staff \with {
+      \remove Clef_engraver
+      \remove Time_signature_engraver
+      \remove Key_engraver
+      \remove Staff_symbol_engraver
+    } \new NullVoice \part-Psix-one \addlyrics \women_lyr
+
     \new StaffGroup <<
       \tag #'(accompaniment orch vl_i)
       \new Staff \with {
         instrumentName = "Violin 1"
         shortInstrumentName = "Vl. 1"
-      } \part-Pone-one
+      } \partCombine \part-Pone-one \part-Ptwo-one
 
       \tag #'(accompaniment orch vl_ii)
       \new Staff \with {
         instrumentName = "Violin 2"
         shortInstrumentName = "Vl. 2"
-      } \part-Ptwo-one
-
-      \tag #'(accompaniment orch vl_iii)
-      \new Staff \with {
-        instrumentName = "Violin 3"
-        shortInstrumentName = "Vl. 3"
-      } \part-Pthree-one
-
-      \tag #'(accompaniment orch vl_iv)
-      \new Staff \with {
-        instrumentName = "Violin 4"
-        shortInstrumentName = "Vl. 4"
-      } \part-Pfour-one
+      } \partCombine \part-Pthree-one \part-Pfour-one
     >>
 
     \tag #'(accompaniment orch piano)
@@ -51,8 +83,10 @@ waterloo = {
       instrumentName = "Chorus"
       shortInstrumentName = "Ch."
     } <<
-      \new Staff \part-Psix-one
-      \new Staff \part-Pseven-one
+      \new Voice = "women" {\part-Psix-one}
+      \new Lyrics \lyricsto "women" {\women_lyr}
+      \new Voice = "men" {\part-Pseven-one}
+      % \new Lyrics \lyricsto "men" {\men_lyr}
     >>
 
     \tag #'(accompaniment band e_kbd)
@@ -64,20 +98,33 @@ waterloo = {
       \new Staff \part-Peight-one
       \new Staff \part-Peight-two
     >>
+
     \tag #'(accompaniment band l_guit)
     \new StaffGroup \with {
       instrumentName = "Lead Guitar"
       shortInstrumentName = "L. Guit."
-
-    } \part-Pnine-one
+      systemStartDelimiter = #'SystemStartSquare
+    } <<
+      \new ChordNames \part-Pnine-one-chords
+      \new Staff <<
+        \part-Pnine-one
+        \l-guit-strums
+      >>
+      \new TabStaff \part-Pnine-one
+    >>
 
     \tag #'(accompaniment band r_guit)
-    <<
-      %\new ChordNames \chord-sequence
-      \new Staff \with {
-        instrumentName = "Rhythm Guitar"
-        shortInstrumentName = "R. Guit"
-      } \part-Ponezero-one
+    \new StaffGroup \with {
+      instrumentName = "Rhythm Guitar"
+      shortInstrumentName = "R. Guit"
+      systemStartDelimiter = #'SystemStartSquare
+    } <<
+        \new ChordNames \PartPOneZeroVoiceOneChords
+        \new Staff <<
+          \part-Ponezero-one
+          \r-guit-strums
+        >>
+        \new TabStaff \part-Ponezero-one
     >>
 
     \tag #'(accompaniment band b_guit)
@@ -106,3 +153,7 @@ waterloo = {
     } \part-Ponethree-one
   >>
 }
+
+%{\score{
+  \waterloo
+}%}

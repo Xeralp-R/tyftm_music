@@ -1,16 +1,12 @@
 part-Pfive-one = {
-  <<
-    {
-      \key d \major
-      \time 12/8
-      \clef treble
-      <d' fis' a' >2.\mp r4. r4 <d' fis' a' >8~->~~
-    } \\ { }
-  >> |
+  \key d \major
+  \time 12/8
+  \clef treble
+  <d' fis' a' >2.\f r4. r4 <d' fis' a' >8~->~~|
   <d' fis' a' >2. r4. r4 <d' fis' a' >8~->~~ |
   <d' fis' a' >2. r4. r4 <d' fis' a' >8~->~~ |
   <d' fis' a' >2. r2. |
-  r4. <d'' fis'' a'' d''' >4 <d'' fis'' a'' d''' >8~~~~ <d'' fis'' a'' d'''
+  r4.\meno-p <d'' fis'' a'' d''' >4 <d'' fis'' a'' d''' >8~~~~ <d'' fis'' a'' d'''
   >4. r4 <b e' gis' >8~~ |
   % 5
   <b e' gis' >2.~~~ <b e' gis' >4. r4 <a e' a' >8~~~ |
@@ -31,11 +27,8 @@ part-Pfive-one = {
   r4 <d'' fis'' b'' >8 <d'' fis'' b'' >4 <b' d'' fis'' >8 <b' d'' fis'' >4
   <fis' b' d'' >8 <fis' b' d'' >4 <d' fis' b' >8 |
   % 15
-  <b e' b' >1. |
-  <<
-    { <e' a' cis'' >4.~~~\< <e' a' cis'' >4 <d' g' b' >8~~~ <d' g' b' >2. }
-    \\ { }
-  >> |
+  <b e' b' >1.\< |
+  <e' a' cis'' >4.~~~\f <e' a' cis'' >4 <d' g' b' >8~~~ <d' g' b' >2. |
   <d' fis' a' >4.~~~ <d' fis' a' >4 <cis' e' a' >8~~~ <cis' e' a' >2. |
   r4 <a d' fis' >8 <a d' fis' >4 r8 <a d' fis' >4. <a d' fis' >4 <a d' fis'
   >8 |
@@ -51,8 +44,8 @@ part-Pfive-one = {
   r4 <a d' fis' >8 <a d' fis' >4 r8 <a d' fis' >4. <a d' fis' >4 <a d' fis'
   >8 |
   % 25
-  r4 <a a' >8 <a a' >4 <a a' >8 <a a' >4 <a a' >8 <a a' >4 <a a' >8 |
-  r4 <a d' fis' >8 <a d' fis' >4 r8 <a d' fis' >4. <a d' fis' >4 <a d' fis'
+  r4 <a a' >8\< <a a' >4 <a a' >8 <a a' >4 <a a' >8 <a a' >4 <a a' >8 |
+  r4 <a d' fis' >8\f <a d' fis' >4 r8 <a d' fis' >4. <a d' fis' >4 <a d' fis'
   >8 |
   r4 <a d' fis' >8 <a d' fis' >4 r8 <a d' fis' >4. <a d' fis' >4 <a d' fis'
   >8 |
@@ -72,18 +65,18 @@ part-Pfive-one = {
   % 35
   r4 <a cis' e' >8 <a cis' e' >4 r8 <a cis' e' >4. <a cis' e' >4 <a d' fis'
   >8 |
-  r4 <a d' fis' >8 <a d' fis' >4 r8 <a d' fis' >4. <a d' fis' >4 <a d' fis'
+  r4\f \decresc <a d' fis' >8 <a d' fis' >4 r8 <a d' fis' >4. <a d' fis' >4 <a d' fis'
   >8 |
   r4 <a d' fis' >8 <a d' fis' >4 r8 <a d' fis' >4. <a d' fis' >4 <b d' fis'
   >8~~~ |
-  <b d' fis' >2. r2. |
+  <b d' fis' >2.\meno-p r2. |
   r4 <d'' fis'' b'' >8 <d'' fis'' b'' >4 <b' d'' fis'' >8 <b' d'' fis'' >4
   <fis' b' d'' >8 <fis' b' d'' >4 <d' fis' b' >8 |
   % 40
   <b e' b' >1. |
-  <e' a' cis'' >4 <e' a' cis'' >8 <d' g' b' >4. <cis' fis' a' >4. <cis' e'
+  <e' a' cis'' >4\< <e' a' cis'' >8 <d' g' b' >4. <cis' fis' a' >4. <cis' e'
   a' >4. |
-  r4 <a d' fis' >8 <a d' fis' >4 r8 <a d' fis' >4. <a d' fis' >4 <a d' fis'
+  r4\f <a d' fis' >8 <a d' fis' >4 r8 <a d' fis' >4. <a d' fis' >4 <a d' fis'
   >8 |
   r4 <a d' fis' >8 <a d' fis' >4 r8 <a d' fis' >4. <a d' fis' >4 <a d' fis'
   >8 |
@@ -96,9 +89,9 @@ part-Pfive-one = {
   >8 |
   r4 <a d' fis' >8 <a d' fis' >4 r8 <a d' fis' >4. <a d' fis' >4 <a d' fis'
   >8 |
-  r4 <a a' >8 <a a' >4 <a a' >8 <a a' >4 <a a' >8 <a a' >4 <a a' >8 |
+  r4 <a a' >8\< <a a' >4 <a a' >8 <a a' >4 <a a' >8 <a a' >4 <a a' >8 |
   % 50
-  r4 <a d' fis' >8 <a d' fis' >4 r8 <a d' fis' >4. <a d' fis' >4 <a d' fis'
+  r4\f <a d' fis' >8 <a d' fis' >4 r8 <a d' fis' >4. <a d' fis' >4 <a d' fis'
   >8 |
   r4 <a d' fis' >8 <a d' fis' >4 r8 <a d' fis' >4. <a d' fis' >4 <a d' fis'
   >8 |
@@ -118,15 +111,15 @@ part-Pfive-one = {
   r4 <a cis' e' >8 <a cis' e' >4 r8 <a cis' e' >4. <a cis' e' >4 <a d' fis'
   >8 |
   % 60
-  r4 <a d' fis' >8 <a d' fis' >4 r8 <a d' fis' >4. <a d' fis' >4 <a d' fis'
+  r4\< <a d' fis' >8 <a d' fis' >4 r8 <a d' fis' >4. <a d' fis' >4 <a d' fis'
   >8 |
   r4 <a d' fis' >8 <a d' fis' >4 r8 <a d' fis' >4. <a d' fis' >4 <b d' fis'
   >8 |
-  r4 <a cis' e' >8 <a cis' e' >4 r8 <a cis' e' >4. <a cis' e' >4 <a cis' e'
+  r4\piu-f <a cis' e' >8 <a cis' e' >4 r8 <a cis' e' >4. <a cis' e' >4 <a cis' e'
   >8 |
   r4 <a cis' e' >8 <a cis' e' >4 r8 <a cis' e' >4. <a cis' e' >4 <a d' fis'
   >8 |
-  <a' d'' fis'' a'' >2.~->~~~ <a' d'' fis'' a'' >4.~~~~ <a' d'' fis'' a'' >4
+  <a' d'' fis'' a'' >2.~->~~~\< <a' d'' fis'' a'' >4.~~~~ <a' d'' fis'' a'' >4
   <b' e'' gis'' b'' >8~->~~~ |
   % 65
   <b' e'' gis'' b'' >2.~~~~ <b' e'' gis'' b'' >4.~~~~ <b' e'' gis'' b'' >4
@@ -134,7 +127,7 @@ part-Pfive-one = {
   <a' e'' a'' >4.~~~ <a' e'' a'' >4 <b' g'' b'' >8~->~~ <b' g'' b'' >4.~~~
   <b' g'' b'' >4 <d'' g'' d''' >8-> |
   r4 <cis'' a'' cis''' >8~->~~ <cis'' a'' cis''' >4.~~~ <cis'' a'' cis'''
-  >4.~~~ <cis'' a'' cis''' >4 <d'' fis'' a'' d''' >8-> |
+  >4.~~~ <cis'' a'' cis''' >4 <d'' fis'' a'' d''' >8-> \rfz|
 }
 
 part-Pfive-two = {

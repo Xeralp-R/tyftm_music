@@ -78,6 +78,7 @@
 
 sffz = #(make-dynamic-script (markup #:dynamic "sffz"))
 rf = #(make-dynamic-script (markup #:dynamic "rf"))
+rfz = #(make-dynamic-script (markup #:dynamic "rfz"))
 
 ed-ff = #(make-dynamic-script (markup #:large #:normal-text "ff"))
 ed-mf = #(make-dynamic-script (markup #:large #:normal-text "mf"))
@@ -96,6 +97,7 @@ ed-piu-f = #(make-pre-ed-dynamic-script "piu" "f")
 piu-p = #(make-pre-dynamic-script "piu " “p”)
 piu-f = #(make-pre-dynamic-script "piu " "f")
 poco-p = #(make-pre-dynamic-script "poco " "p")
+meno-p = #(make-pre-dynamic-script "meno " "p")
 poco-mp = #(make-pre-dynamic-script "poco " "mp")
 sub-p = #(make-pre-dynamic-script "sub " "p")
 ben-mp = #(make-pre-dynamic-script "ben "  "mp")
