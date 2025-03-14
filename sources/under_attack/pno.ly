@@ -229,13 +229,13 @@ part-Pseven-one = {
   b' e'' >8 <gis' b' e'' >8 <gis' b' e'' >8 <gis' b' e'' >8 |
   <gis' b' e'' >8-> <gis' b' e'' >8 <gis' b' e'' >8 <gis' b' e'' >8-> <gis'
   b' e'' >8 <gis' b' e'' >8 <gis' b' e'' >8 <gis' b' e'' >8 |
-  <b e' fis' a' >8 <b e' fis' a' >8 <b e' fis' a' >8 <c' f' g' bes' >8-> <c'
+  <b e' fis' a' >8\sub-p <b e' fis' a' >8 <b e' fis' a' >8 <c' f' g' bes' >8-> <c'
   f' g' bes' >8 <c' f' g' bes' >8 <cis' fis' gis' b' >8-> <cis' fis' gis' b'
   >8 |
-  <d' g' a' c'' >8 <dis' gis' bes' cis'' >8 <e' a' b' d'' >8 <eis' ais' c''
+  <d' g' a' c'' >8\< <dis' gis' bes' cis'' >8 <e' a' b' d'' >8 <eis' ais' c''
   dis'' >8 <fis' b' cis'' e'' >8 <g' c'' d'' f'' >8 <gis' cis'' dis'' fis''
   >8 <a' d'' e'' g'' >8 |
-  <b' e'' fis'' a'' >8-> <b' e'' fis'' a'' >8-> <b' e'' fis'' a'' >8-> r8 r2 |
+  <b' e'' fis'' a'' >8->\f <b' e'' fis'' a'' >8->\f <b' e'' fis'' a'' >8->\f r8 r2\fermata |
   % 105
 }
 
@@ -370,7 +370,7 @@ part-Pseven-two = {
   % 100
   e,8 fis,8 gis,4 e,4 gis,8 fis,8 |
   e,8 fis,8 gis,4 e,4 b,4 |
-  <b, b >4. <bes, bes >4. <a, a >4 |
+  <b, b >4.<bes, bes >4. <a, a >4 |
   <gis, gis >8 <g, g >8 <f, f >8 <e, e >8 <d, d >8 <c, c >8 <b,, b, >8
   <bes,, bes, >8 |
   <b,, b, >8 <b,, b, >8 <b,, b, >8 r8 r2 |

@@ -62,24 +62,24 @@ part-Pone-one = {
   r8 dis'8-. dis'8-. b8-. cis'8\< dis'8 e'8 fis'8 |
   gis'8\f e'8 a'8 fis'8 b'8 e'8 a'4~ |
   a'8 gis'8 fis'8 e'8~ e'8 gis'8 fis'4 |
-  r8 b'8-.\f\> b'8-. e''8-. e''8-. r8 r8 r8 |
+  r8 b'8-.\f b'8-. e''8-. e''8-. r4 r8 |
   e''2 b'2 |
-  % 50
-  gis'8 b'8-.\f b'8-. b'8-. b'8-. r8 r4 |
+  % 20
+  gis'8 b'8-. b'8-. b'8-. b'8-. r8 r4 |
   gis'2 fis'8 fis'8-. fis'8(-. e'8)-. |
   r8 gis'8-. gis'8-. fis'8-. fis'4 gis'4 |
   b8 b'4 gis'2 r8 |
   r8 fis''8-. fis''8-. gis''8-. gis''4( b''4) |
-  % 55
+  % 25
   R1 |
-  r8 b'8-.\f b'8-. e''8-. e''8-. r8 r8 r8 |
+  r8 b'8-.\f b'8-. e''8-. e''8-. r8 r4 |
   e''2 b'2 |
   gis'8 b'8-. b'8-. b'8-. b'8-. r8 r4 |
   gis'2 fis'8 fis'8-. fis'8(-. e'8)-. |
-  % 60
+  % 30
   r8 gis'8-. gis'8-. fis'8-. fis'4 gis'4 |
   b8 b'4 gis'2 r8 |
-  r8 fis''8-.\mf fis''8-. gis''8-. gis''4( b''4) |
+  r8 fis''8-. fis''8-. gis''8-. gis''4( b''4) |
   R1 |
   e''1  |
   % 65
@@ -109,29 +109,29 @@ part-Pone-one = {
   e''1 |
   e''1\< |
   % 85
-  r8 b'8-.\f b'8-. e''8-. e''8-. r8 r8 r8 |
+  r8 b'8-.\f b'8-. e''8-. e''8-. r4 r8 |
   e''2 b'2 |
-  gis'8 b'8-.\f\> b'8-. b'8-. b'8-. r8 r4 |
+  % 20
+  gis'8 b'8-. b'8-. b'8-. b'8-. r8 r4 |
   gis'2 fis'8 fis'8-. fis'8(-. e'8)-. |
   r8 gis'8-. gis'8-. fis'8-. fis'4 gis'4 |
-  % 90
+  b8 b'4 gis'2 r8 |
+  r8 fis''8-. fis''8-. gis''8-. gis''4( b''4) |
+  % 25
+  R1 |
+  r8 b'8-.\f b'8-. e''8-. e''8-. r8 r4 |
+  e''2 b'2 |
+  gis'8 b'8-. b'8-. b'8-. b'8-. r8 r4 |
+  gis'2 fis'8 fis'8-. fis'8(-. e'8)-. |
+  % 30
+  r8 gis'8-. gis'8-. fis'8-. fis'4 gis'4 |
   b8 b'4 gis'2 r8 |
   r8 fis''8-. fis''8-. gis''8-. gis''4( b''4) |
   R1 |
-  r8 b'8-.\f\> b'8-. e''8-. e''8-. r8 r8 r8 |
-  e''2 b'2 |
-  % 95
-  gis'8 b'8-.\f\> b'8-. b'8-. b'8-. r8 r4 |
-  gis'2 fis'8 fis'8-. fis'8(-. e'8)-. |
-  r8 gis'8-. gis'8-. fis'8-. fis'4 gis'4 |
-  b8 b'4 gis'2 r8 |
-  r8 fis''8-.\mf fis''8-. gis''8-. gis''4( b''4) |
-  % 100
-  R1 |
   e''1\> |
-  a'4. ais'4. b'4 |
-  c''8 cis''8 d''8 dis''8 e''8 f''8 fis''8 g''8 |
-  a''4~ a''8 r8 r2 |
+  a'4.\sub-p ais'4. b'4 |
+  c''8\< cis''8 d''8 dis''8 e''8 f''8 fis''8 g''8 |
+  a''4~\f a''8\f r8 r2\fermata |
   % 105
 }
 
@@ -198,23 +198,23 @@ part-Ptwo-one = {
   r8 dis'8-. dis'8-. b8-. cis'8\< dis'8 e'8 fis'8 |
   gis'4\f a'4 b'4 cis'4~ |
   cis'8 gis'8 fis'8 b8~ b8 b8 b4 |
-  r8 gis'8-.\f\> gis'8-. e''8-. e''8-. r8 r8 b'8 |
+  r8 gis'8-.\f gis'8-. e''8-. e''8-. r4 b'8 |
   b'8 cis''4 b'4( a'8) a'8( gis'8) |
-  % 50
-  r8 gis'8-.\f gis'8-. gis'8-. gis'8-. r8 r8 gis'8~ |
+  % 20
+  r8 gis'8-. gis'8-. gis'8-. gis'8-. r8 r8 gis'8~ |
   gis'4. r8 r8 fis'8-. fis'8(-. e'8)-. |
   r8 cis''8 dis''8 e''4 dis''8 cis''4 |
-  dis''8\p b''4 gis''2 r8 |
-  r8 a'8-. a'8-. b'8-. b'4( dis''4) |
-  % 55
-  R1 |
-  r8 gis'8-.\f gis'8-. e''8-. e''8-. r8 r8 b'8 |
+  dis''8 b''4 gis''2 r8 |
+  r4 r4 r8 fis''8 gis''8 a''8~ |
+  % 25
+  a''8 gis''8 fis''8 fis''8~ fis''4 r4 |
+  r8 gis'8-.\f gis'8-. e''8-. e''8-. r4 b'8 |
   b'8 cis''4 b'4( a'8) a'8( gis'8) |
   r8 gis'8-. gis'8-. gis'8-. gis'8-. r8 r8 gis'8~ |
   gis'4. r8 r8 fis'8-. fis'8(-. e'8)-. |
-  % 60
+  % 30
   r8 cis''8 dis''8 e''4 dis''8 cis''4 |
-  dis''8\p b''4 gis''2 r8 |
+  dis''8 b''4 gis''2 r8 |
   r8 a'8-. a'8-. b'8-. b'4( dis''4) |
   R1 |
   e'1   % 65
@@ -244,28 +244,28 @@ part-Ptwo-one = {
   b'1 |
   b'1\< |
   % 85
-  r8 gis'8-.\f gis'8-. e''8-. e''8-. r8 r8 b'8 |
+  r8 gis'8-.\f gis'8-. e''8-. e''8-. r4 b'8 |
   b'8 cis''4 b'4( a'8) a'8( gis'8) |
-  r8 gis'8-.\f\> gis'8-. gis'8-. gis'8-. r8 r8 gis'8~ |
+  % 20
+  r8 gis'8-. gis'8-. gis'8-. gis'8-. r8 r8 gis'8~ |
   gis'4. r8 r8 fis'8-. fis'8(-. e'8)-. |
   r8 cis''8 dis''8 e''4 dis''8 cis''4 |
-  % 90
-  dis''8\p b''4 gis''2 r8 |
-  r8 a'8-. a'8-. b'8-. b'4( dis''4) |
-  R1 |
-  r8 gis'8-.\f\> gis'8-. e''8-. e''8-. r8 r8 b'8 |
+  dis''8 b''4 gis''2 r8 |
+  r4 r4 r8 fis''8 gis''8 a''8~ |
+  % 25
+  a''8 gis''8 fis''8 fis''8~ fis''4 r4 |
+  r8 gis'8-.\f gis'8-. e''8-. e''8-. r4 b'8 |
   b'8 cis''4 b'4( a'8) a'8( gis'8) |
-  % 95
-  r8 gis'8-.\f\> gis'8-. gis'8-. gis'8-. r8 r8 gis'8~ |
+  r8 gis'8-. gis'8-. gis'8-. gis'8-. r8 r8 gis'8~ |
   gis'4. r8 r8 fis'8-. fis'8(-. e'8)-. |
+  % 30
   r8 cis''8 dis''8 e''4 dis''8 cis''4 |
-  dis''8\p b''4 gis''2 r8 |
+  dis''8 b''4 gis''2 r8 |
   r8 a'8-. a'8-. b'8-. b'4( dis''4) |
-  % 100
   R1 |
   e'1\> |
-  fis'4. g'4. gis'4 |
-  a'8 ais'8 b'8 bis'8 cis''8 d''8 dis''8 e''8 |
-  e''4~ e''8 r8 r2 |
+  fis'4.\sub-p g'4. gis'4 |
+  a'8\< ais'8 b'8 bis'8 cis''8 d''8 dis''8 e''8 |
+  e''4~\f e''8\f r8 r2\fermata |
   % 105
 }

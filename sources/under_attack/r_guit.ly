@@ -52,26 +52,18 @@ part-Ponezero-one = {
   R1 |
   R1 |
   R1 |
-  r8 b8 b8 b8 b8 b8 b8 b8 |
-  b4-\markup { "Rhythm Sim." } b4 b4 b4 |
-  % 50
-  b4 b4 b4 b4 |
-  b4 b4 b4 b4 |
-  b4 b4 b4 b4 |
-  b4 b4 b4 b4 |
-  b4 b4 b4 b4 |
-  % 55
-  b4 b4 b4 b4 |
-  b4 b4 b4 b4 |
-  b4 b4 b4 b4 |
-  b4 b4 b4 b4 |
-  b4 b4 b4 b4 |
-  % 60
-  b4 b4 b4 b4 |
-  b4 b4 b4 b4 |
-  b4 b4 b4 b4 |
+  \override NoteHead.style = #'slash |
+
+  r8 b8 \f b8 b8 b8 b8 b8 b8 
+  \undo \override NoteHead.style = #'slash
+   \linear-spanner 1 7 |
+ \override NoteHead.style = #'slash |
+
+  r8 b8 \f b8 b8 b8 b8 b8 b8 
+  \undo \override NoteHead.style = #'slash
+  \linear-spanner 1 6 \override NoteHead.style = #'slash |
   b4. b8~ b2 |
-  b4. b8~ b2 |
+  b4. b8~ b2  \undo \override NoteHead.style = #'slash |
   % 65
   R1 |
   b4.\cresc  bes4. a4 |
@@ -99,28 +91,20 @@ part-Ponezero-one = {
   R1 |
   R1 |
   % 85
-  r8 b8 b8 b8 b8 b8 b8 b8 |
-  b4-\markup { "Rhythm Sim." } b4 b4 b4 |
-  b4 b4 b4 b4 |
-  b4 b4 b4 b4 |
-  b4 b4 b4 b4 |
-  % 90
-  b4 b4 b4 b4 |
-  b4 b4 b4 b4 |
-  b4 b4 b4 b4 |
-  b4 b4 b4 b4 |
-  b4 b4 b4 b4 |
-  % 95
-  b4 b4 b4 b4 |
-  b4 b4 b4 b4 |
-  b4 b4 b4 b4 |
-  b4 b4 b4 b4 |
-  b4 b4 b4 b4 |
-  % 100
+  \override NoteHead.style = #'slash |
+
+  r8 b8 \f b8 b8 b8 b8 b8 b8 
+  \undo \override NoteHead.style = #'slash
+   \linear-spanner 1 7 |
+ \override NoteHead.style = #'slash |
+
+  r8 b8 \f b8 b8 b8 b8 b8 b8 
+  \undo \override NoteHead.style = #'slash
+  \linear-spanner 1 6 \override NoteHead.style = #'slash |
   b4. b8~ b2 |
-  b4. b8~ b2 |
-  b4. bes4. a4 |
-  gis8 g8 f8 e8 d8 c8 b,8 bes,8 |
-  b8-> b8-> b8-> r8 r2 |
+  b4. b8~ b2  \undo \override NoteHead.style = #'slash |
+  b4.\sub-p bes4. a4 |
+  gis8\< g8 f8 e8 d8 c8 b,8 bes,8 |
+  b8->\f b8->\f b8->\f r8 r2\fermata |
   % 105
 }

@@ -101,10 +101,10 @@ part-Peight-one = {
   <b e' gis' >8 <cis' e' a' >8-> <cis' e' a' >8 |
   <cis' e' a' >8 <cis' e' a' >8-> <cis' e' a' >8 <b dis' fis' >8~~~ <b dis'
   fis' >8-> <b dis' fis' >8 <b dis' fis' >4-> |
-  r8 <gis b e' >8 <gis b e' >8 <gis b e' >8 <gis b e' >4-. <gis b e' >4-. |
+  r8 <gis b e' >8 \f <gis b e' >8 <gis b e' >8 <gis b e' >4-. <gis b e' >4-. |
   <a cis' e' >4-. <a cis' e' >4-. <fis b e' >4-- <fis b dis' >8-- <fis b
   dis' >8 |
-  % 50
+  % 20
   r8 <gis b e' >8 <gis b e' >8 <gis b e' >8 <gis bis dis' >4-. <gis bis dis'
   >4-. |
   <gis dis' >4-. <gis dis' >4-. <gis cis' >4-- <gis bis dis' >4-. |
@@ -114,15 +114,15 @@ part-Peight-one = {
   b e' >8 |
   r8 <a cis' e' >8 <a cis' e' >8 <a cis' e' >8 <a cis' e' >4-. <a cis' e' >8
   <a cis' e' >8 |
-  % 55
+  % 25
   <a d' fis' >2 <b dis' fis' b' >2 |
-  r8 <gis b e' >8 <gis b e' >8 <gis b e' >8 <gis b e' >4-. <gis b e' >4-. |
+  r8 \f <gis b e' >8 <gis b e' >8 <gis b e' >8 <gis b e' >4-. <gis b e' >4-. |
   <a cis' e' >4-. <a cis' e' >4-. <fis b e' >4-- <fis b dis' >8-- <fis b
   dis' >8 |
   r8 <gis b e' >8 <gis b e' >8 <gis b e' >8 <gis bis dis' >4-. <gis bis dis'
   >4-. |
   <gis dis' >4-. <gis dis' >4-. <gis cis' >4-- <gis bis dis' >4-. |
-  % 60
+  % 30
   r8 <a cis' e' >8 <a cis' e' >8 <a cis' e' >8 <a cis' e' >4-. <a cis' e' >8
   <a cis' e' >8 |
   r8 <gis b e' >8 <gis b e' >8 <gis b e' >8 <gis b e' >4-. <gis b e' >8 <gis
@@ -193,43 +193,43 @@ part-Peight-one = {
   <gis b e' >8->\< <gis b e' >8 <gis b e' >8 <fis b e' >8-> <gis b e' >8 <gis
   b e' >8 <gis b e' >8-> <gis b e' >8 |
   % 85
-  r8 <gis b e' >8\f <gis b e' >8 <gis b e' >8 <gis b e' >4-. <gis b e' >4-. |
+  r8 <gis b e' >8 \f <gis b e' >8 <gis b e' >8 <gis b e' >4-. <gis b e' >4-. |
   <a cis' e' >4-. <a cis' e' >4-. <fis b e' >4-- <fis b dis' >8-- <fis b
   dis' >8 |
+  % 20
   r8 <gis b e' >8 <gis b e' >8 <gis b e' >8 <gis bis dis' >4-. <gis bis dis'
   >4-. |
   <gis dis' >4-. <gis dis' >4-. <gis cis' >4-- <gis bis dis' >4-. |
   r8 <a cis' e' >8 <a cis' e' >8 <a cis' e' >8 <a cis' e' >4-. <a cis' e' >8
   <a cis' e' >8 |
-  % 90
   r8 <gis b e' >8 <gis b e' >8 <gis b e' >8 <gis b e' >4-. <gis b e' >8 <gis
   b e' >8 |
   r8 <a cis' e' >8 <a cis' e' >8 <a cis' e' >8 <a cis' e' >4-. <a cis' e' >8
   <a cis' e' >8 |
+  % 25
   <a d' fis' >2 <b dis' fis' b' >2 |
-  r8 <gis b e' >8 <gis b e' >8 <gis b e' >8 <gis b e' >4-. <gis b e' >4-. |
+  r8 \f <gis b e' >8 <gis b e' >8 <gis b e' >8 <gis b e' >4-. <gis b e' >4-. |
   <a cis' e' >4-. <a cis' e' >4-. <fis b e' >4-- <fis b dis' >8-- <fis b
   dis' >8 |
-  % 95
   r8 <gis b e' >8 <gis b e' >8 <gis b e' >8 <gis bis dis' >4-. <gis bis dis'
   >4-. |
   <gis dis' >4-. <gis dis' >4-. <gis cis' >4-- <gis bis dis' >4-. |
+  % 30
   r8 <a cis' e' >8 <a cis' e' >8 <a cis' e' >8 <a cis' e' >4-. <a cis' e' >8
   <a cis' e' >8 |
   r8 <gis b e' >8 <gis b e' >8 <gis b e' >8 <gis b e' >4-. <gis b e' >8 <gis
   b e' >8 |
   r8 <a cis' e' >8 <a cis' e' >8 <a cis' e' >8 <a cis' e' >4-. <a cis' e' >8
   <a cis' e' >8 |
-  % 100
   <gis b e' >1~~~ |
   <gis b e' >1 |
-  <b e' fis' a' >8 <b e' fis' a' >8 <b e' fis' a' >8 <c' f' g' bes' >8-> <c'
+  <b e' fis' a' >8\sub-p <b e' fis' a' >8 <b e' fis' a' >8 <c' f' g' bes' >8-> <c'
   f' g' bes' >8 <c' f' g' bes' >8 <cis' fis' gis' b' >8-> <cis' fis' gis' b'
   >8 |
-  <d' g' a' c'' >8 <dis' gis' bes' cis'' >8 <e' a' b' d'' >8 <eis' ais' c''
+  <d' g' a' c'' >8\< <dis' gis' bes' cis'' >8 <e' a' b' d'' >8 <eis' ais' c''
   dis'' >8 <fis' b' cis'' e'' >8 <g' c'' d'' f'' >8 <gis' cis'' dis'' fis''
   >8 <a' d'' e'' g'' >8 |
-  <b' e'' fis'' a'' >8-> <b' e'' fis'' a'' >8-> <b' e'' fis'' a'' >8-> r8 r2 |
+  <b' e'' fis'' a'' >8->\f <b' e'' fis'' a'' >8->\f <b' e'' fis'' a'' >8->\f r8 r2\fermata |
   % 105
 }
 
@@ -298,19 +298,19 @@ part-Peight-two = {
   <e, e >8 <e, e >4.-> <e, e >2 |
   e,4-. e,4-. e,4-. e,4-. |
   a,4-. a,4-. b,4-- b,8-- b,8 |
-  % 50
+  % 20
   e,4 e,4 <gis, dis >4 <gis, dis >4 |
   <gis, dis >4 <gis, dis >4 <gis, dis >4 <gis, dis >4 |
   a,4-. a,4-. a,4-. a,4-. |
   gis,4-. gis,4-. gis,4-. gis,4-. |
-  a,4-. a,4-. a,4-. a,4-. |
-  % 55
+  gis,4-. gis,4-. gis,4-. gis,4-. |
+  % 25
   <d, d >4-. <d, d >4-. b,4-. b,4-. |
   e,4-. e,4-. e,4-. e,4-. |
   a,4-. a,4-. b,4-- b,8-- b,8 |
   e,4 e,4 <gis, dis >4 <gis, dis >4 |
   <gis, dis >4 <gis, dis >4 <gis, dis >4 <gis, dis >4 |
-  % 60
+  % 30
   a,4-. a,4-. a,4-. a,4-. |
   gis,4-. gis,4-. gis,4-. gis,4-. |
   a,4-. a,4-. a,4-. a,4-. |
@@ -346,22 +346,22 @@ part-Peight-two = {
   % 85
   e,4-. e,4-. e,4-. e,4-. |
   a,4-. a,4-. b,4-- b,8-- b,8 |
+  % 20
   e,4 e,4 <gis, dis >4 <gis, dis >4 |
   <gis, dis >4 <gis, dis >4 <gis, dis >4 <gis, dis >4 |
   a,4-. a,4-. a,4-. a,4-. |
-  % 90
   gis,4-. gis,4-. gis,4-. gis,4-. |
   gis,4-. gis,4-. gis,4-. gis,4-. |
+  % 25
   <d, d >4-. <d, d >4-. b,4-. b,4-. |
   e,4-. e,4-. e,4-. e,4-. |
   a,4-. a,4-. b,4-- b,8-- b,8 |
-  % 95
   e,4 e,4 <gis, dis >4 <gis, dis >4 |
   <gis, dis >4 <gis, dis >4 <gis, dis >4 <gis, dis >4 |
+  % 30
   a,4-. a,4-. a,4-. a,4-. |
   gis,4-. gis,4-. gis,4-. gis,4-. |
   a,4-. a,4-. a,4-. a,4-. |
-  % 100
   <e, e >1~~ |
   <e, e >1 |
   <b, b >4. <bes, bes >4. <a, a >4 |

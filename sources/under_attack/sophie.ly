@@ -166,7 +166,7 @@ sophie_lyr = \lyricmode {
   I've got no -- where to go.  
 
   Yes its what I wan -- ted, but I'm scared as hell, 
-  Star -- ing down the deep -- est wel would hap -- pen, 
+  Star -- ing down the deep -- est well I hard -- ly dare to think of what would hap -- pen, 
   Where I'd be if I fell 
 
   Un -- der at -- tack 

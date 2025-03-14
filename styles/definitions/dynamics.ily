@@ -97,6 +97,7 @@ ed-piu-f = #(make-pre-ed-dynamic-script "piu" "f")
 piu-p = #(make-pre-dynamic-script "piu " "p")
 piu-f = #(make-pre-dynamic-script "piu " "f")
 poco-p = #(make-pre-dynamic-script "poco " "p")
+poco-f = #(make-pre-dynamic-script "poco " "f")
 meno-p = #(make-pre-dynamic-script "meno " "p")
 poco-mp = #(make-pre-dynamic-script "poco " "mp")
 sub-p = #(make-pre-dynamic-script "sub " "p")
@@ -106,7 +107,7 @@ poco-mf = #(make-pre-dynamic-script "poco " "mf")
 ben-mf = #(make-pre-dynamic-script "ben" "mf")
 mp-leggiero = #(make-post-dynamic-script "mp" " leggiero")
 ben-p = #(make-pre-dynamic-script "ben" "p")
-
+p-bright = #(make-post-dynamic-script "p"  "bright")
 ed-text = #(define-music-function (arg) (markup?)
   #{
      -\markup { \upright #arg }

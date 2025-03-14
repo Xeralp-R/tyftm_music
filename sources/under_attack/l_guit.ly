@@ -107,42 +107,24 @@ part-Pnine-one = {
       >4 |
     }
   >>
-  r8 <e gis b e' >8-> <e gis b e' >8-> <e gis b e' >8 <e gis b e' >8-> <e
+  \override NoteHead.style = #'slash
+  r8 <e gis b e' >8-> \f <e gis b e' >8-> <e gis b e' >8 <e gis b e' >8-> <e
   gis b e' >8 <e gis b e' >8-> <e gis b e' >8 |
-  <<
-    {
+  
       <e a b e' >8-> <e a b e' >8-> <e a b e' >8-> <e a b e' >8 <b e' >8 <b
-      e' >8 <b dis' >8 <b dis' >8
-    } \\ {
-      <fis b >8-> <fis b >8-> <fis b >8->
-      <fis b >8
-    }
-  >> |
-  % 50
-  r8 b8-> b8-> b8 b8-> b8 b8-> b8 |
-  b8-> b8 b8-> b8 b8-> b8 b8-> b8 |
-  r8 b8-> b8-> b8 b8-> b8 b8-> b8 |
-  b8-> b8 b8-> b8 b8-> b8 b8-> b8 |
-  b4-\markup { "Rhythm Sim." } b4 b4 b4 |
-  % 55
-  b4 b4 b4 b4 |
-  r8 <e gis b e' >8-> <e gis b e' >8-> <e gis b e' >8 <e gis b e' >8-> <e
+      e' >8 <b dis' >8 <b dis' >8 
+      \linear-spanner 1  6|
+  % 20
+  \undo \override NoteHead.style = #'slash
+  \override NoteHead.style = #'slash
+  r8 <e gis b e' >8-> \f <e gis b e' >8-> <e gis b e' >8 <e gis b e' >8-> <e
   gis b e' >8 <e gis b e' >8-> <e gis b e' >8 |
-  <<
-    {
+  
       <e a b e' >8-> <e a b e' >8-> <e a b e' >8-> <e a b e' >8 <b e' >8 <b
-      e' >8 <b dis' >8 <b dis' >8
-    } \\ {
-      <fis b >8-> <fis b >8-> <fis b >8->
-      <fis b >8
-    }
-  >> |
-  r8 b8-> b8-> b8 b8-> b8 b8-> b8 |
-  b8-> b8 b8-> b8 b8-> b8 b8-> b8 |
-  % 60
-  r8 b8-> b8-> b8 b8-> b8 b8-> b8 |
-  b8-> b8 b8-> b8 b8-> b8 b8-> b8 |
-  b8-> b8 b8-> b8 b4-> b8-> b8 |
+      e' >8 <b dis' >8 <b dis' >8 
+  % 20
+  \undo \override NoteHead.style = #'slash
+  \linear-spanner 1 5 |
   <e' e'' >4. <e' e'' >8~~ <e' e'' >2 |
   <e' e'' >4. <e' e'' >8~~ <e' e'' >2 |
   % 65
@@ -173,46 +155,28 @@ part-Pnine-one = {
   >8-> <e, b, >8 |
   <gis' b' e'' >4.\< <gis' b' e'' >8~~~ <gis' b' e'' >2 |
   % 85
-  r8 <e gis b e' >8->\f <e gis b e' >8-> <e gis b e' >8 <e gis b e' >8-> <e
+  \override NoteHead.style = #'slash
+  r8 <e gis b e' >8-> \f <e gis b e' >8-> <e gis b e' >8 <e gis b e' >8-> <e
   gis b e' >8 <e gis b e' >8-> <e gis b e' >8 |
-  <<
-    {
+  
       <e a b e' >8-> <e a b e' >8-> <e a b e' >8-> <e a b e' >8 <b e' >8 <b
-      e' >8 <b dis' >8 <b dis' >8
-    } \\ {
-      <fis b >8-> <fis b >8-> <fis b >8->
-      <fis b >8
-    }
-  >> |
-  r8 b8-> b8-> b8 b8-> b8 b8-> b8 |
-  b8-> b8 b8-> b8 b8-> b8 b8-> b8 |
-  r8 b8-> b8-> b8 b8-> b8 b8-> b8 |
-  % 90
-  b8-> b8 b8-> b8 b8-> b8 b8-> b8 |
-  b4-\markup { "Rhythm Sim." } b4 b4 b4 |
-  b4 b4 b4 b4 |
-  r8 <e gis b e' >8-> <e gis b e' >8-> <e gis b e' >8 <e gis b e' >8-> <e
+      e' >8 <b dis' >8 <b dis' >8 
+      \linear-spanner 1  6|
+  % 20
+  \undo \override NoteHead.style = #'slash
+  \override NoteHead.style = #'slash
+  r8 <e gis b e' >8-> \f <e gis b e' >8-> <e gis b e' >8 <e gis b e' >8-> <e
   gis b e' >8 <e gis b e' >8-> <e gis b e' >8 |
-  <<
-    {
+  
       <e a b e' >8-> <e a b e' >8-> <e a b e' >8-> <e a b e' >8 <b e' >8 <b
-      e' >8 <b dis' >8 <b dis' >8
-    } \\ {
-      <fis b >8-> <fis b >8-> <fis b >8->
-      <fis b >8
-    }
-  >> |
-  % 95
-  r8 b8-> b8-> b8 b8-> b8 b8-> b8 |
-  b8-> b8 b8-> b8 b8-> b8 b8-> b8 |
-  r8 b8-> b8-> b8 b8-> b8 b8-> b8 |
-  b8-> b8 b8-> b8 b8-> b8 b8-> b8 |
-  b8-> b8 b8-> b8 b4-> b8-> b8 |
-  % 100
+      e' >8 <b dis' >8 <b dis' >8 
+  % 20
+  \undo \override NoteHead.style = #'slash
+  \linear-spanner 1 5 |
   <e' e'' >4. <e' e'' >8~~ <e' e'' >2 |
   <e' e'' >4. <e' e'' >8~~ <e' e'' >2 |
-  b4. bes4. a4 |
-  gis8 g8 f8 e8 d8 c8 b,8 bes,8 |
-  b,8-> b,8-> b,8-> r8 r2 |
+  b4.\sub-p bes4. a4 |
+  gis8\< g8 f8 e8 d8 c8 b,8 bes,8 |
+  b,8->\f b,8->\f b,8->\f r8 r2\fermata |
   % 105
 }

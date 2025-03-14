@@ -42,13 +42,13 @@ part-Poneone-one = \reduceChords {
   des' >16 <f a c' >16-> <f a c' >16 <f a c' >8 <f a c' >8-> <f a c' >8 |
   <e a c' >8-> <e a c' >8 <e a c' >8-> <e a c' >16 <e a c' >16 <g bes d'
   >16-> <g bes d' >16 <g bes d' >8 <g bes d' >8-> <g bes d' >8 |
-  <g bes d' >8->\mp <g bes d' >8 <f bes d' >8-> <f bes d' >16 <f bes d' >16
+  <g bes d' >8-> <g bes d' >8 <f bes d' >8-> <f bes d' >16 <f bes d' >16
   <f a c' >16-> <f a c' >16 <f a c' >8 <f a c' >8-> <f a c' >8 |
   \time 2/4
   <d g c' >16-> <d g c' >16 <d g c' >8 <e g c' >8-> <e g c' >8 |
   % 25
   \time 4/4
-  <f a c' >2.->\> r4 |
+  <f a c' >2.->\> r4\! |
   R1 |
   R1 |
   R1 |
@@ -60,7 +60,7 @@ part-Poneone-one = \reduceChords {
   R1 |
   R1 |
   R1 |
-  r2 r4 <f a c' >4->\p |
+  r2 r4 <f a c' >4->\ben-mp |
   % 35
   <f bes d' >8-> <f bes d' >8 <f bes d' >8-> <f bes d' >16 <f bes d' >16 <e
   g c' >16-> <e g c' >16 <e g c' >8 <e g c' >8-> <e g c' >8 |
@@ -81,17 +81,17 @@ part-Poneone-one = \reduceChords {
   R1 |
   % 45
   R1 |
-  <f bes d' >8->\p <f bes d' >8 <f bes des' >8-> <f bes des' >16 <f bes des'
+  <f bes d' >8->\poco-f <f bes d' >8 <f bes des' >8-> <f bes des' >16 <f bes des'
   >16 <f a c' >16-> <f a c' >16 <f a c' >8 <f a c' >8-> <f a c' >8 |
   <e a c' >8-> <e a c' >8 <e a c' >8-> <e a c' >16 <e a c' >16 <g bes d'
   >16-> <g bes d' >16 <g bes d' >8 <g bes d' >8-> <g bes d' >8 |
   <g bes d' >8-> <g bes d' >8 <f bes d' >8-> <f bes d' >16 <f bes d' >16 <f
   a c' >16-> <f a c' >16 <f a c' >8 <f a c' >8-> <f a c' >8 |
-  <d g c' >16-> <d g c' >16 <d g c' >8 <e g c' >8-> <e g c' >8 <f a c' >2-> |
+  <d g c' >16-> <d g c' >16 <d g c' >8 <e g c' >8-> <e g c' >8 <f a c' >2->\> |
   % 50
+  R1\! |
   R1 |
-  R1 |
-  R1 |
+  R1\fermata |
 }
 
 chord_sequence = \chordmode {

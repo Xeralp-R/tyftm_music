@@ -136,9 +136,11 @@ under_attack = {
     \new StaffGroup \with {
       instrumentName = "Chorus"
       shortInstrumentName = "Chor."
-    } <<
+    } 
+    <<
       \new Staff \part-Psix-one
       \new Staff \part-Psix-three
+      
     >>
 
 

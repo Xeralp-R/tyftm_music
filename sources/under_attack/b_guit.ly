@@ -61,21 +61,21 @@ part-Poneone-one = \transpose c c, {
   R1 |
   e8 e8 fis8 fis8 gis8 gis8 a8 a8 |
   a8 a8 a8 b8~ b8 gis8 fis4 |
-  e8 fis8 gis4-. e4-. gis8 fis8 |
+  e8 \f fis8 gis4-. e4-. gis8 fis8 |
   e8 fis8 gis4-. b4-. gis8 fis8 |
-  % 50
+  % 20
   e8 fis8 gis4-. bis4-. gis8 fis8 |
   dis8 fis8 gis4-. bis4-. gis8 dis8 |
   a8 b8 cis'4-. r4 b8 a8 |
   gis8 a8 b4-. r4 gis4-. |
   a8 b8 cis'4-. r4 b8 a8 |
-  % 55
+  % 25
   d8 e8 fis4-. b,4-. gis8 fis8 |
-  e8 fis8 gis4-. e4-. gis8 fis8 |
+  e8 \f fis8 gis4-. e4-. gis8 fis8 |
   e8 fis8 gis4-. b4-. gis8 fis8 |
   e8 fis8 gis4-. bis4-. gis8 fis8 |
   dis8 fis8 gis4-. bis4-. gis4-. |
-  % 60
+  % 30
   a8 b8 cis'4-. r4 b8 a8 |
   gis8 a8 b4-. r4 gis4-. |
   a8 b8 cis'4-. r4 a4-. |
@@ -108,28 +108,28 @@ part-Poneone-one = \transpose c c, {
   e8 fis8 gis4-. e4-. gis8 fis8 |
   e8 fis8 gis4-. e4-. gis8 fis8 |
   % 85
-  e8 fis8 gis4-. e4-. gis8 fis8 |
+  e8 \f fis8 gis4-. e4-. gis8 fis8 |
   e8 fis8 gis4-. b4-. gis8 fis8 |
+  % 20
   e8 fis8 gis4-. bis4-. gis8 fis8 |
   dis8 fis8 gis4-. bis4-. gis8 dis8 |
   a8 b8 cis'4-. r4 b8 a8 |
-  % 90
   gis8 a8 b4-. r4 gis4-. |
   a8 b8 cis'4-. r4 b8 a8 |
+  % 25
   d8 e8 fis4-. b,4-. gis8 fis8 |
-  e8 fis8 gis4-. e4-. gis8 fis8 |
+  e8 \f fis8 gis4-. e4-. gis8 fis8 |
   e8 fis8 gis4-. b4-. gis8 fis8 |
-  % 95
   e8 fis8 gis4-. bis4-. gis8 fis8 |
   dis8 fis8 gis4-. bis4-. gis4-. |
+  % 30
   a8 b8 cis'4-. r4 b8 a8 |
   gis8 a8 b4-. r4 gis4-. |
   a8 b8 cis'4-. r4 a4-. |
-  % 100
   e8 fis8 gis4-. e4-. gis8 fis8 |
   e8 fis8 gis4-. e4-. b4-. |
-  b4. bes4. a4 |
-  gis8 g8 f8 e8 d8 c8 b,8 bes,8 |
-  b,8-> b,8-> b,8-> r8 r2 |
+  b4.\sub-p bes4. a4 |
+  gis8\< g8 f8 e8 d8 c8 b,8 bes,8 |
+  b,8->\f b,8->\f b,8->\f r8 r2\fermata |
   % 105
 }

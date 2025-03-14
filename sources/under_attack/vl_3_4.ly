@@ -61,24 +61,24 @@ part-Pthree-one = {
   r2 b8\< b8 b4-. |
   e'4\f fis'4 gis'4 a'4~ |
   a'4. b'8~ b'2 |
-  r8 e'8-.\f\> e'8-. e'8-. dis'8-. r8 r4 |
-  r8 fis''8-.\p fis''8-. gis''8-. gis''4( b''4) |
-  % 50
   r8 e'8-.\f e'8-. e'8-. dis'8-. r8 r4 |
-  r8 r8 r8 r8 r8 dis'8-. dis'8(-. cis'8)-. |
-  r8 r8 r4 r2 |
+  r8 fis''8-. fis''8-. gis''8-. gis''4( b''4) |
+  % 20
+  r8 e'8-. e'8-. e'8-. dis'8-. r8 r4 |
+  r2 r8 dis'8-. dis'8(-. cis'8)-. |
+  r1 |
   dis'4.( cis'2) r8 |
   r2 r4 cis''8 dis''8 |
-  % 55
+  % 25
   e''8 d''8 d''8 cis''8 cis''8 b'8 b'8 a'8 |
   r8 e'8-.\f e'8-. e'8-. dis'8-. r8 r4 |
-  r8 r8 r4 r2 |
+  r1 |
   r8 e'8-. e'8-. e'8-. dis'8-. r8 r4 |
-  r8 r8 r8 r8 r8 dis'8-. dis'8(-. cis'8)-. |
-  % 60
-  r8 r8 r4 r2 |
+  r2 r8 dis'8-. dis'8(-. cis'8)-. |
+  % 30
+  r1 |
   dis'4.( cis'2) r8 |
-  r8 r8 r4 r2 |
+  r1 |
   R1 |
   gis'1 |
   % 65
@@ -110,28 +110,28 @@ part-Pthree-one = {
   gis'1\< |
   % 85
   r8 e'8-.\f e'8-. e'8-. dis'8-. r8 r4 |
-  r8 fis''8-.\p fis''8-. gis''8-. gis''4( b''4) |
-  r8 e'8-.\f\> e'8-. e'8-. dis'8-. r8 r4 |
-  r8 r8 r8 r8 r8 dis'8-. dis'8(-. cis'8)-. |
-  r8 r8 r4 r2 |
-  % 90
+  r8 fis''8-. fis''8-. gis''8-. gis''4( b''4) |
+  % 20
+  r8 e'8-. e'8-. e'8-. dis'8-. r8 r4 |
+  r2 r8 dis'8-. dis'8(-. cis'8)-. |
+  r1 |
   dis'4.( cis'2) r8 |
   r2 r4 cis''8 dis''8 |
+  % 25
   e''8 d''8 d''8 cis''8 cis''8 b'8 b'8 a'8 |
-  r8 e'8-.\f\> e'8-. e'8-. dis'8-. r8 r4 |
-  r8 r8 r4 r2 |
-  % 95
-  r8 e'8-.\f\> e'8-. e'8-. dis'8-. r8 r4 |
-  r8 r8 r8 r8 r8 dis'8-. dis'8(-. cis'8)-. |
-  r8 r8 r4 r2 |
+  r8 e'8-.\f e'8-. e'8-. dis'8-. r8 r4 |
+  r1 |
+  r8 e'8-. e'8-. e'8-. dis'8-. r8 r4 |
+  r2 r8 dis'8-. dis'8(-. cis'8)-. |
+  % 30
+  r1 |
   dis'4.( cis'2) r8 |
-  r8 r8 r4 r2 |
-  % 100
+  r1 |
   R1 |
   gis'1\> |
-  e'4. f'4. fis'4 |
-  g'8 gis'8 a'8 ais'8 b'8 c''8 cis''8 d''8 |
-  d''4~ d''8 r8 r2 |
+  e'4.\sub-p f'4. fis'4 |
+  g'8\< gis'8 a'8 ais'8 b'8 c''8 cis''8 d''8 |
+  d''4~\f d''8\f r8 r2\fermata |
   % 105
 }
 
@@ -198,24 +198,24 @@ part-Pfour-one = {
   r2 b8\< b8 b4-. |
   b4\f b4 b4 cis'4~ |
   cis'4 cis'8 b8 b4 b4 |
-  r8 b8-.\f\> b8-. e'8-. e'8-. r8 r4 |
-  r8 r4. r2 |
-  % 50
-  r8 b8-.\f b8-. b8-. bis8-. r8 r4 |
-  r8 r8 r8 r8 r8 a'8-. a'8(-. gis'8)-. |
-  r8 r8 r4 r2 |
-  r8 r8 r4 r2 |
-  r8 r8 r8 r8 r8 r8 gis'8 a'8 |
-  % 55
+  r8 b8-.\f b8-. e'8-. e'8-. r8 r4 |
+  r1 |
+  % 20
+  r8 b8-. b8-. b8-. bis8-. r8 r4 |
+  r2 r8 a'8-. a'8(-. gis'8)-. |
+  r1 |
+  r1 |
+  r2 r4 gis'8 a'8 |
+  % 25
   b'8 a'8 a'8 gis'8 gis'8 fis'8 fis'8 e'8 |
   r8 b8-.\f b8-. e'8-. e'8-. r8 r4 |
-  r8 r4. r2 |
+  r1 |
   r8 b8-. b8-. b8-. b8-. r8 r4 |
-  r8 r8 r8 r8 r8 a'8-. a'8(-. gis'8)-. |
-  % 60
-  r8 r8 r4 r2 |
-  r8 r8 r4 r2 |
-  r8 r8 r4 r2 |
+  r2 r8 a'8-. a'8(-. gis'8)-. |
+  % 30
+  r1 |
+  r1 |
+  r1 |
   R1 |
   R1 |
   % 65
@@ -245,28 +245,28 @@ part-Pfour-one = {
   e'1 |
   e'1 |
   % 85
-  r8 b8-.\f\> b8-. e'8-. e'8-. r8 r4 |
-  r8 r4. r2 |
-  r8 b8-.\f\> b8-. b8-. bis8-. r8 r4 |
-  r8 r8 r8 r8 r8 a'8-. a'8(-. gis'8)-. |
-  r8 r8 r4 r2 |
-  % 90
-  r8 r8 r4 r2 |
-  r8 r8 r8 r8 r8 r8 gis'8 a'8 |
+  r8 b8-.\f b8-. e'8-. e'8-. r8 r4 |
+  r1 |
+  % 20
+  r8 b8-. b8-. b8-. bis8-. r8 r4 |
+  r2 r8 a'8-. a'8(-. gis'8)-. |
+  r1 |
+  r1 |
+  r2 r4 gis'8 a'8 |
+  % 25
   b'8 a'8 a'8 gis'8 gis'8 fis'8 fis'8 e'8 |
-  r8 b8-.\f\> b8-. e'8-. e'8-. r8 r4 |
-  r8 r4. r2 |
-  % 95
-  r8 b8-.\f\> b8-. b8-. b8-. r8 r4 |
-  r8 r8 r8 r8 r8 a'8-. a'8(-. gis'8)-. |
-  r8 r8 r4 r2 |
-  r8 r8 r4 r2 |
-  r8 r8 r4 r2 |
-  % 100
+  r8 b8-.\f b8-. e'8-. e'8-. r8 r4 |
+  r1 |
+  r8 b8-. b8-. b8-. b8-. r8 r4 |
+  r2 r8 a'8-. a'8(-. gis'8)-. |
+  % 30
+  r1 |
+  r1 |
+  r1 |
   R1 |
   R1 |
-  b4. c'4. cis'4 |
-  d'8 dis'8 e'8 eis'8 fis'8 g'8 gis'8 a'8 |
-  a'4~ a'8 r8 r2 |
+  b4.\sub-p c'4. cis'4 |
+  d'8\< dis'8 e'8 eis'8 fis'8 g'8 gis'8 a'8 |
+  a'4~\f a'8\f r8 r2\fermata |
   % 105
 }
