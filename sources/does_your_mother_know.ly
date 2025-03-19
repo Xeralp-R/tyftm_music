@@ -1,7 +1,7 @@
 % Automatically generated from a musicxml file.
 \version "2.24.0"
 \include "../styles/global.ily"
-\include "../styles/final_styles/revision_style.ily"
+%\include "../styles/final_styles/revision_style.ily"
 
 \include "does/b_guit.ly"
 \include "does/drum.ly"
@@ -14,6 +14,52 @@
 \include "does/pno.ly"
 \include "does/tanya_siling.ly"
 
+dymk_marks = {
+  \tempo \markup \column {
+  "Vivace"
+  \italic "Lively"
+  } 4=136
+  R1*4 \mark \default % A
+  R1*2 \time 2/4 R2 \time 4/4 R1*6 \mark \default % B
+  R1*2 \time 2/4 R2 \time 4/4 R1*6 \mark \default % C
+  R1*8 \mark \default % D
+  R1*9 \mark \default % E
+  R1*6 \mark \default % F
+  R1*6 \mark \default % G
+  R1*4 \mark \default % H
+  R1*6 \mark \default % I
+  R1*2 \time 2/4 R2 \time 4/4 R1*6 \mark \default % J
+  R1*2 \time 2/4 R2 \time 4/4 R1*6 \mark \default % K
+  R1*8 \mark \default % L
+  R1*9 \mark \default % M
+  R1*8 \mark \default % N
+  R1*8 \mark \default % O
+  R1*3 \bar "|."
+}
+
+dymk_measures = {
+  \tempo \markup \column {
+  "Vivace"
+  \italic "Lively"
+  } 4=136
+  R1*4
+  R1*2 \time 2/4 R2 \time 4/4 R1*6
+  R1*2 \time 2/4 R2 \time 4/4 R1*6
+  R1*8
+  R1*9
+  R1*6
+  R1*6
+  R1*4
+  R1*6
+  R1*2 \time 2/4 R2 \time 4/4 R1*6
+  R1*2 \time 2/4 R2 \time 4/4 R1*6
+  R1*8
+  R1*9
+  R1*8
+  R1*8
+  R1*3 \bar "|."
+}
+
 dymk_header = \header {
   arranger = "MJ Laxina & Mico Javier / RAR"
   composer = "Benny Andersson, Björn Ulvaeus"
@@ -21,6 +67,11 @@ dymk_header = \header {
 }
 
 dymk = <<
+  \new BarNumberStaff <<
+    %{ \dymk_measures %}
+    { \compressEmptyMeasures \dymk_marks }
+  >>
+
   \tag #'(orch)
   \new StaffGroup <<
     \new Staff \with {
@@ -51,21 +102,22 @@ dymk = <<
     \new Staff \with {
       instrumentName = "Tanya"
       shortInstrumentName = "T."
-    } \part-Pfive-one
+    } \part-Pfive-one \addlyrics \tanya_lyr
     \new Staff \with {
       instrumentName = "Siling"
       shortInstrumentName = "S."
-    } \part-Psix-one
+    } \part-Psix-one \addlyrics \siling_lyr
     \new Staff \with {
       instrumentName = "Ali & Lisa"
       shortInstrumentName = "A&L."
-    } \part-Pseven-one
+    } \part-Pseven-one \addlyrics \al_lyr
     \new ChoirStaff \with {
       instrumentName = "Chorus"
       shortInstrumentName = "Ch."
     } << 
-      \part-Peight-one
-      \part-Pnine-one
+      \part-Peight-one \addlyrics \women_lyr
+      \new Lyrics = "b_lyr"
+      \new Staff \part-Pnine-one
     >>
   >>
 
@@ -89,10 +141,15 @@ dymk = <<
   >>
 
   \tag #'(accompaniment band r_guit)
-  \new Staff \with {
-    instrumentName = "Rhythm Guitar"
-    shortInstrumentName = "R. Guit"
-  } \part-Ponetwo-one
+  <<
+    \new ChordNames \rguit_chords
+    \new Staff \with {
+      instrumentName = "Rhythm Guitar"
+      shortInstrumentName = "R. Guit"
+    } {
+      \new Voice \with { \consists Pitch_squash_engraver } \part-Ponetwo-one
+    }
+  >>
 
   \tag #'(accompaniment band b_guit)
   \new StaffGroup \with {
@@ -118,6 +175,11 @@ dymk = <<
   } \part-Ponefive-one
 >>
 
+%{
 \score {
-  \dymk
+  \keepWithTag #'(chor band) \dymk
+  \header {
+    \dymk_header
+  }
 }
+%}

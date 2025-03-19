@@ -2,6 +2,7 @@ part-Pfive-one = {
   \key bes \major
   \time 4/4
   \clef treble
+  \dynamicUp 
   R1 |
   R1 |
   R1 |
@@ -93,8 +94,8 @@ part-Pfive-one = {
   % 65
   ees'4 ees'8 ees'8 d'8 d'8 d'8 d'8( |
   c'4) r2 r4 |
-  r8 f'8 f'8 f'8 g'8 f'8 g'8 f'8~ |
-  f'4 r2 r4 |
+  r8 f'8 f'8 f'8 g'8 f'8 g'8( f'8~ |
+  f'4) r2 r4 |
   r2 r4 r8 f'8 |
   % 70
   d'8 f'4 f'8~ f'4 r8 f'8 |
@@ -158,7 +159,8 @@ part-Pfive-one = {
 part-Psix-one = {
   \key bes \major
   \time 4/4
-  \clef bass
+  \clef "treble_8"
+  \dynamicUp
   R1 |
   R1 |
   R1 |
@@ -308,6 +310,87 @@ part-Psix-one = {
   R1 |
   R1 |
   R1 |
-  R1\< |
+  R1 |
   % 115
+}
+
+tanya_lyr = \lyricmode {
+  You're so hot, teas -- ing me! 
+  So you're blue, but I can't take a chance on a kid like you, 
+  It's some -- thing I could -- n't do. 
+
+  There's that look, in your eyes,
+  I can read in your face that your feel -- ings are dri -- ving
+  you wild, 
+  Ah, but boy, you're on -- ly a child.
+   
+  Well I could dance with you ho -- ney, 
+  If you think it's fun -- ny, 
+  But does your mo -- ther know that you're
+  out? 
+  And I could chat with you ba -- by, 
+  Flirt a lit -- tle, may -- be, 
+  But does your mo -- ther know that you're
+  out? 
+
+  Take it ea -- sy, Bet -- ter slow down, boy, 
+  That's no way to go, Does your mo -- ther know? 
+  Take it ea -- sy
+  Try to cool it, boy, 
+  Play it nice and slow, Does your mo --
+  ther know? 
+
+  I can see what you want, 
+  But you seem pre -- tty young to be search -- ing for that kind of
+  fun, 
+  But, baby, I'm not the one.  __  
+
+  Now, you're
+  so cute, I like your style, And I know what you mean
+  when you give me a flash of that smile! 
+  But, boy, you're on -- ly a
+  child.  
+
+  Well I could dance with you ho -- ney, 
+  If you think it's fun -- ny, 
+  But does your mo -- ther know that you're
+  out? 
+  And I could chat with you ba -- by, 
+  Flirt a lit -- tle, may -- be, 
+  But does your mo -- ther know that you're
+  out? 
+
+  Take it ea -- sy, Does your mo -- ther know?
+  Take it ea -- sy, Does your mo -- ther know? 
+
+  Well I could dance with you ho -- ney, 
+  If you think it's fun -- ny, 
+  But does your mo -- ther know that you're
+  out? 
+  And I could chat with you ba -- by, 
+  Flirt a lit -- tle, may -- be, 
+  But does your mo -- ther know that you're
+  out?  
+
+  Well I could dance with you ho -- ney, 
+  If you think it's fun -- ny, 
+  But does your mo -- ther know that you're
+  out? 
+  And I could chat with you ba -- by, 
+  Flirt a lit -- tle, may -- be, 
+  But does your mo -- ther know that you're
+  out?  
+  Does
+  your mo -- ther know that you're out? 
+  Does your mo --
+  ther know that you're out!
+}
+
+siling_lyr = \lyricmode { 
+  Take
+  it ea -- sy, 
+  Take it ea -- sy, Take it ea -- sy, Bet -- ter slow down
+  girl, That's no way to go. 
+  Take it ea -- sy, Try to cool
+  down girl, Play it nice and slow.
 }
