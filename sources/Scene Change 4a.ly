@@ -191,7 +191,7 @@ part-Ponezero-one = {
         \context Voice = "voiceone" { \voiceOne 
             \key c \major
             \time 4/4
-            \clef percussiong''16 g''16 g''16 g''16 <c'' g'' >16 g''16 g''16 
+            \clef percussion g''16 g''16 g''16 g''16 <c'' g'' >16 g''16 g''16 
             g''16 g''16 g''16 g''16 g''16 <c'' g'' >16 g''16 g''16 g''16 |
             g''16 g''16 g''16 g''16 <c'' g'' >16 g''16 g''16 g''16 g''16 g''16 
             g''16 g''16 <c'' g'' >16 g''16 g''16 g''16 |

@@ -1,6 +1,7 @@
 from pathlib import Path
 import ly.document
 import variables
+import bars
 import files
 
 def itemize(piece: str):
@@ -52,6 +53,27 @@ def separate(piece: str, var: str, inst: str):
     except Exception as ex:
         print(0, str(type(ex)))
 
+def condense(piece: str, min_repeat: int):
+    """Wrapper function for `bars.condense()`: rewrites a lilypond file by
+    condensing repeated bars into a repeat declaration
+
+    Args:
+        piece (str): _path of file to condense_
+        min_repeat (int): _minimum number of times a bar must be repeated to
+        trigger this function_
+    """
+    try:
+        if not Path(piece).is_file():
+            raise FileNotFoundError("This piece does not exist!")
+        else:
+            doc = ly.document.Document.load(piece)
+            new_doc = bars.condense(doc, min_repeat)
+            files.engrave(piece, new_doc, overwrite=True)
+            print(1)
+    except Exception as ex:
+        print(0, str(type(ex)))
+
 if __name__ == "__main__":
     # itemize(".\\sources\\Scene Change 4a.ly")
-    separate(".\\sources\\Scene Change 4a.ly", "part-Pone-one", "test")
+    # separate(".\\sources\\Scene Change 4a.ly", "part-Pone-one", "test")
+    condense("automations/lysplitter/demos/demo.ly", 2)

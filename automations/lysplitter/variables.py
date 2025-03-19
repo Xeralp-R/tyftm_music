@@ -112,4 +112,4 @@ if __name__ == "__main__":
     # print(itemize("sources/Scene Change 4a.ly"))
     # print(position(doc, "part-Pone-one"))
     # print(extract(doc, "part-Ptwo-one").plaintext())
-    print(delete(doc, "part-Ptwo-one").plaintext())
+    # print(delete(doc, "part-Ptwo-one").plaintext())
