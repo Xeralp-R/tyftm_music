@@ -1,7 +1,7 @@
 % Automatically generated from a musicxml file.
 \version "2.24.0"
 \include "../styles/global.ily"
-\include "../styles/final_styles/revision_style.ily"
+%\include "../styles/final_styles/revision_style.ily"
 
 \include "slipping/b_guit.ly"
 \include "slipping/chor.ly"
@@ -120,7 +120,7 @@ slipping = <<
     instrumentName = "Piano"
     shortInstrumentName = "Pf."
   } <<
-    \new Staff \part-Pfive-one
+    \new Staff \with { \consists "Span_arpeggio_engraver" }\part-Pfive-one
     \new Staff \part-Pfive-two
   >>
 
@@ -195,12 +195,15 @@ slipping = <<
   \tag #'(accompaniment band drum a_perc)
   \new DrumStaff \with {
     \override StaffSymbol.line-positions = #'(-2 2)
+    \override Glissando.style = #'trill
     instrumentName = "Aux. Perc."
     shortInstrumentName = "A. Pc."
+    \consists "Glissando_engraver"
   } \part-Ponefour-one
 >>
 
+%{
 \score {
   \slipping
   \layout{}
-}
+}%}

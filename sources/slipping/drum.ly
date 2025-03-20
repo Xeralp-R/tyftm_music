@@ -36,7 +36,7 @@ part-Ponethree-one = \drummode {
       bd4 r8 bd8 bd4 r4 |
       % 15
       bd4 r8 bd8 bd4 r4 |
-      bd4 ss8 bd8 bd4 |
+      bd4 ss8 bd8 bd4 r4 |
       bd4 r8 bd8 bd4 r4 |
     }
   >>
@@ -100,7 +100,7 @@ part-Ponethree-one = \drummode {
       bd4 sn8 bd8 bd4 sn4 |
       % 40
       bd4 sn8 bd8 bd4 sn4 |
-      bd4 sn8 bd8 bd4 |
+      bd4 sn8 bd8 bd4 r4 |
       bd4 sn8 bd8 bd4 sn8. bd16 |
     }
   >>
@@ -183,7 +183,7 @@ part-Ponefour-one = \drummode {
   r4 tamb4\poco-f r4 tamb4 |
   r4 tamb4 r4 tamb4 |
   r4 tamb4 r4 tamb4 |
-  r4 tamb4 tamb4\>\glissando-\markup { "chimes" } mar4 |
+  r4 tamb4 tamb4\>^\markup { "chimes" }\glissando mar4 |
   % 50
   R1\! |
   R1 |
