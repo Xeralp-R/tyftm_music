@@ -17,7 +17,7 @@ part-Ptwo-one = {
   R1-\markup { "Speech!" } |
   % 10
   R1 |
-  r4 r8 bes16 c'16 d'8 f'4 bes'8~ |
+  r4 r8 bes16\f c'16 d'8 f'4 bes'8~ |
   bes'4 r8 bes'16 a'16 g'8 f'4 g'8~ |
   g'8 d'8 f'8 bes16 c'16 d'8 f'4 f'8~ |
   f'4 r8 bes16 c'16 d'8 f'4 f'8~ |
@@ -30,11 +30,11 @@ part-Ptwo-one = {
   \time 4/4
   ees'8 d'4 d'8~ d'4 r8 c'16 d'16 |
   % 20
-  ees'8 f'4 f'8~ f'2~ |
+  ees'8\f f'4 f'8~ f'2~ |
   f'4 r4 r4 r8 c'16 d'16 |
   ees'8 f'4 f'8~ f'2~ |
   f'4 r4 r2 |
-  g8 c'16 c'16~ c'8 d'8~ d'8 c'8~ c'4 |
+  g8\ben-mf c'16 c'16~ c'8 d'8~ d'8 c'8~ c'4 |
   % 25
   r2 r4 r8. c'16 |
   f8 bes16 bes16~ bes16 bes16 c'8~ c'8 bes8~ bes4 |
@@ -54,7 +54,7 @@ part-Ptwo-one = {
   r2 r4 r8 c'16 d'16 |
   ees'8 f'4 f'8~ f'2 |
   % 40
-  r4 r8 bes16 c'16 d'8 f'4 bes'8~ |
+  r4 r8 bes16 \f c'16 d'8 f'4 bes'8~ |
   bes'4 r8 bes'16 a'16 g'8 f'4 g'8~ |
   g'8 d'8 f'8 bes16 c'16 d'8 f'4 f'8~ |
   f'4 r8 bes16 c'16 d'8 f'4 f'8~ |
@@ -80,7 +80,7 @@ part-Ptwo-one = {
   \time 2/4
   R2 |
   \time 4/4
-  r2 r2 |
+  r2 r2 \fermata |
 }
 
 rosie_lyr =  \lyricmode {

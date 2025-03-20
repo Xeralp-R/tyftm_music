@@ -11,17 +11,20 @@ part-Ponezero-one = \drummode {
   \time 2/4
   R2 |
   \time 4/4
-  hh4 hh4 hh4 hh4 |
-  hh4 hh4 hh4 hh4 |
-  % 10
-  hh4 hh4 hh4 hh4 |
-  hh4 hh4 hh4 hh4 |
   <<
     {
-      hh16\mp hh16 hh16 hh16 hh16 hh16 hh16 hh16-> hh16-> hh16
-      hh16 hh16 hh16 hh16 hh16 hh16
-    } \\ { bd4 <bd sn >4 bd4 <bd sn >4 }
-  >> |
+      hh4\< hh4 hh4 hh4 |
+      hh4 hh4 hh4 hh4 |
+      % 10
+      hh4 hh4 hh4 hh4 |
+      hh4 hh4 hh4 hh4 |
+      hh16\f hh16 hh16 hh16 hh16 hh16 hh16 hh16-> hh16-> hh16
+      hh16 hh16 hh16 hh16 hh16 hh16|
+    } \\ {
+      s1|s1|s1|s1|
+      bd4 <bd sn >4 bd4 <bd sn >4| 
+    }
+  >>
   hh16 hh16 hh16 hh16 hh16 hh16 hh16 hh16-> hh16-> hh16 hh16
   hh16 hh16 hh16 hh16 hh16 |
   hh16 hh16 hh16 hh16 hh16 hh16 hh16 hh16-> hh16-> hh16 hh16
@@ -41,14 +44,14 @@ part-Ponezero-one = \drummode {
       \time 4/4
       hh4:16 hh4:16 hh4:16 hh16 hh16 <tommh hh >8 |
       % 20
-      hh4:16 hh16 hh16 hh16 hh16 hh16 hh16 hh16 hh16 hh16 hh16
+      hh4:16\f hh16 hh16 hh16 hh16 hh16 hh16 hh16 hh16 hh16 hh16
       hh8 |
       hh4:16 hh16 hh16 hh16 hh16 hh16 hh16 hh16 hh16 hh16 hh16
       hh8 |
       hh4:16 hh16 hh16 hh16 hh16 hh16 hh16 hh16 hh16 hh16 hh16
       hh8 |
       hh4:16 hh4:16 hh4:16 tommh8 tomml8 |
-      hh4:16 hh16 hh16 hh16 hh16-> hh16-> hh16 hh16 hh16 hh16
+      hh4:16\mp hh16 hh16 hh16 hh16-> hh16-> hh16 hh16 hh16 hh16
       hh16 hh8 |
       % 25
       hh4:16 hh16 hh16 hh16 hh16-> hh16-> hh16 hh16 hh16 hh16
@@ -73,13 +76,13 @@ part-Ponezero-one = \drummode {
       hh4:16 hh16 hh16 hh16 hh16-> hh16-> hh16 hh16 hh16 hh16
       hh16 hh8 |
       r4 r4 r4 r4 |
-      hh4:16 hh4:16 hh4:16 hh4:16 |
+      hh4:16 \cresc hh4:16 hh4:16 hh4:16 |
       hh4:16 hh16-. hh16 hh16 hh16-> hh16-> hh16 hh16 hh16 hh16
       hh16 hh8 |
       hh4:16 hh4:16 hh4:16 tommh8 tomml8 |
       % 40
-      hh2( hh2)-> |
-      hh4:16 hh4:16 hh4:16 hh4:16 |
+      hh2(\rf hh2)-> |
+      hh4:16\f hh4:16 hh4:16 hh4:16 |
       hh4:16 hh4:16 hh4:16 hh4:16 |
       hh4:16 hh4:16 hh4:16 hh4:16 |
       hh4:16 hh4:16-. hh4:16 hh16 hh16 hh8 |
@@ -97,14 +100,14 @@ part-Ponezero-one = \drummode {
       hh4:16 hh4:16 hh4:16 hh4:16 |
       hh4:16 hh4:16 hh4:16 hh4:16 |
       hh4:16 hh4:16 hh4:16 hh4:16 |
-      hh4:16 hh4:16 hh4:16 hh4:16 |
+      hh4:16\cresc hh4:16 hh4:16 hh4:16 |
       hh4:16 hh4:16 hh4:16 hh4:16 |
       % 55
       hh4:16 hh4:16 hh4:16 hh4:16 |
       \time 2/4
-      hh4:16 hh4:16 |
+      hh4:16\< hh4:16 |
       \time 4/4
-      hh4 r4 r2 |
+      hh4\ff r4 r2 \fermata|
     }
     \context DrumVoice = "voicetwo" {
       \voiceTwo
@@ -133,7 +136,7 @@ part-Ponezero-one = \drummode {
       bd4 <bd sn >4 bd4 <bd sn >4 |
       bd4 <bd sn >4 bd4 <bd sn >4 |
       bd4 <bd sn >4 bd4 <bd sn >4 |
-      bd4 <bd sn >4 bd4 |
+      bd4 <bd sn >4 bd4 s4|
       % 40
       bd4 r8. tommh16 tommh8 <bd sn >8~~ <bd sn >8 toml8 |
       bd4 <bd sn >4 bd4 <bd sn >4 |
@@ -143,7 +146,7 @@ part-Ponezero-one = \drummode {
       % 45
       bd4 <bd sn >4 bd4 <bd sn >4 |
       bd4 <bd sn >4 bd4 <bd sn >4 |
-      bd4 <bd sn >4 |
+      bd4 <bd sn >4|
       bd4 <bd sn >4 bd4 <bd sn >4 |
       bd4 <bd sn >4 bd4 <bd sn >4 |
       % 50
@@ -154,7 +157,7 @@ part-Ponezero-one = \drummode {
       bd4 <bd sn >4 bd4 <bd sn >4 |
       % 55
       bd4 <bd sn >4 bd4 <bd sn >4 |
-      bd4 <bd sn >4 |
+      bd4 <bd sn >4|
       bd4 r4 r2 |
     }
   >>

@@ -159,4 +159,5 @@ tcm = <<
 \score {
   \tcm 
   \layout {}
+  % \midi{}
 }

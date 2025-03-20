@@ -36,7 +36,7 @@ part-Pthree-one = {
   R1 |
   R1 |
   % 25
-  g'8\f c''16 c''16~ c''8 d''8~ d''8 c''8 r4 |
+  g'8\ben-mf c''16 c''16~ c''8 d''8~ d''8 c''8 r4 |
   R1 |
   R1 |
   R1 |
@@ -80,7 +80,7 @@ part-Pthree-one = {
   \time 2/4
   R2 |
   \time 4/4
-  r2 r2 |
+  r2 r2 \fermata |
 }
 
 bill_lyr = \lyricmode {
@@ -138,8 +138,8 @@ part-Pfour-one = {
   R1 |
   % 30
   R1 |
-  r4 r8 bes16 bes16 d'8 f'8 bes'8 r8 |
-  r8 g'8 g'8 g'16 g'16 g'8 a'16 bes'16~ bes'8 r8 |
+  r4 r8 bes16\< bes16 d'8 f'8 bes'8 r8 |
+  r8 g'8 \f g'8 g'16 g'16 g'8 a'16 bes'16~ bes'8 r8 |
   r8 g'16 g'16 g'8 g'16 g'16 g'8 a'16 bes'16~ bes'8 g'8 |
   g'4. g'4. r4 |
   % 35
@@ -175,7 +175,7 @@ part-Pfour-one = {
   \time 2/4
   R2 |
   \time 4/4
-  R1 |
+  r2 r2 \fermata |
 }
 
 harry_lyr = \lyricmode {

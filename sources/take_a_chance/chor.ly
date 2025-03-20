@@ -17,7 +17,7 @@ part-Pfive-one = {
   R1 |
   % 10
   R1 |
-  r4 r8 <bes d' f' >16\mp <bes d' f' >16 <bes d' f' >8 <d' f' bes' >4 <f'
+  r4 r8 <bes d' f' >16\f <bes d' f' >16 <bes d' f' >8 <d' f' bes' >4 <f'
   bes' d'' >8~~~ |
   <f' bes' d'' >4 r8 <bes d' f' >16 <bes d' f' >16 <bes d' f' >8 <bes d' f'
   >4 <bes ees' f' >8~~~ |
@@ -38,7 +38,7 @@ part-Pfive-one = {
   R1 |
   R1 |
   R1 |
-  r2 r8 <d' ees' >8( <c' ees' >4)-. |
+  r2 r8 <d' ees' >8( <c' ees' >4)-. \ben-mp|
   % 25
   r2 r8 <d' ees' >8( <c' ees' >4)-. |
   r2 d'8 d'16 d'16~ d'16 d'16 ees'8~ |
@@ -49,7 +49,7 @@ part-Pfive-one = {
   r2 d'8 d'16 d'16~ d'16 d'16 ees'8~ |
   ees'8 d'8 r4 r2 |
   R1 |
-  r2 r4 r8 g'8 |
+  r2 r4 r8 g'8\f |
   g'4. g'4. r4 |
   % 35
   R1 |
@@ -58,7 +58,7 @@ part-Pfive-one = {
   R1 |
   R1 |
   % 40
-  r4 r8 <bes d' f' >16 <bes d' f' >16 <bes d' f' >8 <d' f' bes' >4 <f' bes'
+  r4 r8 <bes d' f' >16 \f <bes d' f' >16 <bes d' f' >8 <d' f' bes' >4 <f' bes'
   d'' >8~~~ |
   <f' bes' d'' >4 r8 <bes d' f' >16 <bes d' f' >16 <bes d' f' >8 <bes d' f'
   >4 <bes ees' f' >8~~~ |
@@ -81,7 +81,7 @@ part-Pfive-one = {
   r2 r4 r8 c'16\f d'16 |
   ees'8 f'4 f'8~ f'2~ |
   f'4 r4 r2 |
-  r8 <bes f' >16\mf <bes f' >16 <bes f' >8 <bes f' >16 <bes f' >16 <bes f'
+  r8 <bes f' >16\mf\cresc <bes f' >16 <bes f' >8 <bes f' >16 <bes f' >16 <bes f'
   >16 <bes f' >16 <bes f' >8 <bes f' >8 <bes f' >16 <bes f' >16 |
   <bes f' >8 <bes f' >16 <bes f' >16 <bes f' >8 <bes f' >16 <bes f' >16 <bes
   f' >16 <bes f' >16 <bes f' >8 <bes f' >8 <bes f' >16 <bes f' >16 |
@@ -89,18 +89,10 @@ part-Pfive-one = {
   <bes f' >8 <bes f' >16 <bes f' >16 <bes f' >8 <bes f' >16 <bes f' >16 <bes
   f' >16 <bes f' >16 <bes f' >8 <bes f' >8 <f f' >16 <f f' >16 |
   \time 2/4
-  <f f' >8 <f f' >16 <f f' >16 <f f' >8 <f f' >16 <f f' >16 |
-  <<
-    \context Voice = voiceone {
-      \voiceOne
-      \time 4/4
-      <f f' >16\ff <f f' >16 <f f' >8 r4 r4 r8 r8 |
-    }
-    \context Voice = voicetwo {
-      \voiceTwo
-      |
-    }
-  >>
+  <f f' >8\< <f f' >16 <f f' >16 <f f' >8 <f f' >16 <f f' >16 |
+  \time 4/4
+  <f f' >16\ff <f f' >16 <f f' >8 r4 r2\fermata |
+
 }
 
 women_lyr = \lyricmode {
@@ -148,7 +140,7 @@ part-Pfive-two = {
   % 10
   R1 |
   R1 |
-  r8 <bes, f >16\p <bes, f >16 <bes, f >8 <bes, f >16 <bes, f >16 <bes, f
+  r8 <bes, f >16\poco-mf <bes, f >16 <bes, f >8 <bes, f >16 <bes, f >16 <bes, f
   >16 <bes, f >16 <bes, f >8 <bes, f >8 <bes, f >16 <bes, f >16 |
   <bes, f >8 <bes, f >16 <bes, f >16 <bes, f >8 <bes, f >16 <bes, f >16
   <bes, f >16 <bes, f >16 <bes, f >8 <bes, f >8 <bes, f >16 <bes, f >16 |
@@ -192,15 +184,16 @@ part-Pfive-two = {
   R1 |
   % 40
   R1 |
-  r8 <bes, f >16\p <bes, f >16 <bes, f >8 <bes, f >16 <bes, f >16 <bes, f
+  r8 <bes, f >16\poco-mf <bes, f >16 <bes, f >8 <bes, f >16 <bes, f >16 <bes, f
   >16 <bes, f >16 <bes, f >8 <bes, f >8 <bes, f >16 <bes, f >16 |
   <bes, f >8 <bes, f >16 <bes, f >16 <bes, f >8 <bes, f >16 <bes, f >16
   <bes, f >16 <bes, f >16 <bes, f >8 <bes, f >8 <bes, f >16 <bes, f >16 |
-  R1 |
-  r8 <f, f >16 <f, f >16 <f, f >8 <f, f >16 <f, f >16 <f, f >16 <f, f >16
+  <f, f >8 <f, f >16 <f, f >16 <f, f >8 <f, f >16 <f, f >16 <f, f >16 <f, f
+  >16 <f, f >8 <f, f >8 <f, f >16 <f, f >16 |
+  <f, f >8 <f, f >16 <f, f >16 <f, f >8 <f, f >16 <f, f >16 <f, f >16 <f, f >16
   <f, f >8 <f, f >8 <f, f >16 <f, f >16 |
   % 45
-  r8 <f, f >16 <f, f >16 <f, f >8 <f, f >16 <f, f >16 <f, f >16 <f, f >16
+  <f, f >8 <f, f >16 <f, f >16 <f, f >8 <f, f >16 <f, f >16 <f, f >16 <f, f >16
   <f, f >8 <f, f >8 <f, f >16 <f, f >16 |
   \time 4/4
   <f, f >8 <f, f >16 <f, f >16 <f, f >8 <f, f >16 <f, f >16 <f, f >16 <f, f
@@ -211,7 +204,7 @@ part-Pfive-two = {
   <bes, f >8 <bes, f >16 <bes, f >16 <bes, f >8 <bes, f >16 <bes, f >16
   <bes, f >16 <bes, f >16 <bes, f >8 <bes, f >8 <bes, f >16 <bes, f >16 |
   \time 4/4
-  r8 <bes, f >16\p <bes, f >16 <bes, f >8 <bes, f >16 <bes, f >16 <bes, f
+  <bes, f >8\p\cresc <bes, f >16 <bes, f >16 <bes, f >8 <bes, f >16 <bes, f >16 <bes, f
   >16 <bes, f >16 <bes, f >8 <bes, f >8 <bes, f >16 <bes, f >16 |
   % 50
   <bes, f >8 <bes, f >16 <bes, f >16 <bes, f >8 <bes, f >16 <bes, f >16
@@ -220,7 +213,7 @@ part-Pfive-two = {
   <bes, f >16 <bes, f >16 <bes, f >8 <bes, f >8 <f, f >16 <f, f >16 |
   <f, f >8 <f, f >16 <f, f >16 <f, f >8 <f, f >16 <f, f >16 <f, f >16 <f, f
   >16 <f, f >8 <f, f >8 <f, f >16 <f, f >16 |
-  r8 <f, f >16\mf <f, f >16 <f, f >8 <f, f >16 <f, f >16 <f, f >16 <f, f >16
+  <f, f >8 <f, f >16 <f, f >16 <f, f >8 <f, f >16 <f, f >16 <f, f >16 <f, f >16
   <f, f >8 <f, f >8 <f, f >16 <f, f >16 |
   <f, f >8 <f, f >16 <f, f >16 <f, f >8 <f, f >16 <f, f >16 <f, f >16 <f, f
   >16 <f, f >8 <f, f >8 <f, f >16 <f, f >16 |
@@ -228,9 +221,9 @@ part-Pfive-two = {
   <bes f' >8 <bes f' >16 <bes f' >16 <bes f' >8 <bes f' >16 <bes f' >16 <bes
   f' >16 <bes f' >16 <bes f' >8 <bes f' >8 <f f' >16 <f f' >16 |
   \time 2/4
-  <f f' >8 <f f' >16 <f f' >16 <f f' >8 <f f' >16 <f f' >16 |
+  <f f' >8\< <f f' >16 <f f' >16 <f f' >8 <f f' >16 <f f' >16 |
   \time 4/4
-  <f f' >16 <f f' >16 <f f' >8 r4 r4 r8 r8 |
+  <f f' >16\ff <f f' >16 <f f' >8 r4 r2\fermata |
 }
 
 men_lyr = \lyricmode {
@@ -248,16 +241,17 @@ men_lyr = \lyricmode {
             
   Take a chance, Take a- take a chance- chance, 
   Take a chance, Take a chance, Take a- take a chance- chance,  
-  Take a- Take a chance, Take a- take a chance- chance, 
-  Take a- Take a chance, Take a- take a chance- chance,  
+  Take a chance, Take a chance, Take a- take a chance- chance,
+  Take a- chance, Take a chance, Take a- take a chance- chance, 
+  Take a- chance, Take a chance, Take a- take a chance- chance,  
   Take a chance, Take a chance, Take a- take a chance- chance,  
   Take a chance, Take a chance, 
   Take a chance, Take a chance, Take a- take a chance- chance,  
-  Take a- Take a chance, Take a- take a chance- chance,  
+  Take a- chance, Take a chance, Take a- take a chance- chance,  
   Take a chance, Take a chance, Take a- take a chance- chance,   
   Take a chance, Take a chance, Take a- take a chance- chance,  
   Take a chance, Take a chance, Take a- take a chance- chance,  
-  Take a- Take a chance, Take a- take a chance- chance, 
+  Take a- chance, Take a chance, Take a- take a chance- chance, 
   Take a chance, Take a chance, Take a- take a chance- chance,  
   Take a chance, Take a chance, Take a- take a chance- chance,  
   Take a chance, Take a chance, Take a- take a chance!
