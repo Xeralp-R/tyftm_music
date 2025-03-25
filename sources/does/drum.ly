@@ -193,25 +193,25 @@ part-Ponefour-one = \drummode {
       bd4 <bd sn >4 bd4 sn4 |
       bd4 <bd sn >4 bd4 sn4 |
       bd4\! <bd sn >8 bd8~ bd8 <bd sn >4.-> |
-      bd4 <bd sn >8 bd8( bd4) <bd sn >4 |
+      bd4 <bd sn >8 bd8~ bd4 <bd sn >4 |
       % 40
-      bd4 <bd sn >8 bd8( bd4) <bd sn >4 |
-      bd4 <bd sn >4 <bd sn >8 <bd sn >4 |
-      bd4 <bd sn >4 <bd sn >8 <bd sn >4 |
+      bd4 <bd sn >8 bd8~ bd4 <bd sn >4 |
+      bd4 <bd sn >4 r8 <bd sn >8 <bd sn >4 |
+      bd4 <bd sn >4 r8 <bd sn >8 <bd sn >4 |
       bd4 <bd sn >4 bd4 sn4 |
       bd4 <bd sn >4 bd2 |
       % 45
-      bd4 <bd sn >8 bd8( bd4) <bd sn >4 |
-      bd4 <bd sn >8 bd8( bd4) <bd sn >4 |
-      bd4 <bd sn >4 <bd sn >8 <bd sn >4 |
-      bd4 <bd sn >4 <bd sn >8 <bd sn >4 |
+      bd4 <bd sn >8 bd8~ bd4 <bd sn >4 |
+      bd4 <bd sn >8 bd8~ bd4 <bd sn >4 |
+      bd4 <bd sn >4 r8 <bd sn >8 <bd sn >4 |
+      bd4 <bd sn >4 r8 <bd sn >8 <bd sn >4 |
       bd4 <bd sn >4 bd4 sn4 |
       % 50
       bd4\! <bd sn >4 bd2 |
       bd4. <bd sn >8~~ <bd sn >4. <bd sn >8~~ |
       <bd sn >4. <bd sn >8~~ <bd sn >4. <bd sn >8~~ |
       <bd sn >4. <bd sn >8~~ <bd sn >4. <bd sn >8 |
-      <bd sn >2 <bd sn >8 <bd sn >8 |
+      r4 <bd sn >2 <bd sn >8 <bd sn >8 |
       % 55
       r8 r8 r8 <bd sn >8~~ <bd sn >4 <bd sn >4 |
       bd4 <bd sn >4 bd4 <bd sn >4 |

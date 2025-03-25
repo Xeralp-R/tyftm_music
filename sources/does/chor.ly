@@ -182,9 +182,9 @@ part-Peight-one = {
   <bes' ees'' >4 <bes' ees'' >8 <bes' ees'' >8 <bes' ees'' >8 <bes' ees''
   >8( <a' c'' >8) <bes' ees'' >8 |
   <bes' ees'' >8 <a' c'' >8 <bes' ees'' >8 <bes' ees'' >8 <bes' ees'' >8
-  <bes' ees'' >8 <a' c'' >8 <bes' ees'' >8~~ |
+  <bes' ees'' >8 <a' c'' >8( <bes' ees'' >8~~ |
   % 110
-  <bes' ees'' >8 <bes' ees'' >8 <a' c'' >8( <f' a' >8) <bes' ees'' >8 <bes'
+  <bes' ees'' >8) <bes' ees'' >8 <a' c'' >8 <f' a' >8 <bes' ees'' >8 <bes'
   ees'' >8 <bes' ees'' >8 <a' d'' >8( |
   <f' bes' >8) <bes' ees'' >8 <g' bes' >8 <f' a' >8 <bes' ees'' >8 <g' bes'
   >8 <f' a' >8 <g' des'' >8~~ |
@@ -346,9 +346,65 @@ part-Pnine-one = {
   a8 g8 a8 a8 a8 a8 g8 g8~ |
   % 110
   g8 f8 a8 a8 g8( f8) ees8 d8~ |
-  d4 r4 r4 r8 bes8~ |
+  d4 r4 r4 r8 << \new Voice = "voiceone" {bes8~ |
   bes8-\markup { \italic "cresc." } bes8 des'8 ees'8 bes8 des'8 ees'8 d'8~ |
-  d'8 r8 r4 r8 r8 r8 ees'8~ |
+  d'8 } \context Lyrics = "b_lyr" 
+  \lyricsto "voiceone" {Does your mo -- ther know that you're out?}>> 
+  r8 r4 r8 r8 r8 ees'8~ |
   ees'8\< ees'8 ees'8 ees'8 c'8 aes8 a8 bes8\!\sffz |
   % 115
+}
+
+women_lyr = \lyricmode {
+  Take it ea -- sy, 
+  Bet -- ter slow down, girl, 
+  That's no way to
+  go, 
+  Does your mo -- ther know? 
+  Take it ea -- sy, Try to
+  cool down, girl, Play it nice and slow, 
+  Does your mo --
+  ther know? 
+
+  Seem pre -- tty young to be search -- ing for that
+  kind of fun, 
+  Know what you mean when you give me a flash of
+  that smile, 
+  Well I could dance with you, ho -- ney,
+  If you think it's fun -- ny, but 
+  Does your mo -- ther
+  know that you're out? 
+  And I could chat with you ba -- by,
+  Flirt a lit -- tle, may -- be, but 
+  Does your mo -- ther know that you're out? 
+
+  Take it ea -- sy, 
+  Bet -- ter slow down, girl, 
+  That's no way to
+  go, 
+  Does your mo -- ther know? 
+  Take it ea -- sy, Try to
+  cool down, girl, Play it nice and slow, 
+  Does your mo --
+  ther know? 
+
+  Well I could dance with you, ho -- ney,
+  If you think it's fun -- ny, but 
+  Does your mo -- ther
+  know that you're out? 
+  And I could chat with you ba -- by,
+  Flirt a lit -- tle, may -- be, but 
+  Does your mo -- ther know that you're out? 
+  Well I could dance with you, ho -- ney,
+  If you think it's fun -- ny, but 
+  Does your mo -- ther
+  know that you're out? 
+  And I could chat with you ba -- by,
+  Flirt a lit -- tle, may -- be, but 
+  Does your mo -- ther know that you're out? 
+
+  Your mot -- her know that you're out? 
+  Does your mot -- her know that you're, 
+  Does your mot -- her know that
+  you're out?
 }

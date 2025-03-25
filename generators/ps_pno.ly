@@ -23,7 +23,7 @@
 \book {
   \header {
     tagline = ##f
-    part = "Electric Keyboard"
+    part = "Piano"
   }
 
   \bookpart {
@@ -52,7 +52,7 @@
         \vspace #2
 
         \fill-line \huge \larger \larger {
-          "Electric Keyboard Part Score"
+          "Piano Part Score"
         }
       }
     }
@@ -70,7 +70,7 @@
       \overture_header
     }
     \score {
-      \keepWithTag #'(e_kbd nonchor) \overture
+      \keepWithTag #'(pno piano nonchor) \overture
 
       \layout {}
     }
@@ -83,7 +83,7 @@
       \prelude_header
     }
     \score {
-      \keepWithTag #'(e_kbd nonchor) \prelude
+      \keepWithTag #'(pno piano nonchor) \prelude
 
       \layout {}
     }
@@ -95,12 +95,10 @@
     \header {
       \honey_honey_header
     }
-    \markup {
-      \vspace #14
+    \score {
+      \keepWithTag #'(pno piano nonchor) \honey_honey
 
-      \fill-line {
-        "Tacet"
-      }
+      \layout {}
     }
   }
 
@@ -110,12 +108,10 @@
     \header {
       \our_last_summer_header
     }
-    \markup {
-      \vspace #14
+    \score {
+      \keepWithTag #'(pno piano nonchor) \our_last_summer
 
-      \fill-line {
-        "Tacet"
-      }
+      \layout {}
     }
   }
 
@@ -126,7 +122,7 @@
       \mamma_mia_header
     }
     \score {
-      \keepWithTag #'(e_kbd nonchor) \mamma_mia
+      \keepWithTag #'(pno piano nonchor) \mamma_mia
 
       \layout {}
     }
@@ -139,7 +135,7 @@
       \chiquitita_header
     }
     \score {
-      \keepWithTag #'(e_kbd nonchor) \chiquitita
+      \keepWithTag #'(pno piano nonchor) \chiquitita
 
       \layout {}
     }
@@ -152,7 +148,7 @@
       \dancing_queen_header
     }
     \score {
-      \keepWithTag #'(e_kbd nonchor) \dancing_queen
+      \keepWithTag #'(pno piano nonchor) \dancing_queen
 
       \layout {}
     }
@@ -165,7 +161,7 @@
       \super_trouper_header
     }
     \score {
-      \keepWithTag #'(e_kbd nonchor) \super_trouper
+      \keepWithTag #'(pno piano nonchor) \super_trouper
 
       \layout {}
     }
@@ -178,7 +174,7 @@
       \gimme_iiix_header
     }
     \score {
-      \keepWithTag #'(e_kbd nonchor) \gimme_iiix
+      \keepWithTag #'(pno piano nonchor) \gimme_iiix
 
       \layout {}
     }
@@ -190,10 +186,12 @@
     \header {
       \voulez_vous_header
     }
-    \score {
-      \keepWithTag #'(e_kbd nonchor) \voulez_vous
+    \markup {
+      \vspace #14
 
-      \layout {}
+      \fill-line {
+        "Tacet"
+      }
     }
   }
 
@@ -205,7 +203,7 @@
       \dymk_header
     }
     \score {
-      \keepWithTag #'(e_kbd nonchor) \dymk
+      \keepWithTag #'(pno piano nonchor) \dymk
 
       \layout {}
     }
@@ -218,7 +216,7 @@
       \knowing_me_header
     }
     \score {
-      \keepWithTag #'(e_kbd nonchor) \knowing_me
+      \keepWithTag #'(pno piano nonchor) \knowing_me
 
       \layout {}
     }
@@ -230,12 +228,10 @@
     \header {
       \tyftm_header
     }
-    \markup {
-      \vspace #14
+    \score {
+      \keepWithTag #'(pno piano nonchor) \tyftm
 
-      \fill-line {
-        "Tacet"
-      }
+      \layout {}
     }
   }
 
@@ -246,7 +242,7 @@
       \waterloo_header
     }
     \score {
-      \keepWithTag #'(e_kbd nonchor) \waterloo
+      \keepWithTag #'(pno piano nonchor) \waterloo
 
       \layout {}
     }

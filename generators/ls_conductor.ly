@@ -14,7 +14,7 @@
 \include "../sources/gimme_gimme_gimme.ly"
 \include "../sources/thank_you_for_the_music.ly"
 \include "../sources/knowing_me.ly"
-\include "../sources/under_attack.ly"
+\include "../sources/does_your_mother_know.ly"
 
 \pointAndClickOff
 
@@ -230,6 +230,19 @@
     }
   }
 
+
+  \bookpart {
+    \tocItem ii.dymk \markup { "16. Does Your Mother Know" }
+
+    \header {
+      \dymk_header
+    }
+    \score {
+      \dymk
+
+      \layout {}
+    }
+  }
 
   \bookpart {
     \tocItem ii.kmky \markup { "17. Knowing Me, Knowing You" }

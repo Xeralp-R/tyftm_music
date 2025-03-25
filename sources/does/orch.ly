@@ -2,10 +2,10 @@ part-Pone-one = {
   \key bes \major
   \time 4/4
   \clef treble
-  r4\< d''8 ees''8 d''8 bes'8~ bes'8 d''8 |
-  r8\p ees''8 d''8 ees''8 d''8 bes'8 bes'4 |
-  r4 d''8 ees''8 d''8 bes'8~ bes'8 d''8 |
+  r4 d''8\p\< ees''8 d''8 bes'8~ bes'8 d''8 |
   r8 ees''8 d''8 ees''8 d''8 bes'8 bes'4 |
+  r4 d''8 ees''8 d''8 bes'8~ bes'8 d''8 |
+  r8 ees''8 d''8 ees''8 d''8 bes'8 bes'4\! |
   R1 |
   % 5
   r2 r8 g''8-.->\f g''8-.-> g''8-.-> |
@@ -162,8 +162,8 @@ part-Ptwo-one = {
   \clef treble
   R1 |
   R1 |
-  r4\p d''8 ees''8 d''8 bes'8~ bes'8 d''8 |
-  r8 ees''8 d''8 ees''8 d''8 bes'8 bes'4 |
+  r4\mp\< d''8 ees''8 d''8 bes'8~ bes'8 d''8 |
+  r8 ees''8 d''8 ees''8 d''8 bes'8 bes'4\! |
   R1 |
   % 5
   R1 |

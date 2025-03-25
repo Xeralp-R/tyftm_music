@@ -130,7 +130,7 @@ part-Pseven-one = {
   R1 |
   % 95
   R1 |
-  g'2\scoop\f r8 bes'8 c''8 d''8~\scoop |
+  g'2\f \scoop r8 bes'8 c''8 d''8~\scoop |
   d''2 r8 bes'8 c''8 des''8~ |
   des''8 des''8 c''8 bes'8 des''8 bes'8 bes'8 aes'8~ |
   aes'4. bes'8~\scoop bes'4 r4 |
@@ -139,7 +139,7 @@ part-Pseven-one = {
   des''2 r8 bes'8 c''8 des''8~ |
   des''8 des''8 c''8 bes'8 des''8 bes'8 bes'8 aes'8~ |
   aes'4. bes'8~\scoop bes'4 r4 |
-  g'2\scoop\ff r8 bes'8 c''8 d''8~\scoop |
+  g'2\ff \scoop r8 bes'8 c''8 d''8~\scoop |
   % 105
   d''2 r8 bes'8 c''8 des''8~ |
   des''8 des''8 c''8 bes'8 des''8 bes'8 bes'8 aes'8~ |
@@ -155,3 +155,20 @@ part-Pseven-one = {
   des''8\< des''8 c''8 bes'8 c''8 aes'8 a'8 bes'8\!\sffz |
   % 115
 }
+
+al_lyr = \lyricmode {
+    Dance! 
+    I could dance, Ho -- ney, 
+    Does your mot -- her
+    know that you're out? 
+    Yea!  Chat, 
+    I could flirt,
+    ho -- ney, Does your mot -- her know that you're
+    out? Yea!  
+    Dance, I could dance, Ho -- ney,
+    Does your mot -- her know that you're out? Yea!
+     Chat, I could flirt, Ho -- ney, Does your mot --
+    her know that you're out? Yea!  Does your
+    mot -- her know that you're out? Does your mot --
+    her know that you're out!
+    }

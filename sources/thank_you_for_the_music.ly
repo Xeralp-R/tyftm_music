@@ -41,7 +41,7 @@ tyftm = <<
     \tyftm_marks
   >>
 
-  \tag #'(chor soli sophie)
+  \tag #'(chor soli sophie pno)
   \new Staff \with {
     shortInstrumentName = "S."
     instrumentName = "Sophie"

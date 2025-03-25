@@ -23,7 +23,7 @@
 \book {
   \header {
     tagline = ##f
-    part = "Electric Keyboard"
+    part = "Drums"
   }
 
   \bookpart {
@@ -52,7 +52,7 @@
         \vspace #2
 
         \fill-line \huge \larger \larger {
-          "Electric Keyboard Part Score"
+          "Drums Part Score"
         }
       }
     }
@@ -70,7 +70,7 @@
       \overture_header
     }
     \score {
-      \keepWithTag #'(e_kbd nonchor) \overture
+      \keepWithTag #'(drum a_perc aperc nonchor) \overture
 
       \layout {}
     }
@@ -82,10 +82,12 @@
     \header {
       \prelude_header
     }
-    \score {
-      \keepWithTag #'(e_kbd nonchor) \prelude
+    \markup {
+      \vspace #14
 
-      \layout {}
+      \fill-line {
+        "Tacet"
+      }
     }
   }
 
@@ -95,12 +97,10 @@
     \header {
       \honey_honey_header
     }
-    \markup {
-      \vspace #14
+    \score {
+      \keepWithTag #'(drum a_perc aperc nonchor) \honey_honey
 
-      \fill-line {
-        "Tacet"
-      }
+      \layout {}
     }
   }
 
@@ -110,12 +110,10 @@
     \header {
       \our_last_summer_header
     }
-    \markup {
-      \vspace #14
+    \score {
+      \keepWithTag #'(drum a_perc aperc nonchor) \our_last_summer
 
-      \fill-line {
-        "Tacet"
-      }
+      \layout {}
     }
   }
 
@@ -126,7 +124,7 @@
       \mamma_mia_header
     }
     \score {
-      \keepWithTag #'(e_kbd nonchor) \mamma_mia
+      \keepWithTag #'(drum a_perc aperc nonchor) \mamma_mia
 
       \layout {}
     }
@@ -139,7 +137,7 @@
       \chiquitita_header
     }
     \score {
-      \keepWithTag #'(e_kbd nonchor) \chiquitita
+      \keepWithTag #'(drum a_perc aperc nonchor) \chiquitita
 
       \layout {}
     }
@@ -152,7 +150,7 @@
       \dancing_queen_header
     }
     \score {
-      \keepWithTag #'(e_kbd nonchor) \dancing_queen
+      \keepWithTag #'(drum a_perc aperc nonchor) \dancing_queen
 
       \layout {}
     }
@@ -165,7 +163,7 @@
       \super_trouper_header
     }
     \score {
-      \keepWithTag #'(e_kbd nonchor) \super_trouper
+      \keepWithTag #'(drum a_perc aperc nonchor) \super_trouper
 
       \layout {}
     }
@@ -178,7 +176,7 @@
       \gimme_iiix_header
     }
     \score {
-      \keepWithTag #'(e_kbd nonchor) \gimme_iiix
+      \keepWithTag #'(drum a_perc aperc nonchor) \gimme_iiix
 
       \layout {}
     }
@@ -191,7 +189,7 @@
       \voulez_vous_header
     }
     \score {
-      \keepWithTag #'(e_kbd nonchor) \voulez_vous
+      \keepWithTag #'(drum a_perc aperc nonchor) \voulez_vous
 
       \layout {}
     }
@@ -205,7 +203,7 @@
       \dymk_header
     }
     \score {
-      \keepWithTag #'(e_kbd nonchor) \dymk
+      \keepWithTag #'(drum a_perc aperc nonchor) \dymk
 
       \layout {}
     }
@@ -218,7 +216,7 @@
       \knowing_me_header
     }
     \score {
-      \keepWithTag #'(e_kbd nonchor) \knowing_me
+      \keepWithTag #'(drum a_perc aperc nonchor) \knowing_me
 
       \layout {}
     }
@@ -246,7 +244,7 @@
       \waterloo_header
     }
     \score {
-      \keepWithTag #'(e_kbd nonchor) \waterloo
+      \keepWithTag #'(drum a_perc aperc nonchor) \waterloo
 
       \layout {}
     }

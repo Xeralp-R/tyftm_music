@@ -164,19 +164,9 @@ part-Ponezero-one = {
   <bes' ees'' >8 <a' c'' >8 <bes' ees'' >8~~ |
   <bes' ees'' >8 <bes' ees'' >8 <a' c'' >8( <f' a' >8) <bes' ees'' >8 <bes'
   ees'' >8 <bes' ees'' >8 <a' d'' >8( |
-  <<
-    \context Voice = "voiceone" {
-      \voiceOne
-      <f' bes' >8) r8 r4 r8 <bes' d'' >8 <a' c'' >8 <bes' d'' >8 |
-      <bes' ees'' >4 <bes' ees'' >8 <bes' ees'' >8 <bes' ees'' >8 <bes'
-      ees'' >8( <a' c'' >8) <bes' ees'' >8 |
-    }
-    \context Voice = "voicetwo" {
-      \voiceTwo
-      |
-      |
-    }
-  >>
+  <f' bes' >8) r8 r4 r8 <bes' d'' >8 <a' c'' >8 <bes' d'' >8 |
+  <bes' ees'' >4 <bes' ees'' >8 <bes' ees'' >8 <bes' ees'' >8 <bes'
+  ees'' >8( <a' c'' >8) <bes' ees'' >8 |
   <bes' ees'' >8 <a' c'' >8 <bes' ees'' >8 <bes' ees'' >8 <bes' ees'' >8
   <bes' ees'' >8 <a' c'' >8 <bes' ees'' >8~~ |
   % 110
