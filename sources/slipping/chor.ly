@@ -2,6 +2,7 @@ part-Pseven-one = {
   \key f \major
   \time 4/4
   \clef treble
+  \dynamicUp 
   R1 |
   R1 |
   R1 |
@@ -94,6 +95,7 @@ part-Peight-one = {
   \key f \major
   \time 4/4
   \clef treble
+  \dynamicUp
   R1 |
   R1 |
   R1 |

@@ -10,22 +10,22 @@ part-Pfive-one = {
   R2 |
   % 5
   \time 4/4
-  dis'8 e'8 a'8 e'8 a'8 e'8 dis'8 e'8 |
+  dis'8\mp  e'8 a'8 e'8 a'8 e'8 dis'8 e'8 |
   r8 a'8 e'8 dis'8 r2 |
   dis'8 e'8 a'8 e'8 a'8 e'8 r8 dis'8~ |
-  dis'8 r4 b8 cis'8 dis'8 e'8 fis'8 |
-  gis'8 e'8 a'8 fis'8 b'4 a'4~ |
+  dis'8 r4 b8 \< cis'8 dis'8 e'8 fis'8 |
+  gis'8 \f e'8 a'8 fis'8 b'4 a'4~ |
   % 10
   a'8 gis'8 fis'8 fis'4 gis'8 a'8 gis'8 |
   R1 |
-  dis'8 e'8 a'8 e'8 a'8 e'8 dis'8 e'8 |
+  dis'8 \sub-p e'8 a'8 e'8 a'8 e'8 dis'8 e'8 |
   r8 a'8 e'8 dis'8 r2 |
   dis'8 e'8 a'8 e'8 a'8 e'4 dis'8~ |
   % 15
-  dis'8 r4 b8 cis'8 dis'8 e'8 fis'8 |
-  gis'8 e'8 a'8 fis'8 b'4 a'4~ |
+  dis'8 r4 b8 cis'8 \< dis'8 e'8 fis'8 |
+  gis'8 \f e'8 a'8 fis'8 b'4 a'4~ |
   a'8 gis'8 fis'8 e'4 gis'8 fis'8( e'8) |
-  e'8 b'8 b'8 b'8 b'4 r8 b'8 |
+  e'8 \f b'8 b'8 b'8 b'4 r8 b'8 |
   b'8 cis''4 b'4( a'8) a'8( gis'8) |
   % 20
   r8 gis'8 gis'8 gis'8 gis'4 r8 gis'8 |
@@ -35,31 +35,31 @@ part-Pfive-one = {
   e'8 dis'8 cis'8 cis'4 fis'8 gis'8 a'8~ |
   % 25
   a'8 gis'8 fis'8 fis'8~ fis'4 r4 |
-  r8 b'8 b'8 b'8 b'4 r8 b'8 |
+  r8 b'8 \f b'8 b'8 b'4 r8 b'8 |
   b'8 cis''4 b'4( a'8) a'8( gis'8) |
   r8 gis'8 gis'8 gis'8 gis'4 r8 gis'8 |
   gis'4 a'8 gis'4( fis'8) fis'8( e'8) |
   % 30
   r8 cis'8 dis'8 e'4 dis'8 cis'4 |
   b8 b'8 r8 gis'8 r8 cis'8 dis'8 e'8~ |
-  e'8 dis'8 cis'8 cis'4 fis'8 gis'8 a'8~ |
-  a'8 gis'8 fis'8 fis'8~ fis'4 r4 |
-  gis'2. r4 |
+  e'8 dis'8 cis'8 cis'4 fis'8 gis'8 (a'8~) |
+  a'8 gis'8 fis'8 fis'8~ fis'2( |
+  gis'2.) r4 |
   % 35
-  dis'8 e'8 a'8 e'8 a'8 e'8 dis'8 e'8 |
+  dis'8 \mp e'8 a'8 e'8 a'8 e'8 dis'8 e'8 |
   r8 a'8 e'8 dis'8 r2 |
   dis'8 e'8 a'8 e'8 a'8( e'8) e'8 dis'8~ |
-  dis'8 r4 b8 cis'8 dis'8 e'8 fis'8 |
-  gis'8 e'8 a'8 fis'8 b'4 a'4 |
+  dis'8 r4 b8 cis'8\< dis'8 e'8 fis'8 |
+  gis'8\f e'8 a'8 fis'8 b'4 a'4 |
   % 40
   r8 gis'8 fis'8 fis'4 gis'8 a'8 gis'8~ |
   gis'4 r4 r2 |
-  dis'8 e'8 a'8 e'8 a'8 e'8 dis'8 e'8 |
+  dis'8 \mp e'8 a'8 e'8 a'8 e'8 dis'8 e'8 |
   r8 a'8 e'8 dis'8 r2 |
   dis'8 e'8 a'8 e'8 a'8 e'4 dis'8~ |
   % 45
-  dis'8 r4 b8 cis'8 dis'8 e'8 fis'8 |
-  gis'8 e'8 a'8 fis'8 b'4 a'4 |
+  dis'8 r4 b8 cis'8 \< dis'8 e'8 fis'8 |
+  gis'8\f e'8 a'8 fis'8 b'4 a'4 |
   r8 gis'8 fis'8 e'4 gis'8 fis'8( e'8) |
   e'8 b'8 b'8 b'8 b'4 r8 b'8 |
   b'8 cis''4 b'4( a'8) a'8( gis'8) |
@@ -79,10 +79,10 @@ part-Pfive-one = {
   r8 cis'8 dis'8 e'4 dis'8 cis'4 |
   b8 b'8 r8 gis'8 r8 cis'8 dis'8 e'8~ |
   e'8 dis'8 cis'8 cis'4 dis'8 cis'8( b8) |
-  b8 gis'8( fis'8) gis'8~\fp\< gis'2~ |
+  b8 gis'8( fis'8) gis'8~ gis'2~ |
   gis'1~ |
   % 65
-  gis'1 |
+  gis'1\piu-p  |
   R1 |
   R1 |
   R1 |
@@ -166,7 +166,7 @@ sophie_lyr = \lyricmode {
   I've got no -- where to go.  
 
   Yes its what I wan -- ted, but I'm scared as hell, 
-  Star -- ing down the deep -- est wel would hap -- pen, 
+  Star -- ing down the deep -- est well I hard -- ly dare to think of what would hap -- pen, 
   Where I'd be if I fell 
 
   Un -- der at -- tack 

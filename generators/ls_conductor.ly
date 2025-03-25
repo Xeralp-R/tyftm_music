@@ -14,6 +14,9 @@
 \include "../sources/gimme_gimme_gimme.ly"
 \include "../sources/thank_you_for_the_music.ly"
 \include "../sources/knowing_me.ly"
+\include "../sources/does_your_mother_know.ly"
+\include "../sources/slipping_through_my_fingers.ly"
+\include "../sources/under_attack.ly"
 
 \pointAndClickOff
 
@@ -214,7 +217,34 @@
       }
     }
   }
-  \bookpart { \blank_page }
+
+
+  \bookpart {
+    \tocItem ii.ua \markup { "14. Under Attack" }
+
+    \header {
+      \ua_header
+    }
+    \score {
+      \under_attack
+
+      \layout {}
+    }
+  }
+
+
+  \bookpart {
+    \tocItem ii.dymk \markup { "16. Does Your Mother Know" }
+
+    \header {
+      \dymk_header
+    }
+    \score {
+      \dymk
+
+      \layout {}
+    }
+  }
 
   \bookpart {
     \tocItem ii.kmky \markup { "17. Knowing Me, Knowing You" }
@@ -224,6 +254,19 @@
     }
     \score {
       \knowing_me
+
+      \layout {}
+    }
+  }
+
+  \bookpart {
+    \tocItem ii.sl \markup { "18. Slipping Through My Fingers" }
+
+    \header {
+      \slipping_header
+    }
+    \score {
+      \slipping
 
       \layout {}
     }

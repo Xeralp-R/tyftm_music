@@ -2,39 +2,10 @@ package lymanip
 
 import (
 	//"fmt"
-	"os"
-	"errors"
-
-	// need this import just to have text input?
-	"github.com/charmbracelet/bubbles/textinput"
-	"github.com/charmbracelet/lipgloss"
 	tea "github.com/charmbracelet/bubbletea"
+	"github.com/charmbracelet/bubbles/textinput"
 )
 
-// General stuff for styling the view: adapted elsewhere
-var (
-	//keywordStyle  = lipgloss.NewStyle().Foreground(lipgloss.Color("211"))
-	titleStyle = lipgloss.NewStyle().Bold(true).Foreground(lipgloss.Color("0")).
-	             Background(lipgloss.Color("79")).Padding(2).Width(40).Align(lipgloss.Center).
-	             BorderStyle(lipgloss.RoundedBorder())
-	subtleStyle   = lipgloss.NewStyle().Foreground(lipgloss.Color("241"))
-	//ticksStyle    = lipgloss.NewStyle().Foreground(lipgloss.Color("79"))
-	//checkboxStyle = lipgloss.NewStyle().Foreground(lipgloss.Color("212"))
-	//progressEmpty = subtleStyle.Render(progressEmptyChar)
-	//dotStyle      = lipgloss.NewStyle().Foreground(lipgloss.Color("236")).Render(dotChar)
-	mainStyle     = lipgloss.NewStyle().MarginLeft(2)
-
-	mainBoxStyle = lipgloss.NewStyle().BorderStyle(lipgloss.RoundedBorder()).
-	               BorderForeground(lipgloss.Color("99")).Width(80-3).Align(lipgloss.Center)
-
-	boxHeaderStyle = lipgloss.NewStyle().Foreground(lipgloss.Color("135"))
-	boxTitleStyle = lipgloss.NewStyle().Foreground(lipgloss.Color("222"))
-	boxTitleBoldStyle = lipgloss.NewStyle().Inherit(boxTitleStyle).Bold(true)
-	boxContentStyle = lipgloss.NewStyle().Inherit(boxHeaderStyle)
-
-	// Gradient colors we'll use for the progress bar
-	//ramp = makeRampStyles("#B14FFF", "#00FFA3", progressBarWidth)
-)
 
 type manipModelView int
 
@@ -43,32 +14,6 @@ const (
 	ManipScreen
 	Quit
 )
-
-type FileSelectorData struct {
-	IsFileSelected bool
-	FileTextInput textinput.Model
-	IsFolderSelected bool
-	FolderTextInput textinput.Model
-	Message string
-
-	SelectedFile *os.File
-	SelectedFolder string
-}
-
-func (fsd *FileSelectorData) verifyFileCorrect() {
-	var err error
-	fsd.SelectedFile, err = os.Open(fsd.FileTextInput.Value())
-	if errors.Is(err, os.ErrNotExist) {
-		fsd.IsFileSelected = false
-		fsd.Message = "invalid file; try again."
-		return
-	}
-	fsd.IsFileSelected = true
-	fsd.FileTextInput.Blur() // defocus
-	fsd.Message = "esc to quit. enter folder path to proceed."
-
-	fsd.FolderTextInput.Focus()
-}
 
 type ManipModel struct {
 	CurrentView     manipModelView
@@ -82,27 +27,9 @@ type ManipModel struct {
 }
 
 func MakeManipModel() ManipModel  {
-	flti := textinput.New()
-	flti.Placeholder = "Enter your complete filepath, from /."
-	flti.Focus()
-	flti.CharLimit = 512
-	flti.Width = 40
-	flti.Prompt = "File: "
-
-	fdti := textinput.New()
-	fdti.CharLimit = 512
-	fdti.Width = 40
-	fdti.Prompt = "Folder: "
-
 	return ManipModel {
 		CurrentView: FileSelector,
-		View1: FileSelectorData {
-			IsFileSelected: false,
-			FileTextInput: flti,
-			IsFolderSelected: false,
-			FolderTextInput: fdti,
-			Message: "esc to quit. enter name to proceed.",
-		},
+		View1: makeFileSelectorData(),
 	}
 }
 
@@ -135,7 +62,18 @@ func (m ManipModel) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 			}
 			return m, cmd
 		}
+		m.View1.FolderTextInput, cmd = m.View1.FolderTextInput.Update(msg)
+		if k == "enter" {
+			m.View1.verifyFolderCorrect()
+		}
+		if m.View1.IsFolderSelected {
+			m.CurrentView = ManipScreen
+		}
+		return m, cmd
 	}
+
+	// in the manipulation screen:
+
 
 	// no changes
 	return m, cmd
@@ -160,6 +98,14 @@ func (m ManipModel) View() string {
 		boxContentStyle.Render(m.View1.FileTextInput.View()) + "\n" +
 		boxContentStyle.Render(m.View1.FolderTextInput.View() + "\n\n" +
 		subtleStyle.Render(m.View1.Message) + "\n"))
+
+		return output
+	}
+
+	if m.CurrentView == ManipScreen {
+		output := mainBoxStyle.Render(boxHeaderStyle.Render("Manipulate your files!") + "\n" +
+		boxTitleBoldStyle.Render("MANIPULATOR SCREEN") + "\n" +
+		boxTitleStyle.Render("You are currently yielding:") + "\n\n")
 
 		return output
 	}

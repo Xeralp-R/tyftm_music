@@ -3,30 +3,28 @@ part-Ponetwo-one = \drummode {
     {
       \time 4/4
       \clef percussion
-      hh8\mf hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
-      hh8\mf hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
-      hh8\mf hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
-      hh8\mf hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
+      hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 
+      \linear-repeat 1 4 |
+      
       \time 2/4
       hh8 hh8 hh8 hh8 |
       % 5
       \time 4/4
       hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
+      \linear-spanner 1 2 |
       hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
-      hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
-      hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
-      hh1 |
+      hh1 \f |
       % 10
       hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
-      r1 |
+      cymc4 r4 r2 |
       hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
       hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
       hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
       % 15
+      hh8 hh8 hh8 hh8 hh8 \< hh8 hh8 hh8 |
+      hh4 \f hh8 hh8 hh4 hh4 |
       hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
-      hh4 hh8 hh8 hh4 hh4 |
-      hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
-      <hh cymc >8 hh8 <hh cymc >8 hh8 hh8 hh8 hh8 hh8 |
+      <hh cymc >8 \f hh8 <hh cymc >8 hh8 hh8 hh8 hh8 hh8 |
       hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
       % 20
       <hh cymc >8 hh8 <hh cymc >8 hh8 <hh cymc >8 hh8 hh8 hh8 |
@@ -36,7 +34,7 @@ part-Ponetwo-one = \drummode {
       hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
       % 25
       hh8-> hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
-      hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
+      hh8 \f hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
       hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
       hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
       hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
@@ -47,20 +45,20 @@ part-Ponetwo-one = \drummode {
       hh8-> hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
       hh8 hh8 hh8 hh8 hh8 cymc8 cymc8 cymc8 |
       % 35
+      hh8 \mp hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
       hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
       hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
-      hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
-      hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
-      hh1 |
+      hh8 hh8 hh8 hh8 hh8\< hh8 hh8 hh8 |
+      hh1\f |
       % 40
       hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
       r16 r16 r8 r4 r16 r16 r8 hh16 hh16 hh16 hh16 |
-      hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
+      hh8\mp  hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
       hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
       hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
       % 45
-      hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
-      hh4 hh8 hh8 hh4 hh4 |
+      hh8 hh8 hh8 hh8 hh8\< hh8 hh8 hh8 |
+      hh4\f hh8 hh8 hh4 hh4 |
       hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
       <hh cymc >8 hh8 <hh cymc >8 hh8 hh8 hh8 hh8 hh8 |
       hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
@@ -86,15 +84,12 @@ part-Ponetwo-one = \drummode {
     } \\
     {
       \voiceTwo
-      bd4 bd4 bd4 bd4 |
-      bd4 bd4 bd4 bd4 |
-      bd4 bd4 bd4 bd4 |
-      bd4 bd4 bd4 bd4 |
-      bd4 bd4 |
+      bd4\piu-p bd4 bd4 bd4 |
+      s1*3
       % 5
-      bd4 bd4 bd4 bd4 |
-      bd4 bd4 bd4 bd4 |
-      bd4 bd4 bd4 bd4 |
+      bd4 bd4 
+      bd4 bd4 bd4 bd4
+      s1*2
       bd4 bd4 bd4 bd4 |
       <bd cymc >4 bd4 <bd cymc >4 bd4 |
       % 10
@@ -145,19 +140,19 @@ part-Ponetwo-one = \drummode {
       bd4 bd4 bd8 tommh8 <bd tommh >4 |
       bd4 sn4 bd4 <bd sn >4 |
       bd4 sn4 bd4 <bd sn >4 |
-      % 50
+      % 20
       bd4 sn4 bd4 <bd sn >4 |
       bd4 <bd sn >4 bd4 <bd sn >4 |
       bd4 <bd sn >4 bd4 <bd sn >4 |
       bd4 <bd sn >4 bd4 <bd sn >4 |
       bd4 <bd sn >4 bd4 <bd sn >4 |
-      % 55
+      % 25
       bd4 sn8 bd8 bd4 sn4 |
       bd4 <bd sn >4 bd4 <bd sn >4 |
       bd4 <bd sn >4 bd4 <bd sn >4 |
       bd4 <bd sn >4 bd4 <bd sn >4 |
       bd4 <bd sn >4 bd4 <bd sn >4 |
-      % 60
+      % 30
       bd4 <bd sn >4 bd4 <bd sn >4 |
       bd4 <bd sn >4 bd4 <bd sn >4 |
       bd4 <bd sn >4 bd4 <bd sn >4 |
@@ -168,7 +163,7 @@ part-Ponetwo-one = \drummode {
   >>
   hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
   <<
-    { hh8\ff hh8 hh8 hh8 hh8 hh8 hh8 hh8 } \\ {
+    \endSpanners { hh8\ff\cresc hh8 hh8 hh8 hh8 hh8 hh8 hh8 } \\ {
       <bd sn >4. <bd sn
       >4. <bd sn >4
     }
@@ -198,9 +193,9 @@ part-Ponetwo-one = \drummode {
   >>
   hh1\trill\trill\trill\> |
   % 75
-  << { sn1-^\ff } \\ { bd1 } >> |
-  R1 |
-  r2 r8 sn16-> sn16-> <bd sn hh >4-> |
+  < sn bd >1 \ff |
+  r2 r2 |
+  r2 r8 sn16->\sfz sn16-> <bd sn hh >4-> |
   \time 5/4
   r2 r2 <bd sn >4-^ |
   <<
@@ -213,26 +208,26 @@ part-Ponetwo-one = \drummode {
       hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
       hh8-> hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
       hh8-> hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
-      hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
+      hh8\< hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
       % 85
+      <hh cymc >8 \f hh8 <hh cymc >8 hh8 hh8 hh8 hh8 hh8 |
+      hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
+      % 20
+      <hh cymc >8 hh8 <hh cymc >8 hh8 <hh cymc >8 hh8 hh8 hh8 |
       hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
       hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
       hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
       hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
-      hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
-      % 90
-      hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
-      hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
+      % 25
       hh8-> hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
-      hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
-      hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
-      % 95
-      hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
+      hh8 \f hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
       hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
       hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
       hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
+      % 30
       hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
-      % 100
+      hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
+      hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
       hh8-> hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
     }
     \context DrumVoice = "voicetwo" {
@@ -245,30 +240,30 @@ part-Ponetwo-one = \drummode {
       bd4 <bd sn >4 bd4 <bd sn >4 |
       bd8 sn8 <bd sn >4 bd8 sn8 <bd sn >8 sn8 |
       % 85
+      bd4 sn4 bd4 <bd sn >4 |
+      bd4 sn4 bd4 <bd sn >4 |
+      % 20
+      bd4 sn4 bd4 <bd sn >4 |
       bd4 <bd sn >4 bd4 <bd sn >4 |
       bd4 <bd sn >4 bd4 <bd sn >4 |
       bd4 <bd sn >4 bd4 <bd sn >4 |
       bd4 <bd sn >4 bd4 <bd sn >4 |
-      bd4 <bd sn >4 bd4 <bd sn >4 |
-      % 90
-      bd4 <bd sn >4 bd4 <bd sn >4 |
-      bd4 <bd sn >4 bd4 <bd sn >4 |
+      % 25
       bd4 sn8 bd8 bd4 sn4 |
-      bd4 sn8 bd8 bd4 sn4 |
-      bd4 sn8 bd8 bd4 sn4 |
-      % 95
       bd4 <bd sn >4 bd4 <bd sn >4 |
       bd4 <bd sn >4 bd4 <bd sn >4 |
-      bd4 <bd sn >4 bd4 sn4 |
-      bd4 <bd sn >4 bd4 sn4 |
       bd4 <bd sn >4 bd4 <bd sn >4 |
-      % 100
       bd4 <bd sn >4 bd4 <bd sn >4 |
+      % 30
+      bd4 <bd sn >4 bd4 <bd sn >4 |
+      bd4 <bd sn >4 bd4 <bd sn >4 |
+      bd4 <bd sn >4 bd4 <bd sn >4 |
+      bd4 bd4 bd4 bd4 |
     }
   >>
   <bd hh >8 hh8 <bd sn hh >8 sn16 sn16 <bd sn >8 tommh8 <bd tommh >8 toml8 |
   <<
-    { hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 } \\ {
+    { hh8\sub-p hh8 hh8 hh8 hh8 hh8 hh8 hh8 } \\ {
       <bd sn >4. <bd sn
       >4. <bd sn >4
     }
@@ -277,7 +272,7 @@ part-Ponetwo-one = \drummode {
   <<
     \context DrumVoice = "voiceone" {
       \voiceOne
-      hh8-> hh8-> hh8-> r8 r2 |
+      hh8->\f hh8->\f hh8->\f r8 r2\fermata |
       % 105
     }
     \\

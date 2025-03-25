@@ -25,7 +25,7 @@ part-Ponethree-one = \drummode {
       % 15
       ss8 ss8 ss8 ss8 ss8 ss8 ss8 ss8 |
       ss8 ss8 ss8 ss8 ss4 <toml ss >4-> |
-      ss8 ss8 ss8 ss8 ss8 ss8 ss8 ss8 |
+      ss8\p ss8 ss8 ss8 ss8 ss8 ss8 ss8 |
     }
     \context DrumVoice = "voicetwo" {
       \voiceTwo
@@ -36,7 +36,7 @@ part-Ponethree-one = \drummode {
       bd4 r8 bd8 bd4 r4 |
       % 15
       bd4 r8 bd8 bd4 r4 |
-      bd4 ss8 bd8 bd4 |
+      bd4 ss8 bd8 bd4 r4 |
       bd4 r8 bd8 bd4 r4 |
     }
   >>
@@ -55,7 +55,7 @@ part-Ponethree-one = \drummode {
   <<
     \context DrumVoice = "voiceone" {
       \voiceOne
-      hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
+      hh8\p hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
       hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
       hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
     }
@@ -77,9 +77,9 @@ part-Ponethree-one = \drummode {
   <<
     \context DrumVoice = "voiceone" {
       \voiceOne
-      hh8\< hh8 hh8 hh8 hh8 hh8 hh8 r8\! |
+      hh8 hh8 hh8 hh8 hh8 hh8 hh8 r8 |
       % 35
-      hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
+      hh8\ben-mp hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
       hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
       hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
       hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
@@ -87,7 +87,7 @@ part-Ponethree-one = \drummode {
       % 40
       hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
       hh8 hh8 hh8 hh8 hh4 <toml tommh >4-> |
-      hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
+      hh8\p hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
     }
     \context DrumVoice = "voicetwo" {
       \voiceTwo
@@ -100,7 +100,7 @@ part-Ponethree-one = \drummode {
       bd4 sn8 bd8 bd4 sn4 |
       % 40
       bd4 sn8 bd8 bd4 sn4 |
-      bd4 sn8 bd8 bd4 |
+      bd4 sn8 bd8 bd4 r4 |
       bd4 sn8 bd8 bd4 sn8. bd16 |
     }
   >>
@@ -108,14 +108,14 @@ part-Ponethree-one = \drummode {
   bd4 sn4 bd4 sn8. bd16 |
   % 45
   bd4 sn8 bd8 bd4 sn8. bd16 |
+  bd4\poco-f sn8 bd8 bd4 sn8. bd16 |
   bd4 sn8 bd8 bd4 sn8. bd16 |
   bd4 sn8 bd8 bd4 sn8. bd16 |
-  bd4 sn8 bd8 bd4 sn8. bd16 |
-  bd4 sn8 bd8 bd2 |
+  bd4 sn8 bd8 bd2\> |
   % 50
+  R1\! |
   R1 |
-  R1 |
-  R1 |
+  R1\fermata |
 }
 
 part-Ponefour-one = \drummode {
@@ -141,7 +141,7 @@ part-Ponefour-one = \drummode {
   % 15
   r4 tamb4 r4 tamb4 |
   r4 tamb4 r2 |
-  r4 tamb4 r4 tamb4 |
+  r4 tamb4\p r4 tamb4 |
   r4 tamb4 r4 tamb4 |
   r4 tamb4 r4 tamb4 |
   % 20
@@ -154,7 +154,7 @@ part-Ponefour-one = \drummode {
   % 25
   \time 4/4
   R1 |
-  r4 tamb4 r4 tamb4 |
+  r4 tamb4\p r4 tamb4 |
   r4 tamb4 r4 tamb4 |
   r4 tamb4 r4 tamb4 |
   \time 2/4
@@ -167,7 +167,7 @@ part-Ponefour-one = \drummode {
   r4 tamb4 r4 tamb4 |
   r4 tamb4 r4 tamb4 |
   % 35
-  r4 tamb4 r4 tamb4 |
+  r4 tamb4\ben-mp r4 tamb4 |
   r4 tamb4 r4 tamb4 |
   r4 tamb4 r4 tamb4 |
   r4 tamb4 r4 tamb4 |
@@ -175,17 +175,17 @@ part-Ponefour-one = \drummode {
   % 40
   r4 tamb4 r4 tamb4 |
   r4 tamb4 r4 tamb4 |
-  r4 tamb4 r4 tamb4 |
+  r4 tamb4\p r4 tamb4 |
   r4 tamb4 r4 tamb4 |
   r4 tamb4 r4 tamb4 |
   % 45
   r4 tamb4 r4 tamb4 |
+  r4 tamb4\poco-f r4 tamb4 |
   r4 tamb4 r4 tamb4 |
   r4 tamb4 r4 tamb4 |
-  r4 tamb4 r4 tamb4 |
-  r4 tamb4 tamb4\glissando-\markup { "chimes" } mar4 |
+  r4 tamb4 tamb4\>^\markup { "chimes" }\glissando mar4 |
   % 50
+  R1\! |
   R1 |
-  R1 |
-  R1 |
+  R1\fermata |
 }
