@@ -3,7 +3,7 @@ part-Ponetwo-one = \drummode {
     {
       \time 4/4
       \clef percussion
-      hh8\mf hh8 hh8 hh8 hh8 hh8 hh8 hh8 
+      hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 
       \linear-repeat 1 4 |
       
       \time 2/4
@@ -163,7 +163,7 @@ part-Ponetwo-one = \drummode {
   >>
   hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
   <<
-    { hh8\ff\cresc hh8 hh8 hh8 hh8 hh8 hh8 hh8 } \\ {
+    \endSpanners { hh8\ff\cresc hh8 hh8 hh8 hh8 hh8 hh8 hh8 } \\ {
       <bd sn >4. <bd sn
       >4. <bd sn >4
     }
@@ -193,7 +193,7 @@ part-Ponetwo-one = \drummode {
   >>
   hh1\trill\trill\trill\> |
   % 75
-  << { sn1-^\ff } \\ { bd1 } >> |
+  < sn bd >1 \ff |
   r2 r2 |
   r2 r8 sn16->\sfz sn16-> <bd sn hh >4-> |
   \time 5/4

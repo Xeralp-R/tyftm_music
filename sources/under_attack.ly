@@ -155,7 +155,7 @@ under_attack = {
 
     \tag #'(accompaniment band r_guit)
     <<
-      %\new ChordNames \chord-sequence
+      \new ChordNames \r_guit_chords
       \new Staff \with {
         instrumentName = "Rhythm Guitar"
         shortInstrumentName = "R. Guit"

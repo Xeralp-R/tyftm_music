@@ -48,7 +48,7 @@ part-Psix-one = {
       b8 b'8 r8 gis'8 r8 cis'8 dis'8 e'8~ |
       e'8 dis'8 cis'8 cis'4 dis'8 cis'8( b8) |
       b8 gis'8( fis'8) gis'8~ gis'2~ |
-      gis'2. r4 |
+      gis'2. 
       % 35
     }
     \context Voice = "voicetwo" {
@@ -72,10 +72,10 @@ part-Psix-one = {
       gis8 gis'8 r8 e'8 r8 a8 b8 cis'8~ |
       cis'8 b8 a8 a4 b8 a8( gis8) |
       gis8 e'8( b8) e'8~ e'2~ |
-      e'2. |
+      e'2. 
       % 35
     }
-  >>
+  >> r4 |
   R1 |
   R1 |
   R1 |
@@ -192,7 +192,7 @@ part-Psix-one = {
       b8 b'8 r8 gis'8 r8 cis'8 dis'8 e'8~ |
       e'8 dis'8 cis'8 cis'4 dis'8 cis'8( b8) |
       b8 gis'8( fis'8) gis'8~ gis'2~ |
-      gis'2. r4 |
+      gis'2. 
       % 35
     }
     \context Voice = "voicetwo" {
@@ -216,10 +216,10 @@ part-Psix-one = {
       gis8 gis'8 r8 e'8 r8 a8 b8 cis'8~ |
       cis'8 b8 a8 a4 b8 a8( gis8) |
       gis8 e'8( b8) e'8~ e'2~ |
-      e'2. |
+      e'2. 
       % 35
     }
-  >>
+  >> r4 |
   R1 |
   R1 |
   R1 |

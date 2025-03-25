@@ -178,8 +178,8 @@ part-Pseven-one = {
     }
     \context Voice = "voicetwo" {
       \voiceTwo
-      e'4 dis'4 d'4 |
-      dis'4 e'8 f'4 e'4 |
+      r4 e'4 dis'4 d'4 |
+      dis'4 e'8 f'4 e'4 s8 |
     }
   >>
   \time 5/4
@@ -187,7 +187,7 @@ part-Pseven-one = {
   fis'' a'' >8 <b' e'' fis'' a'' >8 <b' e'' fis'' a'' >8 <b' e'' fis'' a''
   >8 <b' e'' fis'' a'' >8 <b' e'' fis'' a'' >8 <b' e'' fis'' a'' >8 |
   \time 4/4
-  r2 r4 <dis'' gis'' >4 |
+  r2 r4 \hauptstimmeStart <dis'' gis'' >4 |
   % 80
   r8 <e'' gis'' >16 <fis'' a'' >16 <e'' gis'' >8-. <dis'' fis'' >8~~ <dis''
   fis'' >8 <cis'' e'' >8 <a' cis'' >8 <cis'' e'' >8 |
@@ -342,13 +342,13 @@ part-Pseven-two = {
   \time 5/4
   <fis, cis fis >2. r4 <b,, b, >4 |
   \time 4/4
-  gis,8 gis,8 \hauptstimmeStart gis,8 gis,8 gis,8 gis,8 gis,8 gis,8 |
+  gis,8 gis,8 gis,8 gis,8 gis,8 gis,8 gis,8 gis,8 |
   % 80
   a,4-. a,4-. a,4-. a,4-. |
   gis,4-. gis,4-. gis,4-.-> gis,4-. |
   a,4-. a,4-. a,4-. a,4-. |
   <e, e >4. <e, e >4.-> <e, e >4 |
-  <e, e >4.\< \hauptstimmeEnd <e, e >4.-> <e, e >4 |
+  <e, e >4.\< <e, e >4.-> <e, e >4 |
   % 85
   e,8\f fis,8 gis,4 e,4 gis,8 fis,8 |
   e,8 fis,8 gis,4 b,4 gis,8 fis,8 |

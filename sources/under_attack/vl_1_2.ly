@@ -2,7 +2,7 @@ part-Pone-one = {
   \key e \major
   \time 4/4
   \clef treble
-  fis''8-.-\markup { "Moderato con brio" } \mf fis''8-. fis''8-. fis''8-.
+  fis''8-. \mf fis''8-. fis''8-. fis''8-.
   fis''8-. fis''8-. fis''8-. fis''8-. |
   fis''8-. fis''8-. fis''8-. fis''8-. fis''8-. fis''8-. fis''8-. fis''8-. |
   fis''8-. fis''8-. fis''8-. fis''8-. fis''8-. fis''8-. fis''8-. fis''8-. |

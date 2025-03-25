@@ -50,7 +50,21 @@ part-Pnine-one = {
   >>
   <<
     \context ChordNames = "lg_chords" \chordmode {
-      
+      s8 e8 s8 s8 s8 s8 s8 s8 | \barNumberCheck #20
+      e4:sus4 s4 b4:sus4 b4 | % 21
+      e4 s4 gis4 s4 | % 22
+      gis4 s4 s4 s4 | % 23
+      a4 s4 s4 s4 | % 24
+      e4 s4 s4 s4 | % 25
+      a4 s4 s4 s4 | % 26
+      d4 s4 b4 s4 | % 27
+      e4 s4 s4 s4 | % 28
+      e4:sus4 s4 b4:sus4 b4 | % 29
+      e4 s4 gis4 s4 | \barNumberCheck #30
+      gis4 s4 s4 s4 | % 31
+      a4 s4 s4 s4 | % 32
+      e4 s4 s4 s4 | % 33
+      a4 s4 s4 s4 |
     }
     {
       \context Voice = "continuation" \with {
@@ -115,24 +129,45 @@ part-Pnine-one = {
       >4 |
     }
   >>
-  \context Voice = "continuation" \with {
-    \consists "Pitch_squash_engraver"
-  } \reduceChords {
-    \improvisationOn
-    r8 <e gis b e' >8-> \f <e gis b e' >8-> <e gis b e' >8 <e gis b e' >8-> <e
-    gis b e' >8 <e gis b e' >8-> <e gis b e' >8 |
-    <e a b e' >8-> <e a b e' >8-> <e a b e' >8-> <e a b e' >8 <b e' >8 <b
-    e' >8 <b dis' >8 <b dis' >8 
-  }
-  \linear-spanner 1  6 |
-  \context Voice = "continuation" \reduceChords {
-    \improvisationOn
-    r8 <e gis b e' >8-> \f <e gis b e' >8-> <e gis b e' >8 <e gis b e' >8-> <e
-    gis b e' >8 <e gis b e' >8-> <e gis b e' >8 |
-    <e a b e' >8-> <e a b e' >8-> <e a b e' >8-> <e a b e' >8 <b e' >8 <b
-    e' >8 <b dis' >8 <b dis' >8 
-  }
+  <<
+    \context ChordNames = "lg_chords" \chordmode {
+      s8 e8 s8 s8 s8 s8 s8 s8 | 
+      e4:sus4 s4 b4:sus4 b4 | % 21
+      e4 s4 gis4 s4 | % 22
+      gis4 s4 s4 s4 | % 23
+      a4 s4 s4 s4 | % 24
+      e4 s4 s4 s4 | % 25
+      a4 s4 s4 s4 | % 26
+      d4 s4 b4 s4 | % 27
+      e4 s4 s4 s4 | % 28
+      e4:sus4 s4 b4:sus4 b4 | % 29
+      e4 s4 gis4 s4 |
+      gis4 s4 s4 s4 | % 31
+      a4 s4 s4 s4 | % 32
+      e4 s4 s4 s4 | % 33
+      a4 s4 s4 s4 |
+    }
+    {
+      \context Voice = "continuation" \with {
+        \consists "Pitch_squash_engraver"
+      } \reduceChords {
+        \improvisationOn
+        r8 <e gis b e' >8-> \f <e gis b e' >8-> <e gis b e' >8 <e gis b e' >8-> <e
+        gis b e' >8 <e gis b e' >8-> <e gis b e' >8 |
+        <e a b e' >8-> <e a b e' >8-> <e a b e' >8-> <e a b e' >8 <b e' >8 <b
+        e' >8 <b dis' >8 <b dis' >8 
+      }
+      \linear-spanner 1  6 |
+      \context Voice = "continuation" \reduceChords {
+        \improvisationOn
+        r8 <e gis b e' >8-> \f <e gis b e' >8-> <e gis b e' >8 <e gis b e' >8-> <e
+        gis b e' >8 <e gis b e' >8-> <e gis b e' >8 |
+        <e a b e' >8-> <e a b e' >8-> <e a b e' >8-> <e a b e' >8 <b e' >8 <b
+        e' >8 <b dis' >8 <b dis' >8 
+      }
       \linear-spanner 1 5 |
+    }
+  >>
   <e' e'' >4. <e' e'' >8~~ <e' e'' >2 |
   <e' e'' >4. <e' e'' >8~~ <e' e'' >2 |
   % 65
@@ -163,129 +198,49 @@ part-Pnine-one = {
   >8-> <e, b, >8 |
   <gis' b' e'' >4.\< <gis' b' e'' >8~~~ <gis' b' e'' >2\! |
   % 85
-  \context Voice = "continuation" \with {
-    \consists "Pitch_squash_engraver"
-  } \reduceChords {
-    \improvisationOn
-    r8 <e gis b e' >8-> \f <e gis b e' >8-> <e gis b e' >8 <e gis b e' >8-> <e
-    gis b e' >8 <e gis b e' >8-> <e gis b e' >8 |
-    <e a b e' >8-> <e a b e' >8-> <e a b e' >8-> <e a b e' >8 <b e' >8 <b
-    e' >8 <b dis' >8 <b dis' >8 
-  }
-  \linear-spanner 1  6 |
-  \context Voice = "continuation" \reduceChords {
-    \improvisationOn
-    r8 <e gis b e' >8-> \f <e gis b e' >8-> <e gis b e' >8 <e gis b e' >8-> <e
-    gis b e' >8 <e gis b e' >8-> <e gis b e' >8 |
-    <e a b e' >8-> <e a b e' >8-> <e a b e' >8-> <e a b e' >8 <b e' >8 <b
-    e' >8 <b dis' >8 <b dis' >8 
-  }
+  <<
+    \context ChordNames = "lg_chords" \chordmode {
+      s8 e8 s8 s8 s8 s8 s8 s8 | 
+      e4:sus4 s4 b4:sus4 b4 | % 21
+      e4 s4 gis4 s4 | % 22
+      gis4 s4 s4 s4 | % 23
+      a4 s4 s4 s4 | % 24
+      e4 s4 s4 s4 | % 25
+      a4 s4 s4 s4 | % 26
+      d4 s4 b4 s4 | % 27
+      e4 s4 s4 s4 | % 28
+      e4:sus4 s4 b4:sus4 b4 | % 29
+      e4 s4 gis4 s4 | 
+      gis4 s4 s4 s4 | % 31
+      a4 s4 s4 s4 | % 32
+      e4 s4 s4 s4 | % 33
+      a4 s4 s4 s4 |
+    }
+    {
+      \context Voice = "continuation" \with {
+        \consists "Pitch_squash_engraver"
+      } \reduceChords {
+        \improvisationOn
+        r8 <e gis b e' >8-> \f <e gis b e' >8-> <e gis b e' >8 <e gis b e' >8-> <e
+        gis b e' >8 <e gis b e' >8-> <e gis b e' >8 |
+        <e a b e' >8-> <e a b e' >8-> <e a b e' >8-> <e a b e' >8 <b e' >8 <b
+        e' >8 <b dis' >8 <b dis' >8 
+      }
+      \linear-spanner 1  6 |
+      \context Voice = "continuation" \reduceChords {
+        \improvisationOn
+        r8 <e gis b e' >8-> \f <e gis b e' >8-> <e gis b e' >8 <e gis b e' >8-> <e
+        gis b e' >8 <e gis b e' >8-> <e gis b e' >8 |
+        <e a b e' >8-> <e a b e' >8-> <e a b e' >8-> <e a b e' >8 <b e' >8 <b
+        e' >8 <b dis' >8 <b dis' >8 
+      }
       \linear-spanner 1 5 |
+    }
+  >>
   <e' e'' >4. <e' e'' >8~~ <e' e'' >2 |
   <e' e'' >4. <e' e'' >8~~ <e' e'' >2 |
   b4.\sub-p bes4. a4 |
   gis8\< g8 f8 e8 d8 c8 b,8 bes,8 |
   b,8->\f b,8->\f b,8->\f r8 r2\fermata |
   % 105
-}
-
-l_guit_default_chords = \chordmode {
-  | % 1
-  s1 | % 2
-  s2 s4 s4 | % 3
-  s2. s8 s8 | % 4
-  s1 | % 5
-  s2 \bar "||"
-  s1 s1 s1 s1 | \barNumberCheck #10
-  s4 s4 s4 s4 | % 11
-  s8 s8 s8 s8 s4 s4 | % 12
-  s1 | % 13
-  s4 s4 s2 | % 14
-  s1 s1 s1 | % 17
-  s4 s4 s4 s4 | % 18
-  s8 s8 s8 s8 s4 s4 \bar "||"
-  s8 s8 s8 s8 s8 s8 s8 s8 | \barNumberCheck #20
-  s8 s8 s8 s8 s8 s8 s8 s8 | % 21
-  s8 e8:5 s8 s8 gis8:5 s8 s8 s8 | % 22
-  gis8:5 s8 s8 s8 s8 s8 s8 s8 | % 23
-  s8 a8:5 s8 s8 s8 s8 s8 s8 | % 24
-  e8:5 s8 s8 s8 s8 s8 s8 s8 | % 25
-  a4:5 s4 s4 s4 | % 26
-  d4:5 s4 b4:5 s4 | % 27
-  s8 s8 s8 s8 s8 s8 s8 s8 | % 28
-  s8 s8 s8 s8 s8 s8 s8 s8 | % 29
-  s8 e8:5 s8 s8 gis8:5 s8 s8 s8 | \barNumberCheck #30
-  gis8:5 s8 s8 s8 s8 s8 s8 s8 | % 31
-  s8 a8:5 s8 s8 s8 s8 s8 s8 | % 32
-  e8:5 s8 s8 s8 s8 s8 s8 s8 | % 33
-  a8:5 s8 s8 s8 s4 s8 s8 | % 34
-  s4. s8 s2 | % 35
-  s4. s8 s2 \bar "||"
-  s1 s1 s1 s1 | \barNumberCheck #40
-  s4 s4 s4 s4 | % 41
-  s8 s8 s8 s8 s4 s4 | % 42
-  s1 \bar "||"
-  s4 s4 s2 | % 44
-  s1 s1 s1 | % 47
-  s4 s4 s4 s4 | % 48
-  s8 s8 s8 s8 s4 s4 \bar "||"
-  s8 s8 s8 s8 s8 s8 s8 s8 | \barNumberCheck #50
-  s8 s8 s8 s8 s8 s8 s8 s8 | % 51
-  s8 e8:5 s8 s8 gis8:5 s8 s8 s8 | % 52
-  gis8:5 s8 s8 s8 s8 s8 s8 s8 | % 53
-  s8 a8:5 s8 s8 s8 s8 s8 s8 | % 54
-  e8:5 s8 s8 s8 s8 s8 s8 s8 | % 55
-  a4:5 s4 s4 s4 | % 56
-  d4:5 s4 b4:5 s4 | % 57
-  s8 s8 s8 s8 s8 s8 s8 s8 | % 58
-  s8 s8 s8 s8 s8 s8 s8 s8 | % 59
-  s8 e8:5 s8 s8 gis8:5 s8 s8 s8 | \barNumberCheck #60
-  gis8:5 s8 s8 s8 s8 s8 s8 s8 | % 61
-  s8 a8:5 s8 s8 s8 s8 s8 s8 | % 62
-  e8:5 s8 s8 s8 s8 s8 s8 s8 | % 63
-  a8:5 s8 s8 s8 s4 s8 s8 | % 64
-  s4. s8 s2 | % 65
-  s4. s8 s2 \bar "||"
-  s1 | % 67
-  s4. s4. s4 | % 68
-  s8 s8 s8 s8 s8 s8 s8 s8 | % 69
-  s8 s8 s8 s8 s8 s4 s8 | \barNumberCheck #70
-  s8 s8 s8 s8 s8 s8 s8 s8 | % 71
-  s8 s8 s8 s8 s8 s4 s8 | % 72
-  s8 s8 s8 s8 s8 s4 s8 | % 73
-  s1 | % 74
-  s8 s8 s8 s8 s8 s4. | % 75
-  s1 | % 76
-  s1 | % 77
-  s1 | % 78
-  s2 s8 s16 s16 s4 | % 79
-  s2. s2 | \barNumberCheck #80
-  s8 s8 s8 s8 s8 s8 s8 s8 | % 81
-  s8 s8 s8 s8 s8 s8 s8 s8 | % 82
-  s8 s8 s8 s8 s8 s8 s8 s8 | % 83
-  s8 s8 s8 s8 s8 s8 s8 s8 | % 84
-  s8 s8 s8 s8 s8 s8 s8 s8 | % 85
-  s4. s8 s2 \bar "||"
-  s8 s8 s8 s8 s8 s8 s8 s8 | % 87
-  s8 s8 s8 s8 s8 s8 s8 s8 | % 88
-  s8 e8:5 s8 s8 gis8:5 s8 s8 s8 | % 89
-  gis8:5 s8 s8 s8 s8 s8 s8 s8 | \barNumberCheck #90
-  s8 a8:5 s8 s8 s8 s8 s8 s8 | % 91
-  e8:5 s8 s8 s8 s8 s8 s8 s8 | % 92
-  a4:5 s4 s4 s4 | % 93
-  d4:5 s4 b4:5 s4 | % 94
-  s8 s8 s8 s8 s8 s8 s8 s8 | % 95
-  s8 s8 s8 s8 s8 s8 s8 s8 | % 96
-  s8 e8:5 s8 s8 gis8:5 s8 s8 s8 | % 97
-  gis8:5 s8 s8 s8 s8 s8 s8 s8 \repeat volta 2 {
-      | % 98
-      s8 a8:5 s8 s8 s8 s8 s8 s8 | % 99
-      e8:5 s8 s8 s8 s8 s8 s8 s8 | \barNumberCheck #100
-      a8:5 s8 s8 s8 s4 s8 s8 | % 101
-      s4. s8 s2 | % 102
-      s4. s8 s2 }
-  | % 103
-  s4. s4. s4 | % 104
-  s8 s8 s8 s8 s8 s8 s8 s8 | % 105
-  s8 s8 s8 s8 s2 \bar "|."
 }
