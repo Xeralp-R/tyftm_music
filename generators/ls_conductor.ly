@@ -15,6 +15,8 @@
 \include "../sources/thank_you_for_the_music.ly"
 \include "../sources/knowing_me.ly"
 \include "../sources/does_your_mother_know.ly"
+\include "../sources/slipping_through_my_fingers.ly"
+\include "../sources/under_attack.ly"
 
 \pointAndClickOff
 
@@ -221,7 +223,7 @@
     \tocItem ii.ua \markup { "14. Under Attack" }
 
     \header {
-      \under_attack_header
+      \ua_header
     }
     \score {
       \under_attack
@@ -252,6 +254,19 @@
     }
     \score {
       \knowing_me
+
+      \layout {}
+    }
+  }
+
+  \bookpart {
+    \tocItem ii.sl \markup { "18. Slipping Through My Fingers" }
+
+    \header {
+      \slipping_header
+    }
+    \score {
+      \slipping
 
       \layout {}
     }

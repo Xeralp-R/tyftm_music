@@ -1,7 +1,7 @@
 % Automatically generated from a musicxml file.
 \version "2.24.0"
 \include "../styles/global.ily"
-\include "../styles/final_styles/revision_style.ily"
+%\include "../styles/final_styles/revision_style.ily"
 
 \include "under_attack/vl_1_2.ly"
 \include "under_attack/vl_3_4.ly"
@@ -15,10 +15,10 @@
 \include "under_attack/b_guit.ly"
 \include "under_attack/drum.ly"
 
-\header {
+ua_header = \header {
   composer = "Benny Andersson, Björn Ulvaeus"
   title = "Under Attack"
-  arranger = "Gab Nillos, Josh Ang / Iris Ababon, RAR"
+  arranger = "Gab Nillos, Josh Ang / Iris Ababon, JDAT-RAR"
 }
 
 ua_marks = {
@@ -191,7 +191,8 @@ under_attack = {
   >>
 }
 
+%{
 \score {
   \under_attack
   \layout {}
-}
+}%}

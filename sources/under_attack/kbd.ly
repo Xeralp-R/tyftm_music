@@ -170,8 +170,8 @@ part-Peight-one = {
     }
     \context Voice = "voicetwo" {
       \voiceTwo
-      e'4 dis'4 d'4 |
-      dis'4 e'8 f'4 e'4 |
+      s4 e'4 dis'4 d'4 |
+      dis'4 e'8 f'4 e'4 s8 |
     }
   >>
   \time 5/4

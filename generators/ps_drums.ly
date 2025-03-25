@@ -13,8 +13,10 @@
 \include "../sources/super_trouper.ly"
 \include "../sources/gimme_gimme_gimme.ly"
 \include "../sources/voulez_vous.ly"
+\include "../sources/under_attack.ly"
 \include "../sources/does_your_mother_know.ly"
 \include "../sources/knowing_me.ly"
+\include "../sources/slipping_through_my_fingers.ly"
 \include "../sources/thank_you_for_the_music.ly"
 \include "../sources/waterloo.ly"
 
@@ -196,6 +198,19 @@
   }
 
   \bookpart {
+    \tocItem ii.ua \markup { "14. Under Attack" }
+
+    \header {
+      \ua_header
+    }
+    \score {
+      \keepWithTag #'(drum a_perc aperc nonchor) \under_attack
+
+      \layout {}
+    }
+  }
+
+  \bookpart {
     \tocSection ii "Act II" 
     \tocItem ii.dymk \markup { "16. Does Your Mother Know" }
 
@@ -217,6 +232,19 @@
     }
     \score {
       \keepWithTag #'(drum a_perc aperc nonchor) \knowing_me
+
+      \layout {}
+    }
+  }
+
+  \bookpart {
+    \tocItem ii.sl \markup { "18. Slipping Through My Fingers" }
+
+    \header {
+      \slipping_header
+    }
+    \score {
+      \keepWithTag #'(drum a_perc aperc nonchor) \slipping
 
       \layout {}
     }

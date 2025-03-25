@@ -14,9 +14,10 @@
 \include "slipping/vl_1_2.ly"
 \include "slipping/vl_3_4.ly"
 
-\header {
+slipping_header = \header {
   composer = "Benny Andersson, Björn Ulvaeus"
   title = "Slipping Through My Fingers"
+  arranger = "Kate Quebral, William Lim / JDAT-RAR"
 }
 
 slip_meas = {
