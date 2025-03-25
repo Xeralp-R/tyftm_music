@@ -146,6 +146,7 @@ under_attack = {
 
     \tag #'(accompaniment band l_guit)
     <<
+      \new ChordNames = "lg_chords"
       \new Staff \with {
         instrumentName = "Lead Guitar"
         shortInstrumentName = "L. Guit."

@@ -11,8 +11,7 @@ part-Ponetwo-one = \drummode {
       % 5
       \time 4/4
       hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
-      hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
-      hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
+      \linear-spanner 1 2 |
       hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 |
       hh1 \f |
       % 10
@@ -88,8 +87,9 @@ part-Ponetwo-one = \drummode {
       bd4\piu-p bd4 bd4 bd4 |
       s1*3
       % 5
-      bd4 bd4 bd4 bd4 
-      \linear-spanner 1 2 |
+      bd4 bd4 
+      bd4 bd4 bd4 bd4
+      s1*2
       bd4 bd4 bd4 bd4 |
       <bd cymc >4 bd4 <bd cymc >4 bd4 |
       % 10
