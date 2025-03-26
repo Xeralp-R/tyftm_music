@@ -17,6 +17,7 @@
 \include "../sources/does_your_mother_know.ly"
 \include "../sources/knowing_me.ly"
 \include "../sources/slipping_through_my_fingers.ly"
+\include "../sources/take_a_chance.ly"
 \include "../sources/thank_you_for_the_music.ly"
 \include "../sources/waterloo.ly"
 
@@ -197,6 +198,7 @@
   }
 
   \bookpart {
+    \tocSection ii "Act II" 
     \tocItem ii.ua \markup { "14. Under Attack" }
 
     \header {
@@ -210,7 +212,6 @@
   }
 
   \bookpart {
-    \tocSection ii "Act II" 
     \tocItem ii.dymk \markup { "16. Does Your Mother Know" }
 
     \header {
@@ -244,6 +245,19 @@
     }
     \score {
       \keepWithTag #'(chor) \slipping
+
+      \layout {}
+    }
+  }
+
+  \bookpart {
+    \tocItem ii.tcm \markup { "22. Take a Chance on Me" }
+
+    \header {
+      \tcm_header
+    }
+    \score {
+      \keepWithTag #'(chor) \tcm
 
       \layout {}
     }

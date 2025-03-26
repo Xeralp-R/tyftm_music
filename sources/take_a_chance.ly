@@ -1,7 +1,7 @@
 % Automatically generated from a musicxml file.
 \version "2.24.0"
 \include "../styles/global.ily"
-\include "../styles/final_styles/revision_style.ily"
+%\include "../styles/final_styles/revision_style.ily"
 
 \include "take_a_chance/b_guit.ly"
 \include "take_a_chance/billharry.ly"
@@ -152,6 +152,7 @@ tcm = <<
   } \part-Ponezero-one
 >>
 
+%{
 \header {
   \tcm_header
 }
@@ -160,4 +161,4 @@ tcm = <<
   \tcm 
   \layout {}
   % \midi{}
-}
+}%}
