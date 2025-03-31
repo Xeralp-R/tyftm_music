@@ -17,6 +17,7 @@
 \include "../sources/does_your_mother_know.ly"
 \include "../sources/slipping_through_my_fingers.ly"
 \include "../sources/under_attack.ly"
+\include "../sources/waterloo.ly"
 
 \pointAndClickOff
 
@@ -273,6 +274,19 @@
   }
 
   \bookpart {
+    \tocItem ii.tcm \markup { "22. Take a Chance on Me" }
+
+    \header {
+      \tcm_header
+    }
+    \score {
+      \tcm
+
+      \layout {}
+    }
+  }
+
+  \bookpart {
     \tocItem ii.tyftm \markup { "24. Thank You For The Music" }
 
     \header {
@@ -280,6 +294,19 @@
     }
     \score {
       \tyftm
+
+      \layout {}
+    }
+  }
+
+  \bookpart {
+    \tocItem ii.wtl \markup { "27. Waterloo" }
+
+    \header {
+      \waterloo_header
+    }
+    \score {
+      \waterloo
 
       \layout {}
     }
@@ -358,3 +385,59 @@
   }
 }
 %}
+
+\book {
+  \bookOutputSuffix "14-UA"
+  \score {
+    \under_attack
+    \midi{}
+  }
+}
+
+\book {
+  \bookOutputSuffix "16-DYMK"
+  \score {
+    \dymk
+    \midi{}
+  }
+}
+
+\book {
+  \bookOutputSuffix "17-KMKY"
+  \score {
+    \knowing_me
+    \midi{}
+  }
+}
+
+\book {
+  \bookOutputSuffix "18-SL"
+  \score {
+    \slipping
+    \midi{}
+  }
+}
+
+\book {
+  \bookOutputSuffix "22-TCM"
+  \score {
+    \tcm
+    \midi{}
+  }
+}
+
+\book {
+  \bookOutputSuffix "24-TYFTM"
+  \score {
+    \tyftm
+    \midi{}
+  }
+}
+
+\book {
+  \bookOutputSuffix "27-WTL"
+  \score {
+    \waterloo
+    \midi{}
+  }
+}
