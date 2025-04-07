@@ -7,35 +7,8 @@ import (
 	"io"
 	"log"
 	"unicode"
+	"strings"
 )
-
-func readTillSpace(buffer *bufio.Reader) string {
-	var output string
-	r, _, _ := buffer.ReadRune()
-
-	for ; r != ' '; {
-		output += string(r)
-		r, _, _ = buffer.ReadRune()
-	}
-	return output
-}
-
-func readToChar(char rune, buffer *bufio.Reader ) string {
-	var output string 
-	var r rune
-	for ;r != char; {
-		r, _, _ = buffer.ReadRune()
-		output += string(r)
-	}
-	return output
-}
-
-func discardToChar(char rune, buffer *bufio.Reader) {
-	var r rune
-	for ;r != char; {
-		r, _, _ = buffer.ReadRune()
-	}
-}
 
 func ParseLilypond(file *os.File) LyDocument {
 	fmt.Println("got here!")
@@ -74,14 +47,24 @@ func ParseLilypond(file *os.File) LyDocument {
 		}
 
 		if r == '\\' {
-			command := readTillSpace(buffer)
+			command := "\\" + readTillSpace(buffer)
 
 			// curent r should be the space; read until the brace
 			fmt.Println("Reading a command.")
-			discardToChar('{', buffer)
-			block := equalRuneParser('{', '}', buffer)
+			// discard to the first rune
+			var r rune
+			for ;r != '"' && r != '{'; {
+				r, _, _ = buffer.ReadRune()
+			}
 
-			if command == "\\paper" || command == "\\header" {
+			var block string
+			if r == '"' {
+				block = equalRuneParser('"', '"', buffer)
+			} else if r == '{' {
+				block = equalRuneParser('{', '}', buffer)
+			} // note: no default!
+
+			if command == "\\paper" || command == "\\header" || command == "\\include" || command == "\\version" {
 				output.Statements = append(output.Statements, LyStatement{[]string{command, block}, Prologue})
 			} else {
 				output.Statements = append(output.Statements, LyStatement{[]string{command, block}, Command})
@@ -91,9 +74,18 @@ func ParseLilypond(file *os.File) LyDocument {
 		if unicode.IsLetter(r) {
 			varname := string(r)
 			varname += readTillSpace(buffer)
-			discardToChar('{', buffer)
+			discardToChar('=', buffer)
+
+			tag := strings.Trim(readToChar('{', buffer), "{ ")
 			varcontent := equalRuneParser('{', '}', buffer)
-			output.Statements = append(output.Statements, LyStatement{[]string{varname, varcontent}, Variable})
+
+			var content_arr []string
+			if tag == "" {
+				content_arr = []string{varname, varcontent}
+			} else {
+				content_arr = []string{varname, tag, varcontent}
+			}
+			output.Statements = append(output.Statements, LyStatement{content_arr, Variable})
 			fmt.Println("Read a variable.")
 		}
 
