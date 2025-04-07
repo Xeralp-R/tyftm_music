@@ -18,6 +18,7 @@
 \include "../sources/slipping_through_my_fingers.ly"
 \include "../sources/under_attack.ly"
 \include "../sources/waterloo.ly"
+\include "../sources/take_a_chance.ly"
 
 \pointAndClickOff
 
@@ -384,7 +385,6 @@
     \midi{}
   }
 }
-%}
 
 \book {
   \bookOutputSuffix "14-UA"
@@ -441,3 +441,4 @@
     \midi{}
   }
 }
+%}
