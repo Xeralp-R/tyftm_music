@@ -26,16 +26,16 @@ part-Pone-one = {
     f'8 f'16 c''8 f'16 c''8 c''8 b'8 bes'8 aes'8 |
     ees'8 ees'16 bes'8 ees'16 bes'8 r2 |
     ees'8 ees'16 bes'8 ees'16 bes'8 r2 |
-    f'1:2-\markup { \italic "cresc poco a poco" } |
-    f'1:2 |
+    f'1:16-\markup { \italic "cresc poco a poco" } |
+    f'1:16 |
 % 20
-    g'1:2 |
-    g'1:2 |
-    aes'1:2 |
-    bes'1:2 |
-    c''1:2 |
+    g'1:16 |
+    g'1:16 |
+    aes'1:16 |
+    bes'1:16 |
+    c''1:16 |
 % 25
-    d''1:2\< |
+    d''1:16\< |
     d''2.\sf r4 |
     aes'2\f g'2 |
     f'4 g'4 aes'4 bes'4 |
@@ -64,16 +64,16 @@ part-Pone-one = {
     c''8 ees''4 f''8 c''8 c''8 ees''4 |
     bes'4 d''4 f''4 bes'8 bes'8( |
     bes'8) d''4 f''8 bes'8 bes'8 d''4 |
-    c'1:2-\markup { \italic "cresc poco a poco" } |
+    c'1:16-\markup { \italic "cresc poco a poco" } |
 % 50
-    c'1:2 |
-    d'1:2 |
-    d'1:2 |
-    ees'1:2 |
-    f'1:2 |
+    c'1:16 |
+    d'1:16 |
+    d'1:16 |
+    ees'1:16 |
+    f'1:16 |
 % 55
-    g'1:2 |
-    a'1:2\< |
+    g'1:16 |
+    a'1:16\< |
     a'2.\sf r4 |
     g'8\f g'16 ees''8 ees''16 g'8 g'8 d''8 g'8 d''8 |
     g'8 g'16 ees''8 ees''16 g'8 g'8 d''8 g'8 d''8 |
@@ -99,17 +99,17 @@ part-Pone-one = {
     c'1 |
     c'1~ |
     c'1 |
-    c'1:2 |
-    c'1:2 |
+    c'1:16 |
+    c'1:16 |
 % 80
-    d'1:2 |
-    d'1:2 |
-    ees'1:2 |
-    f'1:2 |
-    g'1:2 |
+    d'1:16 |
+    d'1:16 |
+    ees'1:16 |
+    f'1:16 |
+    g'1:16 |
 % 85
-    a'1:2 |
-    a'1:2 |
+    a'1:16 |
+    a'1:16 |
     c'1 |
     c'1 |
     c'1 |
@@ -217,16 +217,16 @@ part-Ptwo-one = {
     f'8 f'16 c''8 f'16 c''8 c''8 b'8 bes'8 aes'8 |
     bes'1~ |
     bes'1 |
-    f'1:2-\markup { \italic "cresc poco a poco" } |
-    f'1:2 |
+    f'1:16-\markup { \italic "cresc poco a poco" } |
+    f'1:16 |
 % 20
-    e'1:2 |
-    e'1:2 |
-    f'1:2 |
-    g'1:2 |
-    aes'1:2 |
+    e'1:16 |
+    e'1:16 |
+    f'1:16 |
+    g'1:16 |
+    aes'1:16 |
 % 25
-    bes'1:2\< |
+    bes'1:16\< |
     bes'2.\sf r4 |
     f'2\f c'2 |
     c'4 c'4 f'4 f'4 |
@@ -255,16 +255,16 @@ part-Ptwo-one = {
     R1 |
     bes8 bes16 f'8 bes16 f'8 r2 |
     bes8 bes16 f'8 bes16 f'8 r2 |
-    c'1:2-\markup { \italic "cresc poco a poco" } |
+    c'1:16-\markup { \italic "cresc poco a poco" } |
 % 50
-    c'1:2 |
-    ces'1:2 |
-    ces'1:2 |
-    c'1:2 |
-    d'1:2 |
+    c'1:16 |
+    ces'1:16 |
+    ces'1:16 |
+    c'1:16 |
+    d'1:16 |
 % 55
-    ees'1:2 |
-    f'1:2\< |
+    ees'1:16 |
+    f'1:16\< |
     f'2.\sf r4 |
     c''2\f g'2 |
     g'4 g'4 c''4 c''4 |
@@ -290,17 +290,17 @@ part-Ptwo-one = {
     g1 |
     g1~ |
     g1 |
-    c'1:2 |
-    c'1:2 |
+    c'1:16 |
+    c'1:16 |
 % 80
-    ces'1:2 |
-    ces'1:2 |
-    c'1:2 |
-    d'1:2 |
-    ees'1:2 |
+    ces'1:16 |
+    ces'1:16 |
+    c'1:16 |
+    d'1:16 |
+    ees'1:16 |
 % 85
-    f'1:2 |
-    f'1:2 |
+    f'1:16 |
+    f'1:16 |
     r8 ees'8 r8 ees'8 g'8 g'8 c''4 |
     r8 ees'8 r8 ees'8 g'8 g'8 c''4 |
     r8 ees'8 r8 ees'8 g'8 g'8 c''4 |

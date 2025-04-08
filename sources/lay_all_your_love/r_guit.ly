@@ -4,7 +4,7 @@
 part-Pnine-one = {
     \key aes \major
     \time 4/4
-    \clef treble
+    \clef "treble_8"
     R1 |
     R1 |
     R1 |
@@ -12,6 +12,7 @@ part-Pnine-one = {
     f8\f f16 <aes c' >8 f16 <aes c' >8 r2 |
 % 5
     f8 f16 <aes c' >8 f16 <aes c' >8 c'8 ces'8 bes8 aes8 |
+    \improvisationOn
     c'1\p |
     c'1 |
     c'1 |
@@ -112,11 +113,13 @@ part-Pnine-one = {
 % 85
     R1 |
     R1 |
+    \improvisationOff
     r8 c8 c8 ees8 ees8 fis,8 g,4 |
     r8 c8 c8 ees8 ees8 fis,8 g,4 |
     r8 c8 c8 ees8 ees8 fis,8 g,4 |
 % 90
     r8 c8 c8 ees8 ees8 fis,8 g,4 |
+    \improvisationOn
     g1 |
     g1 |
     g1 |

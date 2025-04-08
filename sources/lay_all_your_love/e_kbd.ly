@@ -8,7 +8,7 @@ part-Pseven-one = {
     aes8\p\< aes16 <c' ees' >8 aes16 <c' ees' >8 aes8 <c' ees' >8 aes8 <c' 
     ees' >8 |
     aes8 aes16 <c' ees' >8 aes16 <c' ees' >8 c'8 ces'8 bes8 
-    aes8\!\other-dynamics |
+    aes8\f-bracket |
     R1 |
     R1 |
     <aes' c'' f'' >1 |
@@ -38,7 +38,7 @@ part-Pseven-one = {
     <c'' f'' aes'' c''' >1 |
 % 25
     <d'' f'' bes'' d''' >1~~~~\< |
-    << { <d'' f'' bes'' d''' >2.\sf r4 } \\ { } >> |
+    <d'' f'' bes'' d''' >2.\sf r4 |
     <c' f' aes' >2\f <c' g' >2 |
     <aes c' f' >4 <c' g' >4 <c' f' aes' >4 <c' f' bes' >4 |
     <des' f' aes' >1 |

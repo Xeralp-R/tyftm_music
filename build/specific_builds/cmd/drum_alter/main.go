@@ -12,7 +12,9 @@ var replacer_key = []string {
 	"g''", "hh",
 	"f'", "bd",
 	"c''", "sn",
-	":2", ":16"
+	":2", ":16",
+	"e'", "bd",
+	"a''", "cymc",
 }
 
 func main() {

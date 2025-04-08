@@ -4,7 +4,7 @@
 part-Peight-one = {
     \key aes \major
     \time 4/4
-    \clef treble
+    \clef "treble_8"
     R1 |
     R1 |
     f8\f f16 <aes c' >8 f16 <aes c' >8 r2 |

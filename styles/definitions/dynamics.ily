@@ -79,6 +79,7 @@
 sffz = #(make-dynamic-script (markup #:dynamic "sffz"))
 rf = #(make-dynamic-script (markup #:dynamic "rf"))
 rfz = #(make-dynamic-script (markup #:dynamic "rfz"))
+f-bracket = #(make-dynamic-script (markup "[" #:dynamic "f" "]"))
 
 ed-ff = #(make-dynamic-script (markup #:large #:normal-text "ff"))
 ed-mf = #(make-dynamic-script (markup #:large #:normal-text "mf"))
