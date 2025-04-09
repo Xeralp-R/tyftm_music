@@ -2,7 +2,7 @@
 
 \version "2.24.0"
 \include "../styles/global.ily"
-\include "../styles/final_styles/revision_style.ily"
+%\include "../styles/final_styles/revision_style.ily"
 
 \include "lay_all_your_love/orch.ly"
 \include "lay_all_your_love/l_guit.ly"
@@ -28,18 +28,18 @@ layl_marks = {
   R1*9 \mark \default
   R1*16 \mark \default
   R1*13 \mark \default
-  R1*8 \mark \default 
+  R1*8 \mark \default
   R1*12 \mark \default
   R1*9 \mark \default
   R1*14 \mark \default
-  R1*8 \mark \default 
+  R1*8 \mark \default
   R1*16 \bar "|."
 }
 
-\header {
-    composer = "Gabriel Nillos"
-    subtitle = "ABBA"
-    title = "Lay All Your Love On Me"
+layl_header = \header {
+  arranger = "Gab Nillos / RAR"
+  composer = "Benny Andersson, Björn Ulvaeus"
+  title = "Lay All Your Love On Me"
 }
 
 layl = <<
@@ -53,7 +53,7 @@ layl = <<
     \new Staff \with {
       instrumentName = "Violin 1"
       shortInstrumentName = "Vl. 1"
-    } \part-Pone-one 
+    } \part-Pone-one
 
     \tag #'(accompaniment orch vl_ii)
     \new Staff \with {
@@ -64,32 +64,35 @@ layl = <<
 
   \tag #'(accompaniment orch piano)
   \new PianoStaff \with {
-      instrumentName = "Piano"
-      shortInstrumentName = "Pf."
-    } <<
+    instrumentName = "Piano"
+    shortInstrumentName = "Pf."
+  } <<
     \new Staff \part-Pthree-one
     \new Staff \part-Pthree-two
   >>
 
-  \tag #'(chor soli)
-  \new Staff \with {
-    instrumentName = "Sophie"
-    shortInstrumentName = "S."
-  } \part-Pfour-one
+  \new ChoirStaff <<
+    \tag #'(chor soli)
+    \new Staff \with {
+      instrumentName = "Sophie"
+      shortInstrumentName = "S."
+    } \part-Pfour-one \addlyrics \PartPFourVoiceOneLyricsOne
 
-  \tag #'(chor soli)
-  \new Staff \with {
-    instrumentName = "Sky"
-    shortInstrumentName = "Sk."
-  } \part-Pfive-one
+    \tag #'(chor soli)
+    \new Staff \with {
+      instrumentName = "Sky"
+      shortInstrumentName = "Sk."
+    } \part-Pfive-one \addlyrics \PartPFiveVoiceOneLyricsOne
 
-  \new Staff \with {
-    instrumentName = \markup \center-column {
-      "Chorus"
-      "(Men and Women Doubling)" 
-    }
-    shortInstrumentName = "Ch."
-  } \part-Psix-one
+    \tag #'(chor)
+    \new Staff \with {
+      instrumentName = \markup \center-column {
+        "Chorus"
+        "(Men and Women Doubling)"
+      }
+      shortInstrumentName = "Ch."
+    } \part-Psix-one \addlyrics \PartPSixVoiceOneLyricsOne
+  >>
 
   \tag #'(accompaniment band e_kbd)
   \new PianoStaff \with {
@@ -102,14 +105,14 @@ layl = <<
   >>
 
   \tag #'(accompaniment band l_guit)
-    \new StaffGroup \with {
-      instrumentName = "Lead Guitar"
-      shortInstrumentName = "L. Guit."
-      systemStartDelimiter = #'SystemStartSquare
-    } <<
-      \new Staff \part-Peight-one
-      \new TabStaff \part-Peight-one
-    >>
+  \new StaffGroup \with {
+    instrumentName = "Lead Guitar"
+    shortInstrumentName = "L. Guit."
+    systemStartDelimiter = #'SystemStartSquare
+  } <<
+    \new Staff { \clef "treble_8" \part-Peight-one }
+    \new TabStaff \part-Peight-one
+  >>
 
   \tag #'(accompaniment band r_guit)
   <<
@@ -117,30 +120,34 @@ layl = <<
     \new Staff \with {
       instrumentName = "Rhythm Guitar"
       shortInstrumentName = "R. Guit"
-    } \part-Pnine-one
-    \new TabStaff \part-Pnine-one
+    } <<
+      { \clef "treble_8" \rg_notes }
+      \new Voice \with { \consists "Pitch_squash_engraver" } \part-Pnine-one
+    >>
+    \new TabStaff \rg_notes
   >>
 
   \tag #'(accompaniment band b_guit)
-    \new StaffGroup \with {
-      systemStartDelimiter = #'SystemStartSquare
-      instrumentName = "Bass Guitar"
-      shortInstrumentName = "B. Guit"
-    } <<
-    \new Staff \part-Ponezero-one
-      \new TabStaff \with {
-        stringTunings = #bass-tuning
-      } \part-Ponezero-one
-    >>
+  \new StaffGroup \with {
+    systemStartDelimiter = #'SystemStartSquare
+    instrumentName = "Bass Guitar"
+    shortInstrumentName = "B. Guit"
+  } <<
+    \new Staff { \clef "bass_8" \part-Ponezero-one }
+    \new TabStaff \with {
+      stringTunings = #bass-tuning
+    } \part-Ponezero-one
+  >>
 
 
   \tag #'(accompaniment band drum)
-    \new DrumStaff \with {
-      instrumentName = "Drumkit"
-      shortInstrumentName = "Dr."
-    }  \part-Poneone-one
+  \new DrumStaff \with {
+    instrumentName = "Drumkit"
+    shortInstrumentName = "Dr."
+  }  \part-Poneone-one
 >>
 
+%{
 \score {
   \layl
-}
+}%}

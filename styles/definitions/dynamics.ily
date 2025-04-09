@@ -119,3 +119,16 @@ once-ed-cresc = #(define-music-function () ()
      \once \override Staff.Hairpin.style = #'dashed-line
   #})
 
+
+ccresc =
+#(define-music-function (mymarkup) (markup?)
+   (make-music 'CrescendoEvent
+               'span-direction START
+               'span-type 'text
+               'span-text mymarkup))
+cdecresc =
+#(define-music-function (mymarkup) (markup?)
+   (make-music 'DecrescendoEvent
+               'span-direction START
+               'span-type 'text
+               'span-text mymarkup))

@@ -19,6 +19,7 @@
 \include "../sources/under_attack.ly"
 \include "../sources/waterloo.ly"
 \include "../sources/take_a_chance.ly"
+\include "../sources/lay_all_your_love.ly"
 
 \pointAndClickOff
 
@@ -163,6 +164,19 @@
     }
     \score {
       \dancing_queen
+
+      \layout {}
+    }
+  }
+
+  \bookpart {
+    \tocItem i.layl \markup { "9. Lay All Your Love" }
+
+    \header {
+      \layl_header
+    }
+    \score {
+      \layl
 
       \layout {}
     }

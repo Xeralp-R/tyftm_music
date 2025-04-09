@@ -119,6 +119,7 @@ func main() {
     }
   }
 
+  /*
   boldprinter.Printf("Compiling ls_conductor!\n")
   var c = exec.Command("lilypond", "--output=" + filepath.Join(
     filepath.Dir(filepath.Dir(lybuffers[0].file.Name())), "exports/new_gen/"),
@@ -132,7 +133,7 @@ func main() {
 
   if err != nil {
     log.Fatal("Unable to compile everything: ", err)
-  }
+  }*/
 
-  fmt.Println("Successfully compiled everything!")
+  fmt.Println("Successfully compiled everything! Remember to compile conductor on your own.")
 }

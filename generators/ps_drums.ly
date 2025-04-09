@@ -10,6 +10,7 @@
 \include "../sources/mamma_mia.ly"
 \include "../sources/chiquitita.ly"
 \include "../sources/dancing_queen.ly"
+\include "../sources/lay_all_your_love.ly"
 \include "../sources/super_trouper.ly"
 \include "../sources/gimme_gimme_gimme.ly"
 \include "../sources/voulez_vous.ly"
@@ -154,6 +155,19 @@
     }
     \score {
       \keepWithTag #'(drum a_perc aperc nonchor) \dancing_queen
+
+      \layout {}
+    }
+  }
+
+  \bookpart {
+    \tocItem i.layl \markup { "9. Lay All Your Love" }
+
+    \header {
+      \layl_header
+    }
+    \score {
+      \keepWithTag #'(drum a_perc aperc nonchor) \layl
 
       \layout {}
     }
