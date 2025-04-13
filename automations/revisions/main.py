@@ -2,8 +2,8 @@
 
 import fileinput
 
-import modules.file_manager as fm
-import modules.commands as cmd
+import file_manager as fm
+import commands as cmd
 
 tasks = fm.readRevisions()
 

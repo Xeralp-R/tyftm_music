@@ -2,6 +2,7 @@
 exports/
 imports/
 .vscode/
+.venv/
 Musical_Experiments/
 other/
 __pycache__/
