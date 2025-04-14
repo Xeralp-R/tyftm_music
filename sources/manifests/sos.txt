@@ -1,0 +1,14 @@
+sos.ly
+sos
+3 orch.ly
+2 pno.ly
+2 sam.ly l
+2 donna.ly l
+3 chor.ly l
+2 e_kbd.ly
+1 l_guit.ly
+2 r_guit.ly c
+1 b_guit.ly
+1 drum.ly d
+1 a_perc.ly
+&
