@@ -10,11 +10,16 @@ import (
 
 var replacer_key = []string {
 	"g''", "hh",
+	"f''", "cymr",
+	"b''", "cymca",
 	"f'", "bd",
 	"c''", "sn",
 	":2", ":16",
 	"e'", "bd",
 	"a''", "cymc",
+	"g'", "tomfl",
+	"a'", "tomfh",
+	"b'", "toml",
 }
 
 func main() {

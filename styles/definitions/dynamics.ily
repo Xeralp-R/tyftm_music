@@ -106,9 +106,18 @@ ben-mp = #(make-pre-dynamic-script "ben "  "mp")
 meno-mf = #(make-pre-dynamic-script "meno" "mf")
 poco-mf = #(make-pre-dynamic-script "poco " "mf")
 ben-mf = #(make-pre-dynamic-script "ben" "mf")
-mp-leggiero = #(make-post-dynamic-script "mp" " leggiero")
 ben-p = #(make-pre-dynamic-script "ben" "p")
+
+mp-leggiero = #(make-post-dynamic-script "mp" " leggiero")
+f-molto = #(make-post-dynamic-script "f" " molto")
+p-secco = #(make-post-dynamic-script "p" " secco")
+f-marcato = #(make-post-dynamic-script "f" " marcato")
+mf-marcato = #(make-post-dynamic-script "mf" " marcato")
+f-misurato = #(make-post-dynamic-script "f" " misurato")
+p-misurato = #(make-post-dynamic-script "p" " misurato")
+p-ben-misurato = #(make-post-dynamic-script "p" " ben misurato")
 p-bright = #(make-post-dynamic-script "p"  "bright")
+
 ed-text = #(define-music-function (arg) (markup?)
   #{
      -\markup { \upright #arg }

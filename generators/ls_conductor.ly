@@ -20,6 +20,8 @@
 \include "../sources/waterloo.ly"
 \include "../sources/take_a_chance.ly"
 \include "../sources/lay_all_your_love.ly"
+\include "../sources/entracte.ly"
+\include "../sources/money_iiix.ly"
 
 \pointAndClickOff
 
@@ -112,6 +114,19 @@
     }
     \score {
       \honey_honey
+
+      \layout {}
+    }
+  }
+
+  \bookpart {
+    \tocItem i.mmm \markup { "4. Money Money Money" }
+
+    \header {
+      \miiix_header
+    }
+    \score {
+      \miiix
 
       \layout {}
     }
@@ -234,6 +249,18 @@
     }
   }
 
+  \bookpart {
+    \tocItem ii.ent \markup { "13. Entracte" }
+
+    \header {
+      \ent_header
+    }
+    \score {
+      \ent
+
+      \layout {}
+    }
+  }
 
   \bookpart {
     \tocItem ii.ua \markup { "14. Under Attack" }

@@ -50,27 +50,30 @@ func main() {
 
 		Must(sp_file_r.WriteString(`% Expanded by dist_parts` + "\n"))
 		Must(sp_file_r.WriteString(`\version "2.24.0"` + "\n"))
-		Must(sp_file_r.WriteString(`\include "../styles/global.ily"` + "\n"))
+		Must(sp_file_r.WriteString(`\include "../../styles/global.ily"` + "\n\n"))
 
 		nonvariables = append(nonvariables, lyparser.LyStatement{[]string{"\\include", `"` + fp.Join(fp.Base(output_folder), words[1]) + `"`}, lyparser.Prologue})
 
 		if (len(words) == 2) {
 			for i := 0; i < Must(strconv.Atoi(words[0])); i += 1 {
-				Must(sp_file_r.WriteString(variables[counter + i].Print() + "\n"))
+				Must(sp_file_r.WriteString(variables[counter + i].Print() + "\n\n"))
 			}
 		} else {
 			for i := 0; i < Must(strconv.Atoi(words[0])); i += 1 {
 				curr_var := variables[counter + i]
 
-				if words[2] == "l" && curr_var.Content[1] == "\\lyricmode" {
-					Must(sp_file_r.WriteString(lyrAlter(curr_var.Print())))
+				if words[2][0] == 'l' && curr_var.Content[1] == "\\lyricmode" {
+					Must(sp_file_r.WriteString(lyrAlter(curr_var.Print()) + "\n\n"))
 					continue
 				}
-				if words[2] == "c" && curr_var.Content[1] == "\\chordmode" {
-					Must(sp_file_r.WriteString(chordAlter(curr_var.Print())))
+				if words[2][0] == 'c' && curr_var.Content[1] == "\\chordmode" {
+					Must(sp_file_r.WriteString(chordAlter(curr_var.Print()) + "\n\n"))
 					continue
 				}
-				Must(sp_file_r.WriteString(curr_var.Print() + "\n"))
+				if words[2][0] == 'd' {
+					drum_alter(curr_var.Print(), sp_file_r)
+				}
+				Must(sp_file_r.WriteString(curr_var.Print() + "\n\n"))
 			}
 		}
 

@@ -19,6 +19,7 @@ layl_measures = {
 }
 
 layl_marks = {
+  \tempo \markup \column {"Poco vivace" "As dance music"} 4 = 135
   R1*2 \mark \default
   R1*4 \mark \default
   R1*12 \mark \default

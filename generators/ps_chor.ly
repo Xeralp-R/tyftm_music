@@ -6,6 +6,7 @@
 \include "../sources/overture.ly"
 \include "../sources/prelude.ly"
 \include "../sources/honey_honey.ly"
+\include "../sources/money_iiix.ly"
 \include "../sources/our_last_summer.ly"
 \include "../sources/mamma_mia.ly"
 \include "../sources/chiquitita.ly"
@@ -14,6 +15,7 @@
 \include "../sources/super_trouper.ly"
 \include "../sources/gimme_gimme_gimme.ly"
 \include "../sources/voulez_vous.ly"
+\include "../sources/entracte.ly"
 \include "../sources/under_attack.ly"
 \include "../sources/does_your_mother_know.ly"
 \include "../sources/knowing_me.ly"
@@ -102,6 +104,19 @@
     }
     \score {
       \keepWithTag #'(chor) \honey_honey
+
+      \layout {}
+    }
+  }
+
+  \bookpart {
+    \tocItem i.mmm \markup { "4. Money Money Money" }
+
+    \header {
+      \miiix_header
+    }
+    \score {
+      \keepWithTag #'(chor) \miiix
 
       \layout {}
     }
@@ -213,6 +228,19 @@
 
   \bookpart {
     \tocSection ii "Act II" 
+    \tocItem ii.ent \markup { "13. Entracte" }
+
+    \header {
+      \ent_header
+    }
+    \score {
+      \keepWithTag #'(chor) \ent
+
+      \layout {}
+    }
+  }
+
+  \bookpart {
     \tocItem ii.ua \markup { "14. Under Attack" }
 
     \header {
