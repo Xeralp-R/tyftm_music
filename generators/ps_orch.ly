@@ -17,6 +17,7 @@
 \include "../sources/voulez_vous.ly"
 \include "../sources/entracte.ly"
 \include "../sources/under_attack.ly"
+\include "../sources/sos.ly"
 \include "../sources/does_your_mother_know.ly"
 \include "../sources/knowing_me.ly"
 \include "../sources/slipping_through_my_fingers.ly"
@@ -251,6 +252,19 @@
     }
     \score {
       \keepWithTag #'(orch nonchor) \under_attack
+
+      \layout {}
+    }
+  }
+
+  \bookpart {
+    \tocItem ii.sos \markup { "15. SOS" }
+
+    \header {
+      \sos_header
+    }
+    \score {
+      \keepWithTag #'(orch nonchor) \sos
 
       \layout {}
     }

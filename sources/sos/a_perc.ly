@@ -2,10 +2,8 @@
 \version "2.24.0"
 \include "../../styles/global.ily"
 
-part-Ponefive-one = {
-  \key c \major
-  \time 4/4
-  \clef percussionR1 |
+part-Ponefive-one = \drummode {
+  R1_\ed-text "Tambourine" |
   R1 |
   R1 |
   R1 |
@@ -24,25 +22,9 @@ part-Ponefive-one = {
   R1 |
   % 15
   R1 |
-  e'8\f e'8 e'8-> e'8 e'8 e'8 e'8-> e'8 |
-  e'8\f e'8 e'8-> e'8 e'8 e'8 e'8-> e'8 |
-  e'8\f e'8 e'8-> e'8 e'8 e'8 e'8-> e'8 |
-  e'8\f e'8 e'8-> e'8 e'8 e'8 e'8-> e'8 |
-  % 20
-  e'8\f e'8 e'8-> e'8 e'8 e'8 e'8-> e'8 |
-  e'8\f e'8 e'8-> e'8 e'8 e'8 e'8-> e'8 |
-  e'8\f e'8 e'8-> e'8 e'8 e'8 e'8-> e'8 |
-  e'8\f e'8 e'8-> e'8 e'8 e'8 e'8-> e'8 |
-  e'8\f e'8 e'8-> e'8 e'8 e'8 e'8-> e'8 |
-  % 25
-  e'8\f e'8 e'8-> e'8 e'8 e'8 e'8-> e'8 |
-  e'8\f e'8 e'8-> e'8 e'8 e'8 e'8-> e'8 |
-  e'8\f e'8 e'8-> e'8 e'8 e'8 e'8-> e'8 |
-  e'8\f e'8 e'8-> e'8 e'8 e'8 e'8-> e'8 |
-  e'8\f e'8 e'8-> e'8 e'8 e'8 e'8-> e'8 |
-  % 30
-  e'8\f e'8 e'8-> e'8 e'8 e'8 e'8-> e'8 |
-  e'8\f e'8 e'8-> e'8 e'8 e'8 e'8-> e'8 |
+  \repeat percent 16 {
+    tamb8\f tamb8 tamb8-> tamb8 tamb8 tamb8 tamb8-> tamb8 |
+  }
   R1 |
   R1 |
   R1 |
@@ -60,24 +42,9 @@ part-Ponefive-one = {
   R1 |
   % 45
   R1 |
-  e'8\f e'8 e'8-> e'8 e'8 e'8 e'8-> e'8 |
-  e'8\f e'8 e'8-> e'8 e'8 e'8 e'8-> e'8 |
-  e'8\f e'8 e'8-> e'8 e'8 e'8 e'8-> e'8 |
-  e'8\f e'8 e'8-> e'8 e'8 e'8 e'8-> e'8 |
-  % 50
-  e'8\f e'8 e'8-> e'8 e'8 e'8 e'8-> e'8 |
-  e'8\f e'8 e'8-> e'8 e'8 e'8 e'8-> e'8 |
-  e'8\f e'8 e'8-> e'8 e'8 e'8 e'8-> e'8 |
-  e'8\f e'8 e'8-> e'8 e'8 e'8 e'8-> e'8 |
-  e'8\f e'8 e'8-> e'8 e'8 e'8 e'8-> e'8 |
-  % 55
-  e'8\f e'8 e'8-> e'8 e'8 e'8 e'8-> e'8 |
-  e'8\f e'8 e'8-> e'8 e'8 e'8 e'8-> e'8 |
-  e'8\f e'8 e'8-> e'8 e'8 e'8 e'8-> e'8 |
-  e'8\f e'8 e'8-> e'8 e'8 e'8 e'8-> e'8 |
-  e'8\f e'8 e'8-> e'8 e'8 e'8 e'8-> e'8 |
-  % 60
-  e'8\f e'8 e'8-> e'8 e'8 e'8 e'8-> e'8 |
+  \repeat percent 15 {
+    tamb8\f tamb8 tamb8-> tamb8 tamb8 tamb8 tamb8-> tamb8 |
+  }
   R1 |
   R1 |
   R1 |

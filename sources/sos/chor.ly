@@ -30,7 +30,7 @@ part-Peight-one = {
   f'8 f'8 ees'8( d'8) r2 |
   R1 |
   % 20
-  r8 f'8 f'8 f'8 f'8( ees'8) ees'8 ees'8 |
+  r8 f'8 f'8 f'8 f'8( ees'8) ees'8 ees'8~ |
   ees'8 ees'8 ees'8 ees'8 ees'8( d'8) d'8 f'8~ |
   f'8 f'8 ees'8( d'8) r2 |
   R1 |
@@ -86,7 +86,7 @@ part-Peight-one = {
 }
 
 PartPEightVoiceOneLyricsOne = \lyricmode {
-  \set ignoreMelismata = ##t So
+  So
   when you're near me, dar --  ling, can't you
   hear me S.  O. S.?  The love you gave
   me, no --  thing else can save me, S.  O.

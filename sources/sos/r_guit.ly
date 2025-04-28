@@ -5,7 +5,7 @@
 part-Ponetwo-one = {
   \key bes \major
   \time 4/4
-  \clef treble
+  \improvisationOn
   R1 |
   R1 |
   R1 |
@@ -25,25 +25,9 @@ part-Ponetwo-one = {
   R1 |
   % 15
   R1 |
-  a8\f-\markup { "acoustic, 12 string" } a8 a8 a8 a8 a8 a8 a8 |
-  a8\f-\markup { "acoustic, 12 string" } a8 a8 a8 a8 a8 a8 a8 |
-  a8\f-\markup { "acoustic, 12 string" } a8 a8 a8 a8 a8 a8 a8 |
-  a8\f-\markup { "acoustic, 12 string" } a8 a8 a8 a8 a8 a8 a8 |
-  % 20
-  a8\f-\markup { "acoustic, 12 string" } a8 a8 a8 a8 a8 a8 a8 |
-  a8\f-\markup { "acoustic, 12 string" } a8 a8 a8 a8 a8 a8 a8 |
-  a8\f-\markup { "acoustic, 12 string" } a8 a8 a8 a8 a8 a8 a8 |
-  a8\f-\markup { "acoustic, 12 string" } a8 a8 a8 a8 a8 a8 a8 |
-  a8\f-\markup { "acoustic, 12 string" } a8 a8 a8 a8 a8 a8 a8 |
-  % 25
-  a8\f-\markup { "acoustic, 12 string" } a8 a8 a8 a8 a8 a8 a8 |
-  a8\f-\markup { "acoustic, 12 string" } a8 a8 a8 a8 a8 a8 a8 |
-  a8\f-\markup { "acoustic, 12 string" } a8 a8 a8 a8 a8 a8 a8 |
-  a8\f-\markup { "acoustic, 12 string" } a8 a8 a8 a8 a8 a8 a8 |
-  a8\f-\markup { "acoustic, 12 string" } a8 a8 a8 a8 a8 a8 a8 |
-  % 30
-  a8\f-\markup { "acoustic, 12 string" } a8 a8 a8 a8 a8 a8 a8 |
-  a8\f-\markup { "acoustic, 12 string" } a8 a8 a8 a8 a8 a8 a8 |
+  \repeat percent 16 {
+    a8\f-\markup { "acoustic, 12 string" } a8 a8 a8 a8 a8 a8 a8 |
+  }
   \key ees \major
   R1 |
   R1 |
@@ -62,24 +46,9 @@ part-Ponetwo-one = {
   R1 |
   % 45
   R1 |
-  a8\f a8 a8 a8 a8 a8 a8 a8 |
-  a8\f a8 a8 a8 a8 a8 a8 a8 |
-  a8\f a8 a8 a8 a8 a8 a8 a8 |
-  a8\f a8 a8 a8 a8 a8 a8 a8 |
-  % 50
-  a8\f a8 a8 a8 a8 a8 a8 a8 |
-  a8\f a8 a8 a8 a8 a8 a8 a8 |
-  a8\f a8 a8 a8 a8 a8 a8 a8 |
-  a8\f a8 a8 a8 a8 a8 a8 a8 |
-  a8\f a8 a8 a8 a8 a8 a8 a8 |
-  % 55
-  a8\f a8 a8 a8 a8 a8 a8 a8 |
-  a8\f a8 a8 a8 a8 a8 a8 a8 |
-  a8\f a8 a8 a8 a8 a8 a8 a8 |
-  a8\f a8 a8 a8 a8 a8 a8 a8 |
-  a8\f a8 a8 a8 a8 a8 a8 a8 |
-  % 60
-  a8\f a8 a8 a8 a8 a8 a8 a8 |
+  \repeat percent 15 {
+    a8\f a8 a8 a8 a8 a8 a8 a8 |
+  }
   R1 |
   R1 |
   R1 |

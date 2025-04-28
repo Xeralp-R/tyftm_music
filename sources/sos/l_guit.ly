@@ -5,7 +5,6 @@
 part-Poneone-one = {
   \key bes \major
   \time 4/4
-  \clef treble
   R1 |
   R1 |
   R1 |
@@ -69,15 +68,13 @@ part-Poneone-one = {
   R1 |
   R1 |
   <<
-    \context Voice = "voiceone" {
-      \voiceOne
+    {
       bes4 g'8 g8 c'8 g'8 c'8 bes8~ |
       bes4 g'8 g8 c'8 g'8 c'8 bes8~ |
       % 50
       bes2 r2 |
-    }
-    \context Voice = "voicetwo" {
-      \voiceTwo
+    } \\
+    { 
       g4 ees'8 g8 aes8 ees'8 aes8 g8~ |
       g4 ees'8 g8 aes8 ees'8 aes8 g8~ |
       % 50
@@ -86,13 +83,11 @@ part-Poneone-one = {
   >>
   R1 |
   <<
-    \context Voice = "voiceone" {
-      \voiceOne
+    {
       bes4 g'8 g8 c'8 g'8 c'8 bes8~ |
       bes4 g'8 g8 c'8 g'8 c'8 bes8 |
     }
-    \context Voice = "voicetwo" {
-      \voiceTwo
+    \\ {
       g4 ees'8 g8 aes8 ees'8 aes8 g8~ |
       g4 ees'8 g8 aes8 ees'8 aes8 g8 |
     }
@@ -108,6 +103,6 @@ part-Poneone-one = {
   ees4 ees'4 ees4 d4 |
   c1~\> |
   c1 |
-  R1\other-dynamics |
+  R1\n |
 }
 

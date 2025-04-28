@@ -154,24 +154,11 @@ part-Pfive-one = {
   <ces' ees' ges' >4 ges'4 <aes des' f' >8 f'8 r8 <g bes ees' >8 |
   % 60
   <c' ees' aes' >4 <c' ees' aes' >8 <bes ees' g' >8~~~ <bes ees' g' >2 |
-  <<
-    {
-      <g c' ees' >8\> <g c' ees' >8 <g c' ees' >8 <g c' ees' >8 <g c' ees'
-      >8 <g c' ees' >8 <g c' ees' >8 <g c' ees' >8
-    } \\ { }
-  >> |
+  <g c' ees' >8\> <g c' ees' >8 <g c' ees' >8 <g c' ees' >8 <g c' ees'
+      >8 <g c' ees' >8 <g c' ees' >8 <g c' ees' >8 |
   <g c' ees' >8 <g c' ees' >8 <g c' ees' >8 <g c' ees' >8 <g c' ees' >8 <g
   c' ees' >8 <g c' ees' >8 <g c' ees' >8 |
-  <<
-    \context Voice = "voiceone" {
-      \voiceOne
-      R1\other-dynamics |
-    }
-    \context Voice = "voicetwo" {
-      \voiceTwo
-      |
-    }
-  >>
+  R1\n |
 }
 
 part-Pfive-two = {

@@ -2,11 +2,10 @@
 \version "2.24.0"
 \include "../../styles/global.ily"
 
-part-Ponethree-one = {
+part-Ponethree-one = \transpose c c, {
   \key bes \major
   \time 4/4
-  \clef bass
-  R1 |
+  R1^\markup {"Tuning: E" \flat " A"\flat " D" \flat " G"\flat} |
   R1 |
   R1 |
   R1 |
@@ -82,6 +81,6 @@ part-Ponethree-one = {
   ees4 ees'4 ees4 d4 |
   c1~\> |
   c1 |
-  R1\other-dynamics |
+  R1\n |
 }
 

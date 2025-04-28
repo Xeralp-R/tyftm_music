@@ -87,18 +87,9 @@ part-Ponezero-one = {
   % 60
   ees''16 bes'16 ges'16 bes'16 ees''16 bes'16 ges'16 bes'16 ees''16 bes'16
   ees'16 aes'16 d''16 ges'16 d'16 f'16 |
-  << { c'1~\> } \\ { } >> |
+  c'1~\>  |
   c'1 |
-  <<
-    \context Voice = "voiceone" {
-      \voiceOne
-      R1\other-dynamics |
-    }
-    \context Voice = "voicetwo" {
-      \voiceTwo
-      |
-    }
-  >>
+  R1\n |
 }
 
 part-Ponezero-two = {

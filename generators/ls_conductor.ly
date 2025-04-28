@@ -22,9 +22,10 @@
 \include "../sources/lay_all_your_love.ly"
 \include "../sources/entracte.ly"
 \include "../sources/money_iiix.ly"
+\include "../sources/sos.ly"
 
 \pointAndClickOff
-
+%{
 \book {
   \header {
     tagline = ##f
@@ -275,6 +276,19 @@
     }
   }
 
+  \bookpart {
+    \tocItem ii.sos \markup { "15. SOS" }
+
+    \header {
+      \sos_header
+    }
+    \score {
+      \sos
+
+      \layout {}
+    }
+  }
+
 
   \bookpart {
     \tocItem ii.dymk \markup { "16. Does Your Mother Know" }
@@ -353,7 +367,7 @@
       \layout {}
     }
   }
-}
+}%}
 %{
 \book {
   \bookOutputSuffix "1-Overture"
@@ -483,3 +497,12 @@
   }
 }
 %}
+
+\book {
+  \bookOutputSuffix "11-GIIIX"
+  \score {
+    \gimme_iiix
+    \midi{}
+  }
+}
+

@@ -67,7 +67,7 @@ part-Pseven-one = {
   g'8 g'8 f'8( ees'8) r2 |
   R1 |
   % 50
-  r8 g'8 g'8 g'8 g'8( f'8) f'8 f'8 |
+  r8 g'8 g'8 g'8 g'8( f'8) f'8 f'8~ |
   f'8 f'8 f'8 f'8 f'8( ees'8) ees'8 g'8~ |
   g'8 g'8 f'8( ees'8) r2 |
   r2 r8 ges'8 f'8 ees'8~ |
@@ -86,7 +86,6 @@ part-Pseven-one = {
 }
 
 PartPSevenVoiceOneLyricsOne = \lyricmode {
-  \set ignoreMelismata = ##t
   You seem so far a -- way,  Though you are stand --
    ding near.  __  You made me feel a --
   live,  But some -- thing died,  I fear.  __

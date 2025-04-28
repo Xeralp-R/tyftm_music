@@ -105,7 +105,7 @@ part-Ptwo-one = {
   bes'4\rf\> a'4 d'2~ |
   % 5
   d'1 |
-  r4 r4 r2 |
+  R1\! |
   d''4\rf\> c''4 bes'4 a'4 |
   bes'1\p |
   a'1 |
@@ -174,7 +174,7 @@ part-Ptwo-one = {
   ees'1 |
   g4->\> g4-> g4-> g4-> |
   g4-> g4-> g4-> g4-> |
-  R1\other-dynamics |
+  R1\n |
 }
 
 part-Pthree-one = {
@@ -188,7 +188,7 @@ part-Pthree-one = {
   g'4\rf\> c'4 bes2~ |
   % 5
   bes1 |
-  R1 |
+  R1\! |
   bes'4\rf\> a'4 g'4 f'4 |
   f'1\p |
   f'1 |
@@ -257,6 +257,6 @@ part-Pthree-one = {
   ees'1 |
   g'4->\> g'4-> g'4-> g'4-> |
   g'4-> g'4-> g'4-> g'4-> |
-  R1\other-dynamics |
+  R1\n |
 }
 

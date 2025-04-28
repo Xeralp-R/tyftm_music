@@ -30,7 +30,7 @@ part-Psix-one = {
   d'8 d'8 c'8( bes8) r2 |
   R1 |
   % 20
-  r8 d'8 d'8 d'8 d'8( c'8) c'8 c'8 |
+  r8 d'8 d'8 d'8 d'8( c'8) c'8 c'8~ |
   c'8 c'8 c'8 c'8 c'8( bes8) bes8 d'8~ |
   d'8 d'8 c'8( bes8) r2 |
   r2 r8 des'8 c'8 bes8~ |
@@ -86,7 +86,6 @@ part-Psix-one = {
 }
 
 PartPSixVoiceOneLyricsOne = \lyricmode {
-  \set ignoreMelismata = ##t
   Where are those hap --  py days?  They seem so
   hard to find,   I try to reach for
   you but you have closed your mind  What ev
