@@ -2,7 +2,7 @@
 
 e_kbd_rh = \relative c' {
   \key des \major
-  <des ges aes>1(\pp^\ed-text "Lovely Oohs"
+  <des ges aes>1(\pp
   <c f aes>
   <bes ees aes>) |
   <c f aes>( 

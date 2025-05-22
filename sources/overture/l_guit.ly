@@ -15,12 +15,15 @@ l_guit = {
   }
   R1*2
   % B
-  \transpose d f \relative c {
-    fis8 a8 b8 fis'8 ~ fis2 | % 12
-    r4 fis8 e8 fis8 e8 d4 | % 13
-    fis,8 a8 b8 fis'8 ~ fis2 | % 12
-    r4 fis8 e8 fis8 e8 d4 | % 13
+  \key g \major
+  \ottava #2
+  \relative c'' {
+    fis8 a d fis~ fis2 |
+    fis8 e fis e d8 r8 r4 |
+    fis,8 a d fis~ fis2 |
+    fis8 e fis e\prall d8 r8 r4 |
   }
+  \ottava #0
   \key ees \minor
   % C
   R1*4 |

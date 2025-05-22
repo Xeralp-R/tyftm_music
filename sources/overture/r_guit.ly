@@ -13,6 +13,7 @@ r_guit = {
   }
   s1*2 |
   % B
+  \key g \major
   s1*4
   \key ees \minor
   s1*4
@@ -41,10 +42,10 @@ r_guit_strums = {
   \oneVoice
   R1*2
   % B
-  r2 r4 r8 bes8~ |
-  bes2 r2 |
-  r2 r4 r8 bes8~ |
-  bes2 r2 |
+  r2 r4 r8 b8~ |
+  b2 r2 |
+  r2 r4 r8 b8~ |
+  b2 r2 |
   % C
   \key ees \minor
   R1*4
@@ -87,10 +88,10 @@ r_guit_strums = {
 
 r_guit_chords = \chordmode {
   s1*5
-  d2 d2:6 |
-  c2:sus2 d2 |
-  d2 d2:6 |
-  c1:sus2 |
+  d2:m bes2:dim |
+  g2:m7 d2:m |
+  d2:m bes2:dim |
+  g1:m7
   s1*2
   % B
   s2 s4. d8:aug |

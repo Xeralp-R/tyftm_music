@@ -16,6 +16,7 @@ b_guit = \transpose c c, {
   R1
   R1
   % B
+  \key g \major
   R1*4
   % C
   \key ees \minor
@@ -53,7 +54,7 @@ b_guit = \transpose c c, {
     ges,4 ges' ges,8 ges ges'4 |
   }
   \relative c {
-    \tempo "Poco presto" 4 = 135
+    \tempo "Poco presto" 4 = 152
     b4-. b->~ b8 b( cis d)~ |
     d4. d8-. e4-> e-> |
     ges,4-> ges'-> ges,8-. ges-. ges'4-> |
@@ -68,6 +69,6 @@ b_guit = \transpose c c, {
     \repeat unfold 4 bes4-.
     \repeat unfold 4 bes4-.
     \repeat unfold 4 bes4-.
-    R1*4 \mark "attaca" \bar "||"
+    R1*4 \bar "||"
   }
 }
