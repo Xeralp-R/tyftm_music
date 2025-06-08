@@ -111,7 +111,7 @@ part-Psix-one = {
   cis'8 cis'8 cis'8 cis'8 r8 dis'8 cis'8( b8) |
   b2 r2 |
   r4 cis'8 cis'8 dis'8 e'4 r8 |
-  r4 a'4 r2 |
+  r4 \once \override NoteHead.style = #'cross a'4 r2 |
   R1 |
   % 90
   R1 |
@@ -263,7 +263,7 @@ part-Pseven-one = {
   cis'8 cis'8 cis'8 cis'8 r8 dis'8 cis'8( b8) |
   b2 r2 |
   r4 cis'8 cis'8 dis'8 e'4 r8 |
-  r4 a'4 r2 |
+  r4 \once \override NoteHead.style = #'cross a'4 r2 |
   R1 |
   % 90
   R1 |

@@ -85,13 +85,13 @@ part-Ponetwo-one = \drummode {
       bd8-> bd8 bd8-> bd8-> bd8 bd8-> bd8-> bd8 |
       bd8-> bd8 bd8-> bd8-> bd8 bd8-> bd8-> bd8 |
       % 25
-      bd8-> bd8 bd8-> bd8-> bd8 bd8-> bd8-> bd8 |
-      bd8-> bd8 bd8-> bd8-> bd8 bd8-> bd8-> bd8 |
-      bd8-> bd8 bd8-> bd8-> bd8 bd8-> bd8-> bd8 |
-      bd8-> bd8 bd8-> bd8-> bd8 bd8-> bd8-> bd8 |
-      bd8-> bd8 bd8-> bd8-> bd8 bd8-> bd8-> bd8 |
+      bd8^\ed-text "sim." bd8 bd8 bd8 bd8 bd8 bd8 bd8 |
+      bd8 bd8 bd8 bd8 bd8 bd8 bd8 bd8 |
+      bd8 bd8 bd8 bd8 bd8 bd8 bd8 bd8 |
+      bd8 bd8 bd8 bd8 bd8 bd8 bd8 bd8 |
+      bd8 bd8 bd8 bd8 bd8 bd8 bd8 bd8 |
       % 30
-      bd8-> bd8 bd8-> bd8-> bd8 bd8-> bd8-> bd8 |
+      bd8 bd8 bd8 bd8 bd8 bd8 bd8 bd8 |
       bd4 r4 bd4 r4 |
       bd4 r4 bd4 r4 |
       bd4 r4 bd4 r4 |
@@ -157,15 +157,15 @@ part-Ponetwo-one = \drummode {
     \context DrumVoice = "voiceone" {
       \voiceOne
       R1\mp |
-      R1\mp |
+      R1 |
       % 60
-      R1\mp |
-      R1\mp |
-      R1\mp |
-      R1\mp |
-      R1\mp |
+      R1 |
+      R1 |
+      R1 |
+      R1 |
+      R1 |
       % 65
-      R1\mp |
+      R1 |
       r4 sn4 r4 sn4 |
       r4 sn4 r4 sn4 |
       r4 sn4 r4 sn4 |
@@ -179,13 +179,13 @@ part-Ponetwo-one = \drummode {
       bd8-> bd8 bd8-> bd8-> bd8 bd8-> bd8-> bd8 |
       bd8-> bd8 bd8-> bd8-> bd8 bd8-> bd8-> bd8 |
       % 60
-      bd8-> bd8 bd8-> bd8-> bd8 bd8-> bd8-> bd8 |
-      bd8-> bd8 bd8-> bd8-> bd8 bd8-> bd8-> bd8 |
-      bd8-> bd8 bd8-> bd8-> bd8 bd8-> bd8-> bd8 |
-      bd8-> bd8 bd8-> bd8-> bd8 bd8-> bd8-> bd8 |
-      bd8-> bd8 bd8-> bd8-> bd8 bd8-> bd8-> bd8 |
+      bd8^\ed-text "sim." bd8 bd8 bd8 bd8 bd8 bd8 bd8 |
+      bd8 bd8 bd8 bd8 bd8 bd8 bd8 bd8 |
+      bd8 bd8 bd8 bd8 bd8 bd8 bd8 bd8 |
+      bd8 bd8 bd8 bd8 bd8 bd8 bd8 bd8 |
+      bd8 bd8 bd8 bd8 bd8 bd8 bd8 bd8 |
       % 65
-      bd8-> bd8 bd8-> bd8-> bd8 bd8-> bd8-> bd8 |
+      bd8 bd8 bd8 bd8 bd8 bd8 bd8 bd8 |
       bd4 r4 bd4 r4 |
       bd4 r4 bd4 r4 |
       bd4 r4 bd4 r4 |
@@ -220,7 +220,7 @@ part-Ponetwo-one = \drummode {
     }
     \context DrumVoice = "voicetwo" {
       \voiceTwo
-      bd4 |
+      r2 r4 bd4 |
       bd4 bd8 bd8 r8 bd8 bd4 |
       % 75
       bd4 bd8 bd8 r8 bd8 bd4 |

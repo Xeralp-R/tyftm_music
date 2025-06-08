@@ -34,8 +34,8 @@ part-Pone-one = {
   R1 |
   R1 |
   % 20
-  r1 |
-  r2 r4 r4 |
+  R1 |
+  R1 |
   R1 |
   R1 |
   R1 |
@@ -202,7 +202,7 @@ part-Ptwo-one = {
   e'1\< |
   % 55
   eis'1 |
-  r2 r4 r8 fis''8(\f-molto |
+  r2\! r4 r8 fis''8(\f-molto |
   g''8)-. e''8( fis''8)-. d''8( e''8)-. cis''8( d''4)-- |
   b8\p-secco cis'8 d'8 b8 cis'8 d'8 r4 |
   r4 cis'8 b8 cis'8 d'8 r4 |
@@ -280,7 +280,7 @@ part-Pthree-one = {
   e'1 |
   eis'1\< |
   % 20
-  fis'1 |
+  fis'2.\> r4\! |
   r2 r4 r8 fis'8(\f-molto |
   g'8)-. e'8( fis'8)-. d'8( e'8)-. cis'8( d'4)-- |
   R1 |
@@ -323,7 +323,7 @@ part-Pthree-one = {
   e'1\< |
   % 55
   eis'1 |
-  r2. r8 fis'8(\f-molto |
+  r2.\! r8 fis'8(\f-molto |
   g'8)-. e'8( fis'8)-. d'8( e'8)-. cis'8( d'4)-- |
   b8\p-secco cis'8 d'8 b8 cis'8 d'8 r4 |
   r4 cis'8 b8 cis'8 d'8 r4 |

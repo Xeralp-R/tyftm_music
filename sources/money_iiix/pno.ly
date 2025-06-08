@@ -51,8 +51,8 @@ part-Pfour-one = {
   >>
   cis''4 \tuplet 7/4 {
     fis'16( ais'16 cis''16 e''16 fis''16 ais''16 cis'''16
-  } fis'''4) r4 |
-  << { R1 } \\ { } >> |
+  } fis'''4)\fermata r4 |
+  R1 |
   R1 |
   R1 |
   R1 |
@@ -64,12 +64,8 @@ part-Pfour-one = {
   R1 |
   % 30
   R1 |
-  <<
-    {
-      <b' e'' >8\f <b' e'' fis'' >8 <b' e'' g'' >8 <b' e'' >8 <b' e'' fis''
-      >8 <b' e'' g'' >8 <b' e'' g'' >8 <ais' cis'' >8
-    } \\ { }
-  >> |
+  <b' e'' >8\f <b' e'' fis'' >8 <b' e'' g'' >8 <b' e'' >8 <b' e'' fis''
+      >8 <b' e'' g'' >8 <b' e'' g'' >8 <ais' cis'' >8 |
   <ais' cis'' >8 <ais' cis'' >8 <ais' cis'' fis'' >8 <ais' cis'' e'' >8
   <ais' cis'' fis'' >8 <ais' cis'' g'' >8 <ais' cis'' g'' >8 <ais' cis'' >8 |
   <a' b' ees'' >8 <a' b' ees'' >8 <a' b' ees'' g'' >8 <a' b' ees'' fis'' >8
@@ -122,7 +118,7 @@ part-Pfour-one = {
     }
   >>
   R1 |
-  << { R1 } \\ { } >> |
+   R1  |
   R1 |
   % 60
   R1 |
@@ -132,12 +128,8 @@ part-Pfour-one = {
   R1 |
   % 65
   R1 |
-  <<
-    {
-      <b' e'' >8 <b' e'' fis'' >8 <b' e'' g'' >8 <b' e'' >8 <b' e'' fis''
-      >8 <b' e'' g'' >8 <b' e'' g'' >8 <ais' cis'' >8
-    } \\ { }
-  >> |
+  <b' e'' >8 <b' e'' fis'' >8 <b' e'' g'' >8 <b' e'' >8 <b' e'' fis''
+      >8 <b' e'' g'' >8 <b' e'' g'' >8 <ais' cis'' >8 |
   <ais' cis'' >8 <ais' cis'' >8 <ais' cis'' fis'' >8 <ais' cis'' e'' >8
   <ais' cis'' fis'' >8 <ais' cis'' g'' >8 <ais' cis'' g'' >8 <ais' cis'' >8 |
   <a' b' ees'' >8 <a' b' ees'' >8 <a' b' ees'' g'' >8 <a' b' ees'' fis'' >8

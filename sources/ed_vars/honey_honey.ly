@@ -1,20 +1,22 @@
 % Automatically generated from a musicxml file.
 \version "2.24.4"
-\include "../styles/global.ily"
-\include "../styles/final_styles/tyftm_fscore_style.ily"
+\include "../../styles/global.ily"
+\include "../../styles/final_styles/tyftm_fscore_style.ily"
 
-\include "honey_honey_a/vl_3_4.ly"
-\include "honey_honey_a/a_l.ly"
-\include "honey_honey_a/b_guit.ly"
-\include "honey_honey_a/drum.ly"
-\include "honey_honey_a/r_guit.ly"
-\include "honey_honey_a/l_guit.ly"
-\include "honey_honey_a/vl_1_2.ly"
-\include "honey_honey_a/sophie.ly"
+\include "../honey_honey_a/vl_3_4.ly"
+\include "../honey_honey_a/a_l.ly"
+\include "../honey_honey_a/b_guit.ly"
+\include "../honey_honey_a/drum.ly"
+\include "../honey_honey_a/r_guit.ly"
+\include "../honey_honey_a/l_guit.ly"
+\include "../honey_honey_a/vl_1_2.ly"
+\include "../honey_honey_a/sophie.ly"
 
-\include "honey_honey_a/chor.ly"
-\include "honey_honey_a/pno.ly"
-\include "honey_honey_a/e_kbd.ly"
+\include "../honey_honey_a/chor.ly"
+\include "../honey_honey_a/pno.ly"
+\include "../honey_honey_a/e_kbd.ly"
+
+\pointAndClickOff
 
 honey_honey_header = \header {
   composer = "Benny Andersson, Björn Ulvaeus"
@@ -158,39 +160,40 @@ honey_honey = {
         \new Staff \part-Ponezero-one
         \new Staff \part-Ponezero-two
     >>%}
-    
-    \tag #'(accompaniment band l_guit)
-    <<
-      \new ChordNames \chord-sequence
-      \new Staff \with {
-        instrumentName = "Lead Guitar"
-        shortInstrumentName = "L. Guit."
-      } \new Voice \with { \consists "Pitch_squash_engraver" } { \clef "treble_8" \part-Poneone-one }
-    >>
+    \new StaffGroup <<
+      \tag #'(accompaniment band l_guit)
+      <<
+        \new ChordNames \chord-sequence
+        \new Staff \with {
+          instrumentName = "Lead Guitar"
+          shortInstrumentName = "L. Guit."
+        } \new Voice \with { \consists "Pitch_squash_engraver" } { \clef "treble_8" \part-Poneone-one }
+      >>
 
-    \tag #'(accompaniment band r_guit)
-    <<
-      \new ChordNames \PartPOneTwoVoiceOneChords
-      \new Staff \with {
-        instrumentName = "Rhythm Guitar"
-        shortInstrumentName = "R. Guit"
-      } \new Voice \with { \consists "Pitch_squash_engraver" } { \clef "treble_8" \part-Ponetwo-one }
-    >>
+      \tag #'(accompaniment band r_guit)
+      <<
+        \new ChordNames \PartPOneTwoVoiceOneChords
+        \new Staff \with {
+          instrumentName = "Rhythm Guitar"
+          shortInstrumentName = "R. Guit"
+        } \new Voice \with { \consists "Pitch_squash_engraver" } { \clef "treble_8" \part-Ponetwo-one }
+      >>
 
-    \tag #'(accompaniment band b_guit)
-    \new StaffGroup \with {
-      systemStartDelimiter = #'SystemStartSquare
-      instrumentName = "Bass Guitar"
-      shortInstrumentName = "B. Guit"
-    } <<
-      \new Staff \part-Ponethree-one
-    >>
+      \tag #'(accompaniment band b_guit)
+      \new StaffGroup \with {
+        systemStartDelimiter = #'SystemStartSquare
+        instrumentName = "Bass Guitar"
+        shortInstrumentName = "B. Guit"
+      } <<
+        \new Staff \part-Ponethree-one
+      >>
 
-    \tag #'(accompaniment band drum)
-    \new DrumStaff \with {
-      instrumentName = "Drumkit"
-      shortInstrumentName = "Dr."
-    } \part-Ponefour-one
+      \tag #'(accompaniment band drum)
+      \new DrumStaff \with {
+        instrumentName = "Drumkit"
+        shortInstrumentName = "Dr."
+      } \part-Ponefour-one
+    >>
 
   >>
 }

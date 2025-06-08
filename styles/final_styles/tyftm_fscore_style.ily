@@ -87,6 +87,10 @@
     \override SystemStartBracket.collapse-height = #4
   }
   \context {
+    \ChoirStaff
+    \override SystemStartBracket.collapse-height = #4
+  }
+  \context {
     \Staff
     \override BreathingSign.text = \markup { \musicglyph #"scripts.caesura.curved" }
     \override Glissando.style = #'trill
