@@ -1,7 +1,7 @@
 part-Poneone-one = {
   \key f \major
   \time 4/4
-  \clef treble
+  \clef "treble_8"
   
   \new Voice \with {
     \consists Pitch_squash_engraver
@@ -48,85 +48,11 @@ part-Poneone-one = {
       g' >16 <d' f' a' >2~~~ |
       <d' f' a' >1\> |
       % 20
-      <d' f' a' >8\mp-\markup { "P.M." } <d' f' a' >16 <d' f' a' >16 <d' f' a'
-      >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16
-      <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 |
-      <d' f' a' >8\mp-\markup { "P.M." } <d' f' a' >16 <d' f' a' >16 <d' f' a'
-      >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16
-      <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 |
-      <d' f' a' >8\mp-\markup { "P.M." } <d' f' a' >16 <d' f' a' >16 <d' f' a'
-      >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16
-      <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 |
-      <d' f' a' >8\mp-\markup { "P.M." } <d' f' a' >16 <d' f' a' >16 <d' f' a'
-      >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16
-      <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 |
-      <d' f' a' >8\mp-\markup { "P.M." } <d' f' a' >16 <d' f' a' >16 <d' f' a'
-      >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16
-      <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 |
-      % 25
-      <d' f' a' >8\mp-\markup { "P.M." } <d' f' a' >16 <d' f' a' >16 <d' f' a'
-      >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16
-      <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 |
-      <d' f' a' >8\mp-\markup { "P.M." } <d' f' a' >16 <d' f' a' >16 <d' f' a'
-      >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16
-      <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 |
-      <d' f' a' >8\mp-\markup { "P.M." } <d' f' a' >16 <d' f' a' >16 <d' f' a'
-      >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16
-      <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 |
-      <d' f' a' >8\mp-\markup { "P.M." } <d' f' a' >16 <d' f' a' >16 <d' f' a'
-      >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16
-      <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 |
-      <d' f' a' >8\mp-\markup { "P.M." } <d' f' a' >16 <d' f' a' >16 <d' f' a'
-      >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16
-      <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 |
-      % 30
-      <d' f' a' >8\mp-\markup { "P.M." } <d' f' a' >16 <d' f' a' >16 <d' f' a'
-      >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16
-      <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 |
-      <d' f' a' >8\mp-\markup { "P.M." } <d' f' a' >16 <d' f' a' >16 <d' f' a'
-      >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16
-      <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 |
-      <d' f' a' >8\mp-\markup { "P.M." } <d' f' a' >16 <d' f' a' >16 <d' f' a'
-      >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16
-      <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 |
-      <d' f' a' >8\mp-\markup { "P.M." } <d' f' a' >16 <d' f' a' >16 <d' f' a'
-      >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16
-      <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 |
-      <d' f' a' >8\mp-\markup { "P.M." } <d' f' a' >16 <d' f' a' >16 <d' f' a'
-      >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16
-      <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 |
-      % 35
-      <d' f' a' >8\mp-\markup { "P.M." } <d' f' a' >16 <d' f' a' >16 <d' f' a'
-      >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16
-      <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 |
-      <d' f' a' >8\mp-\markup { "P.M." } <d' f' a' >16 <d' f' a' >16 <d' f' a'
-      >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16
-      <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 |
-      <d' f' a' >8\mp-\markup { "P.M." } <d' f' a' >16 <d' f' a' >16 <d' f' a'
-      >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16
-      <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 |
-      <d' f' a' >8\mp-\markup { "P.M." } <d' f' a' >16 <d' f' a' >16 <d' f' a'
-      >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16
-      <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 |
-      <d' f' a' >8\mp-\markup { "P.M." } <d' f' a' >16 <d' f' a' >16 <d' f' a'
-      >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16
-      <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 |
-      % 40
-      <d' f' a' >8\mp-\markup { "P.M." } <d' f' a' >16 <d' f' a' >16 <d' f' a'
-      >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16
-      <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 |
-      <d' f' a' >8\mp-\markup { "P.M." } <d' f' a' >16 <d' f' a' >16 <d' f' a'
-      >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16
-      <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 |
-      <d' f' a' >8\mp-\markup { "P.M." } <d' f' a' >16 <d' f' a' >16 <d' f' a'
-      >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16
-      <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 |
-      <d' f' a' >8\mp-\markup { "P.M." } <d' f' a' >16 <d' f' a' >16 <d' f' a'
-      >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16
-      <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 |
-      <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16 <d' f'
-      a' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16
-      <d' f' a' >16 |
+      \repeat percent 25 { 
+        <d' f' a' >8\mp-\markup { "P.M." } <d' f' a' >16 <d' f' a' >16 <d' f' a'
+        >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16
+        <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 |
+      }
       % 45
       <bes d' f' >2 <bes d' f' >2 |
       <bes d' f' >2 <bes d' f' >8 <bes d' f' >16 <bes d' f' >16 <bes d' f' >4 |
@@ -229,9 +155,9 @@ part-Poneone-one = {
       <bes d' f' >8 <bes d' f' >16 <bes d' f' >16 <bes d' f' >8 <bes d' f' >16
       <bes d' f' >16 <d' f' a' >8 <d' f' a' >16 <d' f' a' >16 <d' f' a' >8 <d'
       f' a' >16 <d' f' a' >16 |
-      \key a \major
       <c' e' g' >8 <c' e' g' >16 <c' e' g' >16 <c' e' g' >8 <c' e' g' >16 <c' e'
       g' >16 <d' f' a' >2 |
+      \key a \major
       R1 |
       % 100
       R1 |
@@ -241,7 +167,7 @@ part-Poneone-one = {
       R1 |
       % 105
       R1 |
-      R1 |
+      R1\fermata |
     }
   }
 }
@@ -315,7 +241,7 @@ r_guit_chords = \chordmode {
   c8 s16 s16 s8 s16 s16 d8:m s16 s16 s8 s16 s16 | % 96
   d8:m s16 s16 s8 s16 s16 bes8 s16 s16 s8 s16 s16 | % 97
   c8 s16 s16 s8 s16 s16 d8:m s16 s16 s8 s16 s16 | % 98
-  bes8 s16 s16 s8 s16 s16 d8:m s16 s16 s8 s16 s16 \bar "||"
+  bes8 s16 s16 s8 s16 s16 d8:m s16 s16 s8 s16 s16 
   c8 s16 s16 s8 s16 s16 d2:m | \barNumberCheck #100
   s1 s1 s1 s1 s1 s1 s1 s1 \bar "|."
 }

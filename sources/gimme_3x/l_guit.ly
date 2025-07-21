@@ -140,9 +140,10 @@ part-Ponezero-one = {
   R1 |
   R1 |
   % 90
-  d1\p\< |
   <<
-    {
+    \context Voice = "u" {
+      d1\p\< |
+      \voiceOne
       d8\mf a8 d'8. a16 d8 bes8 d'8. bes16 |
       c8 g8 d'8. g16 d8 a8 d'8. a16 |
       d8 bes8 d'8. bes16 d8 a8 d'8. a16 |
@@ -151,9 +152,11 @@ part-Ponezero-one = {
       d8 a8 d'8. a16 d8 bes8 d'8. bes16 |
       c8 g8 d'8. g16 d8 a8 d'8. a16 |
       d8 bes8 d'8. bes16 d8 a8 d'8. a16 |
-      \key a \major
       c8 g8 d'8. g16 d8 a8 d'8. a16 |
-    }\\{
+    }
+    \context Voice = "l" {
+      s1
+      \voiceTwo
       d2 d2 |
       c2 d2 |
       d2 d2 |
@@ -165,6 +168,7 @@ part-Ponezero-one = {
       c2 d2 |
     }
   >>
+  \key a \major
   <fis cis' >1 _\markup { \dynamic "p" \italic " al fine"}|
   % 100
   R1 |
@@ -174,5 +178,5 @@ part-Ponezero-one = {
   R1 |
   % 105
   R1 |
-  R1 |
+  R1\fermata |
 }

@@ -14,6 +14,8 @@
 \include "../gimme_3x/drum.ly"
 \include "../gimme_3x/a_perc.ly"
 
+\pointAndClickOff
+
 gimme_iiix_header = \header {
   composer = "Benny Andersson, Björn Ulvaeus"
   arranger = "Kate Quebral, MJ Laxina / RAR, SLCC"
@@ -30,14 +32,15 @@ gimme_iiix_marks = {
   R1*6 \mark \default %B
   R1*8 \mark \default %C
   R1*13 \mark \default %D
-  R1*13 \mark \default %E
+  R1*13 \mark \default \bar "||" %E
   R1*6 \mark \default %F
-  R1*8 \mark \default %G
+  R1*8 \mark \default \bar "||" %G
   R1*8 \mark \default %H
-  R1*9 \mark \default %I
-  R1*4 \mark \default %J
+  R1*9 \mark \default \bar "||" %I
+  R1*4 \mark \default \bar "||" %J
   R1*8 \repeat volta 2 { R1*2 } R1 \mark \default %K
-  R1*8 \mark \default %L
+  R1*8 \mark \default %L 
+  \bar "||"
   R1*8 \bar "|."
 }
 
@@ -68,8 +71,8 @@ gimme_iiix = {
       { \gimme_iiix_marks }
       { \compressEmptyMeasures \gimme_iiix_measures }
     >>
-    %{
-    \new StaffGroup <<
+
+    %{\new StaffGroup <<
       \tag #'(accompaniment orch vl_i)
       \new Staff \with {
         instrumentName = "Violin 1"
@@ -121,8 +124,10 @@ gimme_iiix = {
       shortInstrumentName = "W. Ch."
     }<<
       \new Staff <<
-        \partCombine \part-Pseven-one \part-Peight-one
-        \new NullVoice \part-Pseven-one \addlyrics \women-lyr
+        { \partCombine \wui \wli
+        << \new Voice = "u" { \voiceOne \wuii } \new Voice = "l" { \voiceTwo \wlii } >> 
+        \partCombine \wuiii \wliii}
+        \new NullVoice { \wui \wuii \wuiii } \addlyrics \women-lyr
       >>
     >>
 
@@ -185,6 +190,10 @@ gimme_iiix = {
 
 \score {
   \gimme_iiix
+}
+
+\paper {
+  systems-per-page = 1
 }
 
 \header {

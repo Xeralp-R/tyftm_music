@@ -118,8 +118,8 @@ part-Ponetwo-one = \transpose c c, {
   d8 d'8 d8 d'8 bes,8 bes8 bes,8 bes8 |
   c8 c'8 c8 c'8 d8 d'8 d16 d'8.-> |
   bes,8 bes8 bes,8 bes8 d8 d'8 d8 d'8 |
-  \key a \major
   c8 c'8 c8 c'8 d8 d'8 d8 d'8 |
+  \key a \major
   fis1~ _\markup { \dynamic "p" \italic " al fine"}|
   % 100
   fis1 |
@@ -129,5 +129,5 @@ part-Ponetwo-one = \transpose c c, {
   fis,1 |
   % 105
   R1 |
-  R1 |
+  R1\fermata |
 }

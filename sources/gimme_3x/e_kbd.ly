@@ -1,23 +1,11 @@
 part-Pnine-one = {
-  <<
-    \context Voice = "voiceone" {
-      \voiceOne
-      \key f \major
-      \time 4/4
-      \clef treble
-      R1 |
-      R1 |
-      R1 |
-      R1 |
-    }
-    \context Voice = "voicetwo" {
-      \voiceTwo
-      |
-      |
-      |
-      |
-    }
-  >>
+  \key f \major
+  \time 4/4
+  \clef treble
+  R1 |
+  R1 |
+  R1 |
+  R1 |
   e'16 c'16 d'16 e'16 f'16 d'16 e'16 f'16 g'16 e'16 f'16 g'16 a'16 bes'16
   c''16 d''16 |
   % 5
@@ -33,10 +21,10 @@ part-Pnine-one = {
   % 10
   e''16-> d''16 cis''16 a'16 e''16-> d''16 cis''16 a'16 e''16-> d''16
   cis''16 a'16 e''16-> d''16 cis''16 a'16 |
-  << { d'1~\mf } \\ { } >> |
+  d'1~\mf |
   d'1~ |
   d'1~ |
-  << { d'2 r8 e''16( f''16 e''16 c''16 a'16 f'16) } \\ { r2 } >> |
+  d'2 r8 e''16( f''16 e''16 c''16 a'16 f'16) |
   % 15
   d'1~ |
   d'1~ |
@@ -45,20 +33,9 @@ part-Pnine-one = {
     d'''16->
     a''16 f''16
   } |
-  <<
-    \context Voice = "voiceone" {
-      \voiceOne
-      R1 |
+      d''1 |
       % 20
       R1 |
-    }
-    \context Voice = "voicetwo" {
-      \voiceTwo
-      |
-      % 20
-      |
-    }
-  >>
   R1 |
   b1~ |
   b1 |
@@ -101,10 +78,10 @@ part-Pnine-one = {
   % 50
   e''16-> d''16 cis''16 a'16 e''16-> d''16 cis''16 a'16 e''16-> d''16
   cis''16 a'16 e''16-> d''16 cis''16 a'16 |
-  << { d'1~\mf } \\ { } >> |
+  d'1~\mf |
   d'1~ |
   d'1~ |
-  << { d'2 r8 e''16( f''16 e''16 c''16 a'16 f'16) } \\ { r2 } >> |
+  d'2 r8 e''16( f''16 e''16 c''16 a'16 f'16) |
   % 55
   d'1~ |
   d'1~ |
@@ -113,20 +90,9 @@ part-Pnine-one = {
     d'''16->
     a''16 f''16
   } |
-  <<
-    \context Voice = "voiceone" {
-      \voiceOne
-      R1 |
+   d''1 |
       % 60
       R1 |
-    }
-    \context Voice = "voicetwo" {
-      \voiceTwo
-      |
-      % 60
-      |
-    }
-  >>
   b1~ |
   b1 |
   bes1~ |
@@ -166,29 +132,18 @@ part-Pnine-one = {
   % 90
   e'16\< c'16 d'16 e'16 f'16 d'16 e'16 f'16 g'16 e'16 f'16 g'16 a'16 bes'16
   c''16 d''16 |
-  << { <d' d'' >1~~\mf } \\ { } >> |
+  <d' d'' >1~~\mf |
   <d' d'' >1~~ |
-  <<
-    \context Voice = "voiceone" {
-      \voiceOne
       <d' d'' >1~~ |
       <d' d'' >2 r8 e''16( f''16 e''16 c''16 a'16 f'16) |
       % 95
-    }
-    \context Voice = "voicetwo" {
-      \voiceTwo
-      r2 |
-      r2 |
-      % 95
-    }
-  >>
   d'1~ |
   d'1~ |
   d'1~ |
-  \key a \major
   d'2 r8 \tuplet 3/2 { d''16(-> f''16 a''16) } d'''8-^ \tuplet 3/2 {
     d'''16(-> a''16 f''16)
   } |
+  \key a \major
   fis''2.->_\markup { \dynamic "p" \italic " al fine"} r4 |
   % 100
   R1 |
@@ -198,7 +153,7 @@ part-Pnine-one = {
   R1 |
   % 105
   R1 |
-  R1 |
+  R1\fermata |
 }
 
 part-Pnine-two = {
@@ -225,42 +180,41 @@ part-Pnine-two = {
       a2 bes2 |
       g2 a2 |
       bes2 a2 |
-      g2 a8 e'16( f'16 e'16 c'16 a16 f16) |
+      g2 \oneVoice a8 e'16( f'16 e'16 c'16 a16 f16) | \voiceOne
       % 15
       a2 bes2 |
       g2 a2 |
       bes2 a2 |
-      g2 r2 |
     }
     \context Voice = "voicetwo" {
       \voiceTwo
       d1~ |
       d1~ |
       d1~ |
-      d2 r2 |
+      d2 s2 |
       % 15
       d1~ |
       d1~ |
       d1 |
-      r2 |
     }
   >>
-  <d, d d' >1 |
+  g2 r2 |
+  <d, d>1 |
   % 20
-  d,,1~ |
-  d,,1~ |
-  d,,1~ |
-  d,,1~ |
-  d,,1~ |
+  d,1~ |
+  d,1~ |
+  d,1~ |
+  d,1~ |
+  d,1~ |
   % 25
-  d,,1~ |
-  d,,1~ |
-  d,,1~ |
-  d,,1~ |
-  d,,1 |
+  d,1~ |
+  d,1~ |
+  d,1~ |
+  d,1~ |
+  d,1 |
   % 30
-  d,,1~ |
-  d,,1 |
+  d,1~ |
+  d,1 |
   R1 |
   R1 |
   R1 |
@@ -291,41 +245,40 @@ part-Pnine-two = {
       a2 bes2 |
       g2 a2 |
       bes2 a2 |
-      g2 a8 e'16( f'16 e'16 c'16 a16 f16) |
+      g2 \oneVoice a8 e'16( f'16 e'16 c'16 a16 f16) | \voiceOne
       % 55
       a2 bes2 |
       g2 a2 |
       bes2 a2 |
-      g2 r2 |
     }
     \context Voice = "voicetwo" {
       \voiceTwo
       d1~ |
       d1~ |
       d1~ |
-      d2 r2 |
+      d2 s2 |
       % 55
       d1~ |
       d1~ |
       d1 |
-      r2 |
     }
   >>
-  <d, d d' >1 |
+  g2 r2 |
+  <d, d>1 |
   % 60
-  d,,1~ |
-  d,,1~ |
-  d,,1~ |
-  d,,1~ |
-  d,,1~ |
+  d,1~ |
+  d,1~ |
+  d,1~ |
+  d,1~ |
+  d,1~ |
   % 65
-  d,,1~ |
-  d,,1 |
-  d,,1~ |
-  d,,1~ |
-  d,,1~ |
+  d,1~ |
+  d,1 |
+  d,1~ |
+  d,1~ |
+  d,1~ |
   % 70
-  d,,1 |
+  d,1 |
   R1 |
   R1 |
   d1 |
@@ -361,7 +314,6 @@ part-Pnine-two = {
       a2 bes2 |
       g2 a2 |
       bes2 a2 |
-      \key a \major
       g2 r2 |
     }
     \context Voice = "voicetwo" {
@@ -377,6 +329,7 @@ part-Pnine-two = {
       d2 r2 |
     }
   >>
+  \key a \major
   R1 |
   % 100
   r2 r8 gis16 a16 gis16 e16 cis16 a,16 |
@@ -386,5 +339,5 @@ part-Pnine-two = {
   r2 r8 gis16 a16 gis16 e16 cis16 a,16 |
   % 105
   fis,1~ |
-  fis,1 |
+  fis,1\fermata |
 }

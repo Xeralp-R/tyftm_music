@@ -17,6 +17,8 @@
 \include "../super_trouper/b_guit.ly"
 \include "../super_trouper/drums.ly"
 
+\pointAndClickOff
+
 super_trouper_header = \header {
   title =  "Super Trouper"
   composer =  "Benny Anderson & Bjorn Ulvaeus"

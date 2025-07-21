@@ -108,5 +108,5 @@ part-Ponefour-one = \drummode {
   R1 |
   % 105
   R1 |
-  R1 |
+  R1\fermata |
 }
