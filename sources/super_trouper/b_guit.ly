@@ -64,7 +64,8 @@ PartPOneSixVoiceOne =  \transpose c c, {
   g,8 g8 g8 e16 d16 g,8 g8 g8 e16 d16 | % 72
   g,8 g8 g8 e16 d16 g,8 g8 g8 e16 d16 | % 73
   c1\laissezVibrer
-  R1 \bar "|."
+  R1
+  c4\sf\staccatissimo r4 r2 \bar "|." \bar "|."
 }
 
 bass-guit-dyn = {

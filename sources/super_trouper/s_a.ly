@@ -38,7 +38,7 @@ PartPNineVoiceOne =  {
     b'2. r8 b'8 | % 46
     b'8 b'8 b'8 b'8 b'8 ( c''8 ) c''4 | % 47
     c''2 \> r2 | % 48
-    \! R1 | % 49
+    <>\! R1 | % 49
     c''1 ~ ^\mp | % 50
     c''1 | \barNumberCheck #51
     c''2 b'2 | % 52
@@ -64,7 +64,8 @@ PartPNineVoiceOne =  {
     b'2. r8 b'8 | % 72
     b'8 b'8 b'8 b'8 b'8 ( c''8 ) c''4 | % 73
     g'4 g'4 g'4 g'4 | % 74
-    g'8 g'8 g'8 g'8 g'4 g'4 \bar "|."
+    g'8 g'8 g'8 g'8 g'4 g'4 
+    R1 \bar "|."
 }
 
 PartPNineVoiceOneLyricsOne =  \lyricmode {

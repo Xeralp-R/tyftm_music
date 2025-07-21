@@ -66,7 +66,7 @@ PartPOneFourVoiceOne =  {
   d8 d'8 d'8 b16 a16 d8 d'8 d'8 b16 a16 | \barNumberCheck #71
   g,8 g8 g8 e16 d16 g,8 g8 g8 e16 d16 | % 72
   g,8 g8 g8 e16 d16 g,8 g8 g8 e16 d16 | % 73
-  s1 R1 \bar "|."
+  s1 R1 s1 \bar "|."
 }
 
 l-guit-strums = {
@@ -148,6 +148,7 @@ l-guit-strums = {
   s1*7
   b1\laissezVibrer
   s1
+  b4\sf\staccatissimo r4 r2 \bar "|."
 }
 
 PartPOneFourVoiceOneChords =  \chordmode {
@@ -211,5 +212,5 @@ PartPOneFourVoiceOneChords =  \chordmode {
   s8 s8 s8 s16 s16 s8 s8 s8 s16 s16 | \barNumberCheck #71
   s8 s8 s8 s16 s16 s8 s8 s8 s16 s16 | % 72
   s8 s8 s8 s16 s16 s8 s8 s8 s16 s16 | % 73
-  c1 s1 \bar "|."
+  c1 s1 c1 \bar "|."
 }

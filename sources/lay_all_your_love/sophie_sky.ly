@@ -1,10 +1,12 @@
 % Expanded by dist_parts
 \version "2.24.0"
 \include "../../styles/global.ily"
-part-Pfour-one = {
+part-Pfour-one = { % sophie
   \key aes \major
   \time 4/4
   \clef treble
+
+  \dynamicUp
   R1 |
   R1 |
   R1 |
@@ -145,25 +147,34 @@ part-Pfour-one = {
   c''1~ |
   % 115
   c''2. r4 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 120
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 125
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 130
-  \key aes \major
-  R1 |
+  \repeat volta 2 {
+    ees''2\f^\ed-text"First time only" d''2 |
+    c''4 d''4 ees''4 f''4 |
+    % 60
+    ees''2.~ ees''8( d''8) |
+    d''2 r2 |
+    ees''2 f''4 g''8( f''8) |
+    f''2 f''4.( ees''8) |
+    ees''1~ |
+    % 65
+    ees''2~ ees''8 r8 r4 |
+    ees''2 d''2 |
+    c''4 d''4 ees''4 f''4 |
+    ees''2.~ ees''8( d''8) |
+    d''2 r2 |
+    % 70
+    ees''2 f''4 g''8( f''8) |
+    f''2 f''4.( ees''8) |
+    \alternative {
+      { ees''1~ |
+        ees''2~ ees''8 r8 r4 |
+      }
+      {
+        \key aes \major
+        R1
+      }
+    }
+  }
   R1 |
   R1 |
   R1 |
@@ -172,17 +183,16 @@ part-Pfour-one = {
   R1 |
   R1 |
   R1 |
-  R1 |
-  R1 |
-  % 140
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 145
-  R1 |
-  R1 |
+  aes'2\ff g'2 |
+  f'4 g'4 aes'4 bes'4 |
+  aes'2.~ aes'8( g'8) |
+  % 30
+  g'2 r2 |
+  aes'2 bes'4 c''8( bes'8) |
+  bes'2 bes'4.( aes'8) |
+  aes'1~ |
+  aes'2~ aes'8 r8 r4 |
+  R1
   R1 |
   R1 |
   R1 |
@@ -193,25 +203,44 @@ part-Pfour-one = {
   R1 |
 }
 PartPFourVoiceOneLyricsOne = \lyricmode {
-  \set ignoreMelismata = ##t
-  Don't go was -- ting your e -- mo --   tion Lay all
-  your love on me  It was like shoot -- ing a
-  sit -- ting duck A lit -- tle small -- talk, A smile and ba --
-  by I was stuck I still don't know what you've done with
-  me A grown -- up wo -- man should ne -- ver fall so ea -- si -- ly I
-  feel a kind of fear When I don't have you
-  near Un -- sat -- is -- fied I skip my pride I beg
-  you dear   I've had a few lit -- tle love af --
-  fairs They did -- n't last ve -- ry long and they've been pre --
-  tty scarce I used to think that was sen -- si -- ble It makes the
-  truth e -- ven more in -- comp -- re -- hen -- si -- ble Cause ev --
-  'ry -- thing is new And   ev --
-  'ry -- thing is you And all i've learned Has ov er
-  turned What I can do
-}part-Pfive-one = {
+  Don't go was -- ting your e -- mo --   tion, 
+  Lay all your love on me! __  
+
+  It was like shoot -- ing a sit -- ting duck, 
+  A lit -- tle small -- talk, a smile and ba -- by, I was stuck. 
+  I still don't know what you've done with me, 
+  A grown -- up wo -- man should ne -- ver fall so ea -- si -- ly.
+
+  I feel a kind of fear, 
+  When I don't have you near, 
+  Un -- sat -- is -- fied, I skip my pride, I beg you dear! __   
+
+  I've had a few lit -- tle love af -- fairs,
+  They did -- n't last ve -- ry long and they've been pre -- tty scarce.
+  I used to think that was sen -- si -- ble, 
+  It makes the truth e -- ven more in -- comp -- re -- hen -- si -- ble. 
+
+  Cause ev -- 'ry -- thing is new, 
+  And  ev -- 'ry -- thing's you, 
+  And all I've learned, has ov -- er
+  turned, What I can do? __
+
+  Don't go was -- ting your e -- mo --   tion, 
+  Lay all your love on me! __  
+  Don't go sha -- ring your de -- vo -- tion, 
+  Lay all your love on me! __
+
+  Don't go sha -- ring your de -- vo -- tion, 
+  Lay all your love on me! __
+
+}
+
+part-Pfive-one = { % sky
   \key aes \major
   \time 4/4
   \clef treble
+
+  \dynamicUp
   R1 |
   R1 |
   R1 |
@@ -352,25 +381,35 @@ PartPFourVoiceOneLyricsOne = \lyricmode {
   R1 |
   % 115
   R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 120
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 125
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 130
-  \key aes \major
-  R1 |
+  \repeat volta 2 {
+    ees''2\f d''2 |
+    c''4 d''4 ees''4 f''4 |
+    % 60
+    ees''2.~ ees''8( d''8) |
+    d''2 r2 |
+    ees''2 f''4 g''8( f''8) |
+    f''2 f''4.( ees''8) |
+    ees''1~ |
+    % 65
+    ees''2~ ees''8 r8 r4 |
+    ees''2 d''2 |
+    c''4 d''4 ees''4 f''4 |
+    ees''2.~ ees''8( d''8) |
+    d''2 r2 |
+    % 70
+    ees''2 f''4 g''8( f''8) |
+    f''2 f''4.( ees''8) |
+    \alternative {
+      { ees''1~ |
+        ees''2~ ees''8 r8 r4 |
+      }
+      {
+        \key aes \major
+        R1
+      }
+    }
+  }
+
   R1 |
   R1 |
   R1 |
@@ -400,14 +439,21 @@ PartPFourVoiceOneLyricsOne = \lyricmode {
   R1 |
 }
 PartPFiveVoiceOneLyricsOne = \lyricmode {
-  \set ignoreMelismata = ##t I
-  was n't jeal -- ous be -- fore we met now ev -- ry man that I see
-  is a po -- ten -- tial threat and i'm po -- ses -- sive it
-  is -- n't nice you've heard me say -- ing that smo -- king was
-  my on -- ly vice But now it is --  n't true now ev --
-  'ry -- thing is new And all i've learned Has ov --
-  er turned I beg of you   Don't go was --
-  ting your e -- mo --   tion Lay all your love
-  on me  Don't go sha -- ring your de -- vo --
-  tion Lay all your love on me
+  I was -- n't jeal -- ous be -- fore we met, 
+  Now ev -- ry man that I see is a po -- ten -- tial threat. 
+  And I'm po -- ses -- sive, it is -- n't nice, 
+  You've heard me say -- ing that smo -- king was my on -- ly vice. 
+  But now it is --  n't true, 
+  Now ev -- 'ry -- thing's new, 
+  And all I've learned has ov -- er turned, I beg of you! __  
+
+  Don't go was -- ting your e -- mo --   tion, 
+  Lay all your love on me! __  
+  Don't go sha -- ring your de -- vo -- tion, 
+  Lay all your love on me! __
+
+  Don't go was -- ting your e -- mo --   tion, 
+  Lay all your love on me! __  
+  Don't go sha -- ring your de -- vo -- tion, 
+  Lay all your love on me! __
 }

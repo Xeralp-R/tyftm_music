@@ -65,7 +65,8 @@ PartPOneVoiceOne =  {
     d'8 c'8 d'8 e'8 d'8 ( c'8 ) c'4 | % 47
   }
   c''1~ |
-  c''1 \bar "|."
+  c''1 
+  c''4\sf\staccatissimo r4 r2 \bar "|."\bar "|."
 }
 
 PartPTwoVoiceOne =  {
@@ -134,5 +135,6 @@ PartPTwoVoiceOne =  {
   b'8 b'8 b'8 b'8 b'8 ( c''8 ) c''4 | % 39
   g'1~
   g'1
+  g'4\sf\staccatissimo r4 r2 \bar "|."
 }
 

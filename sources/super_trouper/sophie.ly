@@ -30,7 +30,7 @@ PartPSevenVoiceOne =  {
     g'2. r8 g'8 | % 46
     g'8 g'8 g'8 g'8 g'4 g'4 | % 47
     g'2 \> r2 | % 48
-    \! R1 | % 49
+    <>\! R1 | % 49
     c''1 ~ ^\mp | % 50
     c''1 | \barNumberCheck #51
     c''2 b'2 | % 52
@@ -56,8 +56,9 @@ PartPSevenVoiceOne =  {
     g'2. r8 g'8 | % 72
     g'8 g'8 g'8 g'8 g'4 g'4 | % 73
     g'4 g'4 f'4 f'4 | % 74
-    e'8 ^ "rit." \startTrillSpan d'8 \stopTrillSpan e'8 f'8 e'8 ( d'8 )
-    d'4 \bar "|."
+    e'8 \startTrillSpan d'8 \stopTrillSpan e'8 f'8 e'8 ( d'8 )
+    d'4 
+    R1 \bar "|."
 }
 
 PartPSevenVoiceOneLyricsOne =  \lyricmode {

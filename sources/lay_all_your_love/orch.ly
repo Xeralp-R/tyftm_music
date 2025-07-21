@@ -161,6 +161,8 @@ part-Pone-one = {
   d''1 |
   ees''2 f''4 g''4 |
   f''2 f''2 |
+  ees''1~ |
+  ees''2 r2 |
   % 130
   \key aes \major
   c''8\ff c''16 aes''8 aes''16 c''8 c''8 g''8 c''8 g''8 |
@@ -360,6 +362,8 @@ part-Ptwo-one = {
   b'1 |
   c''2 bes'4 d''4 |
   c''2 d''2 |
+  ees''1 |
+  ees''2 r2 |
   % 130
   \key aes \major
   f''2\ff c''2 |

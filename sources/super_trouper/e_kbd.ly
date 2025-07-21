@@ -77,6 +77,7 @@ PartPOneThreeVoiceOne =  {
   <g' c'' g''>4  <g' c'' g''>4 <g' c'' f''>4 <g' c'' f''>4 | % 67
   <g' c'' e''>8 <g' c'' d''>8 <g' c'' e''>8 <g' c'' f''>8 <g' c'' e''>4
   <g' c'' d''>4 | % 68 \bar "|." \bar "|."
+  <c'' e'' g'' c'''>4\sf\staccatissimo r4 r2 \bar "|."
 }
 
 e-kbd-dyn = {

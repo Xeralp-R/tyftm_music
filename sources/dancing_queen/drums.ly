@@ -1,10 +1,13 @@
 part-Ponefive-one = \drummode {
   \time 4/4
-  ss4 ss ss r |
+  ss4 ss ss ss |
+  r4 ss r ss |
+  r4 ss r ss |
+  r ss r <bd sn> |
   <<
     \context DrumVoice = "voiceone" {
       \voiceOne
-      cymc8\mf hh8 <sn hh >8 hh8 hh8 hh8 <sn hh >8 hh8 |
+      cymc8 hh8 <sn hh >8 hh8 hh8 hh8 <sn hh >8 hh8 |
       hh8 hh8 <sn hh >8 hh8 hh8 hh8 <sn hh >8 hh8 |
       hh8 hh8 <sn hh >8 hh8 hh8 hh8 <sn hh >8 hh8 |
       hh8 hh8 <sn hh >8 hh8 hh16 sn16 hh8 <sn hh >8 hh8 |

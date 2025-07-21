@@ -163,6 +163,8 @@ part-Poneone-one = \drummode {
       hh8 hh8 <sn hh >8 hh8 hh8 hh8 <sn hh >8 hh8 |
       cymc8 hh8 <sn hh >8 hh8 hh8 hh8 <sn hh >8 hh8 |
       hh8 hh8 <sn hh >8 hh8 hh8 hh8 <sn hh >8 hh8 |
+      cymc8 hh8 <sn hh >8 hh8 hh8 hh8 <sn hh >8 hh8 |
+      hh8 hh8 <sn hh >8 hh8 hh8 hh8 <sn hh >8 hh8 |
       % 130
       cymc8\ff hh8 <sn hh >8 hh8 hh8 hh8 <sn hh >8 hh8 |
       hh8 hh8 <sn hh >8 hh8 hh8 hh8 <sn hh >8 hh8 |
@@ -344,6 +346,8 @@ part-Poneone-one = \drummode {
       bd4 bd4 bd4 bd4 |
       bd4 bd4 bd4 bd4 |
       % 125
+      bd4 bd4 bd4 bd4 |
+      bd4 bd4 bd4 bd4 |
       bd4 bd4 bd4 bd4 |
       bd4 bd4 bd4 bd4 |
       bd4 bd4 bd4 bd4 |

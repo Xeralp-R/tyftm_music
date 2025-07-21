@@ -39,10 +39,11 @@ part-Poneone-one = {
       c8[ des8] |
       ees8 f8 g8 aes8 bes4.:16 r8 |
     }
+    %{
     \context TabStaff = "rhythm-tabs" {
       \startStaff c8 des8 |
       ees8 f8 g8 aes8 bes4.:16 r8 | \stopStaff
-    }
+    }%}
   >>
   R1 |
   R1 |

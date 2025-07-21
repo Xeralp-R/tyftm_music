@@ -4,7 +4,7 @@ part-Ponethree-one = {
   \key a \major
   \time 4/4
   \clef treble
-  R1 |
+  R1*3 R1 |
   <e b e' >4 r8 <e b e' >4 r8 <e b e' >4 |
   <eis cis' eis' >4 r8 <eis cis' eis' >4 r8 <eis cis' eis' >4 |
   <fis cis' fis' >4 r8 <fis cis' fis' >4 r8 <fis cis' fis' >4 |
@@ -143,7 +143,7 @@ part-Ponethree-two = {
   \key a \major
   \time 4/4
   \clef bass
-  R1 |
+  R1*3 R1 |
   e,8. e,16 r8 e,4 e,8 e,4 |
   cis,8. cis,16 r8 cis,4 cis,8 cis,4 |
   fis,8. fis,16 r8 fis,4 fis,8 fis,4 |

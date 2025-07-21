@@ -2,7 +2,7 @@ part-Pfive-one = {
   \key a \major
   \time 4/4
   \clef treble
-  r2 r4 a'''4\glissando
+  R1*3  r2 r4 a'''4\glissando
   e'4 r2. |
   R1 |
   R1 |
@@ -134,7 +134,7 @@ part-Pfive-two = {
   \key a \major
   \time 4/4
   \clef bass
-  R1 |
+  R1*3 R1 |
   R1 |
   R1 |
   R1 |

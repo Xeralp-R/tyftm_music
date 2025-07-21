@@ -1,7 +1,11 @@
 part-Poneone-one = {
   \key a \major
   \time 4/4
-  R1 |
+  r2 r4 e''4\f |
+  d''2. cis''16 b'8\2 a'16\2 |
+  b'8.\2 cis''8. cis''8~ cis''2~ |
+  % 10
+  cis''8 r8 r4 r2 | |
   R1 |
   R1 |
   R1 |

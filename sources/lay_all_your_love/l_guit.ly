@@ -186,6 +186,8 @@ part-Peight-one = {
   g8 g16 ees'8 ees'16 g8 g8 f'8 g8 f'8 |
   g8 g16 ees'8 ees'16 g8 aes8 f'8 g'8 bes8 |
   aes8 aes16 aes'8 aes'16 bes8 bes8 g'8 aes8 g'8 |
+  ees'8 ees'16 g'8 g'16 ees'8 ees'8 f'8 f'8 ees'8 |
+  ees8 ees16 g8 g16 ees8 ees8 f8 f8 ees8 |
   % 130
   \key aes \major
   aes'2\ff g'2 |

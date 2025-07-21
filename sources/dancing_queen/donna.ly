@@ -2,6 +2,7 @@ part-Psix-one = {
   \key a \major
   \time 4/4
   \clef treble
+  R1*3 
   R1 |
   R1 |
   R1 |
@@ -38,15 +39,15 @@ part-Psix-one = {
   r4 r4 e'8.\mf fis'8. gis'8 |
   gis'8. a'8. a'4. r4 |
   % 30
-  gis'8. a'8. a'4 b'8 a'8 a'8 |
+  gis'8. a'8. a'4 b'8( a'8) a'8 |
   gis'8. a'8. a'2~ a'8~ |
   a'2. r4 |
   gis'8. a'8. a'4. r4 |
-  gis'8. a'8. a'4 b'8 a'8 a'8 |
+  gis'8. a'8. a'4 b'8( a'8) a'8 |
   % 35
   b'8. cis''8. cis''4. b'4 |
   cis''8( b'16 a'2~ a'16) r4 |
-  cis''8 b'8 b'8 b'2 r8 |
+  cis''8( b'8) b'8 b'2 r8 |
   R1 |
   R1 |
   % 40
@@ -74,16 +75,16 @@ part-Psix-one = {
   r4 r4 e'8. fis'8. gis'8 |
   gis'8. a'8. a'4. r4 |
   % 60
-  gis'8. a'8. a'4 b'8 a'8 a'8 |
+  gis'8. a'8. a'4 b'8( a'8) a'8 |
   gis'8. a'8. a'2~ a'8~ |
   a'2. r4 |
   gis'8. a'8. a'4. r4 |
-  gis'8. a'8. a'4 b'8 a'8 a'8 |
+  gis'8. a'8. a'4 b'8( a'8) a'8 |
   % 65
   b'8. cis''8. cis''4. b'4 |
   cis''8( b'16 a'2~ a'16) r4 |
-  cis''8 b'8 b'8 b'2 r8 |
-  cis''8 b'8 b'8 b'4 cis''4 r8 |
+  cis''8( b'8) b'8 b'2 r8 |
+  cis''8( b'8) b'8 b'4( cis''4) r8 |
   a'8. b'8. gis'8 a'8. b'8. gis'8 |
   % 70
   a'16( gis'16 fis'4) r8 cis''8.( b'8. a'8) |
@@ -99,8 +100,8 @@ part-Psix-one = {
   R1 |
   % 80
   R1 |
-  cis''8 b'8 b'8 b'2 r8 |
-  cis''8 b'8 b'8 b'4 cis''4 r8 |
+  cis''8( b'8) b'8 b'2 r8 |
+  cis''8( b'8) b'8 b'4( cis''4) r8 |
   a'8. b'8. gis'8 a'8. b'8. gis'8 |
   a'16( gis'16 fis'4) r8 cis''8.( b'8. a'8) |
   % 85
@@ -115,5 +116,43 @@ part-Psix-one = {
 }
 
 donna-lyrics = \lyricmode {
-  You are the
+  You are the dan -- cing queen, 
+  Young and sweet, on -- ly se -- ven -- teen.
+  Dan -- cing queen,
+  Feel the beat of the tam -- bou -- rine, oh yeah.
+
+  You can dance,
+
+  Oh, __
+  See that girl,
+
+  Dig -- ging the dan -- cing queen. __
+
+  You're a tea -- ser, you turn them on,
+  Leave 'em burn -- ing and then you're gone. __
+  Loo -- king out for a -- no -- ther,
+  A -- ny -- one will do, 
+  You're in the mood for a dance.
+  And when you get the chance, __
+
+  You are the dan -- cing queen, 
+  Young and sweet, on -- ly se -- ven -- teen.
+  Dan -- cing queen,
+  Feel the beat of the tam -- bou -- rine, oh yeah.
+
+  You can dance,
+  You can jive,
+  Ha -- ving the time of your life. __ Oh, __
+  See that girl, 
+  Watch that scene, 
+  Dig -- ging the dan -- cing queen. __
+
+  Dig -- ging the dan -- cing queen. __
+
+  You can dance,
+  You can jive,
+  Ha -- ving the time of your life. __ Oh, __
+  See that girl, 
+  Watch that scene, 
+  Dig -- ging the dan -- cing queen. __
 }

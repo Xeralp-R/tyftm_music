@@ -66,7 +66,9 @@ PartPOneFiveVoiceOne = {
   b4 b8 b8 b4 b4 | \barNumberCheck #71
   b4 b8 b8 b8 b8 r8 b8 | % 72
   b4 b8 b8 b8 b8 r8 b8 | % 73
-  b1\laissezVibrer R1 \bar "|."
+  b1\laissezVibrer 
+  R1
+  b4\sf\staccatissimo r4 r2 \bar "|." \bar "|."
 }
 
 PartPOneFiveVoiceOneChords =  \chordmode {
@@ -133,5 +135,6 @@ PartPOneFiveVoiceOneChords =  \chordmode {
   g1 | % 38
   g2.. c8 | % 39
   s1 
-  s1 \bar "|."
+  s1
+  c1 \bar "|."
 }

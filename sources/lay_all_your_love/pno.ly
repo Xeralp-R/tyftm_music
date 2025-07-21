@@ -250,6 +250,12 @@ part-Pthree-one = {
   <f' aes' c'' f'' >8 <f' aes' c'' f'' >16 <f' aes' c'' f'' >8 <f' aes' c''
   f'' >16 <f' aes' c'' f'' >8 <f' bes' d'' f'' >8 <f' bes' d'' f'' >8 <f'
   bes' d'' f'' >8 <f' bes' d'' f'' >8 |
+  <ees' bes' ees'' >8 <ees' bes' ees'' >16 <ees' bes' ees'' >8 <ees' bes'
+  ees'' >16 <ees' bes' ees'' >8 <ees' bes' ees'' >8 <ees' bes' ees'' >8
+  <ees' bes' ees'' >8 <ees' bes' ees'' >8 |
+  <ees' bes' ees'' >8 <ees' bes' ees'' >16 <ees' bes' ees'' >8 <ees' bes'
+  ees'' >16 <ees' bes' ees'' >8 <ees' bes' ees'' >8 <ees' bes' ees'' >8
+  <ees' bes' ees'' >8 <ees' bes' ees'' >8 |
   % 130
   \key aes \major
   r8\ff bes16 <f' aes' >16 r16 bes16 <f' aes' >8 r8 <e' g' >8 r8 <e' g' >8 |
@@ -473,6 +479,10 @@ part-Pthree-two = {
   <d bes >8 |
   <f aes c' >8 <f aes c' >16 <f aes c' >8 <f aes c' >16 <f aes c' >8 <f bes
   d' >8 <f bes d' >8 <f bes d' >8 <f bes d' >8 |
+  <ees bes >8 <ees bes >16 <ees bes >8 <ees bes >16 <ees bes >8 <ees bes >8
+  <ees bes >8 <ees bes >8 <ees bes >8 |
+  <ees bes >8 <ees bes >16 <ees bes >8 <ees bes >16 <ees bes >8 <ees bes >8
+  <ees bes >8 <ees bes >8 <ees bes >8 |
   % 130
   \key aes \major
   f4 f4 <f c' >4 <f c' >4 |

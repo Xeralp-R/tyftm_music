@@ -2,7 +2,7 @@ part-Pthree-one = {
   \key a \major
   \time 4/4
   \clef treble
-  R1 |
+  R1*3 R1 |
   e'1\f |
   eis'1 |
   fis'1 |
@@ -118,7 +118,7 @@ part-Pfour-one = {
   \key a \major
   \time 4/4
   \clef treble
-  R1 |
+  R1*3 R1 |
   R1 |
   R1 |
   R1 |

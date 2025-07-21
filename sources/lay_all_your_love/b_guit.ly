@@ -160,6 +160,8 @@ part-Ponezero-one = \transpose c c, {
   g,8 g,8 g,8 g,8 ces8 ces8 ces8 ces8 |
   c8 c8 c8 c8 d8 d8 ees8 ees8 |
   aes,8 aes,8 aes,8 aes,8 bes,8 bes,8 bes,8 bes,8 |
+  ees8 ees8 ees8 ees8 g8 bes8 c'8 ees'8 |
+  ees'8 ees'8 ees'8 c'8 bes8 g8 ees8 d8 |
   % 130
   \key aes \major
   f8\ff f8 f8 f8 f8 f8 f8 f8 |

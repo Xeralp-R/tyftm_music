@@ -116,7 +116,8 @@ PartPFiveVoiceOne =  {
   g'4 g'8 g'8 g'4 g'4
   }
   >>
-  R1*2 \bar "|."
+  R1*2
+  <c'' e'' g'' c'''>4\sf\staccatissimo r4 r2 \bar "|." \bar "|."
 }
 
 PartPFiveVoiceFive =  {
@@ -181,7 +182,8 @@ PartPFiveVoiceFive =  {
   d,8 d8 d8 b,16 a,16 d,8 d8 d8 b,16 a,16 | \barNumberCheck #71
   g,,8 g,8 g,8 e,16 d,16 g,,8 g,8 g,8 e,16 d,16 | % 72
   g,,8 g,8 g,8 e,16 d,16 g,,8 g,8 g,8 e,16 d,16 | % 73
-  R1*2 \bar "|."
+  R1*2
+  <c, c>4\sf\staccatissimo r4 r2 \bar "|." \bar "|."
 }
 
 pno-dyn = {

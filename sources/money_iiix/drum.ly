@@ -65,12 +65,12 @@ part-Ponetwo-one = \drummode {
       R1 |
       % 25
       R1 |
-      R1 |
+      r4 toml4-> toml4-> toml->  |
       R1 |
       R1 |
       R1 |
       % 30
-      R1 |
+      r4 toml4-> toml4-> toml8-> hho  |
       r4 sn4 r4 sn4 |
       r4 sn4 r4 sn4 |
       r4 sn4 r4 sn4 |
@@ -85,7 +85,7 @@ part-Ponetwo-one = \drummode {
       bd8-> bd8 bd8-> bd8-> bd8 bd8-> bd8-> bd8 |
       bd8-> bd8 bd8-> bd8-> bd8 bd8-> bd8-> bd8 |
       % 25
-      bd8^\ed-text "sim." bd8 bd8 bd8 bd8 bd8 bd8 bd8 |
+      bd8_\ed-text "sim." bd8 bd8 bd8 bd8 bd8 bd8 bd8 |
       bd8 bd8 bd8 bd8 bd8 bd8 bd8 bd8 |
       bd8 bd8 bd8 bd8 bd8 bd8 bd8 bd8 |
       bd8 bd8 bd8 bd8 bd8 bd8 bd8 bd8 |
@@ -160,12 +160,12 @@ part-Ponetwo-one = \drummode {
       R1 |
       % 60
       R1 |
-      R1 |
+      r4 toml4-> toml4-> toml->  |
       R1 |
       R1 |
       R1 |
       % 65
-      R1 |
+      r4 toml4-> toml4-> toml8-> hho  |
       r4 sn4 r4 sn4 |
       r4 sn4 r4 sn4 |
       r4 sn4 r4 sn4 |
@@ -179,7 +179,7 @@ part-Ponetwo-one = \drummode {
       bd8-> bd8 bd8-> bd8-> bd8 bd8-> bd8-> bd8 |
       bd8-> bd8 bd8-> bd8-> bd8 bd8-> bd8-> bd8 |
       % 60
-      bd8^\ed-text "sim." bd8 bd8 bd8 bd8 bd8 bd8 bd8 |
+      bd8_\ed-text "sim." bd8 bd8 bd8 bd8 bd8 bd8 bd8 |
       bd8 bd8 bd8 bd8 bd8 bd8 bd8 bd8 |
       bd8 bd8 bd8 bd8 bd8 bd8 bd8 bd8 |
       bd8 bd8 bd8 bd8 bd8 bd8 bd8 bd8 |
@@ -204,12 +204,12 @@ part-Ponetwo-one = \drummode {
       % 75
       R1 |
       R1 |
-      R1 |
+      r4 toml4-> toml4-> toml->  |
       R1 |
       R1 |
       % 80
       R1 |
-      R1 |
+      r4 toml4-> toml4-> toml8-> hho  |
       r4 sn4 r4 sn4 |
       r4 sn4 r4 sn4 |
       r4 sn4 r4 sn4 |

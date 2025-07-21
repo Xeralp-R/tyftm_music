@@ -32,5 +32,6 @@ PartPOneSevenVoiceOne = \drummode {
   \linear-spanner #1 #5
   << { hh8 hh8 hh8 hh8 hh8 hh8 hh8 hh8 } \\ {bd4 <bd sn>4 bd4 <bd sn>8 sn16 sn16} >> | % 73
   cymc4\laissezVibrer r4 r2
-  R1 \bar "|."
+  R1 
+  cymc4\sf\staccatissimo r4 r2 \bar "|."\bar "|."
 }

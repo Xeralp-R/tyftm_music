@@ -1,7 +1,7 @@
 part-Ponefour-one = \transpose c c, {
   \time 4/4 
   \key a \major
-  | % 1
+  R1*3 | % 1
   R1 | % 2
   e,8 r16 \deadNote e,16 e,8 -. e,8
   r8 e8 -. e16 b,8 c16 | % 3
@@ -20,7 +20,7 @@ part-Ponefour-one = \transpose c c, {
   e16 e16 ( fis16 ) a4 -\bendAfter #-4 | % 9
   a,8 r16 \deadNote a,16 a,8 -. a,8 r16
   \deadNote e,16 e,8 fis,16 fis,16 gis,8
-  -. | \barNumberCheck #10
+  -. | % \barNumberCheck #10
   a,8 r16 \deadNote a,16 e16 ( fis16 )
   a8 -. r16 \deadNote a,16 a,8 -. a,4
   -. | % 11
@@ -47,7 +47,7 @@ part-Ponefour-one = \transpose c c, {
   fis16 \deadNote fis16 e8 fis16 fis16
   fis,8 | % 19
   e,16 e,8 -. \deadNote fis,16 fis,8
-  fis,8 ~ fis,8 fis,8 fis,8 g,16 gis,16 | \barNumberCheck #20
+  fis,8 ~ fis,8 fis,8 fis,8 g,16 gis,16 | % \barNumberCheck #20
   a,8 r16 \deadNote a,16 a,8 -. a,8 r16
   \deadNote a,16 a,8 e16 ( fis16 ) a8
   -. | % 21
@@ -70,7 +70,7 @@ part-Ponefour-one = \transpose c c, {
   b,8 r16 \deadNote b,16 b,8 -. b,8 ~
   b,16 fis,16 b,16 fis,16 b,8 fis,8 | % 29
   e,8 r16 \deadNote e,16 e,8 -. e,8 ~
-  e,16 e,16 gis,8 g,16 ( gis,16 ) g,8 -. | \barNumberCheck #30
+  e,16 e,16 gis,8 g,16 ( gis,16 ) g,8 -. | % \barNumberCheck #30
   a,8 r16 \deadNote a,16 a,8 -. a,8 r16
   \deadNote e16 e16 ( fis16 ) a4
   -\bendAfter #-4 | % 31
@@ -98,7 +98,7 @@ part-Ponefour-one = \transpose c c, {
   b,16 e16 b,16 e16 b,8 c16 | % 39
   cis8 r16 \deadNote cis16 cis8 -. cis8
   r16 \deadNote cis16 dis16 dis16 e8 f16
-  f16 | \barNumberCheck #40
+  f16 | % \barNumberCheck #40
   fis8 r16 \deadNote fis16 fis8 -. fis8
   ~ fis16 \deadNote fis16 fis8 fis8 f16
   e16 | % 41
@@ -120,7 +120,7 @@ part-Ponefour-one = \transpose c c, {
   e16 ( fis16 ) a8 a,8 -. | % 49
   a,8 r16 \deadNote a,16 a,8 -. a,8 r16
   \deadNote e16 e16 ( fis16 ) a4 |
-  \barNumberCheck #50
+  % \barNumberCheck #50
   a,8 r16 \deadNote a,16 a,8 -. a,8 a,16
   a,16 a,8 -. e16 ( fis16 ) a8 | % 51
   a,8 r16 a,16 a,8 -. a,8 r16 \deadNote
@@ -140,7 +140,7 @@ part-Ponefour-one = \transpose c c, {
   b,8 r16 \deadNote b,16 b,8 -. b,8 ~
   b,16 \deadNote b,16 d8 d8 a,8 | % 59
   e,8 r16 \deadNote e,16 d16 e,8 -. d16
-  r16 a,16 d8 r16 d16 b,8 | \barNumberCheck #60
+  r16 a,16 d8 r16 d16 b,8 | % \barNumberCheck #60
   a,8 r16 \deadNote a,16 a,8 -. a,8 r16
   \deadNote a,16 a,8 e16 ( fis16 ) a8 | % 61
   a,8 r16 \deadNote a,16 a,8 -. a,8 r16
@@ -163,7 +163,7 @@ part-Ponefour-one = \transpose c c, {
   e16 b,16 e16 b,8 c16 | % 69
   cis8 r16 \deadNote cis16 cis8 -. cis8
   r16 \deadNote a,16 e16 
-  \deadNote a,16 e8 f8 | \barNumberCheck #70
+  \deadNote a,16 e8 f8 | % \barNumberCheck #70
   fis8 r16 \deadNote e16 fis8 -. fis8 ~
   fis8 a8 -. a8 -. ais16 ( cis'16 ) | % 71
   dis8 r16 \deadNote dis16 dis8 -. dis8
@@ -189,7 +189,7 @@ part-Ponefour-one = \transpose c c, {
   | % 79
   a,8 r16 \deadNote a,16 a,8 -. a,8 r16
   \deadNote e,16 e,8 fis,8 e,16 gis,16
-  | \barNumberCheck #80
+  | % \barNumberCheck #80
   a,8 r16 \deadNote a,16 a,8 -. a,8 r16
   \deadNote a,16 a,8 -. e16 ( fis16 ) a8
   | % 81
@@ -208,7 +208,7 @@ part-Ponefour-one = \transpose c c, {
   d8. -. d8. -. d4. r4 | % 87
   R1 | % 88
   b,8. -. b,8. -. b,4. r4 | % 89
-  R1 | \barNumberCheck #90
+  R1 | % \barNumberCheck #90
   r2 r4 a,4 | % 91
   a,2. a,4 | % 92
   a,1 \bar "|."

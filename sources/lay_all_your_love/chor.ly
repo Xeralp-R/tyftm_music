@@ -5,6 +5,8 @@ part-Psix-one = {
   \key aes \major
   \time 4/4
   \clef treble
+
+  \dynamicUp
   R1 |
   R1 |
   R1 |
@@ -75,25 +77,16 @@ part-Psix-one = {
   R1 |
   R1 |
   R1 |
-  R1 |
-  R1 |
-  % 60
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 65
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 70
-  R1 |
-  R1 |
-  R1 |
-  R1 |
+  R1*8
+  <g' c'' ees'' >2\f^\ed-text "Men" <g' b' d'' >2 |
+  <g' c'' >4 <g' b' d'' >4 <g' c'' ees'' >4 <g' d'' f'' >4 |
+  <aes' c'' ees'' >2.~~~ <aes' c'' ees'' >8( <g' b' d'' >8) |
+  <g' b' d'' >2 r2 |
+  % 120
+  <g' c'' ees'' >2 <bes' d'' f'' >4 <bes' ees'' g'' >8( <aes' c'' f'' >8) |
+  <aes' c'' f'' >2 <aes' bes' f'' >2 |
+  <g' bes' ees'' >1~~~ |
+  <g' bes' ees'' >2~~~ <g' bes' ees'' >8 r8 r4 |
   R1 |
   % 75
   R1 |
@@ -145,25 +138,37 @@ part-Psix-one = {
   R1 |
   % 115
   R1 |
-  <g' c'' ees'' >2\f <g' b' d'' >2 |
-  <g' c'' >4 <g' b' d'' >4 <g' c'' ees'' >4 <g' d'' f'' >4 |
-  <aes' c'' ees'' >2.~~~ <aes' c'' ees'' >8( <g' b' d'' >8) |
-  <g' b' d'' >2 r2 |
-  % 120
-  <g' c'' ees'' >2 <bes' d'' f'' >4 <bes' ees'' g'' >8( <aes' c'' f'' >8) |
-  <aes' c'' f'' >2 <aes' bes' f'' >2 |
-  <g' bes' ees'' >1~~~ |
-  <g' bes' ees'' >2~~~ <g' bes' ees'' >8 r8 r4 |
-  <g' c'' ees'' >2 <g' b' d'' >2 |
-  % 125
-  <g' c'' >4 <g' b' d'' >4 <g' c'' ees'' >4 <g' d'' f'' >4 |
-  <aes' c'' ees'' >2.~~~ <aes' c'' ees'' >8( <g' b' d'' >8) |
-  <g' b' d'' >2 r2 |
-  <g' c'' ees'' >2 <bes' d'' f'' >4 <bes' ees'' g'' >8( <aes' c'' f'' >8) |
-  <aes' c'' f'' >2 <aes' bes' f'' >2 |
-  % 130
-  \key aes \major
-  <c' f' aes' >2\ff <c' e' g' >2 |
+  \repeat volta 2 {
+    <g' c'' ees'' >2\f^\ed-text "Men" <g' b' d'' >2 |
+    <g' c'' >4 <g' b' d'' >4 <g' c'' ees'' >4 <g' d'' f'' >4 |
+    <aes' c'' ees'' >2.~~~ <aes' c'' ees'' >8( <g' b' d'' >8) |
+    <g' b' d'' >2 r2 |
+    % 120
+    <g' c'' ees'' >2 <bes' d'' f'' >4 <bes' ees'' g'' >8( <aes' c'' f'' >8) |
+    <aes' c'' f'' >2 <aes' bes' f'' >2 |
+    <g' bes' ees'' >1~~~ |
+    <g' bes' ees'' >2~~~ <g' bes' ees'' >8 r8 r4 |
+    <g' c'' ees'' >2 <g' b' d'' >2 |
+    % 125
+    <g' c'' >4 <g' b' d'' >4 <g' c'' ees'' >4 <g' d'' f'' >4 |
+    <aes' c'' ees'' >2.~~~ <aes' c'' ees'' >8( <g' b' d'' >8) |
+    <g' b' d'' >2 r2 |
+    <g' c'' ees'' >2 <bes' d'' f'' >4 <bes' ees'' g'' >8( <aes' c'' f'' >8) |
+    <aes' c'' f'' >2 <aes' bes' f'' >2 |
+    \alternative {
+      {
+        <g' bes' ees'' >1~~~ |
+        <g' bes' ees'' >2~~~ <g' bes' ees'' >8 r8 r4 |
+      }
+      {
+        % 130
+        \key aes \major
+        <c' f' aes' >2\ff^\ed-text "Women" <c' e' g' >2 |
+      }
+    }
+  }
+  
+  
   <c' f' >4 <c' e' g' >4 <c' f' aes' >4 <c' g' bes' >4 |
   <des' f' aes' >2.~~~ <des' f' aes' >8( <c' e' g' >8) |
   <c' e' g' >2 r2 |
@@ -172,16 +177,15 @@ part-Psix-one = {
   <des' f' bes' >2 <des' ees' bes' >2 |
   <c' ees' aes' >1~~~ |
   <c' ees' aes' >2~~~ <c' ees' aes' >8 r8 r4 |
-  R1 |
-  R1 |
-  % 140
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  R1 |
-  % 145
-  R1 |
+  <c' f' aes' >2 <c' e' g' >2 |
+  <c' f' >4 <c' e' g' >4 <c' f' aes' >4 <c' g' bes' >4 |
+  <des' f' aes' >2.~~~ <des' f' aes' >8( <c' e' g' >8) |
+  <c' e' g' >2 r2 |
+  <c' f' aes' >2 <ees' g' bes' >4 <ees' aes' c'' >8( <des' f' bes' >8) |
+  % 135
+  <des' f' bes' >2 <des' ees' bes' >2 |
+  <c' ees' aes' >1~~~ |
+  <c' ees' aes' >2~~~ <c' ees' aes' >8 r8 r4 |
   R1 |
   R1 |
   R1 |
@@ -193,10 +197,16 @@ part-Psix-one = {
   R1 |
 }
 PartPSixVoiceOneLyricsOne = \lyricmode {
-  \set ignoreMelismata = ##t
-  Don't go was -- ting your e -- mo  tion Lay all
-  your love on me  Don't go sha -- ring your de
-  vo  tion Lay all your love on Don't go sha --
-  ring your de vo  tion Lay all your love on
-  me
+  Don't go sha -- ring your de -- vo -- tion, 
+  Lay all your love on me! __
+
+  Don't go was -- ting your e -- mo --   tion, 
+  Lay all your love on me! __  
+  Don't go sha -- ring your de -- vo -- tion, 
+  Lay all your love on me! __ 
+
+  Don't go was -- ting your e -- mo --   tion, 
+  Lay all your love on me! __  
+  Don't go sha -- ring your de -- vo -- tion, 
+  Lay all your love on me! __
 }

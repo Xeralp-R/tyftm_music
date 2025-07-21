@@ -28,7 +28,7 @@ PartPOneTwoVoiceOne =  {
     R1 | % 47
     R1*2 | % 48
     <a c'>1 ~ ~ ^\mp | % 49
-    <a c'>1 | \barNumberCheck #50
+    <a c'>1 | \barNumberCheck #51
     <a d'>2 <g d'>2 | % 51
     <g c'>2 c'4 b4 | % 52
     <a c'>1 | % 53
@@ -37,7 +37,7 @@ PartPOneTwoVoiceOne =  {
     <g b>1 ~ ~ \< | % 56
     <g b>2 r8 \! r8 r4 | % 57
     <c g c'>8 <c g c'>8 <c g c'>4 <c g c'>8 <c g c'>8 <c g c'>4 | % 58
-    R1*2 | \barNumberCheck #60
+    R1*2 | \barNumberCheck #61
     <g, d g>8 <g, d g>8 <g, d g>4 <g, d g>8 <g, d g>8 <g, d g>4 | % 61
     R1 | % 62
     <g, d g>8 <g, d g>8 <g, d g>4 <g, d g>8 <g, d g>8 <g, d g>4 | % 63
@@ -45,10 +45,11 @@ PartPOneTwoVoiceOne =  {
     <c g c'>8 <c g c'>8 <c g c'>4 <c g c'>8 <c g c'>8 <c g c'>4 | % 66
     R1*2 | % 68
     <g, d g>8 <g, d g>8 <g, d g>4 <g, d g>8 <g, d g>8 <g, d g>4 | % 69
-    R1 | \barNumberCheck #70
+    R1 | \barNumberCheck #71
     <g, d g>8 <g, d g>8 <g, d g>4 <g, d g>8 <g, d g>8 <g, d g>4 | % 71
     R1 | % 72
     r2 r2 | % 73
+    R1 
     R1 \bar "|."
 }
 

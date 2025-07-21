@@ -96,7 +96,7 @@ PartPFiveVoiceOneLyricsOne =  \lyricmode { I
     Walks a -- long the seine,
     Laugh --ing in the rain,
     Our last sum -- mer,
-    Mem' -- ries that re -- main
+    Mem' -- ries that re -- main.
     }
 
 PartPSixVoiceOne =  \relative a' {
@@ -181,7 +181,7 @@ PartPSixVoiceOneLyricsOne =  \lyricmode { I
     Walks a -- long the seine,
     Laugh --ing in the rain,
     Our last sum -- mer,
-    Mem' -- ries that re -- main
+    Mem' -- ries that re -- main.
     }
 
 PartPSevenVoiceOne =  \relative c'' {
@@ -258,5 +258,5 @@ PartPSevenVoiceOneLyricsOne =  \lyricmode {
     Walks a -- long the seine,
     Laugh --ing in the rain,
     Our last sum -- mer,
-    Mem' -- ries that re -- main
+    Mem' -- ries that re -- main.
     }

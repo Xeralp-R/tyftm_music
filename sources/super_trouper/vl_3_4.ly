@@ -67,7 +67,8 @@ PartPThreeVoiceOne =  {
   d'8-. d'8-. d'4-- d'8-. d'8-. d'4-- | % 46
   d'2 c'2 | % 47
   c'1~ |
-  c'1 \bar "|."
+  c'1 
+  c'4\sf\staccatissimo r4 r2 \bar "|."\bar "|."
 }
 
 PartPFourVoiceOne =  {
@@ -136,5 +137,6 @@ PartPFourVoiceOne =  {
   b8-. b8-. b4-- b8-. b8-. b4-- | % 38
   f'2 e'2  | % 39
   e'1 ~ |
-  e'1 \bar "|."
+  e'1 
+  e'4\sf\staccatissimo r4 r2 \bar "|."
 }

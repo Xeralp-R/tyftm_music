@@ -17,7 +17,7 @@ PartPEightVoiceOne =  \relative b' {
     r8 a8 \<a8 a16 b16 ~ b8 a8 a8 g16 \! ( a16 ) | % 51
     a1 ^\f ~ | % 52
     a4 r4 r2 \bar "||"
-    R1*11 \bar "|."
+    R1*11 
     r4 r4 a8 ^\mp b8 c8. a16 | % 65
     b4 r4 fis8 g8 a8 fis16 g16 ~ | % 66
     g4 r4 fis8 ( d8 ) d4 | % 67

@@ -106,6 +106,11 @@
     \override DynamicTextSpanner.font-size = #'1
     \override TextScript.font-size = #'1
   }
+  \context {
+    \Dynamics 
+    \override VerticalAxisGroup.nonstaff-relatedstaff-spacing.minimum-distance = 0
+    \override VerticalAxisGroup.nonstaff-relatedstaff-spacing.basic-distance = 0
+  }
 }
 
 newline = { \break }

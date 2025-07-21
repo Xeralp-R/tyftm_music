@@ -44,7 +44,7 @@ PartPSixVoiceOne =  {
     d'2. r8 d'8 | % 46
     d'8 c'8 d'8 e'8 d'8 ( c'8 ) c'8 r8 | % 47
     c'2. \> r4 | % 48
-    \! r2 r8 c'8 ^\piu-f c'8. b16 | % 49
+    <>\! r2 r8 c'8 ^\piu-f c'8. b16 | % 49
     c'2 r8 c'8 c'8. b16 | % 50
     c'2 r8 c'8 c'8. b16 | \barNumberCheck #51
     c'8 d'8 d'8 c'8 d'8 e'8 e'8 d'8 | % 52
@@ -70,8 +70,9 @@ PartPSixVoiceOne =  {
     d'2. r8 d'8 | % 72
     d'8 c'8 d'8 e'8 d'8 ( c'8 ) c'8 r8 | % 73
     c'1 | % 74
-    e'8 ^ "rit." \startTrillSpan ^\> d'8 \stopTrillSpan e'8 f'8 e'8
-    ( d'8 ) d'4 \bar "|."
+    e'8 \startTrillSpan ^\> d'8 \stopTrillSpan e'8 f'8 e'8
+    ( d'8 ) d'4 <>\!
+    R1 \bar "|."
 }
 
 PartPSixVoiceOneLyricsOne =  \lyricmode {

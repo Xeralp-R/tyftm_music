@@ -8,7 +8,7 @@ part-Pseven-one = {
   aes8\p\< aes16 <c' ees' >8 aes16 <c' ees' >8 aes8 <c' ees' >8 aes8 <c'
   ees' >8 |
   aes8 aes16 <c' ees' >8 aes16 <c' ees' >8 c'8 ces'8 bes8
-  aes8\f-bracket |
+  aes8\f |
   R1 |
   R1 |
   <aes' c'' f'' >1 |
@@ -184,6 +184,8 @@ part-Pseven-one = {
   <g' b' d'' >1 |
   <g' c'' ees'' >2 <f' bes' f'' >4 <bes' d'' g'' >4 |
   <f' aes' c'' f'' >2 <f' bes' d'' f'' >2 |
+  <ees' g' bes' ees''>1~ |
+  <ees' g' bes' ees''>2 r2 |
   % 130
   \key aes \major
   <c'' f'' aes'' >2\ff <c'' g'' >2 |
@@ -397,6 +399,7 @@ part-Pseven-two = {
   % 135
   R1 |
   R1 |
+  R1*2
   r2 aes8 bes8 aes8 g8 |
   f1 |
   f4 g4 aes4 bes4 |

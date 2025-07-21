@@ -2,7 +2,7 @@ part-Pone-one = {
   \key a \major
   \time 4/4
   \clef treble
-  R1%{ -\mark "A" %} |
+  R1*3 R1%{ -\mark "A" %} |
   gis''2~\f gis''8 cis''16 fis''16 gis''16 a''8. |
   gis''2~ gis''8 cis''16 gis''16 b''16 cis'''8. |
   a'8. b'8. gis'8 a'8. b'8. gis'8 |
@@ -123,7 +123,7 @@ part-Ptwo-one = {
   \key a \major
   \time 4/4
   \clef treble
-  R1 |
+  R1*3 R1 |
   gis'2~\mf gis'8 cis'16 fis'16 gis'16 a'8. |
   gis'2~ gis'8 cis'16 gis'16 b'16 cis''8. |
   a8. b8. gis8 a8. b8. gis8 |
